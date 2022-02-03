@@ -1,0 +1,67 @@
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+Library=
+LinkerScript=
+[defines]
+enabled=0
+chip=1
+D1=
+V1=
+[fileformats]
+forcecoff=1
+debug=4
+error=2
+object=0
+list=0
+scratch=0
+sta=1
+tre=1
+allerrors=1
+allwarnings=1
+stayupne=3
+stayupoe=0
+[PROJECT]
+Target=main.hex
+Development_Mode=
+Processor_Text=PIC24HJ128GP502
+ToolSuite=CCS
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+BuildTool=C-COMPILER
+OptionString=+FD
+AdditionalOptionString=
+BuildRequired=1
+FileList=main.c
+[main.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[mru-list]
+1=main.c
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[CompilerVersion]
+Fixed=
+[ExtraIncludes]
+Count=5
+1=main=c:\users\dwegg\google drive\e-tech\bms\slave_algorithm\src\ltc1296.c
+2=main=c:\users\dwegg\google drive\e-tech\bms\slave_algorithm\src\can-pic24.c
+3=main=c:\users\dwegg\google drive\e-tech\bms\slave_algorithm\src\lt6811.c
+4=main=c:\users\dwegg\google drive\e-tech\bms\slave_algorithm\inc\24hj128gp502.h
+5=main=c:\users\dwegg\google drive\e-tech\bms\slave_algorithm\inc\can-pic24.h
+[Opened Files]
+1=main.c
+2=
+[Documentation]
+1=C:\Users\dwegg\Google Drive\e-Tech\BMS\Slave_Algorithm\src\main Notes.txt
+1T=main Notes.txt
+1E=
+1W=0
+Count=1
+[Units]
+Count=1
+1=main (main)

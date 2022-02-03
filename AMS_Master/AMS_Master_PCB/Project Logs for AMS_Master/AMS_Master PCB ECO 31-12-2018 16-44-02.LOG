@@ -1,0 +1,59 @@
+Added Component: Designator=U?(dsPIC33EP256GM604)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://ww1.microchip.com/downloads/en/DeviceDoc/70000689d.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Microchip"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "44"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=U?-1
+Added Pin To Net: NetName=GND Pin=U?-2
+Added Pin To Net: NetName=GND Pin=U?-3
+Added Pin To Net: NetName=GND Pin=U?-4
+Added Pin To Net: NetName=GND Pin=U?-5
+Added Pin To Net: NetName=GND Pin=U?-6
+Added Pin To Net: NetName=NetC1_1 Pin=U?-7
+Added Pin To Net: NetName=GND Pin=U?-8
+Added Pin To Net: NetName=NetQ7_1 Pin=U?-9
+Added Pin To Net: NetName=NetQ4_1 Pin=U?-10
+Added Pin To Net: NetName=NetQ5_1 Pin=U?-11
+Added Pin To Net: NetName=NetR5_2 Pin=U?-12
+Added Pin To Net: NetName=NetQ1_1 Pin=U?-13
+Added Pin To Net: NetName=NetQ2_1 Pin=U?-14
+Added Pin To Net: NetName=GND Pin=U?-15
+Added Pin To Net: NetName=GND Pin=U?-16
+Added Pin To Net: NetName=+3.3 Pin=U?-17
+Added Pin To Net: NetName=NetR1_1 Pin=U?-18
+Added Pin To Net: NetName=NetC31_2 Pin=U?-19
+Added Pin To Net: NetName=NetQ3_1 Pin=U?-20
+Added Pin To Net: NetName=NetR3_2 Pin=U?-21
+Added Pin To Net: NetName=GND Pin=U?-22
+Added Pin To Net: NetName=NetJ2_4 Pin=U?-23
+Added Pin To Net: NetName=NetJ2_5 Pin=U?-24
+Added Pin To Net: NetName=NetJ1_3 Pin=U?-27
+Added Pin To Net: NetName=+3.3 Pin=U?-28
+Added Pin To Net: NetName=GND Pin=U?-29
+Added Pin To Net: NetName=NetC16_1 Pin=U?-30
+Added Pin To Net: NetName=NetC15_1 Pin=U?-31
+Added Pin To Net: NetName=NetR4_2 Pin=U?-32
+Added Pin To Net: NetName=NetJ1_4 Pin=U?-33
+Added Pin To Net: NetName=NetQ6_1 Pin=U?-34
+Added Pin To Net: NetName=GND Pin=U?-35
+Added Pin To Net: NetName=GND Pin=U?-36
+Added Pin To Net: NetName=GND Pin=U?-39
+Added Pin To Net: NetName=+3.3 Pin=U?-40
+Added Pin To Net: NetName=GND Pin=U?-41
+Added Pin To Net: NetName=GND Pin=U?-42
+Added Pin To Net: NetName=GND Pin=U?-43
+Added Pin To Net: NetName=GND Pin=U?-44
+Added Pin To Net: NetName=NetU3_3 Pin=U3-3
+Added Pin To Net: NetName=NetU3_3 Pin=U?-26
+Added Net: Name=NetU3_3
+Added Pin To Net: NetName=NetU3_6 Pin=U3-6
+Added Pin To Net: NetName=NetU3_6 Pin=U?-25
+Added Net: Name=NetU3_6
+Added Pin To Net: NetName=NetU4_3 Pin=U4-3
+Added Pin To Net: NetName=NetU4_3 Pin=U?-38
+Added Net: Name=NetU4_3
+Added Pin To Net: NetName=NetU4_6 Pin=U4-6
+Added Pin To Net: NetName=NetU4_6 Pin=U?-37
+Added Net: Name=NetU4_6
+Added Member To Class: ClassName=AMS_MCU Member=Component U? dsPIC33EP256GM604

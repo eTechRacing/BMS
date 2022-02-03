@@ -1,0 +1,114 @@
+Added Component: Designator=J6(1053091405)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "1053091105"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/1053091105/molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.molex.com/pdm_docs/sd/1053091102_sd.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.51mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1053091105"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J11(449146403)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.japanese.molex.com/molex/products/datasheet.jsp?part=active/0449146403_PCB_HEADERS.xml"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.16mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "44914-6403"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "538-44914-6403"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=538-44914-6403"; VariantName = "[No Variations]"
+Added Net: Name=+3.3
+Added Net: Name=+5_CAR
+Added Pin To Net: NetName=+5 Pin=J11-7
+Added Net: Name=+5
+Added Pin To Net: NetName=+12_CAR Pin=J11-8
+Added Net: Name=+12_CAR
+Added Pin To Net: NetName=GND Pin=J11-1
+Added Net: Name=GND
+Added Net: Name=NetC1_1
+Added Net: Name=NetC12_2
+Added Net: Name=NetC15_1
+Added Net: Name=NetC16_1
+Added Net: Name=NetC23_2
+Added Net: Name=NetC28_1
+Added Net: Name=NetC29_2
+Added Net: Name=NetC30_2
+Added Net: Name=NetD1_2
+Added Net: Name=NetD2_2
+Added Net: Name=NetD3_2
+Added Net: Name=NetD4_2
+Added Net: Name=NetD5_2
+Added Net: Name=NetD9_1
+Added Net: Name=NetD9_2
+Added Net: Name=NetD10_2
+Added Net: Name=NetD11_2
+Added Net: Name=NetD12_1
+Added Net: Name=NetD12_2
+Added Net: Name=NetD13_1
+Added Net: Name=NetD13_2
+Added Net: Name=NetD14_1
+Added Net: Name=NetF1_2
+Added Net: Name=NetF2_2
+Added Net: Name=NetF3_2
+Added Net: Name=NetJ1_3
+Added Net: Name=NetJ1_4
+Added Net: Name=NetJ2_4
+Added Net: Name=NetJ2_5
+Added Pin To Net: NetName=NetJ6_1 Pin=J6-1
+Added Net: Name=NetJ6_1
+Added Pin To Net: NetName=NetJ6_2 Pin=J6-2
+Added Net: Name=NetJ6_2
+Added Pin To Net: NetName=NetJ6_3 Pin=J6-3
+Added Net: Name=NetJ6_3
+Added Pin To Net: NetName=NetJ6_4 Pin=J6-4
+Added Net: Name=NetJ6_4
+Added Pin To Net: NetName=NetJ6_5 Pin=J6-5
+Added Net: Name=NetJ6_5
+Added Net: Name=NetJ8_1
+Added Net: Name=NetJ8_2
+Added Net: Name=NetJ9_2
+Added Net: Name=NetJ9_3
+Added Pin To Net: NetName=NetJ11_2 Pin=J11-2
+Added Net: Name=NetJ11_2
+Added Pin To Net: NetName=NetJ11_3 Pin=J11-3
+Added Net: Name=NetJ11_3
+Added Pin To Net: NetName=NetJ11_4 Pin=J11-4
+Added Net: Name=NetJ11_4
+Added Pin To Net: NetName=NetJ11_5 Pin=J11-5
+Added Net: Name=NetJ11_5
+Added Pin To Net: NetName=NetJ11_6 Pin=J11-6
+Added Net: Name=NetJ11_6
+Added Pin To Net: NetName=NetJ11_9 Pin=J11-9
+Added Net: Name=NetJ11_9
+Added Pin To Net: NetName=NetJ11_10 Pin=J11-10
+Added Net: Name=NetJ11_10
+Added Pin To Net: NetName=NetJ11_11 Pin=J11-11
+Added Net: Name=NetJ11_11
+Added Pin To Net: NetName=NetJ11_12 Pin=J11-12
+Added Net: Name=NetJ11_12
+Added Pin To Net: NetName=NetJ11_13 Pin=J11-13
+Added Net: Name=NetJ11_13
+Added Net: Name=NetQ1_1
+Added Net: Name=NetQ2_1
+Added Net: Name=NetQ3_1
+Added Net: Name=NetQ4_1
+Added Net: Name=NetQ7_1
+Added Net: Name=NetR1_1
+Added Net: Name=NetR3_2
+Added Net: Name=NetR4_2
+Added Net: Name=NetR5_2
+Added Net: Name=NetU1_25
+Added Net: Name=NetU1_26
+Added Net: Name=NetU1_37
+Added Net: Name=NetU1_41
+Added Class: Name=AMS_CAN
+Added Class: Name=AMS_Control_2
+Added Class: Name=AMS_Control
+Added Class: Name=AMS_MCU
+Added Class: Name=AMS_supply
+Added Room: Name=AMS_CAN
+Added Room: Name=AMS_Control
+Added Room: Name=AMS_Control_2
+Added Room: Name=AMS_MCU
+Added Room: Name=AMS_supply

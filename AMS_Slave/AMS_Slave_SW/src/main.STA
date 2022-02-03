@@ -1,0 +1,75 @@
+
+ROM used:   11302/88064 (13%)
+            11302/88064 (13%) including unused fragments
+
+            1.7 Average locations per line
+            8.1 Average locations per statement
+
+RAM used:   753/8192 (9%) at main() level
+            881/8192 (11%) worst case
+
+Stack size: 128
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  230   100   7  main.c
+  855     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\24HJ128GP502.h
+  163     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdint.h
+  286   169  12  LT6811.c
+   40    14   1  LTC1296.c
+ 4236  1114  80  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\can-PIC24.c
+  785     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\can-PIC24.h
+----- -----
+ 6595  1397 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     16   0    2             @delay_ms1
+0     72   0    6             @SPI_XFER_1
+0     66   0    0   245  1.8  START_ADC_VOLTAGES
+ Inline        45  5259  7.5  READ_VOLTAGES
+0    374   2    0             @const818
+ Inline        34  8558 11.0  BLANCEO
+0   1234   5    0             @const823
+0   1234   5    0             @const826
+0    160   1   13 40703  6.9  ADC_LTC1296
+0    322   1    0  1479  3.4  can_init
+0     60   0    0   262  2.3  can_set_baud
+0     28   0    3    83  2.9  can_set_mode
+0    174   1   14   721  7.2  can_set_id
+0    146   1    1   458  3.8  can_set_buffer_size
+0     46   0    7   155  3.6  can_enable_filter
+0    344   2    2  1406  4.9  can_associate_filter_to_buffer
+0    710   3   26  4530 13.4  can_putd
+ Inline        22 13280 11.4  can_getd
+0    130   1   15   698  7.2  can_get_id
+0    224   1    1  1205  5.4  can_enable_b_transfer
+0     56   0    0   287  3.3  can_config_DMA
+0     24   0    8   136  3.1  can_enable_interrupts
+0     38   0    0    17  1.3  timer2_isr
+0     32   0    0     5  1.0  can1_isr
+0   1318   6    3   603  5.7  c1rx_isr
+0   3982  18    5  4951 10.4  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               21
+    Statements              1397
+    Comments                1310
+    Volume (V)              112079
+    Difficulty (D)          120.2
+    Effort to implement (E) 13470732
+    Time to implement (T)   207 hours, 53 minutes
+    Est Delivered Bugs (B)  19
+    Cyclomatic Complexity   160
+    Maintainability (MI)    40
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-001FE   508  0  
+00200-0FFFE  10790  54234  
+10000-157FE     0  22528  
+
+
+

@@ -1,0 +1,30 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: AMS_Slave.GBR   08/12/2021  19:12:26
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTO                Top Overlay                             
+.GTP                Top Paste                               
+.GTS                Top Solder                              
+.GTL                Top Layer                               
+.GBL                Bottom Layer                            
+.GBS                Bottom Solder                           
+.GBP                Bottom Paste                            
+.GBO                Bottom Overlay                          
+.GM1                Mechanical 1                            
+.GM2                Assembly Top                            
+.GM3                Assembly Bottom                         
+.GM5                Courtyard Top                           
+.GM6                Courtyard Bottom                        
+.GM7                3D Body Top                             
+.GM8                3D Body Bottom                          
+.GM11               Mechanical 11                           
+.GM13               Mechanical 13                           
+.GM15               Mechanical 15                           
+.GKO                Keep-Out Layer                          
+.1                  Dielectric 1                            
+.GML                Multi-Layer                             
+------------------------------------------------------------------------------------------
