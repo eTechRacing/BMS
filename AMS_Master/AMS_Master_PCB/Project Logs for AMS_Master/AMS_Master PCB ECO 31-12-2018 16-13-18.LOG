@@ -1,0 +1,8 @@
+Added Component: Designator=F2(437 Series)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_437a_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Littlefuse"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=F2-1
+Added Pin To Net: NetName=NetF2_2 Pin=F2-2
+Added Member To Class: ClassName=AMS_supply Member=Component F2 63 V, 1A
