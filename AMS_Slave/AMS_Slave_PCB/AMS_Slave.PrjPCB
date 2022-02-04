@@ -123,40 +123,6 @@ GenerateClassCluster=0
 DocumentUniqueId=VGCYALFE
 
 [Document6]
-DocumentPath=AMS_Slave.PCBDwf
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document7]
-DocumentPath=AMS_Slave.OutJob
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document8]
 DocumentPath=CAMtastic1.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -173,7 +139,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document7]
 DocumentPath=CAMtastic2.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -189,122 +155,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
-
-[GeneratedDocument1]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave-BoardEdgeRout.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.1
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.DRL
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GBL
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GBO
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GBP
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GBS
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GKO
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GM1
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GM2
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GM3
-DItemRevisionGUID=
-
-[GeneratedDocument14]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GM5
-DItemRevisionGUID=
-
-[GeneratedDocument15]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GM6
-DItemRevisionGUID=
-
-[GeneratedDocument16]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GM7
-DItemRevisionGUID=
-
-[GeneratedDocument17]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GM8
-DItemRevisionGUID=
-
-[GeneratedDocument18]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GM11
-DItemRevisionGUID=
-
-[GeneratedDocument19]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GM13
-DItemRevisionGUID=
-
-[GeneratedDocument20]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GM15
-DItemRevisionGUID=
-
-[GeneratedDocument21]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GML
-DItemRevisionGUID=
-
-[GeneratedDocument22]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument23]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument24]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GTP
-DItemRevisionGUID=
-
-[GeneratedDocument25]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument26]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument27]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.REP
-DItemRevisionGUID=
-
-[GeneratedDocument28]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument29]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.TXT
-DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources
