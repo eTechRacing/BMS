@@ -1,7 +1,0 @@
-DRC Rules Export File for PCB: C:\Users\Arnau\Desktop\e-Tech Racing\Temporada 2018-2019\CHIEF\PCBs\Plaques enviades\Accumulator_DC-DC\Accumulator_DC-DC.PcbDoc
-RuleKind=Width|RuleName=Width_TS|Scope=Board|Minimum=31.50
-RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=7.87
-RuleKind=Width|RuleName=Width_LV_Supply|Scope=Board|Minimum=29.53
-RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
-RuleKind=Width|RuleName=Width|Scope=Board|Minimum=10.00
-RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
