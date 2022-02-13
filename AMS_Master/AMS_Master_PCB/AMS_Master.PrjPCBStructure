@@ -5,8 +5,3 @@ Record=SheetSymbol|SourceDocument=AMS_Master.SchDoc|Designator=MCU|SchDesignator
 Record=SheetSymbol|SourceDocument=AMS_Master.SchDoc|Designator=Programming_UART|SchDesignator=Programming_UART|FileName=[4] Programming_UART.SchDoc|SheetNumber= |SymbolType=Normal|RawFileName=[4] Programming_UART.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=AMS_Master.SchDoc|Designator=Relays_Interlock|SchDesignator=Relays_Interlock|FileName=[5] Relays_Interlock.SchDoc|SheetNumber= |SymbolType=Normal|RawFileName=[5] Relays_Interlock.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=AMS_Master.SchDoc|Designator=Supply|SchDesignator=Supply|FileName=[1] Supply.SchDoc|SheetNumber= |SymbolType=Normal|RawFileName=[1] Supply.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=NoMainPathDocument|SourceDocument=AMS_Master.SchDoc|FileName=AMS_CAN.SchDoc|SheetNumber=5
-Record=NoMainPathDocument|SourceDocument=AMS_Master.SchDoc|FileName=AMS_Control.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=AMS_Master.SchDoc|FileName=AMS_Control_2.SchDoc|SheetNumber=4
-Record=NoMainPathDocument|SourceDocument=AMS_Master.SchDoc|FileName=AMS_MCU.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=AMS_Master.SchDoc|FileName=AMS_supply.SchDoc|SheetNumber=2
