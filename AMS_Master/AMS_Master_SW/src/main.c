@@ -1076,6 +1076,7 @@ void __attribute__ ( (interrupt, no_auto_psv) ) _C2Interrupt( void )
                 current_synchronism = 1;
                 current_buffer[0] = can2_getdata(rbuffer_internal,0);
                 current_buffer[1] = can2_getdata(rbuffer_internal,1);
+                current = current_buffer[0]&current_buffer[1]>>8;
                 break;
         }
         
