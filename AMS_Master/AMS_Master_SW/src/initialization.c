@@ -4,7 +4,6 @@
 #include "../inc/ecan2_config.h"
 
 void initialization ( void ) {
-
     ANSELA = 0; // Port A - digital
     ANSELB = 0; // Port B - digital
     ANSELC = 0; // Port C - digital
