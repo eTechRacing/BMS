@@ -1,13 +1,8 @@
-#ifndef _MAIN_
-#define	_MAIN_
-
-
 #include <xc.h> // include processor files - each processor file is guarded.  
 #include <stdint.h>
 #include "ecan1_config.h"
 #include "ecan2_config.h"
 #include "common.h"
-
 
 // *****************************************************************************
 //                              FUSES
@@ -17,7 +12,7 @@
 #pragma config JTAGEN = OFF         // JTAG Enable bit (JTAG is disabled)
 
 // FPOR
-//#pragma config BOREN = ON         //*SOLO dsPIC256 - Brown-out Reset (BOR) Detection Enable bit (BOR is enabled)
+//#pragma config BOREN = ON           //*SOLO DSPIC256 - Brown-out Reset (BOR) Detection Enable bit (BOR is enabled)
 #pragma config ALTI2C1 = ON         // Alternate I2C1 pins (I2C1 mapped to SDA1/SCL1 pins)
 #pragma config ALTI2C2 = OFF        // Alternate I2C2 pins (I2C2 mapped to SDA2/SCL2 pins)
 #pragma config WDTWIN = WIN25       // Watchdog Window Select bits (WDT Window is 25% of WDT period)
@@ -37,7 +32,7 @@
 
 // FOSCSEL
 #pragma config FNOSC = PRI          // Oscillator Source Selection (Internal Fast RC (FRC))
-//#pragma config PWMLOCK = ON       //*SOLO dsPIC256 - PWM Lock Enable bit (Certain PWM registers may only be written after key sequence)
+//#pragma config PWMLOCK = ON         //*SOLO DSPIC256 - PWM Lock Enable bit (Certain PWM registers may only be written after key sequence)
 #pragma config IESO = OFF           // Two-speed Oscillator Start-up Enable bit (Start up with user-selected oscillator source)
 
 // FGS
@@ -116,6 +111,3 @@ long Calibrate_ADC_LTC2400(void);
 
 //-----------------------------FORNT------------------------------------
 void CANCLEAN(void);
-
-
-#endif
