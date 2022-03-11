@@ -37,9 +37,9 @@ D47   RECTANGULAR        72.961      72.961       0.000 FLASH       0.000
 D48   ROUNDED            68.000      68.000       0.000 FLASH       0.000
 D49   RECTANGULAR        68.000      68.000       0.000 FLASH     180.000
 D50   ROUNDED            76.898      76.898       0.000 FLASH       0.000
-D51   ROUNDED            35.559      35.559       0.000 FLASH       0.000
-D52   ROUNDED            39.496      39.496       0.000 FLASH       0.000
-D53   ROUNDED            31.622      31.622       0.000 FLASH       0.000
+D51   ROUNDED            39.496      39.496       0.000 FLASH       0.000
+D52   ROUNDED            31.622      31.622       0.000 FLASH       0.000
+D53   ROUNDED            35.559      35.559       0.000 FLASH       0.000
 D54   ROUNDED           236.220     236.220       0.000 FLASH       0.000
 D55   ROUNDED            62.992      62.992       0.000 FLASH       0.000
 D56   RECTANGULAR        62.992      62.992       0.000 FLASH     180.000
@@ -48,9 +48,9 @@ D58   RECTANGULAR        64.961      64.961       0.000 FLASH       0.000
 D59   ROUNDED            60.000      60.000       0.000 FLASH       0.000
 D60   RECTANGULAR        60.000      60.000       0.000 FLASH     180.000
 D61   ROUNDED            68.898      68.898       0.000 FLASH       0.000
-D62   ROUNDED            27.559      27.559       0.000 FLASH       0.000
-D63   ROUNDED            31.496      31.496       0.000 FLASH       0.000
-D64   ROUNDED            23.622      23.622       0.000 FLASH       0.000
+D62   ROUNDED            31.496      31.496       0.000 FLASH       0.000
+D63   ROUNDED            23.622      23.622       0.000 FLASH       0.000
+D64   ROUNDED            27.559      27.559       0.000 FLASH       0.000
 D65   RECTANGULAR        55.118      39.370       0.000 FLASH      90.000
 D66   RECTANGULAR        23.622      41.339       0.000 FLASH     270.000
 D67   RECTANGULAR        70.866      39.370       0.000 FLASH     270.000

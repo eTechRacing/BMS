@@ -1,4 +1,4 @@
-DRC Rules Export File for PCB: C:\Users\dwegg\Google Drive\e-Tech\PCBs\AMS_Slave\AMS_Slave.PcbDoc
+DRC Rules Export File for PCB: C:\Users\Arnau\Desktop\e-Tech Racing\Temporada 2018-2019\CHIEF\PCBs\Plaques enviades\AMS_Slave\AMS_Slave.PcbDoc
 RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
 RuleKind=Width|RuleName=Width|Scope=Board|Minimum=3.94
 RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
