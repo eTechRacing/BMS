@@ -211,18 +211,18 @@ ROM Allocation:
 0027D0  READ_VOLTAGES
 
 Project Directory:
-    C:\Users\dwegg\Google Drive\e-Tech\BMS\Slave_Algorithm\src\
+    F:\Electrons\Electronics\BMS\AMS_Slave\AMS_Slave_SW\src\
 
 Project Files:
-    main.c                                                  [02-feb.-22 15:07  CRC=EA386004]
-    ..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\24HJ128GP502.h [12-nov.-13 14:36  CRC=9D426FAD]
-    ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdint.h [30-dic.-08 09:01  CRC=9F7F640F]
-    LT6811.c                                                [25-mar.-19 17:37  CRC=8403E1EC]
-    LTC1296.c                                               [12-abr.-19 11:12  CRC=CA175AE4]
-    ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\can-PIC24.c [31-jul.-13 11:53  CRC=41315D03]
-    ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\can-PIC24.h [31-jul.-13 11:52  CRC=85EB2643]
+    main.c                                                  [25-mar.-22 17:46  CRC=AB63292B]
+    C:\Program Files (x86)\PICC\Devices\24HJ128GP502.h      [12-nov.-13 14:36  CRC=9D426FAD]
+    C:\Program Files (x86)\PICC\Drivers\stdint.h            [30-dic.-08 09:01  CRC=9F7F640F]
+    LT6811.c                                                [25-mar.-22 17:45  CRC=8403E1EC]
+    LTC1296.c                                               [25-mar.-22 17:45  CRC=CA175AE4]
+    C:\Program Files (x86)\PICC\Drivers\can-PIC24.c         [31-jul.-13 11:53  CRC=41315D03]
+    C:\Program Files (x86)\PICC\Drivers\can-PIC24.h         [31-jul.-13 11:52  CRC=85EB2643]
 
-Source signature=C21D1A19
+Source signature=8347E340
 
 Units:
     main (main)

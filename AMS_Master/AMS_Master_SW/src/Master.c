@@ -158,6 +158,7 @@ void __attribute__ ( (interrupt, no_auto_psv) ) _C1Interrupt( void )
             if ( AIRs_request == 6 )
             {
                 do_precharge = 1;
+                close_AIRs = 0;
                 LED1 = 1;
             }
             else
@@ -229,10 +230,8 @@ void __attribute__ ( (interrupt, no_auto_psv) ) _C2Interrupt( void )
             // Slave 0 voltages
             case 0x82:
                 tt_slave0 = 0;
-//                voltage[0] = can2_getdata(rbuffer_internal,0);
-//                voltage[1] = can2_getdata(rbuffer_internal,1);
-                voltage[0] = voltage[138];
-                voltage[1] = voltage[48];
+                voltage[0] = can2_getdata(rbuffer_internal,0);
+                voltage[1] = can2_getdata(rbuffer_internal,1);
                 voltage[2] = can2_getdata(rbuffer_internal,2);
                 voltage[3] = can2_getdata(rbuffer_internal,3);
                 break;
@@ -1037,6 +1036,7 @@ void external_CAN_management ( void )
             AIRplus_Control = 0;
             AIRplus_state = 0;
             LED1 = 1;
+            close_AIRs = 0;
             break;
         case 1 :
             AIRs_state = 3;
@@ -1058,6 +1058,7 @@ void external_CAN_management ( void )
             AIRplus_state = 0;
             sequence_state = 0;
             LED1 = 0;
+            close_AIRs = 0;
             break;
     }        
 }
