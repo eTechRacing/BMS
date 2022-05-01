@@ -82,7 +82,7 @@ int SoC_from_OCV(int OCV){
             break;
         }
     }
-    
+
     dOCV = OCVs[i+1] - OCVs[i];
     dSoC = SoCs[i+1] - SoCs[i];
     return SoCs[i] + (OCV - OCVs[i]) * dSoC / dOCV;

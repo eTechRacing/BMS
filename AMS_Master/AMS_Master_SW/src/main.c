@@ -47,7 +47,7 @@ El programa está estructurado de la siguiente manera:
     - Interrupción de CAN 2 (AMS CAN)
     - ? (DMAs)
     - ? (CAN Clean)
-    - Definición de external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control)
+    - Definición de external_CAN_management()
     - Definición de initialization()
     - main
         - Asignación inicial de variables
@@ -1191,7 +1191,7 @@ int main( void ) {
     CAN_count = 0;
     charge = 0;
     Error_LED = 0;
-    LED1 = 0;
+    LED1 = 1;
     LED2 = 0;
     
 
@@ -1201,7 +1201,7 @@ int main( void ) {
 
     while ( 1 )
     {
-        external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+        external_CAN_management();
         
         if( CAN_alive > 5000 )
         {
@@ -1247,7 +1247,7 @@ int main( void ) {
             }
              
             
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             // Calculate maximum and minumum cell, the total voltage and check the SOA
             max_cell_voltage_actual = max_cell_voltage(voltage);
@@ -1256,7 +1256,7 @@ int main( void ) {
             
             // lacks voltage disconnection detection
             
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             // SoC calculation [Couloumb Counting]
 
@@ -1264,7 +1264,7 @@ int main( void ) {
 
             overvoltage = overvoltage_check(max_cell_voltage_actual, max_OK_voltage);
             
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             if( min_cell_voltage_actual < min_OK_voltage ) //Checks the minimum voltage allowed.
             {
@@ -1272,7 +1272,7 @@ int main( void ) {
                 undervoltage = 0; // Undervoltage flag ON
             }
             
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             if( shutdown_signal == 1 )
             {
@@ -1288,7 +1288,7 @@ int main( void ) {
                 voltage_NOK = 0;
             }
             
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             if( tt_divide >= 200 )
             {
@@ -1305,7 +1305,7 @@ int main( void ) {
                 }
             }
             
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
 
             max_cell_temperature_actual = max_cell_temperature(temperature);
             min_cell_temperature_actual = min_cell_temperature(temperature);
@@ -1314,11 +1314,11 @@ int main( void ) {
             min_onboard_temperature_actual = min_onboard_temperature(temperature);
             avg_onboard_temperature_actual = avg_onboard_temperature(temperature);
             
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             fans_state = fans_control(fans_temperature, max_cell_temperature_actual, Fans1_Control, Fans2_Control);   
     
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             if ( max_cell_temperature_actual > max_OK_temperature ) //Check if any cell is over the maximum allowed
             {
@@ -1326,7 +1326,7 @@ int main( void ) {
                 overtemperature = 0; // Overtemperature flag ON
             } 
             
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             if ( min_cell_temperature_actual < min_OK_temperature ) //Check if any NTC is disconected
             {
@@ -1334,7 +1334,7 @@ int main( void ) {
                 undertemperature = 0; // Undertemperature flag ON
             }
             
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             if( shutdown_signal == 1 )
             {
@@ -1350,7 +1350,7 @@ int main( void ) {
                 temperature_NOK = 0;
             }
             
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
 //      current = ((current_buffer[0]>>16) + current_buffer[1]/(2*6800/3600) // SoC[k+1] = SoC[k]-int[1])-350000;
             
@@ -1365,7 +1365,7 @@ int main( void ) {
 //        current_disconnection=1;
 //      }
             
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             if ( current > max_OK_current ) //Check the minimum current.
             {
@@ -1396,7 +1396,7 @@ int main( void ) {
                 current_NOK = 0;
             }
             
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
            
             if( Interlock_Monitoring == 1 ) //Check the interlock state
             {
@@ -1407,7 +1407,7 @@ int main( void ) {
                 interlock_state = 0;
             }
              
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
            
             if( tt_slave0 > 750 || tt_slave1 > 750 || tt_slave2 > 750 || tt_slave3 > 750 || tt_slave4 > 750 || tt_slave5 > 750 || tt_slave6 > 750 || tt_slave7 > 750 || tt_slave8 > 750 || tt_slave9 > 750 || tt_slave10 > 750 || tt_slave11 > 750 || tt_slave12 > 750 || tt_slave13 > 750 || tt_slave14 > 750 )
             {
@@ -1420,7 +1420,7 @@ int main( void ) {
                 CAN_NOK = 1;
             }
            
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
            
             if ( tt_voltage > 375 || tt_temperature > 875 || tt_current > 375 || CAN_disconnection == 0 ) //If timing of voltage, temperature and current has expired, BMS_OK is NOK and open precharge relay and AIRs.
             {
@@ -1435,7 +1435,7 @@ int main( void ) {
                 Error_LED = 0;
             }
            
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             if( interlock_state == 1 )
             {
@@ -1456,7 +1456,7 @@ int main( void ) {
                 secuence_0 = 1;
             }
             
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             if( tt_shutdown > 75 )
             {
@@ -1489,7 +1489,7 @@ int main( void ) {
                 Error_LED = 0;
             }
            
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             balancing_state = balancing_0 | balancing_1 | balancing_2 | balancing_3 | balancing_4 | balancing_5 | balancing_6 | balancing_7 | balancing_8 | balancing_9 | balancing_10 | balancing_11 | balancing_12 | balancing_13 | balancing_14;
             
@@ -1509,7 +1509,7 @@ int main( void ) {
 //        v_min_master_aux=v_min_master;
 //        balancing_enable=1;
 //      }
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             tt_buffer = 0;
             while(C2TR01CONbits.TXREQ0) 
@@ -1532,7 +1532,7 @@ int main( void ) {
             can2_writebytes (5, 7, 0xB3,sfr1,sfr2,sfr3,0,0,0,0,0);
             C2TR45CONbits.TXREQ5 = 1;
             
-            external_CAN_management(AIRminus_Control, AIRplus_Control,  Precharge_Control);
+            external_CAN_management();
             
             if ( CAN_count_int == 1 || CAN_count_int == 3 || CAN_count_int == 5 || CAN_count_int == 7 )
             {

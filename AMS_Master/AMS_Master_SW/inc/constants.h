@@ -5,9 +5,9 @@
 //                          Definición de constantes                             //
 // ***************************************************************************** //
 
-int max_OK_voltage = 4195, min_OK_voltage = 3100;
+int max_OK_voltage = 4195, min_OK_voltage = 3000;
 // Voltajes máximos y mínimos que activan Overvoltage o Undervoltage
-// respectivamente. En [mV]
+// respectivamente [mV]
 
 int ns = 140, np = 2;
 // Número de celdas en serie [ad]
@@ -18,7 +18,16 @@ int max_OK_temperature = 600, min_OK_temperature = 5;
 
 long max_OK_current = 190000;
 // Máxima corriente permitida a partir de la potencia máxima normativa 
-// (80 kW / 420 V = 190 A), en [mA]
+// (80 kW / 420 V ~= 190 A),  [mA]
+
+long max_discharge_current = 165000, max_regen_current = -100000;
+// Máxima corriente de descarga y m�xima corriente de recarga con frenada regenerativa [mA]
+
+int limitation_temperature = 500;
+// Temperatura a partir de la cual se empieza a limitar corriente [�C * 10]
+int initial_limitation_factor = 30;
+// Factor de reducci�n inicial de corriente [%]
+
 
 int max_charging_voltage = 5880, divide_current_voltage = 4195, max_charging_current = 25;
 // Máximo voltaje al que se puede cargar el Accumulator [V * 10]
