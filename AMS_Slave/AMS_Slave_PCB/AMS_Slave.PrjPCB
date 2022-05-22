@@ -49,125 +49,6 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=AMS_MCU.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=0
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=KWWVQABX
-
-[Document2]
-DocumentPath=AMS_balancing.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=BTEYAWYW
-
-[Document3]
-DocumentPath=AMS_supply.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=2
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=URFVRKJS
-
-[Document4]
-DocumentPath=AMS_temperature.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=3
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=NVXQTNIF
-
-[Document5]
-DocumentPath=AMS_Slave.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=VGCYALFE
-
-[Document6]
-DocumentPath=CAMtastic1.Cam
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document7]
-DocumentPath=CAMtastic2.Cam
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document8]
 DocumentPath=AMS_Slave.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -184,7 +65,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BOQHCEMG
 
-[Document9]
+[Document2]
 DocumentPath=[1] Supply.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -201,7 +82,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NEMZFNNK
 
-[Document10]
+[Document3]
 DocumentPath=[2] MCU.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -218,109 +99,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HYNAYBHO
 
-[Document11]
-DocumentPath=[3] CAN.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=XHGFWUFR
-
-[Document12]
-DocumentPath=[4] Programming_UART.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=IHANBCXW
-
-[Document13]
-DocumentPath=[5] Temperature_readings.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=ZQPRCYJD
-
-[Document14]
-DocumentPath=[6] Balancing.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=ZYDFLTKM
-
-[Document15]
-DocumentPath=[7] Cell_balancing.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=PMVEPKRU
-
-[Document16]
-DocumentPath=AMS_Slave.Harness
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document17]
+[Document4]
 DocumentPath=[2] MCU.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -337,7 +116,109 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document5]
+DocumentPath=[3] CAN.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=XHGFWUFR
+
+[Document6]
+DocumentPath=[4] Programming_UART.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=IHANBCXW
+
+[Document7]
+DocumentPath=[5] Temperature_readings.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=ZQPRCYJD
+
+[Document8]
+DocumentPath=[6] Balancing.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=ZYDFLTKM
+
+[Document9]
+DocumentPath=[7] Cell_balancing.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=PMVEPKRU
+
+[Document10]
+DocumentPath=AMS_Slave.Harness
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document11]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Electromechanical.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -354,7 +235,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document19]
+[Document12]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\e-Tech_Racing.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -371,7 +252,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document20]
+[Document13]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Filter components.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -388,7 +269,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document21]
+[Document14]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Integrated circuits.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -403,9 +284,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=QOXOPYNW
 
-[Document22]
+[Document15]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Passives.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -420,9 +301,9 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=JBBPRFAR
 
-[Document23]
+[Document16]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Semiconductor.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -439,7 +320,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document24]
+[Document17]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Sensors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -456,7 +337,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document25]
+[Document18]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Electromechanical.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -473,7 +354,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document26]
+[Document19]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\e-Tech_Racing.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -490,7 +371,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document27]
+[Document20]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Filter components.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -507,7 +388,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document28]
+[Document21]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Integrated circuits.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -524,7 +405,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document29]
+[Document22]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Passives.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -541,7 +422,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document30]
+[Document23]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Semiconductor.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -558,7 +439,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document31]
+[Document24]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Sensors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -574,6 +455,34 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Parameter1]
+Name=Version
+Value=3.0
+
+[Parameter2]
+Name=Project
+Value=AMS_Slave
+
+[Parameter3]
+Name=DesignerName
+Value=David Redondo
+
+[Parameter4]
+Name=DesignerMail
+Value=dredondovinolo@gmail.com
+
+[Parameter5]
+Name=DesignedByURL
+Value=e-techracing.es
+
+[Parameter6]
+Name=Department
+Value=Accumulator-BMS
+
+[Parameter7]
+Name=Company
+Value=e-Tech Racing
 
 [Configuration1]
 Name=Sources
@@ -874,7 +783,83 @@ OutputName7=Solder/Paste Mask Prints
 OutputDocumentPath7=
 OutputVariantName7=
 OutputDefault7=0
-PageOptions7=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+PageOptions7=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=3.45|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+Configuration7_Name1=ForceUpdateSettings
+Configuration7_Item1=False
+Configuration7_Name2=OutputConfigurationParameter1
+Configuration7_Item2=DesignatorDisplayMode=Physical|PrintArea=DesignExtent|PrintAreaLowerLeftCornerX=0|PrintAreaLowerLeftCornerY=0|PrintAreaUpperRightCornerX=0|PrintAreaUpperRightCornerY=0|Record=PcbPrintView|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name3=OutputConfigurationParameter2
+Configuration7_Item3=IncludeBoardCutouts=False|IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=0|Mirror=False|Name=Top Paste Mask Print|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name4=OutputConfigurationParameter3
+Configuration7_Item4=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopPaste|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name5=OutputConfigurationParameter4
+Configuration7_Item5=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical1|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name6=OutputConfigurationParameter5
+Configuration7_Item6=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical2|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name7=OutputConfigurationParameter6
+Configuration7_Item7=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical5|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name8=OutputConfigurationParameter7
+Configuration7_Item8=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical7|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name9=OutputConfigurationParameter8
+Configuration7_Item9=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical11|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name10=OutputConfigurationParameter9
+Configuration7_Item10=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical13|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name11=OutputConfigurationParameter10
+Configuration7_Item11=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical15|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name12=OutputConfigurationParameter11
+Configuration7_Item12=IncludeBoardCutouts=False|IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=1|Mirror=False|Name=Bottom Paste Mask Print|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name13=OutputConfigurationParameter12
+Configuration7_Item13=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=BottomPaste|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name14=OutputConfigurationParameter13
+Configuration7_Item14=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical1|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name15=OutputConfigurationParameter14
+Configuration7_Item15=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical2|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name16=OutputConfigurationParameter15
+Configuration7_Item16=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical5|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name17=OutputConfigurationParameter16
+Configuration7_Item17=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical7|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name18=OutputConfigurationParameter17
+Configuration7_Item18=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical11|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name19=OutputConfigurationParameter18
+Configuration7_Item19=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical13|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name20=OutputConfigurationParameter19
+Configuration7_Item20=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical15|Polygon=Full|PrintOutIndex=1|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name21=OutputConfigurationParameter20
+Configuration7_Item21=IncludeBoardCutouts=False|IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=2|Mirror=False|Name=Top Solder Mask Print|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name22=OutputConfigurationParameter21
+Configuration7_Item22=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopSolder|Polygon=Full|PrintOutIndex=2|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name23=OutputConfigurationParameter22
+Configuration7_Item23=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical1|Polygon=Full|PrintOutIndex=2|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name24=OutputConfigurationParameter23
+Configuration7_Item24=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical2|Polygon=Full|PrintOutIndex=2|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name25=OutputConfigurationParameter24
+Configuration7_Item25=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical5|Polygon=Full|PrintOutIndex=2|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name26=OutputConfigurationParameter25
+Configuration7_Item26=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical7|Polygon=Full|PrintOutIndex=2|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name27=OutputConfigurationParameter26
+Configuration7_Item27=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical11|Polygon=Full|PrintOutIndex=2|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name28=OutputConfigurationParameter27
+Configuration7_Item28=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical13|Polygon=Full|PrintOutIndex=2|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name29=OutputConfigurationParameter28
+Configuration7_Item29=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical15|Polygon=Full|PrintOutIndex=2|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name30=OutputConfigurationParameter29
+Configuration7_Item30=IncludeBoardCutouts=False|IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=3|Mirror=False|Name=Bottom Solder Mask Print|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=False|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name31=OutputConfigurationParameter30
+Configuration7_Item31=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=BottomSolder|Polygon=Full|PrintOutIndex=3|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name32=OutputConfigurationParameter31
+Configuration7_Item32=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical1|Polygon=Full|PrintOutIndex=3|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name33=OutputConfigurationParameter32
+Configuration7_Item33=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical2|Polygon=Full|PrintOutIndex=3|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name34=OutputConfigurationParameter33
+Configuration7_Item34=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical5|Polygon=Full|PrintOutIndex=3|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name35=OutputConfigurationParameter34
+Configuration7_Item35=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical7|Polygon=Full|PrintOutIndex=3|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name36=OutputConfigurationParameter35
+Configuration7_Item36=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical11|Polygon=Full|PrintOutIndex=3|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name37=OutputConfigurationParameter36
+Configuration7_Item37=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical13|Polygon=Full|PrintOutIndex=3|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
+Configuration7_Name38=OutputConfigurationParameter37
+Configuration7_Item38=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical15|Polygon=Full|PrintOutIndex=3|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PcbDoc
 OutputType8=NC Drill
 OutputName8=NC Drill Files
 OutputDocumentPath8=

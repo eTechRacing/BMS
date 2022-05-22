@@ -25,12 +25,14 @@ NameNetsHierarchically=0
 PowerPortNamesTakePriority=0
 AutoSheetNumbering=0
 AutoCrossReferences=0
+NewIndexingOfSheetSymbols=0
 PushECOToAnnotationFile=1
 DItemRevisionGUID=
 ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
+IsVirtualBomDocumentRemoved=0
 OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
@@ -132,23 +134,6 @@ GenerateClassCluster=0
 DocumentUniqueId=WPQIVLQI
 
 [Document6]
-DocumentPath=..\..\..\..\Componentes e-Tech Altium\Librerías_e-Tech\BMS.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document7]
 DocumentPath=[2] Output.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1051,6 +1036,7 @@ Type122=2
 Type123=1
 Type124=1
 Type125=1
+Type126=1
 
 [ERC Connection Matrix]
 L1=NNNNNNNNNNNWNNNWW

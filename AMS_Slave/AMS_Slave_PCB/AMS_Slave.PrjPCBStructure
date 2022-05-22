@@ -17,7 +17,3 @@ Record=SheetSymbol|SourceDocument=[6] Balancing.SchDoc|Designator=Cell_9|SchDesi
 Record=SheetSymbol|SourceDocument=[6] Balancing.SchDoc|Designator=Cell_10|SchDesignator=Cell_10|FileName=[7] Cell_balancing.SchDoc|SheetNumber= |SymbolType=Normal|RawFileName=[7] Cell_balancing.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=[6] Balancing.SchDoc|Designator=Cell_11|SchDesignator=Cell_11|FileName=[7] Cell_balancing.SchDoc|SheetNumber= |SymbolType=Normal|RawFileName=[7] Cell_balancing.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
 Record=SheetSymbol|SourceDocument=[6] Balancing.SchDoc|Designator=Cell_12|SchDesignator=Cell_12|FileName=[7] Cell_balancing.SchDoc|SheetNumber= |SymbolType=Normal|RawFileName=[7] Cell_balancing.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=NoMainPathDocument|SourceDocument=AMS_Slave.SchDoc|FileName=AMS_balancing.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=AMS_Slave.SchDoc|FileName=AMS_MCU.SchDoc|SheetNumber=1
-Record=NoMainPathDocument|SourceDocument=AMS_Slave.SchDoc|FileName=AMS_supply.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=AMS_Slave.SchDoc|FileName=AMS_temperature.SchDoc|SheetNumber=4
