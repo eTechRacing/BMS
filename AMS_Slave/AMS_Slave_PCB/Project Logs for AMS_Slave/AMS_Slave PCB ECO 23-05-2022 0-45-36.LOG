@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=NetC303_2 Pin=CMC301-1
+Removed Pin From Net: NetName=NetC303_1 Pin=CMC301-2
+Removed Member From Class: ClassName=CAN Member=CMC301
+Added Pin To Net: NetName=NetC303_1 Pin=C308-2
+Added Pin To Net: NetName=NetC303_2 Pin=C309-2
+Added Pin To Net: NetName=NetC303_1 Pin=C310-1
+Added Pin To Net: NetName=NetC303_2 Pin=C310-2
+Added Pin To Net: NetName=NetC303_1 Pin=J301-1
+Added Pin To Net: NetName=NetC303_2 Pin=J301-3
+Added Pin To Net: NetName=NetC303_1 Pin=J302-1
+Added Pin To Net: NetName=NetC303_2 Pin=J302-3

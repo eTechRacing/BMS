@@ -1,0 +1,100 @@
+Add Pin To Net: Unknown Pin: Pin DCDC101-+5V
+Add Pin To Net: Unknown Pin: Pin DCDC101-GND
+Add Pin To Net: Unknown Pin: Pin DCDC101-VIN
+Add Pin To Net: Unknown Pin: Pin J301-1
+Add Pin To Net: Unknown Pin: Pin J301-2
+Add Pin To Net: Unknown Pin: Pin J301-3
+Add Pin To Net: Unknown Pin: Pin J301-4
+Add Pin To Net: Unknown Pin: Pin J302-1
+Add Pin To Net: Unknown Pin: Pin J302-2
+Add Pin To Net: Unknown Pin: Pin J302-3
+Add Pin To Net: Unknown Pin: Pin J302-4
+Add Pin To Net: Unknown Pin: Pin R801_Cell_1-1
+Add Pin To Net: Unknown Pin: Pin R801_Cell_1-2
+Add Pin To Net: Unknown Pin: Pin R801_Cell_2-1
+Add Pin To Net: Unknown Pin: Pin R801_Cell_2-2
+Add Pin To Net: Unknown Pin: Pin R801_Cell_3-1
+Add Pin To Net: Unknown Pin: Pin R801_Cell_3-2
+Add Pin To Net: Unknown Pin: Pin R801_Cell_4-1
+Add Pin To Net: Unknown Pin: Pin R801_Cell_4-2
+Add Pin To Net: Unknown Pin: Pin R801_Cell_5-1
+Add Pin To Net: Unknown Pin: Pin R801_Cell_5-2
+Add Pin To Net: Unknown Pin: Pin R801_Cell_6-1
+Add Pin To Net: Unknown Pin: Pin R801_Cell_6-2
+Add Pin To Net: Unknown Pin: Pin R801_Cell_7-1
+Add Pin To Net: Unknown Pin: Pin R801_Cell_7-2
+Add Pin To Net: Unknown Pin: Pin R801_Cell_8-1
+Add Pin To Net: Unknown Pin: Pin R801_Cell_8-2
+Add Pin To Net: Unknown Pin: Pin R801_Cell_9-1
+Add Pin To Net: Unknown Pin: Pin R801_Cell_9-2
+Add Pin To Net: Unknown Pin: Pin R801_Cell_10-1
+Add Pin To Net: Unknown Pin: Pin R801_Cell_10-2
+Add Pin To Net: Unknown Pin: Pin R801_Cell_11-1
+Add Pin To Net: Unknown Pin: Pin R801_Cell_11-2
+Add Pin To Net: Unknown Pin: Pin R801_Cell_12-1
+Add Pin To Net: Unknown Pin: Pin R801_Cell_12-2
+Add Pin To Net: Unknown Pin: Pin SW201-1
+Add Pin To Net: Unknown Pin: Pin SW201-2
+Add Pin To Net: Unknown Pin: Pin SW201-3
+Add Pin To Net: Unknown Pin: Pin SW201-4
+Add Pin To Net: Unknown Pin: Pin SW201-5
+Add Pin To Net: Unknown Pin: Pin SW201-6
+Add Pin To Net: Unknown Pin: Pin U*-1
+Add Pin To Net: Unknown Pin: Pin U*-2
+Add Pin To Net: Unknown Pin: Pin U*-3
+Add Pin To Net: Unknown Pin: Pin U*-4
+Add Pin To Net: Unknown Pin: Pin U*-5
+Add Pin To Net: Unknown Pin: Pin U*-6
+Add Pin To Net: Unknown Pin: Pin U*-7
+Add Pin To Net: Unknown Pin: Pin U*-8
+Add Pin To Net: Unknown Pin: Pin U*-9
+Add Pin To Net: Unknown Pin: Pin U*-10
+Add Pin To Net: Unknown Pin: Pin U*-11
+Add Pin To Net: Unknown Pin: Pin U*-12
+Add Pin To Net: Unknown Pin: Pin U*-13
+Add Pin To Net: Unknown Pin: Pin U*-14
+Add Pin To Net: Unknown Pin: Pin U*-15
+Add Pin To Net: Unknown Pin: Pin U*-16
+Add Pin To Net: Unknown Pin: Pin U*-17
+Add Pin To Net: Unknown Pin: Pin U*-18
+Add Pin To Net: Unknown Pin: Pin U*-19
+Add Pin To Net: Unknown Pin: Pin U*-20
+Add Pin To Net: Unknown Pin: Pin U*-21
+Add Pin To Net: Unknown Pin: Pin U*-22
+Add Pin To Net: Unknown Pin: Pin U*-23
+Add Pin To Net: Unknown Pin: Pin U*-24
+Add Pin To Net: Unknown Pin: Pin U*-25
+Add Pin To Net: Unknown Pin: Pin U*-26
+Add Pin To Net: Unknown Pin: Pin U*-30
+Add Pin To Net: Unknown Pin: Pin U*-31
+Add Pin To Net: Unknown Pin: Pin U*-34
+Add Pin To Net: Unknown Pin: Pin U*-35
+Add Pin To Net: Unknown Pin: Pin U*-36
+Add Pin To Net: Unknown Pin: Pin U*-37
+Add Pin To Net: Unknown Pin: Pin U*-39
+Add Pin To Net: Unknown Pin: Pin U*-40
+Add Pin To Net: Unknown Pin: Pin U*-41
+Add Pin To Net: Unknown Pin: Pin U*-42
+Add Pin To Net: Unknown Pin: Pin U*-43
+Add Pin To Net: Unknown Pin: Pin U*-44
+Add Pin To Net: Unknown Pin: Pin U*-45
+Add Pin To Net: Unknown Pin: Pin U*-46
+Add Pin To Net: Unknown Pin: Pin U*-47
+Add Pin To Net: Unknown Pin: Pin U*-48
+Add Class Member: Failed to add class member : Component DCDC101 173010542
+Add Class Member: Failed to add class member : Component J301 430450412
+Add Class Member: Failed to add class member : Component J302 430450412
+Add Class Member: Failed to add class member : Component R801_Cell_1 (R801) 352115RFT
+Add Class Member: Failed to add class member : Component R801_Cell_2 (R801) 352115RFT
+Add Class Member: Failed to add class member : Component R801_Cell_3 (R801) 352115RFT
+Add Class Member: Failed to add class member : Component R801_Cell_4 (R801) 352115RFT
+Add Class Member: Failed to add class member : Component R801_Cell_5 (R801) 352115RFT
+Add Class Member: Failed to add class member : Component R801_Cell_6 (R801) 352115RFT
+Add Class Member: Failed to add class member : Component R801_Cell_7 (R801) 352115RFT
+Add Class Member: Failed to add class member : Component R801_Cell_8 (R801) 352115RFT
+Add Class Member: Failed to add class member : Component R801_Cell_9 (R801) 352115RFT
+Add Class Member: Failed to add class member : Component R801_Cell_10 (R801) 352115RFT
+Add Class Member: Failed to add class member : Component R801_Cell_11 (R801) 352115RFT
+Add Class Member: Failed to add class member : Component R801_Cell_12 (R801) 352115RFT
+Add Class Member: Failed to add class member : Component SW201 428542320816
+Add Class Member: Failed to add class member : Component U* LTC6811-2

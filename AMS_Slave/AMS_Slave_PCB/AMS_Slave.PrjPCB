@@ -233,7 +233,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=AQBXIDFG
 
 [Document12]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\e-Tech_Racing.SchLib
@@ -318,7 +318,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=HAZZYXZW
 
 [Document17]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Sensors.SchLib
@@ -352,7 +352,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=YXUHXBHX
 
 [Document19]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\e-Tech_Racing.PcbLib
@@ -420,7 +420,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=DUCJCCLL
 
 [Document23]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Semiconductor.PcbLib
@@ -437,7 +437,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=ASRCVDDI
 
 [Document24]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Sensors.PcbLib
@@ -455,6 +455,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
+
+[Document25]
+DocumentPath=AMS_Slave.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=QBMEWSCH
 
 [Parameter1]
 Name=Version
