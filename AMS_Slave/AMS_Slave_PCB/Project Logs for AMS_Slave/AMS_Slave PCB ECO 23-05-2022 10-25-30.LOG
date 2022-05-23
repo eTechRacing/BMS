@@ -1,0 +1,261 @@
+Change Component Designator: OldDesignator=R205 NewDesignator=R205
+Added Component: Designator=TP203(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP223(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP101(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP102(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP103(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP104(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP105(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP106(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP201(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP202(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP204(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP205(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP206(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP207(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP207(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP208(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP209(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP210(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP211(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP212(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP213(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP214(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP215(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP216(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP217(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP218(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP219(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP220(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP221(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP222(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP224(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP225(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP226(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP227(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP228(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP229(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP230(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP301(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP302(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP303(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP304(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP305(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP306(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP307(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP308(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP309(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP501(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP502(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP503(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP504(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP505(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP506(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP507(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP508(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP509(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP510(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP511(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP512(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP601(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP602(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP603(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP604(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP605(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ROT0 Pin=TP203-1
+Added Pin To Net: NetName=VCC Pin=TP223-1
+Added Pin To Net: NetName=GND_Slave Pin=C101-1
+Added Pin To Net: NetName=GND_Slave Pin=C102-2
+Added Pin To Net: NetName=GND_Slave Pin=C103-2
+Added Pin To Net: NetName=GND_Slave Pin=C104-2
+Added Pin To Net: NetName=GND_Slave Pin=C105-2
+Added Pin To Net: NetName=GND_Slave Pin=C106-2
+Added Pin To Net: NetName=GND_Slave Pin=D101-1
+Added Pin To Net: NetName=GND_Slave Pin=DCDC101-2
+Added Pin To Net: NetName=NetC602_2 Pin=TP101-1
+Added Pin To Net: NetName=NetC101_2 Pin=TP102-1
+Added Pin To Net: NetName=+5 Pin=TP103-1
+Added Pin To Net: NetName=VCC Pin=TP104-1
+Added Pin To Net: NetName=GND_Slave Pin=TP105-1
+Added Pin To Net: NetName=GND_Slave Pin=TP106-1
+Added Pin To Net: NetName=MCLR Pin=TP201-1
+Added Pin To Net: NetName=CS-LTC6811 Pin=TP202-1
+Added Pin To Net: NetName=PGD Pin=TP204-1
+Added Pin To Net: NetName=PGC Pin=TP205-1
+Added Pin To Net: NetName=Error_LED Pin=TP206-1
+Added Pin To Net: NetName=OSC1 Pin=TP207-1
+Added Pin To Net: NetName=ROT1 Pin=TP207-1
+Added Pin To Net: NetName=OSC2 Pin=TP208-1
+Added Pin To Net: NetName=SSO-LTC1296 Pin=TP209-1
+Added Pin To Net: NetName=CS-LTC1296 Pin=TP210-1
+Added Pin To Net: NetName=SCK Pin=TP211-1
+Added Pin To Net: NetName=AMS_CAN_TXD Pin=TP212-1
+Added Pin To Net: NetName=AMS_CAN_RXD Pin=TP213-1
+Added Pin To Net: NetName=LED1 Pin=TP214-1
+Added Pin To Net: NetName=LED2 Pin=TP215-1
+Added Pin To Net: NetName=UART_TX Pin=TP216-1
+Added Pin To Net: NetName=UART_RX Pin=TP217-1
+Added Pin To Net: NetName=ROT2 Pin=TP218-1
+Added Pin To Net: NetName=ROT3 Pin=TP219-1
+Added Pin To Net: NetName=SDI Pin=TP220-1
+Added Pin To Net: NetName=SDO Pin=TP221-1
+Added Pin To Net: NetName=GND_Slave Pin=TP222-1
+Added Pin To Net: NetName=VCC Pin=TP224-1
+Added Pin To Net: NetName=GND_Slave Pin=TP225-1
+Added Pin To Net: NetName=NetC203_2 Pin=TP226-1
+Added Pin To Net: NetName=GND_Slave Pin=TP227-1
+Added Pin To Net: NetName=VCC Pin=TP228-1
+Added Pin To Net: NetName=GND_Slave Pin=TP229-1
+Added Pin To Net: NetName=+5 Pin=TP230-1
+Added Pin To Net: NetName=NetC303_2 Pin=TP301-1
+Added Pin To Net: NetName=NetC303_1 Pin=TP302-1
+Added Pin To Net: NetName=NetC305_2 Pin=TP303-1
+Added Pin To Net: NetName=NetC304_2 Pin=TP304-1
+Added Pin To Net: NetName=GND Pin=TP305-1
+Added Pin To Net: NetName=AMS_CAN_RXD Pin=TP306-1
+Added Pin To Net: NetName=AMS_CAN_TXD Pin=TP307-1
+Added Pin To Net: NetName=VCC Pin=TP308-1
+Added Pin To Net: NetName=GND_Slave Pin=TP309-1
+Added Pin To Net: NetName=NetC508_1 Pin=TP501-1
+Added Pin To Net: NetName=NetC507_1 Pin=TP502-1
+Added Pin To Net: NetName=NetC506_1 Pin=TP503-1
+Added Pin To Net: NetName=NetC505_1 Pin=TP504-1
+Added Pin To Net: NetName=NetC501_1 Pin=TP505-1
+Added Pin To Net: NetName=NetC502_1 Pin=TP506-1
+Added Pin To Net: NetName=NetC503_1 Pin=TP507-1
+Added Pin To Net: NetName=NetC504_1 Pin=TP508-1
+Added Pin To Net: NetName=VCC Pin=TP509-1
+Added Pin To Net: NetName=GND_Slave Pin=TP510-1
+Added Pin To Net: NetName=GND_Slave Pin=TP512-1
+Added Pin To Net: NetName=Cell_1 Pin=TP601-1
+Added Pin To Net: NetName=C12 Pin=TP602-1
+Added Pin To Net: NetName=NetC602_2 Pin=TP603-1
+Added Pin To Net: NetName=+5 Pin=TP604-1
+Added Pin To Net: NetName=GND_Slave Pin=TP605-1
+Added Pin To Net: NetName=GND_Slave Pin=U102-1
+Added Member To Class: ClassName=MCU Member=Component TP203 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP223 TestPoint
+Added Member To Class: ClassName=Supply Member=Component TP101 TestPoint
+Added Member To Class: ClassName=Supply Member=Component TP102 TestPoint
+Added Member To Class: ClassName=Supply Member=Component TP103 TestPoint
+Added Member To Class: ClassName=Supply Member=Component TP104 TestPoint
+Added Member To Class: ClassName=Supply Member=Component TP105 TestPoint
+Added Member To Class: ClassName=Supply Member=Component TP106 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP201 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP202 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP204 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP205 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP206 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP207 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP207 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP208 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP209 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP210 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP211 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP212 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP213 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP214 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP215 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP216 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP217 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP218 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP219 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP220 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP221 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP222 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP224 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP225 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP226 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP227 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP228 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP229 TestPoint
+Added Member To Class: ClassName=MCU Member=Component TP230 TestPoint
+Added Member To Class: ClassName=CAN Member=Component TP301 TestPoint
+Added Member To Class: ClassName=CAN Member=Component TP302 TestPoint
+Added Member To Class: ClassName=CAN Member=Component TP303 TestPoint
+Added Member To Class: ClassName=CAN Member=Component TP304 TestPoint
+Added Member To Class: ClassName=CAN Member=Component TP305 TestPoint
+Added Member To Class: ClassName=CAN Member=Component TP306 TestPoint
+Added Member To Class: ClassName=CAN Member=Component TP307 TestPoint
+Added Member To Class: ClassName=CAN Member=Component TP308 TestPoint
+Added Member To Class: ClassName=CAN Member=Component TP309 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP501 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP502 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP503 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP504 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP505 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP506 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP507 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP508 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP509 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP510 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP511 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP512 TestPoint
+Added Member To Class: ClassName=Balancing Member=Component TP601 TestPoint
+Added Member To Class: ClassName=Balancing Member=Component TP602 TestPoint
+Added Member To Class: ClassName=Balancing Member=Component TP603 TestPoint
+Added Member To Class: ClassName=Balancing Member=Component TP604 TestPoint
+Added Member To Class: ClassName=Balancing Member=Component TP605 TestPoint
