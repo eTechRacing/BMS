@@ -490,33 +490,50 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document27]
+DocumentPath=[7] High Voltage.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=YWTNHLGL
+
 [Parameter1]
-Name=Version
-Value=3.0
+Name=Company
+Value=e-Tech Racing
 
 [Parameter2]
-Name=Project
-Value=AMS_Master
+Name=Department
+Value=Accumulator-BMS
 
 [Parameter3]
-Name=DesignerName
-Value=David Redondo
+Name=DesignedByURL
+Value=e-techracing.es
 
 [Parameter4]
 Name=DesignerMail
 Value=dredondovinolo@gmail.com
 
 [Parameter5]
-Name=DesignedByURL
-Value=e-techracing.es
+Name=DesignerName
+Value=David Redondo
 
 [Parameter6]
-Name=Department
-Value=Accumulator-BMS
+Name=Project
+Value=AMS_Master
 
 [Parameter7]
-Name=Company
-Value=e-Tech Racing
+Name=Version
+Value=3.0
 
 [Configuration1]
 Name=Sources
