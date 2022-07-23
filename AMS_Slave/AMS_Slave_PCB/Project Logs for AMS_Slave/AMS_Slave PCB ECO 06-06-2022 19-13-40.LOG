@@ -1,0 +1,12 @@
+Removed Member From Class: ClassName=Cell_3 Member=C702_Cell_2
+Removed Member From Class: ClassName=Cell_12 Member=D701_Cell_1
+Removed Member From Class: ClassName=Cell_7 Member=Q701_Cell_2
+Removed Member From Class: ClassName=Cell_6 Member=R702_Cell_1
+Removed Member From Class: ClassName=Cell_4 Member=R703_Cell_2
+Removed Member From Class: ClassName=Cell_10 Member=R704_Cell_2
+Added Member To Class: ClassName=Cell_3 Member=Component C702_Cell_3 (C702) 885012207092
+Added Member To Class: ClassName=Cell_12 Member=Component D701_Cell_12 (D701) 150080YS75000
+Added Member To Class: ClassName=Cell_7 Member=Component Q701_Cell_7 (Q701) BSS308PE
+Added Member To Class: ClassName=Cell_6 Member=Component R702_Cell_6 (R702) CR0805-FX-1000ELF
+Added Member To Class: ClassName=Cell_4 Member=Component R703_Cell_4 (R703) CR0805-JW-102ELF
+Added Member To Class: ClassName=Cell_10 Member=Component R704_Cell_10 (R704) CR0805-FX-4700GLF

@@ -1,0 +1,23 @@
+Move Component(s) Origin to Grid
+Filename     : C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Slave\Slaves_Testbench\Slaves_Testbench.PcbDoc
+Date         : 01/07/2022
+Time         : 3:00:58
+Time Elapsed : 00:00:00
+
+
+    Small Component R101-R1k-VTR_RM065 (6263.15mil,2408.425mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R113-R10k-VTR_RM065 (1118.15mil,2408.425mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R107-R1k-VTR_RM065 (3688.15mil,2408.425mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R102-R1k-VTR_RM065 (5833.15mil,2408.425mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R109-R1k-VTR_RM065 (2838.15mil,2408.425mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R112-R1k-VTR_RM065 (1548.15mil,2408.425mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R110-R1k-VTR_RM065 (2408.15mil,2408.425mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R104-R1k-VTR_RM065 (4978.15mil,2408.425mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R103-R1k-VTR_RM065 (5408.15mil,2408.425mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R108-R1k-VTR_RM065 (3263.15mil,2408.425mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R111-R1k-VTR_RM065 (1978.15mil,2408.425mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R105-R1k-VTR_RM065 (4548.15mil,2408.425mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component R106-R1k-VTR_RM065 (4118.15mil,2408.425mil) on Top Layer - Component pads are OFF grid. No action taken.
+    Small Component J101-282836-2 (6365mil,1786.85mil) on Top Layer - Component pads are OFF grid. No action taken.
+    SIP Component J102-436501200 (3750.276mil,1627.52mil) on Top Layer - Component pads are OFF grid. No action taken.
+count : 15
