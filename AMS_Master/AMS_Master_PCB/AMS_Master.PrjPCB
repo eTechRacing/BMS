@@ -695,7 +695,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=HP6E452C (HP ENVY 5540 series)
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -4052,6 +4052,44 @@ SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
+
+[NetInfos]
+Net1=NetName=+12|NetColor=$00FF6EFF
+Net2=NetName=+12V in|NetColor=$006E6EFF
+Net3=NetName=+5|NetColor=$00FF6EFF
+Net4=NetName=+5 ISO|NetColor=$00FF6EFF
+Net5=NetName=+5 TS|NetColor=$000099FF
+Net6=NetName=+5V in|NetColor=$006E6EFF
+Net7=NetName=+5V ISO in|NetColor=$006E6EFF
+Net8=NetName=Accumulator_Interlock|NetColor=$00660066
+Net9=NetName=AIR-_AUX_1|NetColor=$00FFFF6E
+Net10=NetName=AIR-_Coil_1|NetColor=$00660066
+Net11=NetName=AIR-_State|NetColor=$00FFFF6E
+Net12=NetName=AIR+_AUX_1|NetColor=$00FFFF6E
+Net13=NetName=AIR+_Coil_1|NetColor=$00660066
+Net14=NetName=AIR+_State|NetColor=$00FFFF6E
+Net15=NetName=AMS_CAN_GND|NetColor=$00FFFF6E
+Net16=NetName=AMS_CAN_H|NetColor=$006EFF6E
+Net17=NetName=AMS_CAN_L|NetColor=$006EFF6E
+Net18=NetName=BAT-|NetColor=$000099FF
+Net19=NetName=BAT+|NetColor=$000099FF
+Net20=NetName=BMS_OK|NetColor=$00FFFF6E
+Net21=NetName=CAN1_H|NetColor=$006EFF6E
+Net22=NetName=CAN1_L|NetColor=$006EFF6E
+Net23=NetName=Fans_1-|NetColor=$00FFFF6E
+Net24=NetName=Fans_2-|NetColor=$00FFFF6E
+Net25=NetName=Fans_3-|NetColor=$00FFFF6E
+Net26=NetName=GND|NetColor=$00707070
+Net27=NetName=HV_Accumulator_State|NetColor=$00FFFF6E
+Net28=NetName=Inverters_Enable|NetColor=$00FFFF6E
+Net29=NetName=LV+ in|NetColor=$006E6EFF
+Net30=NetName=Precharge_Coil_1|NetColor=$00660066
+Net31=NetName=Precharge_State|NetColor=$00FFFF6E
+Net32=NetName=TS-|NetColor=$000099FF
+Net33=NetName=TS+|NetColor=$000099FF
+Net34=NetName=VCC|NetColor=$00FF6EFF
+Net35=NetName=Voltage indicator -|NetColor=$00FFFF6E
+Net36=NetName=Voltage indicator +|NetColor=$00FF6EFF
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0

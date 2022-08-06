@@ -1,4 +1,4 @@
 AMS_CAN=AMS_CAN_Control,AMS_CAN_RXD,AMS_CAN_TXD
-CAN=CAN_RXD,CAN_TXD
+CAN1=CAN1_RXD,CAN1_TXD
 Fans_Control=Fans_Control_1,Fans_Control_2,Fans_Control_3
 Relays_Control=AIRPlus_Control,AIRMinus_Control,Precharge_Control
