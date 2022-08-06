@@ -49,40 +49,6 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=CAMtastic1.Cam
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document2]
-DocumentPath=CAMtastic2.Cam
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document3]
 DocumentPath=AMS_Master.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -99,7 +65,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JQRNPRGR
 
-[Document4]
+[Document2]
 DocumentPath=AMS_Master.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -116,7 +82,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document5]
+[Document3]
 DocumentPath=[1] Supply.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -133,7 +99,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OURHHCSM
 
-[Document6]
+[Document4]
 DocumentPath=[2] MCU.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -150,7 +116,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UHEYUHAG
 
-[Document7]
+[Document5]
 DocumentPath=[2] MCU.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -167,7 +133,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document8]
+[Document6]
 DocumentPath=[3] CAN.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -184,7 +150,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OZBRFLHV
 
-[Document9]
+[Document7]
 DocumentPath=[4] Relays_Shutdown_TSAL.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -201,7 +167,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PUXEFDSG
 
-[Document10]
+[Document8]
 DocumentPath=[5] Fans_Control.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -218,7 +184,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PCUFEOFJ
 
-[Document11]
+[Document9]
 DocumentPath=[6] High Voltage.SchDoc
 AnnotationEnabled=0
 AnnotateStartValue=1
@@ -235,7 +201,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YWTNHLGL
 
-[Document12]
+[Document10]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Electromechanical.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -252,7 +218,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YXUHXBHX
 
-[Document13]
+[Document11]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\e-Tech_Racing.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -269,7 +235,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document14]
+[Document12]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Filter components.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -286,7 +252,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DSRDPXXJ
 
-[Document15]
+[Document13]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Integrated circuits.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -303,7 +269,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HHLTTDIA
 
-[Document16]
+[Document14]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Passives.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -320,7 +286,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DUCJCCLL
 
-[Document17]
+[Document15]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Semiconductor.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -337,7 +303,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ASRCVDDI
 
-[Document18]
+[Document16]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Sensors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -354,7 +320,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document19]
+[Document17]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Electromechanical.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -371,7 +337,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AQBXIDFG
 
-[Document20]
+[Document18]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\e-Tech_Racing.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -388,7 +354,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TSRBBLSC
 
-[Document21]
+[Document19]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Filter components.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -405,7 +371,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LNRHNRHB
 
-[Document22]
+[Document20]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Integrated circuits.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -422,7 +388,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QOXOPYNW
 
-[Document23]
+[Document21]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Passives.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -439,7 +405,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JBBPRFAR
 
-[Document24]
+[Document22]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Semiconductor.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -456,7 +422,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HAZZYXZW
 
-[Document25]
+[Document23]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Sensors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -473,7 +439,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IARDZSOA
 
-[Document26]
+[Document24]
 DocumentPath=AMS_Master.OutJob
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -490,7 +456,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document27]
+[Document25]
 DocumentPath=AMS_Master.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
