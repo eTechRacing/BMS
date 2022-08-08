@@ -134,24 +134,7 @@ GenerateClassCluster=0
 DocumentUniqueId=XHGFWUFR
 
 [Document6]
-DocumentPath=[4] Programming_UART.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=4
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=IHANBCXW
-
-[Document7]
-DocumentPath=[5] Temperature_readings.SchDoc
+DocumentPath=[4] Temperature_readings.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -167,8 +150,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ZQPRCYJD
 
-[Document8]
-DocumentPath=[6] Balancing.SchDoc
+[Document7]
+DocumentPath=[5] Balancing.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -184,8 +167,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ZYDFLTKM
 
-[Document9]
-DocumentPath=[7] Cell_balancing.SchDoc
+[Document8]
+DocumentPath=[6] Cell_balancing.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -201,7 +184,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PMVEPKRU
 
-[Document10]
+[Document9]
 DocumentPath=AMS_Slave.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -218,7 +201,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document10]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Electromechanical.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -235,7 +218,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AQBXIDFG
 
-[Document12]
+[Document11]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\e-Tech_Racing.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -252,7 +235,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TSRBBLSC
 
-[Document13]
+[Document12]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Filter components.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -269,7 +252,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document14]
+[Document13]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Integrated circuits.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -286,7 +269,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QOXOPYNW
 
-[Document15]
+[Document14]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Passives.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -303,7 +286,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JBBPRFAR
 
-[Document16]
+[Document15]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Semiconductor.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -320,7 +303,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HAZZYXZW
 
-[Document17]
+[Document16]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\Schematics\Sensors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -337,7 +320,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document17]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Electromechanical.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -354,7 +337,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YXUHXBHX
 
-[Document19]
+[Document18]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\e-Tech_Racing.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -371,7 +354,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TAJQCUKD
 
-[Document20]
+[Document19]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Filter components.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -388,7 +371,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document21]
+[Document20]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Integrated circuits.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -405,7 +388,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document22]
+[Document21]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Passives.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -422,7 +405,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DUCJCCLL
 
-[Document23]
+[Document22]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Semiconductor.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -439,7 +422,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ASRCVDDI
 
-[Document24]
+[Document23]
 DocumentPath=..\..\..\commonfiles\Altium_Libraries_e-Tech_Racing\PCB\Sensors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -456,7 +439,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document25]
+[Document24]
 DocumentPath=AMS_Slave.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -1607,6 +1590,33 @@ SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
+
+[NetInfos]
+Net1=NetName=Cell_1|NetColor=$000099FF
+Net2=NetName=Cell_10|NetColor=$000099FF
+Net3=NetName=Cell_11|NetColor=$000099FF
+Net4=NetName=Cell_12|NetColor=$000099FF
+Net5=NetName=Cell_2|NetColor=$000099FF
+Net6=NetName=Cell_3|NetColor=$000099FF
+Net7=NetName=Cell_4|NetColor=$000099FF
+Net8=NetName=Cell_5|NetColor=$000099FF
+Net9=NetName=Cell_6|NetColor=$000099FF
+Net10=NetName=Cell_7|NetColor=$000099FF
+Net11=NetName=Cell_8|NetColor=$000099FF
+Net12=NetName=Cell_9|NetColor=$000099FF
+Net13=NetName=NetL701_1|NetColor=$000099FF
+Net14=NetName=NetL701_Cell_1_1|NetColor=$000099FF
+Net15=NetName=NetL701_Cell_10_1|NetColor=$000099FF
+Net16=NetName=NetL701_Cell_11_1|NetColor=$000099FF
+Net17=NetName=NetL701_Cell_12_1|NetColor=$000099FF
+Net18=NetName=NetL701_Cell_2_1|NetColor=$000099FF
+Net19=NetName=NetL701_Cell_3_1|NetColor=$000099FF
+Net20=NetName=NetL701_Cell_4_1|NetColor=$000099FF
+Net21=NetName=NetL701_Cell_5_1|NetColor=$000099FF
+Net22=NetName=NetL701_Cell_6_1|NetColor=$000099FF
+Net23=NetName=NetL701_Cell_7_1|NetColor=$000099FF
+Net24=NetName=NetL701_Cell_8_1|NetColor=$000099FF
+Net25=NetName=NetL701_Cell_9_1|NetColor=$000099FF
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
