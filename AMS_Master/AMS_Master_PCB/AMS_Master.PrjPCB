@@ -33,20 +33,26 @@ FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
 IsVirtualBomDocumentRemoved=0
-OutputPath=Project Outputs for AMS_Master
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
-IncludeDesignInRelease=0
+IncludeDesignInRelease=1
 CrossRefSheetStyle=1
 CrossRefLocationStyle=1
 CrossRefPorts=3
 CrossRefCrossSheets=1
 CrossRefSheetEntries=0
 CrossRefFollowFromMainSettings=1
+CurrentVariant=Production_Unit
 
 [Preferences]
 PrefsVaultGUID=
 PrefsRevisionGUID=
+
+[Release]
+ReleaseTarget=1
+ReleaseFolderPath=[OutputPath]
+ReleaseZipPath=[OutputPath][ProjectName].zip
 
 [Document1]
 DocumentPath=AMS_Master.SchDoc
@@ -558,6 +564,59 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[ProjectVariant1]
+UniqueID=CA0C60C3-FBE3-4546-9244-D31C874F4DBD
+Description=Test_Unit
+AllowFabrication=0
+ParameterCount=0
+VariationCount=0
+ParamVariationCount=0
+
+[ProjectVariant2]
+UniqueID=5F2B4C76-232D-4E9E-9602-F0DBC2D94D1A
+Description=Production_Unit
+AllowFabrication=1
+ParameterCount=0
+VariationCount=36
+AllowVariationPastMask=1
+Variation1=Designator=J101|UniqueId=\DTSRDESI\OIYHWNHH|Kind=1|AlternatePart= 
+Variation2=Designator=J102|UniqueId=\DTSRDESI\AUCUIUAP|Kind=1|AlternatePart= 
+Variation3=Designator=J103|UniqueId=\DTSRDESI\KIEWOTQQ|Kind=1|AlternatePart= 
+Variation4=Designator=J104|UniqueId=\DTSRDESI\FQMHYINN|Kind=1|AlternatePart= 
+Variation5=Designator=J105|UniqueId=\DTSRDESI\NWUXWZZZ|Kind=1|AlternatePart= 
+Variation6=Designator=J106|UniqueId=\DTSRDESI\CMMNMBGQ|Kind=1|AlternatePart= 
+Variation7=Designator=R204|UniqueId=\QCEHSZDM\LTLQAVIH|Kind=1|AlternatePart= 
+Variation8=Designator=R205|UniqueId=\QCEHSZDM\VDBOYXLS|Kind=1|AlternatePart= 
+Variation9=Designator=R206|UniqueId=\QCEHSZDM\MSFEUIKH|Kind=1|AlternatePart= 
+Variation10=Designator=R207|UniqueId=\QCEHSZDM\KMRVWHAO|Kind=1|AlternatePart= 
+Variation11=Designator=R208|UniqueId=\QCEHSZDM\GLCKOEJF|Kind=1|AlternatePart= 
+Variation12=Designator=R209|UniqueId=\QCEHSZDM\COYUWYCW|Kind=1|AlternatePart= 
+Variation13=Designator=R210|UniqueId=\QCEHSZDM\BCOTMGAS|Kind=1|AlternatePart= 
+Variation14=Designator=R211|UniqueId=\QCEHSZDM\KGZWROCL|Kind=1|AlternatePart= 
+Variation15=Designator=R212|UniqueId=\QCEHSZDM\ODKSRVPK|Kind=1|AlternatePart= 
+Variation16=Designator=R213|UniqueId=\QCEHSZDM\OQGJKYOC|Kind=1|AlternatePart= 
+Variation17=Designator=R214|UniqueId=\QCEHSZDM\ZNYTRMAO|Kind=1|AlternatePart= 
+Variation18=Designator=R215|UniqueId=\QCEHSZDM\XXIGBNSQ|Kind=1|AlternatePart= 
+Variation19=Designator=C402|UniqueId=\IHCIDKUD\GGXEUESB|Kind=1|AlternatePart= 
+Variation20=Designator=C302|UniqueId=\CYQXCNYC\ASQBSFOA|Kind=1|AlternatePart= 
+Variation21=Designator=C301|UniqueId=\CYQXCNYC\BETJLYXX|Kind=1|AlternatePart= 
+Variation22=Designator=C303|UniqueId=\CYQXCNYC\BQCXHVHE|Kind=1|AlternatePart= 
+Variation23=Designator=C304|UniqueId=\CYQXCNYC\RAVMQGEX|Kind=1|AlternatePart= 
+Variation24=Designator=C305|UniqueId=\CYQXCNYC\VROTLYHT|Kind=1|AlternatePart= 
+Variation25=Designator=C306|UniqueId=\CYQXCNYC\TGEYRMRF|Kind=1|AlternatePart= 
+Variation26=Designator=C307|UniqueId=\CYQXCNYC\VUYHNSWP|Kind=1|AlternatePart= 
+Variation27=Designator=C314|UniqueId=\CYQXCNYC\DBHHXKWJ|Kind=1|AlternatePart= 
+Variation28=Designator=C315|UniqueId=\CYQXCNYC\BZIJTDXR|Kind=1|AlternatePart= 
+Variation29=Designator=C316|UniqueId=\CYQXCNYC\YHAIOSYS|Kind=1|AlternatePart= 
+Variation30=Designator=C317|UniqueId=\CYQXCNYC\SQIHSHJZ|Kind=1|AlternatePart= 
+Variation31=Designator=C318|UniqueId=\CYQXCNYC\SNCDLUUS|Kind=1|AlternatePart= 
+Variation32=Designator=C319|UniqueId=\CYQXCNYC\GKLKARII|Kind=1|AlternatePart= 
+Variation33=Designator=C320|UniqueId=\CYQXCNYC\QNWECDCG|Kind=1|AlternatePart= 
+Variation34=Designator=NTC701|UniqueId=\ZYHEJPCQ\LXGPVWTU|Kind=1|AlternatePart= 
+Variation35=Designator=R701|UniqueId=\ZYHEJPCQ\AXQGPXGM|Kind=1|AlternatePart= 
+Variation36=Designator=C701|UniqueId=\ZYHEJPCQ\AXCRBHSG|Kind=1|AlternatePart= 
+ParamVariationCount=0
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for AMS_Master\AMS_Master-BoardEdgeRout.TXT
 DItemRevisionGUID=
@@ -784,9 +843,45 @@ ParameterCount=0
 ConstraintFileCount=0
 ReleaseItemId=
 Variant=[No Variations]
-OutputJobsCount=0
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=AMS_Master.OutJob
 ContentTypeGUID=CB6F2064-E317-11DF-B822-12313F0024A2
 ConfigurationType=Source
+
+[Configuration2]
+Name=Fabrication
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=AMS_Master.OutJob
+ContentTypeGUID=0C520D2A-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Fabrication
+
+[Configuration3]
+Name=Assembly
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=1
+DocumentReferenceClass1=DocumentReference
+OutputJobFileName1=AMS_Master.OutJob
+ContentTypeGUID=0D12F8DC-E60C-11DF-B822-12313F0024A2
+ConfigurationType=Assembly
+
+[Configuration4]
+Name=Custom - 1
+ParameterCount=0
+ConstraintFileCount=0
+ReleaseItemId=
+Variant=[No Variations]
+OutputJobsCount=0
+ContentTypeGUID=B953ABBB-897D-493B-96D2-85DABE1896C4
+ConfigurationType=Custom
 
 [Generic_SmartPDF]
 AutoOpenFile=-1
@@ -827,7 +922,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=Project Outputs for AMS_Master
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -1050,6 +1145,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
+TargetPrinter=Virtual Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=NC Drill
 OutputName1=NC Drill Files
