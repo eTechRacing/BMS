@@ -548,7 +548,7 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document30]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master_gerber.Cam
+DocumentPath=Project Outputs for AMS_Master\AMS_Master_gerbers.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -577,7 +577,7 @@ UniqueID=5F2B4C76-232D-4E9E-9602-F0DBC2D94D1A
 Description=Production_Unit
 AllowFabrication=1
 ParameterCount=0
-VariationCount=36
+VariationCount=48
 AllowVariationPastMask=1
 Variation1=Designator=J101|UniqueId=\DTSRDESI\OIYHWNHH|Kind=1|AlternatePart= 
 Variation2=Designator=J102|UniqueId=\DTSRDESI\AUCUIUAP|Kind=1|AlternatePart= 
@@ -615,6 +615,18 @@ Variation33=Designator=C320|UniqueId=\CYQXCNYC\QNWECDCG|Kind=1|AlternatePart=
 Variation34=Designator=NTC701|UniqueId=\ZYHEJPCQ\LXGPVWTU|Kind=1|AlternatePart= 
 Variation35=Designator=R701|UniqueId=\ZYHEJPCQ\AXQGPXGM|Kind=1|AlternatePart= 
 Variation36=Designator=C701|UniqueId=\ZYHEJPCQ\AXCRBHSG|Kind=1|AlternatePart= 
+Variation37=Designator=D104|UniqueId=\DTSRDESI\QHOCDRQX|Kind=1|AlternatePart= 
+Variation38=Designator=D203|UniqueId=\QCEHSZDM\KMKTXRQA|Kind=1|AlternatePart= 
+Variation39=Designator=D202|UniqueId=\QCEHSZDM\LXBWOFON|Kind=1|AlternatePart= 
+Variation40=Designator=D103|UniqueId=\DTSRDESI\NKKRYWCI|Kind=1|AlternatePart= 
+Variation41=Designator=D102|UniqueId=\DTSRDESI\PAHWQJMV|Kind=1|AlternatePart= 
+Variation42=Designator=D101|UniqueId=\DTSRDESI\TSUIFVCV|Kind=1|AlternatePart= 
+Variation43=Designator=R101|UniqueId=\DTSRDESI\WOHJBDHY|Kind=1|AlternatePart= 
+Variation44=Designator=R104|UniqueId=\DTSRDESI\AKUMBVDD|Kind=1|AlternatePart= 
+Variation45=Designator=R103|UniqueId=\DTSRDESI\CXFHJUJK|Kind=1|AlternatePart= 
+Variation46=Designator=R102|UniqueId=\DTSRDESI\NJDFBKQT|Kind=1|AlternatePart= 
+Variation47=Designator=R202|UniqueId=\QCEHSZDM\SDMOVLXU|Kind=1|AlternatePart= 
+Variation48=Designator=R203|UniqueId=\QCEHSZDM\ISITTMZV|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [GeneratedDocument1]
@@ -837,6 +849,10 @@ Value=AMS_Master
 Name=Version
 Value=3.0
 
+[DiffPairSuffix1]
+Positive=_H
+Negative=_L
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
@@ -901,7 +917,7 @@ TemplateFilename=Board Stack Report.XLT
 TemplateStoreRelative=-1
 PCB_PrintColor=0
 SCH_PrintColor=0
-PrintQuality=-4
+PrintQuality=-3
 SCH_ShowNoErc=-1
 SCH_ShowParameter=-1
 SCH_ShowProbes=-1
@@ -912,7 +928,7 @@ SCH_ShowNoteCollapsed=-1
 Wir_PrintColor=0
 Ldr_PrintColor=0
 SCH_ExpandLogicalToPhysical=-1
-SCH_VariantName=[No Variations]
+SCH_VariantName=Production_Unit
 SCH_ExpandComponentDesignators=-1
 SCH_ExpandNetlabels=-1
 SCH_ExpandPorts=-1
@@ -1147,71 +1163,71 @@ Name=Fabrication Outputs
 Description=
 TargetPrinter=Virtual Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputType1=NC Drill
-OutputName1=NC Drill Files
+OutputType1=CompositeDrill
+OutputName1=Composite Drill Drawing
 OutputDocumentPath1=
-OutputVariantName1=
+OutputVariantName1=[No Variations]
 OutputDefault1=0
-Configuration1_Name1=ForceUpdateSettings
-Configuration1_Item1=False
-Configuration1_Name2=OutputConfigurationParameter1
-Configuration1_Item2=BoardEdgeRoutToolDia=787402|GenerateBoardEdgeRout=True|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=True|GenerateSeparatePlatedNonPlatedFiles=False|GenerateSeparateViaTypeFiles=False|NumberOfDecimals=4|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Metric|ZeroesMode=KeepLeadingAndTrailingZeroes|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
-OutputType2=Mask
-OutputName2=Solder/Paste Mask Prints
+PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType2=Drill
+OutputName2=Drill Drawing/Guides
 OutputDocumentPath2=
 OutputVariantName2=[No Variations]
 OutputDefault2=0
 PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType3=IPC2581
-OutputName3=IPC-2581 Files
+OutputType3=Board Stack Report
+OutputName3=Report Board Stack
 OutputDocumentPath3=
-OutputVariantName3=[No Variations]
+OutputVariantName3=
 OutputDefault3=0
-OutputType4=Test Points
-OutputName4=Test Point Report
+PageOptions3=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType4=Final
+OutputName4=Final Artwork Prints
 OutputDocumentPath4=
-OutputVariantName4=
+OutputVariantName4=[No Variations]
 OutputDefault4=0
-OutputType5=Plane
-OutputName5=Power-Plane Prints
+PageOptions4=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType5=Gerber X2
+OutputName5=Gerber X2 Files
 OutputDocumentPath5=
 OutputVariantName5=[No Variations]
 OutputDefault5=0
-PageOptions5=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 OutputType6=ODB
 OutputName6=ODB++ Files
 OutputDocumentPath6=
 OutputVariantName6=[No Variations]
 OutputDefault6=0
-OutputType7=Drill
-OutputName7=Drill Drawing/Guides
+OutputType7=Mask
+OutputName7=Solder/Paste Mask Prints
 OutputDocumentPath7=
 OutputVariantName7=[No Variations]
 OutputDefault7=0
 PageOptions7=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType8=CompositeDrill
-OutputName8=Composite Drill Drawing
+OutputType8=NC Drill
+OutputName8=NC Drill Files
 OutputDocumentPath8=
-OutputVariantName8=[No Variations]
+OutputVariantName8=
 OutputDefault8=0
-PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType9=Board Stack Report
-OutputName9=Report Board Stack
+Configuration8_Name1=ForceUpdateSettings
+Configuration8_Item1=False
+Configuration8_Name2=OutputConfigurationParameter1
+Configuration8_Item2=BoardEdgeRoutToolDia=787402|GenerateBoardEdgeRout=True|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=True|GenerateSeparatePlatedNonPlatedFiles=False|GenerateSeparateViaTypeFiles=False|NumberOfDecimals=4|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Metric|ZeroesMode=KeepLeadingAndTrailingZeroes|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
+OutputType9=IPC2581
+OutputName9=IPC-2581 Files
 OutputDocumentPath9=
-OutputVariantName9=
+OutputVariantName9=[No Variations]
 OutputDefault9=0
-PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
-OutputType10=Gerber X2
-OutputName10=Gerber X2 Files
+OutputType10=Plane
+OutputName10=Power-Plane Prints
 OutputDocumentPath10=
 OutputVariantName10=[No Variations]
 OutputDefault10=0
-OutputType11=Final
-OutputName11=Final Artwork Prints
+PageOptions10=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType11=Test Points
+OutputName11=Test Point Report
 OutputDocumentPath11=
-OutputVariantName11=[No Variations]
+OutputVariantName11=
 OutputDefault11=0
-PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 OutputType12=Gerber
 OutputName12=Gerber Files
 OutputDocumentPath12=
@@ -2356,14 +2372,16 @@ Net26=NetName=GND|NetColor=$00707070
 Net27=NetName=HV_Accumulator_State|NetColor=$00FFFF6E
 Net28=NetName=Inverters_Enable|NetColor=$00FFFF6E
 Net29=NetName=LV+ in|NetColor=$006E6EFF
-Net30=NetName=Precharge_Coil_1|NetColor=$00660066
-Net31=NetName=Precharge_NC|NetColor=$000083FD
-Net32=NetName=Precharge_State|NetColor=$00FFFF6E
-Net33=NetName=TS-|NetColor=$000099FF
-Net34=NetName=TS+|NetColor=$000099FF
-Net35=NetName=VCC|NetColor=$00FF6EFF
-Net36=NetName=Voltage indicator -|NetColor=$00FFFF6E
-Net37=NetName=Voltage indicator +|NetColor=$00FF6EFF
+Net30=NetName=NetF_BAT+_2|NetColor=$000083FD
+Net31=NetName=Precharge_Coil_1|NetColor=$00660066
+Net32=NetName=Precharge_NC|NetColor=$000083FD
+Net33=NetName=Precharge_State|NetColor=$00FFFF6E
+Net34=NetName=TS-|NetColor=$000099FF
+Net35=NetName=TS+|NetColor=$000099FF
+Net36=NetName=TS+_unfused|NetColor=$000083FD
+Net37=NetName=VCC|NetColor=$00FF6EFF
+Net38=NetName=Voltage indicator -|NetColor=$00FFFF6E
+Net39=NetName=Voltage indicator +|NetColor=$00FF6EFF
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
