@@ -7,8 +7,23 @@ Generating : Dielectric 5
 
     Adding Layer      : Dielectric 5
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
 *************************************************************
 
 *************************************************************
@@ -17,8 +32,23 @@ Generating : Dielectric 4
 
     Adding Layer      : Dielectric 4
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
 *************************************************************
 
 *************************************************************
@@ -27,8 +57,23 @@ Generating : Dielectric 3
 
     Adding Layer      : Dielectric 3
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
 *************************************************************
 
 *************************************************************
@@ -37,8 +82,23 @@ Generating : Dielectric 2
 
     Adding Layer      : Dielectric 2
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
 *************************************************************
 
 *************************************************************
@@ -47,8 +107,23 @@ Generating : Dielectric 1
 
     Adding Layer      : Dielectric 1
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
 *************************************************************
 
 *************************************************************
@@ -57,14 +132,24 @@ Generating : Multi-Layer
 
     Adding Layer      : Multi-Layer
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
     D17
-    D83
-    D84
-    D85
-    D86
-    D87
+    D18
+    D19
+    D20
+    D21
+    D23
     D88
     D89
     D90
@@ -78,6 +163,11 @@ Used DCodes :
     D98
     D99
     D100
+    D101
+    D102
+    D103
+    D104
+    D105
 *************************************************************
 
 *************************************************************
@@ -86,11 +176,23 @@ Generating : Bottom Component Outline
 
     Adding Layer      : Bottom Component Outline
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
 
 Used DCodes :
     D12
     D13
-    D123
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
 *************************************************************
 
 *************************************************************
@@ -99,15 +201,23 @@ Generating : Top Component Outline
 
     Adding Layer      : Top Component Outline
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
 
 Used DCodes :
     D12
     D13
     D15
     D16
-    D123
-    D124
-    D125
+    D17
+    D18
+    D19
+    D20
+    D21
 *************************************************************
 
 *************************************************************
@@ -116,9 +226,23 @@ Generating : Mechanical 1
 
     Adding Layer      : Mechanical 1
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
 
 Used DCodes :
-    D122
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
 *************************************************************
 
 *************************************************************
@@ -127,8 +251,23 @@ Generating : Keep-Out Layer
 
     Adding Layer      : Keep-Out Layer
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
 *************************************************************
 
 *************************************************************
@@ -137,14 +276,26 @@ Generating : Bottom Overlay
 
     Adding Layer      : Bottom Overlay
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
 
 Used DCodes :
     D10
     D11
     D12
+    D13
     D14
     D15
     D16
+    D17
+    D18
+    D19
+    D20
+    D21
 *************************************************************
 
 *************************************************************
@@ -153,28 +304,43 @@ Generating : Bottom Paste
 
     Adding Layer      : Bottom Paste
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Layer      : Bottom Layer
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
     D17
+    D18
+    D19
     D20
-    D22
+    D21
     D23
-    D31
-    D33
-    D34
-    D82
-    D105
-    D106
-    D107
-    D108
-    D109
+    D26
+    D28
+    D29
+    D36
+    D38
+    D39
+    D87
     D110
     D111
     D112
+    D113
+    D114
+    D115
+    D116
+    D117
 *************************************************************
 
 *************************************************************
@@ -183,25 +349,35 @@ Generating : Bottom Solder
 
     Adding Layer      : Bottom Solder
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Layer      : Bottom Layer
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D36
-    D37
-    D38
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
     D42
     D43
-    D51
-    D53
-    D54
+    D45
+    D46
+    D49
     D56
-    D57
     D58
     D59
-    D60
     D61
     D62
     D63
@@ -218,15 +394,20 @@ Used DCodes :
     D74
     D75
     D76
-    D113
-    D114
-    D115
-    D116
-    D117
+    D77
+    D78
+    D79
+    D80
+    D81
     D118
     D119
     D120
     D121
+    D122
+    D123
+    D124
+    D125
+    D126
 *************************************************************
 
 *************************************************************
@@ -235,17 +416,27 @@ Generating : Top Solder
 
     Adding Layer      : Top Solder
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Layer      : Top Layer
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D36
-    D37
-    D38
-    D39
-    D40
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
     D41
     D42
     D43
@@ -282,6 +473,11 @@ Used DCodes :
     D74
     D75
     D76
+    D77
+    D78
+    D79
+    D80
+    D81
 *************************************************************
 
 *************************************************************
@@ -290,12 +486,22 @@ Generating : Top Paste
 
     Adding Layer      : Top Paste
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Layer      : Top Layer
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
     D17
     D18
     D19
@@ -315,6 +521,11 @@ Used DCodes :
     D33
     D34
     D35
+    D36
+    D37
+    D38
+    D39
+    D40
 *************************************************************
 
 *************************************************************
@@ -322,6 +533,12 @@ Generating : Top Overlay
       File : AMS_Master.GTO
 
     Adding Layer      : Top Overlay
+
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
 
 
 Used DCodes :
@@ -332,6 +549,11 @@ Used DCodes :
     D14
     D15
     D16
+    D17
+    D18
+    D19
+    D20
+    D21
 *************************************************************
 
 *************************************************************
@@ -342,8 +564,18 @@ Generating : Top Pad Master
 
     Adding Layer      : Multi-Layer
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
     D17
     D18
     D19
@@ -363,11 +595,11 @@ Used DCodes :
     D33
     D34
     D35
-    D82
-    D83
-    D84
-    D85
-    D86
+    D36
+    D37
+    D38
+    D39
+    D40
     D87
     D88
     D89
@@ -382,6 +614,11 @@ Used DCodes :
     D98
     D99
     D100
+    D101
+    D102
+    D103
+    D104
+    D105
 *************************************************************
 
 *************************************************************
@@ -392,20 +629,30 @@ Generating : Bottom Pad Master
 
     Adding Layer      : Multi-Layer
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
     D17
+    D18
+    D19
     D20
-    D22
+    D21
     D23
-    D31
-    D33
-    D34
-    D82
-    D83
-    D84
-    D85
-    D86
+    D26
+    D28
+    D29
+    D36
+    D38
+    D39
     D87
     D88
     D89
@@ -420,14 +667,19 @@ Used DCodes :
     D98
     D99
     D100
+    D101
+    D102
+    D103
+    D104
     D105
-    D106
-    D107
-    D108
-    D109
     D110
     D111
     D112
+    D113
+    D114
+    D115
+    D116
+    D117
 *************************************************************
 
 *************************************************************
@@ -436,25 +688,33 @@ Generating : Bottom Layer
 
     Adding Layer      : Bottom Layer
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
     D10
+    D12
     D13
+    D15
     D16
     D17
+    D18
+    D19
     D20
-    D22
+    D21
     D23
-    D31
-    D33
-    D34
-    D77
-    D78
-    D79
-    D80
-    D81
+    D26
+    D28
+    D29
+    D36
+    D38
+    D39
     D82
     D83
     D84
@@ -486,6 +746,11 @@ Used DCodes :
     D110
     D111
     D112
+    D113
+    D114
+    D115
+    D116
+    D117
 *************************************************************
 
 *************************************************************
@@ -494,18 +759,48 @@ Generating : GND
 
     Adding Layer      : GND
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
     D17
-    D80
-    D84
+    D18
+    D19
+    D20
+    D21
+    D23
+    D85
+    D88
     D89
+    D90
+    D91
+    D92
+    D93
     D94
+    D95
+    D96
+    D97
+    D98
     D99
+    D100
     D101
     D102
+    D103
+    D104
+    D105
+    D106
+    D107
+    D108
 *************************************************************
 
 *************************************************************
@@ -514,23 +809,49 @@ Generating : PWR
 
     Adding Layer      : PWR
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
+    D12
     D13
+    D15
+    D16
     D17
-    D78
-    D81
-    D84
-    D85
+    D18
+    D19
+    D20
+    D21
+    D23
+    D82
+    D86
+    D88
     D89
     D90
+    D91
+    D92
     D93
     D94
+    D95
+    D96
     D97
+    D98
+    D99
     D100
     D101
+    D102
+    D103
+    D104
+    D105
+    D106
+    D107
+    D108
 *************************************************************
 
 *************************************************************
@@ -539,11 +860,19 @@ Generating : Top Layer
 
     Adding Layer      : Top Layer
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
+    D12
     D13
+    D15
     D16
     D17
     D18
@@ -564,11 +893,11 @@ Used DCodes :
     D33
     D34
     D35
-    D77
-    D78
-    D79
-    D80
-    D81
+    D36
+    D37
+    D38
+    D39
+    D40
     D82
     D83
     D84
@@ -591,11 +920,22 @@ Used DCodes :
     D101
     D102
     D103
+    D104
+    D105
+    D106
+    D107
+    D108
 *************************************************************
 
 *************************************************************
 Generating : Drill Drawing
       File : AMS_Master.GD1
+
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
 
     Adding Drill Pair : Top Layer-Bottom Layer
 
@@ -603,14 +943,29 @@ Generating : Drill Drawing
 
 
 Used DCodes :
-    D126
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
     D127
     D128
+    D129
 *************************************************************
 
 *************************************************************
 Generating : Drill Drawing
       File : AMS_Master.GD2
+
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
 
     Adding Drill Pair : Top Layer-PWR
 
@@ -618,6 +973,15 @@ Generating : Drill Drawing
 
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
     D127
 *************************************************************
 
@@ -625,12 +989,27 @@ Used DCodes :
 Generating : Drill Drawing
       File : AMS_Master.GD3
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Drill Pair : Top Layer-GND
 
     Adding Layer      : Drill Drawing
 
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
     D127
 *************************************************************
 
@@ -638,12 +1017,27 @@ Used DCodes :
 Generating : Drill Drawing
       File : AMS_Master.GD4
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Drill Pair : PWR-Bottom Layer
 
     Adding Layer      : Drill Drawing
 
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
     D127
 *************************************************************
 
@@ -651,12 +1045,27 @@ Used DCodes :
 Generating : Drill Drawing
       File : AMS_Master.GD5
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Drill Pair : GND-Bottom Layer
 
     Adding Layer      : Drill Drawing
 
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
     D127
 *************************************************************
 
@@ -664,12 +1073,27 @@ Used DCodes :
 Generating : Drill Guide
       File : AMS_Master.GG1
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Drill Pair : Top Layer-Bottom Layer
 
     Adding Layer      : Drill Guide
 
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
     D127
 *************************************************************
 
@@ -677,12 +1101,27 @@ Used DCodes :
 Generating : Drill Guide
       File : AMS_Master.GG2
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Drill Pair : Top Layer-PWR
 
     Adding Layer      : Drill Guide
 
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
     D127
 *************************************************************
 
@@ -690,12 +1129,27 @@ Used DCodes :
 Generating : Drill Guide
       File : AMS_Master.GG3
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Drill Pair : Top Layer-GND
 
     Adding Layer      : Drill Guide
 
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
     D127
 *************************************************************
 
@@ -703,12 +1157,27 @@ Used DCodes :
 Generating : Drill Guide
       File : AMS_Master.GG4
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Drill Pair : PWR-Bottom Layer
 
     Adding Layer      : Drill Guide
 
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
     D127
 *************************************************************
 
@@ -716,12 +1185,27 @@ Used DCodes :
 Generating : Drill Guide
       File : AMS_Master.GG5
 
+    Adding Layer      : Mechanical 1
+
+    Adding Layer      : Top Component Outline
+
+    Adding Layer      : Bottom Component Outline
+
     Adding Drill Pair : GND-Bottom Layer
 
     Adding Layer      : Drill Guide
 
 
 Used DCodes :
+    D12
+    D13
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
     D127
 *************************************************************
 

@@ -1,44 +1,22 @@
-Output: Gerber Files
-Type  : Gerber
-From  : Variant [[No Variations]] of Project [AMS_Master.PrjPCB]
-   Generated File[AMS_Master.GTO]
-   Generated File[AMS_Master.GTP]
-   Generated File[AMS_Master.GTS]
-   Generated File[AMS_Master.GTL]
-   Generated File[AMS_Master.G1]
-   Generated File[AMS_Master.G2]
-   Generated File[AMS_Master.GBL]
-   Generated File[AMS_Master.GBS]
-   Generated File[AMS_Master.GBP]
-   Generated File[AMS_Master.GBO]
-   Generated File[AMS_Master.GM1]
-   Generated File[AMS_Master.GM2]
-   Generated File[AMS_Master.GM3]
-   Generated File[AMS_Master.GKO]
-   Generated File[AMS_Master.GPT]
-   Generated File[AMS_Master.GPB]
-   Generated File[AMS_Master.GML]
-   Generated File[AMS_Master.1]
-   Generated File[AMS_Master.2]
-   Generated File[AMS_Master.3]
-   Generated File[AMS_Master.4]
-   Generated File[AMS_Master.5]
-   Generated File[AMS_Master.GD1]
-   Generated File[AMS_Master.GD2]
-   Generated File[AMS_Master.GD3]
-   Generated File[AMS_Master.GD4]
-   Generated File[AMS_Master.GD5]
-   Generated File[AMS_Master.GG1]
-   Generated File[AMS_Master.GG2]
-   Generated File[AMS_Master.GG3]
-   Generated File[AMS_Master.GG4]
-   Generated File[AMS_Master.GG5]
-   Generated File[AMS_Master.RUL]
-   Generated File[AMS_Master.EXTREP]
-   Generated File[AMS_Master.REP]
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [AMS_Master.PrjPCB]
+   Generated File[AMS_Master.TXT]
+   Generated File[AMS_Master.DRL]
+   Generated File[AMS_Master.TX1]
+   Generated File[AMS_Master.DR1]
+   Generated File[AMS_Master.TX2]
+   Generated File[AMS_Master.DR2]
+   Generated File[AMS_Master.TX3]
+   Generated File[AMS_Master.DR3]
+   Generated File[AMS_Master.TX4]
+   Generated File[AMS_Master.DR4]
+   Generated File[AMS_Master-BoardEdgeRout.TXT]
+   Generated File[AMS_Master.LDP]
+   Generated File[AMS_Master.DRR]
 
 
-Files Generated   : 35
+Files Generated   : 13
 Documents Printed : 0
 
-Finished Output Generation At 15:43:00 On 20/08/2022
+Finished Output Generation At 17:02:39 On 25/08/2022

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: AMS_Master.PcbDoc   20/08/2022  0:49:32
+NCDrill File Report For: AMS_Master.PcbDoc   25/08/2022  17:02:38
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -30,7 +30,7 @@ EIA File   : AMS_Master.DR1
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
 T1      0.5mm (20mil)                                             Round             1         PTH        0.00mm (0.00inch)
-T2      0.8mm (31mil)                                             Round             18        PTH        228.57mm (9.00inch)
+T2      0.8mm (31mil)                                             Round             18        PTH        228.69mm (9.00inch)
 ----------------------------------------------------------------------------------------------------------------------------------
 Totals                                                                              19
 Layer Pair : Top Layer to GND
@@ -40,9 +40,9 @@ EIA File   : AMS_Master.DR2
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
 T1      0.5mm (20mil)                                             Round             17        PTH        320.57mm (12.62inch)
-T2      0.8mm (31mil)                                             Round             35        PTH        518.41mm (20.41inch)
+T2      0.8mm (31mil)                                             Round             34        PTH        514.85mm (20.27inch)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              52
+Totals                                                                              51
 Layer Pair : PWR to Bottom Layer
 ASCII RoundHoles File : AMS_Master.TX3
 EIA File   : AMS_Master.DR3
@@ -50,7 +50,7 @@ EIA File   : AMS_Master.DR3
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
 T1      0.5mm (20mil)                                             Round             1         PTH        0.00mm (0.00inch)
-T2      0.8mm (31mil)                                             Round             16        PTH        325.11mm (12.80inch)
+T2      0.8mm (31mil)                                             Round             16        PTH        325.12mm (12.80inch)
 ----------------------------------------------------------------------------------------------------------------------------------
 Totals                                                                              17
 Layer Pair : GND to Bottom Layer
@@ -60,10 +60,10 @@ EIA File   : AMS_Master.DR4
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
 T1      0.5mm (20mil)                                             Round             6         PTH        302.96mm (11.93inch)
-T2      0.8mm (31mil)                                             Round             30        PTH        559.14mm (22.01inch)
+T2      0.8mm (31mil)                                             Round             30        PTH        559.16mm (22.01inch)
 ----------------------------------------------------------------------------------------------------------------------------------
 Totals                                                                              36
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              295
+Totals                                                                              294
 
 Total Processing Time (hh:mm:ss) : 00:00:01
