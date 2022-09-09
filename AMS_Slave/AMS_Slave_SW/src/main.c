@@ -59,7 +59,7 @@ unsigned int32 rx_id;
 unsigned int8 rx_buffer[8];
 unsigned int8 rx_len;
 
-int8 slave=12;
+int8 slave=10;
 
 //TIMER2 INTERRUPT
 #INT_TIMER2

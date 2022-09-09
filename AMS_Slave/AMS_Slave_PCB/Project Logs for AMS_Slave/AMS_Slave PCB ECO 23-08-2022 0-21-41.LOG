@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=C*402 NewDesignator=C402
+Add Component: Footprint Not Found DSC-0.5/40-SOD_323
+Add Pin To Net: Unknown Pin: Pin D102-A
+Add Pin To Net: Unknown Pin: Pin D102-K
+Add Class Member: Failed to add class member : Component D102 CMDSH05-4 TR PBFREE

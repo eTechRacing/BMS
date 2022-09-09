@@ -1,3 +1,0 @@
-Record=TopLevelDocument|FileName=Accumulator_DC-DC.SchDoc|SheetNumber= 
-Record=SheetSymbol|SourceDocument=Accumulator_DC-DC.SchDoc|Designator=Output|SchDesignator=Output|FileName=[2] Output.SchDoc|SheetNumber= |SymbolType=Normal|RawFileName=[2] Output.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=SheetSymbol|SourceDocument=Accumulator_DC-DC.SchDoc|Designator=Supply|SchDesignator=Supply|FileName=[1] Supply.SchDoc|SheetNumber= |SymbolType=Normal|RawFileName=[1] Supply.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 

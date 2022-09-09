@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=NTC1 Pin=J3-1
+Removed Pin From Net: NetName=NTC2 Pin=J3-2
+Removed Pin From Net: NetName=NTC3 Pin=J3-3
+Removed Pin From Net: NetName=NTC4 Pin=J3-4
+Removed Pin From Net: NetName=NTC5 Pin=J3-5
+Removed Pin From Net: NetName=NTC6 Pin=J3-6
+Removed Pin From Net: NetName=NTC7 Pin=J3-7
+Removed Pin From Net: NetName=NTC8 Pin=NTC401-2
+Removed Pin From Net: NetName=NTC8 Pin=TP408-1
+Removed Pin From Net: NetName=Cell_0 Pin=TP409-1
+Change Component Designator: OldDesignator=TP408 NewDesignator=TP409
+Change Component Designator: OldDesignator=TP409 NewDesignator=TP408
+Added Pin To Net: NetName=NTC2 Pin=J3-1
+Added Pin To Net: NetName=NTC3 Pin=J3-2
+Added Pin To Net: NetName=NTC4 Pin=J3-3
+Added Pin To Net: NetName=NTC5 Pin=J3-4
+Added Pin To Net: NetName=NTC6 Pin=J3-5
+Added Pin To Net: NetName=NTC7 Pin=J3-6
+Added Pin To Net: NetName=NTC8 Pin=J3-7
+Added Pin To Net: NetName=NTC1 Pin=NTC401-2
+Added Pin To Net: NetName=NTC8 Pin=TP408-1
+Added Pin To Net: NetName=Cell_0 Pin=TP409-1
