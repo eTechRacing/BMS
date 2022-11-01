@@ -33,7 +33,7 @@ FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
 IsVirtualBomDocumentRemoved=0
-OutputPath=
+OutputPath=Project Outputs for AMS_Master
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=1
@@ -564,40 +564,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QQSULTTQ
 
-[Document31]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master_drills.Cam
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document32]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master_gerbers.Cam
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
 [ProjectVariant1]
 UniqueID=CA0C60C3-FBE3-4546-9244-D31C874F4DBD
 Description=Test_Unit
@@ -972,7 +938,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for AMS_Master
 
 [OutputGroup1]
 Name=Netlist Outputs
