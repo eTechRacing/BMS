@@ -33,7 +33,7 @@ FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
 IsVirtualBomDocumentRemoved=0
-OutputPath=Project Outputs for Accumulator_HotDog
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -465,32 +465,32 @@ DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.TXT
 DItemRevisionGUID=
 
 [Parameter1]
-Name=Version
-Value=3.0
+Name=Company
+Value=e-Tech Racing
 
 [Parameter2]
-Name=Project
-Value=Accumulator_HotDog
+Name=Department
+Value=Accumulator-BMS
 
 [Parameter3]
-Name=DesignerName
-Value=David Redondo
+Name=DesignedByURL
+Value=e-techracing.es
 
 [Parameter4]
 Name=DesignerMail
 Value=dredondovinolo@gmail.com
 
 [Parameter5]
-Name=DesignedByURL
-Value=e-techracing.es
+Name=DesignerName
+Value=David Redondo
 
 [Parameter6]
-Name=Department
-Value=Accumulator-BMS
+Name=Project
+Value=Accumulator_HotDog
 
 [Parameter7]
-Name=Company
-Value=e-Tech Racing
+Name=Version
+Value=3.0
 
 [Configuration1]
 Name=Sources
@@ -541,7 +541,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=Project Outputs for Accumulator_HotDog
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
