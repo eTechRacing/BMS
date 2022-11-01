@@ -2,15 +2,15 @@
 Version=1.0
 
 [PublishSettings]
-OutputFilePath2=
-ReleaseManaged2=1
-OutputBasePath2=
+OutputFilePath2=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\.PDF
+ReleaseManaged2=0
+OutputBasePath2=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\
 OutputPathMedia2=
 OutputPathMediaValue2=
 OutputPathOutputer2=[Output Type]
 OutputPathOutputerPrefix2=
 OutputPathOutputerValue2=
-OutputFileName2=
+OutputFileName2=AMS_Master.pdf
 OutputFileNameMulti2=
 UseOutputNameForMulti2=1
 OutputFileNameSpecial2=
@@ -132,7 +132,7 @@ WmvVideoCodecName3=Windows Media Video V7
 WmvQuality3=80
 
 [GeneratedFilesSettings]
-RelativeOutputPath2=
+RelativeOutputPath2=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\.PDF
 OpenOutputs2=1
 RelativeOutputPath3=
 OpenOutputs3=1
@@ -166,21 +166,26 @@ VariantScope=0
 CurrentConfigurationName=
 TargetPrinter=Virtual Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
-OutputMedium1=PDF
-OutputMedium1_Type=Publish
-OutputMedium2=Folder Structure
-OutputMedium2_Type=GeneratedFiles
-OutputMedium3=Video
-OutputMedium3_Type=Multimedia
+OutputMedium1=Print Job
+OutputMedium1_Type=Printer
+OutputMedium1_Printer=
+OutputMedium1_PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
+OutputMedium2=PDF
+OutputMedium2_Type=Publish
+OutputMedium3=Folder Structure
+OutputMedium3_Type=GeneratedFiles
+OutputMedium4=Video
+OutputMedium4_Type=Multimedia
 OutputType1=Schematic Print
 OutputName1=Schematic Prints
 OutputCategory1=Documentation
 OutputDocumentPath1=[Project Physical Documents]
 OutputVariantName1=Production_Unit
 OutputEnabled1=1
-OutputEnabled1_OutputMedium1=1
-OutputEnabled1_OutputMedium2=0
+OutputEnabled1_OutputMedium1=0
+OutputEnabled1_OutputMedium2=1
 OutputEnabled1_OutputMedium3=0
+OutputEnabled1_OutputMedium4=0
 OutputDefault1=0
 PageOptions1=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 Configuration1_Name1=OutputConfigurationParameter1
@@ -191,11 +196,12 @@ OutputCategory2=Documentation
 OutputDocumentPath2=AMS_Master.PcbDoc
 OutputVariantName2=
 OutputEnabled2=1
-OutputEnabled2_OutputMedium1=2
-OutputEnabled2_OutputMedium2=0
+OutputEnabled2_OutputMedium1=0
+OutputEnabled2_OutputMedium2=2
 OutputEnabled2_OutputMedium3=0
+OutputEnabled2_OutputMedium4=0
 OutputDefault2=0
-PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+PageOptions2=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.62|XCorrection=1.00|YCorrection=1.00|PrintKind=0|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 Configuration2_Name1=OutputConfigurationParameter1
 Configuration2_Item1=DesignatorDisplayMode=Physical|PrintArea=DesignExtent|PrintAreaLowerLeftCornerX=0|PrintAreaLowerLeftCornerY=0|PrintAreaUpperRightCornerX=0|PrintAreaUpperRightCornerY=0|Record=PcbPrintView|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 Configuration2_Name2=OutputConfigurationParameter2

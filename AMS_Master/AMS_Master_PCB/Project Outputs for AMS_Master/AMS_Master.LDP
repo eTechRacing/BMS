@@ -1,4 +1,4 @@
-Layer Pairs Export File for PCB: G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
+Layer Pairs Export File for PCB: C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 LayersSetName=Top_Bot_Thru_Holes|DrillFile=ams_master.txt|DrillLayers=gtl,g1,g2,gbl
 LayersSetName=Top_PWR_Blind_Vias|DrillFile=ams_master.tx1|DrillLayers=gtl,g1
 LayersSetName=Top_GND_Blind_Vias|DrillFile=ams_master.tx2|DrillLayers=gtl,g1,g2

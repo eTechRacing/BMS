@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: AMS_Master.PcbDoc   25/08/2022  17:02:38
+NCDrill File Report For: AMS_Master.PcbDoc   01/11/2022  21:19:35
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -8,62 +8,62 @@ EIA File   : AMS_Master.DRL
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.5mm (20mil)                                             Round             22        PTH        538.71mm (21.21inch)
-T2      0.8mm (31mil)                                             Round             43        PTH        468.96mm (18.46inch)
-T3      1.02mm (40mil)                                            Round             10        PTH        224.83mm (8.85inch)
-T4      1.1mm (43mil)                                             Round             21        PTH        130.69mm (5.15inch)
-T5      1.2mm (47mil)           +/-0.05mm (2mil)                  Round             4         PTH        7.50mm (0.30inch)
-T6      1.2mm (47mil)                                             Round             42        PTH        599.73mm (23.61inch)
-T7      1.4mm (55mil)                                             Round             1         PTH        0.00mm (0.00inch)
-T8      1.5mm (59mil)                                             Round             15        PTH        265.15mm (10.44inch)
-T9      1.6mm (63mil)           +0.05mm (2mil)                    Round             4         PTH        63.71mm (2.51inch)
-T10     3mm (118mil)            +/-0.05mm (2mil)                  Round             1         PTH        0.00mm (0.00inch)
-T11     3mm (118mil)            +0.05mm (2mil)                    Round             2         PTH        4.70mm (0.19inch)
-T12     3mm (118mil)                                              Round             4         PTH        575.17mm (22.64inch)
-T13     3.18mm (125mil)                                           Round             2         PTH        25.00mm (0.98inch)
+T3      0.5mm (20mil)                                             Round             34        PTH        326.34mm (12.85inch)
+T4      0.6mm (24mil)                                             Round             3         PTH        8.67mm (0.34inch)
+T5      0.8mm (31mil)                                             Round             21        PTH        250.39mm (9.86inch)
+T6      1mm (39mil)                                               Round             6         PTH        25.14mm (0.99inch)
+T7      1.02mm (40mil)                                            Round             14        PTH        212.72mm (8.37inch)
+T8      1.1mm (43mil)                                             Round             21        PTH        200.39mm (7.89inch)
+T9      1.2mm (47mil)                                             Round             34        PTH        317.46mm (12.50inch)
+T10     1.3mm (51mil)                                             Round             1         PTH        0.00mm (0.00inch)
+T11     1.4mm (55mil)                                             Round             1         PTH        0.00mm (0.00inch)
+T12     1.5mm (59mil)                                             Round             10        PTH        239.84mm (9.44inch)
+T13     3mm (118mil)            +0.05mm (2mil)                    Round             2         PTH        4.70mm (0.19inch)
+T14     4.2mm (165mil)                                            Round             4         PTH        236.75mm (9.32inch)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              171
+Totals                                                                              151
 Layer Pair : Top Layer to PWR
 ASCII RoundHoles File : AMS_Master.TX1
 EIA File   : AMS_Master.DR1
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.5mm (20mil)                                             Round             1         PTH        0.00mm (0.00inch)
-T2      0.8mm (31mil)                                             Round             18        PTH        228.69mm (9.00inch)
+T2      0.3mm (12mil)                                             Round             36        PTH        306.11mm (12.05inch)
+T3      0.5mm (20mil)                                             Round             1         PTH        0.00mm (0.00inch)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              19
+Totals                                                                              37
 Layer Pair : Top Layer to GND
 ASCII RoundHoles File : AMS_Master.TX2
 EIA File   : AMS_Master.DR2
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.5mm (20mil)                                             Round             17        PTH        320.57mm (12.62inch)
-T2      0.8mm (31mil)                                             Round             34        PTH        514.85mm (20.27inch)
+T1      0.2mm (8mil)                                              Round             12        PTH        40.55mm (1.60inch)
+T2      0.3mm (12mil)                                             Round             137       PTH        960.48mm (37.81inch)
+T3      0.5mm (20mil)                                             Round             9         PTH        257.40mm (10.13inch)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              51
+Totals                                                                              158
 Layer Pair : PWR to Bottom Layer
 ASCII RoundHoles File : AMS_Master.TX3
 EIA File   : AMS_Master.DR3
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.5mm (20mil)                                             Round             1         PTH        0.00mm (0.00inch)
-T2      0.8mm (31mil)                                             Round             16        PTH        325.12mm (12.80inch)
+T2      0.3mm (12mil)                                             Round             8         PTH        173.49mm (6.83inch)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              17
+Totals                                                                              8
 Layer Pair : GND to Bottom Layer
 ASCII RoundHoles File : AMS_Master.TX4
 EIA File   : AMS_Master.DR4
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.5mm (20mil)                                             Round             6         PTH        302.96mm (11.93inch)
-T2      0.8mm (31mil)                                             Round             30        PTH        559.16mm (22.01inch)
+T1      0.2mm (8mil)                                              Round             26        PTH        68.55mm (2.70inch)
+T2      0.3mm (12mil)                                             Round             97        PTH        860.79mm (33.89inch)
+T3      0.5mm (20mil)                                             Round             6         PTH        233.21mm (9.18inch)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              36
+Totals                                                                              129
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              294
+Totals                                                                              483
 
-Total Processing Time (hh:mm:ss) : 00:00:01
+Total Processing Time (hh:mm:ss) : 00:00:00
