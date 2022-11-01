@@ -977,7 +977,7 @@ OutputDir=
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=HP6E452C (HP ENVY 5540 series)
+TargetPrinter=OneNote (Desktop)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CadnetixNetlist
 OutputName1=Cadnetix Netlist
@@ -1173,7 +1173,7 @@ PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=HP6E452C (HP ENVY 5540 series)
+TargetPrinter=OneNote (Desktop)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -1195,7 +1195,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=HP6E452C (HP ENVY 5540 series)
+TargetPrinter=OneNote (Desktop)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CompositeDrill
 OutputName1=Composite Drill Drawing
@@ -1275,7 +1275,7 @@ Configuration12_Item2=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLaye
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=HP6E452C (HP ENVY 5540 series)
+TargetPrinter=OneNote (Desktop)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -1336,7 +1336,7 @@ PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintS
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=HP6E452C (HP ENVY 5540 series)
+TargetPrinter=OneNote (Desktop)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -1444,7 +1444,7 @@ PageOptions17=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=HP6E452C (HP ENVY 5540 series)
+TargetPrinter=OneNote (Desktop)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Component states check
 OutputName1=Server's components states check
@@ -1488,7 +1488,7 @@ OutputDefault7=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=HP6E452C (HP ENVY 5540 series)
+TargetPrinter=OneNote (Desktop)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
@@ -1554,7 +1554,7 @@ OutputDefault12=0
 [OutputGroup10]
 Name=PostProcess Outputs
 Description=
-TargetPrinter=HP6E452C (HP ENVY 5540 series)
+TargetPrinter=OneNote (Desktop)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Copy Files
 OutputName1=Copy Files
@@ -1682,6 +1682,7 @@ Type116=1
 Type117=1
 Type118=1
 Type119=1
+Type120=1
 
 [Difference Levels]
 Type1=1
@@ -2386,42 +2387,47 @@ Net1=NetName=+12|NetColor=$00FF6EFF
 Net2=NetName=+12V in|NetColor=$006E6EFF
 Net3=NetName=+5|NetColor=$00FF6EFF
 Net4=NetName=+5 ISO|NetColor=$00FF6EFF
-Net5=NetName=+5 TS|NetColor=$000099FF
-Net6=NetName=+5V in|NetColor=$006E6EFF
-Net7=NetName=+5V ISO in|NetColor=$006E6EFF
-Net8=NetName=Accumulator_Interlock|NetColor=$00660066
-Net9=NetName=AIR-_AUX_1|NetColor=$00FFFF6E
-Net10=NetName=AIR-_Coil_1|NetColor=$00660066
-Net11=NetName=AIR-_State|NetColor=$00FFFF6E
-Net12=NetName=AIR+_AUX_1|NetColor=$00FFFF6E
-Net13=NetName=AIR+_Coil_1|NetColor=$00660066
-Net14=NetName=AIR+_State|NetColor=$00FFFF6E
-Net15=NetName=AMS_CAN_GND|NetColor=$00FFFF6E
-Net16=NetName=AMS_CAN_H|NetColor=$006EFF6E
-Net17=NetName=AMS_CAN_L|NetColor=$006EFF6E
-Net18=NetName=BAT-|NetColor=$000099FF
-Net19=NetName=BAT+|NetColor=$000099FF
-Net20=NetName=BMS_OK|NetColor=$00FFFF6E
-Net21=NetName=CAN1_H|NetColor=$006EFF6E
-Net22=NetName=CAN1_L|NetColor=$006EFF6E
-Net23=NetName=Fans_1-|NetColor=$00FFFF6E
-Net24=NetName=Fans_2-|NetColor=$00FFFF6E
-Net25=NetName=Fans_3-|NetColor=$00FFFF6E
-Net26=NetName=GND|NetColor=$00707070
-Net27=NetName=HV_Accumulator_State|NetColor=$00FFFF6E
-Net28=NetName=Inverters_Enable|NetColor=$00FFFF6E
-Net29=NetName=LV+ in|NetColor=$006E6EFF
-Net30=NetName=NetF_BAT+_2|NetColor=$000083FD
-Net31=NetName=NetF_TS+_2|NetColor=$000083FD
-Net32=NetName=Precharge_Coil_1|NetColor=$00660066
-Net33=NetName=Precharge_NC|NetColor=$000083FD
-Net34=NetName=Precharge_State|NetColor=$00FFFF6E
-Net35=NetName=TS-|NetColor=$000099FF
-Net36=NetName=TS+|NetColor=$000099FF
-Net37=NetName=TS+_unfused|NetColor=$000083FD
-Net38=NetName=VCC|NetColor=$00FF6EFF
-Net39=NetName=Voltage indicator -|NetColor=$00FFFF6E
-Net40=NetName=Voltage indicator +|NetColor=$00FF6EFF
+Net5=NetName=+5V in|NetColor=$006E6EFF
+Net6=NetName=+5V ISO in|NetColor=$006E6EFF
+Net7=NetName=Accumulator_Interlock|NetColor=$0089007D
+Net8=NetName=AIR-_AUX_1|NetColor=$00FFFF6E
+Net9=NetName=AIR-_Coil_1|NetColor=$00660066
+Net10=NetName=AIR-_State|NetColor=$00FFFF6E
+Net11=NetName=AIR+_AUX_1|NetColor=$00FFFF6E
+Net12=NetName=AIR+_Coil_1|NetColor=$00660066
+Net13=NetName=AIR+_State|NetColor=$00FFFF6E
+Net14=NetName=AMS_CAN_GND|NetColor=$00FFFF6E
+Net15=NetName=AMS_CAN_H|NetColor=$006EFF6E
+Net16=NetName=AMS_CAN_L|NetColor=$006EFF6E
+Net17=NetName=BAT-|NetColor=$000099FF
+Net18=NetName=BAT+|NetColor=$000099FF
+Net19=NetName=BMS_OK|NetColor=$00FFFF6E
+Net20=NetName=BMS_OK_unlatched|NetColor=$00FFFF6E
+Net21=NetName=BMS_Shutdown|NetColor=$0089007D
+Net22=NetName=CAN1_H|NetColor=$006EFF6E
+Net23=NetName=CAN1_L|NetColor=$006EFF6E
+Net24=NetName=Fans_1-|NetColor=$00FFFF6E
+Net25=NetName=Fans_2-|NetColor=$00FFFF6E
+Net26=NetName=Fans_3-|NetColor=$00FFFF6E
+Net27=NetName=GND|NetColor=$00707070
+Net28=NetName=HV_Accumulator_State|NetColor=$00FFFF6E
+Net29=NetName=IMD_OK|NetColor=$00FFFF6E
+Net30=NetName=IMD_OK_unlatched|NetColor=$00FFFF6E
+Net31=NetName=IMD_Shutdown|NetColor=$0089007D
+Net32=NetName=Inverters_Enable|NetColor=$00FFFF6E
+Net33=NetName=LV+ in|NetColor=$006E6EFF
+Net34=NetName=NetF_BAT+_2|NetColor=$000083FD
+Net35=NetName=NetF_TS+_2|NetColor=$000083FD
+Net36=NetName=Precharge_Coil_1|NetColor=$00660066
+Net37=NetName=Precharge_NC|NetColor=$000083FD
+Net38=NetName=Precharge_State|NetColor=$00FFFF6E
+Net39=NetName=TS-|NetColor=$000099FF
+Net40=NetName=TS+|NetColor=$000099FF
+Net41=NetName=TS+_unfused|NetColor=$000083FD
+Net42=NetName=TSMS|NetColor=$0089007D
+Net43=NetName=VCC|NetColor=$00FF6EFF
+Net44=NetName=Voltage indicator -|NetColor=$00FFFF6E
+Net45=NetName=Voltage indicator +|NetColor=$00FF6EFF
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=-1|UseName=-1|InclAllRules=0
