@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Accumulator_HotDog.PrjPcb]
+   Generated File[Accumulator_HotDog.TXT]
+   Generated File[Accumulator_HotDog.LDP]
+   Generated File[Accumulator_HotDog.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 15:17:43 On 01/11/2022

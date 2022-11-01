@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=NetJ202_8 Pin=NTC205-1
+Removed Pin From Net: NetName=NetJ202_7 Pin=NTC206-1
+Removed Pin From Net: NetName=NetJ202_6 Pin=NTC207-1
+Removed Pin From Net: NetName=NetJ202_5 Pin=NTC208-1
+Added Pin To Net: NetName=NetJ202_5 Pin=NTC205-1
+Added Pin To Net: NetName=NetJ202_6 Pin=NTC206-1
+Added Pin To Net: NetName=NetJ202_7 Pin=NTC207-1
+Added Pin To Net: NetName=NetJ202_8 Pin=NTC208-1
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component NTC305 NXRT15XV103FA1B040
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component NTC307 NXRT15XV103FA1B040
