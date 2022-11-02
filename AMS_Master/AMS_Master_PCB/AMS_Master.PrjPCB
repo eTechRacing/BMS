@@ -43,7 +43,7 @@ CrossRefPorts=3
 CrossRefCrossSheets=1
 CrossRefSheetEntries=0
 CrossRefFollowFromMainSettings=1
-CurrentVariant=Production_Unit
+CurrentVariant=ETR-08
 
 [Preferences]
 PrefsVaultGUID=
@@ -564,6 +564,40 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=QQSULTTQ
 
+[Document31]
+DocumentPath=Project Outputs for AMS_Master\CAMtastic1.Cam
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document32]
+DocumentPath=Project Outputs for AMS_Master\CAMtastic2.Cam
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [ProjectVariant1]
 UniqueID=CA0C60C3-FBE3-4546-9244-D31C874F4DBD
 Description=Test_Unit
@@ -574,59 +608,127 @@ ParamVariationCount=0
 
 [ProjectVariant2]
 UniqueID=5F2B4C76-232D-4E9E-9602-F0DBC2D94D1A
-Description=Production_Unit
+Description=ETR-08
 AllowFabrication=1
 ParameterCount=0
-VariationCount=48
+VariationCount=62
 AllowVariationPastMask=1
-Variation1=Designator=J101|UniqueId=\DTSRDESI\OIYHWNHH|Kind=1|AlternatePart= 
-Variation2=Designator=J102|UniqueId=\DTSRDESI\AUCUIUAP|Kind=1|AlternatePart= 
-Variation3=Designator=J103|UniqueId=\DTSRDESI\KIEWOTQQ|Kind=1|AlternatePart= 
-Variation4=Designator=J104|UniqueId=\DTSRDESI\FQMHYINN|Kind=1|AlternatePart= 
-Variation5=Designator=J105|UniqueId=\DTSRDESI\NWUXWZZZ|Kind=1|AlternatePart= 
-Variation6=Designator=J106|UniqueId=\DTSRDESI\CMMNMBGQ|Kind=1|AlternatePart= 
-Variation7=Designator=R204|UniqueId=\QCEHSZDM\LTLQAVIH|Kind=1|AlternatePart= 
-Variation8=Designator=R205|UniqueId=\QCEHSZDM\VDBOYXLS|Kind=1|AlternatePart= 
-Variation9=Designator=R206|UniqueId=\QCEHSZDM\MSFEUIKH|Kind=1|AlternatePart= 
-Variation10=Designator=R207|UniqueId=\QCEHSZDM\KMRVWHAO|Kind=1|AlternatePart= 
-Variation11=Designator=R208|UniqueId=\QCEHSZDM\GLCKOEJF|Kind=1|AlternatePart= 
-Variation12=Designator=R209|UniqueId=\QCEHSZDM\COYUWYCW|Kind=1|AlternatePart= 
-Variation13=Designator=R210|UniqueId=\QCEHSZDM\BCOTMGAS|Kind=1|AlternatePart= 
-Variation14=Designator=R211|UniqueId=\QCEHSZDM\KGZWROCL|Kind=1|AlternatePart= 
-Variation15=Designator=R212|UniqueId=\QCEHSZDM\ODKSRVPK|Kind=1|AlternatePart= 
-Variation16=Designator=R213|UniqueId=\QCEHSZDM\OQGJKYOC|Kind=1|AlternatePart= 
-Variation17=Designator=R214|UniqueId=\QCEHSZDM\ZNYTRMAO|Kind=1|AlternatePart= 
-Variation18=Designator=R215|UniqueId=\QCEHSZDM\XXIGBNSQ|Kind=1|AlternatePart= 
-Variation19=Designator=C402|UniqueId=\IHCIDKUD\GGXEUESB|Kind=1|AlternatePart= 
-Variation20=Designator=C302|UniqueId=\CYQXCNYC\ASQBSFOA|Kind=1|AlternatePart= 
-Variation21=Designator=C301|UniqueId=\CYQXCNYC\BETJLYXX|Kind=1|AlternatePart= 
-Variation22=Designator=C303|UniqueId=\CYQXCNYC\BQCXHVHE|Kind=1|AlternatePart= 
-Variation23=Designator=C304|UniqueId=\CYQXCNYC\RAVMQGEX|Kind=1|AlternatePart= 
-Variation24=Designator=C305|UniqueId=\CYQXCNYC\VROTLYHT|Kind=1|AlternatePart= 
-Variation25=Designator=C306|UniqueId=\CYQXCNYC\TGEYRMRF|Kind=1|AlternatePart= 
-Variation26=Designator=C307|UniqueId=\CYQXCNYC\VUYHNSWP|Kind=1|AlternatePart= 
-Variation27=Designator=C314|UniqueId=\CYQXCNYC\DBHHXKWJ|Kind=1|AlternatePart= 
-Variation28=Designator=C315|UniqueId=\CYQXCNYC\BZIJTDXR|Kind=1|AlternatePart= 
-Variation29=Designator=C316|UniqueId=\CYQXCNYC\YHAIOSYS|Kind=1|AlternatePart= 
-Variation30=Designator=C317|UniqueId=\CYQXCNYC\SQIHSHJZ|Kind=1|AlternatePart= 
-Variation31=Designator=C318|UniqueId=\CYQXCNYC\SNCDLUUS|Kind=1|AlternatePart= 
-Variation32=Designator=C319|UniqueId=\CYQXCNYC\GKLKARII|Kind=1|AlternatePart= 
-Variation33=Designator=C320|UniqueId=\CYQXCNYC\QNWECDCG|Kind=1|AlternatePart= 
-Variation34=Designator=NTC701|UniqueId=\ZYHEJPCQ\LXGPVWTU|Kind=1|AlternatePart= 
-Variation35=Designator=R701|UniqueId=\ZYHEJPCQ\AXQGPXGM|Kind=1|AlternatePart= 
-Variation36=Designator=C701|UniqueId=\ZYHEJPCQ\AXCRBHSG|Kind=1|AlternatePart= 
-Variation37=Designator=D104|UniqueId=\DTSRDESI\QHOCDRQX|Kind=1|AlternatePart= 
-Variation38=Designator=D203|UniqueId=\QCEHSZDM\KMKTXRQA|Kind=1|AlternatePart= 
-Variation39=Designator=D202|UniqueId=\QCEHSZDM\LXBWOFON|Kind=1|AlternatePart= 
-Variation40=Designator=D103|UniqueId=\DTSRDESI\NKKRYWCI|Kind=1|AlternatePart= 
-Variation41=Designator=D102|UniqueId=\DTSRDESI\PAHWQJMV|Kind=1|AlternatePart= 
-Variation42=Designator=D101|UniqueId=\DTSRDESI\TSUIFVCV|Kind=1|AlternatePart= 
-Variation43=Designator=R101|UniqueId=\DTSRDESI\WOHJBDHY|Kind=1|AlternatePart= 
-Variation44=Designator=R104|UniqueId=\DTSRDESI\AKUMBVDD|Kind=1|AlternatePart= 
-Variation45=Designator=R103|UniqueId=\DTSRDESI\CXFHJUJK|Kind=1|AlternatePart= 
-Variation46=Designator=R102|UniqueId=\DTSRDESI\NJDFBKQT|Kind=1|AlternatePart= 
-Variation47=Designator=R202|UniqueId=\QCEHSZDM\SDMOVLXU|Kind=1|AlternatePart= 
-Variation48=Designator=R203|UniqueId=\QCEHSZDM\ISITTMZV|Kind=1|AlternatePart= 
+Variation1=Designator=J102|UniqueId=\DTSRDESI\OIYHWNHH|Kind=1|AlternatePart= 
+Variation2=Designator=J103|UniqueId=\DTSRDESI\EBCBWVLD|Kind=1|AlternatePart= 
+Variation3=Designator=J104|UniqueId=\DTSRDESI\UYJYBFSN|Kind=1|AlternatePart= 
+Variation4=Designator=R204|UniqueId=\QCEHSZDM\LTLQAVIH|Kind=1|AlternatePart= 
+Variation5=Designator=R205|UniqueId=\QCEHSZDM\VDBOYXLS|Kind=1|AlternatePart= 
+Variation6=Designator=R206|UniqueId=\QCEHSZDM\MSFEUIKH|Kind=1|AlternatePart= 
+Variation7=Designator=R207|UniqueId=\QCEHSZDM\KMRVWHAO|Kind=1|AlternatePart= 
+Variation8=Designator=R208|UniqueId=\QCEHSZDM\GLCKOEJF|Kind=1|AlternatePart= 
+Variation9=Designator=R209|UniqueId=\QCEHSZDM\COYUWYCW|Kind=1|AlternatePart= 
+Variation10=Designator=R210|UniqueId=\QCEHSZDM\BCOTMGAS|Kind=1|AlternatePart= 
+Variation11=Designator=R211|UniqueId=\QCEHSZDM\KGZWROCL|Kind=1|AlternatePart= 
+Variation12=Designator=R212|UniqueId=\QCEHSZDM\ODKSRVPK|Kind=1|AlternatePart= 
+Variation13=Designator=R213|UniqueId=\QCEHSZDM\OQGJKYOC|Kind=1|AlternatePart= 
+Variation14=Designator=R214|UniqueId=\QCEHSZDM\ZNYTRMAO|Kind=1|AlternatePart= 
+Variation15=Designator=R215|UniqueId=\QCEHSZDM\XXIGBNSQ|Kind=1|AlternatePart= 
+Variation16=Designator=C402|UniqueId=\IHCIDKUD\OWUHBZYM|Kind=1|AlternatePart= 
+Variation17=Designator=C302|UniqueId=\CYQXCNYC\ASQBSFOA|Kind=1|AlternatePart= 
+Variation18=Designator=C301|UniqueId=\CYQXCNYC\BETJLYXX|Kind=1|AlternatePart= 
+Variation19=Designator=C303|UniqueId=\CYQXCNYC\BQCXHVHE|Kind=1|AlternatePart= 
+Variation20=Designator=C304|UniqueId=\CYQXCNYC\RAVMQGEX|Kind=1|AlternatePart= 
+Variation21=Designator=C305|UniqueId=\CYQXCNYC\VROTLYHT|Kind=1|AlternatePart= 
+Variation22=Designator=C306|UniqueId=\CYQXCNYC\TGEYRMRF|Kind=1|AlternatePart= 
+Variation23=Designator=C307|UniqueId=\CYQXCNYC\VUYHNSWP|Kind=1|AlternatePart= 
+Variation24=Designator=C314|UniqueId=\CYQXCNYC\DBHHXKWJ|Kind=1|AlternatePart= 
+Variation25=Designator=C315|UniqueId=\CYQXCNYC\BZIJTDXR|Kind=1|AlternatePart= 
+Variation26=Designator=C316|UniqueId=\CYQXCNYC\YHAIOSYS|Kind=1|AlternatePart= 
+Variation27=Designator=C317|UniqueId=\CYQXCNYC\SQIHSHJZ|Kind=1|AlternatePart= 
+Variation28=Designator=C318|UniqueId=\CYQXCNYC\SNCDLUUS|Kind=1|AlternatePart= 
+Variation29=Designator=C319|UniqueId=\CYQXCNYC\GKLKARII|Kind=1|AlternatePart= 
+Variation30=Designator=C320|UniqueId=\CYQXCNYC\QNWECDCG|Kind=1|AlternatePart= 
+Variation31=Designator=NTC601|UniqueId=\ZYHEJPCQ\LXGPVWTU|Kind=1|AlternatePart= 
+Variation32=Designator=R601|UniqueId=\ZYHEJPCQ\AXQGPXGM|Kind=1|AlternatePart= 
+Variation33=Designator=C601|UniqueId=\ZYHEJPCQ\AXCRBHSG|Kind=1|AlternatePart= 
+Variation34=Designator=D103|UniqueId=\DTSRDESI\QHOCDRQX|Kind=1|AlternatePart= 
+Variation35=Designator=D203|UniqueId=\QCEHSZDM\KMKTXRQA|Kind=1|AlternatePart= 
+Variation36=Designator=D202|UniqueId=\QCEHSZDM\LXBWOFON|Kind=1|AlternatePart= 
+Variation37=Designator=D102|UniqueId=\DTSRDESI\PAHWQJMV|Kind=1|AlternatePart= 
+Variation38=Designator=D101|UniqueId=\DTSRDESI\TSUIFVCV|Kind=1|AlternatePart= 
+Variation39=Designator=R101|UniqueId=\DTSRDESI\WOHJBDHY|Kind=1|AlternatePart= 
+Variation40=Designator=R103|UniqueId=\DTSRDESI\AKUMBVDD|Kind=1|AlternatePart= 
+Variation41=Designator=R102|UniqueId=\DTSRDESI\NJDFBKQT|Kind=1|AlternatePart= 
+Variation42=Designator=R202|UniqueId=\QCEHSZDM\SDMOVLXU|Kind=1|AlternatePart= 
+Variation43=Designator=R203|UniqueId=\QCEHSZDM\ISITTMZV|Kind=1|AlternatePart= 
+Variation44=Designator=C401|UniqueId=\IHCIDKUD\LOAARSNX|Kind=1|AlternatePart= 
+Variation45=Designator=D401|UniqueId=\IHCIDKUD\CNBKNNCC|Kind=1|AlternatePart= 
+Variation46=Designator=D402|UniqueId=\IHCIDKUD\YHKMMWHP|Kind=1|AlternatePart= 
+Variation47=Designator=J101|UniqueId=\DTSRDESI\YQFVUOER|Kind=1|AlternatePart= 
+Variation48=Designator=R216|UniqueId=\QCEHSZDM\ZNIOCQIU|Kind=1|AlternatePart= 
+Variation49=Designator=R403|UniqueId=\IHCIDKUD\BUTURYLA|Kind=1|AlternatePart= 
+Variation50=Designator=R404|UniqueId=\IHCIDKUD\JXZQQROF|Kind=1|AlternatePart= 
+Variation51=Designator=R405|UniqueId=\IHCIDKUD\TMLTIIHC|Kind=1|AlternatePart= 
+Variation52=Designator=R406|UniqueId=\IHCIDKUD\NORYPRBE|Kind=1|AlternatePart= 
+Variation53=Designator=R407|UniqueId=\IHCIDKUD\JFNXGBMH|Kind=1|AlternatePart= 
+Variation54=Designator=R408|UniqueId=\IHCIDKUD\URKZZDFB|Kind=1|AlternatePart= 
+Variation55=Designator=R409|UniqueId=\IHCIDKUD\IWURDGZE|Kind=1|AlternatePart= 
+Variation56=Designator=R410|UniqueId=\IHCIDKUD\QZWOCFGN|Kind=1|AlternatePart= 
+Variation57=Designator=R411|UniqueId=\IHCIDKUD\LSUBWWJY|Kind=1|AlternatePart= 
+Variation58=Designator=Q402|UniqueId=\IHCIDKUD\WHWWJEKT|Kind=1|AlternatePart= 
+Variation59=Designator=Q403|UniqueId=\IHCIDKUD\XUTSORWY|Kind=1|AlternatePart= 
+Variation60=Designator=U401|UniqueId=\IHCIDKUD\HJYFJRXT|Kind=1|AlternatePart= 
+Variation61=Designator=X401|UniqueId=\IHCIDKUD\AFVDRMHJ|Kind=1|AlternatePart= 
+Variation62=Designator=X402|UniqueId=\IHCIDKUD\GPELLDDU|Kind=1|AlternatePart= 
+ParamVariationCount=0
+
+[ProjectVariant3]
+UniqueID=793E7F87-2A9A-4FC2-A80B-044DE34AEE24
+Description=ETR-X
+AllowFabrication=0
+ParameterCount=0
+VariationCount=46
+Variation1=Designator=C301|UniqueId=\CYQXCNYC\BETJLYXX|Kind=1|AlternatePart= 
+Variation2=Designator=C307|UniqueId=\CYQXCNYC\VUYHNSWP|Kind=1|AlternatePart= 
+Variation3=Designator=C306|UniqueId=\CYQXCNYC\TGEYRMRF|Kind=1|AlternatePart= 
+Variation4=Designator=C305|UniqueId=\CYQXCNYC\VROTLYHT|Kind=1|AlternatePart= 
+Variation5=Designator=C304|UniqueId=\CYQXCNYC\RAVMQGEX|Kind=1|AlternatePart= 
+Variation6=Designator=C303|UniqueId=\CYQXCNYC\BQCXHVHE|Kind=1|AlternatePart= 
+Variation7=Designator=C302|UniqueId=\CYQXCNYC\ASQBSFOA|Kind=1|AlternatePart= 
+Variation8=Designator=C314|UniqueId=\CYQXCNYC\DBHHXKWJ|Kind=1|AlternatePart= 
+Variation9=Designator=C315|UniqueId=\CYQXCNYC\BZIJTDXR|Kind=1|AlternatePart= 
+Variation10=Designator=C316|UniqueId=\CYQXCNYC\YHAIOSYS|Kind=1|AlternatePart= 
+Variation11=Designator=C317|UniqueId=\CYQXCNYC\SQIHSHJZ|Kind=1|AlternatePart= 
+Variation12=Designator=C318|UniqueId=\CYQXCNYC\SNCDLUUS|Kind=1|AlternatePart= 
+Variation13=Designator=C319|UniqueId=\CYQXCNYC\GKLKARII|Kind=1|AlternatePart= 
+Variation14=Designator=C320|UniqueId=\CYQXCNYC\QNWECDCG|Kind=1|AlternatePart= 
+Variation15=Designator=C601|UniqueId=\ZYHEJPCQ\AXCRBHSG|Kind=1|AlternatePart= 
+Variation16=Designator=D101|UniqueId=\DTSRDESI\TSUIFVCV|Kind=1|AlternatePart= 
+Variation17=Designator=D102|UniqueId=\DTSRDESI\PAHWQJMV|Kind=1|AlternatePart= 
+Variation18=Designator=D103|UniqueId=\DTSRDESI\QHOCDRQX|Kind=1|AlternatePart= 
+Variation19=Designator=D202|UniqueId=\QCEHSZDM\LXBWOFON|Kind=1|AlternatePart= 
+Variation20=Designator=D203|UniqueId=\QCEHSZDM\KMKTXRQA|Kind=1|AlternatePart= 
+Variation21=Designator=J102|UniqueId=\DTSRDESI\OIYHWNHH|Kind=1|AlternatePart= 
+Variation22=Designator=J101|UniqueId=\DTSRDESI\YQFVUOER|Kind=1|AlternatePart= 
+Variation23=Designator=J104|UniqueId=\DTSRDESI\UYJYBFSN|Kind=1|AlternatePart= 
+Variation24=Designator=J103|UniqueId=\DTSRDESI\EBCBWVLD|Kind=1|AlternatePart= 
+Variation25=Designator=J401|UniqueId=\IHCIDKUD\NLNTITRC|Kind=1|AlternatePart= 
+Variation26=Designator=J402|UniqueId=\IHCIDKUD\CDJRMNSO|Kind=1|AlternatePart= 
+Variation27=Designator=NTC601|UniqueId=\ZYHEJPCQ\LXGPVWTU|Kind=1|AlternatePart= 
+Variation28=Designator=R101|UniqueId=\DTSRDESI\WOHJBDHY|Kind=1|AlternatePart= 
+Variation29=Designator=R102|UniqueId=\DTSRDESI\NJDFBKQT|Kind=1|AlternatePart= 
+Variation30=Designator=R103|UniqueId=\DTSRDESI\AKUMBVDD|Kind=1|AlternatePart= 
+Variation31=Designator=R202|UniqueId=\QCEHSZDM\SDMOVLXU|Kind=1|AlternatePart= 
+Variation32=Designator=R203|UniqueId=\QCEHSZDM\ISITTMZV|Kind=1|AlternatePart= 
+Variation33=Designator=R204|UniqueId=\QCEHSZDM\LTLQAVIH|Kind=1|AlternatePart= 
+Variation34=Designator=R205|UniqueId=\QCEHSZDM\VDBOYXLS|Kind=1|AlternatePart= 
+Variation35=Designator=R206|UniqueId=\QCEHSZDM\MSFEUIKH|Kind=1|AlternatePart= 
+Variation36=Designator=R207|UniqueId=\QCEHSZDM\KMRVWHAO|Kind=1|AlternatePart= 
+Variation37=Designator=R208|UniqueId=\QCEHSZDM\GLCKOEJF|Kind=1|AlternatePart= 
+Variation38=Designator=R209|UniqueId=\QCEHSZDM\COYUWYCW|Kind=1|AlternatePart= 
+Variation39=Designator=R210|UniqueId=\QCEHSZDM\BCOTMGAS|Kind=1|AlternatePart= 
+Variation40=Designator=R211|UniqueId=\QCEHSZDM\KGZWROCL|Kind=1|AlternatePart= 
+Variation41=Designator=R212|UniqueId=\QCEHSZDM\ODKSRVPK|Kind=1|AlternatePart= 
+Variation42=Designator=R213|UniqueId=\QCEHSZDM\OQGJKYOC|Kind=1|AlternatePart= 
+Variation43=Designator=R214|UniqueId=\QCEHSZDM\ZNYTRMAO|Kind=1|AlternatePart= 
+Variation44=Designator=R215|UniqueId=\QCEHSZDM\XXIGBNSQ|Kind=1|AlternatePart= 
+Variation45=Designator=R216|UniqueId=\QCEHSZDM\ZNIOCQIU|Kind=1|AlternatePart= 
+Variation46=Designator=R601|UniqueId=\ZYHEJPCQ\AXQGPXGM|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [GeneratedDocument1]
@@ -928,7 +1030,7 @@ SCH_ShowNoteCollapsed=-1
 Wir_PrintColor=0
 Ldr_PrintColor=0
 SCH_ExpandLogicalToPhysical=-1
-SCH_VariantName=Production_Unit
+SCH_VariantName=ETR-08
 SCH_ExpandComponentDesignators=-1
 SCH_ExpandNetlabels=-1
 SCH_ExpandPorts=-1
@@ -1161,7 +1263,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=OneNote (Desktop)
+TargetPrinter=HP6E452C (HP ENVY 5540 series)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CompositeDrill
 OutputName1=Composite Drill Drawing
@@ -1211,7 +1313,7 @@ OutputDefault8=0
 Configuration8_Name1=ForceUpdateSettings
 Configuration8_Item1=False
 Configuration8_Name2=OutputConfigurationParameter1
-Configuration8_Item2=BoardEdgeRoutToolDia=787402|GenerateBoardEdgeRout=True|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=True|GenerateSeparatePlatedNonPlatedFiles=False|GenerateSeparateViaTypeFiles=False|NumberOfDecimals=4|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Metric|ZeroesMode=KeepLeadingAndTrailingZeroes|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
+Configuration8_Item2=BoardEdgeRoutToolDia=787402|GenerateBoardEdgeRout=True|GenerateDrilledSlotsG85=False|GenerateEIADrillFile=True|GenerateSeparatePlatedNonPlatedFiles=False|GenerateSeparateViaTypeFiles=False|NumberOfDecimals=4|NumberOfUnits=4|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Record=DrillView|Units=Metric|ZeroesMode=KeepLeadingAndTrailingZeroes|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 OutputType9=IPC2581
 OutputName9=IPC-2581 Files
 OutputDocumentPath9=
@@ -1236,7 +1338,7 @@ OutputDefault12=0
 Configuration12_Name1=ForceUpdateSettings
 Configuration12_Item1=False
 Configuration12_Name2=OutputConfigurationParameter1
-Configuration12_Item2=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GenerateReports=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set="All Layers"|LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MergePadAndRegion=False|MinusApertureTolerance=39|MinusApertureTolerance=39|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16973830~1,16973832~1,16973834~1,16777217~1,16777218~1,16777219~1,16842751~1,16973835~1,16973833~1,16973831~1,16908289~1,16908290~1,16908291~1,16973848~1,16973849~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=True|PlusApertureTolerance=39|PlusApertureTolerance=39|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
+Configuration12_Item2=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|CentrePlots=False|DrillDrawingSymbol=GraphicsSymbol|DrillDrawingSymbolSize=200000|EmbeddedApertures=True|FilmBorderSize=10000000|FilmXSize=200000000|FilmYSize=160000000|FlashAllFills=False|FlashPadShapes=True|G54OnApertureChange=False|GenerateDRCRulesFile=True|GenerateDRCRulesFile=True|GenerateReliefShapes=True|GenerateReports=True|GerberUnit=Metric|GerberUnit=Metric|IncludeUnconnectedMidLayerPads=False|LayerClassesMirror.Set= |LayerClassesPlot.Set="All Layers"|LeadingAndTrailingZeroesMode=SuppressLeadingZeroes|MaxApertureSize=2500000|MergePadAndRegion=False|MinusApertureTolerance=39|MinusApertureTolerance=39|Mirror.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray|MirrorDrillDrawingPlots=False|MirrorDrillGuidePlots=False|NoRegularPolygons=False|NumberOfDecimals=4|NumberOfDecimals=4|OptimizeChangeLocationCommands=True|OptimizeChangeLocationCommands=True|OriginPosition=Relative|Panelize=False|Plot.Set=SerializeLayerHash.Version~2,ClassName~TPlotLayerStateArray,16973830~1,16973832~1,16973834~1,16777217~1,16777218~1,16777219~1,16842751~1,16973835~1,16973833~1,16973831~1,16908289~1,16908290~1,16908291~1,16973848~1,16973849~1|PlotPositivePlaneLayers=False|PlotUsedDrillDrawingLayerPairs=True|PlotUsedDrillGuideLayerPairs=True|PlusApertureTolerance=39|PlusApertureTolerance=39|Record=GerberView|SoftwareArcs=False|Sorted=False|Sorted=False|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 
 [OutputGroup6]
 Name=Report Outputs
@@ -2406,23 +2508,23 @@ ComparisonOptions5=Kind=Structure Class|MinPercent=75|MinMatch=3|ShowMatch=-1|Us
 [SmartPDF]
 PageOptions=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 Configuration_Name1=OutputConfigurationParameter1
-Configuration_Item1=DesignatorDisplayMode=Physical|PrintArea=DesignExtent|PrintAreaLowerLeftCornerX=0|PrintAreaLowerLeftCornerY=0|PrintAreaUpperRightCornerX=0|PrintAreaUpperRightCornerY=0|Record=PcbPrintView|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
+Configuration_Item1=DesignatorDisplayMode=Physical|PrintArea=DesignExtent|PrintAreaLowerLeftCornerX=0|PrintAreaLowerLeftCornerY=0|PrintAreaUpperRightCornerX=0|PrintAreaUpperRightCornerY=0|Record=PcbPrintView|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 Configuration_Name2=OutputConfigurationParameter2
-Configuration_Item2=IncludeBoardCutouts=False|IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=0|Mirror=False|Name=Multilayer Composite Print|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=True|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
+Configuration_Item2=IncludeBoardCutouts=False|IncludeBottomLayerComponents=True|IncludeMultiLayerComponents=True|IncludeTopLayerComponents=True|IncludeViewports=True|Index=0|Mirror=False|Name=Multilayer Composite Print|PadNumberFontSize=14|Record=PcbPrintOut|ShowHoles=True|ShowPadNets=False|ShowPadNumbers=False|SubstituteFonts=False|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 Configuration_Name3=OutputConfigurationParameter3
-Configuration_Item3=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopOverlay|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
+Configuration_Item3=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopOverlay|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 Configuration_Name4=OutputConfigurationParameter4
-Configuration_Item4=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
+Configuration_Item4=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=TopLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 Configuration_Name5=OutputConfigurationParameter5
-Configuration_Item5=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=BottomLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
+Configuration_Item5=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=BottomLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 Configuration_Name6=OutputConfigurationParameter6
-Configuration_Item6=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=MultiLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
+Configuration_Item6=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=MultiLayer|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 Configuration_Name7=OutputConfigurationParameter7
-Configuration_Item7=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=BottomOverlay|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
+Configuration_Item7=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=BottomOverlay|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 Configuration_Name8=OutputConfigurationParameter8
-Configuration_Item8=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical1|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
+Configuration_Item8=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical1|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 Configuration_Name9=OutputConfigurationParameter9
-Configuration_Item9=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical2|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
+Configuration_Item9=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical2|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 Configuration_Name10=OutputConfigurationParameter10
-Configuration_Item10=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical3|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
+Configuration_Item10=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Full|CRegion=Full|CText=Full|CTrack=Full|CVia=Full|Designator=Full|Dimension=Full|DLayer1=TopLayer|DLayer2=BottomLayer|DrillType=Regular|FArc=Full|FFill=Full|FPad=Full|FRegion=Full|FText=Full|FTrack=Full|FVia=Full|Layer=Mechanical3|Polygon=Full|PrintOutIndex=0|Record=PcbPrintLayer|DocumentPath=C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 
