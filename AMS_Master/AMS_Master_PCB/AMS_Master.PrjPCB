@@ -33,7 +33,7 @@ FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
 IsVirtualBomDocumentRemoved=0
-OutputPath=Project Outputs for AMS_Master
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=1
@@ -43,7 +43,7 @@ CrossRefPorts=3
 CrossRefCrossSheets=1
 CrossRefSheetEntries=0
 CrossRefFollowFromMainSettings=1
-CurrentVariant=ETR-08
+CurrentVariant=ETR-X
 
 [Preferences]
 PrefsVaultGUID=
@@ -611,7 +611,7 @@ UniqueID=5F2B4C76-232D-4E9E-9602-F0DBC2D94D1A
 Description=ETR-08
 AllowFabrication=1
 ParameterCount=0
-VariationCount=62
+VariationCount=63
 AllowVariationPastMask=1
 Variation1=Designator=J102|UniqueId=\DTSRDESI\OIYHWNHH|Kind=1|AlternatePart= 
 Variation2=Designator=J103|UniqueId=\DTSRDESI\EBCBWVLD|Kind=1|AlternatePart= 
@@ -675,6 +675,7 @@ Variation59=Designator=Q403|UniqueId=\IHCIDKUD\XUTSORWY|Kind=1|AlternatePart=
 Variation60=Designator=U401|UniqueId=\IHCIDKUD\HJYFJRXT|Kind=1|AlternatePart= 
 Variation61=Designator=X401|UniqueId=\IHCIDKUD\AFVDRMHJ|Kind=1|AlternatePart= 
 Variation62=Designator=X402|UniqueId=\IHCIDKUD\GPELLDDU|Kind=1|AlternatePart= 
+Variation63=Designator=Q404|UniqueId=\IHCIDKUD\VJWEDBAN|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [ProjectVariant3]
@@ -682,7 +683,7 @@ UniqueID=793E7F87-2A9A-4FC2-A80B-044DE34AEE24
 Description=ETR-X
 AllowFabrication=0
 ParameterCount=0
-VariationCount=46
+VariationCount=48
 Variation1=Designator=C301|UniqueId=\CYQXCNYC\BETJLYXX|Kind=1|AlternatePart= 
 Variation2=Designator=C307|UniqueId=\CYQXCNYC\VUYHNSWP|Kind=1|AlternatePart= 
 Variation3=Designator=C306|UniqueId=\CYQXCNYC\TGEYRMRF|Kind=1|AlternatePart= 
@@ -729,6 +730,8 @@ Variation43=Designator=R214|UniqueId=\QCEHSZDM\ZNYTRMAO|Kind=1|AlternatePart=
 Variation44=Designator=R215|UniqueId=\QCEHSZDM\XXIGBNSQ|Kind=1|AlternatePart= 
 Variation45=Designator=R216|UniqueId=\QCEHSZDM\ZNIOCQIU|Kind=1|AlternatePart= 
 Variation46=Designator=R601|UniqueId=\ZYHEJPCQ\AXQGPXGM|Kind=1|AlternatePart= 
+Variation47=Designator=Q404|UniqueId=\IHCIDKUD\VJWEDBAN|Kind=1|AlternatePart= 
+Variation48=Designator=R411|UniqueId=\IHCIDKUD\LSUBWWJY|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [GeneratedDocument1]
@@ -1040,7 +1043,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=Project Outputs for AMS_Master
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -1263,7 +1266,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=HP6E452C (HP ENVY 5540 series)
+TargetPrinter=OneNote (Desktop)
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CompositeDrill
 OutputName1=Composite Drill Drawing
