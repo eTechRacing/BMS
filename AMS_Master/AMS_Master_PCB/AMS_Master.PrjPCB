@@ -33,7 +33,7 @@ FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
 IsVirtualBomDocumentRemoved=0
-OutputPath=
+OutputPath=Project Outputs for AMS_Master
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=1
@@ -565,24 +565,7 @@ GenerateClassCluster=0
 DocumentUniqueId=QQSULTTQ
 
 [Document31]
-DocumentPath=Project Outputs for AMS_Master\CAMtastic1.Cam
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=
-
-[Document32]
-DocumentPath=Project Outputs for AMS_Master\CAMtastic2.Cam
+DocumentPath=Project Outputs for AMS_Master\Gerber\CAMtastic2.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -611,7 +594,7 @@ UniqueID=5F2B4C76-232D-4E9E-9602-F0DBC2D94D1A
 Description=ETR-08
 AllowFabrication=1
 ParameterCount=0
-VariationCount=63
+VariationCount=64
 AllowVariationPastMask=1
 Variation1=Designator=J102|UniqueId=\DTSRDESI\OIYHWNHH|Kind=1|AlternatePart= 
 Variation2=Designator=J103|UniqueId=\DTSRDESI\EBCBWVLD|Kind=1|AlternatePart= 
@@ -626,56 +609,57 @@ Variation10=Designator=R210|UniqueId=\QCEHSZDM\BCOTMGAS|Kind=1|AlternatePart=
 Variation11=Designator=R211|UniqueId=\QCEHSZDM\KGZWROCL|Kind=1|AlternatePart= 
 Variation12=Designator=R212|UniqueId=\QCEHSZDM\ODKSRVPK|Kind=1|AlternatePart= 
 Variation13=Designator=R213|UniqueId=\QCEHSZDM\OQGJKYOC|Kind=1|AlternatePart= 
-Variation14=Designator=R214|UniqueId=\QCEHSZDM\ZNYTRMAO|Kind=1|AlternatePart= 
-Variation15=Designator=R215|UniqueId=\QCEHSZDM\XXIGBNSQ|Kind=1|AlternatePart= 
-Variation16=Designator=C402|UniqueId=\IHCIDKUD\OWUHBZYM|Kind=1|AlternatePart= 
-Variation17=Designator=C302|UniqueId=\CYQXCNYC\ASQBSFOA|Kind=1|AlternatePart= 
-Variation18=Designator=C301|UniqueId=\CYQXCNYC\BETJLYXX|Kind=1|AlternatePart= 
-Variation19=Designator=C303|UniqueId=\CYQXCNYC\BQCXHVHE|Kind=1|AlternatePart= 
-Variation20=Designator=C304|UniqueId=\CYQXCNYC\RAVMQGEX|Kind=1|AlternatePart= 
-Variation21=Designator=C305|UniqueId=\CYQXCNYC\VROTLYHT|Kind=1|AlternatePart= 
-Variation22=Designator=C306|UniqueId=\CYQXCNYC\TGEYRMRF|Kind=1|AlternatePart= 
-Variation23=Designator=C307|UniqueId=\CYQXCNYC\VUYHNSWP|Kind=1|AlternatePart= 
-Variation24=Designator=C314|UniqueId=\CYQXCNYC\DBHHXKWJ|Kind=1|AlternatePart= 
-Variation25=Designator=C315|UniqueId=\CYQXCNYC\BZIJTDXR|Kind=1|AlternatePart= 
-Variation26=Designator=C316|UniqueId=\CYQXCNYC\YHAIOSYS|Kind=1|AlternatePart= 
-Variation27=Designator=C317|UniqueId=\CYQXCNYC\SQIHSHJZ|Kind=1|AlternatePart= 
-Variation28=Designator=C318|UniqueId=\CYQXCNYC\SNCDLUUS|Kind=1|AlternatePart= 
-Variation29=Designator=C319|UniqueId=\CYQXCNYC\GKLKARII|Kind=1|AlternatePart= 
-Variation30=Designator=C320|UniqueId=\CYQXCNYC\QNWECDCG|Kind=1|AlternatePart= 
-Variation31=Designator=NTC601|UniqueId=\ZYHEJPCQ\LXGPVWTU|Kind=1|AlternatePart= 
-Variation32=Designator=R601|UniqueId=\ZYHEJPCQ\AXQGPXGM|Kind=1|AlternatePart= 
-Variation33=Designator=C601|UniqueId=\ZYHEJPCQ\AXCRBHSG|Kind=1|AlternatePart= 
-Variation34=Designator=D103|UniqueId=\DTSRDESI\QHOCDRQX|Kind=1|AlternatePart= 
-Variation35=Designator=D203|UniqueId=\QCEHSZDM\KMKTXRQA|Kind=1|AlternatePart= 
-Variation36=Designator=D202|UniqueId=\QCEHSZDM\LXBWOFON|Kind=1|AlternatePart= 
-Variation37=Designator=D102|UniqueId=\DTSRDESI\PAHWQJMV|Kind=1|AlternatePart= 
-Variation38=Designator=D101|UniqueId=\DTSRDESI\TSUIFVCV|Kind=1|AlternatePart= 
-Variation39=Designator=R101|UniqueId=\DTSRDESI\WOHJBDHY|Kind=1|AlternatePart= 
-Variation40=Designator=R103|UniqueId=\DTSRDESI\AKUMBVDD|Kind=1|AlternatePart= 
-Variation41=Designator=R102|UniqueId=\DTSRDESI\NJDFBKQT|Kind=1|AlternatePart= 
-Variation42=Designator=R202|UniqueId=\QCEHSZDM\SDMOVLXU|Kind=1|AlternatePart= 
-Variation43=Designator=R203|UniqueId=\QCEHSZDM\ISITTMZV|Kind=1|AlternatePart= 
-Variation44=Designator=C401|UniqueId=\IHCIDKUD\LOAARSNX|Kind=1|AlternatePart= 
-Variation45=Designator=D401|UniqueId=\IHCIDKUD\CNBKNNCC|Kind=1|AlternatePart= 
-Variation46=Designator=D402|UniqueId=\IHCIDKUD\YHKMMWHP|Kind=1|AlternatePart= 
-Variation47=Designator=J101|UniqueId=\DTSRDESI\YQFVUOER|Kind=1|AlternatePart= 
-Variation48=Designator=R216|UniqueId=\QCEHSZDM\ZNIOCQIU|Kind=1|AlternatePart= 
-Variation49=Designator=R403|UniqueId=\IHCIDKUD\BUTURYLA|Kind=1|AlternatePart= 
-Variation50=Designator=R404|UniqueId=\IHCIDKUD\JXZQQROF|Kind=1|AlternatePart= 
-Variation51=Designator=R405|UniqueId=\IHCIDKUD\TMLTIIHC|Kind=1|AlternatePart= 
-Variation52=Designator=R406|UniqueId=\IHCIDKUD\NORYPRBE|Kind=1|AlternatePart= 
-Variation53=Designator=R407|UniqueId=\IHCIDKUD\JFNXGBMH|Kind=1|AlternatePart= 
-Variation54=Designator=R408|UniqueId=\IHCIDKUD\URKZZDFB|Kind=1|AlternatePart= 
-Variation55=Designator=R409|UniqueId=\IHCIDKUD\IWURDGZE|Kind=1|AlternatePart= 
-Variation56=Designator=R410|UniqueId=\IHCIDKUD\QZWOCFGN|Kind=1|AlternatePart= 
-Variation57=Designator=R411|UniqueId=\IHCIDKUD\LSUBWWJY|Kind=1|AlternatePart= 
-Variation58=Designator=Q402|UniqueId=\IHCIDKUD\WHWWJEKT|Kind=1|AlternatePart= 
-Variation59=Designator=Q403|UniqueId=\IHCIDKUD\XUTSORWY|Kind=1|AlternatePart= 
-Variation60=Designator=U401|UniqueId=\IHCIDKUD\HJYFJRXT|Kind=1|AlternatePart= 
-Variation61=Designator=X401|UniqueId=\IHCIDKUD\AFVDRMHJ|Kind=1|AlternatePart= 
-Variation62=Designator=X402|UniqueId=\IHCIDKUD\GPELLDDU|Kind=1|AlternatePart= 
-Variation63=Designator=Q404|UniqueId=\IHCIDKUD\VJWEDBAN|Kind=1|AlternatePart= 
+Variation14=Designator=C402|UniqueId=\IHCIDKUD\OWUHBZYM|Kind=1|AlternatePart= 
+Variation15=Designator=C302|UniqueId=\CYQXCNYC\ASQBSFOA|Kind=1|AlternatePart= 
+Variation16=Designator=C301|UniqueId=\CYQXCNYC\BETJLYXX|Kind=1|AlternatePart= 
+Variation17=Designator=C303|UniqueId=\CYQXCNYC\BQCXHVHE|Kind=1|AlternatePart= 
+Variation18=Designator=C304|UniqueId=\CYQXCNYC\RAVMQGEX|Kind=1|AlternatePart= 
+Variation19=Designator=C305|UniqueId=\CYQXCNYC\VROTLYHT|Kind=1|AlternatePart= 
+Variation20=Designator=C306|UniqueId=\CYQXCNYC\TGEYRMRF|Kind=1|AlternatePart= 
+Variation21=Designator=C307|UniqueId=\CYQXCNYC\VUYHNSWP|Kind=1|AlternatePart= 
+Variation22=Designator=C314|UniqueId=\CYQXCNYC\DBHHXKWJ|Kind=1|AlternatePart= 
+Variation23=Designator=C315|UniqueId=\CYQXCNYC\BZIJTDXR|Kind=1|AlternatePart= 
+Variation24=Designator=C316|UniqueId=\CYQXCNYC\YHAIOSYS|Kind=1|AlternatePart= 
+Variation25=Designator=C317|UniqueId=\CYQXCNYC\SQIHSHJZ|Kind=1|AlternatePart= 
+Variation26=Designator=C318|UniqueId=\CYQXCNYC\SNCDLUUS|Kind=1|AlternatePart= 
+Variation27=Designator=C319|UniqueId=\CYQXCNYC\GKLKARII|Kind=1|AlternatePart= 
+Variation28=Designator=C320|UniqueId=\CYQXCNYC\QNWECDCG|Kind=1|AlternatePart= 
+Variation29=Designator=NTC601|UniqueId=\ZYHEJPCQ\LXGPVWTU|Kind=1|AlternatePart= 
+Variation30=Designator=R601|UniqueId=\ZYHEJPCQ\AXQGPXGM|Kind=1|AlternatePart= 
+Variation31=Designator=C601|UniqueId=\ZYHEJPCQ\AXCRBHSG|Kind=1|AlternatePart= 
+Variation32=Designator=D103|UniqueId=\DTSRDESI\QHOCDRQX|Kind=1|AlternatePart= 
+Variation33=Designator=D203|UniqueId=\QCEHSZDM\KMKTXRQA|Kind=1|AlternatePart= 
+Variation34=Designator=D202|UniqueId=\QCEHSZDM\LXBWOFON|Kind=1|AlternatePart= 
+Variation35=Designator=D102|UniqueId=\DTSRDESI\PAHWQJMV|Kind=1|AlternatePart= 
+Variation36=Designator=D101|UniqueId=\DTSRDESI\TSUIFVCV|Kind=1|AlternatePart= 
+Variation37=Designator=R101|UniqueId=\DTSRDESI\WOHJBDHY|Kind=1|AlternatePart= 
+Variation38=Designator=R103|UniqueId=\DTSRDESI\AKUMBVDD|Kind=1|AlternatePart= 
+Variation39=Designator=R102|UniqueId=\DTSRDESI\NJDFBKQT|Kind=1|AlternatePart= 
+Variation40=Designator=R202|UniqueId=\QCEHSZDM\SDMOVLXU|Kind=1|AlternatePart= 
+Variation41=Designator=R203|UniqueId=\QCEHSZDM\ISITTMZV|Kind=1|AlternatePart= 
+Variation42=Designator=C401|UniqueId=\IHCIDKUD\LOAARSNX|Kind=1|AlternatePart= 
+Variation43=Designator=D401|UniqueId=\IHCIDKUD\CNBKNNCC|Kind=1|AlternatePart= 
+Variation44=Designator=D402|UniqueId=\IHCIDKUD\YHKMMWHP|Kind=1|AlternatePart= 
+Variation45=Designator=J101|UniqueId=\DTSRDESI\YQFVUOER|Kind=1|AlternatePart= 
+Variation46=Designator=R403|UniqueId=\IHCIDKUD\BUTURYLA|Kind=1|AlternatePart= 
+Variation47=Designator=R404|UniqueId=\IHCIDKUD\JXZQQROF|Kind=1|AlternatePart= 
+Variation48=Designator=R405|UniqueId=\IHCIDKUD\TMLTIIHC|Kind=1|AlternatePart= 
+Variation49=Designator=R406|UniqueId=\IHCIDKUD\NORYPRBE|Kind=1|AlternatePart= 
+Variation50=Designator=R407|UniqueId=\IHCIDKUD\JFNXGBMH|Kind=1|AlternatePart= 
+Variation51=Designator=R408|UniqueId=\IHCIDKUD\URKZZDFB|Kind=1|AlternatePart= 
+Variation52=Designator=R409|UniqueId=\IHCIDKUD\IWURDGZE|Kind=1|AlternatePart= 
+Variation53=Designator=R410|UniqueId=\IHCIDKUD\QZWOCFGN|Kind=1|AlternatePart= 
+Variation54=Designator=R411|UniqueId=\IHCIDKUD\LSUBWWJY|Kind=1|AlternatePart= 
+Variation55=Designator=Q402|UniqueId=\IHCIDKUD\WHWWJEKT|Kind=1|AlternatePart= 
+Variation56=Designator=Q403|UniqueId=\IHCIDKUD\XUTSORWY|Kind=1|AlternatePart= 
+Variation57=Designator=U401|UniqueId=\IHCIDKUD\HJYFJRXT|Kind=1|AlternatePart= 
+Variation58=Designator=X401|UniqueId=\IHCIDKUD\GSQZCLZK|Kind=1|AlternatePart= 
+Variation59=Designator=X402|UniqueId=\IHCIDKUD\FYHEBTIY|Kind=1|AlternatePart= 
+Variation60=Designator=Q404|UniqueId=\IHCIDKUD\VJWEDBAN|Kind=1|AlternatePart= 
+Variation61=Designator=R413|UniqueId=\IHCIDKUD\FZILPNJL|Kind=1|AlternatePart= 
+Variation62=Designator=R414|UniqueId=\IHCIDKUD\LATCTYOA|Kind=1|AlternatePart= 
+Variation63=Designator=R418|UniqueId=\IHCIDKUD\WSNQWOLM|Kind=1|AlternatePart= 
+Variation64=Designator=R417|UniqueId=\IHCIDKUD\CNIDTXIQ|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [ProjectVariant3]
@@ -683,7 +667,7 @@ UniqueID=793E7F87-2A9A-4FC2-A80B-044DE34AEE24
 Description=ETR-X
 AllowFabrication=0
 ParameterCount=0
-VariationCount=48
+VariationCount=46
 Variation1=Designator=C301|UniqueId=\CYQXCNYC\BETJLYXX|Kind=1|AlternatePart= 
 Variation2=Designator=C307|UniqueId=\CYQXCNYC\VUYHNSWP|Kind=1|AlternatePart= 
 Variation3=Designator=C306|UniqueId=\CYQXCNYC\TGEYRMRF|Kind=1|AlternatePart= 
@@ -726,204 +710,354 @@ Variation39=Designator=R210|UniqueId=\QCEHSZDM\BCOTMGAS|Kind=1|AlternatePart=
 Variation40=Designator=R211|UniqueId=\QCEHSZDM\KGZWROCL|Kind=1|AlternatePart= 
 Variation41=Designator=R212|UniqueId=\QCEHSZDM\ODKSRVPK|Kind=1|AlternatePart= 
 Variation42=Designator=R213|UniqueId=\QCEHSZDM\OQGJKYOC|Kind=1|AlternatePart= 
-Variation43=Designator=R214|UniqueId=\QCEHSZDM\ZNYTRMAO|Kind=1|AlternatePart= 
-Variation44=Designator=R215|UniqueId=\QCEHSZDM\XXIGBNSQ|Kind=1|AlternatePart= 
-Variation45=Designator=R216|UniqueId=\QCEHSZDM\ZNIOCQIU|Kind=1|AlternatePart= 
-Variation46=Designator=R601|UniqueId=\ZYHEJPCQ\AXQGPXGM|Kind=1|AlternatePart= 
-Variation47=Designator=Q404|UniqueId=\IHCIDKUD\VJWEDBAN|Kind=1|AlternatePart= 
-Variation48=Designator=R411|UniqueId=\IHCIDKUD\LSUBWWJY|Kind=1|AlternatePart= 
+Variation43=Designator=R601|UniqueId=\ZYHEJPCQ\AXQGPXGM|Kind=1|AlternatePart= 
+Variation44=Designator=Q404|UniqueId=\IHCIDKUD\VJWEDBAN|Kind=1|AlternatePart= 
+Variation45=Designator=R411|UniqueId=\IHCIDKUD\LSUBWWJY|Kind=1|AlternatePart= 
+Variation46=Designator=J403|UniqueId=\IHCIDKUD\JTTBSDXY|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master-BoardEdgeRout.TXT
+DocumentPath=Project Outputs for AMS_Master\ExportSTEP\AMS_Master(ETR-08).step
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.1
+DocumentPath=Project Outputs for AMS_Master\AMS_Master-BoardEdgeRout.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.2
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.1
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.3
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.2
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.4
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.3
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.5
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.4
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.DR1
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.5
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.DR2
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.DR1
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.DR3
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.DR2
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.DR4
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.DR3
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.DRL
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.DR4
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.DRR
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.DRL
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.EXTREP
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.G1
+DocumentPath=Project Outputs for AMS_Master\NC Drill\AMS_Master.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.G2
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GBL
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GBO
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.G1
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GBP
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.G1
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GBS
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.G2
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD1
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.G2
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD2
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD3
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD4
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD5
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG1
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG2
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG3
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument28]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG4
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument29]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG5
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD1
 DItemRevisionGUID=
 
 [GeneratedDocument30]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GKO
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GD1
 DItemRevisionGUID=
 
 [GeneratedDocument31]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GM1
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD2
 DItemRevisionGUID=
 
 [GeneratedDocument32]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GM2
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GD2
 DItemRevisionGUID=
 
 [GeneratedDocument33]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GM3
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD3
 DItemRevisionGUID=
 
 [GeneratedDocument34]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GML
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GD3
 DItemRevisionGUID=
 
 [GeneratedDocument35]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GPB
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD4
 DItemRevisionGUID=
 
 [GeneratedDocument36]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GPT
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GD4
 DItemRevisionGUID=
 
 [GeneratedDocument37]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GTL
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD5
 DItemRevisionGUID=
 
 [GeneratedDocument38]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GTO
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GD5
 DItemRevisionGUID=
 
 [GeneratedDocument39]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GTP
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG1
 DItemRevisionGUID=
 
 [GeneratedDocument40]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GTS
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GG1
 DItemRevisionGUID=
 
 [GeneratedDocument41]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.LDP
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG2
 DItemRevisionGUID=
 
 [GeneratedDocument42]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.REP
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GG2
 DItemRevisionGUID=
 
 [GeneratedDocument43]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.RUL
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG3
 DItemRevisionGUID=
 
 [GeneratedDocument44]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.TX1
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GG3
 DItemRevisionGUID=
 
 [GeneratedDocument45]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.TX2
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG4
 DItemRevisionGUID=
 
 [GeneratedDocument46]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.TX3
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GG4
 DItemRevisionGUID=
 
 [GeneratedDocument47]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.TX4
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG5
 DItemRevisionGUID=
 
 [GeneratedDocument48]
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GG5
+DItemRevisionGUID=
+
+[GeneratedDocument49]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument50]
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GM
+DItemRevisionGUID=
+
+[GeneratedDocument51]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument52]
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument53]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GM2
+DItemRevisionGUID=
+
+[GeneratedDocument54]
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GM2
+DItemRevisionGUID=
+
+[GeneratedDocument55]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GM3
+DItemRevisionGUID=
+
+[GeneratedDocument56]
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GM3
+DItemRevisionGUID=
+
+[GeneratedDocument57]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GML
+DItemRevisionGUID=
+
+[GeneratedDocument58]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument59]
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument60]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument61]
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument62]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument63]
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument64]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument65]
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument66]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument67]
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument68]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument69]
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument70]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument71]
+DocumentPath=Project Outputs for AMS_Master\NC Drill\AMS_Master.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument72]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.REP
+DItemRevisionGUID=
+
+[GeneratedDocument73]
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.REP
+DItemRevisionGUID=
+
+[GeneratedDocument74]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument75]
+DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument76]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.TX1
+DItemRevisionGUID=
+
+[GeneratedDocument77]
+DocumentPath=Project Outputs for AMS_Master\NC Drill\AMS_Master.TX1
+DItemRevisionGUID=
+
+[GeneratedDocument78]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.TX2
+DItemRevisionGUID=
+
+[GeneratedDocument79]
+DocumentPath=Project Outputs for AMS_Master\NC Drill\AMS_Master.TX2
+DItemRevisionGUID=
+
+[GeneratedDocument80]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.TX3
+DItemRevisionGUID=
+
+[GeneratedDocument81]
+DocumentPath=Project Outputs for AMS_Master\NC Drill\AMS_Master.TX3
+DItemRevisionGUID=
+
+[GeneratedDocument82]
+DocumentPath=Project Outputs for AMS_Master\AMS_Master.TX4
+DItemRevisionGUID=
+
+[GeneratedDocument83]
+DocumentPath=Project Outputs for AMS_Master\NC Drill\AMS_Master.TX4
+DItemRevisionGUID=
+
+[GeneratedDocument84]
 DocumentPath=Project Outputs for AMS_Master\AMS_Master.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument85]
+DocumentPath=Project Outputs for AMS_Master\NC Drill\AMS_Master.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument86]
+DocumentPath=Project Outputs for AMS_Master\Design Rule Check - AMS_Master.html
 DItemRevisionGUID=
 
 [Parameter1]
@@ -1043,7 +1177,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=
+OutputDir=Project Outputs for AMS_Master
 
 [OutputGroup1]
 Name=Netlist Outputs
@@ -1403,6 +1537,12 @@ OutputDocumentPath8=
 OutputVariantName8=[No Variations]
 OutputDefault8=0
 PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
+OutputType9=Export Project History
+OutputName9=Export Project History
+OutputDocumentPath9=
+OutputVariantName9=[No Variations]
+OutputDefault9=0
+PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintScale=1.00|XCorrection=1.00|YCorrection=1.00|PrintKind=1|BorderSize=5000000|LeftOffset=0|BottomOffset=0|Orientation=2|PaperLength=1000|PaperWidth=1000|Scale=100|PaperSource=7|PrintQuality=-3|MediaType=1|DitherType=10|PrintScaleMode=1|PaperKind=A4|PaperIndex=9
 
 [OutputGroup7]
 Name=Other Outputs

@@ -1,3 +1,0 @@
-BMS_OK <-> AMS_CAN_Control;
-
-CANTX_AMS, CANRX_AMS <-> CANTX_1, CANRX_1;
