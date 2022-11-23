@@ -1,0 +1,47 @@
+Removed Pin From Net: NetName=Cell_10 Pin=J4-2
+Removed Pin From Net: NetName=Cell_7 Pin=J4-3
+Removed Pin From Net: NetName=Cell_5 Pin=J4-4
+Removed Pin From Net: NetName=Cell_3 Pin=J4-5
+Removed Pin From Net: NetName=Cell_2 Pin=J4-6
+Removed Pin From Net: NetName=Cell_0 Pin=J4-7
+Removed Pin From Net: NetName=Cell_0 Pin=J4-8
+Removed Pin From Net: NetName=Cell_12 Pin=J4-9
+Removed Pin From Net: NetName=Cell_8 Pin=J4-11
+Removed Pin From Net: NetName=Cell_6 Pin=J4-12
+Removed Pin From Net: NetName=Cell_4 Pin=J4-13
+Removed Pin From Net: NetName=Cell_1 Pin=J4-14
+Removed Pin From Net: NetName=Cell_0 Pin=J4-15
+Removed Pin From Net: NetName=Cell_0 Pin=J4-16
+Change Component Footprint: Designator=J4 Old Footprint=J_NanoFit_2x8 New Footprint=J_MicroFit_1x12_V
+Change Component Comment : Designator=J4 Old Comment=1053141116 New Comment=J_MicroFit_1x12_V
+Change component parameters: Designator = "J4" ("J4"); Footprint = "J_NanoFit_2x8"; UniqueID = "\NPWBAJPQ" ("\NPWBAJPQ")
+Change component parameters (AddParameter): Name = "Category"; Value = "Headers and Wire Housings"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/712/436500316-sd-712050.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/712/436500316-sd-712050.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/5154/0436501215-pcb-headers-148827-5154953.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/5154/0436501215-pcb-headers-148827-5154953.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/16088/0436501215-pcb-headers-16088773.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/16088/0436501215-pcb-headers-16088773.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/30150/206240436501215-pcb-headers-30150375.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/30150/206240436501215-pcb-headers-30150375.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "43650-1215"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "816=1,58731, 1632=1,28652, 3264=1,08716, 4896=1,05565, 6528=0,89063 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "1632"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Avnet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "0436501215"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Cell_0 Pin=J4-1
+Added Pin To Net: NetName=Cell_1 Pin=J4-2
+Added Pin To Net: NetName=Cell_2 Pin=J4-3
+Added Pin To Net: NetName=Cell_3 Pin=J4-4
+Added Pin To Net: NetName=Cell_4 Pin=J4-5
+Added Pin To Net: NetName=Cell_5 Pin=J4-6
+Added Pin To Net: NetName=Cell_6 Pin=J4-7
+Added Pin To Net: NetName=Cell_7 Pin=J4-8
+Added Pin To Net: NetName=Cell_8 Pin=J4-9
+Added Pin To Net: NetName=Cell_10 Pin=J4-11
+Added Pin To Net: NetName=Cell_12 Pin=J4-12
+Added Pin To Net: NetName=Cell_12 Pin=R512-1
+Change Net Name : Old Net Name=Cell_12 New Net Name=Cell_11
+Added Member To Class: ClassName=AMS_Slave Member=Component J4 J_MicroFit_1x12_V

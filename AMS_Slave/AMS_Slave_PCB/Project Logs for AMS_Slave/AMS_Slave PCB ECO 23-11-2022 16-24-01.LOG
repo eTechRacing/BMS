@@ -1,0 +1,11 @@
+Change Component Designator: OldDesignator=D102 NewDesignator=D101
+Change Component Designator: OldDesignator=D103 NewDesignator=D102
+Change Component Designator: OldDesignator=D104 NewDesignator=D103
+Change Net Name : Old Net Name=NetD102_A New Net Name=NetD101_A
+Added Pin To Net: NetName=NetD102_A Pin=D102-A
+Added Pin To Net: NetName=NetD102_A Pin=R101-1
+Added Net: Name=NetD102_A
+Added Pin To Net: NetName=NetD103_A Pin=D103-A
+Added Pin To Net: NetName=NetD103_A Pin=R102-1
+Added Net: Name=NetD103_A
+Add Differential Pair: Number of nets in differential pair AMS_CAN_H is 1 instead of 2

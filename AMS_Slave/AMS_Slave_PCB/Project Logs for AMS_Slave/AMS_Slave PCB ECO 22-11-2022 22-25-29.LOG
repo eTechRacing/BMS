@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=OSC1 Pin=TP208-1
+Removed Pin From Net: NetName=OSC2 Pin=TP209-1
+Removed Member From Class: ClassName=MCU Member=TP229
+Removed Member From Class: ClassName=MCU Member=TP230
+Change Component Designator: OldDesignator=TP210 NewDesignator=TP208
+Change Component Designator: OldDesignator=TP211 NewDesignator=TP209
+Change Component Designator: OldDesignator=TP212 NewDesignator=TP210
+Change Component Designator: OldDesignator=TP213 NewDesignator=TP211
+Change Component Designator: OldDesignator=TP214 NewDesignator=TP212
+Change Component Designator: OldDesignator=TP215 NewDesignator=TP213
+Change Component Designator: OldDesignator=TP216 NewDesignator=TP214
+Change Component Designator: OldDesignator=TP217 NewDesignator=TP215
+Change Component Designator: OldDesignator=TP218 NewDesignator=TP216
+Change Component Designator: OldDesignator=TP219 NewDesignator=TP217
+Change Component Designator: OldDesignator=TP220 NewDesignator=TP218
+Change Component Designator: OldDesignator=TP221 NewDesignator=TP219
+Change Component Designator: OldDesignator=TP222 NewDesignator=TP220
+Change Component Designator: OldDesignator=TP223 NewDesignator=TP221
+Change Component Designator: OldDesignator=TP224 NewDesignator=TP222
+Change Component Designator: OldDesignator=TP225 NewDesignator=TP223
+Change Component Designator: OldDesignator=TP226 NewDesignator=TP224
+Change Component Designator: OldDesignator=TP227 NewDesignator=TP225
+Change Component Designator: OldDesignator=TP228 NewDesignator=TP226
+Change Component Designator: OldDesignator=TP229 NewDesignator=TP227
+Change Component Designator: OldDesignator=TP230 NewDesignator=TP228
