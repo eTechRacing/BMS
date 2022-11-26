@@ -33,7 +33,7 @@ FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
 IsVirtualBomDocumentRemoved=0
-OutputPath=Project Outputs for AMS_Slave
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -525,215 +525,91 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.1
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.2
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.5
-DItemRevisionGUID=
-
-[GeneratedDocument4]
 DocumentPath=Project Outputs for AMS_Slave\NC Drill Files\AMS_Slave.DRR
 DItemRevisionGUID=
 
-[GeneratedDocument5]
-DocumentPath=Project Outputs for Free Documents\NC Drill\AMS_Slave.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument7]
+[GeneratedDocument2]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.EXTREP
 DItemRevisionGUID=
 
-[GeneratedDocument8]
-DocumentPath=Project Outputs for Free Documents\Gerber\AMS_Slave.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GBL
-DItemRevisionGUID=
-
-[GeneratedDocument10]
+[GeneratedDocument3]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GBL
 DItemRevisionGUID=
 
-[GeneratedDocument11]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GBO
-DItemRevisionGUID=
-
-[GeneratedDocument12]
+[GeneratedDocument4]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GBO
 DItemRevisionGUID=
 
-[GeneratedDocument13]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GBP
-DItemRevisionGUID=
-
-[GeneratedDocument14]
+[GeneratedDocument5]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GBP
 DItemRevisionGUID=
 
-[GeneratedDocument15]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GBS
-DItemRevisionGUID=
-
-[GeneratedDocument16]
+[GeneratedDocument6]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GBS
 DItemRevisionGUID=
 
-[GeneratedDocument17]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GD1
-DItemRevisionGUID=
-
-[GeneratedDocument18]
+[GeneratedDocument7]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GD1
 DItemRevisionGUID=
 
-[GeneratedDocument19]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GG1
-DItemRevisionGUID=
-
-[GeneratedDocument20]
+[GeneratedDocument8]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GG1
 DItemRevisionGUID=
 
-[GeneratedDocument21]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GKO
-DItemRevisionGUID=
-
-[GeneratedDocument22]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GM
-DItemRevisionGUID=
-
-[GeneratedDocument23]
+[GeneratedDocument9]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GM
 DItemRevisionGUID=
 
-[GeneratedDocument24]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GM1
-DItemRevisionGUID=
-
-[GeneratedDocument25]
+[GeneratedDocument10]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GM1
 DItemRevisionGUID=
 
-[GeneratedDocument26]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GM2
-DItemRevisionGUID=
-
-[GeneratedDocument27]
+[GeneratedDocument11]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GM2
 DItemRevisionGUID=
 
-[GeneratedDocument28]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GM3
-DItemRevisionGUID=
-
-[GeneratedDocument29]
+[GeneratedDocument12]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GM3
 DItemRevisionGUID=
 
-[GeneratedDocument30]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GML
-DItemRevisionGUID=
-
-[GeneratedDocument31]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GPB
-DItemRevisionGUID=
-
-[GeneratedDocument32]
+[GeneratedDocument13]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GPB
 DItemRevisionGUID=
 
-[GeneratedDocument33]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GPT
-DItemRevisionGUID=
-
-[GeneratedDocument34]
+[GeneratedDocument14]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GPT
 DItemRevisionGUID=
 
-[GeneratedDocument35]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument36]
+[GeneratedDocument15]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument37]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument38]
+[GeneratedDocument16]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GTO
 DItemRevisionGUID=
 
-[GeneratedDocument39]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GTP
-DItemRevisionGUID=
-
-[GeneratedDocument40]
+[GeneratedDocument17]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GTP
 DItemRevisionGUID=
 
-[GeneratedDocument41]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument42]
+[GeneratedDocument18]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.GTS
 DItemRevisionGUID=
 
-[GeneratedDocument43]
+[GeneratedDocument19]
 DocumentPath=Project Outputs for AMS_Slave\NC Drill Files\AMS_Slave.LDP
 DItemRevisionGUID=
 
-[GeneratedDocument44]
-DocumentPath=Project Outputs for Free Documents\NC Drill\AMS_Slave.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument45]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.REP
-DItemRevisionGUID=
-
-[GeneratedDocument46]
+[GeneratedDocument20]
 DocumentPath=Project Outputs for AMS_Slave\Gerber Files\AMS_Slave.REP
 DItemRevisionGUID=
 
-[GeneratedDocument47]
-DocumentPath=Project Outputs for Free Documents\Gerber\AMS_Slave.REP
-DItemRevisionGUID=
-
-[GeneratedDocument48]
-DocumentPath=Project Outputs for AMS_Slave\AMS_Slave.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument49]
+[GeneratedDocument21]
 DocumentPath=Project Outputs for AMS_Slave\AMS_Slave\AMS_Slave.step
 DItemRevisionGUID=
 
-[GeneratedDocument50]
-DocumentPath=Project Outputs for Free Documents\ExportSTEP\AMS_Slave.step
-DItemRevisionGUID=
-
-[GeneratedDocument51]
+[GeneratedDocument22]
 DocumentPath=Project Outputs for AMS_Slave\NC Drill Files\AMS_Slave.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument52]
-DocumentPath=Project Outputs for Free Documents\NC Drill\AMS_Slave.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument53]
-DocumentPath=Project Outputs for AMS_Slave\Design Rule Check - AMS_Slave.html
 DItemRevisionGUID=
 
 [Parameter1]
@@ -811,7 +687,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=Project Outputs for AMS_Slave
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
