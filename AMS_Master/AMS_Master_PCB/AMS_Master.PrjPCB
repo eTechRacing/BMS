@@ -33,7 +33,7 @@ FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=1
 IsVirtualBomDocumentRemoved=0
-OutputPath=Project Outputs for AMS_Master
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=1
@@ -43,7 +43,7 @@ CrossRefPorts=3
 CrossRefCrossSheets=1
 CrossRefSheetEntries=0
 CrossRefFollowFromMainSettings=1
-CurrentVariant=ETR-X
+CurrentVariant=ETR-08
 
 [Preferences]
 PrefsVaultGUID=
@@ -565,7 +565,7 @@ GenerateClassCluster=0
 DocumentUniqueId=QQSULTTQ
 
 [Document31]
-DocumentPath=Project Outputs for AMS_Master\Gerber\CAMtastic2.Cam
+DocumentPath=Project Outputs for AMS_Master\Gerber\CAMtastic1.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -721,342 +721,150 @@ DocumentPath=Project Outputs for AMS_Master\ExportSTEP\AMS_Master(ETR-08).step
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master-BoardEdgeRout.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.1
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.2
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.3
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.4
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.5
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.DR1
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.DR2
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.DR3
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.DR4
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.DRL
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument14]
 DocumentPath=Project Outputs for AMS_Master\NC Drill\AMS_Master.DRR
 DItemRevisionGUID=
 
-[GeneratedDocument15]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument16]
+[GeneratedDocument3]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.EXTREP
 DItemRevisionGUID=
 
-[GeneratedDocument17]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.G1
-DItemRevisionGUID=
-
-[GeneratedDocument18]
+[GeneratedDocument4]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.G1
 DItemRevisionGUID=
 
-[GeneratedDocument19]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.G2
-DItemRevisionGUID=
-
-[GeneratedDocument20]
+[GeneratedDocument5]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.G2
 DItemRevisionGUID=
 
-[GeneratedDocument21]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GBL
-DItemRevisionGUID=
-
-[GeneratedDocument22]
+[GeneratedDocument6]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GBL
 DItemRevisionGUID=
 
-[GeneratedDocument23]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GBO
-DItemRevisionGUID=
-
-[GeneratedDocument24]
+[GeneratedDocument7]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GBO
 DItemRevisionGUID=
 
-[GeneratedDocument25]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GBP
-DItemRevisionGUID=
-
-[GeneratedDocument26]
+[GeneratedDocument8]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GBP
 DItemRevisionGUID=
 
-[GeneratedDocument27]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GBS
-DItemRevisionGUID=
-
-[GeneratedDocument28]
+[GeneratedDocument9]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GBS
 DItemRevisionGUID=
 
-[GeneratedDocument29]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD1
-DItemRevisionGUID=
-
-[GeneratedDocument30]
+[GeneratedDocument10]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GD1
 DItemRevisionGUID=
 
-[GeneratedDocument31]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD2
-DItemRevisionGUID=
-
-[GeneratedDocument32]
+[GeneratedDocument11]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GD2
 DItemRevisionGUID=
 
-[GeneratedDocument33]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD3
-DItemRevisionGUID=
-
-[GeneratedDocument34]
+[GeneratedDocument12]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GD3
 DItemRevisionGUID=
 
-[GeneratedDocument35]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD4
-DItemRevisionGUID=
-
-[GeneratedDocument36]
+[GeneratedDocument13]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GD4
 DItemRevisionGUID=
 
-[GeneratedDocument37]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GD5
-DItemRevisionGUID=
-
-[GeneratedDocument38]
+[GeneratedDocument14]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GD5
 DItemRevisionGUID=
 
-[GeneratedDocument39]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG1
-DItemRevisionGUID=
-
-[GeneratedDocument40]
+[GeneratedDocument15]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GG1
 DItemRevisionGUID=
 
-[GeneratedDocument41]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG2
-DItemRevisionGUID=
-
-[GeneratedDocument42]
+[GeneratedDocument16]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GG2
 DItemRevisionGUID=
 
-[GeneratedDocument43]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG3
-DItemRevisionGUID=
-
-[GeneratedDocument44]
+[GeneratedDocument17]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GG3
 DItemRevisionGUID=
 
-[GeneratedDocument45]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG4
-DItemRevisionGUID=
-
-[GeneratedDocument46]
+[GeneratedDocument18]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GG4
 DItemRevisionGUID=
 
-[GeneratedDocument47]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GG5
-DItemRevisionGUID=
-
-[GeneratedDocument48]
+[GeneratedDocument19]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GG5
 DItemRevisionGUID=
 
-[GeneratedDocument49]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GKO
-DItemRevisionGUID=
-
-[GeneratedDocument50]
+[GeneratedDocument20]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GM
 DItemRevisionGUID=
 
-[GeneratedDocument51]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GM1
-DItemRevisionGUID=
-
-[GeneratedDocument52]
+[GeneratedDocument21]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GM1
 DItemRevisionGUID=
 
-[GeneratedDocument53]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GM2
-DItemRevisionGUID=
-
-[GeneratedDocument54]
+[GeneratedDocument22]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GM2
 DItemRevisionGUID=
 
-[GeneratedDocument55]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GM3
-DItemRevisionGUID=
-
-[GeneratedDocument56]
+[GeneratedDocument23]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GM3
 DItemRevisionGUID=
 
-[GeneratedDocument57]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GML
-DItemRevisionGUID=
-
-[GeneratedDocument58]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GPB
-DItemRevisionGUID=
-
-[GeneratedDocument59]
+[GeneratedDocument24]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GPB
 DItemRevisionGUID=
 
-[GeneratedDocument60]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GPT
-DItemRevisionGUID=
-
-[GeneratedDocument61]
+[GeneratedDocument25]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GPT
 DItemRevisionGUID=
 
-[GeneratedDocument62]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument63]
+[GeneratedDocument26]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GTL
 DItemRevisionGUID=
 
-[GeneratedDocument64]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument65]
+[GeneratedDocument27]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GTO
 DItemRevisionGUID=
 
-[GeneratedDocument66]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GTP
-DItemRevisionGUID=
-
-[GeneratedDocument67]
+[GeneratedDocument28]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GTP
 DItemRevisionGUID=
 
-[GeneratedDocument68]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument69]
+[GeneratedDocument29]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.GTS
 DItemRevisionGUID=
 
-[GeneratedDocument70]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument71]
+[GeneratedDocument30]
 DocumentPath=Project Outputs for AMS_Master\NC Drill\AMS_Master.LDP
 DItemRevisionGUID=
 
-[GeneratedDocument72]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.REP
-DItemRevisionGUID=
-
-[GeneratedDocument73]
+[GeneratedDocument31]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.REP
 DItemRevisionGUID=
 
-[GeneratedDocument74]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument75]
+[GeneratedDocument32]
 DocumentPath=Project Outputs for AMS_Master\Gerber\AMS_Master.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument76]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.TX1
-DItemRevisionGUID=
-
-[GeneratedDocument77]
+[GeneratedDocument33]
 DocumentPath=Project Outputs for AMS_Master\NC Drill\AMS_Master.TX1
 DItemRevisionGUID=
 
-[GeneratedDocument78]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.TX2
-DItemRevisionGUID=
-
-[GeneratedDocument79]
+[GeneratedDocument34]
 DocumentPath=Project Outputs for AMS_Master\NC Drill\AMS_Master.TX2
 DItemRevisionGUID=
 
-[GeneratedDocument80]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.TX3
-DItemRevisionGUID=
-
-[GeneratedDocument81]
+[GeneratedDocument35]
 DocumentPath=Project Outputs for AMS_Master\NC Drill\AMS_Master.TX3
 DItemRevisionGUID=
 
-[GeneratedDocument82]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.TX4
-DItemRevisionGUID=
-
-[GeneratedDocument83]
+[GeneratedDocument36]
 DocumentPath=Project Outputs for AMS_Master\NC Drill\AMS_Master.TX4
 DItemRevisionGUID=
 
-[GeneratedDocument84]
-DocumentPath=Project Outputs for AMS_Master\AMS_Master.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument85]
+[GeneratedDocument37]
 DocumentPath=Project Outputs for AMS_Master\NC Drill\AMS_Master.TXT
 DItemRevisionGUID=
 
-[GeneratedDocument86]
+[GeneratedDocument38]
 DocumentPath=Project Outputs for AMS_Master\Design Rule Check - AMS_Master.html
 DItemRevisionGUID=
 
@@ -1177,7 +985,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=Project Outputs for AMS_Master
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs

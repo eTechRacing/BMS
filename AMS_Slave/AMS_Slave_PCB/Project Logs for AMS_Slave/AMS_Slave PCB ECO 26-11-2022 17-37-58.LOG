@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=+5 Pin=TP412-1
+Add Differential Pair: Number of nets in differential pair AMS_CAN_H is 1 instead of 2
+Added Member To Class: ClassName=Supply Member=Component D103 150080VS75000
+Added Member To Class: ClassName=MCU Member=Component SW201 428542320816
