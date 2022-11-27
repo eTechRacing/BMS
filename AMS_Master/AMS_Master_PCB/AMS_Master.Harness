@@ -1,5 +1,5 @@
 AMS_CAN=AMS_CAN_Control,AMS_CAN_TXD,AMS_CAN_RXD
 CAN1=CAN1_TXD,CAN1_RXD
-Fans_Control=Fans_Control_1,Fans_Control_2,Fans_Control_3
+Fans_Control=Fans_Control_1,Fans_Control_2
 Relays_Control=AIRPlus_Control,AIRMinus_Control,Precharge_Control
 Shutdown Monitoring=Interlock_Monitoring,IMD_Monitoring,BMS_Monitoring

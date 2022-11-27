@@ -33,7 +33,7 @@ FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
 IsVirtualBomDocumentRemoved=0
-OutputPath=Project Outputs for Accumulator_HotDog
+OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
 IncludeDesignInRelease=0
@@ -371,170 +371,6 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SAQNPBVJ
 
-[GeneratedDocument1]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=Project Outputs for Accumulator_HotDog\NC Drill\Accumulator_HotDog.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.GBL
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.GBL
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.GBO
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.GBO
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.GBS
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.GBS
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.GD1
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.GD1
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.GG1
-DItemRevisionGUID=
-
-[GeneratedDocument14]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.GG1
-DItemRevisionGUID=
-
-[GeneratedDocument15]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.GM1
-DItemRevisionGUID=
-
-[GeneratedDocument16]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.GM1
-DItemRevisionGUID=
-
-[GeneratedDocument17]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.GM3
-DItemRevisionGUID=
-
-[GeneratedDocument18]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.GM3
-DItemRevisionGUID=
-
-[GeneratedDocument19]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.GPB
-DItemRevisionGUID=
-
-[GeneratedDocument20]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.GPB
-DItemRevisionGUID=
-
-[GeneratedDocument21]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.GPT
-DItemRevisionGUID=
-
-[GeneratedDocument22]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.GPT
-DItemRevisionGUID=
-
-[GeneratedDocument23]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument24]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument25]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument26]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument27]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.GTP
-DItemRevisionGUID=
-
-[GeneratedDocument28]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.GTP
-DItemRevisionGUID=
-
-[GeneratedDocument29]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument30]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument31]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument32]
-DocumentPath=Project Outputs for Accumulator_HotDog\NC Drill\Accumulator_HotDog.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument33]
-DocumentPath=Project Outputs for Accumulator_HotDog\PCB 3D Print\Accumulator_HotDog.png
-DItemRevisionGUID=
-
-[GeneratedDocument34]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.REP
-DItemRevisionGUID=
-
-[GeneratedDocument35]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.REP
-DItemRevisionGUID=
-
-[GeneratedDocument36]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument37]
-DocumentPath=Project Outputs for Accumulator_HotDog\Gerber\Accumulator_HotDog.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument38]
-DocumentPath=Project Outputs for Accumulator_HotDog\ExportSTEP\Accumulator_HotDog.step
-DItemRevisionGUID=
-
-[GeneratedDocument39]
-DocumentPath=Project Outputs for Accumulator_HotDog\Accumulator_HotDog.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument40]
-DocumentPath=Project Outputs for Accumulator_HotDog\NC Drill\Accumulator_HotDog.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument41]
-DocumentPath=Project Outputs for Accumulator_HotDog\BOM\Bill of Materials-Accumulator_HotDog.xlsx
-DItemRevisionGUID=
-
 [Parameter1]
 Name=Company
 Value=e-Tech Racing
@@ -612,7 +448,7 @@ SCH_HasExpandLogicalToPhysicalSheets=-1
 SaveSettingsToOutJob=-1
 
 [Generic_EDE]
-OutputDir=Project Outputs for Accumulator_HotDog
+OutputDir=
 
 [OutputGroup1]
 Name=Netlist Outputs
