@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\dwegg\Desktop\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
 Date     : 09/12/2022
-Time     : 15:34:55
+Time     : 20:58:42
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
 Rule Violations :0
@@ -57,8 +57,8 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.24mm < 0.254mm) Between Pad C316-2(142.351mm,17.358mm) on Top Layer And Pad C317-2(140.651mm,17.358mm) on Top Layer [Top Solder] Mask Sliver [0.24mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.165mm < 0.254mm) Between Pad CMC302-1(147.126mm,18.748mm) on Top Layer And Pad R303-1(144.751mm,18.608mm) on Top Layer [Top Solder] Mask Sliver [0.165mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.188mm < 0.254mm) Between Pad CMC302-2(147.124mm,16.202mm) on Top Layer And Pad R304-2(144.726mm,16.358mm) on Top Layer [Top Solder] Mask Sliver [0.188mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.052mm < 0.254mm) Between Pad J1-(176.43mm,24.65mm) on Multi-Layer And Pad J1-4(175.05mm,23.4mm) on Multi-Layer [Top Solder] Mask Sliver [0.052mm] / [Bottom Solder] Mask Sliver [0.052mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.052mm < 0.254mm) Between Pad J1-(176.43mm,24.65mm) on Multi-Layer And Pad J1-5(175.05mm,25.9mm) on Multi-Layer [Top Solder] Mask Sliver [0.052mm] / [Bottom Solder] Mask Sliver [0.052mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.052mm < 0.254mm) Between Pad J1-(171.62mm,24.75mm) on Multi-Layer And Pad J1-4(173mm,26mm) on Multi-Layer [Top Solder] Mask Sliver [0.052mm] / [Bottom Solder] Mask Sliver [0.052mm]
+   Violation between Minimum Solder Mask Sliver Constraint: (0.052mm < 0.254mm) Between Pad J1-(171.62mm,24.75mm) on Multi-Layer And Pad J1-5(173mm,23.5mm) on Multi-Layer [Top Solder] Mask Sliver [0.052mm] / [Bottom Solder] Mask Sliver [0.052mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.073mm < 0.254mm) Between Pad J4-0(123.525mm,66.465mm) on Multi-Layer And Pad J4-2(122.275mm,65.125mm) on Multi-Layer [Top Solder] Mask Sliver [0.073mm] / [Bottom Solder] Mask Sliver [0.073mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.073mm < 0.254mm) Between Pad J4-0(123.525mm,66.465mm) on Multi-Layer And Pad J4-3(124.775mm,65.125mm) on Multi-Layer [Top Solder] Mask Sliver [0.073mm] / [Bottom Solder] Mask Sliver [0.073mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.228mm < 0.254mm) Between Pad J5-1(154.23mm,6.997mm) on Multi-Layer And Pad J5-5(155.5mm,5.6mm) on Multi-Layer [Top Solder] Mask Sliver [0.228mm] / [Bottom Solder] Mask Sliver [0.228mm]
@@ -151,7 +151,7 @@ Processing Rule : Height Constraint (Min=0mm) (Max=35mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 PCB Health Issue Category : Reference Point Outside the Component Area
-   Reference point outside the component area: Component J1-1053101116 (170.181mm,24.65mm) on Top Layer
+   Reference point outside the component area: Component J1-1053101116 (177.869mm,24.75mm) on Top Layer
    Reference point outside the component area: SMT Small Component TP208-TestPoint (165.7mm,8.833mm) on Bottom Layer
    Reference point outside the component area: SMT Small Component TP206-TestPoint (135.2mm,33.633mm) on Bottom Layer
 Issues :3
@@ -160,4 +160,4 @@ Issues :3
 Violations Detected : 75
 Waived Violations : 0
 PCB Health Issues : 3
-Time Elapsed        : 00:00:01
+Time Elapsed        : 00:00:02
