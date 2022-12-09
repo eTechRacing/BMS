@@ -1,14 +1,10 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\dwegg\Desktop\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\AMS_Master.PcbDoc
-Date     : 27/11/2022
-Time     : 21:47:37
+Date     : 09/12/2022
+Time     : 15:34:55
 
 Processing Rule : Clearance Constraint (Gap=0.2mm) (All),(All)
-   Violation between Clearance Constraint: (0.16mm < 0.2mm) Between Arc (111.775mm,9.3mm) on Top Layer And Region (0 hole(s)) Top Layer 
-   Violation between Clearance Constraint: (0.191mm < 0.2mm) Between Pad C317-1(140.651mm,15.458mm) on Top Layer And Region (0 hole(s)) Top Layer 
-   Violation between Clearance Constraint: (0.103mm < 0.2mm) Between Region (0 hole(s)) Top Layer And Via (112.275mm,9.3mm) from Top Layer to GND 
-   Violation between Clearance Constraint: (0.19mm < 0.2mm) Between Region (0 hole(s)) Top Layer And Via (112.275mm,9.3mm) from Top Layer to GND 
-Rule Violations :4
+Rule Violations :0
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
@@ -69,11 +65,9 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.245mm < 0.254mm) Between Pad J5-2(156.77mm,6.997mm) on Multi-Layer And Pad J5-5(155.5mm,5.6mm) on Multi-Layer [Top Solder] Mask Sliver [0.245mm] / [Bottom Solder] Mask Sliver [0.245mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.24mm < 0.254mm) Between Pad R206-2(132.475mm,40.675mm) on Bottom Layer And Pad TP228-1(132.2mm,42.65mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.24mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.165mm < 0.254mm) Between Pad R207-2(132.5mm,44.55mm) on Bottom Layer And Pad TP228-1(132.2mm,42.65mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.165mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.24mm < 0.254mm) Between Pad R413-2(110.075mm,7.525mm) on Top Layer And Via (110.1mm,6.2mm) from Top Layer to GND [Top Solder] Mask Sliver [0.24mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.12mm < 0.254mm) Between Pad R702-1(38.275mm,55.275mm) on Bottom Layer And Pad TP706-1(37.475mm,52.3mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.12mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.168mm < 0.254mm) Between Pad R801-1(73.55mm,26.878mm) on Top Layer And Pad R803-1(74.075mm,25.2mm) on Top Layer [Top Solder] Mask Sliver [0.168mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.248mm < 0.254mm) Between Pad R812-1(107.2mm,8.525mm) on Bottom Layer And Pad TP806-1(109mm,10mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.248mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.146mm < 0.254mm) Between Pad TP209-1(155.875mm,23.575mm) on Bottom Layer And Via (154.8mm,24.7mm) from GND to Bottom Layer [Bottom Solder] Mask Sliver [0.146mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.047mm < 0.254mm) Between Pad TP709-1(49.2mm,57.025mm) on Bottom Layer And Pad U701-2(48.19mm,58.65mm) on Bottom Layer [Bottom Solder] Mask Sliver [0.047mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.09mm < 0.254mm) Between Pad U201-1(124.964mm,40.786mm) on Top Layer And Pad U201-2(124.964mm,39.986mm) on Top Layer [Top Solder] Mask Sliver [0.09mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.09mm < 0.254mm) Between Pad U201-10(124.964mm,33.586mm) on Top Layer And Pad U201-11(124.964mm,32.786mm) on Top Layer [Top Solder] Mask Sliver [0.09mm]
@@ -115,17 +109,11 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
    Violation between Minimum Solder Mask Sliver Constraint: (0.09mm < 0.254mm) Between Pad U201-6(124.964mm,36.786mm) on Top Layer And Pad U201-7(124.964mm,35.986mm) on Top Layer [Top Solder] Mask Sliver [0.09mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.09mm < 0.254mm) Between Pad U201-7(124.964mm,35.986mm) on Top Layer And Pad U201-8(124.964mm,35.186mm) on Top Layer [Top Solder] Mask Sliver [0.09mm]
    Violation between Minimum Solder Mask Sliver Constraint: (0.09mm < 0.254mm) Between Pad U201-8(124.964mm,35.186mm) on Top Layer And Pad U201-9(124.964mm,34.386mm) on Top Layer [Top Solder] Mask Sliver [0.09mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.08mm < 0.254mm) Between Pad U402-4(113.25mm,9.95mm) on Top Layer And Via (112.275mm,9.3mm) from Top Layer to GND [Top Solder] Mask Sliver [0.08mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.057mm < 0.254mm) Between Pad U402-5(113.25mm,8.68mm) on Top Layer And Via (112.275mm,9.3mm) from Top Layer to GND [Top Solder] Mask Sliver [0.057mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.04mm < 0.254mm) Between Via (109.731mm,6.795mm) from GND to Bottom Layer And Via (110.1mm,6.2mm) from GND to Bottom Layer [Bottom Solder] Mask Sliver [0.04mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.04mm < 0.254mm) Between Via (109.731mm,6.795mm) from Top Layer to GND And Via (110.1mm,6.2mm) from Top Layer to GND [Top Solder] Mask Sliver [0.04mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.068mm < 0.254mm) Between Via (110.1mm,6.2mm) from GND to Bottom Layer And Via (110.3mm,5.5mm) from GND to Bottom Layer [Bottom Solder] Mask Sliver [0.068mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.068mm < 0.254mm) Between Via (110.1mm,6.2mm) from Top Layer to GND And Via (110.3mm,5.5mm) from Top Layer to GND [Top Solder] Mask Sliver [0.068mm]
-Rule Violations :78
+Rule Violations :70
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
-   Violation between Net Antennae: Track (128.2mm,60.34mm)(128.2mm,63.4mm) on Bottom Layer 
-   Violation between Net Antennae: Track (36.575mm,18.45mm)(37.125mm,19mm) on PWR 
+   Violation between Net Antennae: Track (105.25mm,31.29mm)(105.25mm,36.5mm) on Top Layer 
+   Violation between Net Antennae: Track (145.457mm,44.257mm)(145.457mm,45.549mm) on Bottom Layer 
    Violation between Net Antennae: Via (126.4mm,39mm) from GND to Bottom Layer 
 Rule Violations :3
 
@@ -169,7 +157,7 @@ PCB Health Issue Category : Reference Point Outside the Component Area
 Issues :3
 
 
-Violations Detected : 87
+Violations Detected : 75
 Waived Violations : 0
 PCB Health Issues : 3
-Time Elapsed        : 00:00:02
+Time Elapsed        : 00:00:01

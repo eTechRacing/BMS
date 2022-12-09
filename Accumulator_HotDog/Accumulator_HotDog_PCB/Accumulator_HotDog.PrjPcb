@@ -372,32 +372,36 @@ GenerateClassCluster=0
 DocumentUniqueId=SAQNPBVJ
 
 [Parameter1]
-Name=Company
-Value=e-Tech Racing
-
-[Parameter2]
-Name=Department
-Value=Accumulator-BMS
-
-[Parameter3]
-Name=DesignedByURL
-Value=e-techracing.es
-
-[Parameter4]
-Name=DesignerMail
-Value=dredondovinolo@gmail.com
-
-[Parameter5]
-Name=DesignerName
+Name=ReviewerName
 Value=David Redondo
 
-[Parameter6]
+[Parameter2]
+Name=Version
+Value=1.0
+
+[Parameter3]
 Name=Project
 Value=Accumulator_HotDog
 
+[Parameter4]
+Name=DesignerName
+Value=David Redondo
+
+[Parameter5]
+Name=DesignerMail
+Value=dredondovinolo@gmail.com
+
+[Parameter6]
+Name=DesignedByURL
+Value=e-techracing.es
+
 [Parameter7]
-Name=Version
-Value=3.0
+Name=Department
+Value=Accumulator-BMS
+
+[Parameter8]
+Name=Company
+Value=e-Tech Racing
 
 [Configuration1]
 Name=Sources
