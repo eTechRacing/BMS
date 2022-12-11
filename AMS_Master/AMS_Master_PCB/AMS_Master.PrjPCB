@@ -565,7 +565,7 @@ GenerateClassCluster=0
 DocumentUniqueId=QQSULTTQ
 
 [Document31]
-DocumentPath=Project Outputs for AMS_Master\Gerber\CAMtastic1.Cam
+DocumentPath=CAMtastic1.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
