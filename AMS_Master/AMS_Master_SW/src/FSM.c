@@ -1,10 +1,10 @@
 enum BMS_Master_State {
-    INITIALIZATION,
-    IDLE,
-    PRECHARGE,
-    OPERATION,
-    BALANCING,
-    ERROR
+INITIALIZATION,
+IDLE,
+PRECHARGE,
+OPERATION,
+BALANCING,
+ERROR
 };
 
 BMS_Master_State current_state = INITIALIZATION;
@@ -16,50 +16,72 @@ void BMS_Master_FSM() {
             current_state = IDLE;
             break;
         case IDLE:
-        	external_CAN();
-        	internal_CAN();
+            if (error_detection()) {
+                current_state = ERROR;
+            break;
+            }
+
             if (AIRs_Request() == 3) {
                 current_state = PRECHARGE;
-            } else if (error_detection()) {
-                current_state = ERROR;
+            break;
             }
+
+            external_CAN();
+            internal_CAN();
             break;
         case PRECHARGE:
-        	external_CAN();
-        	internal_CAN();
-            AIRs_Control(3);
+            if (error_detection()) {
+                current_state = ERROR;
+                break;
+            }
+
             if (AIRs_Request() == 6) {
                 current_state = OPERATION;
-            } else if (error_detection()) {
-                current_state = ERROR;
-            }	
+                break;
+            }
+
+            external_CAN();
+            internal_CAN();
+            AIRs_Control(3);
             break;
         case OPERATION:
-        	external_CAN();
-        	internal_CAN();
-        	Fans_Control();
-        	AIRs_Control(6);
+            if (error_detection()) {
+                current_state = ERROR;
+                break;
+            }
+
             if (balancing_enable()) {
                 current_state = BALANCING;
-            } else if (error_detection()) {
-                current_state = ERROR;
+                break;
             }
+
+            external_CAN();
+            internal_CAN();
+            AIRs_Control(6);
+            Fans_Control();
             break;
         case BALANCING:
-        	external_CAN();
-        	internal_CAN();
-        	Fans_Control();
-        	balancing();
-        	if (!balancing_enable()) {
-                current_state = OPERATION;
-            } else if (error_detection()) {
+            if (error_detection()) {
                 current_state = ERROR;
+                break;
             }
+
+            if (!balancing_enable()) {
+                current_state = OPERATION;
+                break;
+            }
+
+            external_CAN();
+            internal_CAN();
+            AIRs_Control(6);
+            Fans_Control();
+            balancing();
             break;
         case ERROR:
-        	external_CAN();
-        	internal_CAN();
+            external_CAN();
+            internal_CAN();
             error_handler();
+
             if (error_detection()) {
                 current_state = ERROR;
             } else {
