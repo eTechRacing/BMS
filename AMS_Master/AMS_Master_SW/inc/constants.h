@@ -34,4 +34,14 @@ const int balancing_voltage = 4950, max_balancing_temperature = 650;
 const short max_difference = 20;
 // Maximum voltage difference at which balancing starts [mV]
 
+// FreeRTOS Constants
+#define STACK_SIZE_MIN 200
+// Minimum size of the task stack in words
+
+#define PRIORITY_LEVELS 5
+// Number of priority levels available in FreeRTOS
+
+#define TICK_RATE_MS 25
+// Tick rate of the FreeRTOS timer in milliseconds
+
 #endif
