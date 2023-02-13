@@ -13,12 +13,12 @@ Stack size: 128
 Lines Stmts  %   Files
 ----- ----- ---  -----
   230   100   7  main.c
-  855     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\24HJ128GP502.h
-  163     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdint.h
+  855     0   0  C:\Program Files (x86)\PICC\Devices\24HJ128GP502.h
+  163     0   0  C:\Program Files (x86)\PICC\Drivers\stdint.h
   286   169  12  LT6811.c
    40    14   1  LTC1296.c
- 4236  1114  80  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\can-PIC24.c
-  785     0   0  ..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\can-PIC24.h
+ 4236  1114  80  C:\Program Files (x86)\PICC\Drivers\can-PIC24.c
+  785     0   0  C:\Program Files (x86)\PICC\Drivers\can-PIC24.h
 ----- -----
  6595  1397 Total
 

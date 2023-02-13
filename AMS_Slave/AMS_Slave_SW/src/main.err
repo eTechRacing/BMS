@@ -1,4 +1,0 @@
->>> Warning 202 "main.c" Line 50(31,34): Variable never used:   cob
-      Memory usage:   ROM=13%      RAM=9% - 11%
-      0 Errors,  1 Warnings.
-Build Successful.

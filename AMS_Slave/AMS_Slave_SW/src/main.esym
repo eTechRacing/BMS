@@ -1,9 +1,8 @@
-D G "_STDINT" 1 19 ""
-D G "__PCD__" 1 24 ""5.015""
-D G "__DEVICE__" 1 24 ""
-D G "__DATE__" 1 24 ""02-feb.-22""
-D G "__TIME__" 1 24 ""15:07:36"" "Standard Header file for the PIC24HJ128GP502 device ////////////////"
-c L "set_tris_a" 1 2 6 "FUNCTION"
+D G "__PCD__" 0 231 ""5.015""
+D G "__DEVICE__" 0 231 "8206"
+D G "__DATE__" 0 231 ""25-mar.-22""
+D G "__TIME__" 0 231 ""18:00:35"" "Standard Header file for the PIC24HJ128GP502 device ////////////////"
+c L "set_tris_a" 1 3 6 "FUNCTION"
 v L "value" 1 47 "int16" `53 
 f B "set_tris_a" 1 47 "void(int16 value)" `52 
 v L "value" 1 48 "int16" `55 
@@ -94,7 +93,7 @@ d G "putc" 1 120 "putchar"
 d G "fputc" 1 121 "putchar"
 d G "fgets" 1 122 "gets"
 d G "fputs" 1 123 "puts"
-c L "output_drive" 1 2 2 "FUNCTION"
+c L "output_drive" 1 3 2 "FUNCTION"
 v L "baud" 1 127 "int32" `101 
 f B "setup_uart" 1 127 "void(int32 baud)" `100 
 v L "baud" 1 128 "int32" `103 
@@ -119,7 +118,7 @@ d G "UART_AUTODETECT" 1 138 "8"
 d G "UART_AUTODETECT_NOWAIT" 1 139 "9"
 d G "UART_WAKEUP_ON_RDA" 1 140 "10"
 d G "UART_SEND_BREAK" 1 141 "13"
-c L "set_uart_speed" 1 2 3 "FUNCTION"
+c L "set_uart_speed" 1 3 3 "FUNCTION"
 v L "mode" 1 146 "int8" `119 
 f B "setup_wdt" 1 146 "void(int8 mode)" `118 
 f B "restart_wdt" 1 147 "void()" `120  "Constants used for SETUP_WDT() are:"
@@ -143,7 +142,7 @@ d G "WDT_16S" 1 166 "0x010"
 d G "WDT_33S" 1 167 "0x011"
 d G "WDT_65S" 1 168 "0x030"
 d G "WDT_131S" 1 169 "0x031"
-c L "restart_wdt" 1 2 3 "FUNCTION"
+c L "restart_wdt" 1 3 3 "FUNCTION"
 f B "restart_cause" 1 174 "int8()" `121 
 f B "reset_cpu" 1 175 "void()" `122 
 f B "sleep" 1 176 "void()" `123 
@@ -158,7 +157,7 @@ d G "RESTART_ILLEGAL_OP" 1 184 "14"
 d G "RESTART_TRAP_CONFLICT" 1 185 "15"
 d G "SLEEP_FULL" 1 188 "0" "Default"
 d G "SLEEP_IDLE" 1 189 "1" "Clock and peripherals don't stop"
-c L "sleep" 1 2 2 "FUNCTION"
+c L "sleep" 1 3 2 "FUNCTION"
 v L "type" 1 193 "int8" `127 
 v L "target" 1 193 "int32" `128 
 f B "setup_oscillator" 1 193 "void(int8 type,int32 target)" `126 
@@ -171,7 +170,7 @@ d G "OSC_CRYSTAL" 1 197 "1"
 d G "OSC_CLOCK" 1 198 "2"
 d G "OSC_RC" 1 199 "3"
 d G "OSC_SECONDARY" 1 200 "16"
-c L "setup_oscillator" 1 2 4 "FUNCTION"
+c L "setup_oscillator" 1 3 4 "FUNCTION"
 v L "mode" 1 206 "int16" `134 
 f B "setup_timer1" 1 206 "void(int16 mode)" `133 
 v L "mode" 1 207 "int16" `136 
@@ -231,7 +230,7 @@ d G "TMR_HALT_IDLE" 1 243 "0x2000"
 d G "TMR_CONTINUE_IDLE" 1 244 "0x0000"
 d G "T1_EXTERNAL_SYNC" 1 246 "0x8006" "This only applies to Timer1"
 d G "T1_EXTERNAL_RTC" 1 247 "0xC002" "This only applies to Timer1"
-c L "set_timer45" 1 2 3 "FUNCTION"
+c L "set_timer45" 1 3 3 "FUNCTION"
 v L "module" 1 251 "int8" `180 
 v L "mode" 1 251 "int16" `181 
 f B "setup_capture" 1 251 "void(int8 module,int16 mode)" `179 
@@ -255,7 +254,7 @@ d G "CAPTURE_TIMER2" 1 270 "0x0080" "On capture event Timer 2 is captured"
 d G "CAPTURE_TIMER3" 1 271 "0x0000" "On capture event Timer 3 is captured"
 d G "CAPTURE_HALT_IDLE" 1 274 "0x2000" "Capture module halts during idle mode"
 d G "CAPTURE_CONTINUE_IDLE" 1 275 "0x0000" "Capture module continues during idle mode"
-c L "get_capture" 1 2 3 "FUNCTION"
+c L "get_capture" 1 3 3 "FUNCTION"
 v L "module" 1 280 "int8" `188 
 v L "mode" 1 280 "int16" `189 
 f B "setup_compare" 1 280 "void(int8 module,int16 mode)" `187 
@@ -281,7 +280,7 @@ d G "COMPARE_TIMER2" 1 295 "0x0000" "Timer 2 is the base timer"
 d G "COMPARE_TIMER3" 1 296 "0x0008" "Timer 3 is the base timer"
 d G "COMPARE_HALT_IDLE" 1 299 "0x2000" "Compare module halts during idle mode"
 d G "COMPARE_CONTINUE_IDLE" 1 300 "0x0000" "Compare module continues during idle mode"
-c L "set_compare_time" 1 2 3 "FUNCTION"
+c L "set_compare_time" 1 3 3 "FUNCTION"
 v L "mode" 1 305 "int16" `201 
 f B "setup_spi" 1 305 "void(int16 mode)" `200 
 v L "data" 1 306 "int8" `203 
@@ -338,7 +337,7 @@ d G "SPI_CLK_DIV_448" 1 360 "0x0004"
 d G "SPI_CLK_DIV_512" 1 361 "0x0000"
 d G "SPI_L_TO_H" 1 364 "SPI_SCK_IDLE_LOW"
 d G "SPI_H_TO_L" 1 365 "SPI_SCK_IDLE_HIGH"
-c L "spi_data_in2" 1 2 4 "FUNCTION"
+c L "spi_data_in2" 1 3 4 "FUNCTION"
 v L "mode" 1 371 "int32" `217 
 f B "setup_adc" 1 371 "void(int32 mode)" `216 
 v L "pins" 1 372 "int32" `219 
@@ -386,7 +385,7 @@ d G "VSS_VDD" 1 422 "0x0000" "Range 0-Vdd"
 d G "VREF_VREF" 1 423 "0x6000" "Range VrefL-VrefH"
 d G "VREF_VDD" 1 424 "0x4000" "Range VrefL-Vdd"
 d G "VSS_VREF" 1 425 "0x2000" "Range 0-VrefH"
-c L "adc_done" 1 2 4 "FUNCTION"
+c L "adc_done" 1 3 4 "FUNCTION"
 v L "mode" 1 431 "int16" `230 
 f B "setup_comparator" 1 431 "void(int16 mode)" `229  "Constants used in setup_comparator() are:"
 d G "NC_NC_NC_NC" 1 433 "0"
@@ -403,7 +402,7 @@ d G "C1_INVERT" 1 444 "0x10"
 d G "C2_INVERT" 1 445 "0x20"
 d G "C1_OUTPUT" 1 446 "0x100"
 d G "C2_OUTPUT" 1 447 "0x200"
-c L "setup_comparator" 1 2 3 "FUNCTION"
+c L "setup_comparator" 1 3 3 "FUNCTION"
 v L "poly_terms" 1 455 "int8" `234 
 f B "setup_crc" 1 455 "void(int8 poly_terms,*int8 _VA_LIST)" `233 
 v L "value" 1 456 "int16" `237 
@@ -418,9 +417,9 @@ f B "crc_calc8" 1 459 "int8(int8 data)" `243
 v L "ptr" 1 460 "*int8" `246 
 v L "count" 1 460 "int16" `247 
 f G "crc_calc8" 1 460 "int8(*int8 ptr,int16 count)" `245  "RTC"
-c L "crc_calc8" 1 2 3 "FUNCTION"
-c L "crc_calc8" 1 2 1 "FUNCTION"
-c L "crc_calc8" 1 2 1 "FUNCTION"
+c L "crc_calc8" 1 3 3 "FUNCTION"
+c L "crc_calc8" 1 3 1 "FUNCTION"
+c L "crc_calc8" 1 3 1 "FUNCTION"
 t G "rtc_time_t" 1 476 "{int8 tm_year,int8 tm_temp,int8 tm_mday,int8 tm_mon,int8 tm_hour,int8 tm_wday,int8 tm_sec,int8 tm_min,int8 tm_isdst}" `258  "RTC Protoyptes:"
 v L "mode" 1 478 "int16" `260 
 v L "calibration" 1 478 "int8" `261 
@@ -455,7 +454,7 @@ d G "RTC_ALARM_DAY" 1 502 "0x1800"
 d G "RTC_ALARM_WEEK" 1 503 "0x1C00"
 d G "RTC_ALARM_MONTH" 1 504 "0x2000"
 d G "RTC_ALARM_YEAR" 1 505 "0x2400"
-c L "rtc_write_alarm" 1 2 3 "FUNCTION"
+c L "rtc_write_alarm" 1 3 3 "FUNCTION"
 v L "channel" 1 510 "int8" `275 
 v L "pheripheral" 1 510 "int32" `276 
 v L "mode" 1 510 "int8" `277 
@@ -515,7 +514,7 @@ d G "DMA_FORCE_NOW" 1 548 "0x100"
 d G "DMA_IN_ERROR" 1 550 "0x01"
 d G "DMA_OUT_ERROR" 1 551 "0x02"
 d G "DMA_B_SELECT" 1 552 "0x04"
-c L "dma_status" 1 2 3 "FUNCTION"
+c L "dma_status" 1 3 3 "FUNCTION"
 v L "x" 1 558 "sint8" `301 
 f B "abs" 1 558 "sint8(sint8 x)" `300 
 v L "x" 1 559 "sint16" `303 
@@ -925,7 +924,7 @@ f G "get_capture_time" 1 749 "int16(int8 stream)" `706
 f B "get_capture_event" 1 750 "int8()" `708 
 v L "stream" 1 751 "int8" `710 
 f G "get_capture_event" 1 751 "int8(int8 stream)" `709  "Enviroment Prototypes:"
-c L "get_capture_event" 1 2 2 "FUNCTION"
+c L "get_capture_event" 1 3 2 "FUNCTION"
 v L "address" 1 760 "int32" `712 
 f B "goto_address" 1 760 "void(int32 address)" `711 
 v L "label" 1 761 "int32" `714 
@@ -946,7 +945,7 @@ f B "read_configuration_memory" 1 767 "void(*int8 dataptr,int8 count)" `725
 v L "dataptr" 1 768 "*int8" `729 
 v L "count" 1 768 "int8" `730 
 f B "write_configuration_memory" 1 768 "void(*int8 dataptr,int8 count)" `728  "INT"
-c L "write_configuration_memory" 1 2 4 "FUNCTION"
+c L "write_configuration_memory" 1 3 4 "FUNCTION"
 v L "interrupt" 1 775 "int16" `732 
 f B "enable_interrupts" 1 775 "void(int16 interrupt)" `731 
 v L "interrupt" 1 776 "int16" `734 

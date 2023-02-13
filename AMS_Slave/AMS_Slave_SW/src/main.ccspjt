@@ -1,5 +1,5 @@
 [Directories]
-Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\;C:\Program Files (x86)\PICC\Drivers\C:\Program Files (x86)\PICC\Devices\
 Library=
 LinkerScript=
 [defines]
@@ -55,7 +55,8 @@ Count=5
 5=main=c:\users\dwegg\google drive\e-tech\bms\slave_algorithm\inc\can-pic24.h
 [Opened Files]
 1=main.c
-2=
+2=24HJ128GP502.h
+3=
 [Documentation]
 1=C:\Users\dwegg\Google Drive\e-Tech\BMS\Slave_Algorithm\src\main Notes.txt
 1T=main Notes.txt
