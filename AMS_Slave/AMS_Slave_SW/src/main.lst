@@ -1,11 +1,11 @@
-CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
+CCS PCD C Compiler, Version 5.015, 5967               10-mar.-23 09:10
 
-               Filename:   F:\Electrons\Electronics\BMS\AMS_Slave\AMS_Slave_SW\src\main.lst
+               Filename:   C:\Users\Andreu\OneDrive\Escritorio\Andreu\Documentos\GitHub\BMS\AMS_Slave\AMS_Slave_SW\src\main.lst
 
-               ROM used:   11302 bytes (13%)
-                           Largest free fragment is 54234
+               ROM used:   11356 bytes (13%)
+                           Largest free fragment is 54180
                RAM used:   753 (9%) at main() level
-                           881 (11%) worst case
+                           895 (11%) worst case
                Stack size: 128
 
 *
@@ -1490,6 +1490,11 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 .................... #define ERROR_LED PIN_B2 
 .................... #define CS_LTC1296 PIN_A4 
 ....................  
+.................... #define ROT0 PIN_B3          
+.................... #define ROT1 PIN_A1          
+.................... #define ROT2 PIN_B8 
+.................... #define ROT3 PIN_B9         
+....................  
 .................... #PIN_SELECT SDO1=PIN_B6 
 .................... #PIN_SELECT SCK1OUT=PIN_B5 
 .................... #PIN_SELECT SDI1=PIN_B7 
@@ -1785,1296 +1790,1296 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................    //Primer set de registros 
 ....................    output_low(CS_LTC6811); 
 *
-01E06:  BCLR.B  2C0.0
-01E08:  BCLR.B  2C4.0
+01E3C:  BCLR.B  2C0.0
+01E3E:  BCLR.B  2C4.0
 *
-027D0:  BCLR.B  2C0.0
-027D2:  BCLR.B  2C4.0
+02806:  BCLR.B  2C0.0
+02808:  BCLR.B  2C4.0
 ....................    delay_us(10); 
 *
-01E0A:  REPEAT  #62
-01E0C:  NOP     
+01E40:  REPEAT  #62
+01E42:  NOP     
 *
-027D4:  REPEAT  #62
-027D6:  NOP     
+0280A:  REPEAT  #62
+0280C:  NOP     
 ....................    output_high(CS_LTC6811); 
 *
-01E0E:  BCLR.B  2C0.0
-01E10:  BSET.B  2C4.0
+01E44:  BCLR.B  2C0.0
+01E46:  BSET.B  2C4.0
 *
-027D8:  BCLR.B  2C0.0
-027DA:  BSET.B  2C4.0
+0280E:  BCLR.B  2C0.0
+02810:  BSET.B  2C4.0
 ....................    delay_us(10); 
 *
-01E12:  REPEAT  #62
-01E14:  NOP     
+01E48:  REPEAT  #62
+01E4A:  NOP     
 *
-027DC:  REPEAT  #62
-027DE:  NOP     
+02812:  REPEAT  #62
+02814:  NOP     
 ....................    output_low(CS_LTC6811); 
 *
-01E16:  BCLR.B  2C0.0
-01E18:  BCLR.B  2C4.0
+01E4C:  BCLR.B  2C0.0
+01E4E:  BCLR.B  2C4.0
 *
-027E0:  BCLR.B  2C0.0
-027E2:  BCLR.B  2C4.0
+02816:  BCLR.B  2C0.0
+02818:  BCLR.B  2C4.0
 ....................    spi_xfer(SP, 0x80);   
 *
-01E1A:  MOV     #8,W4
-01E1C:  MOV     #80,W2
-01E1E:  MOV     #0,W3
-01E20:  CALL    1898
+01E50:  MOV     #8,W4
+01E52:  MOV     #80,W2
+01E54:  MOV     #0,W3
+01E56:  CALL    1898
 *
-027E4:  MOV     #8,W4
-027E6:  MOV     #80,W2
-027E8:  MOV     #0,W3
-027EA:  CALL    1898
+0281A:  MOV     #8,W4
+0281C:  MOV     #80,W2
+0281E:  MOV     #0,W3
+02820:  CALL    1898
 ....................    spi_xfer(SP, 0x04);   
 *
-01E24:  MOV     #8,W4
-01E26:  MOV     #4,W2
-01E28:  MOV     #0,W3
-01E2A:  CALL    1898
+01E5A:  MOV     #8,W4
+01E5C:  MOV     #4,W2
+01E5E:  MOV     #0,W3
+01E60:  CALL    1898
 *
-027EE:  MOV     #8,W4
-027F0:  MOV     #4,W2
-027F2:  MOV     #0,W3
-027F4:  CALL    1898
+02824:  MOV     #8,W4
+02826:  MOV     #4,W2
+02828:  MOV     #0,W3
+0282A:  CALL    1898
 ....................    spi_xfer(SP, 0x77);   
 *
-01E2E:  MOV     #8,W4
-01E30:  MOV     #77,W2
-01E32:  MOV     #0,W3
-01E34:  CALL    1898
+01E64:  MOV     #8,W4
+01E66:  MOV     #77,W2
+01E68:  MOV     #0,W3
+01E6A:  CALL    1898
 *
-027F8:  MOV     #8,W4
-027FA:  MOV     #77,W2
-027FC:  MOV     #0,W3
-027FE:  CALL    1898
+0282E:  MOV     #8,W4
+02830:  MOV     #77,W2
+02832:  MOV     #0,W3
+02834:  CALL    1898
 ....................    spi_xfer(SP, 0xD6); 
 *
-01E38:  MOV     #8,W4
-01E3A:  MOV     #D6,W2
-01E3C:  MOV     #0,W3
-01E3E:  CALL    1898
+01E6E:  MOV     #8,W4
+01E70:  MOV     #D6,W2
+01E72:  MOV     #0,W3
+01E74:  CALL    1898
 *
-02802:  MOV     #8,W4
-02804:  MOV     #D6,W2
-02806:  MOV     #0,W3
-02808:  CALL    1898
+02838:  MOV     #8,W4
+0283A:  MOV     #D6,W2
+0283C:  MOV     #0,W3
+0283E:  CALL    1898
 ....................    for(i=0;i<6;++i) 
 *
-01E42:  CLR.B   88A
-01E44:  MOV.B   88A,W0L
-01E46:  SE      W0,W0
-01E48:  CP      W0,#6
-01E4A:  BRA     GE,1E66
+01E78:  CLR.B   898
+01E7A:  MOV.B   898,W0L
+01E7C:  SE      W0,W0
+01E7E:  CP      W0,#6
+01E80:  BRA     GE,1E9C
 *
-0280C:  CLR.B   88A
-0280E:  MOV.B   88A,W0L
-02810:  SE      W0,W0
-02812:  CP      W0,#6
-02814:  BRA     GE,2830
+02842:  CLR.B   898
+02844:  MOV.B   898,W0L
+02846:  SE      W0,W0
+02848:  CP      W0,#6
+0284A:  BRA     GE,2866
 ....................    { 
 ....................       data[i]=spi_xfer(SP, 0xFF);  
 *
-01E4C:  MOV.B   88A,W0L
-01E4E:  SE      W0,W0
-01E50:  MOV     #872,W4
-01E52:  ADD     W0,W4,W5
-01E54:  MOV     #8,W4
-01E56:  MOV     #FF,W2
-01E58:  MOV     #0,W3
-01E5A:  CALL    1898
-01E5E:  MOV.B   W0L,[W5]
-01E60:  INC.B   088A
-01E62:  GOTO    1E44
+01E82:  MOV.B   898,W0L
+01E84:  SE      W0,W0
+01E86:  MOV     #880,W4
+01E88:  ADD     W0,W4,W5
+01E8A:  MOV     #8,W4
+01E8C:  MOV     #FF,W2
+01E8E:  MOV     #0,W3
+01E90:  CALL    1898
+01E94:  MOV.B   W0L,[W5]
+01E96:  INC.B   0898
+01E98:  GOTO    1E7A
 *
-02816:  MOV.B   88A,W0L
-02818:  SE      W0,W0
-0281A:  MOV     #872,W4
-0281C:  ADD     W0,W4,W5
-0281E:  MOV     #8,W4
-02820:  MOV     #FF,W2
-02822:  MOV     #0,W3
-02824:  CALL    1898
-02828:  MOV.B   W0L,[W5]
-0282A:  INC.B   088A
-0282C:  GOTO    280E
+0284C:  MOV.B   898,W0L
+0284E:  SE      W0,W0
+02850:  MOV     #880,W4
+02852:  ADD     W0,W4,W5
+02854:  MOV     #8,W4
+02856:  MOV     #FF,W2
+02858:  MOV     #0,W3
+0285A:  CALL    1898
+0285E:  MOV.B   W0L,[W5]
+02860:  INC.B   0898
+02862:  GOTO    2844
 ....................    } 
 ....................    output_high(CS_LTC6811); 
 *
-01E66:  BCLR.B  2C0.0
-01E68:  BSET.B  2C4.0
+01E9C:  BCLR.B  2C0.0
+01E9E:  BSET.B  2C4.0
 *
-02830:  BCLR.B  2C0.0
-02832:  BSET.B  2C4.0
+02866:  BCLR.B  2C0.0
+02868:  BSET.B  2C4.0
 ....................     
 ....................     
 ....................    //Segundo set de registros 
 ....................    output_low(CS_LTC6811); 
 *
-01E6A:  BCLR.B  2C0.0
-01E6C:  BCLR.B  2C4.0
+01EA0:  BCLR.B  2C0.0
+01EA2:  BCLR.B  2C4.0
 *
-02834:  BCLR.B  2C0.0
-02836:  BCLR.B  2C4.0
+0286A:  BCLR.B  2C0.0
+0286C:  BCLR.B  2C4.0
 ....................    delay_us(10); 
 *
-01E6E:  REPEAT  #62
-01E70:  NOP     
+01EA4:  REPEAT  #62
+01EA6:  NOP     
 *
-02838:  REPEAT  #62
-0283A:  NOP     
+0286E:  REPEAT  #62
+02870:  NOP     
 ....................    output_high(CS_LTC6811); 
 *
-01E72:  BCLR.B  2C0.0
-01E74:  BSET.B  2C4.0
+01EA8:  BCLR.B  2C0.0
+01EAA:  BSET.B  2C4.0
 *
-0283C:  BCLR.B  2C0.0
-0283E:  BSET.B  2C4.0
+02872:  BCLR.B  2C0.0
+02874:  BSET.B  2C4.0
 ....................    delay_us(10); 
 *
-01E76:  REPEAT  #62
-01E78:  NOP     
+01EAC:  REPEAT  #62
+01EAE:  NOP     
 *
-02840:  REPEAT  #62
-02842:  NOP     
+02876:  REPEAT  #62
+02878:  NOP     
 ....................    output_low(CS_LTC6811); 
 *
-01E7A:  BCLR.B  2C0.0
-01E7C:  BCLR.B  2C4.0
+01EB0:  BCLR.B  2C0.0
+01EB2:  BCLR.B  2C4.0
 *
-02844:  BCLR.B  2C0.0
-02846:  BCLR.B  2C4.0
+0287A:  BCLR.B  2C0.0
+0287C:  BCLR.B  2C4.0
 ....................    spi_xfer(SP, 0x80);   
 *
-01E7E:  MOV     #8,W4
-01E80:  MOV     #80,W2
-01E82:  MOV     #0,W3
-01E84:  CALL    1898
+01EB4:  MOV     #8,W4
+01EB6:  MOV     #80,W2
+01EB8:  MOV     #0,W3
+01EBA:  CALL    1898
 *
-02848:  MOV     #8,W4
-0284A:  MOV     #80,W2
-0284C:  MOV     #0,W3
-0284E:  CALL    1898
+0287E:  MOV     #8,W4
+02880:  MOV     #80,W2
+02882:  MOV     #0,W3
+02884:  CALL    1898
 ....................    spi_xfer(SP, 0x06);   
 *
-01E88:  MOV     #8,W4
-01E8A:  MOV     #6,W2
-01E8C:  MOV     #0,W3
-01E8E:  CALL    1898
+01EBE:  MOV     #8,W4
+01EC0:  MOV     #6,W2
+01EC2:  MOV     #0,W3
+01EC4:  CALL    1898
 *
-02852:  MOV     #8,W4
-02854:  MOV     #6,W2
-02856:  MOV     #0,W3
-02858:  CALL    1898
+02888:  MOV     #8,W4
+0288A:  MOV     #6,W2
+0288C:  MOV     #0,W3
+0288E:  CALL    1898
 ....................    spi_xfer(SP, 0xEA);   
 *
-01E92:  MOV     #8,W4
-01E94:  MOV     #EA,W2
-01E96:  MOV     #0,W3
-01E98:  CALL    1898
+01EC8:  MOV     #8,W4
+01ECA:  MOV     #EA,W2
+01ECC:  MOV     #0,W3
+01ECE:  CALL    1898
 *
-0285C:  MOV     #8,W4
-0285E:  MOV     #EA,W2
-02860:  MOV     #0,W3
-02862:  CALL    1898
+02892:  MOV     #8,W4
+02894:  MOV     #EA,W2
+02896:  MOV     #0,W3
+02898:  CALL    1898
 ....................    spi_xfer(SP, 0x80); 
 *
-01E9C:  MOV     #8,W4
-01E9E:  MOV     #80,W2
-01EA0:  MOV     #0,W3
-01EA2:  CALL    1898
+01ED2:  MOV     #8,W4
+01ED4:  MOV     #80,W2
+01ED6:  MOV     #0,W3
+01ED8:  CALL    1898
 *
-02866:  MOV     #8,W4
-02868:  MOV     #80,W2
-0286A:  MOV     #0,W3
-0286C:  CALL    1898
+0289C:  MOV     #8,W4
+0289E:  MOV     #80,W2
+028A0:  MOV     #0,W3
+028A2:  CALL    1898
 ....................    for(i=0;i<6;++i) 
 *
-01EA6:  CLR.B   88A
-01EA8:  MOV.B   88A,W0L
-01EAA:  SE      W0,W0
-01EAC:  CP      W0,#6
-01EAE:  BRA     GE,1ECA
+01EDC:  CLR.B   898
+01EDE:  MOV.B   898,W0L
+01EE0:  SE      W0,W0
+01EE2:  CP      W0,#6
+01EE4:  BRA     GE,1F00
 *
-02870:  CLR.B   88A
-02872:  MOV.B   88A,W0L
-02874:  SE      W0,W0
-02876:  CP      W0,#6
-02878:  BRA     GE,2894
+028A6:  CLR.B   898
+028A8:  MOV.B   898,W0L
+028AA:  SE      W0,W0
+028AC:  CP      W0,#6
+028AE:  BRA     GE,28CA
 ....................    { 
 ....................       data1[i]=spi_xfer(SP, 0xFF);  
 *
-01EB0:  MOV.B   88A,W0L
-01EB2:  SE      W0,W0
-01EB4:  MOV     #878,W4
-01EB6:  ADD     W0,W4,W5
-01EB8:  MOV     #8,W4
-01EBA:  MOV     #FF,W2
-01EBC:  MOV     #0,W3
-01EBE:  CALL    1898
-01EC2:  MOV.B   W0L,[W5]
-01EC4:  INC.B   088A
-01EC6:  GOTO    1EA8
+01EE6:  MOV.B   898,W0L
+01EE8:  SE      W0,W0
+01EEA:  MOV     #886,W4
+01EEC:  ADD     W0,W4,W5
+01EEE:  MOV     #8,W4
+01EF0:  MOV     #FF,W2
+01EF2:  MOV     #0,W3
+01EF4:  CALL    1898
+01EF8:  MOV.B   W0L,[W5]
+01EFA:  INC.B   0898
+01EFC:  GOTO    1EDE
 *
-0287A:  MOV.B   88A,W0L
-0287C:  SE      W0,W0
-0287E:  MOV     #878,W4
-02880:  ADD     W0,W4,W5
-02882:  MOV     #8,W4
-02884:  MOV     #FF,W2
-02886:  MOV     #0,W3
-02888:  CALL    1898
-0288C:  MOV.B   W0L,[W5]
-0288E:  INC.B   088A
-02890:  GOTO    2872
+028B0:  MOV.B   898,W0L
+028B2:  SE      W0,W0
+028B4:  MOV     #886,W4
+028B6:  ADD     W0,W4,W5
+028B8:  MOV     #8,W4
+028BA:  MOV     #FF,W2
+028BC:  MOV     #0,W3
+028BE:  CALL    1898
+028C2:  MOV.B   W0L,[W5]
+028C4:  INC.B   0898
+028C6:  GOTO    28A8
 ....................    } 
 ....................    output_high(CS_LTC6811); 
 *
-01ECA:  BCLR.B  2C0.0
-01ECC:  BSET.B  2C4.0
+01F00:  BCLR.B  2C0.0
+01F02:  BSET.B  2C4.0
 *
-02894:  BCLR.B  2C0.0
-02896:  BSET.B  2C4.0
+028CA:  BCLR.B  2C0.0
+028CC:  BSET.B  2C4.0
 ....................     
 ....................    //Tercer set de registros 
 ....................    output_low(CS_LTC6811); 
 *
-01ECE:  BCLR.B  2C0.0
-01ED0:  BCLR.B  2C4.0
+01F04:  BCLR.B  2C0.0
+01F06:  BCLR.B  2C4.0
 *
-02898:  BCLR.B  2C0.0
-0289A:  BCLR.B  2C4.0
+028CE:  BCLR.B  2C0.0
+028D0:  BCLR.B  2C4.0
 ....................    delay_us(10); 
 *
-01ED2:  REPEAT  #62
-01ED4:  NOP     
+01F08:  REPEAT  #62
+01F0A:  NOP     
 *
-0289C:  REPEAT  #62
-0289E:  NOP     
+028D2:  REPEAT  #62
+028D4:  NOP     
 ....................    output_high(CS_LTC6811); 
 *
-01ED6:  BCLR.B  2C0.0
-01ED8:  BSET.B  2C4.0
+01F0C:  BCLR.B  2C0.0
+01F0E:  BSET.B  2C4.0
 *
-028A0:  BCLR.B  2C0.0
-028A2:  BSET.B  2C4.0
+028D6:  BCLR.B  2C0.0
+028D8:  BSET.B  2C4.0
 ....................    delay_us(10); 
 *
-01EDA:  REPEAT  #62
-01EDC:  NOP     
+01F10:  REPEAT  #62
+01F12:  NOP     
 *
-028A4:  REPEAT  #62
-028A6:  NOP     
+028DA:  REPEAT  #62
+028DC:  NOP     
 ....................    output_low(CS_LTC6811); 
 *
-01EDE:  BCLR.B  2C0.0
-01EE0:  BCLR.B  2C4.0
+01F14:  BCLR.B  2C0.0
+01F16:  BCLR.B  2C4.0
 *
-028A8:  BCLR.B  2C0.0
-028AA:  BCLR.B  2C4.0
+028DE:  BCLR.B  2C0.0
+028E0:  BCLR.B  2C4.0
 ....................    spi_xfer(SP, 0x80);   
 *
-01EE2:  MOV     #8,W4
-01EE4:  MOV     #80,W2
-01EE6:  MOV     #0,W3
-01EE8:  CALL    1898
+01F18:  MOV     #8,W4
+01F1A:  MOV     #80,W2
+01F1C:  MOV     #0,W3
+01F1E:  CALL    1898
 *
-028AC:  MOV     #8,W4
-028AE:  MOV     #80,W2
-028B0:  MOV     #0,W3
-028B2:  CALL    1898
+028E2:  MOV     #8,W4
+028E4:  MOV     #80,W2
+028E6:  MOV     #0,W3
+028E8:  CALL    1898
 ....................    spi_xfer(SP, 0x08);   
 *
-01EEC:  MOV     #8,W4
-01EEE:  MOV     #8,W2
-01EF0:  MOV     #0,W3
-01EF2:  CALL    1898
+01F22:  MOV     #8,W4
+01F24:  MOV     #8,W2
+01F26:  MOV     #0,W3
+01F28:  CALL    1898
 *
-028B6:  MOV     #8,W4
-028B8:  MOV     #8,W2
-028BA:  MOV     #0,W3
-028BC:  CALL    1898
+028EC:  MOV     #8,W4
+028EE:  MOV     #8,W2
+028F0:  MOV     #0,W3
+028F2:  CALL    1898
 ....................    spi_xfer(SP, 0x2E);   
 *
-01EF6:  MOV     #8,W4
-01EF8:  MOV     #2E,W2
-01EFA:  MOV     #0,W3
-01EFC:  CALL    1898
+01F2C:  MOV     #8,W4
+01F2E:  MOV     #2E,W2
+01F30:  MOV     #0,W3
+01F32:  CALL    1898
 *
-028C0:  MOV     #8,W4
-028C2:  MOV     #2E,W2
-028C4:  MOV     #0,W3
-028C6:  CALL    1898
+028F6:  MOV     #8,W4
+028F8:  MOV     #2E,W2
+028FA:  MOV     #0,W3
+028FC:  CALL    1898
 ....................    spi_xfer(SP, 0x46); 
 *
-01F00:  MOV     #8,W4
-01F02:  MOV     #46,W2
-01F04:  MOV     #0,W3
-01F06:  CALL    1898
+01F36:  MOV     #8,W4
+01F38:  MOV     #46,W2
+01F3A:  MOV     #0,W3
+01F3C:  CALL    1898
 *
-028CA:  MOV     #8,W4
-028CC:  MOV     #46,W2
-028CE:  MOV     #0,W3
-028D0:  CALL    1898
+02900:  MOV     #8,W4
+02902:  MOV     #46,W2
+02904:  MOV     #0,W3
+02906:  CALL    1898
 ....................    for(i=0;i<6;++i) 
 *
-01F0A:  CLR.B   88A
-01F0C:  MOV.B   88A,W0L
-01F0E:  SE      W0,W0
-01F10:  CP      W0,#6
-01F12:  BRA     GE,1F2E
+01F40:  CLR.B   898
+01F42:  MOV.B   898,W0L
+01F44:  SE      W0,W0
+01F46:  CP      W0,#6
+01F48:  BRA     GE,1F64
 *
-028D4:  CLR.B   88A
-028D6:  MOV.B   88A,W0L
-028D8:  SE      W0,W0
-028DA:  CP      W0,#6
-028DC:  BRA     GE,28F8
+0290A:  CLR.B   898
+0290C:  MOV.B   898,W0L
+0290E:  SE      W0,W0
+02910:  CP      W0,#6
+02912:  BRA     GE,292E
 ....................    { 
 ....................       data2[i]=spi_xfer(SP, 0xFF);  
 *
-01F14:  MOV.B   88A,W0L
-01F16:  SE      W0,W0
-01F18:  MOV     #87E,W4
-01F1A:  ADD     W0,W4,W5
-01F1C:  MOV     #8,W4
-01F1E:  MOV     #FF,W2
-01F20:  MOV     #0,W3
-01F22:  CALL    1898
-01F26:  MOV.B   W0L,[W5]
-01F28:  INC.B   088A
-01F2A:  GOTO    1F0C
+01F4A:  MOV.B   898,W0L
+01F4C:  SE      W0,W0
+01F4E:  MOV     #88C,W4
+01F50:  ADD     W0,W4,W5
+01F52:  MOV     #8,W4
+01F54:  MOV     #FF,W2
+01F56:  MOV     #0,W3
+01F58:  CALL    1898
+01F5C:  MOV.B   W0L,[W5]
+01F5E:  INC.B   0898
+01F60:  GOTO    1F42
 *
-028DE:  MOV.B   88A,W0L
-028E0:  SE      W0,W0
-028E2:  MOV     #87E,W4
-028E4:  ADD     W0,W4,W5
-028E6:  MOV     #8,W4
-028E8:  MOV     #FF,W2
-028EA:  MOV     #0,W3
-028EC:  CALL    1898
-028F0:  MOV.B   W0L,[W5]
-028F2:  INC.B   088A
-028F4:  GOTO    28D6
+02914:  MOV.B   898,W0L
+02916:  SE      W0,W0
+02918:  MOV     #88C,W4
+0291A:  ADD     W0,W4,W5
+0291C:  MOV     #8,W4
+0291E:  MOV     #FF,W2
+02920:  MOV     #0,W3
+02922:  CALL    1898
+02926:  MOV.B   W0L,[W5]
+02928:  INC.B   0898
+0292A:  GOTO    290C
 ....................    } 
 ....................    output_high(CS_LTC6811); 
 *
-01F2E:  BCLR.B  2C0.0
-01F30:  BSET.B  2C4.0
+01F64:  BCLR.B  2C0.0
+01F66:  BSET.B  2C4.0
 *
-028F8:  BCLR.B  2C0.0
-028FA:  BSET.B  2C4.0
+0292E:  BCLR.B  2C0.0
+02930:  BSET.B  2C4.0
 ....................     
 ....................    //Cuarto set de registros 
 ....................    output_low(CS_LTC6811); 
 *
-01F32:  BCLR.B  2C0.0
-01F34:  BCLR.B  2C4.0
+01F68:  BCLR.B  2C0.0
+01F6A:  BCLR.B  2C4.0
 *
-028FC:  BCLR.B  2C0.0
-028FE:  BCLR.B  2C4.0
+02932:  BCLR.B  2C0.0
+02934:  BCLR.B  2C4.0
 ....................    delay_us(10); 
 *
-01F36:  REPEAT  #62
-01F38:  NOP     
+01F6C:  REPEAT  #62
+01F6E:  NOP     
 *
-02900:  REPEAT  #62
-02902:  NOP     
+02936:  REPEAT  #62
+02938:  NOP     
 ....................    output_high(CS_LTC6811); 
 *
-01F3A:  BCLR.B  2C0.0
-01F3C:  BSET.B  2C4.0
+01F70:  BCLR.B  2C0.0
+01F72:  BSET.B  2C4.0
 *
-02904:  BCLR.B  2C0.0
-02906:  BSET.B  2C4.0
+0293A:  BCLR.B  2C0.0
+0293C:  BSET.B  2C4.0
 ....................    delay_us(10); 
 *
-01F3E:  REPEAT  #62
-01F40:  NOP     
+01F74:  REPEAT  #62
+01F76:  NOP     
 *
-02908:  REPEAT  #62
-0290A:  NOP     
+0293E:  REPEAT  #62
+02940:  NOP     
 ....................    output_low(CS_LTC6811); 
 *
-01F42:  BCLR.B  2C0.0
-01F44:  BCLR.B  2C4.0
+01F78:  BCLR.B  2C0.0
+01F7A:  BCLR.B  2C4.0
 *
-0290C:  BCLR.B  2C0.0
-0290E:  BCLR.B  2C4.0
+02942:  BCLR.B  2C0.0
+02944:  BCLR.B  2C4.0
 ....................    spi_xfer(SP, 0x80);   
 *
-01F46:  MOV     #8,W4
-01F48:  MOV     #80,W2
-01F4A:  MOV     #0,W3
-01F4C:  CALL    1898
+01F7C:  MOV     #8,W4
+01F7E:  MOV     #80,W2
+01F80:  MOV     #0,W3
+01F82:  CALL    1898
 *
-02910:  MOV     #8,W4
-02912:  MOV     #80,W2
-02914:  MOV     #0,W3
-02916:  CALL    1898
+02946:  MOV     #8,W4
+02948:  MOV     #80,W2
+0294A:  MOV     #0,W3
+0294C:  CALL    1898
 ....................    spi_xfer(SP, 0x0A);   
 *
-01F50:  MOV     #8,W4
-01F52:  MOV     #A,W2
-01F54:  MOV     #0,W3
-01F56:  CALL    1898
+01F86:  MOV     #8,W4
+01F88:  MOV     #A,W2
+01F8A:  MOV     #0,W3
+01F8C:  CALL    1898
 *
-0291A:  MOV     #8,W4
-0291C:  MOV     #A,W2
-0291E:  MOV     #0,W3
-02920:  CALL    1898
+02950:  MOV     #8,W4
+02952:  MOV     #A,W2
+02954:  MOV     #0,W3
+02956:  CALL    1898
 ....................    spi_xfer(SP, 0xB3);   
 *
-01F5A:  MOV     #8,W4
-01F5C:  MOV     #B3,W2
-01F5E:  MOV     #0,W3
-01F60:  CALL    1898
+01F90:  MOV     #8,W4
+01F92:  MOV     #B3,W2
+01F94:  MOV     #0,W3
+01F96:  CALL    1898
 *
-02924:  MOV     #8,W4
-02926:  MOV     #B3,W2
-02928:  MOV     #0,W3
-0292A:  CALL    1898
+0295A:  MOV     #8,W4
+0295C:  MOV     #B3,W2
+0295E:  MOV     #0,W3
+02960:  CALL    1898
 ....................    spi_xfer(SP, 0x10); 
 *
-01F64:  MOV     #8,W4
-01F66:  MOV     #10,W2
-01F68:  MOV     #0,W3
-01F6A:  CALL    1898
+01F9A:  MOV     #8,W4
+01F9C:  MOV     #10,W2
+01F9E:  MOV     #0,W3
+01FA0:  CALL    1898
 *
-0292E:  MOV     #8,W4
-02930:  MOV     #10,W2
-02932:  MOV     #0,W3
-02934:  CALL    1898
+02964:  MOV     #8,W4
+02966:  MOV     #10,W2
+02968:  MOV     #0,W3
+0296A:  CALL    1898
 ....................    for(i=0;i<6;++i) 
 *
-01F6E:  CLR.B   88A
-01F70:  MOV.B   88A,W0L
-01F72:  SE      W0,W0
-01F74:  CP      W0,#6
-01F76:  BRA     GE,1F92
+01FA4:  CLR.B   898
+01FA6:  MOV.B   898,W0L
+01FA8:  SE      W0,W0
+01FAA:  CP      W0,#6
+01FAC:  BRA     GE,1FC8
 *
-02938:  CLR.B   88A
-0293A:  MOV.B   88A,W0L
-0293C:  SE      W0,W0
-0293E:  CP      W0,#6
-02940:  BRA     GE,295C
+0296E:  CLR.B   898
+02970:  MOV.B   898,W0L
+02972:  SE      W0,W0
+02974:  CP      W0,#6
+02976:  BRA     GE,2992
 ....................    { 
 ....................       data3[i]=spi_xfer(SP, 0xFF);  
 *
-01F78:  MOV.B   88A,W0L
-01F7A:  SE      W0,W0
-01F7C:  MOV     #884,W4
-01F7E:  ADD     W0,W4,W5
-01F80:  MOV     #8,W4
-01F82:  MOV     #FF,W2
-01F84:  MOV     #0,W3
-01F86:  CALL    1898
-01F8A:  MOV.B   W0L,[W5]
-01F8C:  INC.B   088A
-01F8E:  GOTO    1F70
+01FAE:  MOV.B   898,W0L
+01FB0:  SE      W0,W0
+01FB2:  MOV     #892,W4
+01FB4:  ADD     W0,W4,W5
+01FB6:  MOV     #8,W4
+01FB8:  MOV     #FF,W2
+01FBA:  MOV     #0,W3
+01FBC:  CALL    1898
+01FC0:  MOV.B   W0L,[W5]
+01FC2:  INC.B   0898
+01FC4:  GOTO    1FA6
 *
-02942:  MOV.B   88A,W0L
-02944:  SE      W0,W0
-02946:  MOV     #884,W4
-02948:  ADD     W0,W4,W5
-0294A:  MOV     #8,W4
-0294C:  MOV     #FF,W2
-0294E:  MOV     #0,W3
-02950:  CALL    1898
-02954:  MOV.B   W0L,[W5]
-02956:  INC.B   088A
-02958:  GOTO    293A
+02978:  MOV.B   898,W0L
+0297A:  SE      W0,W0
+0297C:  MOV     #892,W4
+0297E:  ADD     W0,W4,W5
+02980:  MOV     #8,W4
+02982:  MOV     #FF,W2
+02984:  MOV     #0,W3
+02986:  CALL    1898
+0298A:  MOV.B   W0L,[W5]
+0298C:  INC.B   0898
+0298E:  GOTO    2970
 ....................    } 
 ....................    output_high(CS_LTC6811); 
 *
-01F92:  BCLR.B  2C0.0
-01F94:  BSET.B  2C4.0
+01FC8:  BCLR.B  2C0.0
+01FCA:  BSET.B  2C4.0
 *
-0295C:  BCLR.B  2C0.0
-0295E:  BSET.B  2C4.0
+02992:  BCLR.B  2C0.0
+02994:  BSET.B  2C4.0
 ....................     
 ....................    //calculo de los voltajes de las celdas y el voltaje total 
 ....................    am=0; 
 *
-01F96:  CLR.B   88B
+01FCC:  CLR.B   899
 *
-02960:  CLR.B   88B
+02996:  CLR.B   899
 ....................    total=0; 
 *
-01F98:  CLR     826
+01FCE:  CLR     826
 *
-02962:  CLR     826
+02998:  CLR     826
 ....................    V_min_aux=0xFFFF; 
 *
-01F9A:  SETM    86E
+01FD0:  SETM    87C
 *
-02964:  SETM    86E
+0299A:  SETM    87C
 ....................    V_max_aux=0; 
 *
-01F9C:  CLR     870
+01FD2:  CLR     87E
 *
-02966:  CLR     870
+0299C:  CLR     87E
 ....................    for(i=0;i<6;i=i+2) 
 *
-01F9E:  CLR.B   88A
-01FA0:  MOV.B   88A,W0L
-01FA2:  SE      W0,W0
-01FA4:  CP      W0,#6
-01FA6:  BRA     GE,204A
+01FD4:  CLR.B   898
+01FD6:  MOV.B   898,W0L
+01FD8:  SE      W0,W0
+01FDA:  CP      W0,#6
+01FDC:  BRA     GE,2080
 *
-02968:  CLR.B   88A
-0296A:  MOV.B   88A,W0L
-0296C:  SE      W0,W0
-0296E:  CP      W0,#6
-02970:  BRA     GE,2A14
+0299E:  CLR.B   898
+029A0:  MOV.B   898,W0L
+029A2:  SE      W0,W0
+029A4:  CP      W0,#6
+029A6:  BRA     GE,2A4A
 ....................    { 
 ....................       voltaje[am]=make16(data[i+1],data[i])/10; 
 *
-01FA8:  MOV.B   88B,W0L
-01FAA:  SE      W0,W0
-01FAC:  MOV     W0,W4
-01FAE:  MUL.UU  W4,#2,W0
-01FB0:  MOV     86C,W4
-01FB2:  ADD     W0,W4,W5
-01FB4:  MOV.B   88A,W0L
-01FB6:  SE      W0,W0
-01FB8:  ADD     W0,#1,W0
-01FBA:  MOV     W0,W6
-01FBC:  MOV     #872,W4
-01FBE:  ADD     W6,W4,W0
-01FC0:  MOV.B   [W0],W7L
-01FC2:  MOV.B   88A,W0L
-01FC4:  SE      W0,W0
-01FC6:  MOV     #872,W4
-01FC8:  ADD     W0,W4,W0
-01FCA:  MOV.B   [W0],W8L
-01FCC:  MOV.B   W8L,W9L
-01FCE:  MOV.B   W7L,W0L
-01FD0:  MOV.B   W0L,13
-01FD2:  MOV     W9,W4
-01FD4:  MOV     #A,W3
-01FD6:  REPEAT  #11
-01FD8:  DIV.U   W4,W3
-01FDA:  MOV     W0,[W5]
+01FDE:  MOV.B   899,W0L
+01FE0:  SE      W0,W0
+01FE2:  MOV     W0,W4
+01FE4:  MUL.UU  W4,#2,W0
+01FE6:  MOV     87A,W4
+01FE8:  ADD     W0,W4,W5
+01FEA:  MOV.B   898,W0L
+01FEC:  SE      W0,W0
+01FEE:  ADD     W0,#1,W0
+01FF0:  MOV     W0,W6
+01FF2:  MOV     #880,W4
+01FF4:  ADD     W6,W4,W0
+01FF6:  MOV.B   [W0],W7L
+01FF8:  MOV.B   898,W0L
+01FFA:  SE      W0,W0
+01FFC:  MOV     #880,W4
+01FFE:  ADD     W0,W4,W0
+02000:  MOV.B   [W0],W8L
+02002:  MOV.B   W8L,W9L
+02004:  MOV.B   W7L,W0L
+02006:  MOV.B   W0L,13
+02008:  MOV     W9,W4
+0200A:  MOV     #A,W3
+0200C:  REPEAT  #11
+0200E:  DIV.U   W4,W3
+02010:  MOV     W0,[W5]
 *
-02972:  MOV.B   88B,W0L
-02974:  SE      W0,W0
-02976:  MOV     W0,W4
-02978:  MUL.UU  W4,#2,W0
-0297A:  MOV     86C,W4
-0297C:  ADD     W0,W4,W5
-0297E:  MOV.B   88A,W0L
-02980:  SE      W0,W0
-02982:  ADD     W0,#1,W0
-02984:  MOV     W0,W6
-02986:  MOV     #872,W4
-02988:  ADD     W6,W4,W0
-0298A:  MOV.B   [W0],W7L
-0298C:  MOV.B   88A,W0L
-0298E:  SE      W0,W0
-02990:  MOV     #872,W4
-02992:  ADD     W0,W4,W0
-02994:  MOV.B   [W0],W8L
-02996:  MOV.B   W8L,W9L
-02998:  MOV.B   W7L,W0L
-0299A:  MOV.B   W0L,13
-0299C:  MOV     W9,W4
-0299E:  MOV     #A,W3
-029A0:  REPEAT  #11
-029A2:  DIV.U   W4,W3
-029A4:  MOV     W0,[W5]
+029A8:  MOV.B   899,W0L
+029AA:  SE      W0,W0
+029AC:  MOV     W0,W4
+029AE:  MUL.UU  W4,#2,W0
+029B0:  MOV     87A,W4
+029B2:  ADD     W0,W4,W5
+029B4:  MOV.B   898,W0L
+029B6:  SE      W0,W0
+029B8:  ADD     W0,#1,W0
+029BA:  MOV     W0,W6
+029BC:  MOV     #880,W4
+029BE:  ADD     W6,W4,W0
+029C0:  MOV.B   [W0],W7L
+029C2:  MOV.B   898,W0L
+029C4:  SE      W0,W0
+029C6:  MOV     #880,W4
+029C8:  ADD     W0,W4,W0
+029CA:  MOV.B   [W0],W8L
+029CC:  MOV.B   W8L,W9L
+029CE:  MOV.B   W7L,W0L
+029D0:  MOV.B   W0L,13
+029D2:  MOV     W9,W4
+029D4:  MOV     #A,W3
+029D6:  REPEAT  #11
+029D8:  DIV.U   W4,W3
+029DA:  MOV     W0,[W5]
 ....................       total=total+voltaje[am]; 
 *
-01FDC:  MOV.B   88B,W0L
-01FDE:  SE      W0,W0
-01FE0:  MOV     W0,W4
-01FE2:  MUL.UU  W4,#2,W0
-01FE4:  MOV     86C,W4
-01FE6:  ADD     W0,W4,W0
-01FE8:  MOV     W0,W4
-01FEA:  MOV     [W4],W0
-01FEC:  ADD     826
-*
-029A6:  MOV.B   88B,W0L
-029A8:  SE      W0,W0
-029AA:  MOV     W0,W4
-029AC:  MUL.UU  W4,#2,W0
-029AE:  MOV     86C,W4
-029B0:  ADD     W0,W4,W0
-029B2:  MOV     W0,W4
-029B4:  MOV     [W4],W0
-029B6:  ADD     826
-....................       if(voltaje[am]<V_min_aux) V_min_aux=voltaje[am]; 
-*
-01FEE:  MOV.B   88B,W0L
-01FF0:  SE      W0,W0
-01FF2:  MOV     W0,W4
-01FF4:  MUL.UU  W4,#2,W0
-01FF6:  MOV     86C,W4
-01FF8:  ADD     W0,W4,W0
-01FFA:  MOV     [W0],W5
-01FFC:  MOV     86E,W4
-01FFE:  CP      W4,W5
-02000:  BRA     LEU,2012
-02002:  MOV.B   88B,W0L
-02004:  SE      W0,W0
-02006:  MOV     W0,W4
-02008:  MUL.UU  W4,#2,W0
-0200A:  MOV     86C,W4
-0200C:  ADD     W0,W4,W0
-0200E:  MOV     [W0],[W15++]
-02010:  POP     86E
-*
-029B8:  MOV.B   88B,W0L
-029BA:  SE      W0,W0
-029BC:  MOV     W0,W4
-029BE:  MUL.UU  W4,#2,W0
-029C0:  MOV     86C,W4
-029C2:  ADD     W0,W4,W0
-029C4:  MOV     [W0],W5
-029C6:  MOV     86E,W4
-029C8:  CP      W4,W5
-029CA:  BRA     LEU,29DC
-029CC:  MOV.B   88B,W0L
-029CE:  SE      W0,W0
-029D0:  MOV     W0,W4
-029D2:  MUL.UU  W4,#2,W0
-029D4:  MOV     86C,W4
-029D6:  ADD     W0,W4,W0
-029D8:  MOV     [W0],[W15++]
-029DA:  POP     86E
-....................       if(voltaje[am]>V_max_aux) V_max_aux=voltaje[am]; 
-*
-02012:  MOV.B   88B,W0L
+02012:  MOV.B   899,W0L
 02014:  SE      W0,W0
 02016:  MOV     W0,W4
 02018:  MUL.UU  W4,#2,W0
-0201A:  MOV     86C,W4
+0201A:  MOV     87A,W4
 0201C:  ADD     W0,W4,W0
-0201E:  MOV     [W0],W5
-02020:  MOV     870,W4
-02022:  CP      W4,W5
-02024:  BRA     C,2036
-02026:  MOV.B   88B,W0L
-02028:  SE      W0,W0
-0202A:  MOV     W0,W4
-0202C:  MUL.UU  W4,#2,W0
-0202E:  MOV     86C,W4
-02030:  ADD     W0,W4,W0
-02032:  MOV     [W0],[W15++]
-02034:  POP     870
+0201E:  MOV     W0,W4
+02020:  MOV     [W4],W0
+02022:  ADD     826
 *
-029DC:  MOV.B   88B,W0L
+029DC:  MOV.B   899,W0L
 029DE:  SE      W0,W0
 029E0:  MOV     W0,W4
 029E2:  MUL.UU  W4,#2,W0
-029E4:  MOV     86C,W4
+029E4:  MOV     87A,W4
 029E6:  ADD     W0,W4,W0
-029E8:  MOV     [W0],W5
-029EA:  MOV     870,W4
-029EC:  CP      W4,W5
-029EE:  BRA     C,2A00
-029F0:  MOV.B   88B,W0L
-029F2:  SE      W0,W0
-029F4:  MOV     W0,W4
-029F6:  MUL.UU  W4,#2,W0
-029F8:  MOV     86C,W4
-029FA:  ADD     W0,W4,W0
-029FC:  MOV     [W0],[W15++]
-029FE:  POP     870
+029E8:  MOV     W0,W4
+029EA:  MOV     [W4],W0
+029EC:  ADD     826
+....................       if(voltaje[am]<V_min_aux) V_min_aux=voltaje[am]; 
+*
+02024:  MOV.B   899,W0L
+02026:  SE      W0,W0
+02028:  MOV     W0,W4
+0202A:  MUL.UU  W4,#2,W0
+0202C:  MOV     87A,W4
+0202E:  ADD     W0,W4,W0
+02030:  MOV     [W0],W5
+02032:  MOV     87C,W4
+02034:  CP      W4,W5
+02036:  BRA     LEU,2048
+02038:  MOV.B   899,W0L
+0203A:  SE      W0,W0
+0203C:  MOV     W0,W4
+0203E:  MUL.UU  W4,#2,W0
+02040:  MOV     87A,W4
+02042:  ADD     W0,W4,W0
+02044:  MOV     [W0],[W15++]
+02046:  POP     87C
+*
+029EE:  MOV.B   899,W0L
+029F0:  SE      W0,W0
+029F2:  MOV     W0,W4
+029F4:  MUL.UU  W4,#2,W0
+029F6:  MOV     87A,W4
+029F8:  ADD     W0,W4,W0
+029FA:  MOV     [W0],W5
+029FC:  MOV     87C,W4
+029FE:  CP      W4,W5
+02A00:  BRA     LEU,2A12
+02A02:  MOV.B   899,W0L
+02A04:  SE      W0,W0
+02A06:  MOV     W0,W4
+02A08:  MUL.UU  W4,#2,W0
+02A0A:  MOV     87A,W4
+02A0C:  ADD     W0,W4,W0
+02A0E:  MOV     [W0],[W15++]
+02A10:  POP     87C
+....................       if(voltaje[am]>V_max_aux) V_max_aux=voltaje[am]; 
+*
+02048:  MOV.B   899,W0L
+0204A:  SE      W0,W0
+0204C:  MOV     W0,W4
+0204E:  MUL.UU  W4,#2,W0
+02050:  MOV     87A,W4
+02052:  ADD     W0,W4,W0
+02054:  MOV     [W0],W5
+02056:  MOV     87E,W4
+02058:  CP      W4,W5
+0205A:  BRA     C,206C
+0205C:  MOV.B   899,W0L
+0205E:  SE      W0,W0
+02060:  MOV     W0,W4
+02062:  MUL.UU  W4,#2,W0
+02064:  MOV     87A,W4
+02066:  ADD     W0,W4,W0
+02068:  MOV     [W0],[W15++]
+0206A:  POP     87E
+*
+02A12:  MOV.B   899,W0L
+02A14:  SE      W0,W0
+02A16:  MOV     W0,W4
+02A18:  MUL.UU  W4,#2,W0
+02A1A:  MOV     87A,W4
+02A1C:  ADD     W0,W4,W0
+02A1E:  MOV     [W0],W5
+02A20:  MOV     87E,W4
+02A22:  CP      W4,W5
+02A24:  BRA     C,2A36
+02A26:  MOV.B   899,W0L
+02A28:  SE      W0,W0
+02A2A:  MOV     W0,W4
+02A2C:  MUL.UU  W4,#2,W0
+02A2E:  MOV     87A,W4
+02A30:  ADD     W0,W4,W0
+02A32:  MOV     [W0],[W15++]
+02A34:  POP     87E
 ....................       am=am+1; 
 *
-02036:  MOV.B   88B,W0L
-02038:  SE      W0,W0
-0203A:  ADD     W0,#1,W0
-0203C:  MOV.B   W0L,88B
-0203E:  MOV.B   88A,W0L
-02040:  SE      W0,W0
-02042:  ADD     W0,#2,W0
-02044:  MOV.B   W0L,88A
-02046:  GOTO    1FA0
+0206C:  MOV.B   899,W0L
+0206E:  SE      W0,W0
+02070:  ADD     W0,#1,W0
+02072:  MOV.B   W0L,899
+02074:  MOV.B   898,W0L
+02076:  SE      W0,W0
+02078:  ADD     W0,#2,W0
+0207A:  MOV.B   W0L,898
+0207C:  GOTO    1FD6
 *
-02A00:  MOV.B   88B,W0L
-02A02:  SE      W0,W0
-02A04:  ADD     W0,#1,W0
-02A06:  MOV.B   W0L,88B
-02A08:  MOV.B   88A,W0L
-02A0A:  SE      W0,W0
-02A0C:  ADD     W0,#2,W0
-02A0E:  MOV.B   W0L,88A
-02A10:  GOTO    296A
+02A36:  MOV.B   899,W0L
+02A38:  SE      W0,W0
+02A3A:  ADD     W0,#1,W0
+02A3C:  MOV.B   W0L,899
+02A3E:  MOV.B   898,W0L
+02A40:  SE      W0,W0
+02A42:  ADD     W0,#2,W0
+02A44:  MOV.B   W0L,898
+02A46:  GOTO    29A0
 ....................    } 
 ....................    for(i=0;i<6;i=i+2) 
 *
-0204A:  CLR.B   88A
-0204C:  MOV.B   88A,W0L
-0204E:  SE      W0,W0
-02050:  CP      W0,#6
-02052:  BRA     GE,20F6
+02080:  CLR.B   898
+02082:  MOV.B   898,W0L
+02084:  SE      W0,W0
+02086:  CP      W0,#6
+02088:  BRA     GE,212C
 *
-02A14:  CLR.B   88A
-02A16:  MOV.B   88A,W0L
-02A18:  SE      W0,W0
-02A1A:  CP      W0,#6
-02A1C:  BRA     GE,2AC0
+02A4A:  CLR.B   898
+02A4C:  MOV.B   898,W0L
+02A4E:  SE      W0,W0
+02A50:  CP      W0,#6
+02A52:  BRA     GE,2AF6
 ....................    { 
 ....................       voltaje[am]=make16(data1[i+1],data1[i])/10; 
 *
-02054:  MOV.B   88B,W0L
-02056:  SE      W0,W0
-02058:  MOV     W0,W4
-0205A:  MUL.UU  W4,#2,W0
-0205C:  MOV     86C,W4
-0205E:  ADD     W0,W4,W5
-02060:  MOV.B   88A,W0L
-02062:  SE      W0,W0
-02064:  ADD     W0,#1,W0
-02066:  MOV     W0,W6
-02068:  MOV     #878,W4
-0206A:  ADD     W6,W4,W0
-0206C:  MOV.B   [W0],W7L
-0206E:  MOV.B   88A,W0L
-02070:  SE      W0,W0
-02072:  MOV     #878,W4
-02074:  ADD     W0,W4,W0
-02076:  MOV.B   [W0],W8L
-02078:  MOV.B   W8L,W9L
-0207A:  MOV.B   W7L,W0L
-0207C:  MOV.B   W0L,13
-0207E:  MOV     W9,W4
-02080:  MOV     #A,W3
-02082:  REPEAT  #11
-02084:  DIV.U   W4,W3
-02086:  MOV     W0,[W5]
+0208A:  MOV.B   899,W0L
+0208C:  SE      W0,W0
+0208E:  MOV     W0,W4
+02090:  MUL.UU  W4,#2,W0
+02092:  MOV     87A,W4
+02094:  ADD     W0,W4,W5
+02096:  MOV.B   898,W0L
+02098:  SE      W0,W0
+0209A:  ADD     W0,#1,W0
+0209C:  MOV     W0,W6
+0209E:  MOV     #886,W4
+020A0:  ADD     W6,W4,W0
+020A2:  MOV.B   [W0],W7L
+020A4:  MOV.B   898,W0L
+020A6:  SE      W0,W0
+020A8:  MOV     #886,W4
+020AA:  ADD     W0,W4,W0
+020AC:  MOV.B   [W0],W8L
+020AE:  MOV.B   W8L,W9L
+020B0:  MOV.B   W7L,W0L
+020B2:  MOV.B   W0L,13
+020B4:  MOV     W9,W4
+020B6:  MOV     #A,W3
+020B8:  REPEAT  #11
+020BA:  DIV.U   W4,W3
+020BC:  MOV     W0,[W5]
 *
-02A1E:  MOV.B   88B,W0L
-02A20:  SE      W0,W0
-02A22:  MOV     W0,W4
-02A24:  MUL.UU  W4,#2,W0
-02A26:  MOV     86C,W4
-02A28:  ADD     W0,W4,W5
-02A2A:  MOV.B   88A,W0L
-02A2C:  SE      W0,W0
-02A2E:  ADD     W0,#1,W0
-02A30:  MOV     W0,W6
-02A32:  MOV     #878,W4
-02A34:  ADD     W6,W4,W0
-02A36:  MOV.B   [W0],W7L
-02A38:  MOV.B   88A,W0L
-02A3A:  SE      W0,W0
-02A3C:  MOV     #878,W4
-02A3E:  ADD     W0,W4,W0
-02A40:  MOV.B   [W0],W8L
-02A42:  MOV.B   W8L,W9L
-02A44:  MOV.B   W7L,W0L
-02A46:  MOV.B   W0L,13
-02A48:  MOV     W9,W4
-02A4A:  MOV     #A,W3
-02A4C:  REPEAT  #11
-02A4E:  DIV.U   W4,W3
-02A50:  MOV     W0,[W5]
+02A54:  MOV.B   899,W0L
+02A56:  SE      W0,W0
+02A58:  MOV     W0,W4
+02A5A:  MUL.UU  W4,#2,W0
+02A5C:  MOV     87A,W4
+02A5E:  ADD     W0,W4,W5
+02A60:  MOV.B   898,W0L
+02A62:  SE      W0,W0
+02A64:  ADD     W0,#1,W0
+02A66:  MOV     W0,W6
+02A68:  MOV     #886,W4
+02A6A:  ADD     W6,W4,W0
+02A6C:  MOV.B   [W0],W7L
+02A6E:  MOV.B   898,W0L
+02A70:  SE      W0,W0
+02A72:  MOV     #886,W4
+02A74:  ADD     W0,W4,W0
+02A76:  MOV.B   [W0],W8L
+02A78:  MOV.B   W8L,W9L
+02A7A:  MOV.B   W7L,W0L
+02A7C:  MOV.B   W0L,13
+02A7E:  MOV     W9,W4
+02A80:  MOV     #A,W3
+02A82:  REPEAT  #11
+02A84:  DIV.U   W4,W3
+02A86:  MOV     W0,[W5]
 ....................       total=total+voltaje[am]; 
 *
-02088:  MOV.B   88B,W0L
-0208A:  SE      W0,W0
-0208C:  MOV     W0,W4
-0208E:  MUL.UU  W4,#2,W0
-02090:  MOV     86C,W4
-02092:  ADD     W0,W4,W0
-02094:  MOV     W0,W4
-02096:  MOV     [W4],W0
-02098:  ADD     826
-*
-02A52:  MOV.B   88B,W0L
-02A54:  SE      W0,W0
-02A56:  MOV     W0,W4
-02A58:  MUL.UU  W4,#2,W0
-02A5A:  MOV     86C,W4
-02A5C:  ADD     W0,W4,W0
-02A5E:  MOV     W0,W4
-02A60:  MOV     [W4],W0
-02A62:  ADD     826
-....................       if(voltaje[am]<V_min_aux) V_min_aux=voltaje[am]; 
-*
-0209A:  MOV.B   88B,W0L
-0209C:  SE      W0,W0
-0209E:  MOV     W0,W4
-020A0:  MUL.UU  W4,#2,W0
-020A2:  MOV     86C,W4
-020A4:  ADD     W0,W4,W0
-020A6:  MOV     [W0],W5
-020A8:  MOV     86E,W4
-020AA:  CP      W4,W5
-020AC:  BRA     LEU,20BE
-020AE:  MOV.B   88B,W0L
-020B0:  SE      W0,W0
-020B2:  MOV     W0,W4
-020B4:  MUL.UU  W4,#2,W0
-020B6:  MOV     86C,W4
-020B8:  ADD     W0,W4,W0
-020BA:  MOV     [W0],[W15++]
-020BC:  POP     86E
-*
-02A64:  MOV.B   88B,W0L
-02A66:  SE      W0,W0
-02A68:  MOV     W0,W4
-02A6A:  MUL.UU  W4,#2,W0
-02A6C:  MOV     86C,W4
-02A6E:  ADD     W0,W4,W0
-02A70:  MOV     [W0],W5
-02A72:  MOV     86E,W4
-02A74:  CP      W4,W5
-02A76:  BRA     LEU,2A88
-02A78:  MOV.B   88B,W0L
-02A7A:  SE      W0,W0
-02A7C:  MOV     W0,W4
-02A7E:  MUL.UU  W4,#2,W0
-02A80:  MOV     86C,W4
-02A82:  ADD     W0,W4,W0
-02A84:  MOV     [W0],[W15++]
-02A86:  POP     86E
-....................       if(voltaje[am]>V_max_aux) V_max_aux=voltaje[am]; 
-*
-020BE:  MOV.B   88B,W0L
+020BE:  MOV.B   899,W0L
 020C0:  SE      W0,W0
 020C2:  MOV     W0,W4
 020C4:  MUL.UU  W4,#2,W0
-020C6:  MOV     86C,W4
+020C6:  MOV     87A,W4
 020C8:  ADD     W0,W4,W0
-020CA:  MOV     [W0],W5
-020CC:  MOV     870,W4
-020CE:  CP      W4,W5
-020D0:  BRA     C,20E2
-020D2:  MOV.B   88B,W0L
-020D4:  SE      W0,W0
-020D6:  MOV     W0,W4
-020D8:  MUL.UU  W4,#2,W0
-020DA:  MOV     86C,W4
-020DC:  ADD     W0,W4,W0
-020DE:  MOV     [W0],[W15++]
-020E0:  POP     870
+020CA:  MOV     W0,W4
+020CC:  MOV     [W4],W0
+020CE:  ADD     826
 *
-02A88:  MOV.B   88B,W0L
+02A88:  MOV.B   899,W0L
 02A8A:  SE      W0,W0
 02A8C:  MOV     W0,W4
 02A8E:  MUL.UU  W4,#2,W0
-02A90:  MOV     86C,W4
+02A90:  MOV     87A,W4
 02A92:  ADD     W0,W4,W0
-02A94:  MOV     [W0],W5
-02A96:  MOV     870,W4
-02A98:  CP      W4,W5
-02A9A:  BRA     C,2AAC
-02A9C:  MOV.B   88B,W0L
-02A9E:  SE      W0,W0
-02AA0:  MOV     W0,W4
-02AA2:  MUL.UU  W4,#2,W0
-02AA4:  MOV     86C,W4
-02AA6:  ADD     W0,W4,W0
-02AA8:  MOV     [W0],[W15++]
-02AAA:  POP     870
+02A94:  MOV     W0,W4
+02A96:  MOV     [W4],W0
+02A98:  ADD     826
+....................       if(voltaje[am]<V_min_aux) V_min_aux=voltaje[am]; 
+*
+020D0:  MOV.B   899,W0L
+020D2:  SE      W0,W0
+020D4:  MOV     W0,W4
+020D6:  MUL.UU  W4,#2,W0
+020D8:  MOV     87A,W4
+020DA:  ADD     W0,W4,W0
+020DC:  MOV     [W0],W5
+020DE:  MOV     87C,W4
+020E0:  CP      W4,W5
+020E2:  BRA     LEU,20F4
+020E4:  MOV.B   899,W0L
+020E6:  SE      W0,W0
+020E8:  MOV     W0,W4
+020EA:  MUL.UU  W4,#2,W0
+020EC:  MOV     87A,W4
+020EE:  ADD     W0,W4,W0
+020F0:  MOV     [W0],[W15++]
+020F2:  POP     87C
+*
+02A9A:  MOV.B   899,W0L
+02A9C:  SE      W0,W0
+02A9E:  MOV     W0,W4
+02AA0:  MUL.UU  W4,#2,W0
+02AA2:  MOV     87A,W4
+02AA4:  ADD     W0,W4,W0
+02AA6:  MOV     [W0],W5
+02AA8:  MOV     87C,W4
+02AAA:  CP      W4,W5
+02AAC:  BRA     LEU,2ABE
+02AAE:  MOV.B   899,W0L
+02AB0:  SE      W0,W0
+02AB2:  MOV     W0,W4
+02AB4:  MUL.UU  W4,#2,W0
+02AB6:  MOV     87A,W4
+02AB8:  ADD     W0,W4,W0
+02ABA:  MOV     [W0],[W15++]
+02ABC:  POP     87C
+....................       if(voltaje[am]>V_max_aux) V_max_aux=voltaje[am]; 
+*
+020F4:  MOV.B   899,W0L
+020F6:  SE      W0,W0
+020F8:  MOV     W0,W4
+020FA:  MUL.UU  W4,#2,W0
+020FC:  MOV     87A,W4
+020FE:  ADD     W0,W4,W0
+02100:  MOV     [W0],W5
+02102:  MOV     87E,W4
+02104:  CP      W4,W5
+02106:  BRA     C,2118
+02108:  MOV.B   899,W0L
+0210A:  SE      W0,W0
+0210C:  MOV     W0,W4
+0210E:  MUL.UU  W4,#2,W0
+02110:  MOV     87A,W4
+02112:  ADD     W0,W4,W0
+02114:  MOV     [W0],[W15++]
+02116:  POP     87E
+*
+02ABE:  MOV.B   899,W0L
+02AC0:  SE      W0,W0
+02AC2:  MOV     W0,W4
+02AC4:  MUL.UU  W4,#2,W0
+02AC6:  MOV     87A,W4
+02AC8:  ADD     W0,W4,W0
+02ACA:  MOV     [W0],W5
+02ACC:  MOV     87E,W4
+02ACE:  CP      W4,W5
+02AD0:  BRA     C,2AE2
+02AD2:  MOV.B   899,W0L
+02AD4:  SE      W0,W0
+02AD6:  MOV     W0,W4
+02AD8:  MUL.UU  W4,#2,W0
+02ADA:  MOV     87A,W4
+02ADC:  ADD     W0,W4,W0
+02ADE:  MOV     [W0],[W15++]
+02AE0:  POP     87E
 ....................       am=am+1; 
 *
-020E2:  MOV.B   88B,W0L
-020E4:  SE      W0,W0
-020E6:  ADD     W0,#1,W0
-020E8:  MOV.B   W0L,88B
-020EA:  MOV.B   88A,W0L
-020EC:  SE      W0,W0
-020EE:  ADD     W0,#2,W0
-020F0:  MOV.B   W0L,88A
-020F2:  GOTO    204C
+02118:  MOV.B   899,W0L
+0211A:  SE      W0,W0
+0211C:  ADD     W0,#1,W0
+0211E:  MOV.B   W0L,899
+02120:  MOV.B   898,W0L
+02122:  SE      W0,W0
+02124:  ADD     W0,#2,W0
+02126:  MOV.B   W0L,898
+02128:  GOTO    2082
 *
-02AAC:  MOV.B   88B,W0L
-02AAE:  SE      W0,W0
-02AB0:  ADD     W0,#1,W0
-02AB2:  MOV.B   W0L,88B
-02AB4:  MOV.B   88A,W0L
-02AB6:  SE      W0,W0
-02AB8:  ADD     W0,#2,W0
-02ABA:  MOV.B   W0L,88A
-02ABC:  GOTO    2A16
+02AE2:  MOV.B   899,W0L
+02AE4:  SE      W0,W0
+02AE6:  ADD     W0,#1,W0
+02AE8:  MOV.B   W0L,899
+02AEA:  MOV.B   898,W0L
+02AEC:  SE      W0,W0
+02AEE:  ADD     W0,#2,W0
+02AF0:  MOV.B   W0L,898
+02AF2:  GOTO    2A4C
 ....................    } 
 ....................    for(i=0;i<6;i=i+2) 
 *
-020F6:  CLR.B   88A
-020F8:  MOV.B   88A,W0L
-020FA:  SE      W0,W0
-020FC:  CP      W0,#6
-020FE:  BRA     GE,21A2
+0212C:  CLR.B   898
+0212E:  MOV.B   898,W0L
+02130:  SE      W0,W0
+02132:  CP      W0,#6
+02134:  BRA     GE,21D8
 *
-02AC0:  CLR.B   88A
-02AC2:  MOV.B   88A,W0L
-02AC4:  SE      W0,W0
-02AC6:  CP      W0,#6
-02AC8:  BRA     GE,2B6C
+02AF6:  CLR.B   898
+02AF8:  MOV.B   898,W0L
+02AFA:  SE      W0,W0
+02AFC:  CP      W0,#6
+02AFE:  BRA     GE,2BA2
 ....................    { 
 ....................       voltaje[am]=make16(data2[i+1],data2[i])/10; 
 *
-02100:  MOV.B   88B,W0L
-02102:  SE      W0,W0
-02104:  MOV     W0,W4
-02106:  MUL.UU  W4,#2,W0
-02108:  MOV     86C,W4
-0210A:  ADD     W0,W4,W5
-0210C:  MOV.B   88A,W0L
-0210E:  SE      W0,W0
-02110:  ADD     W0,#1,W0
-02112:  MOV     W0,W6
-02114:  MOV     #87E,W4
-02116:  ADD     W6,W4,W0
-02118:  MOV.B   [W0],W7L
-0211A:  MOV.B   88A,W0L
-0211C:  SE      W0,W0
-0211E:  MOV     #87E,W4
-02120:  ADD     W0,W4,W0
-02122:  MOV.B   [W0],W8L
-02124:  MOV.B   W8L,W9L
-02126:  MOV.B   W7L,W0L
-02128:  MOV.B   W0L,13
-0212A:  MOV     W9,W4
-0212C:  MOV     #A,W3
-0212E:  REPEAT  #11
-02130:  DIV.U   W4,W3
-02132:  MOV     W0,[W5]
+02136:  MOV.B   899,W0L
+02138:  SE      W0,W0
+0213A:  MOV     W0,W4
+0213C:  MUL.UU  W4,#2,W0
+0213E:  MOV     87A,W4
+02140:  ADD     W0,W4,W5
+02142:  MOV.B   898,W0L
+02144:  SE      W0,W0
+02146:  ADD     W0,#1,W0
+02148:  MOV     W0,W6
+0214A:  MOV     #88C,W4
+0214C:  ADD     W6,W4,W0
+0214E:  MOV.B   [W0],W7L
+02150:  MOV.B   898,W0L
+02152:  SE      W0,W0
+02154:  MOV     #88C,W4
+02156:  ADD     W0,W4,W0
+02158:  MOV.B   [W0],W8L
+0215A:  MOV.B   W8L,W9L
+0215C:  MOV.B   W7L,W0L
+0215E:  MOV.B   W0L,13
+02160:  MOV     W9,W4
+02162:  MOV     #A,W3
+02164:  REPEAT  #11
+02166:  DIV.U   W4,W3
+02168:  MOV     W0,[W5]
 *
-02ACA:  MOV.B   88B,W0L
-02ACC:  SE      W0,W0
-02ACE:  MOV     W0,W4
-02AD0:  MUL.UU  W4,#2,W0
-02AD2:  MOV     86C,W4
-02AD4:  ADD     W0,W4,W5
-02AD6:  MOV.B   88A,W0L
-02AD8:  SE      W0,W0
-02ADA:  ADD     W0,#1,W0
-02ADC:  MOV     W0,W6
-02ADE:  MOV     #87E,W4
-02AE0:  ADD     W6,W4,W0
-02AE2:  MOV.B   [W0],W7L
-02AE4:  MOV.B   88A,W0L
-02AE6:  SE      W0,W0
-02AE8:  MOV     #87E,W4
-02AEA:  ADD     W0,W4,W0
-02AEC:  MOV.B   [W0],W8L
-02AEE:  MOV.B   W8L,W9L
-02AF0:  MOV.B   W7L,W0L
-02AF2:  MOV.B   W0L,13
-02AF4:  MOV     W9,W4
-02AF6:  MOV     #A,W3
-02AF8:  REPEAT  #11
-02AFA:  DIV.U   W4,W3
-02AFC:  MOV     W0,[W5]
+02B00:  MOV.B   899,W0L
+02B02:  SE      W0,W0
+02B04:  MOV     W0,W4
+02B06:  MUL.UU  W4,#2,W0
+02B08:  MOV     87A,W4
+02B0A:  ADD     W0,W4,W5
+02B0C:  MOV.B   898,W0L
+02B0E:  SE      W0,W0
+02B10:  ADD     W0,#1,W0
+02B12:  MOV     W0,W6
+02B14:  MOV     #88C,W4
+02B16:  ADD     W6,W4,W0
+02B18:  MOV.B   [W0],W7L
+02B1A:  MOV.B   898,W0L
+02B1C:  SE      W0,W0
+02B1E:  MOV     #88C,W4
+02B20:  ADD     W0,W4,W0
+02B22:  MOV.B   [W0],W8L
+02B24:  MOV.B   W8L,W9L
+02B26:  MOV.B   W7L,W0L
+02B28:  MOV.B   W0L,13
+02B2A:  MOV     W9,W4
+02B2C:  MOV     #A,W3
+02B2E:  REPEAT  #11
+02B30:  DIV.U   W4,W3
+02B32:  MOV     W0,[W5]
 ....................       total=total+voltaje[am]; 
 *
-02134:  MOV.B   88B,W0L
-02136:  SE      W0,W0
-02138:  MOV     W0,W4
-0213A:  MUL.UU  W4,#2,W0
-0213C:  MOV     86C,W4
-0213E:  ADD     W0,W4,W0
-02140:  MOV     W0,W4
-02142:  MOV     [W4],W0
-02144:  ADD     826
-*
-02AFE:  MOV.B   88B,W0L
-02B00:  SE      W0,W0
-02B02:  MOV     W0,W4
-02B04:  MUL.UU  W4,#2,W0
-02B06:  MOV     86C,W4
-02B08:  ADD     W0,W4,W0
-02B0A:  MOV     W0,W4
-02B0C:  MOV     [W4],W0
-02B0E:  ADD     826
-....................       if(voltaje[am]<V_min_aux) V_min_aux=voltaje[am]; 
-*
-02146:  MOV.B   88B,W0L
-02148:  SE      W0,W0
-0214A:  MOV     W0,W4
-0214C:  MUL.UU  W4,#2,W0
-0214E:  MOV     86C,W4
-02150:  ADD     W0,W4,W0
-02152:  MOV     [W0],W5
-02154:  MOV     86E,W4
-02156:  CP      W4,W5
-02158:  BRA     LEU,216A
-0215A:  MOV.B   88B,W0L
-0215C:  SE      W0,W0
-0215E:  MOV     W0,W4
-02160:  MUL.UU  W4,#2,W0
-02162:  MOV     86C,W4
-02164:  ADD     W0,W4,W0
-02166:  MOV     [W0],[W15++]
-02168:  POP     86E
-*
-02B10:  MOV.B   88B,W0L
-02B12:  SE      W0,W0
-02B14:  MOV     W0,W4
-02B16:  MUL.UU  W4,#2,W0
-02B18:  MOV     86C,W4
-02B1A:  ADD     W0,W4,W0
-02B1C:  MOV     [W0],W5
-02B1E:  MOV     86E,W4
-02B20:  CP      W4,W5
-02B22:  BRA     LEU,2B34
-02B24:  MOV.B   88B,W0L
-02B26:  SE      W0,W0
-02B28:  MOV     W0,W4
-02B2A:  MUL.UU  W4,#2,W0
-02B2C:  MOV     86C,W4
-02B2E:  ADD     W0,W4,W0
-02B30:  MOV     [W0],[W15++]
-02B32:  POP     86E
-....................       if(voltaje[am]>V_max_aux) V_max_aux=voltaje[am]; 
-*
-0216A:  MOV.B   88B,W0L
+0216A:  MOV.B   899,W0L
 0216C:  SE      W0,W0
 0216E:  MOV     W0,W4
 02170:  MUL.UU  W4,#2,W0
-02172:  MOV     86C,W4
+02172:  MOV     87A,W4
 02174:  ADD     W0,W4,W0
-02176:  MOV     [W0],W5
-02178:  MOV     870,W4
-0217A:  CP      W4,W5
-0217C:  BRA     C,218E
-0217E:  MOV.B   88B,W0L
-02180:  SE      W0,W0
-02182:  MOV     W0,W4
-02184:  MUL.UU  W4,#2,W0
-02186:  MOV     86C,W4
-02188:  ADD     W0,W4,W0
-0218A:  MOV     [W0],[W15++]
-0218C:  POP     870
+02176:  MOV     W0,W4
+02178:  MOV     [W4],W0
+0217A:  ADD     826
 *
-02B34:  MOV.B   88B,W0L
+02B34:  MOV.B   899,W0L
 02B36:  SE      W0,W0
 02B38:  MOV     W0,W4
 02B3A:  MUL.UU  W4,#2,W0
-02B3C:  MOV     86C,W4
+02B3C:  MOV     87A,W4
 02B3E:  ADD     W0,W4,W0
-02B40:  MOV     [W0],W5
-02B42:  MOV     870,W4
-02B44:  CP      W4,W5
-02B46:  BRA     C,2B58
-02B48:  MOV.B   88B,W0L
-02B4A:  SE      W0,W0
-02B4C:  MOV     W0,W4
-02B4E:  MUL.UU  W4,#2,W0
-02B50:  MOV     86C,W4
-02B52:  ADD     W0,W4,W0
-02B54:  MOV     [W0],[W15++]
-02B56:  POP     870
+02B40:  MOV     W0,W4
+02B42:  MOV     [W4],W0
+02B44:  ADD     826
+....................       if(voltaje[am]<V_min_aux) V_min_aux=voltaje[am]; 
+*
+0217C:  MOV.B   899,W0L
+0217E:  SE      W0,W0
+02180:  MOV     W0,W4
+02182:  MUL.UU  W4,#2,W0
+02184:  MOV     87A,W4
+02186:  ADD     W0,W4,W0
+02188:  MOV     [W0],W5
+0218A:  MOV     87C,W4
+0218C:  CP      W4,W5
+0218E:  BRA     LEU,21A0
+02190:  MOV.B   899,W0L
+02192:  SE      W0,W0
+02194:  MOV     W0,W4
+02196:  MUL.UU  W4,#2,W0
+02198:  MOV     87A,W4
+0219A:  ADD     W0,W4,W0
+0219C:  MOV     [W0],[W15++]
+0219E:  POP     87C
+*
+02B46:  MOV.B   899,W0L
+02B48:  SE      W0,W0
+02B4A:  MOV     W0,W4
+02B4C:  MUL.UU  W4,#2,W0
+02B4E:  MOV     87A,W4
+02B50:  ADD     W0,W4,W0
+02B52:  MOV     [W0],W5
+02B54:  MOV     87C,W4
+02B56:  CP      W4,W5
+02B58:  BRA     LEU,2B6A
+02B5A:  MOV.B   899,W0L
+02B5C:  SE      W0,W0
+02B5E:  MOV     W0,W4
+02B60:  MUL.UU  W4,#2,W0
+02B62:  MOV     87A,W4
+02B64:  ADD     W0,W4,W0
+02B66:  MOV     [W0],[W15++]
+02B68:  POP     87C
+....................       if(voltaje[am]>V_max_aux) V_max_aux=voltaje[am]; 
+*
+021A0:  MOV.B   899,W0L
+021A2:  SE      W0,W0
+021A4:  MOV     W0,W4
+021A6:  MUL.UU  W4,#2,W0
+021A8:  MOV     87A,W4
+021AA:  ADD     W0,W4,W0
+021AC:  MOV     [W0],W5
+021AE:  MOV     87E,W4
+021B0:  CP      W4,W5
+021B2:  BRA     C,21C4
+021B4:  MOV.B   899,W0L
+021B6:  SE      W0,W0
+021B8:  MOV     W0,W4
+021BA:  MUL.UU  W4,#2,W0
+021BC:  MOV     87A,W4
+021BE:  ADD     W0,W4,W0
+021C0:  MOV     [W0],[W15++]
+021C2:  POP     87E
+*
+02B6A:  MOV.B   899,W0L
+02B6C:  SE      W0,W0
+02B6E:  MOV     W0,W4
+02B70:  MUL.UU  W4,#2,W0
+02B72:  MOV     87A,W4
+02B74:  ADD     W0,W4,W0
+02B76:  MOV     [W0],W5
+02B78:  MOV     87E,W4
+02B7A:  CP      W4,W5
+02B7C:  BRA     C,2B8E
+02B7E:  MOV.B   899,W0L
+02B80:  SE      W0,W0
+02B82:  MOV     W0,W4
+02B84:  MUL.UU  W4,#2,W0
+02B86:  MOV     87A,W4
+02B88:  ADD     W0,W4,W0
+02B8A:  MOV     [W0],[W15++]
+02B8C:  POP     87E
 ....................       am=am+1; 
 *
-0218E:  MOV.B   88B,W0L
-02190:  SE      W0,W0
-02192:  ADD     W0,#1,W0
-02194:  MOV.B   W0L,88B
-02196:  MOV.B   88A,W0L
-02198:  SE      W0,W0
-0219A:  ADD     W0,#2,W0
-0219C:  MOV.B   W0L,88A
-0219E:  GOTO    20F8
+021C4:  MOV.B   899,W0L
+021C6:  SE      W0,W0
+021C8:  ADD     W0,#1,W0
+021CA:  MOV.B   W0L,899
+021CC:  MOV.B   898,W0L
+021CE:  SE      W0,W0
+021D0:  ADD     W0,#2,W0
+021D2:  MOV.B   W0L,898
+021D4:  GOTO    212E
 *
-02B58:  MOV.B   88B,W0L
-02B5A:  SE      W0,W0
-02B5C:  ADD     W0,#1,W0
-02B5E:  MOV.B   W0L,88B
-02B60:  MOV.B   88A,W0L
-02B62:  SE      W0,W0
-02B64:  ADD     W0,#2,W0
-02B66:  MOV.B   W0L,88A
-02B68:  GOTO    2AC2
+02B8E:  MOV.B   899,W0L
+02B90:  SE      W0,W0
+02B92:  ADD     W0,#1,W0
+02B94:  MOV.B   W0L,899
+02B96:  MOV.B   898,W0L
+02B98:  SE      W0,W0
+02B9A:  ADD     W0,#2,W0
+02B9C:  MOV.B   W0L,898
+02B9E:  GOTO    2AF8
 ....................    } 
 ....................    for(i=0;i<6;i=i+2) 
 *
-021A2:  CLR.B   88A
-021A4:  MOV.B   88A,W0L
-021A6:  SE      W0,W0
-021A8:  CP      W0,#6
-021AA:  BRA     GE,224E
+021D8:  CLR.B   898
+021DA:  MOV.B   898,W0L
+021DC:  SE      W0,W0
+021DE:  CP      W0,#6
+021E0:  BRA     GE,2284
 *
-02B6C:  CLR.B   88A
-02B6E:  MOV.B   88A,W0L
-02B70:  SE      W0,W0
-02B72:  CP      W0,#6
-02B74:  BRA     GE,2C18
+02BA2:  CLR.B   898
+02BA4:  MOV.B   898,W0L
+02BA6:  SE      W0,W0
+02BA8:  CP      W0,#6
+02BAA:  BRA     GE,2C4E
 ....................    { 
 ....................       voltaje[am]=make16(data3[i+1],data3[i])/10; 
 *
-021AC:  MOV.B   88B,W0L
-021AE:  SE      W0,W0
-021B0:  MOV     W0,W4
-021B2:  MUL.UU  W4,#2,W0
-021B4:  MOV     86C,W4
-021B6:  ADD     W0,W4,W5
-021B8:  MOV.B   88A,W0L
-021BA:  SE      W0,W0
-021BC:  ADD     W0,#1,W0
-021BE:  MOV     W0,W6
-021C0:  MOV     #884,W4
-021C2:  ADD     W6,W4,W0
-021C4:  MOV.B   [W0],W7L
-021C6:  MOV.B   88A,W0L
-021C8:  SE      W0,W0
-021CA:  MOV     #884,W4
-021CC:  ADD     W0,W4,W0
-021CE:  MOV.B   [W0],W8L
-021D0:  MOV.B   W8L,W9L
-021D2:  MOV.B   W7L,W0L
-021D4:  MOV.B   W0L,13
-021D6:  MOV     W9,W4
-021D8:  MOV     #A,W3
-021DA:  REPEAT  #11
-021DC:  DIV.U   W4,W3
-021DE:  MOV     W0,[W5]
+021E2:  MOV.B   899,W0L
+021E4:  SE      W0,W0
+021E6:  MOV     W0,W4
+021E8:  MUL.UU  W4,#2,W0
+021EA:  MOV     87A,W4
+021EC:  ADD     W0,W4,W5
+021EE:  MOV.B   898,W0L
+021F0:  SE      W0,W0
+021F2:  ADD     W0,#1,W0
+021F4:  MOV     W0,W6
+021F6:  MOV     #892,W4
+021F8:  ADD     W6,W4,W0
+021FA:  MOV.B   [W0],W7L
+021FC:  MOV.B   898,W0L
+021FE:  SE      W0,W0
+02200:  MOV     #892,W4
+02202:  ADD     W0,W4,W0
+02204:  MOV.B   [W0],W8L
+02206:  MOV.B   W8L,W9L
+02208:  MOV.B   W7L,W0L
+0220A:  MOV.B   W0L,13
+0220C:  MOV     W9,W4
+0220E:  MOV     #A,W3
+02210:  REPEAT  #11
+02212:  DIV.U   W4,W3
+02214:  MOV     W0,[W5]
 *
-02B76:  MOV.B   88B,W0L
-02B78:  SE      W0,W0
-02B7A:  MOV     W0,W4
-02B7C:  MUL.UU  W4,#2,W0
-02B7E:  MOV     86C,W4
-02B80:  ADD     W0,W4,W5
-02B82:  MOV.B   88A,W0L
-02B84:  SE      W0,W0
-02B86:  ADD     W0,#1,W0
-02B88:  MOV     W0,W6
-02B8A:  MOV     #884,W4
-02B8C:  ADD     W6,W4,W0
-02B8E:  MOV.B   [W0],W7L
-02B90:  MOV.B   88A,W0L
-02B92:  SE      W0,W0
-02B94:  MOV     #884,W4
-02B96:  ADD     W0,W4,W0
-02B98:  MOV.B   [W0],W8L
-02B9A:  MOV.B   W8L,W9L
-02B9C:  MOV.B   W7L,W0L
-02B9E:  MOV.B   W0L,13
-02BA0:  MOV     W9,W4
-02BA2:  MOV     #A,W3
-02BA4:  REPEAT  #11
-02BA6:  DIV.U   W4,W3
-02BA8:  MOV     W0,[W5]
+02BAC:  MOV.B   899,W0L
+02BAE:  SE      W0,W0
+02BB0:  MOV     W0,W4
+02BB2:  MUL.UU  W4,#2,W0
+02BB4:  MOV     87A,W4
+02BB6:  ADD     W0,W4,W5
+02BB8:  MOV.B   898,W0L
+02BBA:  SE      W0,W0
+02BBC:  ADD     W0,#1,W0
+02BBE:  MOV     W0,W6
+02BC0:  MOV     #892,W4
+02BC2:  ADD     W6,W4,W0
+02BC4:  MOV.B   [W0],W7L
+02BC6:  MOV.B   898,W0L
+02BC8:  SE      W0,W0
+02BCA:  MOV     #892,W4
+02BCC:  ADD     W0,W4,W0
+02BCE:  MOV.B   [W0],W8L
+02BD0:  MOV.B   W8L,W9L
+02BD2:  MOV.B   W7L,W0L
+02BD4:  MOV.B   W0L,13
+02BD6:  MOV     W9,W4
+02BD8:  MOV     #A,W3
+02BDA:  REPEAT  #11
+02BDC:  DIV.U   W4,W3
+02BDE:  MOV     W0,[W5]
 ....................       total=total+voltaje[am]; 
 *
-021E0:  MOV.B   88B,W0L
-021E2:  SE      W0,W0
-021E4:  MOV     W0,W4
-021E6:  MUL.UU  W4,#2,W0
-021E8:  MOV     86C,W4
-021EA:  ADD     W0,W4,W0
-021EC:  MOV     W0,W4
-021EE:  MOV     [W4],W0
-021F0:  ADD     826
-*
-02BAA:  MOV.B   88B,W0L
-02BAC:  SE      W0,W0
-02BAE:  MOV     W0,W4
-02BB0:  MUL.UU  W4,#2,W0
-02BB2:  MOV     86C,W4
-02BB4:  ADD     W0,W4,W0
-02BB6:  MOV     W0,W4
-02BB8:  MOV     [W4],W0
-02BBA:  ADD     826
-....................       if(voltaje[am]<V_min_aux) V_min_aux=voltaje[am]; 
-*
-021F2:  MOV.B   88B,W0L
-021F4:  SE      W0,W0
-021F6:  MOV     W0,W4
-021F8:  MUL.UU  W4,#2,W0
-021FA:  MOV     86C,W4
-021FC:  ADD     W0,W4,W0
-021FE:  MOV     [W0],W5
-02200:  MOV     86E,W4
-02202:  CP      W4,W5
-02204:  BRA     LEU,2216
-02206:  MOV.B   88B,W0L
-02208:  SE      W0,W0
-0220A:  MOV     W0,W4
-0220C:  MUL.UU  W4,#2,W0
-0220E:  MOV     86C,W4
-02210:  ADD     W0,W4,W0
-02212:  MOV     [W0],[W15++]
-02214:  POP     86E
-*
-02BBC:  MOV.B   88B,W0L
-02BBE:  SE      W0,W0
-02BC0:  MOV     W0,W4
-02BC2:  MUL.UU  W4,#2,W0
-02BC4:  MOV     86C,W4
-02BC6:  ADD     W0,W4,W0
-02BC8:  MOV     [W0],W5
-02BCA:  MOV     86E,W4
-02BCC:  CP      W4,W5
-02BCE:  BRA     LEU,2BE0
-02BD0:  MOV.B   88B,W0L
-02BD2:  SE      W0,W0
-02BD4:  MOV     W0,W4
-02BD6:  MUL.UU  W4,#2,W0
-02BD8:  MOV     86C,W4
-02BDA:  ADD     W0,W4,W0
-02BDC:  MOV     [W0],[W15++]
-02BDE:  POP     86E
-....................       if(voltaje[am]>V_max_aux) V_max_aux=voltaje[am]; 
-*
-02216:  MOV.B   88B,W0L
+02216:  MOV.B   899,W0L
 02218:  SE      W0,W0
 0221A:  MOV     W0,W4
 0221C:  MUL.UU  W4,#2,W0
-0221E:  MOV     86C,W4
+0221E:  MOV     87A,W4
 02220:  ADD     W0,W4,W0
-02222:  MOV     [W0],W5
-02224:  MOV     870,W4
-02226:  CP      W4,W5
-02228:  BRA     C,223A
-0222A:  MOV.B   88B,W0L
-0222C:  SE      W0,W0
-0222E:  MOV     W0,W4
-02230:  MUL.UU  W4,#2,W0
-02232:  MOV     86C,W4
-02234:  ADD     W0,W4,W0
-02236:  MOV     [W0],[W15++]
-02238:  POP     870
+02222:  MOV     W0,W4
+02224:  MOV     [W4],W0
+02226:  ADD     826
 *
-02BE0:  MOV.B   88B,W0L
+02BE0:  MOV.B   899,W0L
 02BE2:  SE      W0,W0
 02BE4:  MOV     W0,W4
 02BE6:  MUL.UU  W4,#2,W0
-02BE8:  MOV     86C,W4
+02BE8:  MOV     87A,W4
 02BEA:  ADD     W0,W4,W0
-02BEC:  MOV     [W0],W5
-02BEE:  MOV     870,W4
-02BF0:  CP      W4,W5
-02BF2:  BRA     C,2C04
-02BF4:  MOV.B   88B,W0L
-02BF6:  SE      W0,W0
-02BF8:  MOV     W0,W4
-02BFA:  MUL.UU  W4,#2,W0
-02BFC:  MOV     86C,W4
-02BFE:  ADD     W0,W4,W0
-02C00:  MOV     [W0],[W15++]
-02C02:  POP     870
+02BEC:  MOV     W0,W4
+02BEE:  MOV     [W4],W0
+02BF0:  ADD     826
+....................       if(voltaje[am]<V_min_aux) V_min_aux=voltaje[am]; 
+*
+02228:  MOV.B   899,W0L
+0222A:  SE      W0,W0
+0222C:  MOV     W0,W4
+0222E:  MUL.UU  W4,#2,W0
+02230:  MOV     87A,W4
+02232:  ADD     W0,W4,W0
+02234:  MOV     [W0],W5
+02236:  MOV     87C,W4
+02238:  CP      W4,W5
+0223A:  BRA     LEU,224C
+0223C:  MOV.B   899,W0L
+0223E:  SE      W0,W0
+02240:  MOV     W0,W4
+02242:  MUL.UU  W4,#2,W0
+02244:  MOV     87A,W4
+02246:  ADD     W0,W4,W0
+02248:  MOV     [W0],[W15++]
+0224A:  POP     87C
+*
+02BF2:  MOV.B   899,W0L
+02BF4:  SE      W0,W0
+02BF6:  MOV     W0,W4
+02BF8:  MUL.UU  W4,#2,W0
+02BFA:  MOV     87A,W4
+02BFC:  ADD     W0,W4,W0
+02BFE:  MOV     [W0],W5
+02C00:  MOV     87C,W4
+02C02:  CP      W4,W5
+02C04:  BRA     LEU,2C16
+02C06:  MOV.B   899,W0L
+02C08:  SE      W0,W0
+02C0A:  MOV     W0,W4
+02C0C:  MUL.UU  W4,#2,W0
+02C0E:  MOV     87A,W4
+02C10:  ADD     W0,W4,W0
+02C12:  MOV     [W0],[W15++]
+02C14:  POP     87C
+....................       if(voltaje[am]>V_max_aux) V_max_aux=voltaje[am]; 
+*
+0224C:  MOV.B   899,W0L
+0224E:  SE      W0,W0
+02250:  MOV     W0,W4
+02252:  MUL.UU  W4,#2,W0
+02254:  MOV     87A,W4
+02256:  ADD     W0,W4,W0
+02258:  MOV     [W0],W5
+0225A:  MOV     87E,W4
+0225C:  CP      W4,W5
+0225E:  BRA     C,2270
+02260:  MOV.B   899,W0L
+02262:  SE      W0,W0
+02264:  MOV     W0,W4
+02266:  MUL.UU  W4,#2,W0
+02268:  MOV     87A,W4
+0226A:  ADD     W0,W4,W0
+0226C:  MOV     [W0],[W15++]
+0226E:  POP     87E
+*
+02C16:  MOV.B   899,W0L
+02C18:  SE      W0,W0
+02C1A:  MOV     W0,W4
+02C1C:  MUL.UU  W4,#2,W0
+02C1E:  MOV     87A,W4
+02C20:  ADD     W0,W4,W0
+02C22:  MOV     [W0],W5
+02C24:  MOV     87E,W4
+02C26:  CP      W4,W5
+02C28:  BRA     C,2C3A
+02C2A:  MOV.B   899,W0L
+02C2C:  SE      W0,W0
+02C2E:  MOV     W0,W4
+02C30:  MUL.UU  W4,#2,W0
+02C32:  MOV     87A,W4
+02C34:  ADD     W0,W4,W0
+02C36:  MOV     [W0],[W15++]
+02C38:  POP     87E
 ....................       am=am+1; 
 *
-0223A:  MOV.B   88B,W0L
-0223C:  SE      W0,W0
-0223E:  ADD     W0,#1,W0
-02240:  MOV.B   W0L,88B
-02242:  MOV.B   88A,W0L
-02244:  SE      W0,W0
-02246:  ADD     W0,#2,W0
-02248:  MOV.B   W0L,88A
-0224A:  GOTO    21A4
+02270:  MOV.B   899,W0L
+02272:  SE      W0,W0
+02274:  ADD     W0,#1,W0
+02276:  MOV.B   W0L,899
+02278:  MOV.B   898,W0L
+0227A:  SE      W0,W0
+0227C:  ADD     W0,#2,W0
+0227E:  MOV.B   W0L,898
+02280:  GOTO    21DA
 *
-02C04:  MOV.B   88B,W0L
-02C06:  SE      W0,W0
-02C08:  ADD     W0,#1,W0
-02C0A:  MOV.B   W0L,88B
-02C0C:  MOV.B   88A,W0L
-02C0E:  SE      W0,W0
-02C10:  ADD     W0,#2,W0
-02C12:  MOV.B   W0L,88A
-02C14:  GOTO    2B6E
+02C3A:  MOV.B   899,W0L
+02C3C:  SE      W0,W0
+02C3E:  ADD     W0,#1,W0
+02C40:  MOV.B   W0L,899
+02C42:  MOV.B   898,W0L
+02C44:  SE      W0,W0
+02C46:  ADD     W0,#2,W0
+02C48:  MOV.B   W0L,898
+02C4A:  GOTO    2BA4
 ....................    }   
 ....................     
 .................... } 
@@ -3090,8 +3095,8 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................  
 .................... void BLANCEO(uint16_t &v_cell_min, uint16_t &v_balanceo, uint16_t &v_min, uint8_t &diff_max, uint8_t &diff_min, uint16_t *voltaje, uint16_t &temp_max, uint16_t &temp_slave_max) 
 *
-02514:  CLR     87A
-02516:  CLR     87C
+0254A:  CLR     888
+0254C:  CLR     88A
 .................... { 
 ....................    int8 i, a, balanceo1, balanceo2; 
 ....................    int1 bal; 
@@ -3122,341 +3127,341 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................    0x585a, 0x8ba7, 0x4e3e, 0x450c, 0x8095}; 
 ....................     
 ....................    balanceo1=0; 
-02518:  CLR.B   870
+0254E:  CLR.B   87E
 ....................    balanceo2=0; 
-0251A:  CLR.B   871
+02550:  CLR.B   87F
 ....................     
 ....................    for (a=0;a<12;a++) 
-0251C:  CLR.B   86F
-0251E:  MOV.B   86F,W0L
-02520:  SE      W0,W0
-02522:  CP      W0,#C
-02524:  BRA     GE,2748
+02552:  CLR.B   87D
+02554:  MOV.B   87D,W0L
+02556:  SE      W0,W0
+02558:  CP      W0,#C
+0255A:  BRA     GE,277E
 ....................    { 
 ....................        
 ....................       if(voltaje[a]>v_min && temp_slave_max<temp_max && (voltaje[a]> v_balanceo || (voltaje[a]-v_cell_min)>diff_max)) 
-02526:  MOV.B   86F,W0L
-02528:  SE      W0,W0
-0252A:  MOV     W0,W4
-0252C:  MUL.UU  W4,#2,W0
-0252E:  MOV     86C,W4
-02530:  ADD     W0,W4,W0
-02532:  MOV     [W0],W5
-02534:  MOV     84E,W4
-02536:  CP      W4,W5
-02538:  BRA     C,25A6
-0253A:  MOV     854,W0
-0253C:  MOV     852,W4
-0253E:  CP      W4,W0
-02540:  BRA     LEU,25A6
-02542:  MOV.B   86F,W0L
-02544:  SE      W0,W0
-02546:  MOV     W0,W4
-02548:  MUL.UU  W4,#2,W0
-0254A:  MOV     86C,W4
-0254C:  ADD     W0,W4,W0
-0254E:  MOV     [W0],W5
-02550:  MOV     850,W4
-02552:  CP      W4,W5
-02554:  BRA     NC,2570
-02556:  MOV.B   86F,W0L
-02558:  SE      W0,W0
-0255A:  MOV     W0,W4
-0255C:  MUL.UU  W4,#2,W0
-0255E:  MOV     86C,W4
-02560:  ADD     W0,W4,W0
-02562:  MOV     [W0],W5
-02564:  MOV     84C,W4
-02566:  SUB     W5,W4,W5
-02568:  MOV.B   80D,W0L
-0256A:  CLR.B   1
-0256C:  CP      W0,W5
-0256E:  BRA     C,25A6
+0255C:  MOV.B   87D,W0L
+0255E:  SE      W0,W0
+02560:  MOV     W0,W4
+02562:  MUL.UU  W4,#2,W0
+02564:  MOV     87A,W4
+02566:  ADD     W0,W4,W0
+02568:  MOV     [W0],W5
+0256A:  MOV     84E,W4
+0256C:  CP      W4,W5
+0256E:  BRA     C,25DC
+02570:  MOV     854,W0
+02572:  MOV     852,W4
+02574:  CP      W4,W0
+02576:  BRA     LEU,25DC
+02578:  MOV.B   87D,W0L
+0257A:  SE      W0,W0
+0257C:  MOV     W0,W4
+0257E:  MUL.UU  W4,#2,W0
+02580:  MOV     87A,W4
+02582:  ADD     W0,W4,W0
+02584:  MOV     [W0],W5
+02586:  MOV     850,W4
+02588:  CP      W4,W5
+0258A:  BRA     NC,25A6
+0258C:  MOV.B   87D,W0L
+0258E:  SE      W0,W0
+02590:  MOV     W0,W4
+02592:  MUL.UU  W4,#2,W0
+02594:  MOV     87A,W4
+02596:  ADD     W0,W4,W0
+02598:  MOV     [W0],W5
+0259A:  MOV     84C,W4
+0259C:  SUB     W5,W4,W5
+0259E:  MOV.B   80D,W0L
+025A0:  CLR.B   1
+025A2:  CP      W0,W5
+025A4:  BRA     C,25DC
 ....................       { 
 ....................          bal=1; 
-02570:  BSET.B  872.0
+025A6:  BSET.B  880.0
 ....................          if (a<8) 
-02572:  MOV.B   86F,W0L
-02574:  SE      W0,W0
-02576:  CP      W0,#8
-02578:  BRA     GE,2590
+025A8:  MOV.B   87D,W0L
+025AA:  SE      W0,W0
+025AC:  CP      W0,#8
+025AE:  BRA     GE,25C6
 ....................          { 
 ....................             balanceo1=(balanceo1|(1<<a)); 
-0257A:  MOV     86E,W4
-0257C:  LSR     W4,#8,W4
-0257E:  CLR.B   9
-02580:  MOV     #1,W5
-02582:  SL      W5,W4,W5
-02584:  MOV.B   870,W0L
-02586:  SE      W0,W0
-02588:  IOR      W0,  W5,W0
-0258A:  MOV.B   W0L,870
+025B0:  MOV     87C,W4
+025B2:  LSR     W4,#8,W4
+025B4:  CLR.B   9
+025B6:  MOV     #1,W5
+025B8:  SL      W5,W4,W5
+025BA:  MOV.B   87E,W0L
+025BC:  SE      W0,W0
+025BE:  IOR      W0,  W5,W0
+025C0:  MOV.B   W0L,87E
 ....................          } 
-0258C:  GOTO    25A2
+025C2:  GOTO    25D8
 ....................          else 
 ....................          { 
 ....................             balanceo2=(balanceo2|(1<<(a-8))); 
-02590:  MOV.B   86F,W0L
-02592:  SE      W0,W0
-02594:  SUB     W0,#8,W0
-02596:  MOV     #1,W5
-02598:  SL      W5,W0,W5
-0259A:  MOV.B   871,W0L
-0259C:  SE      W0,W0
-0259E:  IOR      W0,  W5,W0
-025A0:  MOV.B   W0L,871
+025C6:  MOV.B   87D,W0L
+025C8:  SE      W0,W0
+025CA:  SUB     W0,#8,W0
+025CC:  MOV     #1,W5
+025CE:  SL      W5,W0,W5
+025D0:  MOV.B   87F,W0L
+025D2:  SE      W0,W0
+025D4:  IOR      W0,  W5,W0
+025D6:  MOV.B   W0L,87F
 ....................          } 
 ....................       } 
-025A2:  GOTO    25A8
+025D8:  GOTO    25DE
 ....................       else 
 ....................       { 
 ....................          bal=0; 
-025A6:  BCLR.B  872.0
+025DC:  BCLR.B  880.0
 ....................       } 
 ....................        
 ....................        
 ....................       if(bal==1) 
-025A8:  BTSS.B  872.0
-025AA:  BRA     26B2
+025DE:  BTSS.B  880.0
+025E0:  BRA     26E8
 ....................       { 
 ....................          pec[0]=0xF8; 
-025AC:  MOV.B   #F8,W0L
-025AE:  MOV.B   W0L,874
+025E2:  MOV.B   #F8,W0L
+025E4:  MOV.B   W0L,882
 ....................          pec[1]=0; 
-025B0:  CLR.B   875
+025E6:  CLR.B   883
 ....................          pec[2]=0; 
-025B2:  CLR.B   876
+025E8:  CLR.B   884
 ....................          pec[3]=0; 
-025B4:  CLR.B   877
+025EA:  CLR.B   885
 ....................          pec[4]=balanceo1; 
-025B6:  MOV.B   870,W0L
-025B8:  MOV.B   W0L,878
+025EC:  MOV.B   87E,W0L
+025EE:  MOV.B   W0L,886
 ....................          pec[5]=balanceo2; 
-025BA:  MOV.B   871,W0L
-025BC:  MOV.B   W0L,879
+025F0:  MOV.B   87F,W0L
+025F2:  MOV.B   W0L,887
 ....................          remainder = 16; 
-025BE:  MOV     #10,W4
-025C0:  MOV     W4,87A
+025F4:  MOV     #10,W4
+025F6:  MOV     W4,888
 ....................          for(i = 0; i<6;i++)  
-025C2:  CLR.B   86E
-025C4:  MOV.B   86E,W0L
-025C6:  SE      W0,W0
-025C8:  CP      W0,#6
-025CA:  BRA     GE,25FE
+025F8:  CLR.B   87C
+025FA:  MOV.B   87C,W0L
+025FC:  SE      W0,W0
+025FE:  CP      W0,#6
+02600:  BRA     GE,2634
 ....................          { 
 ....................             addr = ((remainder>>7)^pec[i])&0xff; 
-025CC:  MOV     87A,W5
-025CE:  LSR     W5,#7,W5
-025D0:  MOV.B   86E,W0L
-025D2:  SE      W0,W0
-025D4:  MOV     #874,W4
-025D6:  ADD     W0,W4,W0
-025D8:  MOV     W0,W4
-025DA:  MOV.B   [W4],W0L
-025DC:  SE      W0,W0
-025DE:  XOR     W5,W0,W5
-025E0:  MOV     W5,W4
-025E2:  AND     #FF,W4
-025E4:  MOV     W4,87C
+02602:  MOV     888,W5
+02604:  LSR     W5,#7,W5
+02606:  MOV.B   87C,W0L
+02608:  SE      W0,W0
+0260A:  MOV     #882,W4
+0260C:  ADD     W0,W4,W0
+0260E:  MOV     W0,W4
+02610:  MOV.B   [W4],W0L
+02612:  SE      W0,W0
+02614:  XOR     W5,W0,W5
+02616:  MOV     W5,W4
+02618:  AND     #FF,W4
+0261A:  MOV     W4,88A
 ....................             remainder = (remainder<<8)^crc15Table[addr]; 
-025E6:  MOV.B   87A,W0L
-025E8:  MOV.B   W0L,B
-025EA:  CLR.B   W5
-025EC:  MOV     87C,W4
-025EE:  MUL.UU  W4,#2,W0
-025F0:  CALL    200
-025F4:  XOR     W5,W0,W0
-025F6:  MOV     W0,87A
-025F8:  INC.B   086E
-025FA:  GOTO    25C4
+0261C:  MOV.B   888,W0L
+0261E:  MOV.B   W0L,B
+02620:  CLR.B   W5
+02622:  MOV     88A,W4
+02624:  MUL.UU  W4,#2,W0
+02626:  CALL    200
+0262A:  XOR     W5,W0,W0
+0262C:  MOV     W0,888
+0262E:  INC.B   087C
+02630:  GOTO    25FA
 ....................          } 
 ....................          out=remainder*2; 
-025FE:  MOV     87A,W4
-02600:  MUL.UU  W4,#2,W0
-02602:  MOV     W0,87E
+02634:  MOV     888,W4
+02636:  MUL.UU  W4,#2,W0
+02638:  MOV     W0,88C
 ....................           
 ....................          output_low(CS_LTC6811); 
-02604:  BCLR.B  2C0.0
-02606:  BCLR.B  2C4.0
+0263A:  BCLR.B  2C0.0
+0263C:  BCLR.B  2C4.0
 ....................          delay_us(10); 
-02608:  REPEAT  #62
-0260A:  NOP     
+0263E:  REPEAT  #62
+02640:  NOP     
 ....................          output_high(CS_LTC6811); 
-0260C:  BCLR.B  2C0.0
-0260E:  BSET.B  2C4.0
+02642:  BCLR.B  2C0.0
+02644:  BSET.B  2C4.0
 ....................          delay_us(10); 
-02610:  REPEAT  #62
-02612:  NOP     
+02646:  REPEAT  #62
+02648:  NOP     
 ....................          output_low(CS_LTC6811); 
-02614:  BCLR.B  2C0.0
-02616:  BCLR.B  2C4.0
+0264A:  BCLR.B  2C0.0
+0264C:  BCLR.B  2C4.0
 ....................          spi_xfer(SP, 0x80);   
-02618:  MOV     #8,W4
-0261A:  MOV     #80,W2
-0261C:  MOV     #0,W3
-0261E:  CALL    1898
+0264E:  MOV     #8,W4
+02650:  MOV     #80,W2
+02652:  MOV     #0,W3
+02654:  CALL    1898
 ....................          spi_xfer(SP, 0x01);   
-02622:  MOV     #8,W4
-02624:  MOV     #1,W2
-02626:  MOV     #0,W3
-02628:  CALL    1898
+02658:  MOV     #8,W4
+0265A:  MOV     #1,W2
+0265C:  MOV     #0,W3
+0265E:  CALL    1898
 ....................          spi_xfer(SP, 0x4D);   
-0262C:  MOV     #8,W4
-0262E:  MOV     #4D,W2
-02630:  MOV     #0,W3
-02632:  CALL    1898
+02662:  MOV     #8,W4
+02664:  MOV     #4D,W2
+02666:  MOV     #0,W3
+02668:  CALL    1898
 ....................          spi_xfer(SP, 0x7A); 
-02636:  MOV     #8,W4
-02638:  MOV     #7A,W2
-0263A:  MOV     #0,W3
-0263C:  CALL    1898
+0266C:  MOV     #8,W4
+0266E:  MOV     #7A,W2
+02670:  MOV     #0,W3
+02672:  CALL    1898
 ....................           
 ....................          spi_xfer(SP, 0xF8); 
-02640:  MOV     #8,W4
-02642:  MOV     #F8,W2
-02644:  MOV     #0,W3
-02646:  CALL    1898
+02676:  MOV     #8,W4
+02678:  MOV     #F8,W2
+0267A:  MOV     #0,W3
+0267C:  CALL    1898
 ....................          spi_xfer(SP, 0x00); 
-0264A:  MOV     #8,W4
-0264C:  MOV     #0,W2
-0264E:  MOV     #0,W3
-02650:  CALL    1898
+02680:  MOV     #8,W4
+02682:  MOV     #0,W2
+02684:  MOV     #0,W3
+02686:  CALL    1898
 ....................          spi_xfer(SP, 0x00); 
-02654:  MOV     #8,W4
-02656:  MOV     #0,W2
-02658:  MOV     #0,W3
-0265A:  CALL    1898
+0268A:  MOV     #8,W4
+0268C:  MOV     #0,W2
+0268E:  MOV     #0,W3
+02690:  CALL    1898
 ....................          spi_xfer(SP, 0x00); 
-0265E:  MOV     #8,W4
-02660:  MOV     #0,W2
-02662:  MOV     #0,W3
-02664:  CALL    1898
+02694:  MOV     #8,W4
+02696:  MOV     #0,W2
+02698:  MOV     #0,W3
+0269A:  CALL    1898
 ....................          spi_xfer(SP, balanceo1); 
-02668:  MOV.B   870,W0L
-0266A:  MOV.B   W0L,4
-0266C:  SE      W2,W2
-0266E:  CLR     W3
-02670:  BTSC    W2.F
-02672:  SETM    W3
-02674:  MOV     #8,W4
-02676:  CALL    1898
+0269E:  MOV.B   87E,W0L
+026A0:  MOV.B   W0L,4
+026A2:  SE      W2,W2
+026A4:  CLR     W3
+026A6:  BTSC    W2.F
+026A8:  SETM    W3
+026AA:  MOV     #8,W4
+026AC:  CALL    1898
 ....................          spi_xfer(SP, balanceo2); 
-0267A:  MOV.B   871,W0L
-0267C:  MOV.B   W0L,W2L
-0267E:  SE      W2,W2
-02680:  CLR     W3
-02682:  BTSC    W2.F
-02684:  SETM    W3
-02686:  MOV     #8,W4
-02688:  CALL    1898
+026B0:  MOV.B   87F,W0L
+026B2:  MOV.B   W0L,W2L
+026B4:  SE      W2,W2
+026B6:  CLR     W3
+026B8:  BTSC    W2.F
+026BA:  SETM    W3
+026BC:  MOV     #8,W4
+026BE:  CALL    1898
 ....................           
 ....................          spi_xfer(SP, (out>>8));   
-0268C:  MOV.B   87F,W0L
-0268E:  MOV.B   W0L,W5L
-02690:  CLR.B   B
-02692:  MOV     #8,W4
-02694:  MOV     W5,W2
-02696:  MOV     #0,W3
-02698:  CALL    1898
+026C2:  MOV.B   88D,W0L
+026C4:  MOV.B   W0L,W5L
+026C6:  CLR.B   B
+026C8:  MOV     #8,W4
+026CA:  MOV     W5,W2
+026CC:  MOV     #0,W3
+026CE:  CALL    1898
 ....................          spi_xfer(SP, out); 
-0269C:  MOV     #8,W4
-0269E:  MOV     87E,W2
-026A0:  CLR     W3
-026A2:  BTSC    W2.F
-026A4:  SETM    W3
-026A6:  CALL    1898
+026D2:  MOV     #8,W4
+026D4:  MOV     88C,W2
+026D6:  CLR     W3
+026D8:  BTSC    W2.F
+026DA:  SETM    W3
+026DC:  CALL    1898
 ....................  
 ....................          output_high(CS_LTC6811);    
-026AA:  BCLR.B  2C0.0
-026AC:  BSET.B  2C4.0
+026E0:  BCLR.B  2C0.0
+026E2:  BSET.B  2C4.0
 ....................       } 
-026AE:  GOTO    2742
+026E4:  GOTO    2778
 ....................       else 
 ....................       { 
 ....................          output_low(CS_LTC6811); 
-026B2:  BCLR.B  2C0.0
-026B4:  BCLR.B  2C4.0
+026E8:  BCLR.B  2C0.0
+026EA:  BCLR.B  2C4.0
 ....................          delay_us(10); 
-026B6:  REPEAT  #62
-026B8:  NOP     
+026EC:  REPEAT  #62
+026EE:  NOP     
 ....................          output_high(CS_LTC6811); 
-026BA:  BCLR.B  2C0.0
-026BC:  BSET.B  2C4.0
+026F0:  BCLR.B  2C0.0
+026F2:  BSET.B  2C4.0
 ....................          delay_us(10); 
-026BE:  REPEAT  #62
-026C0:  NOP     
+026F4:  REPEAT  #62
+026F6:  NOP     
 ....................          output_low(CS_LTC6811); 
-026C2:  BCLR.B  2C0.0
-026C4:  BCLR.B  2C4.0
+026F8:  BCLR.B  2C0.0
+026FA:  BCLR.B  2C4.0
 ....................          spi_xfer(SP, 0x80);   
-026C6:  MOV     #8,W4
-026C8:  MOV     #80,W2
-026CA:  MOV     #0,W3
-026CC:  CALL    1898
+026FC:  MOV     #8,W4
+026FE:  MOV     #80,W2
+02700:  MOV     #0,W3
+02702:  CALL    1898
 ....................          spi_xfer(SP, 0x01);   
-026D0:  MOV     #8,W4
-026D2:  MOV     #1,W2
-026D4:  MOV     #0,W3
-026D6:  CALL    1898
+02706:  MOV     #8,W4
+02708:  MOV     #1,W2
+0270A:  MOV     #0,W3
+0270C:  CALL    1898
 ....................          spi_xfer(SP, 0x4D);   
-026DA:  MOV     #8,W4
-026DC:  MOV     #4D,W2
-026DE:  MOV     #0,W3
-026E0:  CALL    1898
+02710:  MOV     #8,W4
+02712:  MOV     #4D,W2
+02714:  MOV     #0,W3
+02716:  CALL    1898
 ....................          spi_xfer(SP, 0x7A); 
-026E4:  MOV     #8,W4
-026E6:  MOV     #7A,W2
-026E8:  MOV     #0,W3
-026EA:  CALL    1898
+0271A:  MOV     #8,W4
+0271C:  MOV     #7A,W2
+0271E:  MOV     #0,W3
+02720:  CALL    1898
 ....................           
 ....................          spi_xfer(SP, 0xF8); 
-026EE:  MOV     #8,W4
-026F0:  MOV     #F8,W2
-026F2:  MOV     #0,W3
-026F4:  CALL    1898
+02724:  MOV     #8,W4
+02726:  MOV     #F8,W2
+02728:  MOV     #0,W3
+0272A:  CALL    1898
 ....................          spi_xfer(SP, 0x00); 
-026F8:  MOV     #8,W4
-026FA:  MOV     #0,W2
-026FC:  MOV     #0,W3
-026FE:  CALL    1898
+0272E:  MOV     #8,W4
+02730:  MOV     #0,W2
+02732:  MOV     #0,W3
+02734:  CALL    1898
 ....................          spi_xfer(SP, 0x00); 
-02702:  MOV     #8,W4
-02704:  MOV     #0,W2
-02706:  MOV     #0,W3
-02708:  CALL    1898
+02738:  MOV     #8,W4
+0273A:  MOV     #0,W2
+0273C:  MOV     #0,W3
+0273E:  CALL    1898
 ....................          spi_xfer(SP, 0x00); 
-0270C:  MOV     #8,W4
-0270E:  MOV     #0,W2
-02710:  MOV     #0,W3
-02712:  CALL    1898
+02742:  MOV     #8,W4
+02744:  MOV     #0,W2
+02746:  MOV     #0,W3
+02748:  CALL    1898
 ....................          spi_xfer(SP, 0x00); 
-02716:  MOV     #8,W4
-02718:  MOV     #0,W2
-0271A:  MOV     #0,W3
-0271C:  CALL    1898
+0274C:  MOV     #8,W4
+0274E:  MOV     #0,W2
+02750:  MOV     #0,W3
+02752:  CALL    1898
 ....................          spi_xfer(SP, 0x00); 
-02720:  MOV     #8,W4
-02722:  MOV     #0,W2
-02724:  MOV     #0,W3
-02726:  CALL    1898
+02756:  MOV     #8,W4
+02758:  MOV     #0,W2
+0275A:  MOV     #0,W3
+0275C:  CALL    1898
 ....................           
 ....................          spi_xfer(SP, 0xBE);   
-0272A:  MOV     #8,W4
-0272C:  MOV     #BE,W2
-0272E:  MOV     #0,W3
-02730:  CALL    1898
+02760:  MOV     #8,W4
+02762:  MOV     #BE,W2
+02764:  MOV     #0,W3
+02766:  CALL    1898
 ....................          spi_xfer(SP, 0xE2); 
-02734:  MOV     #8,W4
-02736:  MOV     #E2,W2
-02738:  MOV     #0,W3
-0273A:  CALL    1898
+0276A:  MOV     #8,W4
+0276C:  MOV     #E2,W2
+0276E:  MOV     #0,W3
+02770:  CALL    1898
 ....................     
 ....................          output_high(CS_LTC6811);   
-0273E:  BCLR.B  2C0.0
-02740:  BSET.B  2C4.0
+02774:  BCLR.B  2C0.0
+02776:  BSET.B  2C4.0
 ....................       } 
-02742:  INC.B   086F
-02744:  GOTO    251E
+02778:  INC.B   087D
+0277A:  GOTO    2554
 ....................    } 
 ....................     
 .................... } 
@@ -3477,10 +3482,10 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 .................... void ADC_LTC1296(uint16_t *temp) 
 *
 01922:  MOV     W5,[W15++]
-01924:  CLR.B   86E
-01926:  CLR.B   86F
-01928:  CLR     872
-0192A:  CLR     874
+01924:  CLR.B   87C
+01926:  CLR.B   87D
+01928:  CLR     880
+0192A:  CLR     882
 .................... { 
 ....................     
 ....................    const int16 Temp_table[901]={0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,519,520,521,522,523,524,525,526,527,528,529,530,531,532,533,534,535,536,537,538,539,540,541,542,543,544,545,546,547,548,549,550,551,552,553,554,555,556,557,558,559,560,561,562,563,564,565,566,567,568,569,570,571,572,573,574,575,576,577,578,579,580,581,582,583,584,585,586,587,588,589,590,591,592,593,594,595,596,597,598,599,600,601,602,603,604,605,606,607,608,609,610,611,612,613,614,615,616,617,618,619,620,621,622,623,624,625,626,627,628,629,630,631,632,633,634,635,636,637,638,639,640,641,642,643,644,645,646,647,648,649,650,651,652,653,654,655,656,657,658,659,660,661,662,663,664,665,666,667,668,669,670,671,672,673,674,675,676,677,678,679,680,681,682,683,684,685,686,687,688,689,690,691,692,693,694,695,696,697,698,699,700,701,702,703,704,705,706,707,708,709,710,711,712,713,714,715,716,717,718,719,720,721,722,723,724,725,726,727,728,729,730,731,732,733,734,735,736,737,738,739,740,741,742,743,744,745,746,747,748,749,750,751,752,753,754,755,756,757,758,759,760,761,762,763,764,765,766,767,768,769,770,771,772,773,774,775,776,777,778,779,780,781,782,783,784,785,786,787,788,789,790,791,792,793,794,795,796,797,798,799,800,801,802,803,804,805,806,807,808,809,810,811,812,813,814,815,816,817,818,819,820,821,822,823,824,825,826,827,828,829,830,831,832,833,834,835,836,837,838,839,840,841,842,843,844,845,846,847,848,849,850,851,852,853,854,855,856,857,858,859,860,861,862,863,864,865,866,867,868,869,870,871,872,873,874,875,876,877,878,879,880,881,882,883,884,885,886,887,888,889,890,891,892,893,894,895,896,897,898,899,900}; 
@@ -3489,8 +3494,8 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................    int16 value=0, i=0; 
 ....................     
 ....................    for(a=0;a<8;a++) 
-0192C:  CLR.B   870
-0192E:  MOV.B   870,W0L
+0192C:  CLR.B   87E
+0192E:  MOV.B   87E,W0L
 01930:  SE      W0,W0
 01932:  CP      W0,#8
 01934:  BRA     GE,19BE
@@ -3499,12 +3504,12 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01936:  BCLR.B  2C0.4
 01938:  BCLR.B  2C4.4
 ....................       send=0x18|a; 
-0193A:  MOV.B   870,W0L
+0193A:  MOV.B   87E,W0L
 0193C:  SE      W0,W0
 0193E:  IOR      W0,  #18,W0
-01940:  MOV.B   W0L,871
+01940:  MOV.B   W0L,87F
 ....................       spi_xfer (SP, send); 
-01942:  MOV.B   871,W0L
+01942:  MOV.B   87F,W0L
 01944:  MOV.B   W0L,W2L
 01946:  SE      W2,W2
 01948:  CLR     W3
@@ -3517,47 +3522,47 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01956:  MOV     #E0,W2
 01958:  MOV     #0,W3
 0195A:  CALL    1898
-0195E:  MOV.B   W0L,86E
+0195E:  MOV.B   W0L,87C
 ....................       v2=spi_xfer (SP, 0xFF); 
 01960:  MOV     #8,W4
 01962:  MOV     #FF,W2
 01964:  MOV     #0,W3
 01966:  CALL    1898
-0196A:  MOV.B   W0L,86F
+0196A:  MOV.B   W0L,87D
 ....................       value=make16(v&0x0F, v2); 
-0196C:  MOV.B   86E,W0L
+0196C:  MOV.B   87C,W0L
 0196E:  SE      W0,W0
 01970:  AND     W0,#F,W5
-01972:  MOV.B   86F,W0L
-01974:  MOV.B   W0L,872
+01972:  MOV.B   87D,W0L
+01974:  MOV.B   W0L,880
 01976:  MOV.B   W5L,W0L
-01978:  MOV.B   W0L,873
+01978:  MOV.B   W0L,881
 ....................       for(i=1;i<901;i++) 
 0197A:  MOV     #1,W4
-0197C:  MOV     W4,874
-0197E:  MOV     874,W4
+0197C:  MOV     W4,882
+0197E:  MOV     882,W4
 01980:  MOV     #385,W3
 01982:  CP      W3,W4
 01984:  BRA     LE,19B0
 ....................       { 
 ....................          if(value<=Lec[i]) temp[a]=temp_table[i]; 
-01986:  MOV     874,W4
+01986:  MOV     882,W4
 01988:  MUL.UU  W4,#2,W0
 0198A:  CALL    848
-0198E:  MOV     872,W4
+0198E:  MOV     880,W4
 01990:  CP      W4,W0
 01992:  BRA     GT,19AA
-01994:  MOV.B   870,W0L
+01994:  MOV.B   87E,W0L
 01996:  SE      W0,W0
 01998:  MOV     W0,W4
 0199A:  MUL.UU  W4,#2,W0
-0199C:  MOV     86C,W4
+0199C:  MOV     87A,W4
 0199E:  ADD     W0,W4,W5
-019A0:  MOV     874,W4
+019A0:  MOV     882,W4
 019A2:  MUL.UU  W4,#2,W0
 019A4:  CALL    376
 019A8:  MOV     W0,[W5]
-019AA:  INC     0874
+019AA:  INC     0882
 019AC:  GOTO    197E
 ....................       } 
 ....................       output_high(CS_LTC1296); 
@@ -3566,7 +3571,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................       delay_us(50); 
 019B4:  REPEAT  #1F2
 019B6:  NOP     
-019B8:  INC.B   0870
+019B8:  INC.B   087E
 019BA:  GOTO    192E
 ....................        
 ....................    } 
@@ -4272,12 +4277,41 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................  
 .................... struct CiFMSKSEL1_struct C1FMSKSEL1; 
 .................... #word C1FMSKSEL1=getenv("SFR:C1FMSKSEL1") 
+*
+01D40:  CLR     86C
+01D42:  BTSC.B  2CA.3
+01D44:  INC     086C
+01D46:  BSET.B  2C0.1
 ....................  
 .................... #if getenv("SFR_VALID:C2FMSKSEL1") 
+01D48:  CLR     86E
+01D4A:  BTSC.B  2C2.1
+01D4C:  INC     086E
+01D4E:  BSET.B  2C9.0
 ....................    struct CiFMSKSEL1_struct C2FMSKSEL1; 
 ....................    #word C2FMSKSEL1=getenv("SFR:C2FMSKSEL1") 
+01D50:  CLR     870
+01D52:  BTSC.B  2CB.0
+01D54:  INC     0870
+01D56:  BSET.B  2C9.1
 .................... #endif 
 ....................  
+01D58:  CLR     872
+01D5A:  BTSC.B  2CB.1
+01D5C:  INC     0872
+01D5E:  MOV     86E,W4
+01D60:  MUL.UU  W4,#2,W0
+01D62:  MOV     86C,W4
+01D64:  ADD     W0,W4,W5
+01D66:  MOV     870,W4
+01D68:  MUL.UU  W4,#4,W0
+01D6A:  ADD     W0,W5,W5
+01D6C:  MOV     872,W4
+01D6E:  MUL.UU  W4,#8,W0
+01D70:  ADD     W0,W5,W0
+01D72:  MOV     #F,W4
+01D74:  SUB     W4,W0,W0
+01D76:  MOV     W0,874
 .................... // ECAN Filter 15-8 Mask Selection Register 
 .................... struct CiFMSKSEL2_struct { 
 ....................    int f8msk:2;            //0:1    // Mask Source for Filter 8 bits 
@@ -4744,7 +4778,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................    can_set_mode(CAN_OP_CONFIG);   //must be in config mode before params can be set 
 *
 0165E:  MOV.B   #4,W0L
-01660:  MOV.B   W0L,87E
+01660:  MOV.B   W0L,88C
 01662:  CALL    1308
 ....................     
 ....................    C1CTRL1.cancap=CAN_ENABLE_CAN_CAPTURE; 
@@ -4756,145 +4790,145 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................     
 ....................    can_set_buffer_size(CAN_BUFFER_SIZE);      // sets size of DMA buffer to use 
 0166E:  MOV.B   #20,W0L
-01670:  MOV.B   W0L,86C
+01670:  MOV.B   W0L,87A
 01672:  CALL    1360
 ....................    can_config_DMA();    
 01676:  CALL    13F2
 ....................     
 ....................    can_set_id(&C1RXM0, CAN_MASK_ACCEPT_ALL, CAN_USE_EXTENDED_ID);  //set mask 0 
-0167A:  CLR.B   872
+0167A:  CLR.B   880
 0167C:  MOV     #432,W4
-0167E:  MOV     W4,86C
-01680:  CLR     86E
-01682:  CLR     870
+0167E:  MOV     W4,87A
+01680:  CLR     87C
+01682:  CLR     87E
 01684:  CALL    142A
 ....................    can_set_id(&C1RXM1, CAN_MASK_ACCEPT_ALL, CAN_USE_EXTENDED_ID);  //set mask 1 
-01688:  CLR.B   872
+01688:  CLR.B   880
 0168A:  MOV     #436,W4
-0168C:  MOV     W4,86C
-0168E:  CLR     86E
-01690:  CLR     870
+0168C:  MOV     W4,87A
+0168E:  CLR     87C
+01690:  CLR     87E
 01692:  CALL    142A
 ....................    can_set_id(&C1RXM2, CAN_MASK_ACCEPT_ALL, CAN_USE_EXTENDED_ID);  //set mask 2 
-01696:  CLR.B   872
+01696:  CLR.B   880
 01698:  MOV     #436,W4
-0169A:  MOV     W4,86C
-0169C:  CLR     86E
-0169E:  CLR     870
+0169A:  MOV     W4,87A
+0169C:  CLR     87C
+0169E:  CLR     87E
 016A0:  CALL    142A
 ....................     
 ....................    // set dynamic filters 
 ....................    can_set_id(&C1RXF0, 0, CAN_USE_EXTENDED_ID);  
-016A4:  CLR.B   872
+016A4:  CLR.B   880
 016A6:  MOV     #442,W4
-016A8:  MOV     W4,86C
-016AA:  CLR     86E
-016AC:  CLR     870
+016A8:  MOV     W4,87A
+016AA:  CLR     87C
+016AC:  CLR     87E
 016AE:  CALL    142A
 ....................    can_set_id(&C1RXF1, 0, CAN_USE_EXTENDED_ID); 
-016B2:  CLR.B   872
+016B2:  CLR.B   880
 016B4:  MOV     #446,W4
-016B6:  MOV     W4,86C
-016B8:  CLR     86E
-016BA:  CLR     870
+016B6:  MOV     W4,87A
+016B8:  CLR     87C
+016BA:  CLR     87E
 016BC:  CALL    142A
 ....................    can_set_id(&C1RXF2, 0, CAN_USE_EXTENDED_ID); 
-016C0:  CLR.B   872
+016C0:  CLR.B   880
 016C2:  MOV     #44A,W4
-016C4:  MOV     W4,86C
-016C6:  CLR     86E
-016C8:  CLR     870
+016C4:  MOV     W4,87A
+016C6:  CLR     87C
+016C8:  CLR     87E
 016CA:  CALL    142A
 ....................    can_set_id(&C1RXF3, 0, CAN_USE_EXTENDED_ID); 
-016CE:  CLR.B   872
+016CE:  CLR.B   880
 016D0:  MOV     #44E,W4
-016D2:  MOV     W4,86C
-016D4:  CLR     86E
-016D6:  CLR     870
+016D2:  MOV     W4,87A
+016D4:  CLR     87C
+016D6:  CLR     87E
 016D8:  CALL    142A
 ....................    can_set_id(&C1RXF4, 0, CAN_USE_EXTENDED_ID); 
-016DC:  CLR.B   872
+016DC:  CLR.B   880
 016DE:  MOV     #452,W4
-016E0:  MOV     W4,86C
-016E2:  CLR     86E
-016E4:  CLR     870
+016E0:  MOV     W4,87A
+016E2:  CLR     87C
+016E4:  CLR     87E
 016E6:  CALL    142A
 ....................    can_set_id(&C1RXF5, 0, CAN_USE_EXTENDED_ID); 
-016EA:  CLR.B   872
+016EA:  CLR.B   880
 016EC:  MOV     #456,W4
-016EE:  MOV     W4,86C
-016F0:  CLR     86E
-016F2:  CLR     870
+016EE:  MOV     W4,87A
+016F0:  CLR     87C
+016F2:  CLR     87E
 016F4:  CALL    142A
 ....................    can_set_id(&C1RXF6, 0, CAN_USE_EXTENDED_ID); 
-016F8:  CLR.B   872
+016F8:  CLR.B   880
 016FA:  MOV     #45A,W4
-016FC:  MOV     W4,86C
-016FE:  CLR     86E
-01700:  CLR     870
+016FC:  MOV     W4,87A
+016FE:  CLR     87C
+01700:  CLR     87E
 01702:  CALL    142A
 ....................    can_set_id(&C1RXF7, 0, CAN_USE_EXTENDED_ID); 
-01706:  CLR.B   872
+01706:  CLR.B   880
 01708:  MOV     #45E,W4
-0170A:  MOV     W4,86C
-0170C:  CLR     86E
-0170E:  CLR     870
+0170A:  MOV     W4,87A
+0170C:  CLR     87C
+0170E:  CLR     87E
 01710:  CALL    142A
 ....................    can_set_id(&C1RXF8, 0, CAN_USE_EXTENDED_ID); 
-01714:  CLR.B   872
+01714:  CLR.B   880
 01716:  MOV     #462,W4
-01718:  MOV     W4,86C
-0171A:  CLR     86E
-0171C:  CLR     870
+01718:  MOV     W4,87A
+0171A:  CLR     87C
+0171C:  CLR     87E
 0171E:  CALL    142A
 ....................    can_set_id(&C1RXF9, 0, CAN_USE_EXTENDED_ID); 
-01722:  CLR.B   872
+01722:  CLR.B   880
 01724:  MOV     #466,W4
-01726:  MOV     W4,86C
-01728:  CLR     86E
-0172A:  CLR     870
+01726:  MOV     W4,87A
+01728:  CLR     87C
+0172A:  CLR     87E
 0172C:  CALL    142A
 ....................    can_set_id(&C1RXF10, 0, CAN_USE_EXTENDED_ID); 
-01730:  CLR.B   872
+01730:  CLR.B   880
 01732:  MOV     #46A,W4
-01734:  MOV     W4,86C
-01736:  CLR     86E
-01738:  CLR     870
+01734:  MOV     W4,87A
+01736:  CLR     87C
+01738:  CLR     87E
 0173A:  CALL    142A
 ....................    can_set_id(&C1RXF11, 0, CAN_USE_EXTENDED_ID); 
-0173E:  CLR.B   872
+0173E:  CLR.B   880
 01740:  MOV     #46E,W4
-01742:  MOV     W4,86C
-01744:  CLR     86E
-01746:  CLR     870
+01742:  MOV     W4,87A
+01744:  CLR     87C
+01746:  CLR     87E
 01748:  CALL    142A
 ....................    can_set_id(&C1RXF12, 0, CAN_USE_EXTENDED_ID); 
-0174C:  CLR.B   872
+0174C:  CLR.B   880
 0174E:  MOV     #472,W4
-01750:  MOV     W4,86C
-01752:  CLR     86E
-01754:  CLR     870
+01750:  MOV     W4,87A
+01752:  CLR     87C
+01754:  CLR     87E
 01756:  CALL    142A
 ....................    can_set_id(&C1RXF13, 0, CAN_USE_EXTENDED_ID); 
-0175A:  CLR.B   872
+0175A:  CLR.B   880
 0175C:  MOV     #476,W4
-0175E:  MOV     W4,86C
-01760:  CLR     86E
-01762:  CLR     870
+0175E:  MOV     W4,87A
+01760:  CLR     87C
+01762:  CLR     87E
 01764:  CALL    142A
 ....................    can_set_id(&C1RXF14, 0, CAN_USE_EXTENDED_ID); 
-01768:  CLR.B   872
+01768:  CLR.B   880
 0176A:  MOV     #47A,W4
-0176C:  MOV     W4,86C
-0176E:  CLR     86E
-01770:  CLR     870
+0176C:  MOV     W4,87A
+0176E:  CLR     87C
+01770:  CLR     87E
 01772:  CALL    142A
 ....................    can_set_id(&C1RXF15, 0, CAN_USE_EXTENDED_ID); 
-01776:  CLR.B   872
+01776:  CLR.B   880
 01778:  MOV     #47E,W4
-0177A:  MOV     W4,86C
-0177C:  CLR     86E
-0177E:  CLR     870
+0177A:  MOV     W4,87A
+0177C:  CLR     87C
+0177E:  CLR     87E
 01780:  CALL    142A
 ....................     
 ....................    C1FEN1=0; 
@@ -4902,16 +4936,16 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................     
 ....................    can_associate_filter_to_buffer(AFIFO,F0BP); 
 01786:  MOV.B   #F,W0L
-01788:  MOV.B   W0L,86C
-0178A:  CLR.B   86D
+01788:  MOV.B   W0L,87A
+0178A:  CLR.B   87B
 0178C:  CALL    14D8
 ....................    can_enable_filter(FLTEN0); 
 01790:  MOV     #1,W4
-01792:  MOV     W4,86C
+01792:  MOV     W4,87A
 01794:  CALL    1630
 ....................     
 ....................    can_set_mode(CAN_OP_NORMAL); 
-01798:  CLR.B   87E
+01798:  CLR.B   88C
 0179A:  CALL    1308
 0179E:  RETURN  
 .................... } 
@@ -5048,7 +5082,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................    C1CTRL1.reqop=mode; 
 0130A:  MOV     #FFF8,W0
 0130C:  AND.B   401
-0130E:  MOV.B   87E,W0L
+0130E:  MOV.B   88C,W0L
 01310:  AND     #7,W0
 01312:  IOR.B   401
 ....................    while( (C1CTRL1.opmode) != mode ); 
@@ -5056,7 +5090,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01316:  LSR     W0,#5,W4
 01318:  AND     #7,W4
 0131A:  MOV.B   W4L,W0L
-0131C:  CP.B    87E
+0131C:  CP.B    88C
 0131E:  BRA     NZ,1314
 01320:  MOV     [--W15],W5
 01322:  RETURN  
@@ -5102,41 +5136,41 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................  
 ....................    can_set_mode(CAN_OP_CONFIG); 
 0143A:  MOV.B   #4,W0L
-0143C:  MOV.B   W0L,87E
+0143C:  MOV.B   W0L,88C
 0143E:  CALL    1308
 ....................     
 ....................    C1CTRL1.win=1; 
 01442:  BSET.B  400.0
 ....................     
 ....................    if (ext) {  //extended 
-01444:  CP0.B   872
+01444:  CP0.B   880
 01446:  BRA     Z,148E
 ....................       //eid 
 ....................       *addr=(id & 0xffff);                         //0:15 
-01448:  MOV     86C,W5
+01448:  MOV     87A,W5
 0144A:  CLR     W1
-0144C:  MOV     86E,W0
+0144C:  MOV     87C,W0
 0144E:  MOV     W0,[W5]
 ....................     
 ....................       //sid 
 ....................       addr-=1; 
-01450:  MOV     86C,W4
+01450:  MOV     87A,W4
 01452:  SUB     W4,#2,W0
-01454:  MOV     W0,86C
+01454:  MOV     W0,87A
 ....................       *addr&=0x1C; 
-01456:  MOV     86C,W5
+01456:  MOV     87A,W5
 01458:  MOV     [W5],W0
 0145A:  AND     W0,#1C,W0
 0145C:  MOV     W0,[W5]
 ....................       temp=((id & 0x30000) >> 16); 
 0145E:  CLR     W5
-01460:  MOV     870,W0
+01460:  MOV     87E,W0
 01462:  AND     W0,#3,W6
-01464:  MOV     W6,874
+01464:  MOV     W6,882
 ....................       temp|=((id & 0x1FFC0000) >> 13); 
 01466:  CLR     W5
 01468:  MOV     #1FFC,W0
-0146A:  AND     870,W0
+0146A:  AND     87E,W0
 0146C:  MOV     W0,W6
 0146E:  MOV     #D,W4
 01470:  MOV     W5,W0
@@ -5147,11 +5181,11 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 0147A:  LSR     W1,W1
 0147C:  RRC     W0,W0
 0147E:  BRA     1476
-01480:  IOR     874
+01480:  IOR     882
 ....................       *addr|=temp;                                 //16:28 
-01482:  MOV     86C,W5
+01482:  MOV     87A,W5
 01484:  MOV     [W5],W0
-01486:  IOR     874,W0
+01486:  IOR     882,W0
 01488:  MOV     W0,[W5]
 ....................    } 
 0148A:  GOTO    14C8
@@ -5159,24 +5193,24 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................    else {   //standard 
 ....................       //eid 
 ....................       *addr=0; 
-0148E:  MOV     86C,W5
+0148E:  MOV     87A,W5
 01490:  CLR.B   [W5]
 01492:  MOV.B   #0,W0L
 01494:  MOV.B   W0L,[W5+#1]
 ....................  
 ....................       //sid 
 ....................       addr-=1; 
-01496:  MOV     86C,W4
+01496:  MOV     87A,W4
 01498:  SUB     W4,#2,W0
-0149A:  MOV     W0,86C
+0149A:  MOV     W0,87A
 ....................       *addr&=0x1C; 
-0149C:  MOV     86C,W5
+0149C:  MOV     87A,W5
 0149E:  MOV     [W5],W0
 014A0:  AND     W0,#1C,W0
 014A2:  MOV     W0,[W5]
 ....................       temp=((id & 0x7FF) << 5); 
 014A4:  MOV     #7FF,W0
-014A6:  AND     86E,W0
+014A6:  AND     87C,W0
 014A8:  MOV     W0,W5
 014AA:  CLR     W6
 014AC:  MOV     #5,W4
@@ -5188,11 +5222,11 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 014B8:  SL      W0,W0
 014BA:  RLC     W1,W1
 014BC:  BRA     14B4
-014BE:  MOV     W0,874
+014BE:  MOV     W0,882
 ....................       *addr|=temp;                              //0:10 
-014C0:  MOV     86C,W5
+014C0:  MOV     87A,W5
 014C2:  MOV     [W5],W0
-014C4:  IOR     874,W0
+014C4:  IOR     882,W0
 014C6:  MOV     W0,[W5]
 ....................    } 
 ....................    C1CTRL1.win=0; 
@@ -5200,7 +5234,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................     
 ....................    can_set_mode(curmode); 
 014CA:  MOV.B   800,W0L
-014CC:  MOV.B   W0L,87E
+014CC:  MOV.B   W0L,88C
 014CE:  CALL    1308
 014D2:  MOV     [--W15],W6
 014D4:  MOV     [--W15],W5
@@ -5357,7 +5391,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 .................... { 
 ....................    if (size==4) 
 *
-01360:  MOV     86C,W4
+01360:  MOV     87A,W4
 01362:  CP.B    W4L,#4
 01364:  BRA     NZ,1376
 ....................       C1FCTRL.dmabs=0; 
@@ -5369,7 +5403,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01370:  MOV.B   W0L,407
 01372:  GOTO    13F0
 ....................    else if (size==6) 
-01376:  MOV     86C,W4
+01376:  MOV     87A,W4
 01378:  CP.B    W4L,#6
 0137A:  BRA     NZ,138C
 ....................       C1FCTRL.dmabs=1; 
@@ -5381,7 +5415,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01386:  MOV.B   W0L,407
 01388:  GOTO    13F0
 ....................    else if (size==8) 
-0138C:  MOV     86C,W4
+0138C:  MOV     87A,W4
 0138E:  CP.B    W4L,#8
 01390:  BRA     NZ,13A2
 ....................       C1FCTRL.dmabs=2; 
@@ -5393,7 +5427,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 0139C:  MOV.B   W0L,407
 0139E:  GOTO    13F0
 ....................    else if (size==12) 
-013A2:  MOV     86C,W4
+013A2:  MOV     87A,W4
 013A4:  CP.B    W4L,#C
 013A6:  BRA     NZ,13B8
 ....................       C1FCTRL.dmabs=3; 
@@ -5405,7 +5439,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 013B2:  MOV.B   W0L,407
 013B4:  GOTO    13F0
 ....................    else if (size==16) 
-013B8:  MOV     86C,W4
+013B8:  MOV     87A,W4
 013BA:  CP.B    W4L,#10
 013BC:  BRA     NZ,13CE
 ....................       C1FCTRL.dmabs=4; 
@@ -5417,7 +5451,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 013C8:  MOV.B   W0L,407
 013CA:  GOTO    13F0
 ....................    else if (size==24) 
-013CE:  MOV     86C,W4
+013CE:  MOV     87A,W4
 013D0:  CP.B    W4L,#18
 013D2:  BRA     NZ,13E4
 ....................       C1FCTRL.dmabs=5; 
@@ -5493,22 +5527,22 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................  
 ....................    can_set_mode(CAN_OP_CONFIG); 
 0163E:  MOV.B   #4,W0L
-01640:  MOV.B   W0L,87E
+01640:  MOV.B   W0L,88C
 01642:  CALL    1308
 ....................  
 ....................    ptr = &C1FEN1; 
 01646:  MOV     #414,W4
-01648:  MOV     W4,86E
+01648:  MOV     W4,87C
 ....................  
 ....................    *ptr|=filter; 
-0164A:  MOV     86E,W5
+0164A:  MOV     87C,W5
 0164C:  MOV     [W5],W0
-0164E:  IOR     86C,W0
+0164E:  IOR     87A,W0
 01650:  MOV     W0,[W5]
 ....................  
 ....................    can_set_mode(curmode); 
 01652:  MOV.B   800,W0L
-01654:  MOV.B   W0L,87E
+01654:  MOV.B   W0L,88C
 01656:  CALL    1308
 0165A:  MOV     [--W15],W5
 0165C:  RETURN  
@@ -5616,14 +5650,14 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................  
 ....................    can_set_mode(CAN_OP_CONFIG); 
 014E4:  MOV.B   #4,W0L
-014E6:  MOV.B   W0L,87E
+014E6:  MOV.B   W0L,88C
 014E8:  CALL    1308
 ....................     
 ....................    C1CTRL1.win=1; 
 014EC:  BSET.B  400.0
 ....................     
 ....................    switch(filter) 
-014EE:  MOV.B   86D,W0L
+014EE:  MOV.B   87B,W0L
 014F0:  CLR.B   1
 014F2:  XOR     #0,W0
 014F4:  BRA     Z,1534
@@ -5663,7 +5697,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT1.f0bp=buffer; 
 01534:  MOV     #FFF0,W0
 01536:  AND.B   420
-01538:  MOV.B   86C,W0L
+01538:  MOV.B   87A,W0L
 0153A:  AND     #F,W0
 0153C:  IOR.B   420
 ....................          break; 
@@ -5672,7 +5706,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT1.f1bp=buffer; 
 01542:  MOV     #FF0F,W0
 01544:  AND.B   420
-01546:  MOV.B   86C,W0L
+01546:  MOV.B   87A,W0L
 01548:  AND     #F,W0
 0154A:  SL      W0,#4,W0
 0154C:  IOR.B   420
@@ -5682,7 +5716,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT1.f2bp=buffer; 
 01552:  MOV     #FFF0,W0
 01554:  AND.B   421
-01556:  MOV.B   86C,W0L
+01556:  MOV.B   87A,W0L
 01558:  AND     #F,W0
 0155A:  IOR.B   421
 ....................          break; 
@@ -5691,7 +5725,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT1.f3bp=buffer; 
 01560:  MOV     #FF0F,W0
 01562:  AND.B   421
-01564:  MOV.B   86C,W0L
+01564:  MOV.B   87A,W0L
 01566:  AND     #F,W0
 01568:  SL      W0,#4,W0
 0156A:  IOR.B   421
@@ -5701,7 +5735,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT2.f4bp=buffer; 
 01570:  MOV     #FFF0,W0
 01572:  AND.B   422
-01574:  MOV.B   86C,W0L
+01574:  MOV.B   87A,W0L
 01576:  AND     #F,W0
 01578:  IOR.B   422
 ....................          break; 
@@ -5710,7 +5744,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT2.f5bp=buffer; 
 0157E:  MOV     #FF0F,W0
 01580:  AND.B   422
-01582:  MOV.B   86C,W0L
+01582:  MOV.B   87A,W0L
 01584:  AND     #F,W0
 01586:  SL      W0,#4,W0
 01588:  IOR.B   422
@@ -5720,7 +5754,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT2.f6bp=buffer; 
 0158E:  MOV     #FFF0,W0
 01590:  AND.B   423
-01592:  MOV.B   86C,W0L
+01592:  MOV.B   87A,W0L
 01594:  AND     #F,W0
 01596:  IOR.B   423
 ....................          break; 
@@ -5729,7 +5763,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT2.f7bp=buffer; 
 0159C:  MOV     #FF0F,W0
 0159E:  AND.B   423
-015A0:  MOV.B   86C,W0L
+015A0:  MOV.B   87A,W0L
 015A2:  AND     #F,W0
 015A4:  SL      W0,#4,W0
 015A6:  IOR.B   423
@@ -5739,7 +5773,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT3.f8bp=buffer; 
 015AC:  MOV     #FFF0,W0
 015AE:  AND.B   424
-015B0:  MOV.B   86C,W0L
+015B0:  MOV.B   87A,W0L
 015B2:  AND     #F,W0
 015B4:  IOR.B   424
 ....................          break; 
@@ -5748,7 +5782,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT3.f9bp=buffer; 
 015BA:  MOV     #FF0F,W0
 015BC:  AND.B   424
-015BE:  MOV.B   86C,W0L
+015BE:  MOV.B   87A,W0L
 015C0:  AND     #F,W0
 015C2:  SL      W0,#4,W0
 015C4:  IOR.B   424
@@ -5758,7 +5792,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT3.f10bp=buffer; 
 015CA:  MOV     #FFF0,W0
 015CC:  AND.B   425
-015CE:  MOV.B   86C,W0L
+015CE:  MOV.B   87A,W0L
 015D0:  AND     #F,W0
 015D2:  IOR.B   425
 ....................          break; 
@@ -5767,7 +5801,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT3.f11bp=buffer; 
 015D8:  MOV     #FF0F,W0
 015DA:  AND.B   425
-015DC:  MOV.B   86C,W0L
+015DC:  MOV.B   87A,W0L
 015DE:  AND     #F,W0
 015E0:  SL      W0,#4,W0
 015E2:  IOR.B   425
@@ -5777,7 +5811,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT4.f12bp=buffer; 
 015E8:  MOV     #FFF0,W0
 015EA:  AND.B   426
-015EC:  MOV.B   86C,W0L
+015EC:  MOV.B   87A,W0L
 015EE:  AND     #F,W0
 015F0:  IOR.B   426
 ....................          break; 
@@ -5786,7 +5820,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT4.f13bp=buffer; 
 015F6:  MOV     #FF0F,W0
 015F8:  AND.B   426
-015FA:  MOV.B   86C,W0L
+015FA:  MOV.B   87A,W0L
 015FC:  AND     #F,W0
 015FE:  SL      W0,#4,W0
 01600:  IOR.B   426
@@ -5796,7 +5830,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT4.f14bp=buffer; 
 01606:  MOV     #FFF0,W0
 01608:  AND.B   427
-0160A:  MOV.B   86C,W0L
+0160A:  MOV.B   87A,W0L
 0160C:  AND     #F,W0
 0160E:  IOR.B   427
 ....................          break; 
@@ -5805,7 +5839,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1BUFPNT4.f15bp=buffer; 
 01614:  MOV     #FF0F,W0
 01616:  AND.B   427
-01618:  MOV.B   86C,W0L
+01618:  MOV.B   87A,W0L
 0161A:  AND     #F,W0
 0161C:  SL      W0,#4,W0
 0161E:  IOR.B   427
@@ -5817,7 +5851,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................     
 ....................    can_set_mode(curmode); 
 01626:  MOV.B   800,W0L
-01628:  MOV.B   W0L,87E
+01628:  MOV.B   W0L,88C
 0162A:  CALL    1308
 0162E:  RETURN  
 .................... } 
@@ -6080,7 +6114,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 019E2:  BTSC.B  430.2
 019E4:  BRA     19EC
 ....................       port=0; 
-019E6:  CLR     87E
+019E6:  CLR     88C
 019E8:  GOTO    1A7C
 ....................    else if (C1TR01CON.txenn && !C1TR01CON.txreqn && !C1TR01CON.rtrenn) 
 019EC:  BTSS.B  431.7
@@ -6091,7 +6125,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 019F6:  BRA     1A00
 ....................       port=1; 
 019F8:  MOV     #1,W4
-019FA:  MOV     W4,87E
+019FA:  MOV     W4,88C
 019FC:  GOTO    1A7C
 ....................    else if (C1TR23CON.txenm && !C1TR23CON.txreqm && !C1TR23CON.rtrenm) 
 01A00:  BTSS.B  432.7
@@ -6102,7 +6136,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01A0A:  BRA     1A14
 ....................       port=2; 
 01A0C:  MOV     #2,W4
-01A0E:  MOV     W4,87E
+01A0E:  MOV     W4,88C
 01A10:  GOTO    1A7C
 ....................    else if (C1TR23CON.txenn && !C1TR23CON.txreqn && !C1TR23CON.rtrenn) 
 01A14:  BTSS.B  433.7
@@ -6113,7 +6147,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01A1E:  BRA     1A28
 ....................       port=3; 
 01A20:  MOV     #3,W4
-01A22:  MOV     W4,87E
+01A22:  MOV     W4,88C
 01A24:  GOTO    1A7C
 ....................    else if (C1TR45CON.txenm && !C1TR45CON.txreqm && !C1TR45CON.rtrenm) 
 01A28:  BTSS.B  434.7
@@ -6124,7 +6158,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01A32:  BRA     1A3C
 ....................       port=4; 
 01A34:  MOV     #4,W4
-01A36:  MOV     W4,87E
+01A36:  MOV     W4,88C
 01A38:  GOTO    1A7C
 ....................    else if (C1TR45CON.txenn && !C1TR45CON.txreqn && !C1TR45CON.rtrenn) 
 01A3C:  BTSS.B  435.7
@@ -6135,7 +6169,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01A46:  BRA     1A50
 ....................       port=5; 
 01A48:  MOV     #5,W4
-01A4A:  MOV     W4,87E
+01A4A:  MOV     W4,88C
 01A4C:  GOTO    1A7C
 ....................    else if (C1TR67CON.txenm && !C1TR67CON.txreqm && !C1TR67CON.rtrenm) 
 01A50:  BTSS.B  436.7
@@ -6146,7 +6180,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01A5A:  BRA     1A64
 ....................       port=6; 
 01A5C:  MOV     #6,W4
-01A5E:  MOV     W4,87E
+01A5E:  MOV     W4,88C
 01A60:  GOTO    1A7C
 ....................    else if (C1TR67CON.txenn && !C1TR67CON.txreqn && !C1TR67CON.rtrenn) 
 01A64:  BTSS.B  437.7
@@ -6157,7 +6191,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01A6E:  BRA     1A78
 ....................       port=7; 
 01A70:  MOV     #7,W4
-01A72:  MOV     W4,87E
+01A72:  MOV     W4,88C
 01A74:  GOTO    1A7C
 ....................    else { 
 ....................       #if CAN_DO_DEBUG 
@@ -6170,39 +6204,39 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................     
 ....................    // load data into correct buffer 
 ....................    if(ext) 
-01A7C:  CP0.B   878
+01A7C:  CP0.B   886
 01A7E:  BRA     Z,1B1A
 ....................    { 
 ....................       temp=(((id & 0x1FFC0000) >> 16) | (((uint16_t)rtr << 1) | (uint16_t)ext)) & 0x1FFF; 
 01A80:  CLR     W5
 01A82:  MOV     #1FFC,W0
-01A84:  AND     872,W0
+01A84:  AND     880,W0
 01A86:  MOV     W0,W6
 01A88:  MOV     W6,W5
 01A8A:  MOV     #0,W6
-01A8C:  MOV.B   879,W0L
+01A8C:  MOV.B   887,W0L
 01A8E:  MOV.B   W0L,W7L
 01A90:  CLR.B   F
 01A92:  SL      W7,#1,W7
-01A94:  MOV.B   878,W0L
+01A94:  MOV.B   886,W0L
 01A96:  CLR.B   1
 01A98:  IOR      W7,  W0,W0
 01A9A:  IOR      W5,  W0,W5
 01A9C:  MOV     #1FFF,W0
 01A9E:  AND     W0,W5,W0
-01AA0:  MOV     W0,880
+01AA0:  MOV     W0,88E
 ....................       ecan1_message_buffer[port][0]=temp; 
-01AA2:  MOV     87E,W5
+01AA2:  MOV     88C,W5
 01AA4:  SL      W5,#4,W5
 01AA6:  MOV     #2000,W4
 01AA8:  ADD     W5,W4,W6
-01AAA:  MOV     880,W4
+01AAA:  MOV     88E,W4
 01AAC:  MOV     W4,[W6+#0]
 ....................       temp=((id & 0x3FFC0) >> 6) & 0x0FFF; 
 01AAE:  MOV     #FFC0,W0
-01AB0:  AND     870,W0
+01AB0:  AND     87E,W0
 01AB2:  MOV     W0,W5
-01AB4:  MOV     872,W0
+01AB4:  MOV     880,W0
 01AB6:  AND     W0,#3,W6
 01AB8:  MOV     #6,W4
 01ABA:  INC     W4,W4
@@ -6213,18 +6247,18 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01AC4:  BRA     1ABC
 01AC6:  MOV     #FFF,W0
 01AC8:  AND     W0,W5,W0
-01ACA:  MOV     W0,880
+01ACA:  MOV     W0,88E
 ....................       ecan1_message_buffer[port][1]=temp; 
-01ACC:  MOV     87E,W5
+01ACC:  MOV     88C,W5
 01ACE:  SL      W5,#4,W5
 01AD0:  ADD     W5,#2,W5
 01AD2:  MOV     W5,W0
 01AD4:  MOV     #2000,W4
 01AD6:  ADD     W0,W4,W5
-01AD8:  MOV     880,W4
+01AD8:  MOV     88E,W4
 01ADA:  MOV     W4,[W5+#0]
 ....................       temp=(((id & 0x3F) << 10) | (((uint16_t)rtr << 9) | (uint16_t)len)) & 0xFF1F; 
-01ADC:  MOV     870,W5
+01ADC:  MOV     87E,W5
 01ADE:  AND     #3F,W5
 01AE0:  CLR     W6
 01AE2:  MOV     #A,W4
@@ -6234,25 +6268,25 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01AEA:  SL      W5,W5
 01AEC:  RLC     W6,W6
 01AEE:  BRA     1AE6
-01AF0:  MOV.B   879,W0L
+01AF0:  MOV.B   887,W0L
 01AF2:  MOV.B   W0L,W7L
 01AF4:  CLR.B   F
 01AF6:  SL      W7,#9,W7
-01AF8:  MOV.B   876,W0L
+01AF8:  MOV.B   884,W0L
 01AFA:  CLR.B   1
 01AFC:  IOR      W7,  W0,W0
 01AFE:  IOR      W5,  W0,W5
 01B00:  MOV     #FF1F,W0
 01B02:  AND     W0,W5,W0
-01B04:  MOV     W0,880
+01B04:  MOV     W0,88E
 ....................       ecan1_message_buffer[port][2]=temp; 
-01B06:  MOV     87E,W5
+01B06:  MOV     88C,W5
 01B08:  SL      W5,#4,W5
 01B0A:  ADD     W5,#4,W5
 01B0C:  MOV     W5,W0
 01B0E:  MOV     #2000,W4
 01B10:  ADD     W0,W4,W5
-01B12:  MOV     880,W4
+01B12:  MOV     88E,W4
 01B14:  MOV     W4,[W5+#0]
 ....................    } 
 01B16:  GOTO    1B88
@@ -6260,7 +6294,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................    {   
 ....................       temp=(((id & 0x7FF) << 2) | (((uint16_t)rtr << 1) | (uint16_t)ext)) & 0x1FFF; 
 01B1A:  MOV     #7FF,W0
-01B1C:  AND     870,W0
+01B1C:  AND     87E,W0
 01B1E:  MOV     W0,W5
 01B20:  CLR     W6
 01B22:  MOV     #2,W4
@@ -6270,26 +6304,26 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01B2A:  SL      W5,W5
 01B2C:  RLC     W6,W6
 01B2E:  BRA     1B26
-01B30:  MOV.B   879,W0L
+01B30:  MOV.B   887,W0L
 01B32:  MOV.B   W0L,W7L
 01B34:  CLR.B   F
 01B36:  SL      W7,#1,W7
-01B38:  MOV.B   878,W0L
+01B38:  MOV.B   886,W0L
 01B3A:  CLR.B   1
 01B3C:  IOR      W7,  W0,W0
 01B3E:  IOR      W5,  W0,W5
 01B40:  MOV     #1FFF,W0
 01B42:  AND     W0,W5,W0
-01B44:  MOV     W0,880
+01B44:  MOV     W0,88E
 ....................       ecan1_message_buffer[port][0]=temp; 
-01B46:  MOV     87E,W5
+01B46:  MOV     88C,W5
 01B48:  SL      W5,#4,W5
 01B4A:  MOV     #2000,W4
 01B4C:  ADD     W5,W4,W6
-01B4E:  MOV     880,W4
+01B4E:  MOV     88E,W4
 01B50:  MOV     W4,[W6+#0]
 ....................       ecan1_message_buffer[port][1]=0x0000; 
-01B52:  MOV     87E,W5
+01B52:  MOV     88C,W5
 01B54:  SL      W5,#4,W5
 01B56:  ADD     W5,#2,W5
 01B58:  MOV     W5,W0
@@ -6299,55 +6333,55 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01B60:  MOV.B   #0,W0L
 01B62:  MOV.B   W0L,[W5+#1]
 ....................       temp=(((uint16_t)rtr << 9) | (uint16_t)len) & 0xFF1F; 
-01B64:  MOV.B   879,W0L
+01B64:  MOV.B   887,W0L
 01B66:  MOV.B   W0L,W5L
 01B68:  CLR.B   B
 01B6A:  SL      W5,#9,W5
-01B6C:  MOV.B   876,W0L
+01B6C:  MOV.B   884,W0L
 01B6E:  CLR.B   1
 01B70:  IOR      W5,  W0,W5
 01B72:  MOV     #FF1F,W0
 01B74:  AND     W0,W5,W0
-01B76:  MOV     W0,880
+01B76:  MOV     W0,88E
 ....................       ecan1_message_buffer[port][2]=temp; 
-01B78:  MOV     87E,W5
+01B78:  MOV     88C,W5
 01B7A:  SL      W5,#4,W5
 01B7C:  ADD     W5,#4,W5
 01B7E:  MOV     W5,W0
 01B80:  MOV     #2000,W4
 01B82:  ADD     W0,W4,W5
-01B84:  MOV     880,W4
+01B84:  MOV     88E,W4
 01B86:  MOV     W4,[W5+#0]
 ....................    } 
 ....................     
 ....................    ptr=&ecan1_message_buffer[port][3]; 
-01B88:  MOV     87E,W5
+01B88:  MOV     88C,W5
 01B8A:  SL      W5,#4,W5
 01B8C:  ADD     W5,#6,W5
 01B8E:  MOV     W5,W0
 01B90:  MOV     #2000,W4
 01B92:  ADD     W0,W4,W0
-01B94:  MOV     W0,87A
+01B94:  MOV     W0,888
 ....................    for(i=0;i<len;i+=2) 
-01B96:  CLR     87C
-01B98:  MOV     87C,W0
-01B9A:  MOV     876,W4
+01B96:  CLR     88A
+01B98:  MOV     88A,W0
+01B9A:  MOV     884,W4
 01B9C:  CLR.B   9
 01B9E:  CP      W4,W0
 01BA0:  BRA     LEU,1BE6
 ....................    { 
 ....................       if (i+1==len) 
-01BA2:  MOV     87C,W4
+01BA2:  MOV     88A,W4
 01BA4:  ADD     W4,#1,W4
 01BA6:  MOV     W4,W5
-01BA8:  MOV     876,W4
+01BA8:  MOV     884,W4
 01BAA:  CLR.B   9
 01BAC:  CP      W4,W5
 01BAE:  BRA     NZ,1BC2
 ....................          *ptr=make16(0,data[i]); 
-01BB0:  MOV     87A,W5
-01BB2:  MOV     87C,W0
-01BB4:  ADD     874,W0
+01BB0:  MOV     888,W5
+01BB2:  MOV     88A,W0
+01BB4:  ADD     882,W0
 01BB6:  MOV.B   [W0],W6L
 01BB8:  MOV.B   W6L,[W5]
 01BBA:  MOV.B   #0,W0L
@@ -6355,28 +6389,28 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01BBE:  GOTO    1BDA
 ....................       else 
 ....................          *ptr=make16(data[i+1],data[i]); 
-01BC2:  MOV     87A,W5
-01BC4:  MOV     87C,W4
+01BC2:  MOV     888,W5
+01BC4:  MOV     88A,W4
 01BC6:  ADD     W4,#1,W4
 01BC8:  MOV     W4,W6
 01BCA:  MOV     W6,W0
-01BCC:  ADD     874,W0
+01BCC:  ADD     882,W0
 01BCE:  MOV.B   [W0],W7L
-01BD0:  MOV     87C,W0
-01BD2:  ADD     874,W0
+01BD0:  MOV     88A,W0
+01BD2:  ADD     882,W0
 01BD4:  MOV.B   [W0],W8L
 01BD6:  MOV.B   W8L,[W5]
 01BD8:  MOV.B   W7L,[W5+#1]
 ....................       ptr++; 
-01BDA:  INC2    087A
-01BDC:  MOV     87C,W4
+01BDA:  INC2    0888
+01BDC:  MOV     88A,W4
 01BDE:  ADD     W4,#2,W4
-01BE0:  MOV     W4,87C
+01BE0:  MOV     W4,88A
 01BE2:  GOTO    1B98
 ....................    } 
 ....................     
 ....................    switch(port) 
-01BE6:  MOV     87E,W0
+01BE6:  MOV     88C,W0
 01BE8:  XOR     #0,W0
 01BEA:  BRA     Z,1C0A
 01BEC:  XOR     #1,W0
@@ -6399,7 +6433,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1TR01CON.txmpri=priority;          //set priority DMA buffer 0 
 01C0A:  MOV     #FFFC,W0
 01C0C:  AND.B   430
-01C0E:  MOV.B   877,W0L
+01C0E:  MOV.B   885,W0L
 01C10:  AND     #3,W0
 01C12:  IOR.B   430
 ....................          C1TR01CON.txreqm=1;                 //enable transmission buffer 0 
@@ -6410,7 +6444,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1TR01CON.txnpri=priority;          //set priority DMA buffer 1 
 01C1A:  MOV     #FFFC,W0
 01C1C:  AND.B   431
-01C1E:  MOV.B   877,W0L
+01C1E:  MOV.B   885,W0L
 01C20:  AND     #3,W0
 01C22:  IOR.B   431
 ....................          C1TR01CON.txreqn=1;                 //enable transmission buffer 1 
@@ -6421,7 +6455,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1TR23CON.txmpri=priority;          //set priority DMA buffer 2 
 01C2A:  MOV     #FFFC,W0
 01C2C:  AND.B   432
-01C2E:  MOV.B   877,W0L
+01C2E:  MOV.B   885,W0L
 01C30:  AND     #3,W0
 01C32:  IOR.B   432
 ....................          C1TR23CON.txreqm=1;                 //enable transmission buffer 2 
@@ -6432,7 +6466,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1TR23CON.txnpri=priority;          //set priority DMA buffer 3 
 01C3A:  MOV     #FFFC,W0
 01C3C:  AND.B   433
-01C3E:  MOV.B   877,W0L
+01C3E:  MOV.B   885,W0L
 01C40:  AND     #3,W0
 01C42:  IOR.B   433
 ....................          C1TR23CON.txreqn=1;                 //enable transmission buffer 3 
@@ -6443,7 +6477,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1TR45CON.txmpri=priority;          //set priority DMA buffer 4 
 01C4A:  MOV     #FFFC,W0
 01C4C:  AND.B   434
-01C4E:  MOV.B   877,W0L
+01C4E:  MOV.B   885,W0L
 01C50:  AND     #3,W0
 01C52:  IOR.B   434
 ....................          C1TR45CON.txreqm=1;                 //enable transmission buffer 4 
@@ -6454,7 +6488,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1TR45CON.txnpri=priority;          //set priority DMA buffer 5 
 01C5A:  MOV     #FFFC,W0
 01C5C:  AND.B   435
-01C5E:  MOV.B   877,W0L
+01C5E:  MOV.B   885,W0L
 01C60:  AND     #3,W0
 01C62:  IOR.B   435
 ....................          C1TR45CON.txreqn=1;                 //enable transmission buffer 5 
@@ -6465,7 +6499,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1TR67CON.txmpri=priority;          //set priority DMA buffer 6 
 01C6A:  MOV     #FFFC,W0
 01C6C:  AND.B   436
-01C6E:  MOV.B   877,W0L
+01C6E:  MOV.B   885,W0L
 01C70:  AND     #3,W0
 01C72:  IOR.B   436
 ....................          C1TR67CON.txreqm=1;                 //enable transmission buffer 6 
@@ -6476,7 +6510,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................          C1TR67CON.txnpri=priority;          //set priority DMA buffer 7 
 01C7A:  MOV     #FFFC,W0
 01C7C:  AND.B   437
-01C7E:  MOV.B   877,W0L
+01C7E:  MOV.B   885,W0L
 01C80:  AND     #3,W0
 01C82:  IOR.B   437
 ....................          C1TR67CON.txreqn=1;                 //enable transmission buffer 7 
@@ -7144,33 +7178,33 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01084:  SL      W0,#4,W5
 01086:  MOV     #2000,W4
 01088:  ADD     W5,W4,W0
-0108A:  MOV     W0,8D4
+0108A:  MOV     W0,8E2
 ....................    stat.ext=(*ptr & 0x1); 
-0108C:  MOV     8D4,W0
+0108C:  MOV     8E2,W0
 0108E:  MOV     [W0],W5
 01090:  AND     W5,#1,W0
 01092:  BCLR.B  85E.2
 01094:  BTSC.B  0.0
 01096:  BSET.B  85E.2
 ....................    temp=(*ptr & 0x1); 
-01098:  MOV     8D4,W0
+01098:  MOV     8E2,W0
 0109A:  MOV     [W0],W5
 0109C:  AND     W5,#1,W0
-0109E:  BCLR.B  8D6.0
+0109E:  BCLR.B  8E4.0
 010A0:  BTSC.B  0.0
-010A2:  BSET.B  8D6.0
+010A2:  BSET.B  8E4.0
 ....................       
 ....................    ptr+=2; 
-010A4:  MOV     8D4,W4
+010A4:  MOV     8E2,W4
 010A6:  ADD     W4,#4,W4
-010A8:  MOV     W4,8D4
+010A8:  MOV     W4,8E2
 ....................    len=(*ptr & 0xF); 
-010AA:  MOV     8D4,W0
+010AA:  MOV     8E2,W0
 010AC:  MOV     [W0],W5
 010AE:  AND.B   W5L,#F,W0L
 010B0:  MOV.B   W0L,857
 ....................    stat.rtr=((make8(*ptr,1) & 0x2) >> 1); 
-010B2:  MOV     8D4,W0
+010B2:  MOV     8E2,W0
 010B4:  MOV     [W0],W5
 010B6:  MOV.B   B,W0L
 010B8:  MOV.B   W0L,W0L
@@ -7182,11 +7216,11 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 010C4:  BSET.B  85E.1
 ....................     
 ....................    ptr+=5; 
-010C6:  MOV     8D4,W4
+010C6:  MOV     8E2,W4
 010C8:  ADD     W4,#A,W4
-010CA:  MOV     W4,8D4
+010CA:  MOV     W4,8E2
 ....................    stat.filthit=(make8(*ptr,1) & 0x1F); 
-010CC:  MOV     8D4,W0
+010CC:  MOV     8E2,W0
 010CE:  MOV     [W0],W5
 010D0:  MOV.B   B,W0L
 010D2:  MOV.B   W0L,W0L
@@ -7195,16 +7229,16 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................        
 ....................    id=can_get_id(stat.buffer,temp); 
 010D8:  CLR     W0
-010DA:  BTSC.B  8D6.0
+010DA:  BTSC.B  8E4.0
 010DC:  INC     W0,W0
 010DE:  MOV.B   W0L,W5L
 010E0:  MOV     W0,[W15++]
 010E2:  MOV.B   85D,W0L
-010E4:  MOV.B   W0L,8E6
+010E4:  MOV.B   W0L,8F4
 010E6:  MOV     [--W15],W0
-010E8:  PUSH    8E6
+010E8:  PUSH    8F4
 010EA:  MOV.B   W5L,[W15-#1]
-010EC:  POP     8E6
+010EC:  POP     8F4
 010EE:  CALL    D60
 010F2:  MOV     W0,860
 010F4:  MOV     W1,862
@@ -7217,25 +7251,25 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 010FE:  MOV     W5,W0
 01100:  MOV     #2000,W4
 01102:  ADD     W0,W4,W0
-01104:  MOV     W0,8D4
+01104:  MOV     W0,8E2
 ....................    for(i=0;i<len;i+=2) 
-01106:  CLR     8D2
+01106:  CLR     8E0
 01108:  MOV.B   857,W0L
 0110A:  CLR.B   1
-0110C:  MOV     8D2,W4
+0110C:  MOV     8E0,W4
 0110E:  CP      W4,W0
 01110:  BRA     C,1150
 ....................    { 
 ....................       data[i]=make8(*ptr,0); 
-01112:  MOV     8D2,W0
-01114:  ADD     8D0,W0
+01112:  MOV     8E0,W0
+01114:  ADD     8DE,W0
 01116:  MOV     W0,W5
-01118:  MOV     8D4,W0
+01118:  MOV     8E2,W0
 0111A:  MOV     [W0],W6
 0111C:  MOV.B   W6L,W0L
 0111E:  MOV.B   W0L,[W5]
 ....................       if (i+1!=len) 
-01120:  MOV     8D2,W4
+01120:  MOV     8E0,W4
 01122:  ADD     W4,#1,W4
 01124:  MOV     W4,W5
 01126:  MOV.B   857,W0L
@@ -7243,22 +7277,22 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 0112A:  CP      W0,W5
 0112C:  BRA     Z,1144
 ....................          data[i+1]=make8(*ptr,1); 
-0112E:  MOV     8D2,W4
+0112E:  MOV     8E0,W4
 01130:  ADD     W4,#1,W4
 01132:  MOV     W4,W5
 01134:  MOV     W5,W0
-01136:  ADD     8D0,W0
+01136:  ADD     8DE,W0
 01138:  MOV     W0,W6
-0113A:  MOV     8D4,W0
+0113A:  MOV     8E2,W0
 0113C:  MOV     [W0],W7
 0113E:  MOV.B   F,W0L
 01140:  MOV.B   W0L,W0L
 01142:  MOV.B   W0L,[W6]
 ....................       ptr++; 
-01144:  INC2    08D4
-01146:  MOV     8D2,W4
+01144:  INC2    08E2
+01146:  MOV     8E0,W4
 01148:  ADD     W4,#2,W4
-0114A:  MOV     W4,8D2
+0114A:  MOV     W4,8E0
 0114C:  GOTO    1108
 ....................    } 
 ....................     
@@ -7889,96 +7923,96 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 .................... uint32_t can_get_id(BUFFER buffer, int1 ext) 
 *
 00D60:  MOV     W5,[W15++]
-00D62:  CLR     8E8
-00D64:  CLR     8EA
+00D62:  CLR     8F6
+00D64:  CLR     8F8
 .................... { 
 ....................    uint32_t ret=0; 
 ....................    uint16_t *ptr; 
 ....................    uint16_t temp, temp1; 
 ....................     
 ....................    ptr=&ecan1_message_buffer[buffer][2]; 
-00D66:  MOV.B   8E6,W0L
+00D66:  MOV.B   8F4,W0L
 00D68:  CLR.B   1
 00D6A:  SL      W0,#4,W5
 00D6C:  ADD     W5,#4,W5
 00D6E:  MOV     W5,W0
 00D70:  MOV     #2000,W4
 00D72:  ADD     W0,W4,W0
-00D74:  MOV     W0,8EC
+00D74:  MOV     W0,8FA
 ....................        
 ....................    if (ext) 
-00D76:  CP0.B   8E7
+00D76:  CP0.B   8F5
 00D78:  BRA     Z,DC2
 ....................    { 
 ....................       //EID 
 ....................       temp=((*ptr & 0xFC00) >> 10)& 0x3F; 
-00D7A:  MOV     8EC,W0
+00D7A:  MOV     8FA,W0
 00D7C:  MOV     [W0],W5
 00D7E:  MOV     #FC00,W0
 00D80:  AND     W0,W5,W5
 00D82:  LSR     W5,#A,W5
 00D84:  MOV     W5,W4
 00D86:  AND     #3F,W4
-00D88:  MOV     W4,8EE
+00D88:  MOV     W4,8FC
 ....................        
 ....................       ptr-=1; 
-00D8A:  MOV     8EC,W4
+00D8A:  MOV     8FA,W4
 00D8C:  SUB     W4,#2,W0
-00D8E:  MOV     W0,8EC
+00D8E:  MOV     W0,8FA
 ....................       temp|=((*ptr & 0x3FF) << 6); 
-00D90:  MOV     8EC,W0
+00D90:  MOV     8FA,W0
 00D92:  MOV     [W0],W5
 00D94:  AND     #3FF,W5
 00D96:  SL      W5,#6,W0
-00D98:  IOR     8EE
+00D98:  IOR     8FC
 ....................       temp1=(*ptr&0xC00)>>10; 
-00D9A:  MOV     8EC,W0
+00D9A:  MOV     8FA,W0
 00D9C:  MOV     [W0],W5
 00D9E:  MOV     #C00,W0
 00DA0:  AND     W0,W5,W5
 00DA2:  LSR     W5,#A,W0
-00DA4:  MOV     W0,8F0
+00DA4:  MOV     W0,8FE
 ....................        
 ....................       //SID 
 ....................       ptr-=1; 
-00DA6:  MOV     8EC,W4
+00DA6:  MOV     8FA,W4
 00DA8:  SUB     W4,#2,W0
-00DAA:  MOV     W0,8EC
+00DAA:  MOV     W0,8FA
 ....................       temp1|=*ptr&0x1FFC; 
-00DAC:  MOV     8EC,W0
+00DAC:  MOV     8FA,W0
 00DAE:  MOV     [W0],W5
 00DB0:  MOV     #1FFC,W0
 00DB2:  AND     W0,W5,W0
-00DB4:  IOR     8F0
+00DB4:  IOR     8FE
 ....................       ret=make32(temp1,temp); 
-00DB6:  PUSH    8F0
-00DB8:  POP     8EA
-00DBA:  PUSH    8EE
-00DBC:  POP     8E8
+00DB6:  PUSH    8FE
+00DB8:  POP     8F8
+00DBA:  PUSH    8FC
+00DBC:  POP     8F6
 ....................    } 
 00DBE:  GOTO    DDA
 ....................    else  
 ....................    { 
 ....................       //SID 
 ....................       ptr-=2; 
-00DC2:  MOV     8EC,W4
+00DC2:  MOV     8FA,W4
 00DC4:  SUB     W4,#4,W0
-00DC6:  MOV     W0,8EC
+00DC6:  MOV     W0,8FA
 ....................       ret=((*ptr & 0x1FFC) >> 2) & 0x7FF; 
-00DC8:  MOV     8EC,W0
+00DC8:  MOV     8FA,W0
 00DCA:  MOV     [W0],W5
 00DCC:  MOV     #1FFC,W0
 00DCE:  AND     W0,W5,W5
 00DD0:  LSR     W5,#2,W5
 00DD2:  MOV     #7FF,W0
 00DD4:  AND     W0,W5,W0
-00DD6:  MOV     W0,8E8
-00DD8:  CLR     8EA
+00DD6:  MOV     W0,8F6
+00DD8:  CLR     8F8
 ....................    } 
 ....................     
 ....................    return(ret); 
-00DDA:  MOV     8E8,W0
-00DDC:  MOV     8EA,W1
+00DDA:  MOV     8F6,W0
+00DDC:  MOV     8F8,W1
 00DDE:  MOV     [--W15],W5
 00DE0:  RETURN  
 .................... } 
@@ -8035,7 +8069,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 .................... { 
 ....................    switch(b) 
 *
-017A0:  MOV.B   86C,W0L
+017A0:  MOV.B   87A,W0L
 017A2:  CLR.B   1
 017A4:  XOR     #0,W0
 017A6:  BRA     Z,17C6
@@ -10258,19 +10292,19 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................     
 ....................    ptr = &C1INTE; 
 01882:  MOV     #40C,W4
-01884:  MOV     W4,870
+01884:  MOV     W4,87E
 ....................     
 ....................   // temp=C1INTE; 
 ....................   // C1INTE=(temp | setting); 
 ....................    
 ....................   temp = *ptr; 
-01886:  MOV     870,W0
+01886:  MOV     87E,W0
 01888:  MOV     [W0],[W15++]
-0188A:  POP     86E
+0188A:  POP     87C
 ....................   *ptr = (temp | setting); 
-0188C:  MOV     870,W5
-0188E:  MOV     86E,W0
-01890:  IOR     86C,W0
+0188C:  MOV     87E,W5
+0188E:  MOV     87C,W0
+01890:  IOR     87A,W0
 01892:  MOV     W0,[W5]
 01894:  MOV     [--W15],W5
 01896:  RETURN  
@@ -10348,6 +10382,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................  
 .................... #PIN_SELECT C1RX=PIN_B14 
 .................... #PIN_SELECT C1TX=PIN_B15 
+....................  
 ....................  
 ....................  
 .................... //se definen las variables que se utilizan en el programa 
@@ -10434,7 +10469,7 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 ....................    { 
 ....................       can_getd(rx_id, &rx_buffer[0], rx_len, rxstat); //Returns specified message/request and ID for CAN1 
 00DF8:  MOV     #864,W4
-00DFA:  MOV     W4,8D0
+00DFA:  MOV     W4,8DE
 ....................       if(rx_id==0x80)    
 *
 012A2:  MOV     860,W4
@@ -10590,591 +10625,575 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 01D3A:  MOV     #1013,W4
 01D3C:  MOV     W4,824
 .................... { 
-....................    output_high(LED1); 
-01D3E:  BCLR.B  2C9.5
-01D40:  BSET.B  2CD.5
-....................    output_high(LED2); 
-01D42:  BCLR.B  2C9.4
-01D44:  BSET.B  2CD.4
+....................    while(1){ 
+....................       int vrot0 = input(ROT0); 
+....................       int vrot1 = input(ROT1); 
+....................       int vrot2 = input(ROT2); 
+....................       int vrot3 = input(ROT3); 
+....................       int slave = 15 - (vrot0+(2*vrot1)+(4*vrot2)+(8*vrot3));    
+01D3E:  BSET.B  2C8.3
+*
+01D78:  GOTO    1D3E
+....................       } 
+....................           
+....................         
+....................       
+....................       
+....................       
+....................           
+....................        
+....................        
 ....................    setup_timer2(TMR_INTERNAL| TMR_DIV_BY_1, 4999);   //TIMER2 OVERFLOW every 0,5us 
-01D46:  CLR     110
-01D48:  MOV     #1387,W4
-01D4A:  MOV     W4,10C
-01D4C:  MOV     #8000,W4
-01D4E:  MOV     W4,110
+01D7C:  CLR     110
+01D7E:  MOV     #1387,W4
+01D80:  MOV     W4,10C
+01D82:  MOV     #8000,W4
+01D84:  MOV     W4,110
 ....................  
 ....................    can_init(); 
-01D50:  CALL    165E
+01D86:  CALL    165E
 ....................  
 ....................    can_enable_b_transfer(TRB0);  //make buffer 0 a transmit buffer  //  
-01D54:  CLR.B   86C
-01D56:  CALL    17A0
+01D8A:  CLR.B   87A
+01D8C:  CALL    17A0
 ....................    can_enable_b_transfer(TRB1); 
-01D5A:  MOV.B   #1,W0L
-01D5C:  MOV.B   W0L,86C
-01D5E:  CALL    17A0
+01D90:  MOV.B   #1,W0L
+01D92:  MOV.B   W0L,87A
+01D94:  CALL    17A0
 ....................    can_enable_b_transfer(TRB2); 
-01D62:  MOV.B   #2,W0L
-01D64:  MOV.B   W0L,86C
-01D66:  CALL    17A0
+01D98:  MOV.B   #2,W0L
+01D9A:  MOV.B   W0L,87A
+01D9C:  CALL    17A0
 ....................    can_enable_b_transfer(TRB3); 
-01D6A:  MOV.B   #3,W0L
-01D6C:  MOV.B   W0L,86C
-01D6E:  CALL    17A0
+01DA0:  MOV.B   #3,W0L
+01DA2:  MOV.B   W0L,87A
+01DA4:  CALL    17A0
 ....................    can_enable_b_transfer(TRB4);  
-01D72:  MOV.B   #4,W0L
-01D74:  MOV.B   W0L,86C
-01D76:  CALL    17A0
+01DA8:  MOV.B   #4,W0L
+01DAA:  MOV.B   W0L,87A
+01DAC:  CALL    17A0
 ....................    can_enable_b_transfer(TRB5); 
-01D7A:  MOV.B   #5,W0L
-01D7C:  MOV.B   W0L,86C
-01D7E:  CALL    17A0
+01DB0:  MOV.B   #5,W0L
+01DB2:  MOV.B   W0L,87A
+01DB4:  CALL    17A0
 ....................    can_enable_b_transfer(TRB6);  
-01D82:  MOV.B   #6,W0L
-01D84:  MOV.B   W0L,86C
-01D86:  CALL    17A0
+01DB8:  MOV.B   #6,W0L
+01DBA:  MOV.B   W0L,87A
+01DBC:  CALL    17A0
 ....................    can_enable_b_transfer(TRB7); 
-01D8A:  MOV.B   #7,W0L
-01D8C:  MOV.B   W0L,86C
-01D8E:  CALL    17A0
+01DC0:  MOV.B   #7,W0L
+01DC2:  MOV.B   W0L,87A
+01DC4:  CALL    17A0
 ....................     
 ....................    can_enable_interrupts(RB); 
-01D92:  MOV.B   #2,W0L
-01D94:  MOV.B   W0L,86C
-01D96:  CALL    1880
+01DC8:  MOV.B   #2,W0L
+01DCA:  MOV.B   W0L,87A
+01DCC:  CALL    1880
 ....................    enable_interrupts(INT_CAN1); 
-01D9A:  BSET.B  98.3
+01DD0:  BSET.B  98.3
 ....................  
 ....................    enable_interrupts(INT_C1RX); 
-01D9C:  BSET.B  98.2
+01DD2:  BSET.B  98.2
 ....................    enable_interrupts(INT_CAN1); 
-01D9E:  BSET.B  98.3
+01DD4:  BSET.B  98.3
 ....................    enable_interrupts(INT_TIMER2); 
-01DA0:  BSET.B  94.7
+01DD6:  BSET.B  94.7
 ....................    enable_interrupts(INTR_GLOBAL); 
-01DA2:  BCLR.B  81.7
-01DA4:  CLR     42
-01DA6:  BSET.B  81.7
+01DD8:  BCLR.B  81.7
+01DDA:  CLR     42
+01DDC:  BSET.B  81.7
 ....................    output_low(LED1); 
-01DA8:  BCLR.B  2C9.5
-01DAA:  BCLR.B  2CD.5
+01DDE:  BCLR.B  2C9.5
+01DE0:  BCLR.B  2CD.5
 ....................     
 ....................    //ADC voltage conversions 
 ....................    START_ADC_VOLTAGES(); 
-01DAC:  CALL    18E0
+01DE2:  CALL    18E0
 ....................    tim=0; 
-01DB0:  CLR     858
-01DB2:  CLR     85A
+01DE6:  CLR     858
+01DE8:  CLR     85A
 ....................     
 ....................    //Temperature readings 
 ....................    ADC_LTC1296(&temp[0]); 
-01DB4:  MOV     #82C,W4
-01DB6:  MOV     W4,86C
-01DB8:  CALL    1922
+01DEA:  MOV     #82C,W4
+01DEC:  MOV     W4,87A
+01DEE:  CALL    1922
 ....................     
 ....................    for(i=0;i<8;i++) 
-01DBC:  CLR.B   802
-01DBE:  MOV.B   802,W0L
-01DC0:  SE      W0,W0
-01DC2:  CP      W0,#8
-01DC4:  BRA     GE,1DE6
+01DF2:  CLR.B   802
+01DF4:  MOV.B   802,W0L
+01DF6:  SE      W0,W0
+01DF8:  CP      W0,#8
+01DFA:  BRA     GE,1E1C
 ....................    { 
 ....................       temp_prev[i]=temp[i]; 
-01DC6:  MOV.B   802,W0L
-01DC8:  SE      W0,W0
-01DCA:  MOV     W0,W4
-01DCC:  MUL.UU  W4,#2,W0
-01DCE:  MOV     #83C,W4
-01DD0:  ADD     W0,W4,W5
-01DD2:  MOV.B   802,W0L
-01DD4:  SE      W0,W0
-01DD6:  MOV     W0,W4
-01DD8:  MUL.UU  W4,#2,W0
-01DDA:  MOV     #82C,W4
-01DDC:  ADD     W0,W4,W0
-01DDE:  MOV     [W0],[W5]
-01DE0:  INC.B   0802
-01DE2:  GOTO    1DBE
+01DFC:  MOV.B   802,W0L
+01DFE:  SE      W0,W0
+01E00:  MOV     W0,W4
+01E02:  MUL.UU  W4,#2,W0
+01E04:  MOV     #83C,W4
+01E06:  ADD     W0,W4,W5
+01E08:  MOV.B   802,W0L
+01E0A:  SE      W0,W0
+01E0C:  MOV     W0,W4
+01E0E:  MUL.UU  W4,#2,W0
+01E10:  MOV     #82C,W4
+01E12:  ADD     W0,W4,W0
+01E14:  MOV     [W0],[W5]
+01E16:  INC.B   0802
+01E18:  GOTO    1DF4
 ....................    } 
 ....................     
 ....................    while(tim<70) {}  //Waiting until conversions have been done 
-01DE6:  MOV     85A,W4
-01DE8:  CP      W4,#0
-01DEA:  BRA     GT,1DFA
-01DEC:  BRA     LT,1DF6
-01DEE:  MOV     858,W4
-01DF0:  MOV     #46,W3
-01DF2:  CP      W3,W4
-01DF4:  BRA     LEU,1DFA
-01DF6:  GOTO    1DE6
+01E1C:  MOV     85A,W4
+01E1E:  CP      W4,#0
+01E20:  BRA     GT,1E30
+01E22:  BRA     LT,1E2C
+01E24:  MOV     858,W4
+01E26:  MOV     #46,W3
+01E28:  CP      W3,W4
+01E2A:  BRA     LEU,1E30
+01E2C:  GOTO    1E1C
 ....................     
 ....................    //Voltage readings 
 ....................    READ_VOLTAGES (&voltaje[0], total, v_cell_min, v_cell_max); 
-01DFA:  MOV     #80E,W4
-01DFC:  MOV     W4,86C
-01DFE:  PUSH    828
-01E00:  POP     86E
-01E02:  PUSH    82A
-01E04:  POP     870
+01E30:  MOV     #80E,W4
+01E32:  MOV     W4,87A
+01E34:  PUSH    828
+01E36:  POP     87C
+01E38:  PUSH    82A
+01E3A:  POP     87E
 ....................   
 ....................    delay_ms(2000); 
 *
-0224E:  MOV     #7D0,W0
-02250:  CALL    19C2
+02284:  MOV     #7D0,W0
+02286:  CALL    19C2
 ....................    output_high(CS_LTC1296); 
-02254:  BCLR.B  2C0.4
-02256:  BSET.B  2C4.4
+0228A:  BCLR.B  2C0.4
+0228C:  BSET.B  2C4.4
 ....................    output_high(CS_LTC6811); 
-02258:  BCLR.B  2C0.0
-0225A:  BSET.B  2C4.0
+0228E:  BCLR.B  2C0.0
+02290:  BSET.B  2C4.0
 ....................    sync=0; 
-0225C:  CLR.B   80C
+02292:  CLR.B   80C
 ....................  
 ....................    while(true) 
 ....................    { 
 ....................  
 ....................       if(sync==1) 
-0225E:  MOV.B   80C,W0L
-02260:  SE      W0,W0
-02262:  CP      W0,#1
-02264:  BRA     NZ,2C1C
+02294:  MOV.B   80C,W0L
+02296:  SE      W0,W0
+02298:  CP      W0,#1
+0229A:  BRA     NZ,2C52
 ....................       { 
 ....................          output_high(LED1); 
-02266:  BCLR.B  2C9.5
-02268:  BSET.B  2CD.5
+0229C:  BCLR.B  2C9.5
+0229E:  BSET.B  2CD.5
 ....................          sync=0; 
-0226A:  CLR.B   80C
+022A0:  CLR.B   80C
 ....................          tim=0; 
-0226C:  CLR     858
-0226E:  CLR     85A
+022A2:  CLR     858
+022A4:  CLR     85A
 ....................           
 ....................          //CAN MANAGEMENT 
 ....................          a=0; 
-02270:  CLR.B   801
+022A6:  CLR.B   801
 ....................          for(i=0;i<8;i=i+2) 
-02272:  CLR.B   802
-02274:  MOV.B   802,W0L
-02276:  SE      W0,W0
-02278:  CP      W0,#8
-0227A:  BRA     GE,22C2
+022A8:  CLR.B   802
+022AA:  MOV.B   802,W0L
+022AC:  SE      W0,W0
+022AE:  CP      W0,#8
+022B0:  BRA     GE,22F8
 ....................          {  
 ....................             data_tosend[i]=voltaje[a]>>8; 
-0227C:  MOV.B   802,W0L
-0227E:  SE      W0,W0
-02280:  MOV     #804,W4
-02282:  ADD     W0,W4,W5
-02284:  MOV.B   801,W0L
-02286:  SE      W0,W0
-02288:  MOV     W0,W4
-0228A:  MUL.UU  W4,#2,W0
-0228C:  MOV     #80E,W4
-0228E:  ADD     W0,W4,W0
-02290:  MOV     [W0],W6
-02292:  CLR.B   1
-02294:  MOV.B   D,W0L
-02296:  MOV.B   W0L,W0L
-02298:  MOV.B   W0L,[W5]
+022B2:  MOV.B   802,W0L
+022B4:  SE      W0,W0
+022B6:  MOV     #804,W4
+022B8:  ADD     W0,W4,W5
+022BA:  MOV.B   801,W0L
+022BC:  SE      W0,W0
+022BE:  MOV     W0,W4
+022C0:  MUL.UU  W4,#2,W0
+022C2:  MOV     #80E,W4
+022C4:  ADD     W0,W4,W0
+022C6:  MOV     [W0],W6
+022C8:  CLR.B   1
+022CA:  MOV.B   D,W0L
+022CC:  MOV.B   W0L,W0L
+022CE:  MOV.B   W0L,[W5]
 ....................             data_tosend[i+1]=voltaje[a]; 
-0229A:  MOV.B   802,W0L
-0229C:  SE      W0,W0
-0229E:  ADD     W0,#1,W0
-022A0:  MOV     W0,W5
-022A2:  MOV     #804,W4
-022A4:  ADD     W5,W4,W6
-022A6:  MOV.B   801,W0L
-022A8:  SE      W0,W0
-022AA:  MOV     W0,W4
-022AC:  MUL.UU  W4,#2,W0
-022AE:  MOV     #80E,W4
-022B0:  ADD     W0,W4,W0
-022B2:  MOV.B   [W0],[W6]
+022D0:  MOV.B   802,W0L
+022D2:  SE      W0,W0
+022D4:  ADD     W0,#1,W0
+022D6:  MOV     W0,W5
+022D8:  MOV     #804,W4
+022DA:  ADD     W5,W4,W6
+022DC:  MOV.B   801,W0L
+022DE:  SE      W0,W0
+022E0:  MOV     W0,W4
+022E2:  MUL.UU  W4,#2,W0
+022E4:  MOV     #80E,W4
+022E6:  ADD     W0,W4,W0
+022E8:  MOV.B   [W0],[W6]
 ....................             a++; 
-022B4:  INC.B   0801
-022B6:  MOV.B   802,W0L
-022B8:  SE      W0,W0
-022BA:  ADD     W0,#2,W0
-022BC:  MOV.B   W0L,802
-022BE:  GOTO    2274
+022EA:  INC.B   0801
+022EC:  MOV.B   802,W0L
+022EE:  SE      W0,W0
+022F0:  ADD     W0,#2,W0
+022F2:  MOV.B   W0L,802
+022F4:  GOTO    22AA
 ....................          } 
 ....................          can_putd(0x82+slave*3,&data_tosend[0],8,0,0,0); 
-022C2:  MOV.B   85F,W0L
-022C4:  SE      W0,W0
-022C6:  MOV     W0,W4
-022C8:  MUL.UU  W4,#3,W0
-022CA:  MOV     #82,W4
-022CC:  ADD     W0,W4,W5
-022CE:  MOV     W0,[W15++]
-022D0:  MOV.B   #8,W0L
-022D2:  MOV.B   W0L,876
-022D4:  MOV     [--W15],W0
-022D6:  CLR.B   877
-022D8:  CLR.B   878
-022DA:  CLR.B   879
-022DC:  MOV     W5,870
-022DE:  CLR     W4
-022E0:  BTSC.B  871.7
-022E2:  SETM    W4
-022E4:  MOV     W4,872
-022E6:  MOV     #804,W4
-022E8:  MOV     W4,874
-022EA:  CALL    19D2
+022F8:  MOV.B   85F,W0L
+022FA:  SE      W0,W0
+022FC:  MOV     W0,W4
+022FE:  MUL.UU  W4,#3,W0
+02300:  MOV     #82,W4
+02302:  ADD     W0,W4,W5
+02304:  MOV     W0,[W15++]
+02306:  MOV.B   #8,W0L
+02308:  MOV.B   W0L,884
+0230A:  MOV     [--W15],W0
+0230C:  CLR.B   885
+0230E:  CLR.B   886
+02310:  CLR.B   887
+02312:  MOV     W5,87E
+02314:  CLR     W4
+02316:  BTSC.B  87F.7
+02318:  SETM    W4
+0231A:  MOV     W4,880
+0231C:  MOV     #804,W4
+0231E:  MOV     W4,882
+02320:  CALL    19D2
 ....................          for(i=0;i<8;i=i+2) 
-022EE:  CLR.B   802
-022F0:  MOV.B   802,W0L
-022F2:  SE      W0,W0
-022F4:  CP      W0,#8
-022F6:  BRA     GE,233E
+02324:  CLR.B   802
+02326:  MOV.B   802,W0L
+02328:  SE      W0,W0
+0232A:  CP      W0,#8
+0232C:  BRA     GE,2374
 ....................          { 
 ....................             data_tosend[i]=voltaje[a]>>8; 
-022F8:  MOV.B   802,W0L
-022FA:  SE      W0,W0
-022FC:  MOV     #804,W4
-022FE:  ADD     W0,W4,W5
-02300:  MOV.B   801,W0L
-02302:  SE      W0,W0
-02304:  MOV     W0,W4
-02306:  MUL.UU  W4,#2,W0
-02308:  MOV     #80E,W4
-0230A:  ADD     W0,W4,W0
-0230C:  MOV     [W0],W6
-0230E:  CLR.B   1
-02310:  MOV.B   D,W0L
-02312:  MOV.B   W0L,W0L
-02314:  MOV.B   W0L,[W5]
+0232E:  MOV.B   802,W0L
+02330:  SE      W0,W0
+02332:  MOV     #804,W4
+02334:  ADD     W0,W4,W5
+02336:  MOV.B   801,W0L
+02338:  SE      W0,W0
+0233A:  MOV     W0,W4
+0233C:  MUL.UU  W4,#2,W0
+0233E:  MOV     #80E,W4
+02340:  ADD     W0,W4,W0
+02342:  MOV     [W0],W6
+02344:  CLR.B   1
+02346:  MOV.B   D,W0L
+02348:  MOV.B   W0L,W0L
+0234A:  MOV.B   W0L,[W5]
 ....................             data_tosend[i+1]=voltaje[a]; 
-02316:  MOV.B   802,W0L
-02318:  SE      W0,W0
-0231A:  ADD     W0,#1,W0
-0231C:  MOV     W0,W5
-0231E:  MOV     #804,W4
-02320:  ADD     W5,W4,W6
-02322:  MOV.B   801,W0L
-02324:  SE      W0,W0
-02326:  MOV     W0,W4
-02328:  MUL.UU  W4,#2,W0
-0232A:  MOV     #80E,W4
-0232C:  ADD     W0,W4,W0
-0232E:  MOV.B   [W0],[W6]
+0234C:  MOV.B   802,W0L
+0234E:  SE      W0,W0
+02350:  ADD     W0,#1,W0
+02352:  MOV     W0,W5
+02354:  MOV     #804,W4
+02356:  ADD     W5,W4,W6
+02358:  MOV.B   801,W0L
+0235A:  SE      W0,W0
+0235C:  MOV     W0,W4
+0235E:  MUL.UU  W4,#2,W0
+02360:  MOV     #80E,W4
+02362:  ADD     W0,W4,W0
+02364:  MOV.B   [W0],[W6]
 ....................             a++; 
-02330:  INC.B   0801
-02332:  MOV.B   802,W0L
-02334:  SE      W0,W0
-02336:  ADD     W0,#2,W0
-02338:  MOV.B   W0L,802
-0233A:  GOTO    22F0
+02366:  INC.B   0801
+02368:  MOV.B   802,W0L
+0236A:  SE      W0,W0
+0236C:  ADD     W0,#2,W0
+0236E:  MOV.B   W0L,802
+02370:  GOTO    2326
 ....................          } 
 ....................          can_putd(0x83+slave*3,&data_tosend[0],8,0,0,0); 
-0233E:  MOV.B   85F,W0L
-02340:  SE      W0,W0
-02342:  MOV     W0,W4
-02344:  MUL.UU  W4,#3,W0
-02346:  MOV     #83,W4
-02348:  ADD     W0,W4,W5
-0234A:  MOV     W0,[W15++]
-0234C:  MOV.B   #8,W0L
-0234E:  MOV.B   W0L,876
-02350:  MOV     [--W15],W0
-02352:  CLR.B   877
-02354:  CLR.B   878
-02356:  CLR.B   879
-02358:  MOV     W5,870
-0235A:  CLR     W4
-0235C:  BTSC.B  871.7
-0235E:  SETM    W4
-02360:  MOV     W4,872
-02362:  MOV     #804,W4
-02364:  MOV     W4,874
-02366:  CALL    19D2
+02374:  MOV.B   85F,W0L
+02376:  SE      W0,W0
+02378:  MOV     W0,W4
+0237A:  MUL.UU  W4,#3,W0
+0237C:  MOV     #83,W4
+0237E:  ADD     W0,W4,W5
+02380:  MOV     W0,[W15++]
+02382:  MOV.B   #8,W0L
+02384:  MOV.B   W0L,884
+02386:  MOV     [--W15],W0
+02388:  CLR.B   885
+0238A:  CLR.B   886
+0238C:  CLR.B   887
+0238E:  MOV     W5,87E
+02390:  CLR     W4
+02392:  BTSC.B  87F.7
+02394:  SETM    W4
+02396:  MOV     W4,880
+02398:  MOV     #804,W4
+0239A:  MOV     W4,882
+0239C:  CALL    19D2
 ....................          if (slave!=1 && slave!=4 && slave!=7 && slave!=10 && slave!=13) 
-0236A:  MOV.B   85F,W0L
-0236C:  SE      W0,W0
-0236E:  CP      W0,#1
-02370:  BRA     Z,240E
-02372:  MOV.B   85F,W0L
-02374:  SE      W0,W0
-02376:  CP      W0,#4
-02378:  BRA     Z,240E
-0237A:  MOV.B   85F,W0L
-0237C:  SE      W0,W0
-0237E:  CP      W0,#7
-02380:  BRA     Z,240E
-02382:  MOV.B   85F,W0L
-02384:  SE      W0,W0
-02386:  CP      W0,#A
-02388:  BRA     Z,240E
-0238A:  MOV.B   85F,W0L
-0238C:  SE      W0,W0
-0238E:  CP      W0,#D
-02390:  BRA     Z,240E
+023A0:  MOV.B   85F,W0L
+023A2:  SE      W0,W0
+023A4:  CP      W0,#1
+023A6:  BRA     Z,2444
+023A8:  MOV.B   85F,W0L
+023AA:  SE      W0,W0
+023AC:  CP      W0,#4
+023AE:  BRA     Z,2444
+023B0:  MOV.B   85F,W0L
+023B2:  SE      W0,W0
+023B4:  CP      W0,#7
+023B6:  BRA     Z,2444
+023B8:  MOV.B   85F,W0L
+023BA:  SE      W0,W0
+023BC:  CP      W0,#A
+023BE:  BRA     Z,2444
+023C0:  MOV.B   85F,W0L
+023C2:  SE      W0,W0
+023C4:  CP      W0,#D
+023C6:  BRA     Z,2444
 ....................          { 
 ....................             for(i=0;i<4;i=i+2) 
-02392:  CLR.B   802
-02394:  MOV.B   802,W0L
-02396:  SE      W0,W0
-02398:  CP      W0,#4
-0239A:  BRA     GE,23E2
+023C8:  CLR.B   802
+023CA:  MOV.B   802,W0L
+023CC:  SE      W0,W0
+023CE:  CP      W0,#4
+023D0:  BRA     GE,2418
 ....................             { 
 ....................                data_tosend[i]=voltaje[a]>>8; 
-0239C:  MOV.B   802,W0L
-0239E:  SE      W0,W0
-023A0:  MOV     #804,W4
-023A2:  ADD     W0,W4,W5
-023A4:  MOV.B   801,W0L
-023A6:  SE      W0,W0
-023A8:  MOV     W0,W4
-023AA:  MUL.UU  W4,#2,W0
-023AC:  MOV     #80E,W4
-023AE:  ADD     W0,W4,W0
-023B0:  MOV     [W0],W6
-023B2:  CLR.B   1
-023B4:  MOV.B   D,W0L
-023B6:  MOV.B   W0L,W0L
-023B8:  MOV.B   W0L,[W5]
+023D2:  MOV.B   802,W0L
+023D4:  SE      W0,W0
+023D6:  MOV     #804,W4
+023D8:  ADD     W0,W4,W5
+023DA:  MOV.B   801,W0L
+023DC:  SE      W0,W0
+023DE:  MOV     W0,W4
+023E0:  MUL.UU  W4,#2,W0
+023E2:  MOV     #80E,W4
+023E4:  ADD     W0,W4,W0
+023E6:  MOV     [W0],W6
+023E8:  CLR.B   1
+023EA:  MOV.B   D,W0L
+023EC:  MOV.B   W0L,W0L
+023EE:  MOV.B   W0L,[W5]
 ....................                data_tosend[i+1]=voltaje[a]; 
-023BA:  MOV.B   802,W0L
-023BC:  SE      W0,W0
-023BE:  ADD     W0,#1,W0
-023C0:  MOV     W0,W5
-023C2:  MOV     #804,W4
-023C4:  ADD     W5,W4,W6
-023C6:  MOV.B   801,W0L
-023C8:  SE      W0,W0
-023CA:  MOV     W0,W4
-023CC:  MUL.UU  W4,#2,W0
-023CE:  MOV     #80E,W4
-023D0:  ADD     W0,W4,W0
-023D2:  MOV.B   [W0],[W6]
+023F0:  MOV.B   802,W0L
+023F2:  SE      W0,W0
+023F4:  ADD     W0,#1,W0
+023F6:  MOV     W0,W5
+023F8:  MOV     #804,W4
+023FA:  ADD     W5,W4,W6
+023FC:  MOV.B   801,W0L
+023FE:  SE      W0,W0
+02400:  MOV     W0,W4
+02402:  MUL.UU  W4,#2,W0
+02404:  MOV     #80E,W4
+02406:  ADD     W0,W4,W0
+02408:  MOV.B   [W0],[W6]
 ....................                a++; 
-023D4:  INC.B   0801
-023D6:  MOV.B   802,W0L
-023D8:  SE      W0,W0
-023DA:  ADD     W0,#2,W0
-023DC:  MOV.B   W0L,802
-023DE:  GOTO    2394
+0240A:  INC.B   0801
+0240C:  MOV.B   802,W0L
+0240E:  SE      W0,W0
+02410:  ADD     W0,#2,W0
+02412:  MOV.B   W0L,802
+02414:  GOTO    23CA
 ....................             } 
 ....................             can_putd(0x84+slave*3,&data_tosend[0],4,0,0,0); 
-023E2:  MOV.B   85F,W0L
-023E4:  SE      W0,W0
-023E6:  MOV     W0,W4
-023E8:  MUL.UU  W4,#3,W0
-023EA:  MOV     #84,W4
-023EC:  ADD     W0,W4,W5
-023EE:  MOV     W0,[W15++]
-023F0:  MOV.B   #4,W0L
-023F2:  MOV.B   W0L,876
-023F4:  MOV     [--W15],W0
-023F6:  CLR.B   877
-023F8:  CLR.B   878
-023FA:  CLR.B   879
-023FC:  MOV     W5,870
-023FE:  CLR     W4
-02400:  BTSC.B  871.7
-02402:  SETM    W4
-02404:  MOV     W4,872
-02406:  MOV     #804,W4
-02408:  MOV     W4,874
-0240A:  CALL    19D2
+02418:  MOV.B   85F,W0L
+0241A:  SE      W0,W0
+0241C:  MOV     W0,W4
+0241E:  MUL.UU  W4,#3,W0
+02420:  MOV     #84,W4
+02422:  ADD     W0,W4,W5
+02424:  MOV     W0,[W15++]
+02426:  MOV.B   #4,W0L
+02428:  MOV.B   W0L,884
+0242A:  MOV     [--W15],W0
+0242C:  CLR.B   885
+0242E:  CLR.B   886
+02430:  CLR.B   887
+02432:  MOV     W5,87E
+02434:  CLR     W4
+02436:  BTSC.B  87F.7
+02438:  SETM    W4
+0243A:  MOV     W4,880
+0243C:  MOV     #804,W4
+0243E:  MOV     W4,882
+02440:  CALL    19D2
 ....................          } 
 ....................           
 ....................          a=0; 
-0240E:  CLR.B   801
+02444:  CLR.B   801
 ....................          for(i=0;i<8;i=i+2) 
-02410:  CLR.B   802
-02412:  MOV.B   802,W0L
-02414:  SE      W0,W0
-02416:  CP      W0,#8
-02418:  BRA     GE,2460
+02446:  CLR.B   802
+02448:  MOV.B   802,W0L
+0244A:  SE      W0,W0
+0244C:  CP      W0,#8
+0244E:  BRA     GE,2496
 ....................          {  
 ....................             data_tosend[i]=temp[a]>>8; 
-0241A:  MOV.B   802,W0L
-0241C:  SE      W0,W0
-0241E:  MOV     #804,W4
-02420:  ADD     W0,W4,W5
-02422:  MOV.B   801,W0L
-02424:  SE      W0,W0
-02426:  MOV     W0,W4
-02428:  MUL.UU  W4,#2,W0
-0242A:  MOV     #82C,W4
-0242C:  ADD     W0,W4,W0
-0242E:  MOV     [W0],W6
-02430:  CLR.B   1
-02432:  MOV.B   D,W0L
-02434:  MOV.B   W0L,W0L
-02436:  MOV.B   W0L,[W5]
+02450:  MOV.B   802,W0L
+02452:  SE      W0,W0
+02454:  MOV     #804,W4
+02456:  ADD     W0,W4,W5
+02458:  MOV.B   801,W0L
+0245A:  SE      W0,W0
+0245C:  MOV     W0,W4
+0245E:  MUL.UU  W4,#2,W0
+02460:  MOV     #82C,W4
+02462:  ADD     W0,W4,W0
+02464:  MOV     [W0],W6
+02466:  CLR.B   1
+02468:  MOV.B   D,W0L
+0246A:  MOV.B   W0L,W0L
+0246C:  MOV.B   W0L,[W5]
 ....................             data_tosend[i+1]=temp[a]; 
-02438:  MOV.B   802,W0L
-0243A:  SE      W0,W0
-0243C:  ADD     W0,#1,W0
-0243E:  MOV     W0,W5
-02440:  MOV     #804,W4
-02442:  ADD     W5,W4,W6
-02444:  MOV.B   801,W0L
-02446:  SE      W0,W0
-02448:  MOV     W0,W4
-0244A:  MUL.UU  W4,#2,W0
-0244C:  MOV     #82C,W4
-0244E:  ADD     W0,W4,W0
-02450:  MOV.B   [W0],[W6]
+0246E:  MOV.B   802,W0L
+02470:  SE      W0,W0
+02472:  ADD     W0,#1,W0
+02474:  MOV     W0,W5
+02476:  MOV     #804,W4
+02478:  ADD     W5,W4,W6
+0247A:  MOV.B   801,W0L
+0247C:  SE      W0,W0
+0247E:  MOV     W0,W4
+02480:  MUL.UU  W4,#2,W0
+02482:  MOV     #82C,W4
+02484:  ADD     W0,W4,W0
+02486:  MOV.B   [W0],[W6]
 ....................             a++; 
-02452:  INC.B   0801
-02454:  MOV.B   802,W0L
-02456:  SE      W0,W0
-02458:  ADD     W0,#2,W0
-0245A:  MOV.B   W0L,802
-0245C:  GOTO    2412
+02488:  INC.B   0801
+0248A:  MOV.B   802,W0L
+0248C:  SE      W0,W0
+0248E:  ADD     W0,#2,W0
+02490:  MOV.B   W0L,802
+02492:  GOTO    2448
 ....................          } 
 ....................          can_putd((0xC0+slave*2),&data_tosend[0],8,0,0,0); 
-02460:  MOV.B   85F,W0L
-02462:  SE      W0,W0
-02464:  MOV     W0,W4
-02466:  MUL.UU  W4,#2,W0
-02468:  MOV     #C0,W4
-0246A:  ADD     W0,W4,W5
-0246C:  MOV     W0,[W15++]
-0246E:  MOV.B   #8,W0L
-02470:  MOV.B   W0L,876
-02472:  MOV     [--W15],W0
-02474:  CLR.B   877
-02476:  CLR.B   878
-02478:  CLR.B   879
-0247A:  MOV     W5,870
-0247C:  CLR     W4
-0247E:  BTSC.B  871.7
-02480:  SETM    W4
-02482:  MOV     W4,872
-02484:  MOV     #804,W4
-02486:  MOV     W4,874
-02488:  CALL    19D2
+02496:  MOV.B   85F,W0L
+02498:  SE      W0,W0
+0249A:  MOV     W0,W4
+0249C:  MUL.UU  W4,#2,W0
+0249E:  MOV     #C0,W4
+024A0:  ADD     W0,W4,W5
+024A2:  MOV     W0,[W15++]
+024A4:  MOV.B   #8,W0L
+024A6:  MOV.B   W0L,884
+024A8:  MOV     [--W15],W0
+024AA:  CLR.B   885
+024AC:  CLR.B   886
+024AE:  CLR.B   887
+024B0:  MOV     W5,87E
+024B2:  CLR     W4
+024B4:  BTSC.B  87F.7
+024B6:  SETM    W4
+024B8:  MOV     W4,880
+024BA:  MOV     #804,W4
+024BC:  MOV     W4,882
+024BE:  CALL    19D2
 ....................           
 ....................          for(i=0;i<8;i=i+2) 
-0248C:  CLR.B   802
-0248E:  MOV.B   802,W0L
-02490:  SE      W0,W0
-02492:  CP      W0,#8
-02494:  BRA     GE,24DC
+024C2:  CLR.B   802
+024C4:  MOV.B   802,W0L
+024C6:  SE      W0,W0
+024C8:  CP      W0,#8
+024CA:  BRA     GE,2512
 ....................          {  
 ....................             data_tosend[i]=temp[a]>>8; 
-02496:  MOV.B   802,W0L
-02498:  SE      W0,W0
-0249A:  MOV     #804,W4
-0249C:  ADD     W0,W4,W5
-0249E:  MOV.B   801,W0L
-024A0:  SE      W0,W0
-024A2:  MOV     W0,W4
-024A4:  MUL.UU  W4,#2,W0
-024A6:  MOV     #82C,W4
-024A8:  ADD     W0,W4,W0
-024AA:  MOV     [W0],W6
-024AC:  CLR.B   1
-024AE:  MOV.B   D,W0L
-024B0:  MOV.B   W0L,W0L
-024B2:  MOV.B   W0L,[W5]
+024CC:  MOV.B   802,W0L
+024CE:  SE      W0,W0
+024D0:  MOV     #804,W4
+024D2:  ADD     W0,W4,W5
+024D4:  MOV.B   801,W0L
+024D6:  SE      W0,W0
+024D8:  MOV     W0,W4
+024DA:  MUL.UU  W4,#2,W0
+024DC:  MOV     #82C,W4
+024DE:  ADD     W0,W4,W0
+024E0:  MOV     [W0],W6
+024E2:  CLR.B   1
+024E4:  MOV.B   D,W0L
+024E6:  MOV.B   W0L,W0L
+024E8:  MOV.B   W0L,[W5]
 ....................             data_tosend[i+1]=temp[a]; 
-024B4:  MOV.B   802,W0L
-024B6:  SE      W0,W0
-024B8:  ADD     W0,#1,W0
-024BA:  MOV     W0,W5
-024BC:  MOV     #804,W4
-024BE:  ADD     W5,W4,W6
-024C0:  MOV.B   801,W0L
-024C2:  SE      W0,W0
-024C4:  MOV     W0,W4
-024C6:  MUL.UU  W4,#2,W0
-024C8:  MOV     #82C,W4
-024CA:  ADD     W0,W4,W0
-024CC:  MOV.B   [W0],[W6]
+024EA:  MOV.B   802,W0L
+024EC:  SE      W0,W0
+024EE:  ADD     W0,#1,W0
+024F0:  MOV     W0,W5
+024F2:  MOV     #804,W4
+024F4:  ADD     W5,W4,W6
+024F6:  MOV.B   801,W0L
+024F8:  SE      W0,W0
+024FA:  MOV     W0,W4
+024FC:  MUL.UU  W4,#2,W0
+024FE:  MOV     #82C,W4
+02500:  ADD     W0,W4,W0
+02502:  MOV.B   [W0],[W6]
 ....................             a++; 
-024CE:  INC.B   0801
-024D0:  MOV.B   802,W0L
-024D2:  SE      W0,W0
-024D4:  ADD     W0,#2,W0
-024D6:  MOV.B   W0L,802
-024D8:  GOTO    248E
+02504:  INC.B   0801
+02506:  MOV.B   802,W0L
+02508:  SE      W0,W0
+0250A:  ADD     W0,#2,W0
+0250C:  MOV.B   W0L,802
+0250E:  GOTO    24C4
 ....................          } 
 ....................          can_putd((0xC1+slave*2),&data_tosend[0],8,0,0,0); 
-024DC:  MOV.B   85F,W0L
-024DE:  SE      W0,W0
-024E0:  MOV     W0,W4
-024E2:  MUL.UU  W4,#2,W0
-024E4:  MOV     #C1,W4
-024E6:  ADD     W0,W4,W5
-024E8:  MOV     W0,[W15++]
-024EA:  MOV.B   #8,W0L
-024EC:  MOV.B   W0L,876
-024EE:  MOV     [--W15],W0
-024F0:  CLR.B   877
-024F2:  CLR.B   878
-024F4:  CLR.B   879
-024F6:  MOV     W5,870
-024F8:  CLR     W4
-024FA:  BTSC.B  871.7
-024FC:  SETM    W4
-024FE:  MOV     W4,872
-02500:  MOV     #804,W4
-02502:  MOV     W4,874
-02504:  CALL    19D2
+02512:  MOV.B   85F,W0L
+02514:  SE      W0,W0
+02516:  MOV     W0,W4
+02518:  MUL.UU  W4,#2,W0
+0251A:  MOV     #C1,W4
+0251C:  ADD     W0,W4,W5
+0251E:  MOV     W0,[W15++]
+02520:  MOV.B   #8,W0L
+02522:  MOV.B   W0L,884
+02524:  MOV     [--W15],W0
+02526:  CLR.B   885
+02528:  CLR.B   886
+0252A:  CLR.B   887
+0252C:  MOV     W5,87E
+0252E:  CLR     W4
+02530:  BTSC.B  87F.7
+02532:  SETM    W4
+02534:  MOV     W4,880
+02536:  MOV     #804,W4
+02538:  MOV     W4,882
+0253A:  CALL    19D2
 ....................  
 ....................          //ADC voltage conversions 
 ....................          START_ADC_VOLTAGES(); 
-02508:  CALL    18E0
+0253E:  CALL    18E0
 ....................          tim=0; 
-0250C:  CLR     858
-0250E:  CLR     85A
+02542:  CLR     858
+02544:  CLR     85A
 ....................           
 ....................          //Balancing evaluation 
 ....................          BLANCEO(v_cell_minn, v_balanceo, v_min, diff_max, diff_min, &voltaje[0], temp_max, temp_slave_max); 
-02510:  MOV     #80E,W4
-02512:  MOV     W4,86C
+02546:  MOV     #80E,W4
+02548:  MOV     W4,87A
 ....................           
 ....................          //Temperature readings 
 ....................          ADC_LTC1296(&temp[0]); 
 *
-02748:  MOV     #82C,W4
-0274A:  MOV     W4,86C
-0274C:  CALL    1922
+0277E:  MOV     #82C,W4
+02780:  MOV     W4,87A
+02782:  CALL    1922
 ....................           
 ....................          //Lowpass filter for temp readings 
 ....................          for(i=0;i<8;i++) 
-02750:  CLR.B   802
-02752:  MOV.B   802,W0L
-02754:  SE      W0,W0
-02756:  CP      W0,#8
-02758:  BRA     GE,27B0
+02786:  CLR.B   802
+02788:  MOV.B   802,W0L
+0278A:  SE      W0,W0
+0278C:  CP      W0,#8
+0278E:  BRA     GE,27E6
 ....................          { 
 ....................             temp[i]=(temp[i]+temp_prev[i])/2; 
-0275A:  MOV.B   802,W0L
-0275C:  SE      W0,W0
-0275E:  MOV     W0,W4
-02760:  MUL.UU  W4,#2,W0
-02762:  MOV     #82C,W4
-02764:  ADD     W0,W4,W5
-02766:  MOV.B   802,W0L
-02768:  SE      W0,W0
-0276A:  MOV     W0,W4
-0276C:  MUL.UU  W4,#2,W0
-0276E:  MOV     #82C,W4
-02770:  ADD     W0,W4,W0
-02772:  MOV     [W0],W6
-02774:  MOV.B   802,W0L
-02776:  SE      W0,W0
-02778:  MOV     W0,W4
-0277A:  MUL.UU  W4,#2,W0
-0277C:  MOV     #83C,W4
-0277E:  ADD     W0,W4,W0
-02780:  MOV     W0,W4
-02782:  MOV     [W4],W0
-02784:  ADD     W0,W6,W6
-02786:  MOV     W6,W4
-02788:  MOV     #2,W3
-0278A:  REPEAT  #11
-0278C:  DIV.S   W4,W3
-0278E:  MOV     W0,[W5]
-....................             temp_prev[i]=temp[i]; 
 02790:  MOV.B   802,W0L
 02792:  SE      W0,W0
 02794:  MOV     W0,W4
 02796:  MUL.UU  W4,#2,W0
-02798:  MOV     #83C,W4
+02798:  MOV     #82C,W4
 0279A:  ADD     W0,W4,W5
 0279C:  MOV.B   802,W0L
 0279E:  SE      W0,W0
@@ -11182,43 +11201,73 @@ CCS PCD C Compiler, Version 5.015, 5967               25-mar.-22 18:00
 027A2:  MUL.UU  W4,#2,W0
 027A4:  MOV     #82C,W4
 027A6:  ADD     W0,W4,W0
-027A8:  MOV     [W0],[W5]
-027AA:  INC.B   0802
-027AC:  GOTO    2752
+027A8:  MOV     [W0],W6
+027AA:  MOV.B   802,W0L
+027AC:  SE      W0,W0
+027AE:  MOV     W0,W4
+027B0:  MUL.UU  W4,#2,W0
+027B2:  MOV     #83C,W4
+027B4:  ADD     W0,W4,W0
+027B6:  MOV     W0,W4
+027B8:  MOV     [W4],W0
+027BA:  ADD     W0,W6,W6
+027BC:  MOV     W6,W4
+027BE:  MOV     #2,W3
+027C0:  REPEAT  #11
+027C2:  DIV.S   W4,W3
+027C4:  MOV     W0,[W5]
+....................             temp_prev[i]=temp[i]; 
+027C6:  MOV.B   802,W0L
+027C8:  SE      W0,W0
+027CA:  MOV     W0,W4
+027CC:  MUL.UU  W4,#2,W0
+027CE:  MOV     #83C,W4
+027D0:  ADD     W0,W4,W5
+027D2:  MOV.B   802,W0L
+027D4:  SE      W0,W0
+027D6:  MOV     W0,W4
+027D8:  MUL.UU  W4,#2,W0
+027DA:  MOV     #82C,W4
+027DC:  ADD     W0,W4,W0
+027DE:  MOV     [W0],[W5]
+027E0:  INC.B   0802
+027E2:  GOTO    2788
 ....................          } 
 ....................           
 ....................          while(tim<70) {}  //Waiting until conversions have been done 
-027B0:  MOV     85A,W4
-027B2:  CP      W4,#0
-027B4:  BRA     GT,27C4
-027B6:  BRA     LT,27C0
-027B8:  MOV     858,W4
-027BA:  MOV     #46,W3
-027BC:  CP      W3,W4
-027BE:  BRA     LEU,27C4
-027C0:  GOTO    27B0
+027E6:  MOV     85A,W4
+027E8:  CP      W4,#0
+027EA:  BRA     GT,27FA
+027EC:  BRA     LT,27F6
+027EE:  MOV     858,W4
+027F0:  MOV     #46,W3
+027F2:  CP      W3,W4
+027F4:  BRA     LEU,27FA
+027F6:  GOTO    27E6
 ....................           
 ....................          //Voltage readings 
 ....................          READ_VOLTAGES (&voltaje[0], total, v_cell_min, v_cell_max); 
-027C4:  MOV     #80E,W4
-027C6:  MOV     W4,86C
-027C8:  PUSH    828
-027CA:  POP     86E
-027CC:  PUSH    82A
-027CE:  POP     870
+027FA:  MOV     #80E,W4
+027FC:  MOV     W4,87A
+027FE:  PUSH    828
+02800:  POP     87C
+02802:  PUSH    82A
+02804:  POP     87E
 ....................       } 
 *
-02C18:  GOTO    2C20
+02C4E:  GOTO    2C56
 ....................       else 
 ....................       { 
 ....................         output_low(LED1); 
-02C1C:  BCLR.B  2C9.5
-02C1E:  BCLR.B  2CD.5
+02C52:  BCLR.B  2C9.5
+02C54:  BCLR.B  2CD.5
 ....................       } 
-02C20:  GOTO    225E
+02C56:  GOTO    2294
 ....................    } 
 .................... } 
-02C24:  PWRSAV  #0
+....................        
+02C5A:  PWRSAV  #0
+....................  
 
 Configuration Fuses:
    Word  1L: 00CF   NOWRTB NOBSS NORBS

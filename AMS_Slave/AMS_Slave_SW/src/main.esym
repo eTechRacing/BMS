@@ -1,7 +1,7 @@
-D G "__PCD__" 0 231 ""5.015""
-D G "__DEVICE__" 0 231 "8206"
-D G "__DATE__" 0 231 ""25-mar.-22""
-D G "__TIME__" 0 231 ""18:00:35"" "Standard Header file for the PIC24HJ128GP502 device ////////////////"
+D G "__PCD__" 0 0 ""5.015""
+D G "__DEVICE__" 0 0 ""
+D G "__DATE__" 0 0 ""10-mar.-23""
+D G "__TIME__" 0 0 ""09:10:18"" "Standard Header file for the PIC24HJ128GP502 device ////////////////"
 c L "set_tris_a" 1 3 6 "FUNCTION"
 v L "value" 1 47 "int16" `53 
 f B "set_tris_a" 1 47 "void(int16 value)" `52 
@@ -1041,6 +1041,10 @@ D G "LED1" 0 26 "PIN_B13"
 D G "LED2" 0 27 "PIN_B12"
 D G "ERROR_LED" 0 28 "PIN_B2"
 D G "CS_LTC1296" 0 29 "PIN_A4"
+D G "ROT0" 0 31 "PIN_B3"
+D G "ROT1" 0 32 "PIN_A1"
+D G "ROT2" 0 33 "PIN_B8"
+D G "ROT3" 0 34 "PIN_B9"
 D G "_STDINT" 2 19 ""
 C L "jump_to_isr" 2 2 1 "FUNCTION"
 T G "int8_t" 2 23 "sint8" `760 
@@ -1602,50 +1606,55 @@ V L "temp" 5 4207 "uint16_t" `1373
 V L "ptr" 5 4208 "*uint16_t" `1374 
 C L "can_disable_interrupts" 5 136 1 "FUNCTION"
 C L "can_disable_interrupts" 5 136 1 "FUNCTION"
-V G "a" 0 50 "sint8" `1375 
-V G "i" 0 50 "sint8" `1376 
-V G "data_tosend" 0 50 "sint8[8]" `1377 
-V G "cob" 0 50 "sint8" `1378 
-V G "sync" 0 50 "sint8" `1379 
-V G "voltaje" 0 51 "sint16[12]" `1380 
-V G "total" 0 51 "sint16" `1381 
-V G "v_cell_min" 0 51 "sint16" `1382 
-V G "v_cell_max" 0 51 "sint16" `1383 
-V G "temp" 0 51 "sint16[8]" `1384 
-V G "temp_prev" 0 51 "sint16[8]" `1385 
-V G "v_cell_minn" 0 53 "sint16" `1386 
-V G "v_min" 0 53 "sint16" `1387 
-V G "v_balanceo" 0 53 "sint16" `1388 
-V G "temp_max" 0 53 "sint16" `1389 
-V G "temp_slave_max" 0 53 "sint16" `1390 
-V G "diff_max" 0 54 "sint8" `1391 
-V G "diff_min" 0 54 "sint8" `1392 
-V G "tim" 0 55 "sint32" `1393 
-V G "rxstat" 0 57 "{uint8_t filthit,uint8_t BUFFER,int1 err_ovfl,int1 rtr,int1 ext,int1 inv}" `1394 
-V G "rx_id" 0 58 "int32" `1395 
-V G "rx_buffer" 0 59 "int8[8]" `1396 
-V G "rx_len" 0 60 "int8" `1397 
-V G "slave" 0 62 "sint8" `1398 
-C L "timer2_isr" 0 49 1 "FUNCTION"
-F G "timer2_isr" 0 67 "void()" `1399 
-C L "can1_isr" 0 49 1 "FUNCTION"
-F G "can1_isr" 0 74 "void()" `1400  "TODO: add CAN receive code here"
-F G "c1rx_isr" 0 80 "void()" `1401 
-C L "c1rx_isr" 0 49 1 "FUNCTION"
-C L "c1rx_isr" 0 49 1 "FUNCTION"
-C L "MAIN" 0 49 1 "FUNCTION"
-F G "MAIN" 0 102 "void()" `1402 
-C L "MAIN" 0 49 1 "FUNCTION"
-C L "MAIN" 0 49 1 "FUNCTION"
-C L "MAIN" 0 49 1 "FUNCTION"
-C L "MAIN" 0 49 1 "FUNCTION"
-C L "MAIN" 0 49 2 "FUNCTION"
-C L "MAIN" 0 49 1 "FUNCTION"
-C L "MAIN" 0 49 1 "FUNCTION"
-C L "MAIN" 0 49 1 "FUNCTION"
-C L "MAIN" 0 49 1 "FUNCTION"
-C L "MAIN" 0 49 1 "FUNCTION"
-C L "MAIN" 0 49 2 "FUNCTION"
+V G "a" 0 56 "sint8" `1375 
+V G "i" 0 56 "sint8" `1376 
+V G "data_tosend" 0 56 "sint8[8]" `1377 
+V G "cob" 0 56 "sint8" `1378 
+V G "sync" 0 56 "sint8" `1379 
+V G "voltaje" 0 57 "sint16[12]" `1380 
+V G "total" 0 57 "sint16" `1381 
+V G "v_cell_min" 0 57 "sint16" `1382 
+V G "v_cell_max" 0 57 "sint16" `1383 
+V G "temp" 0 57 "sint16[8]" `1384 
+V G "temp_prev" 0 57 "sint16[8]" `1385 
+V G "v_cell_minn" 0 59 "sint16" `1386 
+V G "v_min" 0 59 "sint16" `1387 
+V G "v_balanceo" 0 59 "sint16" `1388 
+V G "temp_max" 0 59 "sint16" `1389 
+V G "temp_slave_max" 0 59 "sint16" `1390 
+V G "diff_max" 0 60 "sint8" `1391 
+V G "diff_min" 0 60 "sint8" `1392 
+V G "tim" 0 61 "sint32" `1393 
+V G "rxstat" 0 63 "{uint8_t filthit,uint8_t BUFFER,int1 err_ovfl,int1 rtr,int1 ext,int1 inv}" `1394 
+V G "rx_id" 0 64 "int32" `1395 
+V G "rx_buffer" 0 65 "int8[8]" `1396 
+V G "rx_len" 0 66 "int8" `1397 
+V G "slave" 0 68 "sint8" `1398 
+C L "timer2_isr" 0 55 1 "FUNCTION"
+F G "timer2_isr" 0 73 "void()" `1399 
+C L "can1_isr" 0 55 1 "FUNCTION"
+F G "can1_isr" 0 80 "void()" `1400  "TODO: add CAN receive code here"
+F G "c1rx_isr" 0 86 "void()" `1401 
+C L "c1rx_isr" 0 55 1 "FUNCTION"
+C L "c1rx_isr" 0 55 1 "FUNCTION"
+C L "MAIN" 0 55 1 "FUNCTION"
+F G "MAIN" 0 108 "void()" `1402 
+V L "vrot0" 0 110 "sint16" `1405 
+V L "vrot1" 0 111 "sint16" `1406 
+V L "vrot2" 0 112 "sint16" `1407 
+V L "vrot3" 0 113 "sint16" `1408 
+V L "slave" 0 114 "sint16" `1409 
+C L "MAIN" 0 55 1 "FUNCTION"
+C L "MAIN" 0 55 1 "FUNCTION"
+C L "MAIN" 0 55 1 "FUNCTION"
+C L "MAIN" 0 55 1 "FUNCTION"
+C L "MAIN" 0 55 2 "FUNCTION"
+C L "MAIN" 0 55 1 "FUNCTION"
+C L "MAIN" 0 55 1 "FUNCTION"
+C L "MAIN" 0 55 1 "FUNCTION"
+C L "MAIN" 0 55 1 "FUNCTION"
+C L "MAIN" 0 55 1 "FUNCTION"
+C L "MAIN" 0 55 2 "FUNCTION"
 F B "reset_cpu" 0 0
 F B "abs" 1 0
 F B "sleep" 0 1

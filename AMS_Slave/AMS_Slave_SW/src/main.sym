@@ -2,19 +2,19 @@ W0      @SCRATCH
 W0L     _RETURN_
 W0 -W1  @READ_ROM_MEMORY.P1
 W0 -W1  @DIV3232B.P2
-W0      @delay_us1.P3
-W0      @delay_ms1.P4
+W0      @delay_ms1.P3
+W0      @delay_us1.P4
 W1      @SCRATCH
-W1      @WRITE_PACKED_MEMORY.P1
-W1      @READ_PACKED_MEMORY.P2
-W2      @READ_ROM_MEMORY.P1
+W1      @READ_PACKED_MEMORY.P1
+W1      @WRITE_PACKED_MEMORY.P2
+W2      @READ_PACKED_MEMORY.P1
 W2 -W3  @SPI_XFER_1.P2
-W2      @READ_PACKED_MEMORY.P3
-W2 -W3  @DIV3232B.P4
-W2      @WRITE_PACKED_MEMORY.P5
-W3      @WRITE_PACKED_MEMORY.P1
-W3      @READ_PACKED_MEMORY.P2
-W3      @READ_ROM_MEMORY.P3
+W2 -W3  @DIV3232B.P3
+W2      @WRITE_PACKED_MEMORY.P4
+W2      @READ_ROM_MEMORY.P5
+W3      @READ_ROM_MEMORY.P1
+W3      @WRITE_PACKED_MEMORY.P2
+W3      @READ_PACKED_MEMORY.P3
 W4      @SPI_XFER_1.P1
 400-401 C1CTRL1
 402-403 C1CTRL2
@@ -29,28 +29,28 @@ W4      @SPI_XFER_1.P1
 414     C1FEN1
 418-419 C1FMSKSEL1
 41A-41B C1FMSKSEL2
-420-421 C1RXFUL1
 420-421 C1BUFPNT1
-422-423 C1BUFPNT2
+420-421 C1RXFUL1
 422-423 C1RXFUL2
+422-423 C1BUFPNT2
 424-425 C1BUFPNT3
 426-427 C1BUFPNT4
 428-429 C1RXOVF1
 42A-42B C1RXOVF2
 430-431 C1TR01CON
 430     C1RXM0SID
-432-433 C1TR23CON
 432     C1RXM0
+432-433 C1TR23CON
 434-435 C1TR45CON
 434     C1RXM1SID
 436     C1RXM1
-436     C1RXM2
 436-437 C1TR67CON
+436     C1RXM2
 438     C1RXM2SID
-440     C1RXD
 440     C1RXF0SID
-442     C1RXF0
+440     C1RXD
 442     C1TXD
+442     C1RXF0
 444     C1RXF1SID
 446     C1RXF1
 448     C1RXF2SID
@@ -108,72 +108,77 @@ W4      @SPI_XFER_1.P1
 85F     slave
 860-863 rx_id
 864-86B rx_buffer
-86C-86D ADC_LTC1296.temp
-86C-86D BLANCEO.voltaje
+86C-86D MAIN.vrot0
 86C-86D can_fifo_getd.data
-86C-86D can_set_id.addr
-86C-86D READ_VOLTAGES.voltaje
-86C     can_enable_b_transfer.b
-86C     can_set_buffer_size.size
-86C     can_associate_filter_to_buffer.BUFFER
-86C-86D can_enable_filter.filter
-86C     can_enable_interrupts.setting
 86C-86D SUMAMA.x
-86D     can_associate_filter_to_buffer.filter
-86E-871 can_set_id.id
-86E-86F can_enable_filter.ptr
-86E     ADC_LTC1296.v
-86E-86F can_enable_interrupts.temp
-86E-86F READ_VOLTAGES.v_min_aux
-86E     BLANCEO.i
+86E-86F MAIN.vrot1
 86E-86F can_fifo_getd.i
-86F     ADC_LTC1296.v2
-86F     BLANCEO.a
-870     BLANCEO.balanceo1
-870-871 can_enable_interrupts.ptr
-870-871 READ_VOLTAGES.v_max_aux
 870-871 can_fifo_getd.temp1
-870-873 can_putd.id
-870     ADC_LTC1296.a
-871     ADC_LTC1296.send
-871     BLANCEO.balanceo2
-872-873 ADC_LTC1296.value
-872.0   BLANCEO.bal
-872-877 READ_VOLTAGES.data
+870-871 MAIN.vrot2
 872-873 can_fifo_getd.ptr
-872     can_set_id.ext
-874-875 can_putd.data
-874-875 can_set_id.temp
-874-879 BLANCEO.pec
+872-873 MAIN.vrot3
+874-875 MAIN.slave
 874.0   can_fifo_getd.temp
-874-875 ADC_LTC1296.i
-876     can_putd.len
-877     can_putd.priority
-878-87D READ_VOLTAGES.data1
-878     can_putd.ext
-879     can_putd.rtr
-87A-87B can_putd.ptr
-87A-87B BLANCEO.remainder
-87C-87D can_putd.i
-87C-87D BLANCEO.addr
-87E-87F can_putd.port
-87E-87F BLANCEO.out
-87E     can_set_mode.mode
-87E-883 READ_VOLTAGES.data2
-880-881 can_putd.temp
-884-889 READ_VOLTAGES.data3
-88A     READ_VOLTAGES.i
-88B     READ_VOLTAGES.am
-8D0-8D1 can_getd.data
-8D2-8D3 can_getd.i
-8D4-8D5 can_getd.ptr
-8D6.0   can_getd.temp
-8E6     can_get_id.BUFFER
-8E7     can_get_id.ext
-8E8-8EB can_get_id.ret
-8EC-8ED can_get_id.ptr
-8EE-8EF can_get_id.temp
-8F0-8F1 can_get_id.temp1
+87A     can_enable_b_transfer.b
+87A     can_set_buffer_size.size
+87A     can_enable_interrupts.setting
+87A-87B BLANCEO.voltaje
+87A-87B can_set_id.addr
+87A-87B ADC_LTC1296.temp
+87A     can_associate_filter_to_buffer.BUFFER
+87A-87B READ_VOLTAGES.voltaje
+87A-87B can_enable_filter.filter
+87B     can_associate_filter_to_buffer.filter
+87C-87D READ_VOLTAGES.v_min_aux
+87C     BLANCEO.i
+87C-87D can_enable_interrupts.temp
+87C-87F can_set_id.id
+87C     ADC_LTC1296.v
+87C-87D can_enable_filter.ptr
+87D     BLANCEO.a
+87D     ADC_LTC1296.v2
+87E     ADC_LTC1296.a
+87E-881 can_putd.id
+87E     BLANCEO.balanceo1
+87E-87F can_enable_interrupts.ptr
+87E-87F READ_VOLTAGES.v_max_aux
+87F     ADC_LTC1296.send
+87F     BLANCEO.balanceo2
+880.0   BLANCEO.bal
+880-881 ADC_LTC1296.value
+880-885 READ_VOLTAGES.data
+880     can_set_id.ext
+882-883 can_set_id.temp
+882-883 can_putd.data
+882-887 BLANCEO.pec
+882-883 ADC_LTC1296.i
+884     can_putd.len
+885     can_putd.priority
+886     can_putd.ext
+886-88B READ_VOLTAGES.data1
+887     can_putd.rtr
+888-889 can_putd.ptr
+888-889 BLANCEO.remainder
+88A-88B can_putd.i
+88A-88B BLANCEO.addr
+88C-88D can_putd.port
+88C     can_set_mode.mode
+88C-891 READ_VOLTAGES.data2
+88C-88D BLANCEO.out
+88E-88F can_putd.temp
+892-897 READ_VOLTAGES.data3
+898     READ_VOLTAGES.i
+899     READ_VOLTAGES.am
+8DE-8DF can_getd.data
+8E0-8E1 can_getd.i
+8E2-8E3 can_getd.ptr
+8E4.0   can_getd.temp
+8F4     can_get_id.BUFFER
+8F5     can_get_id.ext
+8F6-8F9 can_get_id.ret
+8FA-8FB can_get_id.ptr
+8FC-8FD can_get_id.temp
+8FE-8FF can_get_id.temp1
 1F80-1FFF Stack
 2000-21FF ecan1_message_buffer
 
@@ -207,22 +212,22 @@ ROM Allocation:
 001C98  MAIN
 001C98  @cinit1
 001D0E  @cinit2
-002514  BLANCEO
-0027D0  READ_VOLTAGES
+00254A  BLANCEO
+002806  READ_VOLTAGES
 
 Project Directory:
-    F:\Electrons\Electronics\BMS\AMS_Slave\AMS_Slave_SW\src\
+    C:\Users\Andreu\OneDrive\Escritorio\Andreu\Documentos\GitHub\BMS\AMS_Slave\AMS_Slave_SW\src\
 
 Project Files:
-    main.c                                                  [25-mar.-22 17:46  CRC=AB63292B]
-    C:\Program Files (x86)\PICC\Devices\24HJ128GP502.h      [12-nov.-13 14:36  CRC=9D426FAD]
-    C:\Program Files (x86)\PICC\Drivers\stdint.h            [30-dic.-08 09:01  CRC=9F7F640F]
-    LT6811.c                                                [25-mar.-22 17:45  CRC=8403E1EC]
-    LTC1296.c                                               [25-mar.-22 17:45  CRC=CA175AE4]
-    C:\Program Files (x86)\PICC\Drivers\can-PIC24.c         [31-jul.-13 11:53  CRC=41315D03]
-    C:\Program Files (x86)\PICC\Drivers\can-PIC24.h         [31-jul.-13 11:52  CRC=85EB2643]
+    main.c                                                  [10-mar.-23 09:10  CRC=4DCCC4AC]
+    ..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Devices\24HJ128GP502.h [12-nov.-13 14:36  CRC=9D426FAD]
+    ..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdint.h [30-dic.-08 09:01  CRC=9F7F640F]
+    LT6811.c                                                [09-mar.-23 14:33  CRC=8403E1EC]
+    LTC1296.c                                               [09-mar.-23 14:33  CRC=CA175AE4]
+    ..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\can-PIC24.c [31-jul.-13 11:53  CRC=41315D03]
+    ..\..\..\..\..\..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\can-PIC24.h [31-jul.-13 11:52  CRC=85EB2643]
 
-Source signature=8347E340
+Source signature=25B17EC1
 
 Units:
     main (main)
