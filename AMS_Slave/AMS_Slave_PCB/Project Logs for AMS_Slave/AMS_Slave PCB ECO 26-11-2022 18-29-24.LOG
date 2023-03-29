@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=+5 ISO Pin=J1-4
-Removed Pin From Net: NetName=+5 ISO Pin=J2-4
-Added Pin To Net: NetName=+5 ISO Pin=U301-16
-Change Net Name : Old Net Name=+5 ISO New Net Name=+5_LV
-Added Pin To Net: NetName=+5 ISO Pin=J1-4
-Added Pin To Net: NetName=+5 ISO Pin=J2-4
-Added Net: Name=+5 ISO
-Add Net: Net with name "AMS_CAN_GND" already exists

@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=OSC1 Pin=XTAL201-1
-Removed Pin From Net: NetName=OSC2 Pin=XTAL201-2
-Added Pin To Net: NetName=OSC2 Pin=XTAL201-1
-Added Pin To Net: NetName=OSC1 Pin=XTAL201-2

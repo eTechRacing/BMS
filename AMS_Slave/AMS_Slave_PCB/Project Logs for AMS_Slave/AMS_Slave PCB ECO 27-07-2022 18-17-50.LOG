@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=NetC101_2 Pin=DCDC102 [DNP]-1
-Removed Pin From Net: NetName=GND_Slave Pin=DCDC102 [DNP]-2
-Removed Pin From Net: NetName=+5 Pin=DCDC102 [DNP]-3
-Removed Member From Class: ClassName=Supply Member=DCDC102 [DNP]

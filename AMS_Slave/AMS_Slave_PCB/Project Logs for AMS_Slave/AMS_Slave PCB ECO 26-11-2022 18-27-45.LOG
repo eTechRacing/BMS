@@ -1,4 +1,0 @@
-Change Component Designator: OldDesignator=U* NewDesignator=DCDC102
-Add Net: Net with name "+5_LV" already exists
-Add Net: Net with name "AMS_CAN_GND" already exists
-Add Differential Pair: Number of nets in differential pair AMS_CAN_H is 1 instead of 2
