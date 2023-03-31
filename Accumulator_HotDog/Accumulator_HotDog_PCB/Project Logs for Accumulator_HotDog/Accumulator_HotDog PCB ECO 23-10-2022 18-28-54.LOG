@@ -1,0 +1,78 @@
+Removed Pin From Net: NetName=NetF301_2 Pin=J201-1
+Removed Pin From Net: NetName=NetF302_2 Pin=J201-2
+Removed Pin From Net: NetName=NetF303_2 Pin=J201-3
+Removed Pin From Net: NetName=NetF304_2 Pin=J201-4
+Removed Pin From Net: NetName=NetF305_2 Pin=J201-5
+Removed Pin From Net: NetName=NetF306_2 Pin=J201-6
+Removed Pin From Net: NetName=NetF307_2 Pin=J201-7
+Removed Pin From Net: NetName=NetF308_2 Pin=J201-8
+Removed Pin From Net: NetName=NetF309_2 Pin=J201-9
+Removed Pin From Net: NetName=NetF310_2 Pin=J201-10
+Removed Pin From Net: NetName=GND_Slave_3 Pin=J201-11
+Change Component Footprint: Designator=J101 Old Footprint=J_MicroFit_1x12 New Footprint=J_MicroFit_1x12_V
+Change Component Footprint: Designator=J201 Old Footprint=J_MicroFit_1x12 New Footprint=J_MicroFit_1x12_V
+Change Component Comment : Designator=J101 Old Comment=436501200 New Comment=J_MicroFit_1x12_V
+Change Component Comment : Designator=J201 Old Comment=436501200 New Comment=J_MicroFit_1x12_V
+Change component parameters: Designator = "J101" ("J101"); Footprint = "J_MicroFit_1x12"; UniqueID = "\NRRTLJIP" ("\NRRTLJIP")
+Change component parameters (AddParameter): Name = "Category"; Value = "Headers and Wire Housings"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/712/436500316-sd-712050.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/712/436500316-sd-712050.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/5154/0436501215-pcb-headers-148827-5154953.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/5154/0436501215-pcb-headers-148827-5154953.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/16088/0436501215-pcb-headers-16088773.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/16088/0436501215-pcb-headers-16088773.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/30150/206240436501215-pcb-headers-30150375.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/30150/206240436501215-pcb-headers-30150375.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "43650-1215"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "816=1,58731, 1632=1,28652, 3264=1,08716, 4896=1,05565, 6528=0,89063 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "1632"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Avnet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "0436501215"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J201" ("J201"); Footprint = "J_MicroFit_1x12"; UniqueID = "\DWXJUCEQ" ("\DWXJUCEQ")
+Change component parameters (AddParameter): Name = "Category"; Value = "Headers and Wire Housings"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/712/436500316-sd-712050.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/712/436500316-sd-712050.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/5154/0436501215-pcb-headers-148827-5154953.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/5154/0436501215-pcb-headers-148827-5154953.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/16088/0436501215-pcb-headers-16088773.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/16088/0436501215-pcb-headers-16088773.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/30150/206240436501215-pcb-headers-30150375.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/30150/206240436501215-pcb-headers-30150375.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "43650-1215"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "816=1,58731, 1632=1,28652, 3264=1,08716, 4896=1,05565, 6528=0,89063 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "1632"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Avnet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "0436501215"; VariantName = "[No Variations]"
+Added Component: Designator=J301(J_MicroFit_1x12_V)
+Add component (AddParameter): Name = "Category"; Value = "Headers and Wire Housings"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/712/436500316-sd-712050.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/712/436500316-sd-712050.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/5154/0436501215-pcb-headers-148827-5154953.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/5154/0436501215-pcb-headers-148827-5154953.pdf?src-supplier=Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/16088/0436501215-pcb-headers-16088773.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/16088/0436501215-pcb-headers-16088773.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/30150/206240436501215-pcb-headers-30150375.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/30150/206240436501215-pcb-headers-30150375.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "43650-1215"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "816=1,58731, 1632=1,28652, 3264=1,08716, 4896=1,05565, 6528=0,89063 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "1632"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Avnet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "0436501215"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetF301_2 Pin=J301-1
+Added Pin To Net: NetName=NetF302_2 Pin=J301-2
+Added Pin To Net: NetName=NetF303_2 Pin=J301-3
+Added Pin To Net: NetName=NetF304_2 Pin=J301-4
+Added Pin To Net: NetName=NetF305_2 Pin=J301-5
+Added Pin To Net: NetName=NetF306_2 Pin=J301-6
+Added Pin To Net: NetName=NetF307_2 Pin=J301-7
+Added Pin To Net: NetName=NetF308_2 Pin=J301-8
+Added Pin To Net: NetName=NetF309_2 Pin=J301-9
+Added Pin To Net: NetName=NetF310_2 Pin=J301-10
+Added Pin To Net: NetName=GND_Slave_3 Pin=J301-11
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component J301 J_MicroFit_1x12_V
