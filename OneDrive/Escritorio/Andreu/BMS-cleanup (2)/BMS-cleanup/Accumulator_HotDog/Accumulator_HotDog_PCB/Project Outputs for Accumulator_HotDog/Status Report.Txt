@@ -1,0 +1,10 @@
+Output: Accumulator_HotDog
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [Accumulator_HotDog.PcbDoc]
+   Generated File[Accumulator_HotDog.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 3:01:09 On 11/12/2022

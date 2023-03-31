@@ -1,0 +1,158 @@
+Change Component Footprint: Designator=CMC301 Old Footprint=CMC-350u-8.5A New Footprint=CMC_10u_1.6A
+Change Component Footprint: Designator=CMC302 Old Footprint=CMC-350u-8.5A New Footprint=CMC_10u_1.6A
+Change Component Comment : Designator=CMC301 Old Comment=7448229004 New Comment=744226
+Change Component Comment : Designator=CMC302 Old Comment=7448229004 New Comment=744226
+Change component parameters: Designator = "CMC301" ("CMC301"); Footprint = "CMC-350u-8.5A"; UniqueID = "\CYQXCNYC\RSOWMFHM" ("\CYQXCNYC\RSOWMFHM")
+Change component parameters (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = ".PCBcheck"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = ".SCHcheck"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Common Mode Line Filter"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/catalog/datasheet/744226.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Where buy it"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/catalog/en/WE-SL2?sq=744226#744226"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Core Material"; Value = "Ferrite"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current"; Value = "1.6A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "1.6A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Current"; Value = "1.6A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Resistance (DCR)"; Value = "80mR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Depth"; Value = "6.3mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Impedance"; Value = "920R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Inductance"; Value = "10uH"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Inductance Tolerance"; Value = "30%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "9.2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "744226"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max DC Current"; Value = "1.6A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Lines"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=2,55000, 10=2,51500, 50=2,27200, 100=2,19100, 500=2,02900 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "80mR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "WE-SL2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "1943"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-1475-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Test Frequency"; Value = "1kHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "30%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "80V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating (DC)"; Value = "80V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Weight"; Value = "0.017672oz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "6mm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "CMC302" ("CMC302"); Footprint = "CMC-350u-8.5A"; UniqueID = "\CYQXCNYC\WJWBHLRB" ("\CYQXCNYC\WJWBHLRB")
+Change component parameters (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = ".PCBcheck"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = ".SCHcheck"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Common Mode Line Filter"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/catalog/datasheet/744226.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Where buy it"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/catalog/en/WE-SL2?sq=744226#744226"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Core Material"; Value = "Ferrite"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current"; Value = "1.6A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "1.6A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Current"; Value = "1.6A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "DC Resistance (DCR)"; Value = "80mR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Depth"; Value = "6.3mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Impedance"; Value = "920R"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Inductance"; Value = "10uH"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Inductance Tolerance"; Value = "30%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Length"; Value = "9.2mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "744226"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max DC Current"; Value = "1.6A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-40°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Lines"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Pins"; Value = "4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=2,55000, 10=2,51500, 50=2,27200, 100=2,19100, 500=2,02900 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "80mR"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Series"; Value = "WE-SL2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "1943"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-1475-1-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Test Frequency"; Value = "1kHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "30%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "80V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating (DC)"; Value = "80V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Weight"; Value = "0.017672oz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Width"; Value = "6mm"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found Bootloader_PIC_Connector
+Add Pin To Net: Unknown Pin: Pin D404-A
+Add Pin To Net: Unknown Pin: Pin D404-K
+Add Pin To Net: Unknown Pin: Pin J201-3V3
+Add Pin To Net: Unknown Pin: Pin J201-GND
+Add Pin To Net: Unknown Pin: Pin J201-MCLR
+Add Pin To Net: Unknown Pin: Pin J201-PGC
+Add Pin To Net: Unknown Pin: Pin J201-PGD
+Add Pin To Net: Unknown Pin: Pin R_precharge-1
+Add Pin To Net: Unknown Pin: Pin R_precharge-2
+Add Pin To Net: Unknown Pin: Pin U201-1
+Add Pin To Net: Unknown Pin: Pin U201-2
+Add Pin To Net: Unknown Pin: Pin U201-3
+Add Pin To Net: Unknown Pin: Pin U201-4
+Add Pin To Net: Unknown Pin: Pin U201-5
+Add Pin To Net: Unknown Pin: Pin U201-6
+Add Pin To Net: Unknown Pin: Pin U201-7
+Add Pin To Net: Unknown Pin: Pin U201-8
+Add Pin To Net: Unknown Pin: Pin U201-9
+Add Pin To Net: Unknown Pin: Pin U201-10
+Add Pin To Net: Unknown Pin: Pin U201-11
+Add Pin To Net: Unknown Pin: Pin U201-12
+Add Pin To Net: Unknown Pin: Pin U201-13
+Add Pin To Net: Unknown Pin: Pin U201-14
+Add Pin To Net: Unknown Pin: Pin U201-15
+Add Pin To Net: Unknown Pin: Pin U201-16
+Add Pin To Net: Unknown Pin: Pin U201-17
+Add Pin To Net: Unknown Pin: Pin U201-18
+Add Pin To Net: Unknown Pin: Pin U201-19
+Add Pin To Net: Unknown Pin: Pin U201-20
+Add Pin To Net: Unknown Pin: Pin U201-21
+Add Pin To Net: Unknown Pin: Pin U201-22
+Add Pin To Net: Unknown Pin: Pin U201-23
+Add Pin To Net: Unknown Pin: Pin U201-24
+Add Pin To Net: Unknown Pin: Pin U201-25
+Add Pin To Net: Unknown Pin: Pin U201-26
+Add Pin To Net: Unknown Pin: Pin U201-27
+Add Pin To Net: Unknown Pin: Pin U201-28
+Add Pin To Net: Unknown Pin: Pin U201-29
+Add Pin To Net: Unknown Pin: Pin U201-30
+Add Pin To Net: Unknown Pin: Pin U201-31
+Add Pin To Net: Unknown Pin: Pin U201-32
+Add Pin To Net: Unknown Pin: Pin U201-33
+Add Pin To Net: Unknown Pin: Pin U201-34
+Add Pin To Net: Unknown Pin: Pin U201-35
+Add Pin To Net: Unknown Pin: Pin U201-36
+Add Pin To Net: Unknown Pin: Pin U201-37
+Add Pin To Net: Unknown Pin: Pin U201-38
+Add Pin To Net: Unknown Pin: Pin U201-39
+Add Pin To Net: Unknown Pin: Pin U201-40
+Add Pin To Net: Unknown Pin: Pin U201-41
+Add Pin To Net: Unknown Pin: Pin U201-42
+Add Pin To Net: Unknown Pin: Pin U201-43
+Add Pin To Net: Unknown Pin: Pin U201-44
+Add Class Member: Failed to add class member : Component D404 BZG05C6V2-E3-TR
+Add Class Member: Failed to add class member : Component J201 61300511121
+Add Class Member: Failed to add class member : Component R_precharge R470-TO220
+Add Class Member: Failed to add class member : Component U201 dsPIC33EP256GM604-I/PT

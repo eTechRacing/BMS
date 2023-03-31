@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=+5 ISO Pin=R705-2
+Removed Pin From Net: NetName=+5 ISO Pin=R706-2
+Removed Pin From Net: NetName=+5 ISO Pin=R711-2
+Removed Pin From Net: NetName=+5 ISO Pin=R712-2
+Added Pin To Net: NetName=+5 Pin=R705-2
+Added Pin To Net: NetName=+5 Pin=R706-2
+Added Pin To Net: NetName=+5 Pin=R711-2
+Added Pin To Net: NetName=+5 Pin=R712-2

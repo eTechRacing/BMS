@@ -1,0 +1,27 @@
+[ExtraIncludes]
+Count=5
+1=main=g:\mi unidad\e-tech\electronics\electronics repo\bms\ams_slave\ams_slave_sw\src\can-pic24.c
+2=main=g:\mi unidad\e-tech\electronics\electronics repo\bms\ams_slave\ams_slave_sw\src\lt6811.c
+3=main=g:\mi unidad\e-tech\electronics\electronics repo\bms\ams_slave\ams_slave_sw\src\ltc1296.c
+4=main=g:\mi unidad\e-tech\electronics\electronics repo\bms\ams_slave\ams_slave_sw\inc\can-pic24.h
+5=main=g:\mi unidad\e-tech\electronics\electronics repo\bms\ams_slave\ams_slave_sw\inc\24hj128gp502.h
+[Opened Files]
+1=main.c
+2=C:\Program Files (x86)\PICC\devices\24HJ128GP502.h
+3=
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC24HJ128GP502
+CCSVersion=5.015
+Compiler=PCD
+[Target Data]
+FileList=main.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\C:\Program Files (x86)\PICC\devices\;C:\Program Files (x86)\PICC\drivers\
+[main.c]
+Type=4
+[mru-list]
+1=main.c
+[Units]
+Count=1
+1=main (main)

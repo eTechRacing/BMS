@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+  <executable name="dist/default/production/AMS_Master.X.production.elf">
+    <memory name="data">
+      <units>bytes</units>
+      <length>16384</length>
+      <used>1830</used>
+      <free>14554</free>
+    </memory>
+    <memory name="program">
+      <units>bytes</units>
+      <length>130530</length>
+      <used>26205</used>
+      <free>104325</free>
+    </memory>
+  </executable>
+</project>

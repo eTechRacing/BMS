@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=TS+ Pin=R_precharge-1
+Added Pin To Net: NetName=NetF_TS+_2 Pin=R_precharge-1
+Change Net Name : Old Net Name=NetF_TS+_2 New Net Name=TS+_unfused
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(253, 131, 0)

@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=+12 Pin=X401-6
+Removed Pin From Net: NetName=NetD401_A Pin=X401-7
+Removed Pin From Net: NetName=BMS_Shutdown Pin=X401-9
+Removed Pin From Net: NetName=Accumulator_Interlock Pin=X401-10
+Removed Pin From Net: NetName=+12 Pin=X402-6
+Removed Pin From Net: NetName=NetD402_A Pin=X402-7
+Removed Pin From Net: NetName=IMD_Shutdown Pin=X402-9
+Removed Pin From Net: NetName=BMS_Shutdown Pin=X402-10
+Added Pin To Net: NetName=+12 Pin=X401-1
+Added Pin To Net: NetName=BMS_Shutdown Pin=X401-5
+Added Pin To Net: NetName=NetD401_A Pin=X401-12
+Added Pin To Net: NetName=+12 Pin=X402-1
+Added Pin To Net: NetName=IMD_Shutdown Pin=X402-5
+Added Pin To Net: NetName=NetD402_A Pin=X402-12
+Add Net: Net with name "BMS_Monitoring" already exists
+Added Member To Class: ClassName=Shutdown Member=Component X401 Relay_V23079
+Added Member To Class: ClassName=Shutdown Member=Component X402 Relay_V23079

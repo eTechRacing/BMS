@@ -1,0 +1,10 @@
+Output: AMS_Master
+Type  : ExportSTEP
+From  : Variant [ETR-08] of PCB Document [AMS_Master.PcbDoc]
+   Generated File[AMS_Master(ETR-08).step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 13:00:36 On 13/01/2023
