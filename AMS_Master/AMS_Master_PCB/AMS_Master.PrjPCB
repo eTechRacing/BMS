@@ -173,6 +173,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PUXEFDSG
 
+<<<<<<< HEAD
 [Document8]
 DocumentPath=[5] Relays_Control.SchDoc
 AnnotationEnabled=1
@@ -514,6 +515,9 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Document28]
+=======
+[Document6]
+>>>>>>> main
 DocumentPath=AMS_Master.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -528,6 +532,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
+<<<<<<< HEAD
 DocumentUniqueId=RJACSJSP
 
 [Document29]
@@ -565,6 +570,11 @@ GenerateClassCluster=0
 DocumentUniqueId=QQSULTTQ
 
 [Document31]
+=======
+DocumentUniqueId=RLRWGTSJ
+
+[Document7]
+>>>>>>> main
 DocumentPath=CAMtastic1.Cam
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -581,6 +591,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+<<<<<<< HEAD
 [ProjectVariant1]
 UniqueID=CA0C60C3-FBE3-4546-9244-D31C874F4DBD
 Description=Test_Unit
@@ -716,6 +727,25 @@ Variation45=Designator=R411|UniqueId=\IHCIDKUD\LSUBWWJY|Kind=1|AlternatePart=
 Variation46=Designator=J403|UniqueId=\IHCIDKUD\JTTBSDXY|Kind=1|AlternatePart= 
 ParamVariationCount=0
 
+=======
+[Document8]
+DocumentPath=CAMtastic2.Cam
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+>>>>>>> main
 [GeneratedDocument1]
 DocumentPath=Project Outputs for AMS_Master\ExportSTEP\AMS_Master(ETR-08).step
 DItemRevisionGUID=
@@ -994,7 +1024,11 @@ OutputDir=
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
+<<<<<<< HEAD
 TargetPrinter=OneNote (Desktop)
+=======
+TargetPrinter=OrCADPS_17.2
+>>>>>>> main
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CadnetixNetlist
 OutputName1=Cadnetix Netlist
@@ -1100,7 +1134,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=HP6E452C (HP ENVY 5540 series)
+TargetPrinter=OrCADPS_17.2
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -1190,7 +1224,11 @@ PageOptions13=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
+<<<<<<< HEAD
 TargetPrinter=OneNote (Desktop)
+=======
+TargetPrinter=OrCADPS_17.2
+>>>>>>> main
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -1212,7 +1250,11 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
+<<<<<<< HEAD
 TargetPrinter=OneNote (Desktop)
+=======
+TargetPrinter=OrCADPS_17.2
+>>>>>>> main
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CompositeDrill
 OutputName1=Composite Drill Drawing
@@ -1292,7 +1334,11 @@ Configuration12_Item2=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLaye
 [OutputGroup6]
 Name=Report Outputs
 Description=
+<<<<<<< HEAD
 TargetPrinter=OneNote (Desktop)
+=======
+TargetPrinter=OrCADPS_17.2
+>>>>>>> main
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -1359,7 +1405,11 @@ PageOptions9=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintS
 [OutputGroup7]
 Name=Other Outputs
 Description=
+<<<<<<< HEAD
 TargetPrinter=OneNote (Desktop)
+=======
+TargetPrinter=OrCADPS_17.2
+>>>>>>> main
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -1467,7 +1517,11 @@ PageOptions17=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
+<<<<<<< HEAD
 TargetPrinter=OneNote (Desktop)
+=======
+TargetPrinter=OrCADPS_17.2
+>>>>>>> main
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Component states check
 OutputName1=Server's components states check
@@ -1502,16 +1556,15 @@ OutputName6=Footprint Comparison Report
 OutputDocumentPath6=
 OutputVariantName6=
 OutputDefault6=0
-OutputType7=BOM_Violations
-OutputName7=BOM Checks Report
-OutputDocumentPath7=
-OutputVariantName7=
-OutputDefault7=0
 
 [OutputGroup9]
 Name=Export Outputs
 Description=
+<<<<<<< HEAD
 TargetPrinter=OneNote (Desktop)
+=======
+TargetPrinter=OrCADPS_17.2
+>>>>>>> main
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
@@ -1558,6 +1611,7 @@ OutputName9=Specctra Design PCB
 OutputDocumentPath9=
 OutputVariantName9=
 OutputDefault9=0
+<<<<<<< HEAD
 OutputType10=MBAExportPARASOLID
 OutputName10=Export PARASOLID
 OutputDocumentPath10=
@@ -1573,11 +1627,17 @@ OutputName12=Web Review Data
 OutputDocumentPath12=
 OutputVariantName12=
 OutputDefault12=0
+=======
+>>>>>>> main
 
 [OutputGroup10]
 Name=PostProcess Outputs
 Description=
+<<<<<<< HEAD
 TargetPrinter=OneNote (Desktop)
+=======
+TargetPrinter=OrCADPS_17.2
+>>>>>>> main
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Copy Files
 OutputName1=Copy Files
@@ -1702,10 +1762,13 @@ Type113=1
 Type114=1
 Type115=1
 Type116=1
+<<<<<<< HEAD
 Type117=1
 Type118=1
 Type119=1
 Type120=1
+=======
+>>>>>>> main
 
 [Difference Levels]
 Type1=1
@@ -1773,9 +1836,12 @@ Type62=1
 Type63=1
 Type64=1
 Type65=1
+<<<<<<< HEAD
 Type66=1
 Type67=1
 Type68=1
+=======
+>>>>>>> main
 
 [Electrical Rules Check]
 Type1=1

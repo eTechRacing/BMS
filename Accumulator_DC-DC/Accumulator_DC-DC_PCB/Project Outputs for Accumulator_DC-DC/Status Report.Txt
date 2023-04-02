@@ -1,0 +1,28 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Accumulator_DC-DC.PrjPCB]
+   Generated File[Accumulator_DC-DC.GTO]
+   Generated File[Accumulator_DC-DC.GTP]
+   Generated File[Accumulator_DC-DC.GTS]
+   Generated File[Accumulator_DC-DC.GTL]
+   Generated File[Accumulator_DC-DC.GBL]
+   Generated File[Accumulator_DC-DC.GBS]
+   Generated File[Accumulator_DC-DC.GBP]
+   Generated File[Accumulator_DC-DC.GBO]
+   Generated File[Accumulator_DC-DC.GM1]
+   Generated File[Accumulator_DC-DC.GM4]
+   Generated File[Accumulator_DC-DC.GM13]
+   Generated File[Accumulator_DC-DC.GM15]
+   Generated File[Accumulator_DC-DC.GM16]
+   Generated File[Accumulator_DC-DC.GKO]
+   Generated File[Accumulator_DC-DC.1]
+   Generated File[Accumulator_DC-DC.GML]
+   Generated File[Accumulator_DC-DC.RUL]
+   Generated File[Accumulator_DC-DC.EXTREP]
+   Generated File[Accumulator_DC-DC.REP]
+
+
+Files Generated   : 19
+Documents Printed : 0
+
+Finished Output Generation At 12:11:36 On 09/01/2019
