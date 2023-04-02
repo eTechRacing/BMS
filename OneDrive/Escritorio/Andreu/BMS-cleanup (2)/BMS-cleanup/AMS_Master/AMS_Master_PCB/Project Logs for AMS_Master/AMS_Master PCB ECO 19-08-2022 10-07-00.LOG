@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=BAT+ Pin=R_precharge-1
-Removed Pin From Net: NetName=TS+ Pin=X_precharge-1
-Added Pin To Net: NetName=TS+ Pin=R_precharge-1
-Added Pin To Net: NetName=BAT+ Pin=X_precharge-1

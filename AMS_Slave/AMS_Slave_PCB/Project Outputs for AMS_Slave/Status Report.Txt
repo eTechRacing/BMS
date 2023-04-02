@@ -1,0 +1,10 @@
+Output: AMS_Slave
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [AMS_Slave.PcbDoc]
+   Generated File[AMS_Slave.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 15:29:52 On 02/04/2023

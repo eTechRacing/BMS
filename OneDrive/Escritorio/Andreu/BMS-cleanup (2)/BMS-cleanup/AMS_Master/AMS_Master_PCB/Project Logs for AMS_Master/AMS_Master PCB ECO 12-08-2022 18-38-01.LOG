@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=BMS_OK_PIC Pin=TP207-1
-Removed Pin From Net: NetName=AMS_CAN_Control Pin=TP218-1
-Removed Pin From Net: NetName=BMS_OK_PIC Pin=U201-9
-Removed Pin From Net: NetName=AMS_CAN_Control Pin=U201-22
-Added Pin To Net: NetName=AMS_CAN_Control Pin=TP207-1
-Added Pin To Net: NetName=BMS_OK_PIC Pin=TP218-1
-Added Pin To Net: NetName=AMS_CAN_Control Pin=U201-9
-Added Pin To Net: NetName=BMS_OK_PIC Pin=U201-22

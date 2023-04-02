@@ -1,8 +1,0 @@
-Record=DiagramHierarchy|SourceDocument=Slave_Assembly.MbsDoc|Kind=Multi-board Schematic Module|Designator=4|Source=..\Accumulator_HotDog\Accumulator_HotDog_PCB\Accumulator_HotDog.PrjPcb
-Record=SubProject|SourceDocument=Slave_Assembly.MbsDoc|ProjectPath=..\Accumulator_HotDog\Accumulator_HotDog_PCB\Accumulator_HotDog.PrjPcb
-Record=DiagramHierarchy|SourceDocument=Slave_Assembly.MbsDoc|Kind=Multi-board Schematic Module|Designator=3|Source=..\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PrjPCB
-Record=SubProject|SourceDocument=Slave_Assembly.MbsDoc|ProjectPath=..\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PrjPCB
-Record=DiagramHierarchy|SourceDocument=Slave_Assembly.MbsDoc|Kind=Multi-board Schematic Module|Designator=2|Source=..\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PrjPCB
-Record=SubProject|SourceDocument=Slave_Assembly.MbsDoc|ProjectPath=..\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PrjPCB
-Record=DiagramHierarchy|SourceDocument=Slave_Assembly.MbsDoc|Kind=Multi-board Schematic Module|Designator=1|Source=..\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PrjPCB
-Record=SubProject|SourceDocument=Slave_Assembly.MbsDoc|ProjectPath=..\AMS_Slave\AMS_Slave_PCB\AMS_Slave.PrjPCB

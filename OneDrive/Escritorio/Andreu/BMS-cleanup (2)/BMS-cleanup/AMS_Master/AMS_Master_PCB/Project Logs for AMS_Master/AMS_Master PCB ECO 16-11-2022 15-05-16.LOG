@@ -1,9 +1,0 @@
-Removed Pin From Net: NetName=BMS_Monitoring Pin=R418-1
-Removed Pin From Net: NetName=BMS_Monitoring Pin=U402-14
-Added Pin To Net: NetName=BMS_Monitoring Pin=R417-1
-Added Pin To Net: NetName=BMS_Monitoring Pin=U402-1
-Added Pin To Net: NetName=IMD_Monitoring Pin=R418-1
-Added Pin To Net: NetName=IMD_Monitoring Pin=TP204-1
-Added Pin To Net: NetName=IMD_Monitoring Pin=U201-4
-Added Pin To Net: NetName=IMD_Monitoring Pin=U402-14
-Added Net: Name=IMD_Monitoring

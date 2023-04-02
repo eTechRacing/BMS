@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=Fans_1- Pin=J6-1
-Removed Pin From Net: NetName=Fans_3- Pin=J6-3
-Removed Pin From Net: NetName=+5 ISO Pin=J11-1
-Removed Pin From Net: NetName=Voltage indicator - Pin=J11-2
-Added Pin To Net: NetName=Fans_3- Pin=J6-1
-Added Pin To Net: NetName=Fans_1- Pin=J6-3
-Added Pin To Net: NetName=Voltage indicator - Pin=J11-1
-Added Pin To Net: NetName=+5 ISO Pin=J11-2

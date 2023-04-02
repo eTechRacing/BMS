@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=HV_Accumulator_State Pin=J1-9
-Removed Pin From Net: NetName=CAN1_H Pin=J1-13
-Added Pin To Net: NetName=CAN1_H Pin=J1-9
-Added Pin To Net: NetName=HV_Accumulator_State Pin=J1-13

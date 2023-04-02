@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=Fans_1- Pin=J1-9
-Removed Pin From Net: NetName=Fans_2- Pin=J1-10
-Removed Pin From Net: NetName=Fans_3- Pin=J1-11
-Removed Pin From Net: NetName=IMD_OK Pin=J1-12
-Added Pin To Net: NetName=IMD_OK Pin=J1-9
-Added Pin To Net: NetName=Fans_1- Pin=J1-10
-Added Pin To Net: NetName=Fans_2- Pin=J1-11
-Added Pin To Net: NetName=Fans_3- Pin=J1-12

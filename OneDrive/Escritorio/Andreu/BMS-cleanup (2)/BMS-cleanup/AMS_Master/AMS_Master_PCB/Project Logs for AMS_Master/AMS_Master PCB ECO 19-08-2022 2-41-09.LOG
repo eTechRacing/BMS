@@ -1,6 +1,0 @@
-Removed Pin From Net: NetName=GND Pin=C311-1
-Removed Pin From Net: NetName=GND Pin=C312-1
-Removed Pin From Net: NetName=GND Pin=C313-1
-Added Pin To Net: NetName=AMS_CAN_GND Pin=C311-1
-Added Pin To Net: NetName=AMS_CAN_GND Pin=C312-1
-Added Pin To Net: NetName=AMS_CAN_GND Pin=C313-1

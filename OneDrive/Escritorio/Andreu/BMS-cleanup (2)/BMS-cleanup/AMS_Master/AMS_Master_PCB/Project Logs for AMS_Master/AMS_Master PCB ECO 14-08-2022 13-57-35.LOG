@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=Accumulator_Interlock Pin=X601-3
-Removed Pin From Net: NetName=Precharge_Coil_1 Pin=X601-4
-Added Pin To Net: NetName=Precharge_Coil_1 Pin=X601-3
-Added Pin To Net: NetName=Accumulator_Interlock Pin=X601-4

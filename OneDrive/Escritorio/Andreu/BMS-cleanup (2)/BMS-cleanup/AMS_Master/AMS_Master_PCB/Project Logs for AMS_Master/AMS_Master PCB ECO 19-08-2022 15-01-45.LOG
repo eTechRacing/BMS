@@ -1,5 +1,0 @@
-Removed Pin From Net: NetName=+5 Pin=R612-2
-Removed Pin From Net: NetName=+5 Pin=R613-2
-Added Pin To Net: NetName=+5 ISO Pin=R612-2
-Added Pin To Net: NetName=+5 ISO Pin=R613-2
-Change Net Color : Old Net Color=RGB(253, 131, 0) New Net Color=Default

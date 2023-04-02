@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=Precharge_State Pin=J1-1
-Removed Pin From Net: NetName=HV_Accumulator_State Pin=J1-2
-Removed Pin From Net: NetName=Inverters_Enable Pin=J1-5
-Removed Pin From Net: NetName=IMD_OK Pin=J1-9
-Added Pin To Net: NetName=HV_Accumulator_State Pin=J1-1
-Added Pin To Net: NetName=Precharge_State Pin=J1-2
-Added Pin To Net: NetName=IMD_OK Pin=J1-5
-Added Pin To Net: NetName=Inverters_Enable Pin=J1-9

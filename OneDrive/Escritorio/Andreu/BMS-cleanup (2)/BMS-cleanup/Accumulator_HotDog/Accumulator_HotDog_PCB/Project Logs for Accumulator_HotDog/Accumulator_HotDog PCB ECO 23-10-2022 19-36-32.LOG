@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=NetF100_1 Pin=TP100*-1
-Removed Pin From Net: NetName=NetF310_1 Pin=TP310*-1
-Removed Member From Class: ClassName=Accumulator_HotDog Member=TP100*
-Removed Member From Class: ClassName=Accumulator_HotDog Member=TP310*
