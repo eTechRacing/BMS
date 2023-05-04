@@ -35,7 +35,3 @@ MP_AS_DIR="C:\Program Files\Microchip\xc16\v1.70\bin"
 MP_LD_DIR="C:\Program Files\Microchip\xc16\v1.70\bin"
 MP_AR_DIR="C:\Program Files\Microchip\xc16\v1.70\bin"
 # MP_BC_DIR is not defined
-<<<<<<<< HEAD:AMS_Master/AMS_Master_SW/AMS_Master.X/.generated_files/55df2f800995a7df2fee4897836bbd60b9c7aabb.flag
-DFP_DIR=C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/dsPIC33E-GM-GP-MC-GU-MU_DFP/1.3.85
-========
->>>>>>>> main:AMS_Master/AMS_Master_SW/Final_program.X/.generated_files/506ac097da77aab787c7d955ffb16ab477d1a5f9.flag

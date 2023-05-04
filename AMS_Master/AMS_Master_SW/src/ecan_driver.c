@@ -1,6 +1,6 @@
 #include <xc.h>
-#include "../inc/ecan1_config.h"
-#include "../inc/ecan2_config.h"
+#include "ecan1_config.h"
+#include "ecan2_config.h"
 #include <stdint.h>
 
 //--------------------------Información útil-------------------------

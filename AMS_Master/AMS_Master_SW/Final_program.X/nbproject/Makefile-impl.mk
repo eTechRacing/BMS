@@ -24,11 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-<<<<<<<< HEAD:AMS_Master/AMS_Master_SW/AMS_Master.X/nbproject/Makefile-impl.mk
-PROJECTNAME=AMS_Master.X
-========
 PROJECTNAME=Final_program.X
->>>>>>>> main:AMS_Master/AMS_Master_SW/Final_program.X/nbproject/Makefile-impl.mk
 
 # Active Configuration
 DEFAULTCONF=default
