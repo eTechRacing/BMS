@@ -31,7 +31,7 @@
 #define ROT0 PIN_B3         
 #define ROT1 PIN_A1         
 #define ROT2 PIN_B8
-#define ROT3 PIN_B9        
+#define ROT3 PIN_B9 
 
 #PIN_SELECT SDO1=PIN_B6
 #PIN_SELECT SCK1OUT=PIN_B5
@@ -51,7 +51,6 @@
 #PIN_SELECT C1TX=PIN_B15
 
 
-
 //se definen las variables que se utilizan en el programa
 int8 a=0,i=0, data_tosend[8], cob=1, sync=0;
 int16 voltaje[12]={4121,4115,4125,4125,4125,4125,4125,4125,4125,4125,4125,4115}, total, v_cell_min,v_cell_max, temp[8], temp_prev[8];
@@ -65,7 +64,7 @@ unsigned int32 rx_id;
 unsigned int8 rx_buffer[8];
 unsigned int8 rx_len;
 
-int8 slave=1;
+int8 slave=10;
 
 //TIMER2 INTERRUPT
 #INT_TIMER2
@@ -106,13 +105,8 @@ void  c1rx_isr(void)
 //Programa principal
 void main (void)
 {
-   while(1){
-      int vrot0 = input(ROT0);
-      int vrot1 = input(ROT1);
-      int vrot2 = input(ROT2);
-      int vrot3 = input(ROT3);
-      int slave = 15 - (vrot0+(2*vrot1)+(4*vrot2)+(8*vrot3));   
-      } 
+   output_high(LED1);
+   output_high(LED2);
    setup_timer2(TMR_INTERNAL| TMR_DIV_BY_1, 4999);   //TIMER2 OVERFLOW every 0,5us
 
    can_init();
@@ -134,6 +128,13 @@ void main (void)
    enable_interrupts(INT_TIMER2);
    enable_interrupts(INTR_GLOBAL);
    output_low(LED1);
+   
+   int8 vrot0 = input(ROT0);
+   int8 vrot1 = input(ROT1);
+   int8 vrot2 = input(ROT2);
+   int8 vrot3 = input(ROT3);
+   int8 slave = 15 - (vrot0+(2*vrot1)+(4*vrot2)+(8*vrot3));  
+   
    
    //ADC voltage conversions
    START_ADC_VOLTAGES();
@@ -238,5 +239,7 @@ void main (void)
       }
    }
 }
+
+
       
 
