@@ -1,6 +1,6 @@
 #include <xc.h>
-#include "ecan1_config.h"
 #include "ecan2_config.h"
+#include "ecan1_config.h"
 #include <stdint.h>
 
 //--------------------------Información útil-------------------------
@@ -12,10 +12,10 @@
 //                          ECAN1 FUNCTIONS
 //*****************************************************************************
 
-void can1_writefilter( int16_t n, int32_t identifier, uint16_t exide, uint16_t bufPnt, uint16_t maskSel )
+void can2_writefilter( int16_t n, int32_t identifier, uint16_t exide, uint16_t bufPnt, uint16_t maskSel )
 {
     /******************************************************************************
- * Function:     void Ecan1WriteRxAcptFilter(int16_t n, int32_t identifier,
+ * Function:     void Ecan2WriteRxAcptFilter(int16_t n, int32_t identifier,
  *               uint16_t exide,uint16_t bufPnt,uint16_t maskSel)
  *
  * PreCondition:  None
@@ -86,10 +86,10 @@ void can1_writefilter( int16_t n, int32_t identifier, uint16_t exide, uint16_t b
     C1CTRL1bits.WIN = 0;
 }
 
-void can1_writemask( int16_t m, int32_t identifier, uint16_t mide, uint16_t exide )
+void can2_writemask( int16_t m, int32_t identifier, uint16_t mide, uint16_t exide )
 {
     /******************************************************************************
- * Function:     void Ecan1WriteRxAcptMask(int16_t m, int32_t identifier,
+ * Function:     void Ecan2WriteRxAcptMask(int16_t m, int32_t identifier,
  *               uint16_t mide, uint16_t exide)
  *
  * PreCondition:  None
@@ -166,10 +166,10 @@ void can1_writemask( int16_t m, int32_t identifier, uint16_t mide, uint16_t exid
     C1CTRL1bits.WIN = 0;
 }
 
-void can1_setbufferid( uint16_t buf, int32_t txIdentifier, uint16_t ide, uint16_t remoteTransmit )
+void can2_setbufferid( uint16_t buf, int32_t txIdentifier, uint16_t ide, uint16_t remoteTransmit )
 {
     /******************************************************************************
- * Function:     void Ecan1WriteTxMsgBufId(uint16_t buf, int32_t txIdentifier, uint16_t ide,
+ * Function:     void Ecan2WriteTxMsgBufId(uint16_t buf, int32_t txIdentifier, uint16_t ide,
  *               uint16_t remoteTransmit)
  *
  * PreCondition:  None
@@ -274,21 +274,21 @@ void can1_setbufferid( uint16_t buf, int32_t txIdentifier, uint16_t ide, uint16_
     // Obtain the Address of Transmit Buffer in DMA RAM for a given Transmit Buffer number
     if( ide )
     {
-        ecan1msgBuf[buf][0] = ( word0 | 0x0002 );
+        ecan2msgBuf[buf][0] = ( word0 | 0x0002 );
     }
     else
     {
-        ecan1msgBuf[buf][0] = word0;
+        ecan2msgBuf[buf][0] = word0;
     }
 
-    ecan1msgBuf[buf][1] = word1;
-    ecan1msgBuf[buf][2] = word2;
+    ecan2msgBuf[buf][1] = word1;
+    ecan2msgBuf[buf][2] = word2;
 }
 
-void can1_write( uint16_t buf, uint16_t dataLength, uint16_t cobid, uint16_t data1, uint16_t data2, uint16_t data3, uint16_t data4 )
+void can2_write( uint16_t buf, uint16_t dataLength, uint16_t cobid, uint16_t data1, uint16_t data2, uint16_t data3, uint16_t data4 )
 { 
     /******************************************************************************
- * Function:     void Ecan1WriteTxMsgBufData(uint16_t buf, uint16_t dataLength,
+ * Function:     void Ecan2WriteTxMsgBufData(uint16_t buf, uint16_t dataLength,
  *    uint16_t data1, uint16_t data2, uint16_t data3, uint16_t data4)
  *
  * PreCondition:  None
@@ -304,21 +304,21 @@ void can1_write( uint16_t buf, uint16_t dataLength, uint16_t cobid, uint16_t dat
  * Overview:      This function transmits ECAN data.
  *****************************************************************************/
     
-    can1_setbufferid(buf,cobid,0,0);
+    can2_setbufferid(buf,cobid,0,0);
     
-    ecan1msgBuf[buf][2] = ( (ecan1msgBuf[buf][2] & 0xFFF0) + dataLength );
+    ecan2msgBuf[buf][2] = ( (ecan2msgBuf[buf][2] & 0xFFF0) + dataLength );
  
-    ecan1msgBuf[buf][3] = ((data1<<8)&(0xFF00))|((data1>>8)&(0x00FF));
-    ecan1msgBuf[buf][4] = ((data2<<8)&(0xFF00))|((data2>>8)&(0x00FF));
-    ecan1msgBuf[buf][5] = ((data3<<8)&(0xFF00))|((data3>>8)&(0x00FF));
-    ecan1msgBuf[buf][6] = ((data4<<8)&(0xFF00))|((data4>>8)&(0x00FF));
+    ecan2msgBuf[buf][3] = ((data1<<8)&(0xFF00))|((data1>>8)&(0x00FF));
+    ecan2msgBuf[buf][4] = ((data2<<8)&(0xFF00))|((data2>>8)&(0x00FF));
+    ecan2msgBuf[buf][5] = ((data3<<8)&(0xFF00))|((data3>>8)&(0x00FF));
+    ecan2msgBuf[buf][6] = ((data4<<8)&(0xFF00))|((data4>>8)&(0x00FF));
 }
 
-void can1_writebytes( uint16_t buf, uint16_t dataLength, uint16_t cobid, uint8_t byte1, uint8_t byte2, uint8_t byte3, uint8_t byte4, uint8_t byte5, uint8_t byte6, uint8_t byte7, uint8_t byte8 )
+void can2_writebytes( uint16_t buf, uint16_t dataLength, uint16_t cobid, uint8_t byte1, uint8_t byte2, uint8_t byte3, uint8_t byte4, uint8_t byte5, uint8_t byte6, uint8_t byte7, uint8_t byte8 )
 {
     uint16_t data1, data2, data3, data4, data5, data6, data7, data8;
  
-    can1_setbufferid(buf,cobid,0,0);
+    can2_setbufferid(buf,cobid,0,0);
     
     data1 = byte1;
     data2 = byte2;
@@ -329,18 +329,18 @@ void can1_writebytes( uint16_t buf, uint16_t dataLength, uint16_t cobid, uint8_t
     data7 = byte7;
     data8 = byte8;
     
-    ecan1msgBuf[buf][2] = ( (ecan1msgBuf[buf][2] & 0xFFF0) + dataLength );
+    ecan2msgBuf[buf][2] = ( (ecan2msgBuf[buf][2] & 0xFFF0) + dataLength );
 
-    ecan1msgBuf[buf][3] = ((data2<<8)&(0xFF00))|(data1&(0x00FF));
-    ecan1msgBuf[buf][4] = ((data4<<8)&(0xFF00))|(data3&(0x00FF));
-    ecan1msgBuf[buf][5] = ((data6<<8)&(0xFF00))|(data5&(0x00FF));
-    ecan1msgBuf[buf][6] = ((data8<<8)&(0xFF00))|(data7&(0x00FF));
+    ecan2msgBuf[buf][3] = ((data2<<8)&(0xFF00))|(data1&(0x00FF));
+    ecan2msgBuf[buf][4] = ((data4<<8)&(0xFF00))|(data3&(0x00FF));
+    ecan2msgBuf[buf][5] = ((data6<<8)&(0xFF00))|(data5&(0x00FF));
+    ecan2msgBuf[buf][6] = ((data8<<8)&(0xFF00))|(data7&(0x00FF));
 }
 
-void can1_disablefilter( int16_t n )
+void can2_disablefilter( int16_t n )
 {
     /******************************************************************************
- * Function:     void Ecan1DisableRXFilter(int16_t n)
+ * Function:     void Ecan2DisableRXFilter(int16_t n)
  *
  * PreCondition:  None
  *
@@ -360,7 +360,7 @@ void can1_disablefilter( int16_t n )
     C1CTRL1bits.WIN = 0;
 }
 
-uint8_t can1_getrxbuf(void)
+uint8_t can2_getrxbuf(void)
 {
     uint8_t a;
     
@@ -501,7 +501,7 @@ uint8_t can1_getrxbuf(void)
     
 }
 
-uint8_t can1_isempty(void)
+uint8_t can2_isempty(void)
 {
     if ((C1RXFUL1==0)&(C1RXFUL2==0))
     {
@@ -513,7 +513,7 @@ uint8_t can1_isempty(void)
     }
 }
 
-uint32_t can1_getcobid(uint8_t buf)
+uint32_t can2_getcobid(uint8_t buf)
 {
     uint32_t cobid;
     uint32_t c_ext_1;
@@ -521,19 +521,19 @@ uint32_t can1_getcobid(uint8_t buf)
     uint32_t c_ext_3;
     uint16_t ext;
     
-    ext = ecan1msgBuf[buf][0] & 0x1;
+    ext = ecan2msgBuf[buf][0] & 0x1;
     
     if (ext==0)
     {
-        cobid = ((ecan1msgBuf[buf][0]>>2)&(0x7FF));
+        cobid = ((ecan2msgBuf[buf][0]>>2)&(0x7FF));
     }
     else
     {
-        c_ext_1 = ecan1msgBuf[buf][0];
+        c_ext_1 = ecan2msgBuf[buf][0];
         c_ext_1 = (c_ext_1<<16)&(0x7FF0000);
-        c_ext_2 = ecan1msgBuf[buf][1];
+        c_ext_2 = ecan2msgBuf[buf][1];
         c_ext_2 = (c_ext_2<<6)&(0x3FFC0);
-        c_ext_3 = (ecan1msgBuf[buf][2]>>10)&(0x3F);
+        c_ext_3 = (ecan2msgBuf[buf][2]>>10)&(0x3F);
         
         cobid = c_ext_1|c_ext_2|c_ext_3;
     }
@@ -542,19 +542,19 @@ uint32_t can1_getcobid(uint8_t buf)
     
 }
 
-uint8_t can1_getlength(uint8_t buf)
+uint8_t can2_getlength(uint8_t buf)
 {
     uint8_t leng;
     
-    leng = ecan1msgBuf[buf][2]&0xF;
+    leng = ecan2msgBuf[buf][2]&0xF;
     return(leng);
 }
 
-uint16_t can1_getdata(uint8_t buf, uint8_t num)
+uint16_t can2_getdata(uint8_t buf, uint8_t num)
 {
     uint16_t data;
     
-    data = ecan1msgBuf[buf][num+3];
+    data = ecan2msgBuf[buf][num+3];
     data = ((data<<8)&(0xFF00))|((data>>8)&(0x00FF));
     
     return(data);
@@ -565,10 +565,10 @@ uint16_t can1_getdata(uint8_t buf, uint8_t num)
 //                          ECAN2 FUNCTIONS
 //*****************************************************************************
 
-void can2_writefilter( int16_t n, int32_t identifier, uint16_t exide, uint16_t bufPnt, uint16_t maskSel )
+void can1_writefilter( int16_t n, int32_t identifier, uint16_t exide, uint16_t bufPnt, uint16_t maskSel )
 {
     /******************************************************************************
- * Function:     void Ecan2WriteRxAcptFilter(int16_t n, int32_t identifier,
+ * Function:     void Ecan1WriteRxAcptFilter(int16_t n, int32_t identifier,
  *               uint16_t exide,uint16_t bufPnt,uint16_t maskSel)
  *
  * PreCondition:  None
@@ -639,10 +639,10 @@ void can2_writefilter( int16_t n, int32_t identifier, uint16_t exide, uint16_t b
     C2CTRL1bits.WIN = 0;
 }
 
-void can2_writemask( int16_t m, int32_t identifier, uint16_t mide, uint16_t exide )
+void can1_writemask( int16_t m, int32_t identifier, uint16_t mide, uint16_t exide )
 {
     /******************************************************************************
- * Function:     void Ecan2WriteRxAcptMask(int16_t m, int32_t identifier,
+ * Function:     void Ecan1WriteRxAcptMask(int16_t m, int32_t identifier,
  *               uint16_t mide, uint16_t exide)
  *
  * PreCondition:  None
@@ -719,10 +719,10 @@ void can2_writemask( int16_t m, int32_t identifier, uint16_t mide, uint16_t exid
     C2CTRL1bits.WIN = 0;
 }
 
-void can2_setbufferid( uint16_t buf, int32_t txIdentifier, uint16_t ide, uint16_t remoteTransmit )
+void can1_setbufferid( uint16_t buf, int32_t txIdentifier, uint16_t ide, uint16_t remoteTransmit )
 {
     /******************************************************************************
- * Function:     void Ecan2WriteTxMsgBufId(uint16_t buf, int32_t txIdentifier, uint16_t ide,
+ * Function:     void Ecan1WriteTxMsgBufId(uint16_t buf, int32_t txIdentifier, uint16_t ide,
  *               uint16_t remoteTransmit)
  *
  * PreCondition:  None
@@ -827,21 +827,21 @@ void can2_setbufferid( uint16_t buf, int32_t txIdentifier, uint16_t ide, uint16_
     // Obtain the Address of Transmit Buffer in DMA RAM for a given Transmit Buffer number
     if( ide )
     {
-        ecan2msgBuf[buf][0] = ( word0 | 0x0002 );
+        ecan1msgBuf[buf][0] = ( word0 | 0x0002 );
     }
     else
     {
-        ecan2msgBuf[buf][0] = word0;
+        ecan1msgBuf[buf][0] = word0;
     }
 
-    ecan2msgBuf[buf][1] = word1;
-    ecan2msgBuf[buf][2] = word2;
+    ecan1msgBuf[buf][1] = word1;
+    ecan1msgBuf[buf][2] = word2;
 }
 
-void can2_write( uint16_t buf, uint16_t dataLength, uint16_t cobid, uint16_t data1, uint16_t data2, uint16_t data3, uint16_t data4 )
+void can1_write( uint16_t buf, uint16_t dataLength, uint16_t cobid, uint16_t data1, uint16_t data2, uint16_t data3, uint16_t data4 )
 {
     /******************************************************************************
- * Function:     void Ecan2WriteTxMsgBufData(uint16_t buf, uint16_t dataLength,
+ * Function:     void Ecan1WriteTxMsgBufData(uint16_t buf, uint16_t dataLength,
  *    uint16_t data1, uint16_t data2, uint16_t data3, uint16_t data4)
  *
  * PreCondition:  None
@@ -857,21 +857,21 @@ void can2_write( uint16_t buf, uint16_t dataLength, uint16_t cobid, uint16_t dat
  * Overview:      This function transmits ECAN data.
  *****************************************************************************/
     
-    can2_setbufferid(buf,cobid,0,0);
+    can1_setbufferid(buf,cobid,0,0);
     
-    ecan2msgBuf[buf][2] = ( (ecan2msgBuf[buf][2] & 0xFFF0) + dataLength );
+    ecan1msgBuf[buf][2] = ( (ecan1msgBuf[buf][2] & 0xFFF0) + dataLength );
 
-    ecan2msgBuf[buf][3] = ((data1<<8)&(0xFF00))|((data1>>8)&(0x00FF));
-    ecan2msgBuf[buf][4] = ((data2<<8)&(0xFF00))|((data2>>8)&(0x00FF));
-    ecan2msgBuf[buf][5] = ((data3<<8)&(0xFF00))|((data3>>8)&(0x00FF));
-    ecan2msgBuf[buf][6] = ((data4<<8)&(0xFF00))|((data4>>8)&(0x00FF));
+    ecan1msgBuf[buf][3] = ((data1<<8)&(0xFF00))|((data1>>8)&(0x00FF));
+    ecan1msgBuf[buf][4] = ((data2<<8)&(0xFF00))|((data2>>8)&(0x00FF));
+    ecan1msgBuf[buf][5] = ((data3<<8)&(0xFF00))|((data3>>8)&(0x00FF));
+    ecan1msgBuf[buf][6] = ((data4<<8)&(0xFF00))|((data4>>8)&(0x00FF));
 }
 
-void can2_writebytes( uint16_t buf, uint16_t dataLength, uint16_t cobid, uint8_t byte1, uint8_t byte2, uint8_t byte3, uint8_t byte4, uint8_t byte5, uint8_t byte6, uint8_t byte7, uint8_t byte8 )
+void can1_writebytes( uint16_t buf, uint16_t dataLength, uint16_t cobid, uint8_t byte1, uint8_t byte2, uint8_t byte3, uint8_t byte4, uint8_t byte5, uint8_t byte6, uint8_t byte7, uint8_t byte8 )
 {
     uint16_t data1, data2, data3, data4, data5, data6, data7, data8;
     
-    can2_setbufferid(buf,cobid,0,0);
+    can1_setbufferid(buf,cobid,0,0);
     
     data1 = byte1;
     data2 = byte2;
@@ -882,18 +882,18 @@ void can2_writebytes( uint16_t buf, uint16_t dataLength, uint16_t cobid, uint8_t
     data7 = byte7;
     data8 = byte8;
     
-    ecan2msgBuf[buf][2] = ( (ecan2msgBuf[buf][2] & 0xFFF0) + dataLength );
+    ecan1msgBuf[buf][2] = ( (ecan1msgBuf[buf][2] & 0xFFF0) + dataLength );
 
-    ecan2msgBuf[buf][3] = ((data2<<8)&(0xFF00))|(data1&(0x00FF));
-    ecan2msgBuf[buf][4] = ((data4<<8)&(0xFF00))|(data3&(0x00FF));
-    ecan2msgBuf[buf][5] = ((data6<<8)&(0xFF00))|(data5&(0x00FF));
-    ecan2msgBuf[buf][6] = ((data8<<8)&(0xFF00))|(data7&(0x00FF));
+    ecan1msgBuf[buf][3] = ((data2<<8)&(0xFF00))|(data1&(0x00FF));
+    ecan1msgBuf[buf][4] = ((data4<<8)&(0xFF00))|(data3&(0x00FF));
+    ecan1msgBuf[buf][5] = ((data6<<8)&(0xFF00))|(data5&(0x00FF));
+    ecan1msgBuf[buf][6] = ((data8<<8)&(0xFF00))|(data7&(0x00FF));
 }
 
-void can2_disablefilter( int16_t n )
+void can1_disablefilter( int16_t n )
 {
     /******************************************************************************
- * Function:     void Ecan1DisableRXFilter(int16_t n)
+ * Function:     void Ecan2DisableRXFilter(int16_t n)
  *
  * PreCondition:  None
  *
@@ -913,7 +913,7 @@ void can2_disablefilter( int16_t n )
     C2CTRL1bits.WIN = 0;
 }
 
-uint8_t can2_getrxbuf(void)
+uint8_t can1_getrxbuf(void)
 {
     uint8_t a;
     
@@ -1054,7 +1054,7 @@ uint8_t can2_getrxbuf(void)
     
 }
 
-uint8_t can2_isempty(void)
+uint8_t can1_isempty(void)
 {
     if ((C2RXFUL1==0)&(C2RXFUL2==0))
     {
@@ -1066,7 +1066,7 @@ uint8_t can2_isempty(void)
     }
 }
 
-uint32_t can2_getcobid(uint8_t buf)
+uint32_t can1_getcobid(uint8_t buf)
 {
     uint32_t cobid;
     uint32_t c_ext_1;
@@ -1074,19 +1074,19 @@ uint32_t can2_getcobid(uint8_t buf)
     uint32_t c_ext_3;
     uint16_t ext;
     
-    ext = ecan2msgBuf[buf][0] & 0x1;
+    ext = ecan1msgBuf[buf][0] & 0x1;
     
     if (ext==0)
     {
-        cobid = ((ecan2msgBuf[buf][0]>>2)&(0x7FF));
+        cobid = ((ecan1msgBuf[buf][0]>>2)&(0x7FF));
     }
     else
     {
-        c_ext_1 = ecan2msgBuf[buf][0];
+        c_ext_1 = ecan1msgBuf[buf][0];
         c_ext_1 = (c_ext_1<<16)&(0x7FF0000);
-        c_ext_2 = ecan2msgBuf[buf][1];
+        c_ext_2 = ecan1msgBuf[buf][1];
         c_ext_2 = (c_ext_2<<6)&(0x3FFC0);
-        c_ext_3 = (ecan2msgBuf[buf][2]>>10)&(0x3F);
+        c_ext_3 = (ecan1msgBuf[buf][2]>>10)&(0x3F);
         
         cobid = c_ext_1|c_ext_2|c_ext_3;
     }
@@ -1095,19 +1095,19 @@ uint32_t can2_getcobid(uint8_t buf)
     
 }
 
-uint8_t can2_getlength(uint8_t buf)
+uint8_t can1_getlength(uint8_t buf)
 {
     uint8_t leng;
     
-    leng = ecan2msgBuf[buf][2]&0xF;
+    leng = ecan1msgBuf[buf][2]&0xF;
     return(leng);
 }
 
-uint16_t can2_getdata(uint8_t buf, uint8_t num)
+uint16_t can1_getdata(uint8_t buf, uint8_t num)
 {
     uint16_t data;
     
-    data = ecan2msgBuf[buf][num+3];
+    data = ecan1msgBuf[buf][num+3];
     data = ((data<<8)&(0xFF00))|((data>>8)&(0x00FF));
     
     return(data);
@@ -1144,10 +1144,10 @@ void DMA0Init( void )
     DMA0REQ = 0x0046;           /* ECAN 1 Transmit */
 
     #ifdef _HAS_DMA_
-    DMA0STAL = __builtin_dmaoffset( ecan1msgBuf );
-    DMA0STAH = __builtin_dmapage( ecan1msgBuf );
+    DMA0STAL = __builtin_dmaoffset( ecan2msgBuf );
+    DMA0STAH = __builtin_dmapage( ecan2msgBuf );
     #else
-    DMA0STAL = (uint16_t)(int_least24_t)(&ecan1msgBuf);
+    DMA0STAL = (uint16_t)(int_least24_t)(&ecan2msgBuf);
     DMA0STAH = 0;
     #endif
     DMA0CONbits.CHEN = 1;
@@ -1179,19 +1179,19 @@ void DMA2Init( void )
     DMA2REQ = 0x0022;           /* ECAN 1 Receive */
 
     #ifdef _HAS_DMA_
-    DMA2STAL = __builtin_dmaoffset( ecan1msgBuf );
-    DMA2STAH = __builtin_dmapage( ecan1msgBuf );
+    DMA2STAL = __builtin_dmaoffset( ecan2msgBuf );
+    DMA2STAH = __builtin_dmapage( ecan2msgBuf );
     #else
-    DMA2STAL = (uint16_t)(int_least24_t)(&ecan1msgBuf);
+    DMA2STAL = (uint16_t)(int_least24_t)(&ecan2msgBuf);
     DMA2STAH = 0;
     #endif
     DMA2CONbits.CHEN = 1;
 }
 
-void Ecan1ClkInit( void )
+void Ecan2ClkInit( void )
 {
     /******************************************************************************
- * Function:      void Ecan1ClkInit(void)
+ * Function:      void Ecan2ClkInit(void)
  *
  * PreCondition:  None
  *
@@ -1239,10 +1239,10 @@ CiCFG1<BRP> =(FCAN /(2 ×N×FBAUD))– 1
     C1CFG2bits.SAM = 0;
 }
 
-void Ecan1Init( void )
+void Ecan2Init( void )
 {
     /******************************************************************************
- * Function:     void Ecan1Init(void)
+ * Function:     void Ecan2Init(void)
  *
  * PreCondition:  None
  *
@@ -1262,14 +1262,14 @@ void Ecan1Init( void )
     C1CTRL1bits.REQOP = 4;
     while( C1CTRL1bits.OPMODE != 4 );
 
-    Ecan1ClkInit();
+    Ecan2ClkInit();
 
     C1FCTRLbits.FSA = 0b01000;     /* FIFO Starts at Message Buffer 8 */
     C1FCTRLbits.DMABS = 0b110;     /* 32 CAN Message Buffers in DMA RAM */
 
     /*	Filter Configuration
 
-    Ecan1WriteRxAcptFilter(int n, long identifier, unsigned int exide,unsigned int bufPnt,unsigned int maskSel)
+    Ecan2WriteRxAcptFilter(int n, long identifier, unsigned int exide,unsigned int bufPnt,unsigned int maskSel)
 
     n = 0 to 15 -> Filter number
 
@@ -1287,11 +1287,11 @@ void Ecan1Init( void )
     maskSel = 3    ->    No Mask Selection
     
 */
-    can1_writefilter( 1, 0x1FFEFFFF, 1, 15, 0 );
+    can2_writefilter( 1, 0x1FFEFFFF, 1, 15, 0 );
 
     /*    Mask Configuration
 
-    Ecan1WriteRxAcptMask(int m, long identifierMask, unsigned int mide, unsigned int exide)
+    Ecan2WriteRxAcptMask(int m, long identifierMask, unsigned int mide, unsigned int exide)
 
     m = 0 to 2 -> Mask Number
 
@@ -1304,11 +1304,11 @@ void Ecan1Init( void )
     exide = 1 -> Match messages with extended identifier addresses
     
 */
-    can1_writemask( 1, 0x1FFFFFFF, 1, 1 );
+    can2_writemask( 1, 0x1FFFFFFF, 1, 1 );
     
     //Prueba de mask (en principio solo deja pasar el sincronismo)
-    can1_writefilter (1,0x80,0,0xF,1);
-    can1_writemask(1,0x700, 1,0); 
+    can2_writefilter (1,0x80,0,0xF,1);
+    can2_writemask(1,0x700, 1,0); 
     
     /* Enter Normal Mode */
     C1CTRL1bits.REQOP = 0;
@@ -1338,17 +1338,15 @@ void Ecan1Init( void )
     //--------------------------------------------------------------------------
     //------------------SELECCIÓN DE PUERTOS DE CAN1----------------------------
     //--------------------------------------------------------------------------   
+      //Correcto
+    RPINR26bits.C2RXR = 48;         //set CAN2 RX to RP40
+    RPOR5bits.RP49R = 15;           //set CAN2TX to RP39	
     
-    //Correctos
-    RPINR26bits.C1RXR = 52;         //set CAN1 RX to RP52    
-    RPOR1bits.RP37R = 14;           //set CAN1TX to RP37
-    
-    DMA0Init();                 //Iniciar DMAs de CAN1
-    DMA2Init();
-    
-    C1INTEbits.TBIE = 1;        // Enable Interrupción de CAN por transmisión
-    C1INTEbits.RBIE = 1;        // Enable Interrupción de CAN por recepción
-    
+    DMA1Init();                     //Iniciar DMAs de CAN2
+    DMA3Init();
+
+    C2INTEbits.TBIE = 1;        // Enable Interrupción de CAN por transmisión
+    C2INTEbits.RBIE = 1;        // Enable Interrupción de CAN por recepción
 }
 
 //*****************************************************************************
@@ -1381,10 +1379,10 @@ void DMA1Init( void )
     DMA1REQ = 0x0047;           /* ECAN 2 Transmit */
 
     #ifdef _HAS_DMA_
-    DMA1STAL = __builtin_dmaoffset( ecan2msgBuf );
-    DMA1STAH = __builtin_dmapage( ecan2msgBuf );
+    DMA1STAL = __builtin_dmaoffset( ecan1msgBuf );
+    DMA1STAH = __builtin_dmapage( ecan1msgBuf );
     #else
-    DMA1STAL = (uint16_t)(int_least24_t)(&ecan2msgBuf);
+    DMA1STAL = (uint16_t)(int_least24_t)(&ecan1msgBuf);
     DMA1STAH = 0;
     #endif
     DMA1CONbits.CHEN = 1;
@@ -1416,19 +1414,19 @@ void DMA3Init( void )
     DMA3REQ = 0x0037;           /* ECAN 2 Receive */
 
     #ifdef _HAS_DMA_
-    DMA3STAL = __builtin_dmaoffset( ecan2msgBuf );
-    DMA3STAH = __builtin_dmapage( ecan2msgBuf );
+    DMA3STAL = __builtin_dmaoffset( ecan1msgBuf );
+    DMA3STAH = __builtin_dmapage( ecan1msgBuf );
     #else
-    DMA3STAL = (uint16_t) (int_least24_t)(&ecan2msgBuf );
+    DMA3STAL = (uint16_t) (int_least24_t)(&ecan1msgBuf );
     DMA3STAH = 0;
     #endif
     DMA3CONbits.CHEN = 1;
 }
 
-void Ecan2ClkInit( void )
+void Ecan1ClkInit( void )
 {
     /******************************************************************************
- * Function:      void Ecan2ClkInit(void)
+ * Function:      void Ecan1ClkInit(void)
  *
  * PreCondition:  None
  *
@@ -1476,10 +1474,10 @@ CiCFG1<BRP> =(FCAN /(2 ×N×FBAUD))– 1
     C2CFG2bits.SAM = 0;
 }
 
-void Ecan2Init( void )
+void Ecan1Init( void )
 {
     /******************************************************************************
- * Function:     void Ecan2Init(void)
+ * Function:     void Ecan1Init(void)
  *
  * PreCondition:  None
  *
@@ -1500,14 +1498,14 @@ void Ecan2Init( void )
     C2CTRL1bits.REQOP = 4;
     while( C2CTRL1bits.OPMODE != 4 );
 
-    Ecan2ClkInit();
+    Ecan1ClkInit();
 
     C2FCTRLbits.FSA = 0b01000;     /* FIFO Starts at Message Buffer 16 */
     C2FCTRLbits.DMABS = 0b110;     /* 32 CAN Message Buffers in DMA RAM */
 
     /*	Filter Configuration
 
-	Ecan2WriteRxAcptFilter(int n, long identifier, unsigned int exide,unsigned int bufPnt,unsigned int maskSel)
+	Ecan1WriteRxAcptFilter(int n, long identifier, unsigned int exide,unsigned int bufPnt,unsigned int maskSel)
 
 	n = 0 to 15 -> Filter number
 
@@ -1525,11 +1523,11 @@ void Ecan2Init( void )
 	maskSel = 3	->	No Mask Selection
 	
 */
-    can2_writefilter( 1, 0x1FFEFFFF, 1, 15, 0 );
+    can1_writefilter( 1, 0x1FFEFFFF, 1, 15, 0 );
 
     /*	Mask Configuration
 
-	Ecan2WriteRxAcptMask(int m, long identifierMask, unsigned int mide, unsigned int exide)
+	Ecan1WriteRxAcptMask(int m, long identifierMask, unsigned int mide, unsigned int exide)
 
 	m = 0 to 2 -> Mask Number
 
@@ -1542,7 +1540,7 @@ void Ecan2Init( void )
 	exide = 1 -> Match messages with extended identifier addresses
 	
 */
-    can2_writemask( 1, 0x1FFFFFFF, 1, 1 );
+    can1_writemask( 1, 0x1FFFFFFF, 1, 1 );
 
     /* Enter Normal Mode */
     C2CTRL1bits.REQOP = 0;
@@ -1571,17 +1569,15 @@ void Ecan2Init( void )
     //--------------------------------------------------------------------------
     //------------------SELECCIÓN DE PUERTOS DE CAN2----------------------------
     //--------------------------------------------------------------------------
+     //Correctos
+    RPINR26bits.C1RXR = 52;         //set CAN1 RX to RP52    
+    RPOR1bits.RP37R = 14;           //set CAN1TX to RP37
     
+    DMA0Init();                 //Iniciar DMAs de CAN1
+    DMA2Init();
     
-    //Correcto
-    RPINR26bits.C2RXR = 48;         //set CAN2 RX to RP40
-    RPOR5bits.RP49R = 15;           //set CAN2TX to RP39	
-    
-    DMA1Init();                     //Iniciar DMAs de CAN2
-    DMA3Init();
-
-    C2INTEbits.TBIE = 1;        // Enable Interrupción de CAN por transmisión
-    C2INTEbits.RBIE = 1;        // Enable Interrupción de CAN por recepción
+    C1INTEbits.TBIE = 1;        // Enable Interrupción de CAN por transmisión
+    C1INTEbits.RBIE = 1;        // Enable Interrupción de CAN por recepción
 }
 
 

@@ -5,7 +5,7 @@
     Microchip Technology Inc.
 
   File Name:
-    ecan2_config.h
+    ecan1_config.h
 
   Summary:
     Contains the prototypes for ECAN and DMA initialization and configuration functions.
@@ -41,7 +41,7 @@ SUBSTITUTE GOODS, TECHNOLOGY, SERVICES, OR ANY CLAIMS BY THIRD PARTIES
 // Section: Included Files
 // *****************************************************************************
 // *****************************************************************************
-    #include "ecan2drv.h"
+    #include "ecan1drv.h"
 
     #ifdef __cplusplus      // Provide C++ Compatability
 extern "C"
@@ -72,9 +72,9 @@ extern "C"
 
     
    #ifdef _HAS_DMA_
-   __eds__ extern ECAN2MSGBUF ecan2msgBuf  __attribute__( (eds, space(dma), aligned(ECAN2_MSG_BUF_LENGTH * 16)) );
+   __eds__ extern ECAN2MSGBUF ecan1msgBuf  __attribute__( (eds, space(dma), aligned(ECAN2_MSG_BUF_LENGTH * 16)) );
    #else
-   __eds__ extern ECAN2MSGBUF ecan2msgBuf  __attribute__( (eds, space(xmemory), aligned(ECAN2_MSG_BUF_LENGTH * 16)) );
+   __eds__ extern ECAN2MSGBUF ecan1msgBuf  __attribute__( (eds, space(xmemory), aligned(ECAN2_MSG_BUF_LENGTH * 16)) );
    #endif
 // *****************************************************************************
 // *****************************************************************************
@@ -84,7 +84,7 @@ extern "C"
 
     
     /* Function Prototype     */
-    extern void Ecan2Init( void );
+    extern void Ecan1Init( void );
     extern void DMA1Init( void );
     extern void DMA3Init( void );
 

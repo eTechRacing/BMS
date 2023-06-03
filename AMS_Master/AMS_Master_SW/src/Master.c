@@ -1,21 +1,21 @@
 /*
  Este programa, amigos de Yutube, es una plantilla para utilizar cualquiera de los
- varios periféricos del dsPIC33EP256GM604 o dsPIC33EP128GM502 que he preparado:
+ varios perif?ricos del dsPIC33EP256GM604 o dsPIC33EP128GM502 que he preparado:
  CAN, I2C, SPI y UART. He comentado casi todo lo que he podido para que se entienda.
  Sentaos, relajaos y disfrutad.
  
  Nombre del programa:               Testbench.c
  Programador y Hackerman supremo:   Alex
  
- e-Tech Racing 2018 ©
+ e-Tech Racing 2018 ?
  
  */
 
 #include <xc.h>
 #include <stdint.h>
 #include <stdio.h>
-#include "ecan2_config.h"
 #include "ecan1_config.h"
+#include "ecan2_config.h"
 #include "common.h"
 #include "main.h"
 
@@ -27,9 +27,9 @@
 #define LED2 PORTAbits.RA1
 #define AIRplus_Control PORTAbits.RA10
 #define AIRminus_Control PORTAbits.RA7
-#define CAN_Control PORTBbits.RB11 //AMS CAN CONTROL a l'esquemàtic
+#define CAN_Control PORTBbits.RB11 //AMS CAN CONTROL a l'esquem?tic
 #define Interlock_Monitoring PORTCbits.RC7
-#define BMS_OK PORTBbits.RB1 //BMS ERROR a l'esquemàtic
+#define BMS_OK PORTBbits.RB1 //BMS ERROR a l'esquem?tic
 #define Fans1_Control PORTBbits.RB13
 #define Fans2_Control PORTBbits.RB12
 #define Precharge_Control PORTBbits.RB14
@@ -76,7 +76,7 @@ int i,k;
 
 int max_OK_voltage = 4195, min_OK_voltage = 3100;
 int max_OK_temperature = 600, min_OK_temperature = 5;
-long max_OK_current = 185000; //Sacado a partir de la potencia máxima normativa 80kW
+long max_OK_current = 185000; //Sacado a partir de la potencia m?xima normativa 80kW
 int max_charging_voltage = 5880, divide_current_voltage = 4195, max_charging_current = 20; //Constant to send to the charger that specify the maximum voltage and maximum current that should be allowed when charging
 int fans_temperature = 350;
 int voltage_balancing = 4950, max_balancing_temperature = 650;
@@ -147,8 +147,8 @@ void __attribute__ ( (interrupt, no_auto_psv) ) _C1Interrupt( void )
     
     if ( C1INTFbits.RBIF )
     {
-        rbuffer_external = can2_getrxbuf(); // Extract the message from the buffer (external CAN)
-        cobid_external = can2_getcobid(rbuffer_external); // Extract the cobid from the buffer message (external CAN)
+        rbuffer_external = can1_getrxbuf(); // Extract the message from the buffer (external CAN)
+        cobid_external = can1_getcobid(rbuffer_external); // Extract the cobid from the buffer message (external CAN)
         
         if( cobid_external == 128 ) // Synchronism message received
         {
@@ -156,7 +156,7 @@ void __attribute__ ( (interrupt, no_auto_psv) ) _C1Interrupt( void )
         }
         if( cobid_external == 144 ) // Start message received
         {
-            AIRs_request = can2_getdata(rbuffer_external,0);
+            AIRs_request = can1_getdata(rbuffer_external,0);
             AIRs_request = AIRs_request>>8;
             
             if ( AIRs_request == 6 )
@@ -220,8 +220,8 @@ void __attribute__ ( (interrupt, no_auto_psv) ) _C2Interrupt( void )
     
     if( C2INTFbits.RBIF )
     {
-        rbuffer_internal = can1_getrxbuf(); // Extract the message from the buffer (internal CAN)
-        cobid_internal = can1_getcobid(rbuffer_internal); // Extract the cobid from the buffer message (internal CAN)
+        rbuffer_internal = can2_getrxbuf(); // Extract the message from the buffer (internal CAN)
+        cobid_internal = can2_getcobid(rbuffer_internal); // Extract the cobid from the buffer message (internal CAN)
 
         switch (cobid_internal)
         {
@@ -234,506 +234,506 @@ void __attribute__ ( (interrupt, no_auto_psv) ) _C2Interrupt( void )
             // Slave 0 voltages
             case 0x82:
                 tt_slave0 = 0;
-                voltage[0] = can1_getdata(rbuffer_internal,0);
-                voltage[1] = can1_getdata(rbuffer_internal,1);
-                voltage[2] = can1_getdata(rbuffer_internal,2);
-                voltage[3] = can1_getdata(rbuffer_internal,3);
+                voltage[0] = can2_getdata(rbuffer_internal,0);
+                voltage[1] = can2_getdata(rbuffer_internal,1);
+                voltage[2] = can2_getdata(rbuffer_internal,2);
+                voltage[3] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x83:
-                voltage[4] = can1_getdata(rbuffer_internal,0);
-                voltage[5] = can1_getdata(rbuffer_internal,1);
-                voltage[6] = can1_getdata(rbuffer_internal,2);
-                voltage[7] = can1_getdata(rbuffer_internal,3);
+                voltage[4] = can2_getdata(rbuffer_internal,0);
+                voltage[5] = can2_getdata(rbuffer_internal,1);
+                voltage[6] = can2_getdata(rbuffer_internal,2);
+                voltage[7] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x84:
-                voltage[8] = can1_getdata(rbuffer_internal,0);
-                voltage[9] = can1_getdata(rbuffer_internal,1);
+                voltage[8] = can2_getdata(rbuffer_internal,0);
+                voltage[9] = can2_getdata(rbuffer_internal,1);
                 break;
             // Slave 1 voltages
             case 0x85:
                 tt_slave1 = 0;
-                voltage[10] = can1_getdata(rbuffer_internal,0);
-                voltage[11] = can1_getdata(rbuffer_internal,1);
-                voltage[12] = can1_getdata(rbuffer_internal,2);
-                voltage[13] = can1_getdata(rbuffer_internal,3);
+                voltage[10] = can2_getdata(rbuffer_internal,0);
+                voltage[11] = can2_getdata(rbuffer_internal,1);
+                voltage[12] = can2_getdata(rbuffer_internal,2);
+                voltage[13] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x86:
-                voltage[14] = can1_getdata(rbuffer_internal,0);
-                voltage[15] = can1_getdata(rbuffer_internal,1);
-                voltage[16] = can1_getdata(rbuffer_internal,2);
-                voltage[17] = can1_getdata(rbuffer_internal,3);
+                voltage[14] = can2_getdata(rbuffer_internal,0);
+                voltage[15] = can2_getdata(rbuffer_internal,1);
+                voltage[16] = can2_getdata(rbuffer_internal,2);
+                voltage[17] = can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 2 voltages
             case 0x88:
                 tt_slave2 = 0;
-                voltage[18] = can1_getdata(rbuffer_internal,0);
-                voltage[19] = can1_getdata(rbuffer_internal,1);
-                voltage[20] = can1_getdata(rbuffer_internal,2);
-                voltage[21] = can1_getdata(rbuffer_internal,3);
+                voltage[18] = can2_getdata(rbuffer_internal,0);
+                voltage[19] = can2_getdata(rbuffer_internal,1);
+                voltage[20] = can2_getdata(rbuffer_internal,2);
+                voltage[21] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x89:
-                voltage[22] = can1_getdata(rbuffer_internal,0);
-                voltage[23] = can1_getdata(rbuffer_internal,1);
-                voltage[24] = can1_getdata(rbuffer_internal,2);
-                voltage[25] = can1_getdata(rbuffer_internal,3);
+                voltage[22] = can2_getdata(rbuffer_internal,0);
+                voltage[23] = can2_getdata(rbuffer_internal,1);
+                voltage[24] = can2_getdata(rbuffer_internal,2);
+                voltage[25] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x8A:
-                voltage[26] = can1_getdata(rbuffer_internal,0);
-                voltage[27] = can1_getdata(rbuffer_internal,1);
+                voltage[26] = can2_getdata(rbuffer_internal,0);
+                voltage[27] = can2_getdata(rbuffer_internal,1);
                 break;
             // Slave 3 voltages
             case 0x8B:
                 tt_slave3 = 0;
-                voltage[28] = can1_getdata(rbuffer_internal,0);
-                voltage[29] = can1_getdata(rbuffer_internal,1);
-                voltage[30] = can1_getdata(rbuffer_internal,2);
-                voltage[31] = can1_getdata(rbuffer_internal,3);
+                voltage[28] = can2_getdata(rbuffer_internal,0);
+                voltage[29] = can2_getdata(rbuffer_internal,1);
+                voltage[30] = can2_getdata(rbuffer_internal,2);
+                voltage[31] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x8C:
-                voltage[32] = can1_getdata(rbuffer_internal,0);
-                voltage[33] = can1_getdata(rbuffer_internal,1);
-                voltage[34] = can1_getdata(rbuffer_internal,2);
-                voltage[35] = can1_getdata(rbuffer_internal,3);
+                voltage[32] = can2_getdata(rbuffer_internal,0);
+                voltage[33] = can2_getdata(rbuffer_internal,1);
+                voltage[34] = can2_getdata(rbuffer_internal,2);
+                voltage[35] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x8D:
-                voltage[36] = can1_getdata(rbuffer_internal,0);
-                voltage[37] = can1_getdata(rbuffer_internal,1);
+                voltage[36] = can2_getdata(rbuffer_internal,0);
+                voltage[37] = can2_getdata(rbuffer_internal,1);
                 break;  
             // Slave 4 voltages
             case 0x8E:
                 tt_slave4 = 0;
-                voltage[38] = can1_getdata(rbuffer_internal,0);
-                voltage[39] = can1_getdata(rbuffer_internal,1);
-                voltage[40] = can1_getdata(rbuffer_internal,2);
-                voltage[41] = can1_getdata(rbuffer_internal,3);
+                voltage[38] = can2_getdata(rbuffer_internal,0);
+                voltage[39] = can2_getdata(rbuffer_internal,1);
+                voltage[40] = can2_getdata(rbuffer_internal,2);
+                voltage[41] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x8F:
-                voltage[42] = can1_getdata(rbuffer_internal,0);
-                voltage[43] = can1_getdata(rbuffer_internal,1);
-                voltage[44] = can1_getdata(rbuffer_internal,2);
-                voltage[45] = can1_getdata(rbuffer_internal,3);
+                voltage[42] = can2_getdata(rbuffer_internal,0);
+                voltage[43] = can2_getdata(rbuffer_internal,1);
+                voltage[44] = can2_getdata(rbuffer_internal,2);
+                voltage[45] = can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 5 voltages 
             case 0x91:
                 tt_slave5 = 0;
-                voltage[46] = can1_getdata(rbuffer_internal,0);
-                voltage[47] = can1_getdata(rbuffer_internal,1);
-                voltage[48] = can1_getdata(rbuffer_internal,2);
-                voltage[49] = can1_getdata(rbuffer_internal,3);
+                voltage[46] = can2_getdata(rbuffer_internal,0);
+                voltage[47] = can2_getdata(rbuffer_internal,1);
+                voltage[48] = can2_getdata(rbuffer_internal,2);
+                voltage[49] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x92:
-                voltage[50] = can1_getdata(rbuffer_internal,0);
-                voltage[51] = can1_getdata(rbuffer_internal,1);
-                voltage[52] = can1_getdata(rbuffer_internal,2);
-                voltage[53] = can1_getdata(rbuffer_internal,3);
+                voltage[50] = can2_getdata(rbuffer_internal,0);
+                voltage[51] = can2_getdata(rbuffer_internal,1);
+                voltage[52] = can2_getdata(rbuffer_internal,2);
+                voltage[53] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x93:
-                voltage[54] = can1_getdata(rbuffer_internal,0);
-                voltage[55] = can1_getdata(rbuffer_internal,1);
+                voltage[54] = can2_getdata(rbuffer_internal,0);
+                voltage[55] = can2_getdata(rbuffer_internal,1);
                 break;
             // Slave 6 voltages
             case 0x94:
                 tt_slave6 = 0;
-                voltage[56] = can1_getdata(rbuffer_internal,0);
-                voltage[57] = can1_getdata(rbuffer_internal,1);
-                voltage[58] = can1_getdata(rbuffer_internal,2);
-                voltage[59] = can1_getdata(rbuffer_internal,3);
+                voltage[56] = can2_getdata(rbuffer_internal,0);
+                voltage[57] = can2_getdata(rbuffer_internal,1);
+                voltage[58] = can2_getdata(rbuffer_internal,2);
+                voltage[59] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x95:
-                voltage[60] = can1_getdata(rbuffer_internal,0);
-                voltage[61] = can1_getdata(rbuffer_internal,1);
-                voltage[62] = can1_getdata(rbuffer_internal,2);
-                voltage[63] = can1_getdata(rbuffer_internal,3);
+                voltage[60] = can2_getdata(rbuffer_internal,0);
+                voltage[61] = can2_getdata(rbuffer_internal,1);
+                voltage[62] = can2_getdata(rbuffer_internal,2);
+                voltage[63] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x96:
-                voltage[64] = can1_getdata(rbuffer_internal,0);
-                voltage[65] = can1_getdata(rbuffer_internal,1);
+                voltage[64] = can2_getdata(rbuffer_internal,0);
+                voltage[65] = can2_getdata(rbuffer_internal,1);
                 break;   
             // Slave 7 voltages
             case 0x97:
                 tt_slave7 = 0;
-                voltage[66] = can1_getdata(rbuffer_internal,0);
-                voltage[67] = can1_getdata(rbuffer_internal,1);
-                voltage[68] = can1_getdata(rbuffer_internal,2);
-                voltage[69] = can1_getdata(rbuffer_internal,3);
+                voltage[66] = can2_getdata(rbuffer_internal,0);
+                voltage[67] = can2_getdata(rbuffer_internal,1);
+                voltage[68] = can2_getdata(rbuffer_internal,2);
+                voltage[69] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x98:
-                voltage[70] = can1_getdata(rbuffer_internal,0);
-                voltage[71] = can1_getdata(rbuffer_internal,1);
-                voltage[72] = can1_getdata(rbuffer_internal,2);
-                voltage[73] = can1_getdata(rbuffer_internal,3);
+                voltage[70] = can2_getdata(rbuffer_internal,0);
+                voltage[71] = can2_getdata(rbuffer_internal,1);
+                voltage[72] = can2_getdata(rbuffer_internal,2);
+                voltage[73] = can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 8 voltages
             case 0x9A:
                 tt_slave8 = 0;
-                voltage[74] = can1_getdata(rbuffer_internal,0);
-                voltage[75] = can1_getdata(rbuffer_internal,1);
-                voltage[76] = can1_getdata(rbuffer_internal,2);
-                voltage[77] = can1_getdata(rbuffer_internal,3);
+                voltage[74] = can2_getdata(rbuffer_internal,0);
+                voltage[75] = can2_getdata(rbuffer_internal,1);
+                voltage[76] = can2_getdata(rbuffer_internal,2);
+                voltage[77] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x9B:
-                voltage[78] = can1_getdata(rbuffer_internal,0);
-                voltage[79] = can1_getdata(rbuffer_internal,1);
-                voltage[80] = can1_getdata(rbuffer_internal,2);
-                voltage[81] = can1_getdata(rbuffer_internal,3);
+                voltage[78] = can2_getdata(rbuffer_internal,0);
+                voltage[79] = can2_getdata(rbuffer_internal,1);
+                voltage[80] = can2_getdata(rbuffer_internal,2);
+                voltage[81] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x9C:
-                voltage[82] = can1_getdata(rbuffer_internal,0);
-                voltage[83] = can1_getdata(rbuffer_internal,1);
+                voltage[82] = can2_getdata(rbuffer_internal,0);
+                voltage[83] = can2_getdata(rbuffer_internal,1);
                 break;
             // Slave 9 voltages
             case 0x9D:
                 tt_slave9 = 0;
-                voltage[84] = can1_getdata(rbuffer_internal,0);
-                voltage[85] = can1_getdata(rbuffer_internal,1);
-                voltage[86] = can1_getdata(rbuffer_internal,2);
-                voltage[87] = can1_getdata(rbuffer_internal,3);
+                voltage[84] = can2_getdata(rbuffer_internal,0);
+                voltage[85] = can2_getdata(rbuffer_internal,1);
+                voltage[86] = can2_getdata(rbuffer_internal,2);
+                voltage[87] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x9E:
-                voltage[88] = can1_getdata(rbuffer_internal,0);
-                voltage[89] = can1_getdata(rbuffer_internal,1);
-                voltage[90] = can1_getdata(rbuffer_internal,2);
-                voltage[91] = can1_getdata(rbuffer_internal,3);
+                voltage[88] = can2_getdata(rbuffer_internal,0);
+                voltage[89] = can2_getdata(rbuffer_internal,1);
+                voltage[90] = can2_getdata(rbuffer_internal,2);
+                voltage[91] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0x9F:
-                voltage[92] = can1_getdata(rbuffer_internal,0);
-                voltage[93] = can1_getdata(rbuffer_internal,1);
+                voltage[92] = can2_getdata(rbuffer_internal,0);
+                voltage[93] = can2_getdata(rbuffer_internal,1);
                 break;
             // Slave 10 voltages
             case 0xA0:
                 tt_slave10 = 0;
-                voltage[94] = can1_getdata(rbuffer_internal,0);
-                voltage[95] = can1_getdata(rbuffer_internal,1);
-                voltage[96] = can1_getdata(rbuffer_internal,2);
-                voltage[97] = can1_getdata(rbuffer_internal,3);
+                voltage[94] = can2_getdata(rbuffer_internal,0);
+                voltage[95] = can2_getdata(rbuffer_internal,1);
+                voltage[96] = can2_getdata(rbuffer_internal,2);
+                voltage[97] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0xA1:
-                voltage[98] = can1_getdata(rbuffer_internal,0);
-                voltage[99] = can1_getdata(rbuffer_internal,1);
-                voltage[100] = can1_getdata(rbuffer_internal,2);
-                voltage[101] = can1_getdata(rbuffer_internal,3);
+                voltage[98] = can2_getdata(rbuffer_internal,0);
+                voltage[99] = can2_getdata(rbuffer_internal,1);
+                voltage[100] = can2_getdata(rbuffer_internal,2);
+                voltage[101] = can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 11 voltages
             case 0xA3:
                 tt_slave11 = 0;
-                voltage[102] = can1_getdata(rbuffer_internal,0);
-                voltage[103] = can1_getdata(rbuffer_internal,1);
-                voltage[104] = can1_getdata(rbuffer_internal,2);
-                voltage[105] = can1_getdata(rbuffer_internal,3);
+                voltage[102] = can2_getdata(rbuffer_internal,0);
+                voltage[103] = can2_getdata(rbuffer_internal,1);
+                voltage[104] = can2_getdata(rbuffer_internal,2);
+                voltage[105] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0xA4:
-                voltage[106] = can1_getdata(rbuffer_internal,0);
-                voltage[107] = can1_getdata(rbuffer_internal,1);
-                voltage[108] = can1_getdata(rbuffer_internal,2);
-                voltage[109] = can1_getdata(rbuffer_internal,3);
+                voltage[106] = can2_getdata(rbuffer_internal,0);
+                voltage[107] = can2_getdata(rbuffer_internal,1);
+                voltage[108] = can2_getdata(rbuffer_internal,2);
+                voltage[109] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0xA5:
-                voltage[110] = can1_getdata(rbuffer_internal,0);
-                voltage[111] = can1_getdata(rbuffer_internal,1);
+                voltage[110] = can2_getdata(rbuffer_internal,0);
+                voltage[111] = can2_getdata(rbuffer_internal,1);
                 break;
             // Slave 12 voltages 
             case 0xA6:
                 tt_slave12 = 0;
-                voltage[112] = can1_getdata(rbuffer_internal,0);
-                voltage[113] = can1_getdata(rbuffer_internal,1);
-                voltage[114] = can1_getdata(rbuffer_internal,2);
-                voltage[115] = can1_getdata(rbuffer_internal,3);
+                voltage[112] = can2_getdata(rbuffer_internal,0);
+                voltage[113] = can2_getdata(rbuffer_internal,1);
+                voltage[114] = can2_getdata(rbuffer_internal,2);
+                voltage[115] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0xA7:
-                voltage[116] = can1_getdata(rbuffer_internal,0);
-                voltage[117] = can1_getdata(rbuffer_internal,1);
-                voltage[118] = can1_getdata(rbuffer_internal,2);
-                voltage[119] = can1_getdata(rbuffer_internal,3);
+                voltage[116] = can2_getdata(rbuffer_internal,0);
+                voltage[117] = can2_getdata(rbuffer_internal,1);
+                voltage[118] = can2_getdata(rbuffer_internal,2);
+                voltage[119] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0xA8:
-                voltage[120] = can1_getdata(rbuffer_internal,0);
-                voltage[121] = can1_getdata(rbuffer_internal,1);
+                voltage[120] = can2_getdata(rbuffer_internal,0);
+                voltage[121] = can2_getdata(rbuffer_internal,1);
                 break;
             // Slave 13 voltages
             case 0xA9:
                 tt_slave13 = 0;
-                voltage[122] = can1_getdata(rbuffer_internal,0);
-                voltage[123] = can1_getdata(rbuffer_internal,1);
-                voltage[124] = can1_getdata(rbuffer_internal,2);
-                voltage[125] = can1_getdata(rbuffer_internal,3);
+                voltage[122] = can2_getdata(rbuffer_internal,0);
+                voltage[123] = can2_getdata(rbuffer_internal,1);
+                voltage[124] = can2_getdata(rbuffer_internal,2);
+                voltage[125] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0xAA:
-                voltage[126] = can1_getdata(rbuffer_internal,0);
-                voltage[127] = can1_getdata(rbuffer_internal,1);
-                voltage[128] = can1_getdata(rbuffer_internal,2);
-                voltage[129] = can1_getdata(rbuffer_internal,3); 
+                voltage[126] = can2_getdata(rbuffer_internal,0);
+                voltage[127] = can2_getdata(rbuffer_internal,1);
+                voltage[128] = can2_getdata(rbuffer_internal,2);
+                voltage[129] = can2_getdata(rbuffer_internal,3); 
                 break;
             // Slave 14 voltages 
             case 0xAC:
                 tt_slave14 = 0;
-                voltage[130] = can1_getdata(rbuffer_internal,0);
-                voltage[131] = can1_getdata(rbuffer_internal,1);
-                voltage[132] = can1_getdata(rbuffer_internal,2);
-                voltage[133] = can1_getdata(rbuffer_internal,3);
+                voltage[130] = can2_getdata(rbuffer_internal,0);
+                voltage[131] = can2_getdata(rbuffer_internal,1);
+                voltage[132] = can2_getdata(rbuffer_internal,2);
+                voltage[133] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0xAD:
-                voltage[134] = can1_getdata(rbuffer_internal,0);
-                voltage[135] = can1_getdata(rbuffer_internal,1);
-                voltage[136] = can1_getdata(rbuffer_internal,2);
-                voltage[137] = can1_getdata(rbuffer_internal,3);
+                voltage[134] = can2_getdata(rbuffer_internal,0);
+                voltage[135] = can2_getdata(rbuffer_internal,1);
+                voltage[136] = can2_getdata(rbuffer_internal,2);
+                voltage[137] = can2_getdata(rbuffer_internal,3);
                 break;
             case 0xAE:
-                voltage[138] = can1_getdata(rbuffer_internal,0);
-                voltage[139] = can1_getdata(rbuffer_internal,1);
+                voltage[138] = can2_getdata(rbuffer_internal,0);
+                voltage[139] = can2_getdata(rbuffer_internal,1);
                 break;
         
             //* SLAVES TEMPERATURES *//
                 
             // Slave 0 temperatures
             case 0xC0:
-                temperature[0]=can1_getdata(rbuffer_internal,0);
-                temperature[1]=can1_getdata(rbuffer_internal,1);
-                temperature[2]=can1_getdata(rbuffer_internal,2);
-                temperature[3]=can1_getdata(rbuffer_internal,3);
+                temperature[0]=can2_getdata(rbuffer_internal,0);
+                temperature[1]=can2_getdata(rbuffer_internal,1);
+                temperature[2]=can2_getdata(rbuffer_internal,2);
+                temperature[3]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xC1:
-                temperature[4]=can1_getdata(rbuffer_internal,0);
-                temperature[5]=can1_getdata(rbuffer_internal,1);
-                temperature[6]=can1_getdata(rbuffer_internal,2);
-                temperature[7]=can1_getdata(rbuffer_internal,3);
+                temperature[4]=can2_getdata(rbuffer_internal,0);
+                temperature[5]=can2_getdata(rbuffer_internal,1);
+                temperature[6]=can2_getdata(rbuffer_internal,2);
+                temperature[7]=can2_getdata(rbuffer_internal,3);
             // Slave 1 temperatures
             case 0xC2:
-                temperature[8]=can1_getdata(rbuffer_internal,0);
-                temperature[9]=can1_getdata(rbuffer_internal,1);
-                temperature[10]=can1_getdata(rbuffer_internal,2);
-                temperature[11]=can1_getdata(rbuffer_internal,3);
+                temperature[8]=can2_getdata(rbuffer_internal,0);
+                temperature[9]=can2_getdata(rbuffer_internal,1);
+                temperature[10]=can2_getdata(rbuffer_internal,2);
+                temperature[11]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xC3:
-                temperature[12]=can1_getdata(rbuffer_internal,0);
-                temperature[13]=can1_getdata(rbuffer_internal,1);
-                temperature[14]=can1_getdata(rbuffer_internal,2);
-                temperature[15]=can1_getdata(rbuffer_internal,3);
+                temperature[12]=can2_getdata(rbuffer_internal,0);
+                temperature[13]=can2_getdata(rbuffer_internal,1);
+                temperature[14]=can2_getdata(rbuffer_internal,2);
+                temperature[15]=can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 2 temperatures
             case 0xC4:
-                temperature[16]=can1_getdata(rbuffer_internal,0);
-                temperature[17]=can1_getdata(rbuffer_internal,1);
-                temperature[18]=can1_getdata(rbuffer_internal,2);
-                temperature[19]=can1_getdata(rbuffer_internal,3);
+                temperature[16]=can2_getdata(rbuffer_internal,0);
+                temperature[17]=can2_getdata(rbuffer_internal,1);
+                temperature[18]=can2_getdata(rbuffer_internal,2);
+                temperature[19]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xC5:
-                temperature[20]=can1_getdata(rbuffer_internal,0);
-                temperature[21]=can1_getdata(rbuffer_internal,1);
-                temperature[22]=can1_getdata(rbuffer_internal,2);
-                temperature[23]=can1_getdata(rbuffer_internal,3);
+                temperature[20]=can2_getdata(rbuffer_internal,0);
+                temperature[21]=can2_getdata(rbuffer_internal,1);
+                temperature[22]=can2_getdata(rbuffer_internal,2);
+                temperature[23]=can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 3 temperatures
             case 0xC6:
-                temperature[24]=can1_getdata(rbuffer_internal,0);
-                temperature[25]=can1_getdata(rbuffer_internal,1);
-                temperature[26]=can1_getdata(rbuffer_internal,2);
-                temperature[27]=can1_getdata(rbuffer_internal,3);
+                temperature[24]=can2_getdata(rbuffer_internal,0);
+                temperature[25]=can2_getdata(rbuffer_internal,1);
+                temperature[26]=can2_getdata(rbuffer_internal,2);
+                temperature[27]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xC7:
-                temperature[28]=can1_getdata(rbuffer_internal,0);
-                temperature[29]=can1_getdata(rbuffer_internal,1);
-                temperature[30]=can1_getdata(rbuffer_internal,2);
-                temperature[31]=can1_getdata(rbuffer_internal,3);
+                temperature[28]=can2_getdata(rbuffer_internal,0);
+                temperature[29]=can2_getdata(rbuffer_internal,1);
+                temperature[30]=can2_getdata(rbuffer_internal,2);
+                temperature[31]=can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 4 temperatures
             case 0xC8:
-                temperature[32]=can1_getdata(rbuffer_internal,0);
-                temperature[33]=can1_getdata(rbuffer_internal,1);
-                temperature[34]=can1_getdata(rbuffer_internal,2);
-                temperature[35]=can1_getdata(rbuffer_internal,3);
+                temperature[32]=can2_getdata(rbuffer_internal,0);
+                temperature[33]=can2_getdata(rbuffer_internal,1);
+                temperature[34]=can2_getdata(rbuffer_internal,2);
+                temperature[35]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xC9:
-                temperature[36]=can1_getdata(rbuffer_internal,0);
-                temperature[37]=can1_getdata(rbuffer_internal,1);
-                temperature[38]=can1_getdata(rbuffer_internal,2);
-                temperature[39]=can1_getdata(rbuffer_internal,3);
+                temperature[36]=can2_getdata(rbuffer_internal,0);
+                temperature[37]=can2_getdata(rbuffer_internal,1);
+                temperature[38]=can2_getdata(rbuffer_internal,2);
+                temperature[39]=can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 5 temperatures
             case 0xCA:
-                temperature[40]=can1_getdata(rbuffer_internal,0);
-                temperature[41]=can1_getdata(rbuffer_internal,1);
-                temperature[42]=can1_getdata(rbuffer_internal,2);
-                temperature[43]=can1_getdata(rbuffer_internal,3);
+                temperature[40]=can2_getdata(rbuffer_internal,0);
+                temperature[41]=can2_getdata(rbuffer_internal,1);
+                temperature[42]=can2_getdata(rbuffer_internal,2);
+                temperature[43]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xCB:
-                temperature[44]=can1_getdata(rbuffer_internal,0);
-                temperature[45]=can1_getdata(rbuffer_internal,1);
-                temperature[46]=can1_getdata(rbuffer_internal,2);
-                temperature[47]=can1_getdata(rbuffer_internal,3);
+                temperature[44]=can2_getdata(rbuffer_internal,0);
+                temperature[45]=can2_getdata(rbuffer_internal,1);
+                temperature[46]=can2_getdata(rbuffer_internal,2);
+                temperature[47]=can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 6 temperatures
             case 0xCC:
-                temperature[48]=can1_getdata(rbuffer_internal,0);
-                temperature[49]=can1_getdata(rbuffer_internal,1);
-                temperature[50]=can1_getdata(rbuffer_internal,2);
-                temperature[51]=can1_getdata(rbuffer_internal,3);
+                temperature[48]=can2_getdata(rbuffer_internal,0);
+                temperature[49]=can2_getdata(rbuffer_internal,1);
+                temperature[50]=can2_getdata(rbuffer_internal,2);
+                temperature[51]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xCD:
-                temperature[52]=can1_getdata(rbuffer_internal,0);
-                temperature[53]=can1_getdata(rbuffer_internal,1);
-                temperature[54]=can1_getdata(rbuffer_internal,2);
-                temperature[55]=can1_getdata(rbuffer_internal,3);
+                temperature[52]=can2_getdata(rbuffer_internal,0);
+                temperature[53]=can2_getdata(rbuffer_internal,1);
+                temperature[54]=can2_getdata(rbuffer_internal,2);
+                temperature[55]=can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 7 temperatures
             case 0xCE:
-                temperature[56]=can1_getdata(rbuffer_internal,0);
-                temperature[57]=can1_getdata(rbuffer_internal,1);
-                temperature[58]=can1_getdata(rbuffer_internal,2);
-                temperature[59]=can1_getdata(rbuffer_internal,3);
+                temperature[56]=can2_getdata(rbuffer_internal,0);
+                temperature[57]=can2_getdata(rbuffer_internal,1);
+                temperature[58]=can2_getdata(rbuffer_internal,2);
+                temperature[59]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xCF:
-                temperature[60]=can1_getdata(rbuffer_internal,0);
-                temperature[61]=can1_getdata(rbuffer_internal,1);
-                temperature[62]=can1_getdata(rbuffer_internal,2);
-                temperature[63]=can1_getdata(rbuffer_internal,3);
+                temperature[60]=can2_getdata(rbuffer_internal,0);
+                temperature[61]=can2_getdata(rbuffer_internal,1);
+                temperature[62]=can2_getdata(rbuffer_internal,2);
+                temperature[63]=can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 8 temperatures
             case 0xD0:
-                temperature[64]=can1_getdata(rbuffer_internal,0);
-                temperature[65]=can1_getdata(rbuffer_internal,1);
-                temperature[66]=can1_getdata(rbuffer_internal,2);
-                temperature[67]=can1_getdata(rbuffer_internal,3);
+                temperature[64]=can2_getdata(rbuffer_internal,0);
+                temperature[65]=can2_getdata(rbuffer_internal,1);
+                temperature[66]=can2_getdata(rbuffer_internal,2);
+                temperature[67]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xD1:
-                temperature[68]=can1_getdata(rbuffer_internal,0);
-                temperature[69]=can1_getdata(rbuffer_internal,1);
-                temperature[70]=can1_getdata(rbuffer_internal,2);
-                temperature[71]=can1_getdata(rbuffer_internal,3);
+                temperature[68]=can2_getdata(rbuffer_internal,0);
+                temperature[69]=can2_getdata(rbuffer_internal,1);
+                temperature[70]=can2_getdata(rbuffer_internal,2);
+                temperature[71]=can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 9 temperatures
             case 0xD2:
-                temperature[72]=can1_getdata(rbuffer_internal,0);
-                temperature[73]=can1_getdata(rbuffer_internal,1);
-                temperature[74]=can1_getdata(rbuffer_internal,2);
-                temperature[75]=can1_getdata(rbuffer_internal,3);
+                temperature[72]=can2_getdata(rbuffer_internal,0);
+                temperature[73]=can2_getdata(rbuffer_internal,1);
+                temperature[74]=can2_getdata(rbuffer_internal,2);
+                temperature[75]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xD3:
-                temperature[76]=can1_getdata(rbuffer_internal,0);
-                temperature[77]=can1_getdata(rbuffer_internal,1);
-                temperature[78]=can1_getdata(rbuffer_internal,2);
-                temperature[79]=can1_getdata(rbuffer_internal,3);
+                temperature[76]=can2_getdata(rbuffer_internal,0);
+                temperature[77]=can2_getdata(rbuffer_internal,1);
+                temperature[78]=can2_getdata(rbuffer_internal,2);
+                temperature[79]=can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 10 temperatures
             case 0xD4:
-                temperature[80]=can1_getdata(rbuffer_internal,0);
-                temperature[81]=can1_getdata(rbuffer_internal,1);
-                temperature[82]=can1_getdata(rbuffer_internal,2);
-                temperature[83]=can1_getdata(rbuffer_internal,3);
+                temperature[80]=can2_getdata(rbuffer_internal,0);
+                temperature[81]=can2_getdata(rbuffer_internal,1);
+                temperature[82]=can2_getdata(rbuffer_internal,2);
+                temperature[83]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xD5:
-                temperature[84]=can1_getdata(rbuffer_internal,0);
-                temperature[85]=can1_getdata(rbuffer_internal,1);
-                temperature[86]=can1_getdata(rbuffer_internal,2);
-                temperature[87]=can1_getdata(rbuffer_internal,3);
+                temperature[84]=can2_getdata(rbuffer_internal,0);
+                temperature[85]=can2_getdata(rbuffer_internal,1);
+                temperature[86]=can2_getdata(rbuffer_internal,2);
+                temperature[87]=can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 11 temperatures
             case 0xD6:
-                temperature[88]=can1_getdata(rbuffer_internal,0);
-                temperature[89]=can1_getdata(rbuffer_internal,1);
-                temperature[90]=can1_getdata(rbuffer_internal,2);
-                temperature[91]=can1_getdata(rbuffer_internal,3);
+                temperature[88]=can2_getdata(rbuffer_internal,0);
+                temperature[89]=can2_getdata(rbuffer_internal,1);
+                temperature[90]=can2_getdata(rbuffer_internal,2);
+                temperature[91]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xD7:
-                temperature[92]=can1_getdata(rbuffer_internal,0);
-                temperature[93]=can1_getdata(rbuffer_internal,1);
-                temperature[94]=can1_getdata(rbuffer_internal,2);
-                temperature[95]=can1_getdata(rbuffer_internal,3);
+                temperature[92]=can2_getdata(rbuffer_internal,0);
+                temperature[93]=can2_getdata(rbuffer_internal,1);
+                temperature[94]=can2_getdata(rbuffer_internal,2);
+                temperature[95]=can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 12 temperatures
             case 0xD8:
-                temperature[96]=can1_getdata(rbuffer_internal,0);
-                temperature[97]=can1_getdata(rbuffer_internal,1);
-                temperature[98]=can1_getdata(rbuffer_internal,2);
-                temperature[99]=can1_getdata(rbuffer_internal,3);
+                temperature[96]=can2_getdata(rbuffer_internal,0);
+                temperature[97]=can2_getdata(rbuffer_internal,1);
+                temperature[98]=can2_getdata(rbuffer_internal,2);
+                temperature[99]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xD9:
-                temperature[100]=can1_getdata(rbuffer_internal,0);
-                temperature[101]=can1_getdata(rbuffer_internal,1);
-                temperature[102]=can1_getdata(rbuffer_internal,2);
-                temperature[103]=can1_getdata(rbuffer_internal,3);
+                temperature[100]=can2_getdata(rbuffer_internal,0);
+                temperature[101]=can2_getdata(rbuffer_internal,1);
+                temperature[102]=can2_getdata(rbuffer_internal,2);
+                temperature[103]=can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 13 temperatures
             case 0xDA:
-                temperature[104]=can1_getdata(rbuffer_internal,0);
-                temperature[105]=can1_getdata(rbuffer_internal,1);
-                temperature[106]=can1_getdata(rbuffer_internal,2);
-                temperature[107]=can1_getdata(rbuffer_internal,3);
+                temperature[104]=can2_getdata(rbuffer_internal,0);
+                temperature[105]=can2_getdata(rbuffer_internal,1);
+                temperature[106]=can2_getdata(rbuffer_internal,2);
+                temperature[107]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xDB:
-                temperature[108]=can1_getdata(rbuffer_internal,0);
-                temperature[109]=can1_getdata(rbuffer_internal,1);
-                temperature[110]=can1_getdata(rbuffer_internal,2);
-                temperature[111]=can1_getdata(rbuffer_internal,3);
+                temperature[108]=can2_getdata(rbuffer_internal,0);
+                temperature[109]=can2_getdata(rbuffer_internal,1);
+                temperature[110]=can2_getdata(rbuffer_internal,2);
+                temperature[111]=can2_getdata(rbuffer_internal,3);
                 break;
             // Slave 14 temperatures
             case 0xDC:
-                temperature[112]=can1_getdata(rbuffer_internal,0);
-                temperature[113]=can1_getdata(rbuffer_internal,1);
-                temperature[114]=can1_getdata(rbuffer_internal,2);
-                temperature[115]=can1_getdata(rbuffer_internal,3);
+                temperature[112]=can2_getdata(rbuffer_internal,0);
+                temperature[113]=can2_getdata(rbuffer_internal,1);
+                temperature[114]=can2_getdata(rbuffer_internal,2);
+                temperature[115]=can2_getdata(rbuffer_internal,3);
                 break;
             case 0xDD:
-                temperature[116]=can1_getdata(rbuffer_internal,0);
-                temperature[117]=can1_getdata(rbuffer_internal,1);
-                temperature[118]=can1_getdata(rbuffer_internal,2);
-                temperature[119]=can1_getdata(rbuffer_internal,3);
+                temperature[116]=can2_getdata(rbuffer_internal,0);
+                temperature[117]=can2_getdata(rbuffer_internal,1);
+                temperature[118]=can2_getdata(rbuffer_internal,2);
+                temperature[119]=can2_getdata(rbuffer_internal,3);
                 break;
                 
             //* SLAVES BALANCING *//
                 
             // Balancing flags
             case 0xE0:
-                balancing_0 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_0 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
             case 0xE1:
-                balancing_1 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_1 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
             case 0xE2:
-                balancing_2 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_2 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
             case 0xE3:
-                balancing_3 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_3 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
             case 0xE4:
-                balancing_4 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_4 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
             case 0xE5:
-                balancing_5 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_5 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
             case 0xE6:
-                balancing_6 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_6 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
             case 0xE7:
-                balancing_7 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_7 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
             case 0xE8:
-                balancing_8 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_8 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
             case 0xE9:
-                balancing_9 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_9 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
             case 0xEA:
-                balancing_10 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_10 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
             case 0xEB:
-                balancing_11 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_11 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
             case 0xEC:
-                balancing_12 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_12 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
             case 0xED:
-                balancing_13 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_13 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
             case 0xEE:
-                balancing_14 = can1_getdata(rbuffer_internal,0)>>8;
+                balancing_14 = can2_getdata(rbuffer_internal,0)>>8;
                 break;
              
             //* HALL SENSOR CURRENT *//    
                 
             case 0x3C0:
                 current_synchronism = 1;
-                current_buffer[0] = can1_getdata(rbuffer_internal,0);
-                current_buffer[1] = can1_getdata(rbuffer_internal,1);
+                current_buffer[0] = can2_getdata(rbuffer_internal,0);
+                current_buffer[1] = can2_getdata(rbuffer_internal,1);
                 break;
         }
         
@@ -832,7 +832,7 @@ void external_CAN_management ( void )
                 break;
             }
         }
-        can2_writebytes (1, 1, 145, 6, 0, 0, 0, 0, 0, 0, 0);
+        can1_writebytes (1, 1, 145, 6, 0, 0, 0, 0, 0, 0, 0);
         C1TR01CONbits.TXREQ1 = 1; 
         secuence_0 = 0;
         LED1 = 1;
@@ -856,7 +856,7 @@ void external_CAN_management ( void )
                 break;
             }
         }
-        can2_writebytes (1, 1, 145, 3, 0, 0, 0, 0, 0, 0, 0);
+        can1_writebytes (1, 1, 145, 3, 0, 0, 0, 0, 0, 0, 0);
         C1TR01CONbits.TXREQ1 = 1;
         secuence_0 = 0;
         LED1 = 1;
@@ -874,7 +874,7 @@ void external_CAN_management ( void )
                     break;
                 }
             }
-            can2_writebytes (1, 1, 145, 0, 0, 0, 0, 0, 0, 0, 0);
+            can1_writebytes (1, 1, 145, 0, 0, 0, 0, 0, 0, 0, 0);
             C1TR01CONbits.TXREQ1 = 1;
         }
         AIRs_state = 0;
@@ -896,7 +896,7 @@ void external_CAN_management ( void )
         CAN_alive = 0;
         synchronism = 0;
 
-        //    can2_writebytes (buffer, dlc, cobid, byte1, byte2, byte3, byte4, byte5, byte6, byte7, byte8);
+        //    can1_writebytes (buffer, dlc, cobid, byte1, byte2, byte3, byte4, byte5, byte6, byte7, byte8);
         if (CAN_count == 1)
         {
             tt_buffer = 0;
@@ -907,7 +907,7 @@ void external_CAN_management ( void )
                     break;
                 }
             }
-            can2_writebytes (1, 1, 145, AIRs_state, 0, 0, 0, 0, 0, 0, 0);
+            can1_writebytes (1, 1, 145, AIRs_state, 0, 0, 0, 0, 0, 0, 0);
             C1TR01CONbits.TXREQ1 = 1;
         }
         if ( CAN_count == 2 || CAN_count == 4 || CAN_count == 6 || CAN_count == 8 || CAN_count == 10 || CAN_count == 12 )
@@ -920,7 +920,7 @@ void external_CAN_management ( void )
                     break;
                 }
             }
-            can2_writebytes (0, 7, 146, min_cell_voltage>>8, min_cell_voltage, max_cell_voltage>>8, max_cell_voltage, total_voltage>>16, total_voltage>>8, total_voltage, 0);
+            can1_writebytes (0, 7, 146, min_cell_voltage>>8, min_cell_voltage, max_cell_voltage>>8, max_cell_voltage, total_voltage>>16, total_voltage>>8, total_voltage, 0);
             C1TR01CONbits.TXREQ0 = 1;
             
             tt_buffer = 0;
@@ -931,7 +931,7 @@ void external_CAN_management ( void )
                     break;
                 }
             }
-            can2_writebytes (1, 8, 148, current_buffer[0]>>8, current_buffer[0], current_buffer[1]>>8, current_buffer[1], SoC>>8, SoC, SoH>>8, SoH);
+            can1_writebytes (1, 8, 148, current_buffer[0]>>8, current_buffer[0], current_buffer[1]>>8, current_buffer[1], SoC>>8, SoC, SoH>>8, SoH);
             C1TR01CONbits.TXREQ1 = 1;  
         }
         if ( CAN_count == 3 || CAN_count == 5 || CAN_count == 7 || CAN_count == 9 || CAN_count == 11 )
@@ -944,7 +944,7 @@ void external_CAN_management ( void )
                     break;
                 }
             }
-            can2_writebytes (0, 6, 147, min_cell_temperature>>8, min_cell_temperature, max_cell_temperature>>8, max_cell_temperature, av_cell_temperature>>8, av_cell_temperature, 0, 0);
+            can1_writebytes (0, 6, 147, min_cell_temperature>>8, min_cell_temperature, max_cell_temperature>>8, max_cell_temperature, av_cell_temperature>>8, av_cell_temperature, 0, 0);
             C1TR01CONbits.TXREQ0 = 1;
             
             tt_buffer = 0;
@@ -955,7 +955,7 @@ void external_CAN_management ( void )
                     break;
                 }
             }
-            can2_writebytes (1, 6, 158, min_onboard_temperature>>8, min_onboard_temperature, max_onboard_temperature>>8, max_onboard_temperature, av_onboard_temperature>>8, av_onboard_temperature, 0, 0);
+            can1_writebytes (1, 6, 158, min_onboard_temperature>>8, min_onboard_temperature, max_onboard_temperature>>8, max_onboard_temperature, av_onboard_temperature>>8, av_onboard_temperature, 0, 0);
             C1TR01CONbits.TXREQ1 = 1;
         }
         
@@ -976,7 +976,7 @@ void external_CAN_management ( void )
 //                    break;
 //                }
 //            }
-//            can2_writebytes (1, 8, 148, current_buffer[0]>>8, current_buffer[0], current_buffer[1]>>8, current_buffer[1], SoC>>8, SoC, SoH>>8, SoH);
+//            can1_writebytes (1, 8, 148, current_buffer[0]>>8, current_buffer[0], current_buffer[1]>>8, current_buffer[1], SoC>>8, SoC, SoH>>8, SoH);
 //            C1TR01CONbits.TXREQ1 = 1;
 //        }
         CAN_count++;
@@ -989,7 +989,7 @@ void external_CAN_management ( void )
                 break;
             }
         }
-        can2_writebytes (2, 4, 149, sfr1, sfr2, sfr3, 0, 0, 0, 0, 0);
+        can1_writebytes (2, 4, 149, sfr1, sfr2, sfr3, 0, 0, 0, 0, 0);
         C1TR23CONbits.TXREQ2 = 1;
 
         if(charger_count==20)
@@ -1003,7 +1003,7 @@ void external_CAN_management ( void )
                     break;
                 }
             }
-            can2_writebytes (0, 3, 157, max_charging_voltage>>8, max_charging_voltage, max_charging_current, 0, 0, 0, 0, 0);
+            can1_writebytes (0, 3, 157, max_charging_voltage>>8, max_charging_voltage, max_charging_current, 0, 0, 0, 0, 0);
             C1TR01CONbits.TXREQ0 = 1;
         }
         
@@ -1018,7 +1018,7 @@ void external_CAN_management ( void )
                     break;
                 }
             }
-            can2_writebytes (3, 1, 159, BMS_alive, 0, 0, 0, 0, 0, 0, 0);
+            can1_writebytes (3, 1, 159, BMS_alive, 0, 0, 0, 0, 0, 0, 0);
             C1TR23CONbits.TXREQ3 = 1;
 
             BMS_alive++;
@@ -1110,7 +1110,7 @@ void initialization ( void ) {
     
     TRISCbits.TRISC9 = 1; // C9 input - BMS Monitoring 
     
-    // Unused I/O configured as output and ¿driven to a logic low state?
+    // Unused I/O configured as output and ?driven to a logic low state?
     TRISAbits.TRISA4 = 0;
     TRISAbits.TRISA8 = 0;
     TRISAbits.TRISA9 = 0;
@@ -1146,8 +1146,8 @@ void initialization ( void ) {
     IEC0bits.T2IE = 1; // Enable Timer2 interrupt
     
     // CAN Initialization
-    Ecan2Init();
     Ecan1Init();
+    Ecan2Init();
     
     // Enable CAN Interrupts
     IEC2bits.C1IE = 1;
@@ -1158,16 +1158,16 @@ int main( void ) {
 
     initialization();
     
-    overvoltage = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    undervoltage = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    overtemperature = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    undertemperature = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    voltage_disconnection = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    temperature_disconnection = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    current_disconnection = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    CAN_disconnection = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    BMS_OK_state = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    stop_charging = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
+    overvoltage = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    undervoltage = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    overtemperature = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    undertemperature = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    voltage_disconnection = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    temperature_disconnection = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    current_disconnection = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    CAN_disconnection = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    BMS_OK_state = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    stop_charging = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
     
     sfr1= (interlock_state<<7) + (AIRminus_state<<6) + (AIRplus_state<<5) + (precharge_state<<4) + (undervoltage<<3) + (overvoltage<<2) + (overtemperature<<1) + undertemperature;
     sfr2= (current_disconnection<<7) + (temperature_disconnection<<6) + (voltage_disconnection<<5) + (CAN_disconnection<<4) + (BMS_OK_state<<3) + (divide_current<<2) + (fans_state<<1) + balancing_state;
@@ -1247,7 +1247,7 @@ int main( void ) {
                         break;
                     }
                 }
-                can2_writebytes (4, 1, 0x550, 1, 0, 0, 0, 0, 0, 0, 0);
+                can1_writebytes (4, 1, 0x550, 1, 0, 0, 0, 0, 0, 0, 0);
                 C1TR45CONbits.TXREQ4 = 1;
             }
             
@@ -1317,9 +1317,9 @@ int main( void ) {
             {
                 shutdown_signal = 0;
                 tt_voltage = 0;
-                undervoltage = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-                overvoltage = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-                voltage_disconnection = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
+                undervoltage = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+                overvoltage = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+                voltage_disconnection = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
                 voltage_NOK = 0;
             }
             
@@ -1390,8 +1390,8 @@ int main( void ) {
             
             external_CAN_management();
             
-            if( max_cell_temperature > fans_temperature ) //Hablar con refrigeración por si quieren que se haga un control de los ventiladores más personalizado
-//            if( (max_cell_temperature > 350) || balancing_button == 1 ) //Hablar con refrigeración por si quieren que se haga un control de los ventiladores más personalizado
+            if( max_cell_temperature > fans_temperature ) //Hablar con refrigeraci?n por si quieren que se haga un control de los ventiladores m?s personalizado
+//            if( (max_cell_temperature > 350) || balancing_button == 1 ) //Hablar con refrigeraci?n por si quieren que se haga un control de los ventiladores m?s personalizado
             {
                 Fans2_Control = 1;
                 for( k = 0; k < 255; k++ ) {}
@@ -1552,7 +1552,7 @@ int main( void ) {
                 if( secuence_0 == 0 )
                 {
                     while( C1TR01CONbits.TXREQ1 ) {}
-                    can2_writebytes ( 1, 1, 145, 0, 0, 0, 0, 0, 0, 0, 0);
+                    can1_writebytes ( 1, 1, 145, 0, 0, 0, 0, 0, 0, 0, 0);
                     C1TR01CONbits.TXREQ1 = 1;
                 }
                 secuence_0 = 1;
@@ -1578,7 +1578,7 @@ int main( void ) {
                 if( secuence_0 == 0 )
                 {
                     while( C1TR01CONbits.TXREQ1 ) {}
-                    can2_writebytes ( 1, 1, 145, 0, 0, 0, 0, 0, 0, 0, 0);
+                    can1_writebytes ( 1, 1, 145, 0, 0, 0, 0, 0, 0, 0, 0);
                     C1TR01CONbits.TXREQ1 = 1;
                 }
                 secuence_0 = 1;
@@ -1621,7 +1621,7 @@ int main( void ) {
                     break;
                 }
             }
-            can1_writebytes (0, 8, 0x80, min_cell_voltage>>8, min_cell_voltage, voltage_balancing>>8, voltage_balancing, voltage_balancing>>8, voltage_balancing, (( max_difference<<2) & 0xFC) | ((max_balancing_temperature>>8) & 0x03), max_balancing_temperature);
+            can2_writebytes (0, 8, 0x80, min_cell_voltage>>8, min_cell_voltage, voltage_balancing>>8, voltage_balancing, voltage_balancing>>8, voltage_balancing, (( max_difference<<2) & 0xFC) | ((max_balancing_temperature>>8) & 0x03), max_balancing_temperature);
             C2TR01CONbits.TXREQ0 = 1;
             tt_buffer = 0;
             while(C2TR45CONbits.TXREQ5) 
@@ -1631,7 +1631,7 @@ int main( void ) {
                     break;
                 }
             }
-            can1_writebytes (5, 7, 0xB3,sfr1,sfr2,sfr3,0,0,0,0,0);
+            can2_writebytes (5, 7, 0xB3,sfr1,sfr2,sfr3,0,0,0,0,0);
             C2TR45CONbits.TXREQ5 = 1;
             
             external_CAN_management();
@@ -1646,7 +1646,7 @@ int main( void ) {
                         break;
                     }
                 }
-                can1_writebytes (3, 7, 0xF0, min_cell_voltage>>8, min_cell_voltage, max_cell_voltage>>8, max_cell_voltage, total_voltage>>16, total_voltage>>8, total_voltage, 0);
+                can2_writebytes (3, 7, 0xF0, min_cell_voltage>>8, min_cell_voltage, max_cell_voltage>>8, max_cell_voltage, total_voltage>>16, total_voltage>>8, total_voltage, 0);
                 C2TR23CONbits.TXREQ3 = 1;
             }
             if ( CAN_count_int == 0 || CAN_count_int == 2 || CAN_count_int == 4 || CAN_count_int == 6 )
@@ -1659,7 +1659,7 @@ int main( void ) {
                         break;
                     }
                 }
-                can1_writebytes (3, 6, 0xF1, min_cell_temperature>>8, min_cell_temperature, max_cell_temperature>>8, max_cell_temperature, av_cell_temperature>>8, av_cell_temperature, 0, 0);
+                can2_writebytes (3, 6, 0xF1, min_cell_temperature>>8, min_cell_temperature, max_cell_temperature>>8, max_cell_temperature, av_cell_temperature>>8, av_cell_temperature, 0, 0);
                 C2TR23CONbits.TXREQ3 = 1;
                 tt_buffer = 0;
                 while(C2TR45CONbits.TXREQ4) 
@@ -1669,7 +1669,7 @@ int main( void ) {
                         break;
                     }
                 }
-                can1_writebytes (4, 6, 0xF2, min_onboard_temperature>>8, min_onboard_temperature, max_onboard_temperature>>8, max_onboard_temperature, av_onboard_temperature>>8, av_onboard_temperature, 0, 0);
+                can2_writebytes (4, 6, 0xF2, min_onboard_temperature>>8, min_onboard_temperature, max_onboard_temperature>>8, max_onboard_temperature, av_onboard_temperature>>8, av_onboard_temperature, 0, 0);
                 C2TR45CONbits.TXREQ4 = 1;
             }
             CAN_count_int++;
