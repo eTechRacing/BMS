@@ -1,0 +1,41 @@
+Replace Part C601 C1u-50V-0805FNPC-X7R in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with C1u-50V-0805FNPC-X7R from Passives.SchLib
+Replace Part C602 C100n-50V-0805FNPC-X7R in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with C100n-50V-0805FNPC-X7R from Passives.SchLib
+Replace Part C603 C10n-50V-0805FNPC-X7R in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with C10n-50V-0805FNPC-X7R from Passives.SchLib
+Replace Part C604 C1u-50V-0805FNPC-X7R in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with C1u-50V-0805FNPC-X7R from Passives.SchLib
+Replace Part C605 C100n-50V-0805FNPC-X7R in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with C100n-50V-0805FNPC-X7R from Passives.SchLib
+Replace Part C606 C10n-50V-0805FNPC-X7R in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with C10n-50V-0805FNPC-X7R from Passives.SchLib
+Replace Part C607 C100n-50V-0805FNPC-X7R in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with C100n-50V-0805FNPC-X7R from Passives.SchLib
+Replace Part DCDC602 DCDC_RNM-0505S/P in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with DCDC_RNM-0505S/P from Semiconductor.SchLib
+Replace Part DCDC701 DCDC-ISO-1000V/5V-1A in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with DCDC-ISO-1000V/5V-1A from Semiconductor.SchLib
+Replace Part F601 Fuse_1A_600V in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with Fuse_1A_600V from Filter components.SchLib
+Replace Part F602 Fuse_1A_600V in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with Fuse_1A_600V from Filter components.SchLib
+Replace Part NTC601 NTC_NXRT15XV103FA1B040 in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with NTC_NXRT15XV103FA1B040 from Sensors.SchLib
+Replace Part Q601 TRT-NCH-3/35-CPH in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TRT-NCH-3/35-CPH from Semiconductor.SchLib
+Replace Part Q602 TRT-NCH-3/35-CPH in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TRT-NCH-3/35-CPH from Semiconductor.SchLib
+Replace Part Q603 TRT-NCH-3/35-CPH in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TRT-NCH-3/35-CPH from Semiconductor.SchLib
+Replace Part R601 R1k-VTR in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with R1k-VTR from Passives.SchLib
+Replace Part R602 R2M-1206FTK in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with R2M-1206FTK from Passives.SchLib
+Replace Part R603 R51k-1206FTK in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with R51k-1206FTK from Passives.SchLib
+Replace Part R604 R10k-0805FTK in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with R10k-0805FTK from Passives.SchLib
+Replace Part R605 R10k-0805FTK in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with R10k-0805FTK from Passives.SchLib
+Replace Part R606 R1k-0805FTK in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with R1k-0805FTK from Passives.SchLib
+Replace Part R607 R10k-0805FTK in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with R10k-0805FTK from Passives.SchLib
+Replace Part R608 R150-1206FTK in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with R150-1206FTK from Passives.SchLib
+Replace Part R609 R10k-0805FTK in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with R10k-0805FTK from Passives.SchLib
+Replace Part TP601 TestPoint in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TestPoint from e-Tech_Racing.SchLib
+Replace Part TP602 TestPoint in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TestPoint from e-Tech_Racing.SchLib
+Replace Part TP603 TestPoint in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TestPoint from e-Tech_Racing.SchLib
+Replace Part TP604 TestPoint in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TestPoint from e-Tech_Racing.SchLib
+Replace Part TP605 TestPoint in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TestPoint from e-Tech_Racing.SchLib
+Replace Part TP606 TestPoint in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TestPoint from e-Tech_Racing.SchLib
+Replace Part TP607 TestPoint in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TestPoint from e-Tech_Racing.SchLib
+Replace Part TP608 TestPoint in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TestPoint from e-Tech_Racing.SchLib
+Replace Part TP609 TestPoint in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TestPoint from e-Tech_Racing.SchLib
+Replace Part TP610 TestPoint in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TestPoint from e-Tech_Racing.SchLib
+Replace Part TP611 TestPoint in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TestPoint from e-Tech_Racing.SchLib
+Replace Part TP612 TestPoint in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TestPoint from e-Tech_Racing.SchLib
+Replace Part TP613 TestPoint in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TestPoint from e-Tech_Racing.SchLib
+Replace Part TP614 TestPoint in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with TestPoint from e-Tech_Racing.SchLib
+Replace Part U601 Array_4_Amp_LM339D in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with Array_4_Amp_LM339D from Integrated circuits.SchLib
+Replace Part U602 Optocoupler_TCLT1000 in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with Optocoupler_TCLT1000 from Semiconductor.SchLib
+Replace Part X601 Relay_DAR72410FU in G:\Mi unidad\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] High Voltage.SchDoc with Relay_DAR72410FU from Electromechanical.SchLib

@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=NetJ102_8 Pin=NTC105-1
+Removed Pin From Net: NetName=NetJ102_7 Pin=NTC106-1
+Removed Pin From Net: NetName=NetJ102_6 Pin=NTC107-1
+Removed Pin From Net: NetName=NetJ102_5 Pin=NTC108-1
+Removed Pin From Net: NetName=NetJ202_8 Pin=NTC205-1
+Removed Pin From Net: NetName=NetJ202_7 Pin=NTC206-1
+Removed Pin From Net: NetName=NetJ202_6 Pin=NTC207-1
+Removed Pin From Net: NetName=NetJ202_5 Pin=NTC208-1
+Change Component Designator: OldDesignator=NTC305 NewDesignator=NTC308
+Change Component Designator: OldDesignator=NTC306 NewDesignator=NTC307
+Change Component Designator: OldDesignator=NTC307 NewDesignator=NTC306
+Change Component Designator: OldDesignator=NTC308 NewDesignator=NTC305
+Added Pin To Net: NetName=NetJ102_5 Pin=NTC105-1
+Added Pin To Net: NetName=NetJ102_6 Pin=NTC106-1
+Added Pin To Net: NetName=NetJ102_7 Pin=NTC107-1
+Added Pin To Net: NetName=NetJ102_8 Pin=NTC108-1
+Added Pin To Net: NetName=NetJ202_5 Pin=NTC205-1
+Added Pin To Net: NetName=NetJ202_6 Pin=NTC206-1
+Added Pin To Net: NetName=NetJ202_7 Pin=NTC207-1
+Added Pin To Net: NetName=NetJ202_8 Pin=NTC208-1
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component NTC307 NXRT15XV103FA1B040
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component NTC308 NXRT15XV103FA1B040

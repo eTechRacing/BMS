@@ -1,0 +1,5 @@
+Replace Part C601 C100n-50V-0805FNPC-X7R in C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] Precharge.SchDoc with C100n-50V-0805FNPC-X7R from Passives.SchLib
+Replace Part NTC601 NTC_NXRT15XV103FA1B040 in C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] Precharge.SchDoc with NTC_NXRT15XV103FA1B040 from Sensors.SchLib
+Replace Part R601 R10k-0805FTK in C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] Precharge.SchDoc with R10k-0805FTK from Passives.SchLib
+Replace Part R_precharge R470-TO247 in C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] Precharge.SchDoc with R470-TO247 from Passives.SchLib
+Replace Part X_precharge Relay_G81C in C:\Users\dwegg\Google Drive\e-Tech\Electronics\Electronics Repo\BMS\AMS_Master\AMS_Master_PCB\[6] Precharge.SchDoc with Relay_G81C from Electromechanical.SchLib

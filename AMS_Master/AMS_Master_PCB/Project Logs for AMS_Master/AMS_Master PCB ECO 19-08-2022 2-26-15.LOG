@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=AMS_CAN_L Pin=C307-2
+Removed Pin From Net: NetName=CAN1_L Pin=C320-2
+Added Pin To Net: NetName=AMS_CAN_H Pin=C307-2
+Added Pin To Net: NetName=CAN1_H Pin=C320-2

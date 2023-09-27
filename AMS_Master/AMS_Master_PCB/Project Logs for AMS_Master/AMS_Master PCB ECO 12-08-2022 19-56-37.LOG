@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=AMS_CAN_L Pin=J3-1
+Removed Pin From Net: NetName=AMS_CAN_H Pin=J3-2
+Removed Pin From Net: NetName=AMS_CAN_GND Pin=J3-3
+Added Pin To Net: NetName=AMS_CAN_GND Pin=J3-1
+Added Pin To Net: NetName=AMS_CAN_L Pin=J3-2
+Added Pin To Net: NetName=AMS_CAN_H Pin=J3-3

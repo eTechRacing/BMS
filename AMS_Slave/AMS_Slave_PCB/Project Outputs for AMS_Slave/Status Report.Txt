@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+Output: AMS_Slave
+Type  : ExportSTEP
+From  : Variant [[No Variations]] of PCB Document [AMS_Slave.PcbDoc]
+   Generated File[AMS_Slave.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 15:29:52 On 02/04/2023
+=======
 Output: Gerber Files
 Type  : Gerber
 From  : Variant [[No Variations]] of Project [AMS_Slave.PrjPCB]
@@ -31,3 +43,4 @@ Files Generated   : 24
 Documents Printed : 0
 
 Finished Output Generation At 12:09:37 On 09/01/2019
+>>>>>>> main

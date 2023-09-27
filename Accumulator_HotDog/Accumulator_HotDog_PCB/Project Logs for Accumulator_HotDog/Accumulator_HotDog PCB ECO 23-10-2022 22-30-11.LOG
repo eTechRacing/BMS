@@ -1,0 +1,16 @@
+Added Component: Designator=TP102(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP104*(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP104(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP106*(TestPoint)
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetF102_1 Pin=TP102-1
+Added Pin To Net: NetName=NetF104_1 Pin=TP104*-1
+Added Pin To Net: NetName=NetF104_1 Pin=TP104-1
+Added Pin To Net: NetName=NetF106_1 Pin=TP106*-1
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component TP102 TestPoint
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component TP104* TestPoint
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component TP104 TestPoint
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component TP106* TestPoint

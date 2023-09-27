@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=LV+ in Pin=J101-1
+Removed Pin From Net: NetName=NetD105_K Pin=J101-2
+Removed Pin From Net: NetName=NetC101_2 Pin=J102-1
+Removed Pin From Net: NetName=NetC102_2 Pin=J102-2
+Removed Pin From Net: NetName=+12 Pin=J104-1
+Removed Pin From Net: NetName=+12 Pin=J104-2
+Removed Member From Class: ClassName=Supply Member=J104
+Removed Member From Class: ClassName=Supply Member=J105
+Removed Member From Class: ClassName=Supply Member=J106
+Change Component Designator: OldDesignator=J103 NewDesignator=J101
+Change Component Designator: OldDesignator=J105 NewDesignator=J102
+Change Component Designator: OldDesignator=J106 NewDesignator=J103

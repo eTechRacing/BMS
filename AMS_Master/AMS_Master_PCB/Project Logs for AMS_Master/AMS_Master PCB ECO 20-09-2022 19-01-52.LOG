@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=IMD_OK Pin=J1-5
+Removed Pin From Net: NetName=BMS_OK Pin=J1-6
+Added Pin To Net: NetName=BMS_OK Pin=J1-5
+Added Pin To Net: NetName=IMD_OK Pin=J1-6

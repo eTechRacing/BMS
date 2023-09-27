@@ -1,0 +1,3 @@
+Remove Pin=J201-PGC From Net=PGC
+Remove Pin=J201-PGD From Net=PGD
+Remove Pin=R_precharge-2 From Net=BAT+

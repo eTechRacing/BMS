@@ -1,39 +1,43 @@
 /*
  Este programa, amigos de Yutube, es una plantilla para utilizar cualquiera de los
- varios periféricos del dsPIC33EP256GM604 o dsPIC33EP128GM502 que he preparado:
+ varios perif?ricos del dsPIC33EP256GM604 o dsPIC33EP128GM502 que he preparado:
  CAN, I2C, SPI y UART. He comentado casi todo lo que he podido para que se entienda.
  Sentaos, relajaos y disfrutad.
  
  Nombre del programa:               Testbench.c
  Programador y Hackerman supremo:   Alex
  
- e-Tech Racing 2018 ©
+ e-Tech Racing 2018 ?
  
  */
 
 #include <xc.h>
 #include <stdint.h>
 #include <stdio.h>
-//#include "ecan1_config.h"
-//#include "ecan2_config.h"
-#include "../inc/common.h"
-#include "../inc/main.h"
+#include "ecan1_config.h"
+#include "ecan2_config.h"
+#include "common.h"
+#include "main.h"
 
 // *****************************************************************************
 //                             Pins
 // *****************************************************************************
 #define Error_LED PORTAbits.RA0 
+#define LED1 PORTBbits.RB0
 #define LED2 PORTAbits.RA1
 #define AIRplus_Control PORTAbits.RA10
 #define AIRminus_Control PORTAbits.RA7
-#define LED1 PORTBbits.RB0
-#define CAN_Control PORTBbits.RB1
-#define Interlock_Monitoring PORTBbits.RB9
-#define BMS_OK PORTBbits.RB11
-#define Fans1_Control PORTBbits.RB12
-#define Fans2_Control PORTBbits.RB13
+#define CAN_Control PORTBbits.RB11 //AMS CAN CONTROL a l'esquem?tic
+#define Interlock_Monitoring PORTCbits.RC7
+#define BMS_OK PORTBbits.RB1 //BMS ERROR a l'esquem?tic
+#define Fans1_Control PORTBbits.RB13
+#define Fans2_Control PORTBbits.RB12
 #define Precharge_Control PORTBbits.RB14
 #define Balancing PORTCbits.RC6
+#define IMD_MONITORING PORTCbits.RC8 // No implementat
+#define BMS_MONITORING PORTCbits.RC9 // No implementat
+
+
 
 
 
@@ -72,7 +76,7 @@ int i,k;
 
 int max_OK_voltage = 4195, min_OK_voltage = 3100;
 int max_OK_temperature = 600, min_OK_temperature = 5;
-long max_OK_current = 185000; //Sacado a partir de la potencia máxima normativa 80kW
+long max_OK_current = 185000; //Sacado a partir de la potencia m?xima normativa 80kW
 int max_charging_voltage = 5880, divide_current_voltage = 4195, max_charging_current = 20; //Constant to send to the charger that specify the maximum voltage and maximum current that should be allowed when charging
 int fans_temperature = 350;
 int voltage_balancing = 4950, max_balancing_temperature = 650;
@@ -1068,7 +1072,7 @@ void initialization ( void ) {
     ANSELB = 0; // Port B - digital
     ANSELC = 0; // Port C - digital
     
-    TRISAbits.TRISA0 = 0; // A0 output - Error LED control
+       TRISAbits.TRISA0 = 0; // A0 output - Error LED control
     PORTAbits.RA0 = 0;    // Error LED (0-off, 1-on)
     
     TRISAbits.TRISA1 = 0; // A1 output - LED2 control
@@ -1083,13 +1087,13 @@ void initialization ( void ) {
     TRISBbits.TRISB0 = 0; // B0 output - LED1 control
     PORTBbits.RB0 = 0;    // LED1 (0-off, 1-on)
     
-    TRISBbits.TRISB1 = 0; // B1 output - CAN control
-    PORTBbits.RB1 = 0;    // CAN (0-deactivated, 1-activated)
+    TRISBbits.TRISB11 = 0; // B1 output - CAN control
+    PORTBbits.RB11 = 0;    // CAN (0-deactivated, 1-activated)
     
-    TRISBbits.TRISB9 = 1; // B9 input - Interlock monitoring (0-no connected, 1-connected)
+    TRISCbits.TRISC7 = 1; // B9 input - Interlock monitoring (0-no connected, 1-connected)
     
-    TRISBbits.TRISB11 = 0; // B11 output - BMS OK control
-    PORTBbits.RB11 = 0;    // BMS_OK ()
+    TRISBbits.TRISB1 = 0; // B11 output - BMS OK control
+    PORTBbits.RB1 = 0;    // BMS_OK ()
     
     TRISBbits.TRISB12 = 0; // B12 output - Fans 1 control
     PORTBbits.RB12 = 0;    // Fans 1 (0-deactivated, 1-activated)
@@ -1102,7 +1106,11 @@ void initialization ( void ) {
     
     TRISCbits.TRISC6 = 1; // C6 input - Balancing (0-activated, 1-deactivated)
     
-    // Unused I/O configured as output and ¿driven to a logic low state?
+    TRISCbits.TRISC8 = 1; // C8 input - IMD Monitoring
+    
+    TRISCbits.TRISC9 = 1; // C9 input - BMS Monitoring 
+    
+    // Unused I/O configured as output and ?driven to a logic low state?
     TRISAbits.TRISA4 = 0;
     TRISAbits.TRISA8 = 0;
     TRISAbits.TRISA9 = 0;
@@ -1114,9 +1122,6 @@ void initialization ( void ) {
     TRISBbits.TRISB15 = 0;
     TRISCbits.TRISC3 = 0;
     TRISCbits.TRISC5 = 0;
-    TRISCbits.TRISC7 = 0;
-    TRISCbits.TRISC8 = 0;
-    TRISCbits.TRISC9 = 0;
     
     // Clear Interrupt Flags
     IFS0 = 0;
@@ -1153,16 +1158,16 @@ int main( void ) {
 
     initialization();
     
-    overvoltage = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    undervoltage = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    overtemperature = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    undertemperature = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    voltage_disconnection = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    temperature_disconnection = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    current_disconnection = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    CAN_disconnection = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    BMS_OK_state = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-    stop_charging = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
+    overvoltage = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    undervoltage = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    overtemperature = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    undertemperature = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    voltage_disconnection = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    temperature_disconnection = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    current_disconnection = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    CAN_disconnection = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    BMS_OK_state = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+    stop_charging = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
     
     sfr1= (interlock_state<<7) + (AIRminus_state<<6) + (AIRplus_state<<5) + (precharge_state<<4) + (undervoltage<<3) + (overvoltage<<2) + (overtemperature<<1) + undertemperature;
     sfr2= (current_disconnection<<7) + (temperature_disconnection<<6) + (voltage_disconnection<<5) + (CAN_disconnection<<4) + (BMS_OK_state<<3) + (divide_current<<2) + (fans_state<<1) + balancing_state;
@@ -1312,9 +1317,9 @@ int main( void ) {
             {
                 shutdown_signal = 0;
                 tt_voltage = 0;
-                undervoltage = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-                overvoltage = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
-                voltage_disconnection = 1; // Mirar porque la logica de esta señal va al reves (1-OK, 0-error)
+                undervoltage = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+                overvoltage = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
+                voltage_disconnection = 1; // Mirar porque la logica de esta se?al va al reves (1-OK, 0-error)
                 voltage_NOK = 0;
             }
             
@@ -1385,8 +1390,8 @@ int main( void ) {
             
             external_CAN_management();
             
-            if( max_cell_temperature > fans_temperature ) //Hablar con refrigeración por si quieren que se haga un control de los ventiladores más personalizado
-//            if( (max_cell_temperature > 350) || balancing_button == 1 ) //Hablar con refrigeración por si quieren que se haga un control de los ventiladores más personalizado
+            if( max_cell_temperature > fans_temperature ) //Hablar con refrigeraci?n por si quieren que se haga un control de los ventiladores m?s personalizado
+//            if( (max_cell_temperature > 350) || balancing_button == 1 ) //Hablar con refrigeraci?n por si quieren que se haga un control de los ventiladores m?s personalizado
             {
                 Fans2_Control = 1;
                 for( k = 0; k < 255; k++ ) {}

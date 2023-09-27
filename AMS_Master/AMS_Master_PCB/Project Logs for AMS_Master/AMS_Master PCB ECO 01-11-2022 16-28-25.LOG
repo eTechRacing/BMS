@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=Fans_1_Control Pin=TP206-1
+Removed Pin From Net: NetName=Fans_3_Control Pin=TP209-1
+Removed Pin From Net: NetName=Fans_1_Control Pin=U201-8
+Removed Pin From Net: NetName=Fans_3_Control Pin=U201-11
+Added Pin To Net: NetName=Fans_3_Control Pin=TP206-1
+Added Pin To Net: NetName=Fans_1_Control Pin=TP209-1
+Added Pin To Net: NetName=Fans_3_Control Pin=U201-8
+Added Pin To Net: NetName=Fans_1_Control Pin=U201-11

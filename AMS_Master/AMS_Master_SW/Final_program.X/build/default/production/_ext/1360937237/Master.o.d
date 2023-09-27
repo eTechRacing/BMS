@@ -1,18 +1,22 @@
 build/default/production/_ext/1360937237/Master.o: ../src/Master.c \
- ../src/../inc/common.h ../src/../inc/main.h ../src/../inc/ecan1_config.h \
- ../src/../inc/ecan1drv.h ../src/../inc/ecan2_config.h \
- ../src/../inc/ecan2drv.h ../src/../inc/common.h
+ ../inc/ecan1_config.h ../inc/ecan1drv.h ../inc/ecan2_config.h \
+ ../inc/ecan2drv.h ../inc/common.h ../inc/main.h ../inc/ecan1_config.h \
+ ../inc/ecan2_config.h ../inc/common.h
 
-../src/../inc/common.h:
+../inc/ecan1_config.h:
 
-../src/../inc/main.h:
+../inc/ecan1drv.h:
 
-../src/../inc/ecan1_config.h:
+../inc/ecan2_config.h:
 
-../src/../inc/ecan1drv.h:
+../inc/ecan2drv.h:
 
-../src/../inc/ecan2_config.h:
+../inc/common.h:
 
-../src/../inc/ecan2drv.h:
+../inc/main.h:
 
-../src/../inc/common.h:
+../inc/ecan1_config.h:
+
+../inc/ecan2_config.h:
+
+../inc/common.h:

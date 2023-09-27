@@ -1,0 +1,13 @@
+Add Component: Footprint Not Found DCDC_42-5_V
+Add Component: Footprint Not Found DCDC_42-5_V
+Add Pin To Net: Unknown Pin: Pin DCDC101-1
+Add Pin To Net: Unknown Pin: Pin DCDC101-2
+Add Pin To Net: Unknown Pin: Pin DCDC101-3
+Add Pin To Net: Unknown Pin: Pin DCDC102-1
+Add Pin To Net: Unknown Pin: Pin DCDC102-2
+Add Pin To Net: Unknown Pin: Pin DCDC102-3
+Add Net: Net with name "AIR+_AUX_1" already exists
+Add Net: Net with name "AIR+_State" already exists
+Add Class: Class already exists: Designator
+Add Class Member: Failed to add class member : Component DCDC101 173010542
+Add Class Member: Failed to add class member : Component DCDC102 173951236

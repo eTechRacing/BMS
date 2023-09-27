@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=GND Pin=J1-7
+Removed Pin From Net: NetName=LV+ in Pin=J1-15
+Removed Pin From Net: NetName=Accumulator_Interlock Pin=R411-2
+Removed Pin From Net: NetName=TSMS Pin=TP409-1
+Removed Pin From Net: NetName=TSMS Pin=X401-5
+Removed Pin From Net: NetName=TSMS Pin=X401-6
+Added Pin To Net: NetName=TSMS Pin=J1-7
+Added Pin To Net: NetName=IMD_Shutdown Pin=J1-15
+Added Pin To Net: NetName=IMD_Shutdown Pin=R411-2
+Added Pin To Net: NetName=Accumulator_Interlock Pin=TP409-1
+Added Pin To Net: NetName=Accumulator_Interlock Pin=X401-5
+Added Pin To Net: NetName=Accumulator_Interlock Pin=X401-6
+Added Member To Class: ClassName=Shutdown Member=Component J402 61300211121
+Added Member To Class: ClassName=MCU Member=Component U201 dsPIC33EP256GM604-I/PT
