@@ -1,4 +1,0 @@
-Record=TopLevelDocument|FileName=Hierarchical Schematic.SchDoc|SheetNumber=1
-Record=SheetSymbol|SourceDocument=Hierarchical Schematic.SchDoc|Designator=Supply|SchDesignator=Supply|FileName=Supply.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=Supply.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=NoMainPathDocument|SourceDocument=Hierarchical Schematic.SchDoc|FileName=Balancing.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=Hierarchical Schematic.SchDoc|FileName=Temperatures.SchDoc|SheetNumber=4
