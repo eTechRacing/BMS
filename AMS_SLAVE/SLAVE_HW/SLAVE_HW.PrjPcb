@@ -273,7 +273,7 @@ AddNetNetLabels=-1
 AddNetPorts=-1
 ShowComponentParameters=-1
 GlobalBookmarks=0
-ExportBOM=-1
+ExportBOM=0
 TemplateFilename=
 TemplateStoreRelative=-1
 PCB_PrintColor=1
@@ -1344,14 +1344,22 @@ Net14=NetName=Cell8|NetColor=clYellow
 Net15=NetName=Cell9|NetColor=clYellow
 Net16=NetName=GND|NetColor=$00727882
 Net17=NetName=GND_SLAVE|NetColor=$006B6E78
-Net18=NetName=NTC1|NetColor=$000083FD
-Net19=NetName=NTC2|NetColor=$000083FD
-Net20=NetName=NTC3|NetColor=$000083FD
-Net21=NetName=NTC4|NetColor=$000083FD
-Net22=NetName=NTC5|NetColor=$000083FD
-Net23=NetName=NTC6|NetColor=$000083FD
-Net24=NetName=NTC7|NetColor=$000083FD
-Net25=NetName=NTC8|NetColor=$000083FD
+Net18=NetName=IMA|NetColor=$0000BE00
+Net19=NetName=IMA_OUT|NetColor=$0000BE00
+Net20=NetName=IMB|NetColor=$0000BE00
+Net21=NetName=IMB_OUT|NetColor=$0000BE00
+Net22=NetName=IPA|NetColor=$0000BE00
+Net23=NetName=IPA_OUT|NetColor=$0000BE00
+Net24=NetName=IPB|NetColor=$0000BE00
+Net25=NetName=IPB_OUT|NetColor=$0000BE00
+Net26=NetName=NTC1|NetColor=$000083FD
+Net27=NetName=NTC2|NetColor=$000083FD
+Net28=NetName=NTC3|NetColor=$000083FD
+Net29=NetName=NTC4|NetColor=$000083FD
+Net30=NetName=NTC5|NetColor=$000083FD
+Net31=NetName=NTC6|NetColor=$000083FD
+Net32=NetName=NTC7|NetColor=$000083FD
+Net33=NetName=NTC8|NetColor=$000083FD
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
