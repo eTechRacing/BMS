@@ -1,0 +1,144 @@
+Removed Pin From Net: NetName=V- Pin=C103-2
+Removed Pin From Net: NetName=NetD211_A Pin=Q211-D
+Removed Pin From Net: NetName=NetL213_2 Pin=Q211-S
+Removed Pin From Net: NetName=S12 Pin=R249-2
+Removed Member From Class: ClassName=Balancing Member=Q211
+Removed Member From Class: ClassName=Balancing Member=R249
+Change Component Comment : Designator=Q200 Old Comment=TRT-PCH-2/30-BSS New Comment=BSS308PE
+Change Component Comment : Designator=Q201 Old Comment=TRT-PCH-2/30-BSS New Comment=BSS308PE
+Change Component Comment : Designator=Q202 Old Comment=TRT-PCH-2/30-BSS New Comment=BSS308PE
+Change Component Comment : Designator=Q203 Old Comment=TRT-PCH-2/30-BSS New Comment=BSS308PE
+Change Component Comment : Designator=Q204 Old Comment=TRT-PCH-2/30-BSS New Comment=BSS308PE
+Change Component Comment : Designator=Q205 Old Comment=TRT-PCH-2/30-BSS New Comment=BSS308PE
+Change Component Comment : Designator=Q206 Old Comment=TRT-PCH-2/30-BSS New Comment=BSS308PE
+Change Component Comment : Designator=Q207 Old Comment=TRT-PCH-2/30-BSS New Comment=BSS308PE
+Change Component Comment : Designator=Q208 Old Comment=TRT-PCH-2/30-BSS New Comment=BSS308PE
+Change Component Comment : Designator=Q209 Old Comment=TRT-PCH-2/30-BSS New Comment=BSS308PE
+Change Component Comment : Designator=Q210 Old Comment=TRT-PCH-2/30-BSS New Comment=BSS308PE
+Change Component Designator: OldDesignator=Q200 NewDesignator=Q201
+Change Component Designator: OldDesignator=Q201 NewDesignator=Q202
+Change Component Designator: OldDesignator=Q202 NewDesignator=Q203
+Change Component Designator: OldDesignator=Q203 NewDesignator=Q204
+Change Component Designator: OldDesignator=Q204 NewDesignator=Q205
+Change Component Designator: OldDesignator=Q205 NewDesignator=Q206
+Change Component Designator: OldDesignator=Q206 NewDesignator=Q207
+Change Component Designator: OldDesignator=Q207 NewDesignator=Q208
+Change Component Designator: OldDesignator=Q208 NewDesignator=Q209
+Change Component Designator: OldDesignator=Q209 NewDesignator=Q210
+Change Component Designator: OldDesignator=Q210 NewDesignator=Q211
+Added Component: Designator=Q212(TRT-PCH-2/30-BSS)
+Add component (AddParameter): Name = ".Creator"; Value = "DO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "TO-236-3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "MOSFETs"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/6379/infineon-bss308pe-ds-v02-03-en-6379920.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/11171/infineon-bss308pe-ds-v02-03-en-11171385.pdf?src-supplier=Avnet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/11171/infineon-bss308pe-ds-v02-03-en-11171385.pdf?src-supplier=Avnet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Continuous Drain Current (ID)"; Value = "2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Drain to Source Voltage (Vdss)"; Value = "30V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Fall Time"; Value = "2.8ns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gate to Source Voltage (Vgs)"; Value = "20V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Capacitance"; Value = "500pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Infineon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "BSS308PEH6327"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "500mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "50=0,50300, 100=0,26400, 250=0,25900, 500=0,25200, 1000=0,24700 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds On Max"; Value = "80mR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rise Time"; Value = "7.7ns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "OptiMOS™"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "4000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "8235500"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Threshold Voltage"; Value = "-1.5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Turn-Off Delay Time"; Value = "15.3ns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Turn-On Delay Time"; Value = "5.6ns"; VariantName = "[No Variations]"
+Added Component: Designator=R?(R0805FTK)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Imperial)"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case Code (Metric)"; Value = "2012"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0805"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Chip SMD Resistors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/11821/0900766b80fcdb72-11821134.pdf?src-supplier=RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/11821/0900766b80fcdb72-11821134.pdf?src-supplier=RSComponents"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/15225/getdatasheetpartid-78155-15225381.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/15225/getdatasheetpartid-78155-15225381.pdf?src-supplier=Verical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "https://datasheet.ciiva.com/22693/1902866-22693253.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "https://datasheet.ciiva.com/22693/1902866-22693253.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.ciiva.com/7986/1856384-7986184.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.ciiva.com/7986/1856384-7986184.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.ciiva.com/7985/1856384-7985867.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.ciiva.com/7985/1856384-7985867.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "https://datasheet.ciiva.com/30242/159chpreztr-30242765.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://datasheet.ciiva.com/30242/159chpreztr-30242765.pdf?src-supplier=Onlinecomponents.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7Description"; Value = "https://datasheet.ciiva.com/6547/chpreztr-6547359.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7URL"; Value = "https://datasheet.ciiva.com/6547/chpreztr-6547359.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Depth"; Value = "1.25mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Features"; Value = "Moisture Resistant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "CR0805-JW-102ELF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "125mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Military Standard"; Value = "Not"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminations"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "125mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0,05930, 10=0,03510, 25=0,01790, 100=0,00800, 250=0,00790, 500=0,00590, 1000=0,00360, 3000=0,00350, 6000=0,00250 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "1kR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Type"; Value = "Thick Film"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "27510"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Arrow Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "CR0805-JW-102ELF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "200ppm/°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Thickness"; Value = "508um"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "150V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating (DC)"; Value = "150V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.25mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=V- Pin=C103-1
+Added Pin To Net: NetName=DTEN Pin=C103-2
+Added Pin To Net: NetName=V- Pin=DCDC101-5
+Added Pin To Net: NetName=NetD211_A Pin=Q212-D
+Added Pin To Net: NetName=NetL213_2 Pin=Q212-S
+Added Pin To Net: NetName=Cells_+ Pin=R237-2
+Added Pin To Net: NetName=S12 Pin=R?-2
+Change Net Name : Old Net Name=Cells_+ New Net Name=Cells+
+Change Net Name : Old Net Name=NetQ200_G New Net Name=NetQ201_G
+Change Net Name : Old Net Name=NetQ201_G New Net Name=NetQ202_G
+Change Net Name : Old Net Name=NetQ202_G New Net Name=NetQ203_G
+Change Net Name : Old Net Name=NetQ203_G New Net Name=NetQ204_G
+Change Net Name : Old Net Name=NetQ204_G New Net Name=NetQ205_G
+Change Net Name : Old Net Name=NetQ205_G New Net Name=NetQ206_G
+Change Net Name : Old Net Name=NetQ206_G New Net Name=NetQ207_G
+Change Net Name : Old Net Name=NetQ207_G New Net Name=NetQ208_G
+Change Net Name : Old Net Name=NetQ208_G New Net Name=NetQ209_G
+Change Net Name : Old Net Name=NetQ209_G New Net Name=NetQ210_G
+Change Net Name : Old Net Name=NetQ210_G New Net Name=NetQ211_G
+Added Pin To Net: NetName=NetQ212_G Pin=Q212-G
+Added Pin To Net: NetName=NetQ212_G Pin=R?-1
+Added Net: Name=NetQ212_G
+Added Member To Class: ClassName=Balancing Member=Component Q212 BSS308PE
+Added Member To Class: ClassName=Balancing Member=Component R? CR0805-JW-102ELF
