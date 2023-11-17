@@ -1,0 +1,35 @@
+Change Component Comment : Designator=DCDC101 Old Comment=F0505S-1WR3 New Comment=DCDC-5V/5V-0.2A
+Change component parameters: Designator = "DCDC101" ("DCDC101"); Footprint = "F_S-1WR3"; UniqueID = "\GXAHNXKV\WDZZUPNQ" ("\GXAHNXKV\WDZZUPNQ")
+Change component parameters (AddParameter): Name = "Category"; Value = "Board Mount Modules"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "MORNSUN"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "F0505S-1WR3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=2,32, 5=2,288, 10=2,255, 25=2,1884, 50=2,1222, 100=2,0559, 250=1,98956, 500=1,85692 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "23492"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "2725-F0505S-1WR3-ND"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin DCDC101-5
+Add Net: Net with name "Cell0" already exists
+Add Net: Net with name "Cell1" already exists
+Add Net: Net with name "Cell2" already exists
+Add Net: Net with name "Cell3" already exists
+Add Net: Net with name "Cell4" already exists
+Add Net: Net with name "Cell5" already exists
+Add Net: Net with name "Cell6" already exists
+Add Net: Net with name "Cell7" already exists
+Add Net: Net with name "Cell8" already exists
+Add Net: Net with name "Cell9" already exists
+Add Net: Net with name "Cell10" already exists
+Add Net: Net with name "Cell11" already exists
+Add Net: Net with name "Cell12" already exists
+Add Net: Net with name "NTC1" already exists
+Add Net: Net with name "NTC2" already exists
+Add Net: Net with name "NTC3" already exists
+Add Net: Net with name "NTC4" already exists
+Add Net: Net with name "NTC5" already exists
+Add Net: Net with name "NTC6" already exists
+Add Net: Net with name "NTC7" already exists
+Add Net: Net with name "NTC8" already exists
+Add Net: Net with name "Vref2" already exists

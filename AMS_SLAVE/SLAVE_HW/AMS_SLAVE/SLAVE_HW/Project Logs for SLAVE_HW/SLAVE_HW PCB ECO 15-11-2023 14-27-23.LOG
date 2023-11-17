@@ -1,0 +1,22 @@
+Change Component Description : Designator=C101 Old Description=Multilayer Ceramic Capacitor, Wcap-Csgp Series, 4.7 F, 20%, X5R, 25 V, 0805 [2012 Metric] Rohs Compliant: Yes New Description=Multilayer Ceramic Capacitor, Wcap-Csgp Series, 4.7 F, 20%, X5R, 25 V, 0805 [2012 Metric] Rohs Compliant: Yes |Wurth...
+Change Component Description : Designator=C102 Old Description=Multilayer Ceramic Capacitor, Wcap-Csgp Series, 4.7 F, 20%, X5R, 25 V, 0805 [2012 Metric] Rohs Compliant: Yes New Description=Multilayer Ceramic Capacitor, Wcap-Csgp Series, 4.7 F, 20%, X5R, 25 V, 0805 [2012 Metric] Rohs Compliant: Yes |Wurth...
+Change Component Description : Designator=C103 Old Description=Multilayer Ceramic Capacitor, Wcap-Csgp Series, 4.7 F, 20%, X5R, 25 V, 0805 [2012 Metric] Rohs Compliant: Yes New Description=Multilayer Ceramic Capacitor, Wcap-Csgp Series, 4.7 F, 20%, X5R, 25 V, 0805 [2012 Metric] Rohs Compliant: Yes |Wurth...
+Change Component Description : Designator=L101 Old Description=Multilayer Inductor, 6.8Uh, 0.6A, 0805 Rohs Compliant: Yes New Description=Multilayer Inductor, 6.8Uh, 0.6A, 0805 Rohs Compliant: Yes |Wurth Elektronik 74479777268
+Change Component Description : Designator=R401 Old Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes New Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes |Wurth Elektronik 561020132004
+Change Component Description : Designator=R402 Old Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes New Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes |Wurth Elektronik 561020132004
+Change Component Description : Designator=R403 Old Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes New Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes |Wurth Elektronik 561020132004
+Change Component Description : Designator=R404 Old Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes New Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes |Wurth Elektronik 561020132004
+Added Component: Designator=MH1(Mounting_Hole_M3)
+Added Component: Designator=MH2(Mounting_Hole_M3)
+Added Component: Designator=MH3(Mounting_Hole_M3)
+Added Component: Designator=MH4(Mounting_Hole_M3)
+Added Component: Designator=MH*(Mounting_Hole_M3)
+Added Pin To Net: NetName=GND Pin=MH1-1
+Added Pin To Net: NetName=GND Pin=MH2-1
+Added Pin To Net: NetName=GND Pin=MH3-1
+Added Pin To Net: NetName=GND Pin=MH4-1
+Added Member To Class: ClassName=SLAVE_HW Member=Component MH1 Mounting_Hole_M3
+Added Member To Class: ClassName=SLAVE_HW Member=Component MH2 Mounting_Hole_M3
+Added Member To Class: ClassName=SLAVE_HW Member=Component MH3 Mounting_Hole_M3
+Added Member To Class: ClassName=SLAVE_HW Member=Component MH4 Mounting_Hole_M3
+Added Member To Class: ClassName=SLAVE_HW Member=Component MH* Mounting_Hole_M3
