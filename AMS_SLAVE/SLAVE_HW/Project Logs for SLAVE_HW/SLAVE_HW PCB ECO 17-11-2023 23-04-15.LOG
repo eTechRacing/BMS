@@ -1,0 +1,12 @@
+Added Pin To Net: NetName=Cell3 Pin=L204-1
+Added Pin To Net: NetName=NetL204_2 Pin=L204-2
+Added Pin To Net: NetName=Cell4 Pin=L205-1
+Added Pin To Net: NetName=NetL205_2 Pin=L205-2
+Added Pin To Net: NetName=Cell5 Pin=L206-1
+Added Pin To Net: NetName=NetL206_2 Pin=L206-2
+Added Pin To Net: NetName=Cell6 Pin=L207-1
+Added Pin To Net: NetName=NetL207_2 Pin=L207-2
+Added Member To Class: ClassName=Balancing Member=Component L204 560 ohm
+Added Member To Class: ClassName=Balancing Member=Component L205 560 ohm
+Added Member To Class: ClassName=Balancing Member=Component L206 560 ohm
+Added Member To Class: ClassName=Balancing Member=Component L207 560 ohm

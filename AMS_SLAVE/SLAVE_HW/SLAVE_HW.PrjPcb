@@ -219,36 +219,36 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Parameter1]
-Name=Company
-Value=e-Tech Racing
+Name=Version
+Value=1
 
 [Parameter2]
-Name=Department
-Value=PCBs
-
-[Parameter3]
-Name=DesignedbyURL
-Value=www.e-techracing.es
-
-[Parameter4]
-Name=DesignerMail
-Value=andreu.senis@estudiantat.upc.edu
-
-[Parameter5]
-Name=DesignerName
-Value=Andreu Senis
-
-[Parameter6]
-Name=Project
-Value=AMS Slave
-
-[Parameter7]
 Name=ReviewerName
 Value=
 
+[Parameter3]
+Name=Project
+Value=AMS Slave
+
+[Parameter4]
+Name=DesignerName
+Value=Andreu Senis
+
+[Parameter5]
+Name=DesignerMail
+Value=andreu.senis@estudiantat.upc.edu
+
+[Parameter6]
+Name=DesignedbyURL
+Value=www.e-techracing.es
+
+[Parameter7]
+Name=Department
+Value=PCBs
+
 [Parameter8]
-Name=Version
-Value=1
+Name=Company
+Value=e-Tech Racing
 
 [Configuration1]
 Name=Sources

@@ -1,0 +1,30 @@
+Added Pin To Net: NetName=Cell2 Pin=L203-1
+Added Pin To Net: NetName=NetL203_2 Pin=L203-2
+Added Pin To Net: NetName=Cell3 Pin=L204-1
+Added Pin To Net: NetName=NetL204_2 Pin=L204-2
+Added Pin To Net: NetName=Cell4 Pin=L205-1
+Added Pin To Net: NetName=NetL205_2 Pin=L205-2
+Added Pin To Net: NetName=Cell5 Pin=L206-1
+Added Pin To Net: NetName=NetL206_2 Pin=L206-2
+Added Pin To Net: NetName=Cell6 Pin=L207-1
+Added Pin To Net: NetName=NetL207_2 Pin=L207-2
+Added Pin To Net: NetName=Cell7 Pin=L208-1
+Added Pin To Net: NetName=NetL208_2 Pin=L208-2
+Added Pin To Net: NetName=Cell8 Pin=L209-1
+Added Pin To Net: NetName=NetL209_2 Pin=L209-2
+Added Pin To Net: NetName=Cell9 Pin=L210-1
+Added Pin To Net: NetName=NetL210_2 Pin=L210-2
+Added Pin To Net: NetName=Cell10 Pin=L211-1
+Added Pin To Net: NetName=NetL211_2 Pin=L211-2
+Added Pin To Net: NetName=Cell11 Pin=L212-1
+Added Pin To Net: NetName=NetL212_2 Pin=L212-2
+Added Member To Class: ClassName=Balancing Member=Component L203 560 ohm
+Added Member To Class: ClassName=Balancing Member=Component L204 560 ohm
+Added Member To Class: ClassName=Balancing Member=Component L205 560 ohm
+Added Member To Class: ClassName=Balancing Member=Component L206 560 ohm
+Added Member To Class: ClassName=Balancing Member=Component L207 560 ohm
+Added Member To Class: ClassName=Balancing Member=Component L208 560 ohm
+Added Member To Class: ClassName=Balancing Member=Component L209 560 ohm
+Added Member To Class: ClassName=Balancing Member=Component L210 560 ohm
+Added Member To Class: ClassName=Balancing Member=Component L211 560 ohm
+Added Member To Class: ClassName=Balancing Member=Component L212 560 ohm

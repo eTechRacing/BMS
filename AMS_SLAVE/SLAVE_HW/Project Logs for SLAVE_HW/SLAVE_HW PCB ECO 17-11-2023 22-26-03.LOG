@@ -1,0 +1,49 @@
+Change Component Comment : Designator=L200 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L201 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L202 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L203 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L204 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L205 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L206 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L207 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L208 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L209 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L210 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L211 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L212 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L213 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L214 Old Comment=782853561 New Comment=560 ohm
+Change Component Comment : Designator=L101 Old Comment=L_Ferrite_Bread_6.8mH New Comment=6.8mH
+Change Component Description : Designator=C101 Old Description=Multilayer Ceramic Capacitor, Wcap-Csgp Series, 4.7 F, 20%, X5R, 25 V, 0805 [2012 Metric] Rohs Compliant: Yes New Description=Multilayer Ceramic Capacitor, Wcap-Csgp Series, 4.7 F, 20%, X5R, 25 V, 0805 [2012 Metric] Rohs Compliant: Yes |Wurth...
+Change Component Description : Designator=C102 Old Description=Multilayer Ceramic Capacitor, Wcap-Csgp Series, 4.7 F, 20%, X5R, 25 V, 0805 [2012 Metric] Rohs Compliant: Yes New Description=Multilayer Ceramic Capacitor, Wcap-Csgp Series, 4.7 F, 20%, X5R, 25 V, 0805 [2012 Metric] Rohs Compliant: Yes |Wurth...
+Change Component Description : Designator=C103 Old Description=Multilayer Ceramic Capacitor, Wcap-Csgp Series, 4.7 F, 20%, X5R, 25 V, 0805 [2012 Metric] Rohs Compliant: Yes New Description=Multilayer Ceramic Capacitor, Wcap-Csgp Series, 4.7 F, 20%, X5R, 25 V, 0805 [2012 Metric] Rohs Compliant: Yes |Wurth...
+Change Component Description : Designator=L101 Old Description=Multilayer Inductor, 6.8Uh, 0.6A, 0805 Rohs Compliant: Yes New Description=Multilayer Inductor, 6.8Uh, 0.6A, 0805 Rohs Compliant: Yes |Wurth Elektronik 74479777268
+Change Component Description : Designator=R401 Old Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes New Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes |Wurth Elektronik 561020132004
+Change Component Description : Designator=R402 Old Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes New Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes |Wurth Elektronik 561020132004
+Change Component Description : Designator=R403 Old Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes New Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes |Wurth Elektronik 561020132004
+Change Component Description : Designator=R404 Old Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes New Description=Res, 47R, 5%, 0.75W/Thick Film/0612 Wide Rohs Compliant: Yes |Wurth Elektronik 561020132004
+Added Pin To Net: NetName=C11 Pin=C212-1
+Added Pin To Net: NetName=C12 Pin=C212-2
+Added Pin To Net: NetName=V- Pin=C224-1
+Added Pin To Net: NetName=C12 Pin=C224-2
+Added Pin To Net: NetName=NetD211_A Pin=D211-A
+Added Pin To Net: NetName=NetD211_K Pin=D211-K
+Added Pin To Net: NetName=Cell12 Pin=L214-1
+Added Pin To Net: NetName=NetL214_2 Pin=L214-2
+Added Pin To Net: NetName=NetL213_2 Pin=R236-1
+Added Pin To Net: NetName=C12 Pin=R236-2
+Added Pin To Net: NetName=NetL214_2 Pin=R237-1
+Added Pin To Net: NetName=Cells+ Pin=R237-2
+Added Member To Class: ClassName=Balancing Member=Component C212 885012207092
+Added Member To Class: ClassName=Balancing Member=Component C224 885012207092
+Added Member To Class: ClassName=Balancing Member=Component D211 150080YS75000
+Added Member To Class: ClassName=Balancing Member=Component L214 560 ohm
+Added Member To Class: ClassName=Balancing Member=Component Q201 BSS308PE
+Added Member To Class: ClassName=Balancing Member=Component Q203 BSS308PE
+Added Member To Class: ClassName=Balancing Member=Component Q205 BSS308PE
+Added Member To Class: ClassName=Balancing Member=Component Q207 BSS308PE
+Added Member To Class: ClassName=Balancing Member=Component Q209 BSS308PE
+Added Member To Class: ClassName=Balancing Member=Component Q211 BSS308PE
+Added Member To Class: ClassName=Balancing Member=Component R236 CR0805-FX-1000ELF
+Added Member To Class: ClassName=Balancing Member=Component R237 CR0805-FX-1000ELF
+Added Member To Class: ClassName=Balancing Member=Component R249 CR0805-JW-102ELF

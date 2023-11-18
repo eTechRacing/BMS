@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=IMB Pin=T401-8
+Added Pin To Net: NetName=IPB Pin=T401-8
+Change Net Name : Old Net Name=IMA New Net Name=IA_N
+Change Net Name : Old Net Name=IMB New Net Name=IB_N
+Change Net Name : Old Net Name=IPA New Net Name=IA_P
+Change Net Name : Old Net Name=IPB New Net Name=IB_P
+Added Differential Pair: Name=IA
+Added Differential Pair: Name=IB
