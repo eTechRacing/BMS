@@ -1,0 +1,285 @@
+Added Component: Designator=J1(J_Pinheader_1x12)
+Add component (AddParameter): Name = "Category"; Value = "Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/cad/1737268.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/cad/1737268.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Copper"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Mating Length"; Value = "0.236inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "61301211121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.1inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0,57000, 10=0,48400, 25=0,40400, 50=0,33700, 100=0,30600, 1000=0,27800 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "2124"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Added Component: Designator=J2(J_Pinheader_1x12)
+Add component (AddParameter): Name = "Category"; Value = "Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/cad/1737268.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/cad/1737268.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Copper"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Mating Length"; Value = "0.236inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "61301211121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.1inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0,57000, 10=0,48400, 25=0,40400, 50=0,33700, 100=0,30600, 1000=0,27800 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "2124"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Added Component: Designator=J3(J_Pinheader_1x12)
+Add component (AddParameter): Name = "Category"; Value = "Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/cad/1737268.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/cad/1737268.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Copper"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Mating Length"; Value = "0.236inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "61301211121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.1inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0,57000, 10=0,48400, 25=0,40400, 50=0,33700, 100=0,30600, 1000=0,27800 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "2124"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Added Component: Designator=J4(J_Pinheader_1x12)
+Add component (AddParameter): Name = "Category"; Value = "Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/cad/1737268.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/cad/1737268.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Copper"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Mating Length"; Value = "0.236inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "61301211121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.1inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0,57000, 10=0,48400, 25=0,40400, 50=0,33700, 100=0,30600, 1000=0,27800 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "2124"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Added Component: Designator=U1(U_LTC6811G-2)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "SSOP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Battery Management"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.analog.com/media/en/technical-documentation/data-sheets/ltc6811-1-6811-2.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Where buy it"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.mouser.es/ProductDetail/Analog-Devices/LTC6811IG-23ZZTRPBF?qs=byeeYqUIh0NWJgxDt7RX5g%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "http://www.linear.com/docs/55980?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.linear.com/docs/55980?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "https://datasheet.octopart.com/LTC6811HG-1%23PBF-Analog-Devices-datasheet-138896417.pdf?src-supplier=Upverter"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "https://datasheet.octopart.com/LTC6811HG-1%23PBF-Analog-Devices-datasheet-138896417.pdf?src-supplier=Upverter"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5Description"; Value = "https://datasheet.octopart.com/LTC6811HG-1%23PBF-Linear-Technology-datasheet-66874450.pdf?src-supplier=Linear+Technology"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink5URL"; Value = "https://datasheet.octopart.com/LTC6811HG-1%23PBF-Linear-Technology-datasheet-66874450.pdf?src-supplier=Linear+Technology"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6Description"; Value = "https://sigma.octopart.com/57702806/technical_drawing/Linear-Technology-LTC6811HG-1%23PBF.pdf?src-supplier=Linear+Technology"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink6URL"; Value = "https://sigma.octopart.com/57702806/technical_drawing/Linear-Technology-LTC6811HG-1%23PBF.pdf?src-supplier=Linear+Technology"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7Description"; Value = "https://datasheet.octopart.com/LTC6811HG-1%23PBF-Analog-Devices-datasheet-138896417.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink7URL"; Value = "https://datasheet.octopart.com/LTC6811HG-1%23PBF-Analog-Devices-datasheet-138896417.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Analog Devices / Linear Technology"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "Analog Devices"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "LTC6811HG-1#PBF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "LTC6811-1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 2"; Value = "1=21,6, 10=19,92, 50=19,02, 100=19,02, 1000=15,13, 10000=15,13 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 2"; Value = "3108"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "505-LTC6811HG-1#PBF-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "584-LTC6811HG-1#PBF"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-1
+Added Pin To Net: NetName=NetJ1_1 Pin=U1-12
+Added Net: Name=NetJ1_1
+Added Pin To Net: NetName=NetJ1_2 Pin=J1-2
+Added Pin To Net: NetName=NetJ1_2 Pin=U1-11
+Added Net: Name=NetJ1_2
+Added Pin To Net: NetName=NetJ1_3 Pin=J1-3
+Added Pin To Net: NetName=NetJ1_3 Pin=U1-10
+Added Net: Name=NetJ1_3
+Added Pin To Net: NetName=NetJ1_4 Pin=J1-4
+Added Pin To Net: NetName=NetJ1_4 Pin=U1-9
+Added Net: Name=NetJ1_4
+Added Pin To Net: NetName=NetJ1_5 Pin=J1-5
+Added Pin To Net: NetName=NetJ1_5 Pin=U1-8
+Added Net: Name=NetJ1_5
+Added Pin To Net: NetName=NetJ1_6 Pin=J1-6
+Added Pin To Net: NetName=NetJ1_6 Pin=U1-7
+Added Net: Name=NetJ1_6
+Added Pin To Net: NetName=NetJ1_7 Pin=J1-7
+Added Pin To Net: NetName=NetJ1_7 Pin=U1-6
+Added Net: Name=NetJ1_7
+Added Pin To Net: NetName=NetJ1_8 Pin=J1-8
+Added Pin To Net: NetName=NetJ1_8 Pin=U1-5
+Added Net: Name=NetJ1_8
+Added Pin To Net: NetName=NetJ1_9 Pin=J1-9
+Added Pin To Net: NetName=NetJ1_9 Pin=U1-4
+Added Net: Name=NetJ1_9
+Added Pin To Net: NetName=NetJ1_10 Pin=J1-10
+Added Pin To Net: NetName=NetJ1_10 Pin=U1-3
+Added Net: Name=NetJ1_10
+Added Pin To Net: NetName=NetJ1_11 Pin=J1-11
+Added Pin To Net: NetName=NetJ1_11 Pin=U1-2
+Added Net: Name=NetJ1_11
+Added Pin To Net: NetName=NetJ1_12 Pin=J1-12
+Added Pin To Net: NetName=NetJ1_12 Pin=U1-1
+Added Net: Name=NetJ1_12
+Added Pin To Net: NetName=NetJ2_1 Pin=J2-1
+Added Pin To Net: NetName=NetJ2_1 Pin=U1-24
+Added Net: Name=NetJ2_1
+Added Pin To Net: NetName=NetJ2_2 Pin=J2-2
+Added Pin To Net: NetName=NetJ2_2 Pin=U1-23
+Added Net: Name=NetJ2_2
+Added Pin To Net: NetName=NetJ2_3 Pin=J2-3
+Added Pin To Net: NetName=NetJ2_3 Pin=U1-22
+Added Net: Name=NetJ2_3
+Added Pin To Net: NetName=NetJ2_4 Pin=J2-4
+Added Pin To Net: NetName=NetJ2_4 Pin=U1-21
+Added Net: Name=NetJ2_4
+Added Pin To Net: NetName=NetJ2_5 Pin=J2-5
+Added Pin To Net: NetName=NetJ2_5 Pin=U1-20
+Added Net: Name=NetJ2_5
+Added Pin To Net: NetName=NetJ2_6 Pin=J2-6
+Added Pin To Net: NetName=NetJ2_6 Pin=U1-19
+Added Net: Name=NetJ2_6
+Added Pin To Net: NetName=NetJ2_7 Pin=J2-7
+Added Pin To Net: NetName=NetJ2_7 Pin=U1-18
+Added Net: Name=NetJ2_7
+Added Pin To Net: NetName=NetJ2_8 Pin=J2-8
+Added Pin To Net: NetName=NetJ2_8 Pin=U1-17
+Added Net: Name=NetJ2_8
+Added Pin To Net: NetName=NetJ2_9 Pin=J2-9
+Added Pin To Net: NetName=NetJ2_9 Pin=U1-16
+Added Net: Name=NetJ2_9
+Added Pin To Net: NetName=NetJ2_10 Pin=J2-10
+Added Pin To Net: NetName=NetJ2_10 Pin=U1-15
+Added Net: Name=NetJ2_10
+Added Pin To Net: NetName=NetJ2_11 Pin=J2-11
+Added Pin To Net: NetName=NetJ2_11 Pin=U1-14
+Added Net: Name=NetJ2_11
+Added Pin To Net: NetName=NetJ2_12 Pin=J2-12
+Added Pin To Net: NetName=NetJ2_12 Pin=U1-13
+Added Net: Name=NetJ2_12
+Added Pin To Net: NetName=NetJ3_1 Pin=J3-1
+Added Pin To Net: NetName=NetJ3_1 Pin=U1-36
+Added Net: Name=NetJ3_1
+Added Pin To Net: NetName=NetJ3_2 Pin=J3-2
+Added Pin To Net: NetName=NetJ3_2 Pin=U1-35
+Added Net: Name=NetJ3_2
+Added Pin To Net: NetName=NetJ3_3 Pin=J3-3
+Added Pin To Net: NetName=NetJ3_3 Pin=U1-34
+Added Net: Name=NetJ3_3
+Added Pin To Net: NetName=NetJ3_4 Pin=J3-4
+Added Pin To Net: NetName=NetJ3_4 Pin=U1-33
+Added Net: Name=NetJ3_4
+Added Pin To Net: NetName=NetJ3_5 Pin=J3-5
+Added Pin To Net: NetName=NetJ3_5 Pin=U1-32
+Added Net: Name=NetJ3_5
+Added Pin To Net: NetName=NetJ3_6 Pin=J3-6
+Added Pin To Net: NetName=NetJ3_6 Pin=U1-31
+Added Net: Name=NetJ3_6
+Added Pin To Net: NetName=NetJ3_7 Pin=J3-7
+Added Pin To Net: NetName=NetJ3_7 Pin=U1-30
+Added Net: Name=NetJ3_7
+Added Pin To Net: NetName=NetJ3_8 Pin=J3-8
+Added Pin To Net: NetName=NetJ3_8 Pin=U1-29
+Added Net: Name=NetJ3_8
+Added Pin To Net: NetName=NetJ3_9 Pin=J3-9
+Added Pin To Net: NetName=NetJ3_9 Pin=U1-28
+Added Net: Name=NetJ3_9
+Added Pin To Net: NetName=NetJ3_10 Pin=J3-10
+Added Pin To Net: NetName=NetJ3_10 Pin=U1-27
+Added Net: Name=NetJ3_10
+Added Pin To Net: NetName=NetJ3_11 Pin=J3-11
+Added Pin To Net: NetName=NetJ3_11 Pin=U1-26
+Added Net: Name=NetJ3_11
+Added Pin To Net: NetName=NetJ3_12 Pin=J3-12
+Added Pin To Net: NetName=NetJ3_12 Pin=U1-25
+Added Net: Name=NetJ3_12
+Added Pin To Net: NetName=NetJ4_1 Pin=J4-1
+Added Pin To Net: NetName=NetJ4_1 Pin=U1-48
+Added Net: Name=NetJ4_1
+Added Pin To Net: NetName=NetJ4_2 Pin=J4-2
+Added Pin To Net: NetName=NetJ4_2 Pin=U1-47
+Added Net: Name=NetJ4_2
+Added Pin To Net: NetName=NetJ4_3 Pin=J4-3
+Added Pin To Net: NetName=NetJ4_3 Pin=U1-46
+Added Net: Name=NetJ4_3
+Added Pin To Net: NetName=NetJ4_4 Pin=J4-4
+Added Pin To Net: NetName=NetJ4_4 Pin=U1-45
+Added Net: Name=NetJ4_4
+Added Pin To Net: NetName=NetJ4_5 Pin=J4-5
+Added Pin To Net: NetName=NetJ4_5 Pin=U1-44
+Added Net: Name=NetJ4_5
+Added Pin To Net: NetName=NetJ4_6 Pin=J4-6
+Added Pin To Net: NetName=NetJ4_6 Pin=U1-43
+Added Net: Name=NetJ4_6
+Added Pin To Net: NetName=NetJ4_7 Pin=J4-7
+Added Pin To Net: NetName=NetJ4_7 Pin=U1-42
+Added Net: Name=NetJ4_7
+Added Pin To Net: NetName=NetJ4_8 Pin=J4-8
+Added Pin To Net: NetName=NetJ4_8 Pin=U1-41
+Added Net: Name=NetJ4_8
+Added Pin To Net: NetName=NetJ4_9 Pin=J4-9
+Added Pin To Net: NetName=NetJ4_9 Pin=U1-40
+Added Net: Name=NetJ4_9
+Added Pin To Net: NetName=NetJ4_10 Pin=J4-10
+Added Pin To Net: NetName=NetJ4_10 Pin=U1-39
+Added Net: Name=NetJ4_10
+Added Pin To Net: NetName=NetJ4_11 Pin=J4-11
+Added Pin To Net: NetName=NetJ4_11 Pin=U1-38
+Added Net: Name=NetJ4_11
+Added Pin To Net: NetName=NetJ4_12 Pin=J4-12
+Added Pin To Net: NetName=NetJ4_12 Pin=U1-37
+Added Net: Name=NetJ4_12
+Added Class: Name=Sheet1

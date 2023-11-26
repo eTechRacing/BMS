@@ -219,6 +219,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for SLAVE_HW\Design Rule Check - SLAVE_HW.html
+DItemRevisionGUID=
+
 [Parameter1]
 Name=Company
 Value=e-Tech Racing
