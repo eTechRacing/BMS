@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GND_Slave Pin=C309-2
+Removed Member From Class: ClassName=Temperatures Member=C309
+Added Pin To Net: NetName=Cell12 Pin=J101-12
+Added Pin To Net: NetName=GND_Slave Pin=U301-6
+Added Pin To Net: NetName=GND_Slave Pin=U301-7
+Added Pin To Net: NetName=GND_Slave Pin=U301-8

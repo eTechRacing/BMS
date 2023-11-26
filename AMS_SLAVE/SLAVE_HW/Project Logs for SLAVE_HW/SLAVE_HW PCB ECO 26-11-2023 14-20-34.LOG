@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=Cell12 Pin=J101-13
+Change Component Footprint: Designator=R212 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R213 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R214 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R215 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R216 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R217 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R218 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R219 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R220 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R221 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R222 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R223 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Added Pin To Net: NetName=Cell12 Pin=J101-12

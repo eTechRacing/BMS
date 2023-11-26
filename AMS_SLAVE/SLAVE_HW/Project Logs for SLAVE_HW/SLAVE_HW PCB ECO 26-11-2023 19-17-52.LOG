@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=Vref2 Pin=TP315-1
+Removed Member From Class: ClassName=Temperatures Member=TP315
+Added Pin To Net: NetName=Cell11 Pin=J101-12

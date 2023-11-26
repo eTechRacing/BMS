@@ -1,0 +1,12 @@
+Change Component Designator: OldDesignator=J1 NewDesignator=J101
+Change Component Designator: OldDesignator=J2 NewDesignator=J102
+Change Component Designator: OldDesignator=J3 NewDesignator=J103
+Change Component Designator: OldDesignator=J4 NewDesignator=J104
+Change Component Description : Designator=C225 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
+Change Component Description : Designator=C226 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
+Change Component Description : Designator=C227 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
+Change Component Description : Designator=C310 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
+Change Component Description : Designator=C311 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
+Change Component Description : Designator=C314 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
+Added Pin To Net: NetName=Cell11 Pin=J101-12
+Change Class Name : Old Net Name=SLAVE_HW New Net Name=[1]SLAVE_HW

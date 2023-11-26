@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=Cells+_filtered Pin=R252-1
+Removed Member From Class: ClassName=Balancing Member=R252
+Added Pin To Net: NetName=Cell11 Pin=J1-12
+Added Pin To Net: NetName=Cells+_filtered Pin=Q213-C
+Added Pin To Net: NetName=Cells+_filtered Pin=Q213-C

@@ -1,0 +1,74 @@
+Change Component Footprint: Designator=R212 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R213 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R214 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R215 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R217 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R218 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R219 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R220 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R221 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R222 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Footprint: Designator=R223 Old Footprint=351FTK-WIDE New Footprint=R2512FTK
+Change Component Description : Designator=C225 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
+Change Component Description : Designator=C226 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
+Change Component Description : Designator=C227 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
+Change Component Description : Designator=C310 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
+Change Component Description : Designator=C311 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
+Change Component Description : Designator=C314 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
+Added Component: Designator=TP301(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP302(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP303(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP304(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP305(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP306(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP307(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP308(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Cell12 Pin=J1-12
+Added Pin To Net: NetName=NTC1 Pin=TP301-1
+Added Pin To Net: NetName=NTC2 Pin=TP302-1
+Added Pin To Net: NetName=NTC3 Pin=TP303-1
+Added Pin To Net: NetName=NTC4 Pin=TP304-1
+Added Pin To Net: NetName=NTC5 Pin=TP305-1
+Added Pin To Net: NetName=NTC6 Pin=TP306-1
+Added Pin To Net: NetName=NTC7 Pin=TP307-1
+Added Pin To Net: NetName=NTC8 Pin=TP308-1
+Added Member To Class: ClassName=Temperatures Member=Component TP301 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP302 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP303 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP304 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP305 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP306 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP307 TestPoint
+Added Member To Class: ClassName=Temperatures Member=Component TP308 TestPoint

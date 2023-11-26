@@ -1,0 +1,2 @@
+Remove Pin=R237-2 From Net=V+
+Change Net Color : Net Name= V+ Old Net Color=Default New Net Color=Yellow

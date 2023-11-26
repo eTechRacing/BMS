@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=IB_N Pin=TP401-1
+Removed Pin From Net: NetName=IB_P Pin=TP402-1
+Removed Pin From Net: NetName=IA_N Pin=TP403-1
+Removed Pin From Net: NetName=IA_P Pin=TP404-1
+Removed Member From Class: ClassName=Communication Member=TP401
+Removed Member From Class: ClassName=Communication Member=TP402
+Removed Member From Class: ClassName=Communication Member=TP403
+Removed Member From Class: ClassName=Communication Member=TP404
+Added Pin To Net: NetName=Cell11 Pin=J101-12
