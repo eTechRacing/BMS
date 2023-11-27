@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=Vref1 Pin=TP*-1
+Change Component Designator: OldDesignator=TP* NewDesignator=TP214
+Added Component: Designator=TP215(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Cell12 Pin=J101-12
+Added Pin To Net: NetName=DTEN Pin=TP214-1
+Added Pin To Net: NetName=Vref1 Pin=TP215-1
+Added Member To Class: ClassName=Balancing Member=Component TP215 TestPoint
