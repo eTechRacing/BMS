@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: SLAVE_HW.PcbDoc   28/11/2023  9:41:49
+NCDrill File Report For: SLAVE_HW.PcbDoc   28/11/2023  17:26:30
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,7 +7,7 @@ ASCII RoundHoles File : SLAVE_HW.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      0.2mm (8mil)                                              Round             159       PTH        778.20mm (30.64inch)
+T1      0.2mm (8mil)                                              Round             159       PTH        778.50mm (30.65inch)
 T2      0.5mm (20mil)           +/-0.05mm (2mil)                  Round             2         PTH        2.54mm (0.10inch)
 T3      1.02mm (40mil)                                            Round             4         PTH        15.00mm (0.59inch)
 T4      1.1mm (43mil)                                             Round             21        PTH        157.59mm (6.20inch)
