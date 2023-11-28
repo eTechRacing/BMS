@@ -1,4 +1,0 @@
-Change Component Designator: OldDesignator= NewDesignator=L205
-Added Pin To Net: NetName=Cell4 Pin=L205-1
-Added Pin To Net: NetName=NetL205_2 Pin=L205-2
-Added Member To Class: ClassName=Balancing Member=Component L205 560 ohm

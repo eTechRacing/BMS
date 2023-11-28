@@ -1,6 +1,0 @@
-Removed Pin From Net: NetName=Cell12 Pin=J101-13
-Change Component Description : Designator=C225 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
-Change Component Description : Designator=C226 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
-Change Component Description : Designator=C227 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
-Change Component Description : Designator=C310 Old Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes New Description=Cap, 1Uf, 100V, Mlcc, 1210 Rohs Compliant: Yes |Wurth Elektronik 885012209069
-Added Pin To Net: NetName=Cell11 Pin=J101-12

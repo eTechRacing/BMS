@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=GND_Slave Pin=C314-1
-Removed Pin From Net: NetName=GPIO2 Pin=C314-2
-Removed Member From Class: ClassName=Temperatures Member=C314
-Added Pin To Net: NetName=Cell11 Pin=J101-12

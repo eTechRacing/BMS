@@ -1,7 +1,0 @@
-Added Component: Designator=TP213(TestPoint)
-Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
-Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
-Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
-Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
-Added Pin To Net: NetName=NetL213_2 Pin=TP213-1
-Added Member To Class: ClassName=Balancing Member=Component TP213 TestPoint

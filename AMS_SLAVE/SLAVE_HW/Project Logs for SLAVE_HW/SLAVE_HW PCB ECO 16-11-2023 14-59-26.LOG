@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=GND Pin=MH1-1
-Removed Pin From Net: NetName=GND Pin=MH2-1
-Removed Pin From Net: NetName=GND Pin=MH3-1
-Removed Pin From Net: NetName=GND Pin=MH4-1
-Removed Member From Class: ClassName=SLAVE_HW Member=MH1
-Removed Member From Class: ClassName=SLAVE_HW Member=MH2
-Removed Member From Class: ClassName=SLAVE_HW Member=MH3
-Removed Member From Class: ClassName=SLAVE_HW Member=MH4
