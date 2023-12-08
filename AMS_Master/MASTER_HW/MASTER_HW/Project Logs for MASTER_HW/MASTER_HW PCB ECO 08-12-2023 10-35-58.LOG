@@ -1,0 +1,37 @@
+Removed Member From Class: ClassName=High_Voltage Member=R301
+Removed Member From Class: ClassName=High_Voltage Member=R302
+Removed Member From Class: ClassName=High_Voltage Member=R303
+Change Component Designator: OldDesignator=C301 NewDesignator=C401
+Change Component Designator: OldDesignator=C302 NewDesignator=C402
+Change Component Designator: OldDesignator=C303 NewDesignator=C403
+Change Component Designator: OldDesignator=C304 NewDesignator=C404
+Change Component Designator: OldDesignator=Q301 NewDesignator=Q401
+Change Component Designator: OldDesignator=R301 NewDesignator=R401
+Change Component Designator: OldDesignator=R302 NewDesignator=R402
+Change Component Designator: OldDesignator=R303 NewDesignator=R403
+Change Component Designator: OldDesignator=R304 NewDesignator=R404
+Change Component Designator: OldDesignator=R305 NewDesignator=R405
+Change Component Designator: OldDesignator=R306 NewDesignator=R406
+Change Component Designator: OldDesignator=U301 NewDesignator=U401
+Change Component Designator: OldDesignator=U302 NewDesignator=U402
+Add Component: Footprint Not Found WPME-FISM_SIP-7_L19.65W7.05H10.16
+Add Component: Footprint Not Found WE-TPC_4818
+Add Pin To Net: Unknown Pin: Pin DCDC401-2
+Add Pin To Net: Unknown Pin: Pin DCDC401-5
+Add Pin To Net: Unknown Pin: Pin DCDC401-7
+Add Pin To Net: Unknown Pin: Pin L401-1
+Change Net Name : Old Net Name=NetQ301_D New Net Name=NetQ401_D
+Change Net Name : Old Net Name=NetQ301_G New Net Name=NetQ401_G
+Change Net Name : Old Net Name=NetR301_3 New Net Name=NetR401_3
+Change Net Name : Old Net Name=NetR302_1 New Net Name=NetR402_1
+Change Net Name : Old Net Name=NetR305_1 New Net Name=NetR405_1
+Change Net Name : Old Net Name=NetR306_1 New Net Name=NetR406_1
+Added Pin To Net: NetName=NetC402_1 Pin=C402-1
+Added Net: Name=NetC402_1
+Add Differential Pair: Number of nets in differential pair I_M is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair I is 1 instead of 2
+Add Class Member: Failed to add class member : Component DCDC401 1779405141
+Add Class Member: Failed to add class member : Component L401 744042470
+Added Member To Class: ClassName=High_Voltage Member=Component R401 3296W-1-103LF
+Added Member To Class: ClassName=High_Voltage Member=Component R402 R2M-2512FTK
+Added Member To Class: ClassName=High_Voltage Member=Component R403 CRCW120610K0FKEA

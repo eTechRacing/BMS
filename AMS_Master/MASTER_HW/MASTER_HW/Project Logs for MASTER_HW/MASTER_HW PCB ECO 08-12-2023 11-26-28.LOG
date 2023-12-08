@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=GND Pin=J2-3
+Removed Pin From Net: NetName=GND Pin=J2-4
+Add Component: Footprint Not Found WPME-FISM_SIP-7_L19.65W7.05H10.16
+Add Component: Footprint Not Found WE-TPC_4818
+Add Pin To Net: Unknown Pin: Pin DCDC401-1
+Add Pin To Net: Unknown Pin: Pin DCDC401-2
+Add Pin To Net: Unknown Pin: Pin DCDC401-5
+Add Pin To Net: Unknown Pin: Pin DCDC401-7
+Add Pin To Net: Unknown Pin: Pin L401-1
+Add Pin To Net: Unknown Pin: Pin L401-2
+Add Class Member: Failed to add class member : Component DCDC401 1779405141
+Add Class Member: Failed to add class member : Component L401 744042470

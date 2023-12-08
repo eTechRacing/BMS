@@ -32,7 +32,8 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
-IsVirtualBomDocumentRemoved=0
+ConstraintManagerFlow=0
+IsVirtualBomDocumentRemoved=1
 OutputPath=
 LogFolderPath=
 ManagedProjectGUID=
@@ -49,7 +50,24 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=[4] Shutdown.SchDoc
+DocumentPath=[1]isoSPI.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=TPEKZLRA
+
+[Document2]
+DocumentPath=[2] Shutdown.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -65,8 +83,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=PUXEFDSG
 
-[Document2]
-DocumentPath=[5] Relays_Control.SchDoc
+[Document3]
+DocumentPath=[3] Relays_Control.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -82,8 +100,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=WCTTQIXN
 
-[Document3]
-DocumentPath=[7] High_Voltage.SchDoc
+[Document4]
+DocumentPath=[4] High_Voltage.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -99,8 +117,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=YWTNHLGL
 
-[Document4]
-DocumentPath=[8] TSAL.SchDoc
+[Document5]
+DocumentPath=MASTER_HW.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=FVLPKSYT
+
+[Document6]
+DocumentPath=[5] TSAL.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -116,7 +151,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NQBMXCIN
 
-[Document5]
+[Document7]
 DocumentPath=AMS_Master.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -133,7 +168,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JQRNPRGR
 
-[Document6]
+[Document8]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Electromechanical.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -150,7 +185,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document7]
+[Document9]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\e-Tech_Racing.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -167,7 +202,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document8]
+[Document10]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Filter components.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -184,7 +219,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document9]
+[Document11]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Integrated circuits.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -201,7 +236,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document10]
+[Document12]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Passives.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -218,7 +253,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document11]
+[Document13]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Semiconductor.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -235,7 +270,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=ASRCVDDI
 
-[Document12]
+[Document14]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Sensors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -252,7 +287,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document13]
+[Document15]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Electromechanical.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -269,7 +304,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document14]
+[Document16]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\e-Tech_Racing.ERR
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -286,7 +321,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document15]
+[Document17]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\e-Tech_Racing.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -303,7 +338,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document16]
+[Document18]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Filter components.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -320,7 +355,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document17]
+[Document19]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Integrated circuits.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -337,7 +372,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document20]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Passives.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -354,7 +389,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document19]
+[Document21]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Semiconductor.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -371,7 +406,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document20]
+[Document22]
 DocumentPath=..\..\..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Sensors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -387,23 +422,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
-
-[Document21]
-DocumentPath=AMS_Master.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=IVUJURGT
 
 [Configuration1]
 Name=Sources
@@ -1142,6 +1160,12 @@ Type127=1
 Type128=1
 Type129=1
 Type130=1
+Type131=1
+Type132=1
+Type133=1
+Type134=1
+Type135=1
+Type136=1
 
 [Difference Levels]
 Type1=1
@@ -1339,6 +1363,7 @@ Type116=2
 Type117=3
 Type118=3
 Type119=3
+MultiChannelAlternate=0
 AlternateItemFail=3
 Type122=2
 Type123=1

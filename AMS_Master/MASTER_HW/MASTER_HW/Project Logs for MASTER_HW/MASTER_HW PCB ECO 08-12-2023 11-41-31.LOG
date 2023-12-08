@@ -1,0 +1,51 @@
+Added Component: Designator=DCDC401(DCDC2W-ISO/1779405X41)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "SIP-7"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Component Type"; Value = "MagI3C FISM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.de"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/catalog/datasheet/1779405141.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.16mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage"; Value = "12V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Max"; Value = "13.2V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Input Voltage Min"; Value = "10.8V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Isolation Voltage"; Value = "4kV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "19.65mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "1779405241"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "THT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Voltage"; Value = "5V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tube"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "7.05mm"; VariantName = "[No Variations]"
+Added Component: Designator=L401(L_Power_ 47uH)
+Add component (AddParameter): Name = "Case/Size Code"; Value = "4818"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Power Inductors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Website Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/redexpert/article/744042470?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://www.we-online.com/redexpert/spec/744042470?ad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DC Resistance"; Value = "540mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Inductance"; Value = "47uH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "4.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "744042470"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Match Code"; Value = "WE-TPC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Max"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Min"; Value = "-40°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Current"; Value = "0.62A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Saturation Current"; Value = "0.45A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Self Resonant Frequency"; Value = "15MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "4.8mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC402_1 Pin=DCDC401-1
+Added Pin To Net: NetName=GND Pin=DCDC401-2
+Added Pin To Net: NetName=TS- Pin=DCDC401-5
+Added Pin To Net: NetName=+5 TS Pin=DCDC401-7
+Added Pin To Net: NetName=+12 Pin=L401-1
+Added Pin To Net: NetName=NetC402_1 Pin=L401-2
+Added Member To Class: ClassName=High_Voltage Member=Component DCDC401 1779405241
+Added Member To Class: ClassName=High_Voltage Member=Component L401 744042470
