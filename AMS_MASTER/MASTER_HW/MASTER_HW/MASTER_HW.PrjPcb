@@ -1496,24 +1496,24 @@ UpdateToLatestRevision=1
 PartTypes=0
 
 [NetInfos]
-Net1=NetName=+5 TS|NetColor=$000083FD
+Net1=NetName=+5 TS|NetColor=$006E6EFF
 Net2=NetName=AIR-_IN|NetColor=$000083FD
 Net3=NetName=AIR+_IN|NetColor=$000083FD
 Net4=NetName=NetDZ701_A|NetColor=$000083FD
 Net5=NetName=NetDZ702_A|NetColor=$000083FD
-Net6=NetName=NetDZ703_K|NetColor=$000083FD
+Net6=NetName=NetDZ703_K|NetColor=$006E6EFF
 Net7=NetName=NetF401_2|NetColor=$000083FD
 Net8=NetName=NetLED701_1|NetColor=$000083FD
 Net9=NetName=NetLED701_2|NetColor=$000083FD
-Net10=NetName=NetQ501_D|NetColor=$000083FD
-Net11=NetName=NetQ501_G|NetColor=$000083FD
-Net12=NetName=NetQ701_G|NetColor=$000083FD
-Net13=NetName=NetR501_3|NetColor=$000083FD
+Net10=NetName=NetQ501_D|NetColor=$006E6EFF
+Net11=NetName=NetQ501_G|NetColor=$006E6EFF
+Net12=NetName=NetQ701_G|NetColor=$006E6EFF
+Net13=NetName=NetR501_3|NetColor=$006E6EFF
 Net14=NetName=NetR502_1|NetColor=$000083FD
-Net15=NetName=NetR502_2|NetColor=$000083FD
+Net15=NetName=NetR502_2|NetColor=$006E6EFF
 Net16=NetName=NetR505_1|NetColor=$000083FD
 Net17=NetName=PRECHARGE_OUT|NetColor=$000083FD
-Net18=NetName=TS-|NetColor=$000083FD
+Net18=NetName=TS-|NetColor=$006E6EFF
 Net19=NetName=TS+|NetColor=$000083FD
 
 [Comparison Options]
