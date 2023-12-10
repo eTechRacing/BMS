@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=AIRPlus_Control Pin=J4-6
+Removed Pin From Net: NetName=AIRPlus_Control Pin=J4-8
+Removed Pin From Net: NetName=AIRMinus_Control Pin=J4-10
+Removed Pin From Net: NetName=AIRMinus_Control Pin=J4-12
+Removed Pin From Net: NetName=Precharge_Control Pin=J4-14
+Removed Pin From Net: NetName=Precharge_Control Pin=J4-16
+Removed Pin From Net: NetName=+5 Pin=R506-2
+Added Pin To Net: NetName=Precharge_Control Pin=J4-5
+Added Pin To Net: NetName=Precharge_Control Pin=J4-7
+Added Pin To Net: NetName=AIRMinus_Control Pin=J4-9
+Added Pin To Net: NetName=AIRMinus_Control Pin=J4-11
+Added Pin To Net: NetName=AIRPlus_Control Pin=J4-13
+Added Pin To Net: NetName=AIRPlus_Control Pin=J4-15
+Added Pin To Net: NetName=SDC_END_Monitoring Pin=J5-3
+Added Pin To Net: NetName=+12 Pin=R506-2
