@@ -1,0 +1,27 @@
+Change Component Designator: OldDesignator=R704 NewDesignator=R702
+Change Component Designator: OldDesignator=R705 NewDesignator=R703
+Added Component: Designator=R701(THT_RESISTOR)
+Added Component: Designator=R704(THT_RESISTOR)
+Added Component: Designator=R705(THT_RESISTOR)
+Added Component: Designator=R706(THT_RESISTOR)
+Added Component: Designator=R707(THT_RESISTOR)
+Added Component: Designator=R708(THT_RESISTOR)
+Added Pin To Net: NetName=NetDZ703_K Pin=R701-1
+Added Pin To Net: NetName=NetDZ702_A Pin=R701-2
+Added Pin To Net: NetName=NetLED701_1 Pin=R704-1
+Added Pin To Net: NetName=TS+ Pin=R704-2
+Added Pin To Net: NetName=NetLED701_1 Pin=R705-1
+Added Pin To Net: NetName=TS+ Pin=R705-2
+Added Pin To Net: NetName=NetLED701_1 Pin=R706-1
+Added Pin To Net: NetName=TS+ Pin=R706-2
+Added Pin To Net: NetName=NetLED701_1 Pin=R707-1
+Added Pin To Net: NetName=TS+ Pin=R707-2
+Added Pin To Net: NetName=NetLED701_1 Pin=R708-1
+Added Pin To Net: NetName=TS+ Pin=R708-2
+Added Member To Class: ClassName=AMS_Master Member=Component J10 1053091204
+Added Member To Class: ClassName=Designator Member=Component R701 200KR
+Added Member To Class: ClassName=Designator Member=Component R704 220KR
+Added Member To Class: ClassName=Designator Member=Component R705 220KR
+Added Member To Class: ClassName=Designator Member=Component R706 220KR
+Added Member To Class: ClassName=Designator Member=Component R707 220KR
+Added Member To Class: ClassName=Designator Member=Component R708 220KR
