@@ -32,6 +32,7 @@ ReportSuppressedErrorsInMessages=0
 FSMCodingStyle=eFMSDropDownList_OneProcess
 FSMEncodingStyle=eFMSDropDownList_OneHot
 IsProjectConflictPreventionWarningsEnabled=0
+ConstraintManagerFlow=0
 IsVirtualBomDocumentRemoved=1
 OutputPath=
 LogFolderPath=
@@ -1197,6 +1198,12 @@ Type127=1
 Type128=1
 Type129=1
 Type130=1
+Type131=1
+Type132=1
+Type133=1
+Type134=1
+Type135=1
+Type136=1
 
 [Difference Levels]
 Type1=1
@@ -1394,6 +1401,7 @@ Type116=2
 Type117=3
 Type118=3
 Type119=3
+MultiChannelAlternate=0
 AlternateItemFail=3
 Type122=2
 Type123=1
@@ -1492,25 +1500,41 @@ UpdateToLatestRevision=1
 PartTypes=0
 
 [NetInfos]
-Net1=NetName=+5 TS|NetColor=$006E6EFF
-Net2=NetName=AIR-_IN|NetColor=$000083FD
-Net3=NetName=AIR+_IN|NetColor=$000083FD
-Net4=NetName=NetDZ701_A|NetColor=$000083FD
-Net5=NetName=NetDZ702_A|NetColor=$000083FD
-Net6=NetName=NetDZ703_K|NetColor=$006E6EFF
-Net7=NetName=NetF401_2|NetColor=$000083FD
-Net8=NetName=NetLED701_1|NetColor=$000083FD
-Net9=NetName=NetLED701_2|NetColor=$000083FD
-Net10=NetName=NetQ501_D|NetColor=$006E6EFF
-Net11=NetName=NetQ501_G|NetColor=$006E6EFF
-Net12=NetName=NetQ701_G|NetColor=$006E6EFF
-Net13=NetName=NetR501_3|NetColor=$006E6EFF
-Net14=NetName=NetR502_1|NetColor=$000083FD
-Net15=NetName=NetR502_2|NetColor=$006E6EFF
-Net16=NetName=NetR505_1|NetColor=$000083FD
-Net17=NetName=PRECHARGE_OUT|NetColor=$000083FD
-Net18=NetName=TS-|NetColor=$006E6EFF
-Net19=NetName=TS+|NetColor=$000083FD
+Net1=NetName=+12|NetColor=$00FF6EFF
+Net2=NetName=+24|NetColor=$00FF6EFF
+Net3=NetName=+5|NetColor=$00FF6EFF
+Net4=NetName=+5 TS|NetColor=$006E6EFF
+Net5=NetName=AIR-_AUX_1|NetColor=$00FFFF6E
+Net6=NetName=AIR-_IN|NetColor=$000083FD
+Net7=NetName=AIR+_AUX_1|NetColor=$00FFFF6E
+Net8=NetName=AIR+_IN|NetColor=$000083FD
+Net9=NetName=BMS_SC|NetColor=$007B0030
+Net10=NetName=GND|NetColor=$00A4ADBA
+Net11=NetName=I_N|NetColor=clLime
+Net12=NetName=I_P|NetColor=clLime
+Net13=NetName=IMD_OK_unlatched|NetColor=$00FFFF6E
+Net14=NetName=IOUT_N|NetColor=clLime
+Net15=NetName=IOUT_P|NetColor=clLime
+Net16=NetName=NetDZ701_A|NetColor=$000083FD
+Net17=NetName=NetDZ702_A|NetColor=$000083FD
+Net18=NetName=NetDZ703_K|NetColor=$006E6EFF
+Net19=NetName=NetF401_2|NetColor=$000083FD
+Net20=NetName=NetLED701_1|NetColor=$000083FD
+Net21=NetName=NetLED701_2|NetColor=$000083FD
+Net22=NetName=NetQ501_D|NetColor=$006E6EFF
+Net23=NetName=NetQ501_G|NetColor=$006E6EFF
+Net24=NetName=NetQ701_G|NetColor=$006E6EFF
+Net25=NetName=NetR501_3|NetColor=$006E6EFF
+Net26=NetName=NetR502_1|NetColor=$000083FD
+Net27=NetName=NetR502_2|NetColor=$006E6EFF
+Net28=NetName=NetR505_1|NetColor=$000083FD
+Net29=NetName=Precharge_AUX_1|NetColor=$00FFFF6E
+Net30=NetName=PRECHARGE_OUT|NetColor=$000083FD
+Net31=NetName=SC_End|NetColor=$007B0030
+Net32=NetName=SC_IN|NetColor=$007B0030
+Net33=NetName=SC_OUT|NetColor=$007B0030
+Net34=NetName=TS-|NetColor=$006E6EFF
+Net35=NetName=TS+|NetColor=$000083FD
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0
