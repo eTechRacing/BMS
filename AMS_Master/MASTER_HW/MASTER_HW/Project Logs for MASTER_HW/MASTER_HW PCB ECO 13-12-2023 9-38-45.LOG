@@ -1,0 +1,26 @@
+Removed Pin From Net: NetName=Precharge_Control Pin=J4-5
+Removed Pin From Net: NetName=Precharge_Control Pin=J4-7
+Removed Pin From Net: NetName=AIRMinus_Control Pin=J4-9
+Removed Pin From Net: NetName=AIRPlus_Control Pin=J4-13
+Removed Pin From Net: NetName=AIRPlus_Control Pin=J4-15
+Change Component Description : Designator=R404 Old Description=Res, 1K, 100W, To-247, Thick Film Rohs Compliant: Yes New Description=Res, 1K, 100W, To-247, Thick Film Rohs Compliant: Yes |Cgs Te Connectivity MPT100C1K0F
+Added Component: Designator=TP03(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Component: Designator=TP701(TestPoint)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "TestPoint"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Precharge_Control Pin=J4-6
+Added Pin To Net: NetName=AIRMinus_Control Pin=J4-12
+Added Pin To Net: NetName=AIRPlus_Control Pin=J4-18
+Added Pin To Net: NetName=TS- Pin=TP03-1
+Added Pin To Net: NetName=TS+ Pin=TP701-1
+Added Member To Class: ClassName=High_Voltage Member=Component Q501 SQ2318BES-T1_GE3
+Added Member To Class: ClassName=Designator Member=Component R704 220KR
+Added Member To Class: ClassName=Designator Member=Component R705 220KR
+Added Member To Class: ClassName=Designator Member=Component TP03 TestPoint
+Added Member To Class: ClassName=Designator Member=Component TP701 TestPoint
