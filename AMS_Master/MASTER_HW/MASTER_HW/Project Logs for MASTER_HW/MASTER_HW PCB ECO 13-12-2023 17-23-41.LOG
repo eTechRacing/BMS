@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=GND Pin=MH1-1
+Removed Member From Class: ClassName=AMS_Master Member=MH8
+Change Component Designator: OldDesignator=MH2 NewDesignator=MH1
+Change Component Designator: OldDesignator=MH3 NewDesignator=MH2
+Change Component Designator: OldDesignator=MH4 NewDesignator=MH3
+Change Component Designator: OldDesignator=MH5 NewDesignator=MH4
+Change Component Designator: OldDesignator=MH6 NewDesignator=MH5
+Change Component Designator: OldDesignator=MH7 NewDesignator=MH6
+Change Component Designator: OldDesignator=MH8 NewDesignator=MH7

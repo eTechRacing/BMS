@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=GND Pin=MH8-1
+Removed Member From Class: ClassName=AMS_Master Member=MH8
+Change Component Description : Designator=R404 Old Description=Res, 1K, 100W, To-247, Thick Film Rohs Compliant: Yes New Description=Res, 1K, 100W, To-247, Thick Film Rohs Compliant: Yes |Cgs Te Connectivity MPT100C1K0F
