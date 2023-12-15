@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=R701 Old Footprint=THT_RESISTOR New Footprint=THT_3W_Resistor
+Change Component Footprint: Designator=R704 Old Footprint=THT_RESISTOR New Footprint=THT_3W_Resistor
+Change Component Footprint: Designator=R705 Old Footprint=THT_RESISTOR New Footprint=THT_3W_Resistor
+Change Component Footprint: Designator=R706 Old Footprint=THT_RESISTOR New Footprint=THT_3W_Resistor
+Change Component Footprint: Designator=R707 Old Footprint=THT_RESISTOR New Footprint=THT_3W_Resistor
+Change Component Footprint: Designator=R708 Old Footprint=THT_RESISTOR New Footprint=THT_3W_Resistor
+Change Component Comment : Designator=R701 Old Comment=200KR New Comment=100KR

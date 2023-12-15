@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=TS+ Pin=J14-2
+Removed Pin From Net: NetName=TS- Pin=J14-4
+Removed Member From Class: ClassName=AMS_Master Member=J14
+Change Component Designator: OldDesignator=F? NewDesignator=F1
+Added Component: Designator=J*(J_MicroFit_1X4_V)
+Added Pin To Net: NetName=TS+ Pin=J*-2
+Added Pin To Net: NetName=TS- Pin=J*-4
+Change Net Name : Old Net Name=NetF?_2 New Net Name=NetF1_2
+Added Member To Class: ClassName=AMS_Master Member=Component J* 436500415
