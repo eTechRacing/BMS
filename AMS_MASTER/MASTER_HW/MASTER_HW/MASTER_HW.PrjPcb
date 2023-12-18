@@ -1501,8 +1501,8 @@ PartTypes=0
 
 [NetInfos]
 Net1=NetName=+12|NetColor=$00FF6EFF
-Net2=NetName=+24|NetColor=$00FF6EFF
-Net3=NetName=+5|NetColor=$00FF6EFF
+Net2=NetName=+24|NetColor=clYellow
+Net3=NetName=+5|NetColor=$0087000C
 Net4=NetName=+5 TS|NetColor=$006E6EFF
 Net5=NetName=AIR-_AUX_1|NetColor=$00FFFF6E
 Net6=NetName=AIR-_IN|NetColor=$000083FD
