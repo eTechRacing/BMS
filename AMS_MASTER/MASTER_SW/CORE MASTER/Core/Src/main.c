@@ -656,6 +656,29 @@ uint8_t	readCellsVoltages(SPI_HandleTypeDef spi_channel,uint32_t *cellsVoltages,
 		return 1;
 	}
 
+uint8_t readGPIOs(SPI_HandleTypeDef spi_channel,uint32_t *results,GPIO_TypeDef* CS_Port,uint16_t CS_Pin){
+	uint8_t AuxRegAdata[6];
+	uint8_t AuxRegBdata[6];
+
+	uint8_t CRC_count=0;
+
+	while(sendReadCommand(spi_channel,CC_RDAUXA,AuxRegAdata,6,CS_Port,CS_Pin) != 1 && CRC_count < CRC_LIMIT){CRC_count++;};
+	if(CRC_count == CRC_LIMIT){
+		return 0;
+	}
+	CRC_count = 0;
+	while(sendReadCommand(spi_channel,CC_RDAUXB,AuxRegBdata,6,CS_Port,CS_Pin) != 1 && CRC_count < CRC_LIMIT){CRC_count++;};
+	if(CRC_count == CRC_LIMIT){
+		return 0;
+	}
+
+	for(int i=0;i<3;i++){
+		results[i] = ((AuxRegAdata[2*i+1] << 8) | AuxRegAdata[2*i])*100;
+		results[3+i] = ((AuxRegBdata[2*i+1] << 8) | AuxRegBdata[2*i])*100;
+	}
+	return 1;
+}
+
     osDelay(1);
   }
   /* USER CODE END 5 */
