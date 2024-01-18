@@ -1,0 +1,50 @@
+Added Component: Designator=WR-PHD Socket Header?(61301311821)
+Added Component: Designator=WR-PHD Socket Header?(61301311821)
+Added Component: Designator=WR-PHD Socket Header(61301311821)
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-1
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-2
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-3
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-4
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-5
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-6
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-7
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-8
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-9
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-10
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-11
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-12
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-13
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-1
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-1
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-2
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-2
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-3
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-3
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-4
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-4
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-5
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-5
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-6
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-6
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-7
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-7
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-8
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-8
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-9
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-9
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-10
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-10
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-11
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-11
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-12
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-12
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-13
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header?-13
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component J102 J_MicroFit_1x8_V
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component NTC304 NXRT15XV103FA1B040
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component NTC305 NXRT15XV103FA1B040
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component NTC307 NXRT15XV103FA1B040
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component NTC308 NXRT15XV103FA1B040
+Add Class Member: Failed to add class member : Component WR-PHD Socket Header? J201
+Add Class Member: Failed to add class member : Component WR-PHD Socket Header? J201
+Add Class Member: Failed to add class member : Component WR-PHD Socket Header J101

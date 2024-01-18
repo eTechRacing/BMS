@@ -1,0 +1,71 @@
+Added Component: Designator=J101(61301311821)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/components/products/datasheet/61301311821.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=J201(61301311821)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/components/products/datasheet/61301311821.pdf"; VariantName = "[No Variations]"
+Added Component: Designator=J301(61301311821)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.we-online.com/components/products/datasheet/61301311821.pdf"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND_Slave_1 Pin=J101-1
+Added Pin To Net: NetName=GND_Slave_2 Pin=J201-1
+Added Pin To Net: NetName=NetF201_2 Pin=J201-2
+Added Pin To Net: NetName=NetF202_2 Pin=J201-3
+Added Pin To Net: NetName=NetF203_2 Pin=J201-4
+Added Pin To Net: NetName=NetF203_2 Pin=J201-5
+Added Pin To Net: NetName=NetF203_2 Pin=J201-6
+Added Pin To Net: NetName=NetF204_2 Pin=J201-7
+Added Pin To Net: NetName=NetF205_2 Pin=J201-8
+Added Pin To Net: NetName=NetF206_2 Pin=J201-9
+Added Pin To Net: NetName=NetF207_2 Pin=J201-10
+Added Pin To Net: NetName=NetF207_2 Pin=J201-11
+Added Pin To Net: NetName=NetF207_2 Pin=J201-12
+Added Pin To Net: NetName=NetF208_2 Pin=J201-13
+Added Pin To Net: NetName=GND_Slave_3 Pin=J301-1
+Added Pin To Net: NetName=NetF301_2 Pin=J301-2
+Added Pin To Net: NetName=NetF302_2 Pin=J301-3
+Added Pin To Net: NetName=NetF303_2 Pin=J301-4
+Added Pin To Net: NetName=NetF304_2 Pin=J301-5
+Added Pin To Net: NetName=NetF305_2 Pin=J301-6
+Added Pin To Net: NetName=NetF305_2 Pin=J301-7
+Added Pin To Net: NetName=NetF305_2 Pin=J301-8
+Added Pin To Net: NetName=NetF306_2 Pin=J301-9
+Added Pin To Net: NetName=NetF307_2 Pin=J301-10
+Added Pin To Net: NetName=NetF308_2 Pin=J301-11
+Added Pin To Net: NetName=NetF309_2 Pin=J301-12
+Added Pin To Net: NetName=NetF310_2 Pin=J301-13
+Added Pin To Net: NetName=NetF101_2 Pin=F101-2
+Added Pin To Net: NetName=NetF101_2 Pin=J101-2
+Added Net: Name=NetF101_2
+Added Pin To Net: NetName=NetF102_2 Pin=F102-2
+Added Pin To Net: NetName=NetF102_2 Pin=J101-3
+Added Net: Name=NetF102_2
+Added Pin To Net: NetName=NetF103_2 Pin=F103-2
+Added Pin To Net: NetName=NetF103_2 Pin=J101-4
+Added Net: Name=NetF103_2
+Added Pin To Net: NetName=NetF104_2 Pin=F104-2
+Added Pin To Net: NetName=NetF104_2 Pin=J101-5
+Added Net: Name=NetF104_2
+Added Pin To Net: NetName=NetF105_2 Pin=F105-2
+Added Pin To Net: NetName=NetF105_2 Pin=J101-6
+Added Pin To Net: NetName=NetF105_2 Pin=J101-7
+Added Pin To Net: NetName=NetF105_2 Pin=J101-8
+Added Net: Name=NetF105_2
+Added Pin To Net: NetName=NetF106_2 Pin=F106-2
+Added Pin To Net: NetName=NetF106_2 Pin=J101-9
+Added Net: Name=NetF106_2
+Added Pin To Net: NetName=NetF107_2 Pin=F107-2
+Added Pin To Net: NetName=NetF107_2 Pin=J101-10
+Added Net: Name=NetF107_2
+Added Pin To Net: NetName=NetF108_2 Pin=F108-2
+Added Pin To Net: NetName=NetF108_2 Pin=J101-11
+Added Net: Name=NetF108_2
+Added Pin To Net: NetName=NetF109_2 Pin=F109-2
+Added Pin To Net: NetName=NetF109_2 Pin=J101-12
+Added Net: Name=NetF109_2
+Added Pin To Net: NetName=NetF110_2 Pin=F110-2
+Added Pin To Net: NetName=NetF110_2 Pin=J101-13
+Added Net: Name=NetF110_2
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component J101 WR-PHD 13 socket header
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component J201 WR-PHD 13 socket header
+Added Member To Class: ClassName=Accumulator_HotDog Member=Component J301 WR-PHD 13 socket header

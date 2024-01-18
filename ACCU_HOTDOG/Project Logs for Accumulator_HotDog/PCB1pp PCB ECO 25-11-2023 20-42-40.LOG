@@ -1,0 +1,42 @@
+Removed Pin From Net: NetName=NetF105_2 Pin=J101-6
+Removed Pin From Net: NetName=NetF105_2 Pin=J101-8
+Removed Pin From Net: NetName=NetF106_2 Pin=J101-9
+Removed Pin From Net: NetName=NetF107_2 Pin=J101-10
+Removed Pin From Net: NetName=NetF108_2 Pin=J101-11
+Removed Pin From Net: NetName=NetF207_2 Pin=J201-11
+Removed Pin From Net: NetName=NetF207_2 Pin=J201-12
+Removed Pin From Net: NetName=NetF305_2 Pin=J301-6
+Removed Pin From Net: NetName=NetF305_2 Pin=J301-8
+Removed Pin From Net: NetName=NetF306_2 Pin=J301-9
+Removed Pin From Net: NetName=NetF307_2 Pin=J301-10
+Removed Pin From Net: NetName=NetF308_2 Pin=J301-11
+Change Component Footprint: Designator=J101 Old Footprint=61301311821 New Footprint=61301311821
+Change Component Footprint: Designator=J201 Old Footprint=61301311821 New Footprint=61301311821
+Change Component Footprint: Designator=J301 Old Footprint=61301311821 New Footprint=61301311821
+Change Component Footprint: Designator=J102 Old Footprint=J_MicroFit_1x8_V New Footprint=61300811821
+Change Component Footprint: Designator=J202 Old Footprint=J_MicroFit_1x8_V New Footprint=61300811821
+Change Component Footprint: Designator=J302 Old Footprint=J_MicroFit_1x8_V New Footprint=61300811821
+Change Component Comment : Designator=J102 Old Comment=J_MicroFit_1x8_V New Comment=J_WR-PHD 8pin Socket Header
+Change Component Comment : Designator=J202 Old Comment=J_MicroFit_1x8_V New Comment=J_WR-PHD 8pin Socket Header
+Change Component Comment : Designator=J302 Old Comment=J_MicroFit_1x8_V New Comment=J_WR-PHD 8pin Socket Header
+Change component parameters: Designator = "J102" ("J102"); Footprint = "J_MicroFit_1x8_V"; UniqueID = "\FVPVZCHL" ("\FVPVZCHL")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-61300811821-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J202" ("J202"); Footprint = "J_MicroFit_1x8_V"; UniqueID = "\EJUSLQJD" ("\EJUSLQJD")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-61300811821-ND"; VariantName = "[No Variations]"
+Change component parameters: Designator = "J302" ("J302"); Footprint = "J_MicroFit_1x8_V"; UniqueID = "\DVDNWHDL" ("\DVDNWHDL")
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "732-61300811821-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetF104_2 Pin=J101-6
+Added Pin To Net: NetName=NetF106_2 Pin=J101-8
+Added Pin To Net: NetName=NetF107_2 Pin=J101-9
+Added Pin To Net: NetName=NetF108_2 Pin=J101-10
+Added Pin To Net: NetName=NetF109_2 Pin=J101-11
+Added Pin To Net: NetName=NetF208_2 Pin=J201-11
+Added Pin To Net: NetName=NetF208_2 Pin=J201-12
+Added Pin To Net: NetName=NetF304_2 Pin=J301-6
+Added Pin To Net: NetName=NetF306_2 Pin=J301-8
+Added Pin To Net: NetName=NetF307_2 Pin=J301-9
+Added Pin To Net: NetName=NetF308_2 Pin=J301-10
+Added Pin To Net: NetName=NetF309_2 Pin=J301-11
