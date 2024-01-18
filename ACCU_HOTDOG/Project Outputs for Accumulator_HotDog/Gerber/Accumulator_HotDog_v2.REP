@@ -43,6 +43,28 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
+Generating : Bottom Solder
+      File : Accumulator_HotDog_v2.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+*************************************************************
+
+*************************************************************
 Generating : Top Solder
       File : Accumulator_HotDog_v2.GTS
 
@@ -67,25 +89,13 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Solder
-      File : Accumulator_HotDog_v2.GBS
+Generating : Bottom Overlay
+      File : Accumulator_HotDog_v2.GBO
 
-    Adding Layer      : Bottom Solder
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
+    Adding Layer      : Bottom Overlay
 
 
 Used DCodes :
-    D17
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
 *************************************************************
 
 *************************************************************
@@ -99,16 +109,6 @@ Used DCodes :
     D10
     D11
     D12
-*************************************************************
-
-*************************************************************
-Generating : Bottom Overlay
-      File : Accumulator_HotDog_v2.GBO
-
-    Adding Layer      : Bottom Overlay
-
-
-Used DCodes :
 *************************************************************
 
 *************************************************************
