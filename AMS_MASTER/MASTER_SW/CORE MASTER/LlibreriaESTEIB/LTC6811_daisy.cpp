@@ -343,9 +343,9 @@ void ltc6811_adax(
   cmd[3] = (uint8_t)(cmd_pec);
 
   wakeup_idle (); //This will guarantee that the ltc6811 isoSPI port is awake. This command can be removed.
-  output_low(LTC6811_CS);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);					//The Low state of the chip select pin is set
   spi_write_array(4,cmd);
-  output_high(LTC6811_CS);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);					//The Low state of the chip select pin is set
 
 }
 
@@ -764,9 +764,9 @@ void ltc6811_rdaux_reg(uint8_t reg, //Determines which GPIO voltage register is 
 
   wakeup_idle (); //This will guarantee that the ltc6811 isoSPI port is awake, this command can be removed.
 
-  output_low(LTC6811_CS);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);					//The Low state of the chip select pin is set
   spi_write_read(cmd,4,data,(REG_LEN*total_ic));
-  output_high(LTC6811_CS);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);					//The Low state of the chip select pin is set
 
 }
 

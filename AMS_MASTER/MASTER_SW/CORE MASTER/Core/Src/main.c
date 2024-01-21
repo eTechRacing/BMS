@@ -19,7 +19,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
-
+#include "LTC6811_daisy.h"
+#include "LTC6811_2.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -809,8 +810,67 @@ void Lectures_VoltTemp(void *argument)
 
 
 	/////////////////////////////////////////////////////ADAX//////////////////////////////////////////////////////////////////////
+	 /*
+	The type of ADC conversion executed can be changed by passing the following variables to the conversion functions:
+	 |Variable|Function                                      |
+	 |--------|----------------------------------------------|
+	 | MD     | Determines the filter corner of the ADC      |
+	 | CHG    | Determines which GPIO channels are converted |
+	 | ST     | Determines which Self Test is executed       |
+
+	Starts an ADC conversions of the ltc6811 GPIO inputs.
+	Command Code:
+	-------------
+
+	|CMD[0:1] |  15   |  14   |  13   |  12   |  11   |  10   |   9   |   8   |   7   |   6   |   5   |   4   |   3   |   2   |   1   |   0   |
+	|-----------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+	|ADAX:      |   0   |   0   |   0   |   0   |   0   |   1   |   0   | MD[1] | MD[2] |   1   |   1   |  0    |   0   | CHG[2]| CHG[1]| CHG[0]|
+	*/
+	uint8_t MD = 0b10;								// ADC Conversion Mode
+	uint8_t CHG = 001;								//Which GPIOS are converted: 000 -> GPIO1-5; 001 -> GPIO1; 010 -> GPIO2; 011 -> GPIO3; 100 -> GPIO4; 101 -> GPIO5
+	void ltc6811_adax(uint8_t MD,uint8_t CHG);
 
 	/////////////////////////////////////////////////////RDAUXA//////////////////////////////////////////////////////////////////////
+	/*!  Reads and parses the ltc6811 auxiliary registers.
+
+	 The function is used to read the  parsed GPIO codes of the ltc6811. This function will send the requested
+	 read commands parse the data and store the gpio voltages in aux_codes variable
+
+
+	 uint16_t aux_codes[][6]; A two dimensional array of the gpio voltage codes. The GPIO codes will
+	 be stored in the aux_codes[][6] array in the following format:
+	 |  aux_codes[0][0]| aux_codes[0][1] |  aux_codes[0][2]|  aux_codes[0][3]|  aux_codes[0][4]|  aux_codes[0][5]| aux_codes[1][0] |aux_codes[1][1]|  .....    |
+	 |-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|---------------|-----------|
+	 |IC1 GPIO1        |IC1 GPIO2        |IC1 GPIO3        |IC1 GPIO4        |IC1 GPIO5        |IC1 Vref2        |IC2 GPIO1        |IC2 GPIO2      |  .....    |
+
+	@return  int8_t, PEC Status
+	  0: No PEC error detected
+	 -1: PEC error detected, retry read
+
+	*/
+	uint8_t reg = 0; 								//Controls which cell voltage register is read back: 0 -> All Cell registers; 1 -> A; 2 -> B; 3 -> C; 4 -> D
+	uint8_t nIC = 15;								// The number of ICs being written
+	AUX_CHANNELS = 6;								//Number of GPIOS read back
+   uint16_t aux_codes[][AUX_CHANNELS] = [[11111111,11111111,11111111,11111111,11111111,11111111], // IC1 //!< A two dimensional array of the parsed gpio voltage codes
+										  [11111111,11111111,11111111,11111111,11111111,11111111], // IC2
+										  [11111111,11111111,11111111,11111111,11111111,11111111], // IC3
+										  [11111111,11111111,11111111,11111111,11111111,11111111], // IC4
+										  [11111111,11111111,11111111,11111111,11111111,11111111], // IC5
+										  [11111111,11111111,11111111,11111111,11111111,11111111], // IC6
+										  [11111111,11111111,11111111,11111111,11111111,11111111], // IC7
+										  [11111111,11111111,11111111,11111111,11111111,11111111], // IC8
+										  [11111111,11111111,11111111,11111111,11111111,11111111], // IC9
+										  [11111111,11111111,11111111,11111111,11111111,11111111], // IC10
+										  [11111111,11111111,11111111,11111111,11111111,11111111], // IC11
+										  [11111111,11111111,11111111,11111111,11111111,11111111], // IC12
+										  [11111111,11111111,11111111,11111111,11111111,11111111], // IC13
+										  [11111111,11111111,11111111,11111111,11111111,11111111], // IC14
+										  [11111111,11111111,11111111,11111111,11111111,11111111]];// IC15
+	//										GPIO1	 GPIO2    GPIO3     GPIO4    GPIO5   Vref
+
+	int8_t ltc6811_rdaux(uint8_t reg, uint8_t nIC, uint16_t aux_codes[][AUX_CHANNELS]);
+
+
 
   /* USER CODE END 5 */
 }
