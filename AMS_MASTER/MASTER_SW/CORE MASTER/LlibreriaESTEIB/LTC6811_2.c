@@ -112,7 +112,7 @@ void sendGenCommand(SPI_HandleTypeDef spi_channel,uint16_t CMD,GPIO_TypeDef* CS_
     //Delay 10us
     delayUS_ASM(10);
     //Send command data trough SPI
-    HAL_SPI_Transmit(&spi_channel,data2send,4,SPI_TIMEOUT);
+    HAL_SPI_Transmit(&spi_channel,data2send,4,HAL_TIMEOUT);
 
     delayUS_ASM(10);
     //Set CS to High Level
@@ -188,7 +188,7 @@ void sendGenAdressCommand(SPI_HandleTypeDef spi_channel,uint16_t CMD,uint8_t adr
     delayUS_ASM(10);
 
     //Send command data trough SPI
-    HAL_SPI_Transmit(&spi_channel,data2send,4,SPI_TIMEOUT);
+    HAL_SPI_Transmit(&spi_channel,data2send,4,HAL_TIMEOUT);
 
     delayUS_ASM(10);
     //Set CS to High Level
@@ -279,7 +279,7 @@ void sendWriteCommand(SPI_HandleTypeDef spi_channel,uint16_t CMD,uint8_t *data, 
     delayUS_ASM(10);
 
     //Send command data trough SPI
-    HAL_SPI_Transmit(&spi_channel,data2send,6+length,SPI_TIMEOUT);
+    HAL_SPI_Transmit(&spi_channel,data2send,6+length,HAL_TIMEOUT);
 
     delayUS_ASM(10);
 
@@ -335,7 +335,7 @@ void sendAdressWriteCommand(SPI_HandleTypeDef spi_channel,uint16_t CMD,uint8_t *
     delayUS_ASM(10);
 
     //Send command data trough SPI
-    HAL_SPI_Transmit(&spi_channel,data2send,6+length,SPI_TIMEOUT);
+    HAL_SPI_Transmit(&spi_channel,data2send,6+length,HAL_TIMEOUT);
 
     delayUS_ASM(10);
 
@@ -429,10 +429,10 @@ uint8_t sendReadCommand(SPI_HandleTypeDef spi_channel,uint16_t CMD,uint8_t *data
     delayUS_ASM(10);
 
     //Send command data trough SPI
-    HAL_SPI_Transmit(&spi_channel,data2send,4,SPI_TIMEOUT);
+    HAL_SPI_Transmit(&spi_channel,data2send,4,HAL_TIMEOUT);
 
     //Receive Register data trough SPI
-    HAL_SPI_Receive(&spi_channel,auxdata,length+2,SPI_TIMEOUT);
+    HAL_SPI_Receive(&spi_channel,auxdata,length+2,HAL_TIMEOUT);
 		//HAL_SPI_TransmitReceive(&spi_channel,data2send,auxdata,4+length+2,SPI_TIMEOUT);
     //Delay 10 us
     delayUS_ASM(10);
@@ -479,7 +479,7 @@ uint8_t sendAdressReadCommand(SPI_HandleTypeDef spi_channel,uint16_t CMD,uint8_t
 	//Delay 10 us
 	delayUS_ASM(10);
 	//Send command data trough SPI and receive the info
-	HAL_SPI_TransmitReceive(&spi_channel,data2send,auxdata,4+6+2,SPI_TIMEOUT);
+	HAL_SPI_TransmitReceive(&spi_channel,data2send,auxdata,4+6+2,HAL_TIMEOUT);
 	//Delay 10 us
 	delayUS_ASM(10);
 	//Set CS to High Level

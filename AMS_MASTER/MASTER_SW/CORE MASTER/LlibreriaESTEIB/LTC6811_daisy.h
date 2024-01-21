@@ -134,7 +134,7 @@ uint32_t ltc6811_pollAdc();
  | DCP    | Determines if Discharge is Permitted       |
  | ST     | Determines which Self Test is executed       |
 
- Command Code:
+ Broadcast Command Code:
 -------------
 
 |CMD[0:1] |  15   |  14   |  13   |  12   |  11   |  10   |   9   |   8   |   7   |   6   |   5   |   4   |   3   |   2   |   1   |   0   |
@@ -539,6 +539,10 @@ Command Code:
 |CLRSCTRL:      |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   1   |   1   |   0   |   0   |   0   |
 */
 void ltc6811_clrsctrl();
+
+
+
+
 
 /*!  Write the ltc6811 configuration register
 

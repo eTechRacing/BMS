@@ -92,9 +92,9 @@ void ltc6811_adcv(
 
 
   wakeup_idle (); //This will guarantee that the ltc6811 isoSPI port is awake. This command can be removed.
-  output_low(LTC6811_CS);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);					//The Low state of the chip select pin is set
   spi_write_array(4,cmd);
-  output_high(LTC6811_CS);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);					//The Low state of the chip select pin is set
 
 }
 
@@ -604,9 +604,10 @@ void ltc6811_rdcv_reg(uint8_t reg, //Determines which cell voltage register is r
 
   wakeup_idle (); //This will guarantee that the ltc6811 isoSPI port is awake. This command can be removed.
 
-  output_low(LTC6811_CS);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);					//The Low state of the chip select pin is set
   spi_write_read(cmd,4,data,(REG_LEN*total_ic));
-  output_high(LTC6811_CS);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);					//The Low state of the chip select pin is set
+
 
 }
 
@@ -1113,9 +1114,9 @@ void ltc6811_wrcfg(uint8_t total_ic, //The number of ICs being written to
 
   wakeup_idle ();                                 //This will guarantee that the ltc6811 isoSPI port is awake.This command can be removed.
 
-  output_low(LTC6811_CS);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);					//The Low state of the chip select pin is set
   spi_write_array(CMD_LEN, cmd);
-  output_high(LTC6811_CS);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);					//The Low state of the chip select pin is set
   free(cmd);
 }
 
@@ -1501,7 +1502,7 @@ void spi_write_array(uint8_t len, // Option: Number of bytes to be written on th
 {
   for (uint8_t i = 0; i < len; i++)
   {
-    spi_write((int8_t)data[i]);
+    HAL_SPI_Transmit(&hspi1,(uint8_t *)&data[i],1,HAL_MAX_DELAY);
   }
 }
 
@@ -1518,13 +1519,14 @@ void spi_write_read(uint8_t tx_Data[],//array of data to be written on SPI port
 {
   for (uint8_t i = 0; i < tx_len; i++)
   {
-    spi_write(tx_Data[i]);
+	  HAL_SPI_Transmit(&hspi1,(uint8_t *)&tx_Data[i],1,HAL_MAX_DELAY);
 
   }
 
   for (uint8_t i = 0; i < rx_len; i++)
   {
-    rx_data[i] = (uint8_t)spi_read(0xFF);
+    //rx_data[i] = (uint8_t)spi_read(0xFF);
+    HAL_SPI_Receive(&hspi1, (uint8_t *)&rx_data[i],1,HAL_MAX_DELAY);
   }
 
 }

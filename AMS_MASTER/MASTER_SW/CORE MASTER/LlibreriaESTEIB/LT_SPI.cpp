@@ -178,6 +178,7 @@ void spi_write(int8_t  data)  // Byte to be written to SPI port
   while (!(SPSR & _BV(SPIF)));  //! 2) Wait until transfer complete
 }
 
+
 // Read and write a data byte using the SPI hardware
 // Returns the data byte read
 int8_t spi_read(int8_t  data) //!The data byte to be written

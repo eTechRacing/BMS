@@ -575,6 +575,15 @@ static void MX_GPIO_Init(void)
   * @retval None
   */
 
+
+
+
+
+
+
+
+
+
 /* USER CODE END Header_Lectures_VoltTemp */
 void Lectures_VoltTemp(void *argument)
 {
