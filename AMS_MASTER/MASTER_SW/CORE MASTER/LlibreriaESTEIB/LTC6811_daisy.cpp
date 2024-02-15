@@ -1452,9 +1452,9 @@ uint16_t ltc6811_st_lookup(
 */
 void wakeup_idle()
 {
-  output_low(LTC6811_CS);
-  spi_write(0xFF); //Guarantees the isoSPI will be in ready mode
-  output_high(LTC6811_CS);
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_RESET);					//The Low state of the chip select pin is set
+	spi_write(0xFF); //Guarantees the isoSPI will be in ready mode
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_6, GPIO_PIN_SET);					//The Low state of the chip select pin is set
 }
 
 /*
