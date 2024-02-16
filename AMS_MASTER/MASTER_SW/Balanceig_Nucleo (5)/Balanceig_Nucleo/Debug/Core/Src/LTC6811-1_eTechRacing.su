@@ -1,0 +1,13 @@
+../Core/Src/LTC6811-1_eTechRacing.c:45:6:outputCS	16	static
+../Core/Src/LTC6811-1_eTechRacing.c:54:6:wakeup_idle	16	static
+../Core/Src/LTC6811-1_eTechRacing.c:65:10:pec15_calc	32	static
+../Core/Src/LTC6811-1_eTechRacing.c:83:6:wakeup_sleep	96	static
+../Core/Src/LTC6811-1_eTechRacing.c:105:8:set_cfgr	40	static
+../Core/Src/LTC6811-1_eTechRacing.c:140:6:ltc6811_wrcfg	120	static
+../Core/Src/LTC6811-1_eTechRacing.c:207:6:ltc6811_adcv	112	static
+../Core/Src/LTC6811-1_eTechRacing.c:254:11:ltc6811_rdcv	144	static
+../Core/Src/LTC6811-1_eTechRacing.c:384:10:ltc6811_rdcv_reg	120	static
+../Core/Src/LTC6811-1_eTechRacing.c:443:10:spi_transmit_recieve	24	static
+../Core/Src/LTC6811-1_eTechRacing.c:472:6:ltc6811_adax	112	static
+../Core/Src/LTC6811-1_eTechRacing.c:497:8:ltc6811_rdaux	152	static
+../Core/Src/LTC6811-1_eTechRacing.c:603:6:ltc6811_rdaux_reg	112	static
