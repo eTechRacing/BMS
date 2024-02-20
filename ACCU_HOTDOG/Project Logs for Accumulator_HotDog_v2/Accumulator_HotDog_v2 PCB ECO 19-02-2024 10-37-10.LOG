@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=c4_1 Pin=J101-6
+Removed Pin From Net: NetName=c3_2 Pin=J201-5
+Removed Pin From Net: NetName=c3_2 Pin=J201-6
+Removed Pin From Net: NetName=c4_3 Pin=J301-6
+Added Pin To Net: NetName=c5_1 Pin=J101-6
+Added Pin To Net: NetName=c4_2 Pin=J201-5
+Added Pin To Net: NetName=c4_2 Pin=J201-6
+Added Pin To Net: NetName=c5_3 Pin=J301-6
+Change Class Name : Old Net Name=Accumulator_HotDog New Net Name=Accumulator_HotDog_v2
+Change Room Name: Old Name=Accumulator_HotDog New Name=Accumulator_HotDog_v2
+Change Room Scope: Old Scope=InComponentClass('Accumulator_HotDog') New Scope=InComponentClass('Accumulator_HotDog_v2')

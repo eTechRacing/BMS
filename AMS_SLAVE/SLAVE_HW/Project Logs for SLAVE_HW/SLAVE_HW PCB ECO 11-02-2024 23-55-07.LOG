@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=Cell12 Pin=J101-13
+Removed Pin From Net: NetName=NTC8 Pin=J102-8
+Removed Pin From Net: NetName=+5_IN Pin=Q213-C
+Removed Pin From Net: NetName=+5_IN Pin=Q213-C
+Removed Pin From Net: NetName=+5_IN Pin=R252-2
+Change Component Designator: OldDesignator=NTC NewDesignator=NTC9
+Added Component: Designator=NTC8(NTC_PCB)
+Added Pin To Net: NetName=Cell12 Pin=J101-12
+Added Pin To Net: NetName=GND_Slave Pin=J102-8
+Added Pin To Net: NetName=NTC8 Pin=NTC8-1
+Added Pin To Net: NetName=GND_Slave Pin=NTC8-2
+Added Pin To Net: NetName=NetQ213_C Pin=Q213-C
+Added Pin To Net: NetName=NetQ213_C Pin=Q213-C
+Added Pin To Net: NetName=NetQ213_C Pin=R252-2
+Added Net: Name=NetQ213_C
+Added Member To Class: ClassName=Temperatures Member=Component NTC8 NTC_10KR

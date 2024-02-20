@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [Accumulator_HotDog_v2.PcbDoc]
+   Generated File[Accumulator_HotDog_v2.TXT]
+   Generated File[Accumulator_HotDog_v2.LDP]
+   Generated File[Accumulator_HotDog_v2.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 8:59:57 On 20/02/2024
