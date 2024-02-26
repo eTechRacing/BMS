@@ -35,15 +35,52 @@ uint16_t crc15Table[] = {0x0,  0xc599, 0xceab, 0xb32, 0xd8cf, 0x1d56, 0x1664, 0x
                                0x2d02, 0xa76f, 0x62f6, 0x69c4, 0xac5d, 0x7fa0, 0xba39, 0xb10b, 0x7492, 0x5368, 0x96f1, 0x9dc3,
                                0x585a, 0x8ba7, 0x4e3e, 0x450c, 0x8095};
 
-uint8_t GPIOx = 0b00001011; //Suma 001 al final per anar variant -> La configuració dels GPIOs poden ser valors entre 0,1,2,3,4,5,6,7
-// 0 -> 0b000 000 11 | 1 -> 0b000 001 11 | 2 -> 0b000 010 11 | 3 -> 0b000 011 11 | 4 -> 0b000 100 11 | 5 -> 0b000 101 11 | 6 -> 0b000 110 11 | 7 -> 0b000 111 11 |
-// 0 -> 0b000 CBA 11
-//  CFGR0 	| GPIO5	| GPIO4	| GPIO3	| GPIO2	| GPIO1	| REFON	| DTEN	| ADCOPT| // | GPIO1 -> 1 | GPIO2 -> 1 | GPIO3 -> A | GPIO4 -> B | GPIO5 -> C
+uint8_t GPIOx = 0b00001011;
+/*Suma 001 al final per anar variant -> The GPIOs configuration can be: 0,1,2,3,4,5,6,7
+ *  0 -> 0b000 000 11 | 1 -> 0b000 001 11 | 2 -> 0b000 010 11 | 3 -> 0b000 011 11 | 4 -> 0b000 100 11 | 5 -> 0b000 101 11 | 6 -> 0b000 110 11 | 7 -> 0b000 111 11 |
+ *  0 -> 0b000 CBA 11
+ *   CFGR0 	| GPIO5	| GPIO4	| GPIO3	| GPIO2	| GPIO1	| REFON	| DTEN	| ADCOPT| // | GPIO1 -> 1 | GPIO2 -> 1 | GPIO3 -> A | GPIO4 -> B | GPIO5 -> C
+*/
 
-uint16_t DCC[2] = {0x0FFF,0x0FFF}; 			//0b00001111 11111111
 
-void outputCS(uint8_t input){
-	if(input == 1){
+/* Function: Balancing
+ * Purpose: Balancing is a function that evaluates the conditions for the cells balancing and returns the order to the IC.
+ * The algorithm works the following way: it evaluates individually each cell and if its voltage is over a limit (V_MIN) and the voltage is over an upper limit (V_BALANCING)
+ * or the difference between the cell voltage is bigger than a difference (DIFF_MAX) with the minimum cell voltage (VCELL_MIN).
+ * Set the Discharge of the cells: 1 -> Turn ON Shorting Switch for Cell x; 0 -> Turn OFF Shorting Switch for Cell x (Default);
+ * It is an array of 12 bits for each slave
+ * Inputs: Minimum voltage for start balancing, less charged cell, cell voltages array, limit voltage to balance, maximum difference between the value and the minimum voltage, and the number of ICs
+*/
+
+int *Balancing(uint16_t V_MIN,	 								// Constant of the minimum voltage for start balancing, first condition for balancing. Two conditions at least should be happening for balancing (Balancing -> Stop chargin
+		uint16_t VCELL_MIN, 									// Variable of the less charged cell
+		uint16_t *VOLTAGES,										// Array of the read voltages
+		uint16_t V_BALANCING,									// Constant of the limit voltage to start balancing, it has no other conditions for balancing
+		uint8_t DIFF_MAX,										// Constant of the Maximum difference between the evaluated voltage and the minimum voltage
+		uint8_t TOTAL_IC)										// Constant of the number of ICs that are being used
+		{
+			int *DCC;											// Declaration of the DCC array
+			DCC = malloc(sizeof(int *) * TOTAL_IC);				// Definition of the DCC array with a TOTAL_IC length
+			for(int j = 0; TOTAL_IC; j++)						// Loops for each voltage in the evaluated IC
+			{
+				uint16_t BALANCING = 0b00000000000000;			// Variable 0 or 1 that sets if the evaluated cell should (1) or not (0) start balancing, has a 16 bits dimension
+				for(int i = 0; i < 12; i++)						// A for function that evaluates each cell of the IC
+				{
+					if(VOLTAGES[i]>V_MIN && (VOLTAGES[i] > V_BALANCING || (VOLTAGES[i]-VCELL_MIN)>DIFF_MAX))	//If the evaluated voltage is over V_MIN && (the evaluated voltage is over V_BALANCING || the difference between the evaluated voltage and VCELL_MIN is bigger than DIFF_MAX
+					{
+						BALANCING = (BALANCING|(1<<i));			//Set a 1 in the position of the evaluated cell in the BALANCING variable
+					}
+				}
+				DCC[j] = BALANCING;								//Set the DCC array in the evaluated IC position to the value of the BALANCING variable
+			}
+			return DCC;
+		}
+/*
+ * Function: outputCS
+ * Purpose: The outputCs is a function that sets the CS pin to high or low depending on the entering value input (1) or (0)
+ */
+void outputCS(uint8_t CS_INPUT){
+	if(CS_INPUT == 1){
 		HAL_GPIO_WritePin(CSPORT, CSPIN, GPIO_PIN_SET);					//The High state of the chip select pin is set
 	}
 	else{
@@ -51,112 +88,231 @@ void outputCS(uint8_t input){
 	}
 }
 
-void wakeup_idle(SPI_HandleTypeDef spi_channel)
+/*
+ * Function: wakeup_idle
+ * Purpose: The wakeup_idle function sends a byte thought SPI with no specific purpose, it just wakes up the ICs.
+ * Inputs: The spi_channel which wants to be used
+ */
+void wakeup_idle(SPI_HandleTypeDef SPI_CHANNEL)
 {
 	uint8_t idle_message = 0xFF;
-	outputCS(0);					//The Low state of the chip select pin is set
-	HAL_SPI_Transmit(&spi_channel, (uint8_t*)&idle_message, 1, HAL_MAX_DELAY);
-	outputCS(1);					//The Low state of the chip select pin is set
+	outputCS(0);																// The Low state of the chip select pin is set
+	HAL_SPI_Transmit(&SPI_CHANNEL, (uint8_t*)&idle_message, 1, HAL_MAX_DELAY);	// Sends a byte through SPI
+	outputCS(1);																// The High state of the chip select pin is set
 }
 
 /*
-Calculates  and returns the CRC15
+ * Function: wakeup_sleep
+ * Purpose:Generic wakeup command to wake the ltc6811 from sleep
+ * Inputs: The spi_channel where the data should be sent, the timer to have a delay of 1 us, the number of ICs, the delay between sending each message in us
 */
-uint16_t pec15_calc(uint8_t len, //Number of bytes that will be used to calculate a PEC
-                    uint8_t *data //Array of data that will be used to calculate  a PEC
+void wakeup_sleep(SPI_HandleTypeDef SPI_CHANNEL, TIM_HandleTypeDef TIMER_CHANNEL, int TOTAL_IC, int WAKEUP_DELAY)
+{
+	uint8_t idle_message = 0xFF;				// Declare the dummy message  sent
+	for(int i = 0; i<TOTAL_IC; i++)				// Loops for each IC
+	{
+		outputCS(0);							// The Low state of the chip select pin is set
+		HAL_SPI_Transmit(&SPI_CHANNEL, (uint8_t*)&idle_message, 1, HAL_MAX_DELAY); // Sends a byte through SPI
+		outputCS(1);							// The High state of the chip select pin is set
+	}
+	delay_us(WAKEUP_DELAY, TIMER_CHANNEL);		// Waits WAKEUP_DELAY to send again
+}
+
+/*
+ * Function: pec15_calc
+ * Purpose: The pec15_calc calculates and returns the CRC15
+ * Inputs: The length of the data calculated and the data which has to be evaluated to calculate the PEC
+*/
+uint16_t pec15_calc(uint8_t DATA_LENGTH, 		// Number of bytes that will be used to calculate a PEC
+                    uint8_t *DATA 				// Array of data that will be used to calculate  a PEC
                    )
 {
-  uint16_t remainder,addr;
-
-  remainder = 16;//initialize the PEC
-  for (uint8_t i = 0; i<len; i++) // loops for each byte in data array
+  uint16_t remainder;
+  uint16_t addr;
+  remainder = 16;								// Initialize the PEC
+  for (uint8_t i = 0; i<DATA_LENGTH; i++) 		// Loops for each byte in data array
   {
-    addr = ((remainder>>7)^data[i])&0xff;//calculate PEC table address
+    addr = ((remainder>>7)^DATA[i])&0xff;		// Calculate PEC table address
     remainder = (remainder<<8)^pgm_read_word_near(crc15Table+addr);
   }
-  return(remainder*2);//The CRC15 has a 0 in the LSB so the remainder must be multiplied by 2
+  return(remainder*2);							// The CRC15 has a 0 in the LSB so the remainder must be multiplied by 2
+}
+
+
+/*
+ * Function: set_pwm
+ * Purpose:
+ * Inputs:
+ */
+int **set_pwm(int TOTAL_IC){
+		int **pwm_set;
+		int pwm_IClenght = 4+4;
+		int cell_pwm = 0b00001010;
+		pwm_set = malloc(sizeof(int *) * TOTAL_IC);				// Declaration of the number of vectors in the config_set matrix
+		for(int i = 0; i < TOTAL_IC; i++)
+		{
+			pwm_set[i] = malloc(sizeof(int) * pwm_IClenght);	// Declaration of the size of each position in the config_set array
+		}
+
+		for(int i = 0; i < TOTAL_IC; i++)
+		{
+			pwm_set[i][0] = (uint8_t)((cell_pwm<<4)&(cell_pwm));
+			/*							0b10100000 & 0b00001010
+			 * 								0b10101010 */
+			pwm_set[i][1] = (uint8_t)((cell_pwm<<4)&(cell_pwm));
+			pwm_set[i][2] = (uint8_t)((cell_pwm<<4)&(cell_pwm));
+			pwm_set[i][3] = (uint8_t)((cell_pwm<<4)&(cell_pwm));
+			pwm_set[i][4] = (uint8_t)((cell_pwm<<4)&(cell_pwm));
+			pwm_set[i][5] = (uint8_t)((cell_pwm<<4)&(cell_pwm));
+		}
+	return pwm_set;
 }
 
 /*
- Generic wakeup command to wake the ltc6811 from sleep
-*/
-void wakeup_sleep(SPI_HandleTypeDef spi_channel, TIM_HandleTypeDef timer, int total_ic, int WAKEUP_DELAY)
-{
-	uint8_t idle_message = 0xFF;
-	for(int i = 0; i<total_ic; i++)
-	{
-		outputCS(0);				//The Low state of the chip select pin is set
-		HAL_SPI_Transmit(&spi_channel, (uint8_t*)&idle_message, 1, HAL_MAX_DELAY);
-		outputCS(1);				//The High state of the chip select pin is set
-	}
-	delay_us(WAKEUP_DELAY, timer);
+ * Function: ltc6811_wrpwm
+ * Purpose: This command will write the pwm registers of the ltc6811
+ connected in a daisy chain stack. The pwm is written in descending
+ order so the last device's pwm is written first.
+
+ uint8_t **PWM[ICn][6] is a two dimensional array of the pwm data that will be written, the array should contain the 6 bytes for each
+
+ IC in the daisy chain. The lowest IC in the daisy chain should be the first 6 byte block in the array. The array should
+ have the following format:
+ |  pwm[0][0]| pwm[0][1] |  pwm[0][2]|  pwm[0][3]|  pwm[0][4]|  pwm[0][5]| pwm[1][0] |  pwm[1][1]|  pwm[1][2]|  .....    |
+ |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+ |IC1 pwm0   |IC1 pwm1   |IC1 pwm2   |IC1 pwm3   |IC1 pwm4   |IC1 pwm5   |IC2 pwm0   |IC2 pwm1   | IC2 pwm2  |  .....    |
+
+ The function will calculate the needed PEC codes for the write data
+ and then transmit data to the ICs on a daisy chain.
+
+Command Code:
+-------------
+|               |             CMD[0]                              				|                            CMD[1]                             |
+|---------------|---------------------------------------------------------------|---------------------------------------------------------------|
+|CMD[0:1]     	|  15   |  14   |  13   |  12   |  11   |  10   |   9   |   8   |   7   |   6   |   5   |   4   |   3   |   2   |   1   |   0   |
+|---------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+|WRPWM:         |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   1   |
+ * Inputs: The number of ICs, the PWM array of set_pwm, the spi_channel used, the timer channel
+ */
+void ltc6811_wrpwm(uint8_t TOTAL_IC, //The number of ICs being written to
+                   uint8_t **PWM[ICn][6], //A two dimensional array of the configuration data that will be written
+                  SPI_HandleTypeDef spi_channel,
+				  TIM_HandleTypeDef TIMER_CHANNEL){
+  const uint8_t BYTES_IN_REG = 6;
+  const uint8_t CMD_LEN = 4+(8*TOTAL_IC); //4 bits (cmd + PEC(cmd)) + (8 bits(Nºbits in a register)*TOTAL_IC
+  uint8_t *cmd;			// CMD array
+  uint16_t cfg_pec;		// PEC
+  uint8_t cmd_pec;
+  uint8_t cmd_index; 	// Command counter
+
+  cmd = (uint8_t *)malloc(CMD_LEN*sizeof(uint8_t)); // Declaration of the CMD with the length
+
+
+  cmd[0] = 0x00;					// Command format 0
+  cmd[1] = 0x20;					// Command format 1
+  cmd_pec = pec15_calc(2, cmd);		// Calculation of the PEC of the cmd
+  cmd[2] = (uint8_t)(cmd_pec >> 8);	// Calculated PEC of Command format 0
+  cmd[3] = (uint8_t)(cmd_pec);		// Calculated PEC of Command format 1
+
+
+
+  cmd_index = 4;
+  for (uint8_t CURRENT_IC = TOTAL_IC; CURRENT_IC > 0; CURRENT_IC--)    			// Executes for each ltc6811 in daisy chain, this loops starts with
+  {
+    // The last IC on the stack. The first configuration written is
+    // Received by the last IC in the daisy chain
+
+    for (uint8_t CURRENT_BYTE = 0; CURRENT_BYTE < BYTES_IN_REG; CURRENT_BYTE++) // Executes for each of the 6 bytes in the CFGR register
+    {
+    // Current_byte is the byte counter
+
+      cmd[cmd_index] = &PWM[CURRENT_IC-1][CURRENT_BYTE];           			// Adding the config data to the array to be sent
+      cmd_index = cmd_index + 1;
+    }
+
+    cfg_pec = (uint16_t)pec15_calc(BYTES_IN_REG, &PWM[CURRENT_IC-1][0]);   	// Calculating the PEC for each ICs configuration register data
+    cmd[cmd_index] = (uint8_t)(cfg_pec >> 8);
+    cmd[cmd_index + 1] = (uint8_t)cfg_pec;
+    cmd_index = cmd_index + 2;
+  }
+
+
+  wakeup_idle (spi_channel);                // This will guarantee that the ltc6811 isoSPI port is awake.This command can be removed.
+
+  outputCS(0);								// Set the  CS to low and then to high to ensure the CS is low
+  delay_us(10, TIMER_CHANNEL);				// Waits 10 us
+  outputCS(1);								// Set the  CS to high
+  delay_us(10, TIMER_CHANNEL);				// Waits 10 us
+  outputCS(0);								// Set the CS to low to send data
+  HAL_SPI_Transmit(&spi_channel, (uint8_t*)&cmd, CMD_LEN, HAL_MAX_DELAY); // Sends the CMD trough SPI
+  outputCS(1);								// Set the CS to high
+  free(cmd);								// Empties the CMD array
 }
 
 
-
-//uint8_t pwm_reg[][];
-//
-//void set_pwm(SPI_HandleTypeDef spi_channel)
-//{
-//
-//}
-
-
-	int **set_cfgr(int total_ic, int n){
+/*
+ * Function: set_cfgr
+ * Purpose: This function returns the matrix set_cfgr with configuration of the GPIOS, the under and over voltage and the DCC info
+ * Inputs: The number of ICs, the number of voltages in each cell, the DCC array
+ */
+	int **set_cfgr(int TOTAL_IC, int TOTAL_VOLTAGES, int *DCC){
 		int **config_set;
-		config_set = malloc(sizeof(int *) * total_ic);
-		for(int i = 0; i < total_ic; i++)
+		config_set = malloc(sizeof(int *) * TOTAL_IC);				// Declaration of the number of the config_set matrix
+		for(int i = 0; i < TOTAL_IC; i++)
 		{
-			config_set[i] = malloc(sizeof(int) * n);
+			config_set[i] = malloc(sizeof(int) * TOTAL_VOLTAGES);	// Declaration of the size of each position in the config_set array
 		}
 
-	for(int i= 0; i < total_ic; i++)
-	{	config_set[i][0] = (uint8_t)((GPIOx<<3)&0xF8)|((REFON<<2)&0x04)|((DTEN<<1)&0x02)|(ADCOPT&0x01);
-	    //				0b01011000 & 0b11111000 | 0b00000100 & 0b0100 | 0b00000010 & 0b0010 | 0b00000001 & 0b00000001
-		    //	  		   0b0101 1000		  |     0b0000 0100	    |	 0b0000 0010	      | 		  0b0000 0001
-		    //		CFGR0 -> 0b0101 1111
-	config_set[i][1] = (uint8_t)(UNDERVOLTAGE_TH&(0x00FF));
-	config_set[i][2] = (uint8_t)(((OVERVOLTAGE_TH&(0x000F))<<4) | ((UNDERVOLTAGE_TH&(0x0F00))>>8));
-	config_set[i][3] = (uint8_t)((OVERVOLTAGE_TH&(0x0FF0))>>4);
-	config_set[i][4] = (uint8_t)(DCC[i]&0x00FF); //DCC[total_ic-i-1]
-		    //0b00001111 11111111 & 0b00000000 11111111
-		    //		0b00000000 11111111
-		    // 		CFGR4 -> 0b11111111
-	config_set[i][5] = (uint8_t)(((DCTO)<<4) | (((DCC[i]&0x0F00))>>8));
-		    // 0b11000000 	 | (0b00001111 11111111 & 0b00001111 00000000)>>8
-		    // 0b11000000 	 | (0b00001111 00000000)>>8
-		    // 0b11000000 	 | 0b00000000 00001111
-		    // 		CFGR5 =	0b11001111
+		for(int i= 0; i < TOTAL_IC; i++)
+		{	config_set[i][0] = (uint8_t)((GPIOx<<3)&0xF8)|((REFON<<2)&0x04)|((DTEN<<1)&0x02)|(ADCOPT&0x01);
+	    /*				0b01011000 & 0b11111000 | 0b00000100 & 0b0100 | 0b00000010 & 0b0010 | 0b00000001 & 0b00000001
+		    	  		   0b0101 1000		  |     0b0000 0100	    |	 0b0000 0010	      | 		  0b0000 0001
+		    		CFGR0 -> 0b0101 1111*/
+			config_set[i][1] = (uint8_t)(UNDERVOLTAGE_TH&(0x00FF));
+			config_set[i][2] = (uint8_t)(((OVERVOLTAGE_TH&(0x000F))<<4) | ((UNDERVOLTAGE_TH&(0x0F00))>>8));
+			config_set[i][3] = (uint8_t)((OVERVOLTAGE_TH&(0x0FF0))>>4);
+			config_set[i][4] = (uint8_t)(DCC[i]&0x00FF); //DCC[total_ic-i-1]
+		    				/*0b00001111 11111111 & 0b00000000 11111111
+		    							0b00000000 11111111
+		     							CFGR4 -> 0b11111111*/
+			config_set[i][5] = (uint8_t)(((DCTO)<<4) | (((DCC[i]&0x0F00))>>8));
+		    /* 0b11000000 	 | (0b00001111 11111111 & 0b00001111 00000000)>>8
+		       0b11000000 	 | (0b00001111 00000000)>>8
+		       0b11000000 	 | 0b00000000 00001111
+		     		CFGR5 =	0b11001111*/
 		}
 	return config_set;
 	}
 
 
 /*
- This command will write the configuration registers of the ltc6811-1s
- connected in a daisy chain stack. The configuration is written in descending
- order so the last device's configuration is written first.
+ * Function: ltc6811_wrcfg
+ * Purpose: This command will write the configuration registers of the ltc6811-1s
+ * connected in a daisy chain stack. The configuration is written in descending
+ * order so the last device's configuration is written first.
+ * Inputs: The number of ICs, the configuration from the function set_cfgr, the SPI channel used
 */
 void ltc6811_wrcfg(uint8_t total_ic, //The number of ICs being written to
-                   uint8_t **config[ICn][6] //A two dimensional array of the configuration data that will be written
-                  ,SPI_HandleTypeDef spi_channel){
+                   uint8_t **config[ICn][6], //A two dimensional array of the configuration data that will be written
+                  SPI_HandleTypeDef spi_channel,
+				  TIM_HandleTypeDef TIMER_CHANNEL){
   const uint8_t BYTES_IN_REG = 6;
   const uint8_t CMD_LEN = 4+(8*total_ic);
-  uint8_t *cmd;
-  uint16_t cfg_pec;
-  uint8_t cmd_index; //command counter
+  uint8_t *cmd;			// CMD array
+  uint16_t cfg_pec;		// PEC
+  uint8_t cmd_index; 	// Command counter
 
-  cmd = (uint8_t *)malloc(CMD_LEN*sizeof(uint8_t));
+  cmd = (uint8_t *)malloc(CMD_LEN*sizeof(uint8_t)); // Declaration of the CMD with the length
 
 
-  cmd[0] = 0x00;
-  cmd[1] = 0x01;
-  cmd[2] = 0x3d;
-  cmd[3] = 0x6e;
+  cmd[0] = 0x00;		// Command format 0
+  cmd[1] = 0x01;		// Command format 1
+  cmd[2] = 0x3d;		// Calculated PEC of Command format 0
+  cmd[3] = 0x6e;		// Calculated PEC of Command format 1
 
 
   cmd_index = 4;
-  for (uint8_t current_ic = total_ic; current_ic > 0; current_ic--)       // executes for each ltc6811 in daisy chain, this loops starts with
+  for (uint8_t current_ic = total_ic; current_ic > 0; current_ic--)    	// executes for each ltc6811 in daisy chain, this loops starts with
   {
     // the last IC on the stack. The first configuration written is
     // received by the last IC in the daisy chain
@@ -165,7 +321,7 @@ void ltc6811_wrcfg(uint8_t total_ic, //The number of ICs being written to
     {
       // current_byte is the byte counter
 
-      cmd[cmd_index] = &config[current_ic-1][current_byte];            //adding the config data to the array to be sent
+      cmd[cmd_index] = &config[current_ic-1][current_byte];           	 //adding the config data to the array to be sent
       cmd_index = cmd_index + 1;
     }
 
@@ -176,25 +332,28 @@ void ltc6811_wrcfg(uint8_t total_ic, //The number of ICs being written to
   }
 
 
-  wakeup_idle (spi_channel);                                 //This will guarantee that the ltc6811 isoSPI port is awake.This command can be removed.
+  wakeup_idle (spi_channel);                // This will guarantee that the ltc6811 isoSPI port is awake.This command can be removed.
 
-  outputCS(0);
-  HAL_Delay(10);
-  outputCS(1);
-  HAL_Delay(10);
-  outputCS(0);
-  HAL_SPI_Transmit(&spi_channel, (uint8_t*)&cmd, CMD_LEN, HAL_MAX_DELAY);
-  outputCS(1);
-  free(cmd);
+  outputCS(0);								// Set the  CS to low and then to high to ensure the CS is low
+  delay_us(10, TIMER_CHANNEL);				// Waits 10 us
+  outputCS(1);								// Set the  CS to high
+  delay_us(10, TIMER_CHANNEL);				// Waits 10 us
+  outputCS(0);								// Set the CS to low to send data
+  HAL_SPI_Transmit(&spi_channel, (uint8_t*)&cmd, CMD_LEN, HAL_MAX_DELAY); // Sends the CMD trough SPI
+  outputCS(1);								// Set the CS to high
+  free(cmd);								// Empties the CMD array
 }
 
-	/*Starts ADC conversions of the ltc6811 Cpin inputs.
+	/* Function: ltc6811_adcv
+	 * Purpose: Starts ADC conversions of the ltc6811 pin inputs.
 	  The type of ADC conversion executed can be changed by setting the following parameters:
 	 |Variable|Function                                      |
 	 |--------|----------------------------------------------|
-	 | MD     | Determines the filter corner of the ADC      |
-	 | CH     | Determines which cell channels are converted |
-	 | DCP    | Determines if Discharge is Permitted       	 |
+	 | MD     | Determines the filter corner of the ADC      | It depends on the clock used:
+	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 If ADCOPT(CFGR0[0]) = 0: 00->442Hz; 01->27kHz; 10->7kHz; 11->26Hz
+	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 If ADCOPT(CFGR0[0]) = 1: 00->1kHz; 01->14kHz; 10->3kHz; 11->2kHz
+	 | CH     | Determines which cell channels are converted | If CH=000->All cells; CH=001->1 & 7; CH=010->2 & 8; CH=011->3 & 9; CH=100->4 & 10; CH=101->5 & 11; CH=110->6 & 12;
+	 | DCP    | Determines if Discharge is Permitted       	 | DCP=0->Not Permitted; DCP=1->Permitted
 
 	 Broadcast Command Code:
 	-------------
@@ -202,7 +361,7 @@ void ltc6811_wrcfg(uint8_t total_ic, //The number of ICs being written to
 	|CMD[0:1] |  15   |  14   |  13   |  12   |  11   |  10   |   9   |   8   |   7   |   6   |   5   |   4   |   3   |   2   |   1   |   0   |
 	|-----------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
 	|ADCV:      |   0   |   0   |   0   |   0   |   0   |   0   |   1   | MD[1] | MD[2] |   1   |   1   |  DCP  |   0   | CH[2] | CH[1] | CH[0] |
-
+	* Inputs: The Conversion Mode (MD), discharge permitted (DCP), the cell selection for ADC conversion (CH) and the SPI channel used
 	*/
 void ltc6811_adcv(uint8_t MD, uint8_t DCP, uint8_t CH,SPI_HandleTypeDef spi_channel){
 	  uint8_t cmd[4];
@@ -224,7 +383,8 @@ void ltc6811_adcv(uint8_t MD, uint8_t DCP, uint8_t CH,SPI_HandleTypeDef spi_chan
 	  outputCS(1);															//The High state of the chip select pin is set
 	}
 
-	  	/*The function is used to read the cell codes of the ltc6811.
+	  	/* Function: ltc6811_rdcv
+	  	 * Purpose: The function is used to read the cell codes of the ltc6811.
 	  	 This function will send the requested read commands parse the data
 	  	 and store the cell voltages in cell_codes variable.
 
@@ -248,10 +408,10 @@ void ltc6811_adcv(uint8_t MD, uint8_t DCP, uint8_t CH,SPI_HandleTypeDef spi_chan
 	  	    0: No PEC error detected
 
 	  	    -1: PEC error detected, retry read
+	  	* Inputs: The register read, the number of ICs, the voltage of the cells array and the SPI channel used
 	  	*/
 
-		// Reads and parses the ltc6811 cell voltage registers.
-	uint16_t ltc6811_rdcv(uint8_t reg,uint8_t total_ic,uint16_t cell_codes[][CELL_CHANNELS], SPI_HandleTypeDef spi_channel){
+	uint16_t ltc6811_rdcv(uint8_t reg,uint8_t total_ic,uint16_t cell_codes[][CELL_CHANNELS], SPI_HandleTypeDef spi_channel, TIM_HandleTypeDef TIMER_CHANNEL){
 	  	  const uint8_t NUM_RX_BYT = 8;
 	  	  const uint8_t BYT_IN_REG = 6;
 	  	  const uint8_t CELL_IN_REG = 3;
@@ -272,7 +432,7 @@ void ltc6811_adcv(uint8_t MD, uint8_t DCP, uint8_t CH,SPI_HandleTypeDef spi_chan
 	  	    for (uint8_t cell_reg = 1; cell_reg<NUM_CV_REG+1; cell_reg++)                   //executes once for each of the ltc6811 cell voltage registers
 	  	    {
 	  	      data_counter = 0;
-	  	      ltc6811_rdcv_reg(cell_reg, total_ic, cell_data,spi_channel);                //Reads a single Cell voltage register
+	  	      ltc6811_rdcv_reg(cell_reg, total_ic, cell_data,spi_channel, TIMER_CHANNEL);                //Reads a single Cell voltage register
 
 	  	      for (uint8_t current_ic = 0 ; current_ic < total_ic; current_ic++)      // executes for every ltc6811 in the daisy chain
 	  	      {
@@ -344,21 +504,21 @@ void ltc6811_adcv(uint8_t MD, uint8_t DCP, uint8_t CH,SPI_HandleTypeDef spi_chan
 	  	  else
 	  	  {
 
-	  	    ltc6811_rdcv_reg(reg, total_ic,cell_data,spi_channel);
+	  	    ltc6811_rdcv_reg(reg, total_ic,cell_data,spi_channel, TIMER_CHANNEL);
 	  	    for (uint8_t current_ic = 0 ; current_ic < total_ic; current_ic++)        // executes for every ltc6811 in the daisy chain
 	  	    {
 	  	      // current_ic is used as the IC counter
 
 	  	      for (uint8_t current_cell = 0; current_cell < CELL_IN_REG; current_cell++)  // This loop parses the read back data into cell voltages, it
 	  	      {
-	  	        // loops once for each of the 3 cell voltage codes in the register
+	  	        // Loops once for each of the 3 cell voltage codes in the register
 
 	  	        parsed_cell = cell_data[data_counter] + (cell_data[data_counter+1]<<8); //Each cell code is received as two bytes and is combined to
-	  	        // create the parsed cell voltage code
+	  	        // Create the parsed cell voltage code
 
 	  	        cell_codes[current_ic][current_cell + ((reg - 1) * CELL_IN_REG)] = 0x0000FFFF & parsed_cell;
 	  	        data_counter= data_counter + 2;                       //Because cell voltage codes are two bytes the data counter
-	  	        //must increment by two for each parsed cell code
+	  	        // Must increment by two for each parsed cell code
 	  	      }
 
 	  	      received_pec = (cell_data[data_counter] << 8 )+ cell_data[data_counter + 1]; //The received PEC for the current_ic is transmitted as the 7th and 8th
@@ -367,10 +527,10 @@ void ltc6811_adcv(uint8_t MD, uint8_t DCP, uint8_t CH,SPI_HandleTypeDef spi_chan
 	  	      if (received_pec != data_pec)
 	  	      {
 	  	        pec_error = -1;                             //The pec_error variable is simply set negative if any PEC errors
-	  	        //are detected in the serial data
+	  	        // Are detected in the serial data
 	  	      }
 	  	      data_counter= data_counter + 2;                       //Because the transmitted PEC code is 2 bytes long the data_counter
-	  	      //must be incremented by 2 bytes to point to the next ICs cell voltage data
+	  	      // Must be incremented by 2 bytes to point to the next ICs cell voltage data
 	  	    }
 	  	  }
 
@@ -379,12 +539,33 @@ void ltc6811_adcv(uint8_t MD, uint8_t DCP, uint8_t CH,SPI_HandleTypeDef spi_chan
 	  	  return(pec_error);
 	  	}
 
+		/* Function: ltc6811_rdcv_reg
+		 * Purpose: The function reads a single cell voltage register and stores the read data
+ 	 	 in the *data point as a byte array. This function is rarely used outside of
+ 	 	 the ltc6811_rdcv() command.
 
-	  	//Read the raw data from the ltc6811 cell voltage register
+ 	 	 @param[in] uint8_t reg; This controls which cell voltage register is read back.
+          1: Read back cell group A
+          2: Read back cell group B
+          3: Read back cell group C
+          4: Read back cell group D
+
+			Command Code:
+			-------------
+			|CMD[0:1] |  15   |  14   |  13   |  12   |  11   |  10   |   9   |   8   |   7   |   6   |   5   |   4   |   3   |   2   |   1   |   0   |
+			|-----------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+			|RDCVA:     |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   1   |   0   |   0   |
+			|RDCVB:     |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   1   |   1   |   0   |
+			|RDCVC:     |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   1   |   0   |   0   |   0   |
+			|RDCVD:     |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   1   |   0   |   1   |   0   |
+
+		 * Inputs: The register read, the number of ICs, the voltage of the cells array and the SPI channel used
+		 */
 	  	void ltc6811_rdcv_reg(uint8_t reg, //Determines which cell voltage register is read back
 	  	                      uint8_t total_ic, //the number of ICs in the
-	  	                      uint8_t *data //An array of the unparsed cell codes
-							  ,SPI_HandleTypeDef spi_channel)
+	  	                      uint8_t *data, //An array of the unparsed cell codes
+							  SPI_HandleTypeDef spi_channel,
+							  TIM_HandleTypeDef TIMER_CHANNEL)
 	  	{
 	  	  const uint8_t REG_LEN = 8; //number of bytes in each ICs register + 2 bytes for the PEC
 	  	  uint8_t REG_LEN_TOTAL_IC = (REG_LEN*total_ic);
@@ -429,29 +610,19 @@ void ltc6811_adcv(uint8_t MD, uint8_t DCP, uint8_t CH,SPI_HandleTypeDef spi_chan
 
 	  	  wakeup_idle (spi_channel); //This will guarantee that the ltc6811 isoSPI port is awake. This command can be removed.
 
-	  	  outputCS(0);
-	  	  HAL_Delay(10);
-	  	  outputCS(1);
-	  	  HAL_Delay(10);
-	  	  outputCS(0);					//The Low state of the chip select pin is set
+	  	  outputCS(0);								// Set the  CS to low and then to high to ensure the CS is low
+	  	  delay_us(10, TIMER_CHANNEL);				// Waits 10 us
+	  	  outputCS(1);								// Set the  CS to high
+	  	  delay_us(10, TIMER_CHANNEL);				// Waits 10 us
+	  	  outputCS(0);								// Set the CS to low to send data
 	  	  //HAL_SPI_TransmitReceive(&spi_channel, cmd, data, REG_LEN_TOTAL_IC,HAL_MAX_DELAY);
-	  	  spi_transmit_recieve(spi_channel, cmd, data, REG_LEN_TOTAL_IC);
+	  	  spi_transmit_recieve(spi_channel, cmd, data, REG_LEN_TOTAL_IC); // Sends the CMD trough SPI
 	  	  outputCS(1);					//The Low state of the chip select pin is set
-	  	  //Fer una funció que envia el cmd i un bucle for que rep byte per byte al informació fent servir transmitrecieve enviant 0XFF i posant el recieve a la posició de data que t'interessa
-	  	}
-
-	  	void spi_transmit_recieve(SPI_HandleTypeDef spi_channel, uint8_t cmd_input, uint8_t *data, uint8_t REG_LEN_TOTAL_IC)
-	  	{
-	  		uint8_t MSG = 0XFF;
-	  		HAL_SPI_Transmit(&spi_channel, cmd_input, 4, HAL_MAX_DELAY);
-
-	  		for(int i = 0; i < REG_LEN_TOTAL_IC; i++)
-	  		{
-	  			HAL_SPI_TransmitReceive(&spi_channel, MSG, data[i], 1, HAL_MAX_DELAY);
-	  		}
 	  	}
 
 	  	 /*
+	  	  * Function: ltc6811_adax
+	  	  * Purpose: Start a GPIO and Vref2 Conversion
 	  		  	The type of ADC conversion executed can be changed by passing the following variables to the conversion functions:
 	  		  	 |Variable|Function                                      |
 	  		  	 |--------|----------------------------------------------|
@@ -466,9 +637,8 @@ void ltc6811_adcv(uint8_t MD, uint8_t DCP, uint8_t CH,SPI_HandleTypeDef spi_chan
 	  		  	|CMD[0:1] |  15   |  14   |  13   |  12   |  11   |  10   |   9   |   8   |   7   |   6   |   5   |   4   |   3   |   2   |   1   |   0   |
 	  		  	|-----------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
 	  		  	|ADAX:      |   0   |   0   |   0   |   0   |   0   |   1   |   0   | MD[1] | MD[2] |   1   |   1   |  0    |   0   | CHG[2]| CHG[1]| CHG[0]|
+	  	  * Inputs: The Conversion Mode (MD), GPIO Selection for ADC and the SPI channel which has to be used
 	  		  	*/
-
-	  		  	//Start a GPIO and Vref2 Conversion
 void ltc6811_adax(uint8_t MD,uint8_t CHG,SPI_HandleTypeDef spi_channel){
 	  		    uint8_t cmd[4];
 	  		    uint16_t cmd_pec;
@@ -489,15 +659,28 @@ void ltc6811_adax(uint8_t MD,uint8_t CHG,SPI_HandleTypeDef spi_channel){
 	  		    outputCS(0);					//The Low state of the chip select pin is set
 
 	  		  }
+
 /*
- The function is used
- to read the  parsed GPIO codes of the ltc6811. This function will send the requested
+ * Function: ltc6811_rdaux
+ * Purpose: The function is used to read the  parsed GPIO codes of the ltc6811. This function will send the requested
  read commands parse the data and store the gpio voltages in aux_codes variable
+
+ uint16_t aux_codes[][6]; A two dimensional array of the gpio voltage codes. The GPIO codes will
+ be stored in the aux_codes[][6] array in the following format:
+ |  aux_codes[0][0]| aux_codes[0][1] |  aux_codes[0][2]|  aux_codes[0][3]|  aux_codes[0][4]|  aux_codes[0][5]| aux_codes[1][0] |aux_codes[1][1]|  .....    |
+ |-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|---------------|-----------|
+ |IC1 GPIO1        |IC1 GPIO2        |IC1 GPIO3        |IC1 GPIO4        |IC1 GPIO5        |IC1 Vref2        |IC2 GPIO1        |IC2 GPIO2      |  .....    |
+
+@return  int8_t, PEC Status
+  0: No PEC error detected
+ -1: PEC error detected, retry read
+ * Inputs:
 */
 int8_t ltc6811_rdaux(uint8_t reg, //Determines which GPIO voltage register is read back.
                      uint8_t total_ic,//the number of ICs in the system
                      uint16_t aux_codes[][AUX_CHANNELS],//A two dimensional array of the gpio voltage codes.
-					 SPI_HandleTypeDef spi_channel)
+					 SPI_HandleTypeDef spi_channel,
+					 TIM_HandleTypeDef TIMER_CHANNEL)
 {
   const uint8_t NUM_RX_BYT = 8;
   const uint8_t BYT_IN_REG = 6;
@@ -517,7 +700,7 @@ int8_t ltc6811_rdaux(uint8_t reg, //Determines which GPIO voltage register is re
     for (uint8_t gpio_reg = 1; gpio_reg<NUM_GPIO_REG+1; gpio_reg++)                 //executes once for each of the ltc6811 aux voltage registers
     {
       data_counter = 0;
-      ltc6811_rdaux_reg(gpio_reg, total_ic,data, spi_channel);                 //Reads the raw auxiliary register data into the data[] array
+      ltc6811_rdaux_reg(gpio_reg, total_ic,data, spi_channel, TIMER_CHANNEL);                 //Reads the raw auxiliary register data into the data[] array
 
       for (uint8_t current_ic = 0 ; current_ic < total_ic; current_ic++)      // executes for every ltc6811 in the daisy chain
       {
@@ -557,7 +740,7 @@ int8_t ltc6811_rdaux(uint8_t reg, //Determines which GPIO voltage register is re
   else
   {
 
-    ltc6811_rdaux_reg(reg, total_ic, data, spi_channel);
+    ltc6811_rdaux_reg(reg, total_ic, data, spi_channel, TIMER_CHANNEL);
     for (int current_ic = 0 ; current_ic < total_ic; current_ic++)            // executes for every ltc6811 in the daisy chain
     {
       // current_ic is used as an IC counter
@@ -596,14 +779,26 @@ int8_t ltc6811_rdaux(uint8_t reg, //Determines which GPIO voltage register is re
 
 
 /*
- The function reads a single GPIO voltage register and stores thre read data
+ * Function: ltc6811_rdaux_reg
+ * Purspose:The function reads a single GPIO voltage register and stores thre read data
  in the *data point as a byte array. This function is rarely used outside of
  the ltc6811_rdaux() command.
- */
+
+Command Code:
+-------------
+
+|CMD[0:1]     |  15   |  14   |  13   |  12   |  11   |  10   |   9   |   8   |   7   |   6   |   5   |   4   |   3   |   2   |   1   |   0   |
+|---------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+|RDAUXA:      |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   1   |   1   |   0   |   0   |
+|RDAUXB:      |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   0   |   1   |   1   |   1   |   0   |
+* Inputs: The register read, the number of ICs, the voltage of the cells array and the SPI channel used
+*/
 void ltc6811_rdaux_reg(uint8_t reg, //Determines which GPIO voltage register is read back
                        uint8_t total_ic, //The number of ICs in the system
                        uint8_t *data, //Array of the unparsed auxiliary codes
-					   SPI_HandleTypeDef spi_channel)
+					   SPI_HandleTypeDef spi_channel,
+					   TIM_HandleTypeDef TIMER_CHANNEL
+					   )
 {
   const uint8_t REG_LEN = 8; // number of bytes in the register + 2 bytes for the PEC
   uint8_t cmd[4];
@@ -642,8 +837,12 @@ void ltc6811_rdaux_reg(uint8_t reg, //Determines which GPIO voltage register is 
 
 	  wakeup_idle (spi_channel); //This will guarantee that the ltc6811 isoSPI port is awake. This command can be removed.
 
-	  outputCS(0);					//The Low state of the chip select pin is set
-	  HAL_SPI_TransmitReceive(&spi_channel, cmd, data, (REG_LEN*total_ic),HAL_MAX_DELAY);
-	  outputCS(1);					//The Low state of the chip select pin is set
+	  outputCS(0);								// Set the  CS to low and then to high to ensure the CS is low
+	  delay_us(10, TIMER_CHANNEL);				// Waits 10 us
+	  outputCS(1);								// Set the  CS to high
+	  delay_us(10, TIMER_CHANNEL);				// Waits 10 us
+	  outputCS(0);								// Set the CS to low to send datat
+	  HAL_SPI_TransmitReceive(&spi_channel, cmd, data, (REG_LEN*total_ic),HAL_MAX_DELAY); // Sends the CMD trough SPI
+	  outputCS(1);								// Set the  CS to high
 
 }

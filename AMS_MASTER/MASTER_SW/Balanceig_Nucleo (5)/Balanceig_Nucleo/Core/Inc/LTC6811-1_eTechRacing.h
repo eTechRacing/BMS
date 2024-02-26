@@ -33,18 +33,20 @@
 
 
 
-void outputCS(uint8_t input);
-void wakeup_idle(SPI_HandleTypeDef spi_channel);
-uint16_t pec15_calc(uint8_t len, uint8_t *data);
-void wakeup_sleep(SPI_HandleTypeDef spi_channel,TIM_HandleTypeDef timer, int total_ic, int WAKEUP_DELAY);
-int **set_cfgr(int total_ic, int n);
-void ltc6811_wrcfg(uint8_t total_ic, uint8_t **config[ICn][6],SPI_HandleTypeDef spi_channel);
+void outputCS(uint8_t CS_INPUT);
+uint16_t pec15_calc(uint8_t DATA_LENGTH, uint8_t *DATA);
+void wakeup_idle(SPI_HandleTypeDef SPI_CHANNEL);
+void wakeup_sleep(SPI_HandleTypeDef SPI_CHANNEL,TIM_HandleTypeDef TIMER_CHANNEL, int TOTAL_IC, int WAKEUP_DELAY);
+int **set_pwm(int TOTAL_IC);
+void ltc6811_wrpwm(uint8_t TOTAL_IC, uint8_t **PWM[ICn][6], SPI_HandleTypeDef spi_channel, TIM_HandleTypeDef TIMER_CHANNEL);
+int **set_cfgr(int TOTAL_IC, int TOTAL_VOLTAGES, int *DCC);
+int *Balancing(uint16_t V_MIN, uint16_t VCELL_MIN, uint16_t *VOLTAGES, uint16_t V_BALANCING, uint8_t DIFF_MAX, uint8_t TOTAL_IC);
+void ltc6811_wrcfg(uint8_t total_ic, uint8_t **config[ICn][6],SPI_HandleTypeDef spi_channel, TIM_HandleTypeDef TIMER_CHANNEL);
 void ltc6811_adcv(uint8_t MD, uint8_t DCP, uint8_t CH,SPI_HandleTypeDef spi_channel);
-uint16_t ltc6811_rdcv(uint8_t reg,uint8_t total_ic,uint16_t cell_codes[][CELL_CHANNELS],SPI_HandleTypeDef spi_channel);
-void ltc6811_rdcv_reg(uint8_t reg, uint8_t total_ic, uint8_t *data,SPI_HandleTypeDef spi_channel);
-void spi_transmit_recieve(SPI_HandleTypeDef spi_channel, uint8_t cmd_input, uint8_t *data, uint8_t REG_LEN_TOTAL_IC);
+uint16_t ltc6811_rdcv(uint8_t reg,uint8_t total_ic,uint16_t cell_codes[][CELL_CHANNELS],SPI_HandleTypeDef spi_channel, TIM_HandleTypeDef TIMER_CHANNEL);
+void ltc6811_rdcv_reg(uint8_t reg, uint8_t total_ic, uint8_t *data,SPI_HandleTypeDef spi_channel, TIM_HandleTypeDef TIMER_CHANNEL);
 void ltc6811_adax(uint8_t MD,uint8_t CHG,SPI_HandleTypeDef spi_channel);
-int8_t ltc6811_rdaux(uint8_t reg,uint8_t total_ic,uint16_t aux_codes[][AUX_CHANNELS], SPI_HandleTypeDef spi_channel);
-void ltc6811_rdaux_reg(uint8_t reg, uint8_t total_ic, uint8_t *data, SPI_HandleTypeDef spi_channel);
+int8_t ltc6811_rdaux(uint8_t reg,uint8_t total_ic,uint16_t aux_codes[][AUX_CHANNELS], SPI_HandleTypeDef spi_channel, TIM_HandleTypeDef TIMER_CHANNEL);
+void ltc6811_rdaux_reg(uint8_t reg, uint8_t total_ic, uint8_t *data, SPI_HandleTypeDef spi_channel, TIM_HandleTypeDef TIMER_CHANNEL);
 
 #endif /* SRC_LTC6811_1_ETECHRACING_H_ */

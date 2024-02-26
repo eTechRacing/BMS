@@ -65,28 +65,30 @@ static void MX_TIM1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-int _write(int file, char *ptr, int len)
-{
-  /* Implement your write code here, this is used by puts and printf for example */
-  int i=0;
-  for(i=0 ; i<len ; i++)
-    ITM_SendChar((*ptr++));
-  return len;
-}
 
+
+//WRITE FUNCTIONS
 uint8_t CHG = 001;								// Which GPIOS are converted: 000 -> GPIO1-5; 001 -> GPIO1; 010 -> GPIO2; 011 -> GPIO3; 100 -> GPIO4; 101 -> GPIO5
 uint8_t REG_VOLT = 0; 							// Controls which cell voltage register is read back: 0 -> All Cell registers; 1 -> A; 2 -> B; 3 -> C; 4 -> D
 uint8_t REG_TEMP = 1; 							// Controls which cell voltage register is read back: 0 -> All Cell registers; 1 -> A; 2 -> B; 3 -> C; 4 -> D
-uint8_t total_ic = ICn-1;						// Number of ICs in the daisy chain(-1 only)
-uint16_t cell_codes[ICn][CELL_CHANNELS];		//
-//uint8_t config[ICn][6];						// A two dimensional array of the configuration of the Register sent to all the IC
-uint8_t **config;
-uint8_t PEC_ERROR = 0;
-uint8_t BYTES_IN_REG = 6;
-uint8_t DELAY_SLEEP = 711;						//Delay between messages of the Wakeup_sleep function
-int mostra;
+uint8_t **config;								// A two dimensional array with the cells configurations
+uint8_t **PWM;									// A two dimensional array with the PWM configurations
+uint8_t PEC_ERROR = 0;							// PEC ERROR, set on 0. If PEC_ERROR == 1 -> BMS_ERROR = 1
+uint8_t BYTES_IN_REG = 6;						// Bytes in each register
 
-uint16_t aux_codes[ICn][AUX_CHANNELS];		// A two dimensional array of the parsed gpio voltage codes
+//TIMER
+uint16_t DELAY_SLEEP = 711;						// Delay between messages of the Wakeup_sleep function
+
+//BALANCING
+uint16_t VCELL_MIN = 4120;						// Variable
+uint16_t V_MIN = 4050;							// Constant
+uint16_t V_BALANCING = 4195;					// Constant
+uint8_t DIFF_MAX = 2;							// Constant
+
+// READ BACK FUNCTIONS
+uint16_t cell_codes[ICn][CELL_CHANNELS];		// A two dimensional array of the read voltages
+uint16_t aux_codes[ICn][AUX_CHANNELS];			// A two dimensional array of the parsed gpio voltage codes
+
 
 
 /* USER CODE END 0 */
@@ -98,7 +100,11 @@ uint16_t aux_codes[ICn][AUX_CHANNELS];		// A two dimensional array of the parsed
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	wakeup_sleep(hspi1, htim1, ICn, DELAY_SLEEP);
+	PWM = set_pwm(ICn);
+	ltc6811_wrpwm(ICn, PWM, hspi1, htim1);
+	int *DCC = Balancing(V_MIN, VCELL_MIN, cell_codes, V_BALANCING, DIFF_MAX, ICn);
+	config = set_cfgr(ICn, BYTES_IN_REG, DCC);
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -131,47 +137,17 @@ int main(void)
 
 while (1)
   {
-	  	  	  /////////////////////////////////////////////////////WRCFG//////////////////////////////////////////////////////////////////////
-		  wakeup_sleep(hspi1, htim1, ICn, DELAY_SLEEP);
-	  	  config = set_cfgr(ICn, BYTES_IN_REG);
-	  	  ltc6811_wrcfg(ICn, config, hspi1);
-	  	  	/////////////////////////////////////////////////////ADCV//////////////////////////////////////////////////////////////////////
-	  	  ltc6811_adcv(MD_1, DCP_1, CH_1,hspi1);
-	  	  	/////////////////////////////////////////////////////RDCVX//////////////////////////////////////////////////////////////////////
-	  	  PEC_ERROR = ltc6811_rdcv(REG_VOLT, total_ic, cell_codes,hspi1);
-
-	  	  	/////////////////////////////////////////////////////WRCFG//////////////////////////////////////////////////////////////////////
-	  	  	/////////////////////////////////////////
-	  	  	//S'ha de fer una funció que canvï la configuració dels GPIOS i PWM del array Config[][6]
-	  	  	/////////////////////////////////////////
-	  	  ltc6811_wrcfg(ICn,config,hspi1);
-	  	  	/////////////////////////////////////////////////////ADAX//////////////////////////////////////////////////////////////////////
-	  	  ltc6811_adax(MD_1,CHG,hspi1);
-	  	  	/////////////////////////////////////////////////////RDAUXA//////////////////////////////////////////////////////////////////////
-	  	  PEC_ERROR = ltc6811_rdaux(REG_TEMP, ICn, aux_codes, hspi1);
-
-
-
+		int *DCC = Balancing(V_MIN, VCELL_MIN, cell_codes, V_BALANCING, DIFF_MAX, ICn);
+		config = set_cfgr(ICn, BYTES_IN_REG, DCC);
+		ltc6811_wrcfg(ICn, config, hspi1, htim1);
+		ltc6811_adcv(MD_1, DCP_1, CH_1,hspi1);
+		PEC_ERROR = ltc6811_rdcv(REG_VOLT, ICn, cell_codes,hspi1, htim1);
+		ltc6811_wrcfg(ICn,config,hspi1, htim1);
+	 	ltc6811_adax(MD_1,CHG,hspi1);
+	  	PEC_ERROR = ltc6811_rdaux(REG_TEMP, ICn, aux_codes, hspi1, htim1);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-
-
-		config = set_cfgr(ICn,BYTES_IN_REG);
-
-	  	for(int i = 0; i < ICn; i++){
-	  		for(int j = 0; j < BYTES_IN_REG; j++){
-	  			mostra = config[i][j];
-	  			printf("%d\n", mostra);
-	  		}
-	  		printf("\n");
-	  	}
-
-	  	for(int i = 0; i < ICn; i++)
-	  		free(config[i]);
-	  	free(config);
-
-		HAL_Delay(200);
   }
   /* USER CODE END 3 */
 }
