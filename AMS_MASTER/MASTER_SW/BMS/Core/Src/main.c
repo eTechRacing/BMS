@@ -48,12 +48,61 @@ SPI_HandleTypeDef hspi1;
 
 TIM_HandleTypeDef htim1;
 
-/* Definitions for defaultTask */
-osThreadId_t defaultTaskHandle;
-const osThreadAttr_t defaultTask_attributes = {
-  .name = "defaultTask",
+/* Definitions for Lectures_Task */
+osThreadId_t Lectures_TaskHandle;
+const osThreadAttr_t Lectures_Task_attributes = {
+  .name = "Lectures_Task",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityAboveNormal,
+};
+/* Definitions for SOC_Task */
+osThreadId_t SOC_TaskHandle;
+const osThreadAttr_t SOC_Task_attributes = {
+  .name = "SOC_Task",
   .stack_size = 128 * 4,
   .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for CalcVolt_Task */
+osThreadId_t CalcVolt_TaskHandle;
+const osThreadAttr_t CalcVolt_Task_attributes = {
+  .name = "CalcVolt_Task",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for CalcTemp_Task */
+osThreadId_t CalcTemp_TaskHandle;
+const osThreadAttr_t CalcTemp_Task_attributes = {
+  .name = "CalcTemp_Task",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityNormal,
+};
+/* Definitions for ErrorVolt_Task */
+osThreadId_t ErrorVolt_TaskHandle;
+const osThreadAttr_t ErrorVolt_Task_attributes = {
+  .name = "ErrorVolt_Task",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityHigh,
+};
+/* Definitions for ErrorTemp_Task */
+osThreadId_t ErrorTemp_TaskHandle;
+const osThreadAttr_t ErrorTemp_Task_attributes = {
+  .name = "ErrorTemp_Task",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityHigh,
+};
+/* Definitions for ErrorCurrent_Ta */
+osThreadId_t ErrorCurrent_TaHandle;
+const osThreadAttr_t ErrorCurrent_Ta_attributes = {
+  .name = "ErrorCurrent_Ta",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityHigh,
+};
+/* Definitions for ErrorSlaves_Tas */
+osThreadId_t ErrorSlaves_TasHandle;
+const osThreadAttr_t ErrorSlaves_Tas_attributes = {
+  .name = "ErrorSlaves_Tas",
+  .stack_size = 128 * 4,
+  .priority = (osPriority_t) osPriorityHigh,
 };
 /* USER CODE BEGIN PV */
 
@@ -61,13 +110,19 @@ const osThreadAttr_t defaultTask_attributes = {
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-static void MPU_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_CAN1_Init(void);
 static void MX_CAN2_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_TIM1_Init(void);
-void StartDefaultTask(void *argument);
+void Lectures(void *argument);
+void SOC(void *argument);
+void CalcVolt(void *argument);
+void CalcTemp(void *argument);
+void ErrorVolt(void *argument);
+void ErrorTemp(void *argument);
+void ErrorCurrent(void *argument);
+void ErrorSlaves(void *argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -87,9 +142,6 @@ int main(void)
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
-
-  /* MPU Configuration--------------------------------------------------------*/
-  MPU_Config();
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -137,8 +189,29 @@ int main(void)
   /* USER CODE END RTOS_QUEUES */
 
   /* Create the thread(s) */
-  /* creation of defaultTask */
-  defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
+  /* creation of Lectures_Task */
+  Lectures_TaskHandle = osThreadNew(Lectures, NULL, &Lectures_Task_attributes);
+
+  /* creation of SOC_Task */
+  SOC_TaskHandle = osThreadNew(SOC, NULL, &SOC_Task_attributes);
+
+  /* creation of CalcVolt_Task */
+  CalcVolt_TaskHandle = osThreadNew(CalcVolt, NULL, &CalcVolt_Task_attributes);
+
+  /* creation of CalcTemp_Task */
+  CalcTemp_TaskHandle = osThreadNew(CalcTemp, NULL, &CalcTemp_Task_attributes);
+
+  /* creation of ErrorVolt_Task */
+  ErrorVolt_TaskHandle = osThreadNew(ErrorVolt, NULL, &ErrorVolt_Task_attributes);
+
+  /* creation of ErrorTemp_Task */
+  ErrorTemp_TaskHandle = osThreadNew(ErrorTemp, NULL, &ErrorTemp_Task_attributes);
+
+  /* creation of ErrorCurrent_Ta */
+  ErrorCurrent_TaHandle = osThreadNew(ErrorCurrent, NULL, &ErrorCurrent_Ta_attributes);
+
+  /* creation of ErrorSlaves_Tas */
+  ErrorSlaves_TasHandle = osThreadNew(ErrorSlaves, NULL, &ErrorSlaves_Tas_attributes);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -175,7 +248,7 @@ void SystemClock_Config(void)
   /** Configure the main internal regulator output voltage
   */
   __HAL_RCC_PWR_CLK_ENABLE();
-  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE3);
+  __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE2);
 
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
@@ -183,7 +256,13 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
+  RCC_OscInitStruct.PLL.PLLM = 8;
+  RCC_OscInitStruct.PLL.PLLN = 160;
+  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
+  RCC_OscInitStruct.PLL.PLLQ = 2;
+  RCC_OscInitStruct.PLL.PLLR = 2;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -193,12 +272,12 @@ void SystemClock_Config(void)
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV4;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_5) != HAL_OK)
   {
     Error_Handler();
   }
@@ -337,7 +416,7 @@ static void MX_TIM1_Init(void)
 
   /* USER CODE END TIM1_Init 1 */
   htim1.Instance = TIM1;
-  htim1.Init.Prescaler = 0;
+  htim1.Init.Prescaler = 160;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim1.Init.Period = 65535;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
@@ -391,7 +470,7 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(AIRPlus_Control_GPIO_Port, AIRPlus_Control_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, AIRMinus_Control_Pin|Precharge_Control_Pin|GPIO_PIN_8, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, AIRMinus_Control_Pin|Precharge_Control_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(LTC6820_CS_GPIO_Port, LTC6820_CS_Pin, GPIO_PIN_RESET);
@@ -410,8 +489,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(AIRPlus_Control_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : AIRMinus_Control_Pin Precharge_Control_Pin PA8 */
-  GPIO_InitStruct.Pin = AIRMinus_Control_Pin|Precharge_Control_Pin|GPIO_PIN_8;
+  /*Configure GPIO pins : AIRMinus_Control_Pin Precharge_Control_Pin */
+  GPIO_InitStruct.Pin = AIRMinus_Control_Pin|Precharge_Control_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
@@ -452,14 +531,14 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE END 4 */
 
-/* USER CODE BEGIN Header_StartDefaultTask */
+/* USER CODE BEGIN Header_Lectures */
 /**
-  * @brief  Function implementing the defaultTask thread.
+  * @brief  Function implementing the Lectures_Task thread.
   * @param  argument: Not used
   * @retval None
   */
-/* USER CODE END Header_StartDefaultTask */
-void StartDefaultTask(void *argument)
+/* USER CODE END Header_Lectures */
+void Lectures(void *argument)
 {
   /* USER CODE BEGIN 5 */
   /* Infinite loop */
@@ -470,33 +549,130 @@ void StartDefaultTask(void *argument)
   /* USER CODE END 5 */
 }
 
-/* MPU Configuration */
-
-void MPU_Config(void)
+/* USER CODE BEGIN Header_SOC */
+/**
+* @brief Function implementing the SOC_Task thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_SOC */
+void SOC(void *argument)
 {
-  MPU_Region_InitTypeDef MPU_InitStruct = {0};
+  /* USER CODE BEGIN SOC */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END SOC */
+}
 
-  /* Disables the MPU */
-  HAL_MPU_Disable();
+/* USER CODE BEGIN Header_CalcVolt */
+/**
+* @brief Function implementing the CalcVolt_Task thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_CalcVolt */
+void CalcVolt(void *argument)
+{
+  /* USER CODE BEGIN CalcVolt */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END CalcVolt */
+}
 
-  /** Initializes and configures the Region and the memory to be protected
-  */
-  MPU_InitStruct.Enable = MPU_REGION_ENABLE;
-  MPU_InitStruct.Number = MPU_REGION_NUMBER0;
-  MPU_InitStruct.BaseAddress = 0x0;
-  MPU_InitStruct.Size = MPU_REGION_SIZE_4GB;
-  MPU_InitStruct.SubRegionDisable = 0x87;
-  MPU_InitStruct.TypeExtField = MPU_TEX_LEVEL0;
-  MPU_InitStruct.AccessPermission = MPU_REGION_NO_ACCESS;
-  MPU_InitStruct.DisableExec = MPU_INSTRUCTION_ACCESS_DISABLE;
-  MPU_InitStruct.IsShareable = MPU_ACCESS_SHAREABLE;
-  MPU_InitStruct.IsCacheable = MPU_ACCESS_NOT_CACHEABLE;
-  MPU_InitStruct.IsBufferable = MPU_ACCESS_NOT_BUFFERABLE;
+/* USER CODE BEGIN Header_CalcTemp */
+/**
+* @brief Function implementing the CalcTemp_Task thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_CalcTemp */
+void CalcTemp(void *argument)
+{
+  /* USER CODE BEGIN CalcTemp */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END CalcTemp */
+}
 
-  HAL_MPU_ConfigRegion(&MPU_InitStruct);
-  /* Enables the MPU */
-  HAL_MPU_Enable(MPU_PRIVILEGED_DEFAULT);
+/* USER CODE BEGIN Header_ErrorVolt */
+/**
+* @brief Function implementing the ErrorVolt_Task thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_ErrorVolt */
+void ErrorVolt(void *argument)
+{
+  /* USER CODE BEGIN ErrorVolt */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END ErrorVolt */
+}
 
+/* USER CODE BEGIN Header_ErrorTemp */
+/**
+* @brief Function implementing the ErrorTemp_Task thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_ErrorTemp */
+void ErrorTemp(void *argument)
+{
+  /* USER CODE BEGIN ErrorTemp */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END ErrorTemp */
+}
+
+/* USER CODE BEGIN Header_ErrorCurrent */
+/**
+* @brief Function implementing the ErrorCurrent_Ta thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_ErrorCurrent */
+void ErrorCurrent(void *argument)
+{
+  /* USER CODE BEGIN ErrorCurrent */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END ErrorCurrent */
+}
+
+/* USER CODE BEGIN Header_ErrorSlaves */
+/**
+* @brief Function implementing the ErrorSlaves_Tas thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_ErrorSlaves */
+void ErrorSlaves(void *argument)
+{
+  /* USER CODE BEGIN ErrorSlaves */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END ErrorSlaves */
 }
 
 /**
