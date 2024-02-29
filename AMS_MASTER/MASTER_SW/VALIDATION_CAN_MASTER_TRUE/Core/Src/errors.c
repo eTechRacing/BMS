@@ -93,7 +93,7 @@
 			for(int i = 0; i <= TOTAL_IC; i ++){
 				for(int j = 0; j <= TOTAL_AUX; j ++){
 					if ((TEMPERATURE_ARRAY[i][j] < TEMPLOW) && (TEMPERATURE_ARRAY[i][j] != 0) ){
-						if ((HAL_GetTick() - FLAGMATRIX_UT[i][j]) > 1000)
+						if ((HAL_GetTick() - FLAGMATRIX_UT[i][j]) > TIM_ERROR_TEMP)
 								OK_BMS = 0;
 						}
 					else {
@@ -107,23 +107,19 @@
 											int MAXCURRENT,
 											// The State of the BMS
 											int TIM_ERROR_TEMP){				// Time of the Error Temperature
+		uint16_t FlagTime;
+		if (Current >= MAXCURRENT){
+			if (HAL_GetTick() - FlagTime > TIM_ERROR_TEMP){
+				OK_BMS = 0;
+			} else {
+
+				FlagTime = HAL_GetTick();
+			}
+		}
+	}
 
 
-				}
-
-	char compare_vectors(uint32_t **MATRIX,
-							uint16_t SLAVES,
-							uint16_t SLAVE_CELLS) {
-
-		 uint16_t blankvector[SLAVE_CELLS] = {0};
-		    for (int i = 0; i < SLAVE_CELLS; i++) {
-		        if (blankvector[i] != MATRIX[SLAVES - 1][i]) {
-		            return 1;
-		        }
-		    }
-
-
-	void detection_BMSerror_SlaveDisconnection(uint16_t **voltage_array, ){;
+	void detection_BMSerror_SlaveDisconnection(void){;
 
 				}
 

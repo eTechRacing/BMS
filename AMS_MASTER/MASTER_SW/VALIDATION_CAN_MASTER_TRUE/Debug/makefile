@@ -64,8 +64,8 @@ all: main-build
 main-build: VALIDATION_CAN_MASTER_TRUE.elf secondary-outputs
 
 # Tool invocations
-VALIDATION_CAN_MASTER_TRUE.elf VALIDATION_CAN_MASTER_TRUE.map: $(OBJS) $(USER_OBJS) C:\Users\Usuario\STM32CubeIDE\workspace_1.13.2\VALIDATION_CAN_MASTER_TRUE\STM32L496ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "VALIDATION_CAN_MASTER_TRUE.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Usuario\STM32CubeIDE\workspace_1.13.2\VALIDATION_CAN_MASTER_TRUE\STM32L496ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="VALIDATION_CAN_MASTER_TRUE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+VALIDATION_CAN_MASTER_TRUE.elf VALIDATION_CAN_MASTER_TRUE.map: $(OBJS) $(USER_OBJS) C:\Users\Usuario\Documents\GitHub\BMS\AMS_MASTER\MASTER_SW\VALIDATION_CAN_MASTER_TRUE\STM32L496ZGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "VALIDATION_CAN_MASTER_TRUE.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Usuario\Documents\GitHub\BMS\AMS_MASTER\MASTER_SW\VALIDATION_CAN_MASTER_TRUE\STM32L496ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="VALIDATION_CAN_MASTER_TRUE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

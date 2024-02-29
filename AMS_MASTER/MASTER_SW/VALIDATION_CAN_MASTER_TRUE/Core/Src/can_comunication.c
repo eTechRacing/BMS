@@ -14,46 +14,61 @@
  *   and adapting it to the thing needed
  */
 
-	#include "main.h"
-	#include "cmsis_os.h"
-	#include "can_comunication.h"
-	#include "errors.h"
-	#include "defined_variables.h"
-	#include "LTC6811-1_eTechRacing.h"
-	#include "eTechRacing.h"
+#include "LTC6811-1_eTechRacing.h"
+#include "eTechRacing.h"
+#include "main.h"
+#include "stdlib.h"
+#include "can_comunication.h"
+#include "errors.h"
+#include <pgmspace.h>
+#include "Linduino.h"
 
-	// Filters for communication
+		/*
+	 * 	Function: filtercanconfig
+	 * 	Purpose: Define the configurations needed to recieve data.
+	 * 	Inputs: None. Just states the configurations.
+	 */
 
-	void filtercanconfig(CAN_HandleTypeDef *hcan){
+	void filtercanconfig(CAN_HandleTypeDef *hcan, CAN_FilterTypeDef canfil, int CAN_FILTERMODE, int CAN_RX_FIFO, int CAN_FILTERSCALE){
 		canfil.FilterBank = 0;								// This refers to which filter is being configured. On this case is the filter number 0
-		canfil.FilterMode = CAN_FILTERMODE_IDMASK;			// FilterMode: How are we filtering the incoming messages. Only the messages that coincide with the mask and the filter are accepted
-		canfil.FilterFIFOAssignment = CAN_RX_FIFO0;			// Defines at which FIFO is this filter being configured to. In this case is the FIFO 0.
+		canfil.FilterMode = CAN_FILTERMODE;					// FilterMode: How are we filtering the incoming messages. Only the messages that coincide with the mask and the filter are accepted
+		canfil.FilterFIFOAssignment = CAN_RX_FIFO;			// Defines at which FIFO is this filter being configured to.
 		canfil.FilterIdHigh = 0x0000;						// MSB: Most Significant Bit. When it's in 0, accepts all the messages
 		canfil.FilterIdLow = 0x0000;						// LSB: Least Significant Bit. When it's in 0, accepts all the messages
 		canfil.FilterMaskIdHigh = 0x0000;					// Most Significant Bit of the mask. When it's in 0, accepts all the messages
 		canfil.FilterMaskIdLow = 0x0000;					// Least Significant Bit of the mask. When it's in 0, accepts all the messages
-		canfil.FilterScale = CAN_FILTERSCALE_32BIT;			// Defines the Filter Scale. It will use the 32 bits of the mask and the identifier
+		canfil.FilterScale = CAN_FILTERSCALE;				// Defines the Filter Scale. (use the 32 bits)
 		canfil.FilterActivation = ENABLE;					// This activates the filter as it is enable
 		canfil.SlaveStartFilterBank = 14;					// Indicates the first filter slave number. In this case it is the principal filter.
 	}
 
-	// TX CAN Functions
+	/*
+	 * 	Function: message_cantx_AIR_State
+	 * 	Purpose: Take the inputs and variables needed and send it via CAN.
+	 * 	Inputs: AIR State [0, 3, 6, 9] -> State of the relays
+	 */
 
-	void message_cantx_AIR_State(CAN_HandleTypeDef *hcan, char AIRs_State){
+	void message_cantx_AIR_State(CAN_HandleTypeDef *hcan, int CAN_ID, int CAN_REMOTE_DATA, char AIRs_State, uint8_t *TxData, CAN_TxHeaderTypeDef TxHeader){
 
 		TxHeader.DLC = 1; 									//Number of bites to be transmitted max- 8. DLC: Data Length Code
-		TxHeader.IDE = CAN_ID_STD;							//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
-		TxHeader.RTR = CAN_RTR_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
+		TxHeader.IDE = CAN_ID;							//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
+		TxHeader.RTR = CAN_REMOTE_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
 		TxHeader.StdId = 0x91;								//Standard identifier ID
 		TxHeader.TransmitGlobalTime = DISABLE;				//A temporal mark in the CAN message is not added
 		TxData[0] = AIRs_State;								//Sent data. The TxData is the buffer where the data is saved
 		}
 
-	void message_cantx_Temperature_State(CAN_HandleTypeDef *hcan, uint16_t Lowest_CellTemperature, uint16_t Highest_CellTemperature, uint16_t Average_CellTemperature){
+	/*
+	 * 	Function: message_cantx_Temperature_State
+	 * 	Purpose: Take the inputs and variables needed and send it via CAN.
+	 * 	Inputs: Lowest, Highest and Average Temperatures
+	 */
+
+	void message_cantx_Temperature_State(int CAN_ID, int CAN_REMOTE_DATA, uint16_t Lowest_CellTemperature, uint16_t Highest_CellTemperature, uint16_t Average_CellTemperature, uint8_t *TxData, CAN_TxHeaderTypeDef TxHeader){
 
 		TxHeader.DLC = 6; 									//Number of bites to be transmitted max- 8. DLC: Data Length Code
-		TxHeader.IDE = CAN_ID_STD;							//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
-		TxHeader.RTR = CAN_RTR_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
+		TxHeader.IDE = CAN_ID;								//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
+		TxHeader.RTR = CAN_REMOTE_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
 		TxHeader.StdId = 0x93;								//Standard identifier ID
 		TxHeader.TransmitGlobalTime = DISABLE;				//A temporal mark in the CAN message is not added
 		TxData[0] = Lowest_CellTemperature;
@@ -64,11 +79,17 @@
 		TxData[5] = Average_CellTemperature >> 8;
 		}
 
-	void message_cantx_Charger_Parameters(CAN_HandleTypeDef *hcan, uint16_t Charger_MaxVoltage, uint8_t Charger_MaxCurrent){
+	/*
+	 * 	Function: message_cantx_Charger_Parameters
+	 * 	Purpose: Take the inputs and variables needed and send it via CAN.
+	 * 	Inputs: Maximum Voltage and Current
+	 */
+
+	void message_cantx_Charger_Parameters(int CAN_ID, int CAN_REMOTE_DATA, uint16_t Charger_MaxVoltage, uint8_t Charger_MaxCurrent, uint8_t *TxData, CAN_TxHeaderTypeDef TxHeader){
 
 		TxHeader.DLC = 3; 									//Number of bites to be transmitted max- 8. DLC: Data Length Code
-		TxHeader.IDE = CAN_ID_STD;							//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
-		TxHeader.RTR = CAN_RTR_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
+		TxHeader.IDE = CAN_ID;								//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
+		TxHeader.RTR = CAN_REMOTE_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
 		TxHeader.StdId = 0x9D;								//Standard identifier ID
 		TxHeader.TransmitGlobalTime = DISABLE;				//A temporal mark in the CAN message is not added
 		TxData[0] = Charger_MaxVoltage;						//Sent data. The TxData is the buffer where the data is saved
@@ -76,31 +97,49 @@
 		TxData[2] = Charger_MaxCurrent;
 		}
 
-	void message_cantx_Keep_Alive(CAN_HandleTypeDef *hcan, unsigned char Keep_Alive){
+	/*
+	 * 	Function: message_cantx_Keep_Alive
+	 * 	Purpose: Take the inputs and variables needed and send it via CAN.
+	 * 	Inputs: Keep Alive
+	 */
+
+	void message_cantx_Keep_Alive(int CAN_ID, int CAN_REMOTE_DATA, unsigned char Keep_Alive, uint8_t *TxData, CAN_TxHeaderTypeDef TxHeader){
 
 		TxHeader.DLC = 1; 									//Number of bites to be transmitted max- 8. DLC: Data Length Code
-		TxHeader.IDE = CAN_ID_STD;							//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
-		TxHeader.RTR = CAN_RTR_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
+		TxHeader.IDE = CAN_ID;							//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
+		TxHeader.RTR = CAN_REMOTE_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
 		TxHeader.StdId = 0xCA;								//Standard identifier ID
 		TxHeader.TransmitGlobalTime = DISABLE;				//A temporal mark in the CAN message is not added
 		TxData[0] = Keep_Alive;								//Sent data. The TxData is the buffer where the data is saved
 		}
 
-	void message_cantx_Shutdown(CAN_HandleTypeDef *hcan, unsigned char Shutdown_PackageIntck, unsigned char Shutdown_BMS, unsigned char Shutdown_IMD){
+	/*
+	 * 	Function: message_cantx_Shutdown
+	 * 	Purpose: Take the inputs and variables needed and send it via CAN.
+	 * 	Inputs: Package Interlock, BMS (BMS_OK) and IMD -> Bits
+	 */
+
+	void message_cantx_Shutdown(int CAN_ID, int CAN_REMOTE_DATA, unsigned char Shutdown_PackageIntck, unsigned char Shutdown_BMS, unsigned char Shutdown_IMD, uint8_t *TxData, CAN_TxHeaderTypeDef TxHeader){
 
 		TxHeader.DLC = 1; 									//Number of bites to be transmitted max- 8. DLC: Data Length Code
-		TxHeader.IDE = CAN_ID_STD;							//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
-		TxHeader.RTR = CAN_RTR_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
+		TxHeader.IDE = CAN_ID;							//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
+		TxHeader.RTR = CAN_REMOTE_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
 		TxHeader.StdId = 0x9D;								//Standard identifier ID
 		TxHeader.TransmitGlobalTime = DISABLE;				//A temporal mark in the CAN message is not added
 		TxData[0] = (Shutdown_IMD << 2) | (Shutdown_BMS << 1) | Shutdown_PackageIntck; 	//Sent data. The TxData is the buffer where the data is saved
 		}			// Lectura de pinaje | Shutdown_BMS = BMS_OK | Lectura de pinaje
 
-	void message_cantx_SoC_SoH(CAN_HandleTypeDef *hcan, uint16_t SoC_Avg, uint16_t SoC_High, uint16_t SoC_Low, uint16_t SoH){
+	/*
+	 * 	Function: message_cantx_SoC_SoH
+	 * 	Purpose: Take the inputs and variables needed and send it via CAN.
+	 * 	Inputs: State of Charge and Health
+	 */
+
+	void message_cantx_SoC_SoH(int CAN_ID, int CAN_REMOTE_DATA, CAN_HandleTypeDef *hcan, uint16_t SoC_Avg, uint16_t SoC_High, uint16_t SoC_Low, uint16_t SoH, uint8_t *TxData, CAN_TxHeaderTypeDef TxHeader){
 
 		TxHeader.DLC = 8; 									//Number of bites to be transmitted max- 8. DLC: Data Length Code
-		TxHeader.IDE = CAN_ID_STD;							//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
-		TxHeader.RTR = CAN_RTR_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
+		TxHeader.IDE = CAN_ID	;							//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
+		TxHeader.RTR = CAN_REMOTE_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
 		TxHeader.StdId = 0x95;								//Standard identifier ID
 		TxHeader.TransmitGlobalTime = DISABLE;				//A temporal mark in the CAN message is not added
 		TxData[0] = SoC_Avg;								//Sent data. The TxData is the buffer where the data is saved
@@ -113,7 +152,12 @@
 		TxData[7] = SoH >> 8;
 		}
 
-	// This Function called "combined bits" takes different bits and puts them all together in a variable.
+	/*
+	 * 	Function: message_cantx_SoC_SoH
+	 * 	Purpose: Takes different bits and puts them all together in a variable called byte.
+	 * 	Inputs: The different bits in order from the MSB (bit 8) to the LSB (bit 1)
+	 */
+
 	uint8_t combined_bits(unsigned char bit1, unsigned char bit2, unsigned char bit3, unsigned char bit4,
 						   unsigned char bit5, unsigned char bit6, unsigned char bit7, unsigned char bit8){
 
@@ -126,28 +170,17 @@
 		return byte;
 	}
 
-	void message_cantx_StateAndFailReport(CAN_HandleTypeDef *hcan, unsigned char BMSerror_UnderTemperature, unsigned char BMSerror_OverTemperature,
-											unsigned char BMSerror_OverVoltage, unsigned char BMSerror_UnderVoltage,
-											unsigned char BMSerror_OverCurrent, unsigned char State_PrechargeRelay,
-											unsigned char State_Air_Plus, unsigned char State_Air_Minus, unsigned char State_Balancing,
-											unsigned char State_AccumulatorFans, unsigned char State_DivideCurrent,
-											unsigned char BMSerror_SlaveDisconnection, unsigned char BMSerror_VoltageDisconnection,
-											unsigned char BMSerror_NTCDisconnection){
+	/*
+	 * 	Function: message_cantx_Voltage_State
+	 * 	Purpose: Take the inputs and variables needed and send it via CAN.
+	 * 	Inputs: Lowest, Lowest and Average Cell Voltage
+	 */
 
-		TxHeader.DLC = 8; 									//Number of bites to be transmitted max- 8. DLC: Data Length Code
-		TxHeader.IDE = CAN_ID_STD;							//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
-		TxHeader.RTR = CAN_RTR_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
-		TxHeader.StdId = 0x94;								//Standard identifier ID
-		TxHeader.TransmitGlobalTime = DISABLE;				//A temporal mark in the CAN message is not added
-		TxData[0] = combined_bits(BMSerror_UnderTemperature, BMSerror_OverTemperature, BMSerror_OverVoltage, BMSerror_UnderVoltage, BMSerror_OverCurrent, State_PrechargeRelay, State_Air_Plus, State_Air_Minus);								//Sent data. The TxData is the buffer where the data is saved
-		TxData[1] = combined_bits(State_Balancing, State_AccumulatorFans, State_DivideCurrent, BMSerror_SlaveDisconnection, BMSerror_VoltageDisconnection, BMSerror_NTCDisconnection, 0, 0);							//Sent data. The TxData is the buffer where the data is saved
-		}
-
-	void message_cantx_Voltage_State(CAN_HandleTypeDef *hcan, uint16_t Lowest_CellVoltage, uint16_t Highest_CellVoltage, uint16_t Average_CellVoltage){
+	void message_cantx_Voltage_State(int CAN_ID, int CAN_REMOTE_DATA, CAN_HandleTypeDef *hcan, uint16_t Lowest_CellVoltage, uint16_t Highest_CellVoltage, uint16_t Average_CellVoltage,uint8_t *TxData, CAN_TxHeaderTypeDef TxHeader){
 
 		TxHeader.DLC = 6; 									//Number of bites to be transmitted max- 8. DLC: Data Length Code
-		TxHeader.IDE = CAN_ID_STD;							//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
-		TxHeader.RTR = CAN_RTR_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
+		TxHeader.IDE = CAN_ID;								//IDE: Identifier Extension. ID_STD: Standard Identifier. Dominant(0) = 11 bit ID, Recessive(1) = 29 bit ID
+		TxHeader.RTR = CAN_REMOTE_DATA;						//RTR: Remote Transmission Request, Dominant(0) = Data frame, Recessive (1) = Remote Frame. Type of trace
 		TxHeader.StdId = 0x92;								//Standard identifier ID
 		TxHeader.TransmitGlobalTime = DISABLE;				//A temporal mark in the CAN message is not added
 		TxData[0] = Lowest_CellVoltage;						//Sent data. The TxData is the buffer where the data is saved
@@ -158,7 +191,12 @@
 		TxData[5] = Average_CellVoltage >> 8;
 		}
 
-	// RX Can Functions
+
+	/*
+	 * 	Function:  message_canrx_AIRs_Request
+	 * 	Purpose: Takes the Data form the CAN Message and, depending on the result, sets one state of the relays or another.
+	 * 	Inputs: Pins of the Relays and their different ports.
+	 */
 
 	void message_canrx_AIRs_Request(CAN_HandleTypeDef *hcan, uint8_t RxData,
 								int AIRPLUS_PIN, int AIRPLUS_PORT, int AIRMINUS_PIN,
@@ -180,13 +218,24 @@
 		}
 	}
 
-	void message_canrx_Current_Sensor(CAN_HandleTypeDef *hcan, uint8_t RxData){
+	/*
+	 * 	Function: message_canrx_Current_Sensor
+	 * 	Purpose: Takes the Data form the CAN Message and, sorts it in different
+	 * 	Inputs: Pins of the Relays and their different ports.
+	 */
 
+	void message_canrx_Current_Sensor(uint8_t RxData[5], unsigned char *Current_Error, uint32_t *Current_Value) {
+	    Current_Value = ((uint32_t)RxData[0] << 24) | ((uint32_t)RxData[1] << 16) | ((uint32_t)RxData[2] << 8) | RxData[3]; 		// Move all bytes to a variable
+	    Current_Error = RxData[4] & 0x01; 																							// Get the value of the error 1-> Error   0-> No error
 	}
-	// Extra functions
 
-	// This Function called "uncombined bytes" takes a byte of data and separes each bit in different variables
-	uint8_t uncombined_bytes(uint8_t Byte, unsigned char *byte_array){
+	/*
+	 * 	Function: uncombined_bytes
+	 * 	Purpose: Takes a byte of data and separes each bit in different variables
+	 * 	Inputs: A byte of data
+	 */
+
+	unsigned char uncombined_bytes(uint8_t Byte, unsigned char *byte_array){
 
 			byte_array[0] = (Byte >> 7) & 0x01;
 		    byte_array[1] = (Byte >> 6) & 0x01;
@@ -201,6 +250,16 @@
 
 		}
 
-	uint8_t data_to_byte(uint16_t Data,unsigned cha){
+	/*
+	 * 	Function: message_canrx_Syncronism
+	 * 	Purpose: Recieves the Syncronism signal, and increases the counter of Keep Alive until it reaches 255.
+	 * 	Inputs: Signal of the Syncronism
+	 */
 
+	void message_canrx_Syncronism(uint8_t RxData[1], unsigned char *Keep_Alive){
+		if (RxData[0] != 255 ){
+			Keep_Alive++;
+		} else {
+			Keep_Alive = 0;
 		}
+	}
