@@ -22,7 +22,10 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "LTC6811-1_eTechRacing.h"
+#include "eTechRacing.h"
+#include <stdio.h>
+#include <stdlib.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -105,6 +108,27 @@ const osThreadAttr_t ErrorSlaves_Tas_attributes = {
   .priority = (osPriority_t) osPriorityHigh,
 };
 /* USER CODE BEGIN PV */
+//WRITE FUNCTIONS
+uint8_t CHG = 001;								// Which GPIOS are converted: 000 -> GPIO1-5; 001 -> GPIO1; 010 -> GPIO2; 011 -> GPIO3; 100 -> GPIO4; 101 -> GPIO5
+uint8_t REG_VOLT = 0; 							// Controls which cell voltage register is read back: 0 -> All Cell registers; 1 -> A; 2 -> B; 3 -> C; 4 -> D
+uint8_t REG_TEMP = 1; 							// Controls which cell voltage register is read back: 0 -> All Cell registers; 1 -> A; 2 -> B; 3 -> C; 4 -> D
+uint8_t **config;								// A two dimensional array with the cells configurations
+uint8_t **PWM;									// A two dimensional array with the PWM configurations
+uint8_t PEC_ERROR = 0;							// PEC ERROR, set on 0. If PEC_ERROR == 1 -> BMS_ERROR = 1
+uint8_t BYTES_IN_REG = 6;						// Bytes in each register
+
+//TIMER
+uint16_t DELAY_SLEEP = 711;						// Delay between messages of the Wakeup_sleep function
+
+//BALANCING
+uint16_t VCELL_MIN = 4120;						// Variable
+uint16_t V_MIN = 4050;							// Constant
+uint16_t V_BALANCING = 4195;					// Constant
+uint8_t DIFF_MAX = 2;							// Constant
+
+// READ BACK FUNCTIONS
+uint16_t cell_codes[ICn][CELL_CHANNELS];		// A two dimensional array of the read voltages
+uint16_t aux_codes[ICn][AUX_CHANNELS];			// A two dimensional array of the parsed gpio voltage codes
 
 /* USER CODE END PV */
 
@@ -140,7 +164,11 @@ void ErrorSlaves(void *argument);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	wakeup_sleep(hspi1, htim1, ICn, DELAY_SLEEP);
+	PWM = set_pwm(ICn);
+	ltc6811_wrpwm(ICn, PWM, hspi1, htim1);
+	int *DCC = Balancing(V_MIN, VCELL_MIN, cell_codes, V_BALANCING, DIFF_MAX, ICn);
+	config = set_cfgr(ICn, BYTES_IN_REG, DCC);
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -544,7 +572,15 @@ void Lectures(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+	  int *DCC = Balancing(V_MIN, VCELL_MIN, cell_codes, V_BALANCING, DIFF_MAX, ICn);
+	  config = set_cfgr(ICn, BYTES_IN_REG, DCC);
+	  ltc6811_wrcfg(ICn, config, hspi1, htim1);
+	  ltc6811_adcv(MD_1, DCP_1, CH_1,hspi1);
+	  PEC_ERROR = ltc6811_rdcv(REG_VOLT, ICn, cell_codes,hspi1, htim1);
+	  ltc6811_wrcfg(ICn,config,hspi1, htim1);
+	  ltc6811_adax(MD_1,CHG,hspi1);
+	  PEC_ERROR = ltc6811_rdaux(REG_TEMP, ICn, aux_codes, hspi1, htim1);
+	  osDelay(1);
   }
   /* USER CODE END 5 */
 }
