@@ -389,113 +389,222 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=BSBJCFUX
 
+[Document21]
+DocumentPath=Job1.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
-DocumentPath=Project Outputs for Free Documents\NC Drill\Accumulator_HotDog_v2.DRR
+DocumentPath=Project Outputs for Accumulator_HotDog_v2\NC Drill\Accumulator_HotDog_v2.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.EXTREP
+DocumentPath=Project Outputs for Free Documents\NC Drill\Accumulator_HotDog_v2.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.G1
+DocumentPath=Project Outputs for Accumulator_HotDog_v2\Gerber\Accumulator_HotDog_v2.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.G2
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GBL
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.G1
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GBO
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.G2
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GBP
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GBS
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GM
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GTL
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GTO
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GM
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GTP
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GTS
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for Free Documents\NC Drill\Accumulator_HotDog_v2.LDP
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.REP
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for Free Documents\ExportSTEP\Accumulator_HotDog_v2.step
+DocumentPath=Project Outputs for Accumulator_HotDog_v2\NC Drill\Accumulator_HotDog_v2.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for Free Documents\NC Drill\Accumulator_HotDog_v2.TXT
+DocumentPath=Project Outputs for Free Documents\NC Drill\Accumulator_HotDog_v2.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for Accumulator_HotDog\Design Rule Check - Accumulator_HotDog_v2.html
+DocumentPath=Project Outputs for Accumulator_HotDog_v2\Gerber\Accumulator_HotDog_v2.REP
 DItemRevisionGUID=
 
 [GeneratedDocument19]
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2.REP
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for Free Documents\ExportSTEP\Accumulator_HotDog_v2.step
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for Accumulator_HotDog_v2\NC Drill\Accumulator_HotDog_v2.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for Free Documents\NC Drill\Accumulator_HotDog_v2.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for Accumulator_HotDog_v2\Gerber\Accumulator_HotDog_v2_Copper_Signal_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2_Copper_Signal_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for Accumulator_HotDog_v2\Gerber\Accumulator_HotDog_v2_Copper_Signal_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2_Copper_Signal_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for Accumulator_HotDog_v2\Gerber\Accumulator_HotDog_v2_Legend_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2_Legend_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for Accumulator_HotDog_v2\Gerber\Accumulator_HotDog_v2_Legend_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2_Legend_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for Accumulator_HotDog_v2\Gerber\Accumulator_HotDog_v2_Paste_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2_Paste_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs for Accumulator_HotDog_v2\Gerber\Accumulator_HotDog_v2_Paste_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2_Paste_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs for Accumulator_HotDog_v2\Gerber\Accumulator_HotDog_v2_Profile.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument36]
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2_Profile.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument37]
+DocumentPath=Project Outputs for Accumulator_HotDog_v2\Gerber\Accumulator_HotDog_v2_Soldermask_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument38]
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2_Soldermask_Bot.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument39]
+DocumentPath=Project Outputs for Accumulator_HotDog_v2\Gerber\Accumulator_HotDog_v2_Soldermask_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument40]
+DocumentPath=Project Outputs for Free Documents\Gerber\Accumulator_HotDog_v2_Soldermask_Top.gbr
+DItemRevisionGUID=
+
+[GeneratedDocument41]
+DocumentPath=Project Outputs for Accumulator_HotDog\Design Rule Check - Accumulator_HotDog_v2.html
+DItemRevisionGUID=
+
+[GeneratedDocument42]
 DocumentPath=Project Outputs for Accumulator_HotDog_v2\Design Rule Check - Accumulator_HotDog_v2.html
 DItemRevisionGUID=
 
 [Parameter1]
-Name=Version
-Value=2.0
+Name=Company
+Value=e-Tech Racing
 
 [Parameter2]
-Name=ReviewerName
-Value=Bernat Costa Cesari
-
-[Parameter3]
-Name=Project
-Value=Accumulator_HotDog
-
-[Parameter4]
-Name=DesignerName
-Value=Inass Himmiche
-
-[Parameter5]
-Name=DesignerMail
-Value=inass.himmiche@estudiantat.upc.edu
-
-[Parameter6]
-Name=DesignedByURL
-Value=e-techracing.es
-
-[Parameter7]
 Name=Department
 Value=Accumulator-BMS
 
+[Parameter3]
+Name=DesignedByURL
+Value=e-techracing.es
+
+[Parameter4]
+Name=DesignerMail
+Value=inass.himmiche@estudiantat.upc.edu
+
+[Parameter5]
+Name=DesignerName
+Value=Inass Himmiche
+
+[Parameter6]
+Name=Project
+Value=Accumulator_HotDog
+
+[Parameter7]
+Name=ReviewerName
+Value=Bernat Costa Cesari
+
 [Parameter8]
-Name=Company
-Value=e-Tech Racing
+Name=Version
+Value=2.0
 
 [Configuration1]
 Name=Sources

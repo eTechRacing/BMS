@@ -1,0 +1,6 @@
+Added Component: Designator=F1(FUSE_2.5A_1000V)
+Added Pin To Net: NetName=TS+ Pin=F1-1
+Added Pin To Net: NetName=TS+ Pin=F1-1
+Added Pin To Net: NetName=NetF1_2 Pin=F1-2
+Added Pin To Net: NetName=NetF1_2 Pin=F1-2
+Added Member To Class: ClassName=AMS_Master Member=Component F1 FUSE_2.5A_1000V
