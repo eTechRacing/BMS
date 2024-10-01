@@ -1,0 +1,6 @@
+Add Pin To Net: Unknown Pin: Pin U1-CAN1_H
+Add Pin To Net: Unknown Pin: Pin U1-CAN1L
+Added Pin To Net: NetName=SPI1_SCK Pin=U1-PD4
+Added Pin To Net: NetName=SPI1_MISO Pin=U1-PD5
+Added Pin To Net: NetName=SPI1_MOSI Pin=U1-PD6
+Added Pin To Net: NetName=LTC6820_CS Pin=U1-PD7

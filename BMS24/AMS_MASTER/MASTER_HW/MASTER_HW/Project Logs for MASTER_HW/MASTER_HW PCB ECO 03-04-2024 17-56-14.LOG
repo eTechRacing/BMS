@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=+12 Pin=J3-1
+Removed Pin From Net: NetName=GND Pin=J3-2
+Removed Member From Class: ClassName=AMS_Master Member=J3
+Add Component: Footprint Not Found J_NanoFit_1x4_V - duplicate
+Add Pin To Net: Unknown Pin: Pin J?-3
+Add Pin To Net: Unknown Pin: Pin J?-4
+Added Pin To Net: NetName=+5 Pin=U1-5V_1
+Added Pin To Net: NetName=+5 Pin=U1-5V_2
+Added Pin To Net: NetName=+5 Pin=U1-5V_3
+Added Pin To Net: NetName=+5 Pin=U1-5V_4
+Added Pin To Net: NetName=+5 Pin=U1-5V_5
+Added Pin To Net: NetName=GND Pin=U1-GND_1
+Added Pin To Net: NetName=GND Pin=U1-GND_2
+Added Pin To Net: NetName=GND Pin=U1-GND_3
+Added Pin To Net: NetName=GND Pin=U1-GND_4
+Added Pin To Net: NetName=GND Pin=U1-GND_5
+Added Pin To Net: NetName=GND Pin=U1-GND_6
+Added Pin To Net: NetName=GND Pin=U1-GND_7
+Added Pin To Net: NetName=GND Pin=U1-GND_8
+Added Pin To Net: NetName=GND Pin=U1-GND_9
+Added Pin To Net: NetName=GND Pin=U1-GND_10
+Added Net: Name=CAN1_H
+Added Net: Name=CAN1_L
+Add Class Member: Failed to add class member : Component J? 1053091204

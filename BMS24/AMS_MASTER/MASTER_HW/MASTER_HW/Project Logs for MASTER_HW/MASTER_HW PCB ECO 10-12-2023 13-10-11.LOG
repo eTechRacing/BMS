@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=GND Pin=C101-1
+Removed Pin From Net: NetName=GND Pin=C102-1
+Removed Pin From Net: NetName=NetLED701_1 Pin=R706-1
+Removed Pin From Net: NetName=TS+ Pin=R706-2
+Removed Member From Class: ClassName=Supply Member=C101
+Removed Member From Class: ClassName=Supply Member=C102
+Removed Member From Class: ClassName=Supply Member=J102
+Removed Member From Class: ClassName=Supply Member=L101
+Change Component Footprint: Designator=J9 Old Footprint=J_NanoFit_1x4_V_Nohole New Footprint=J_NanoFit_1x4_V
+Change Component Footprint: Designator=J10 Old Footprint=J_NanoFit_1x4_V_Nohole New Footprint=J_NanoFit_1x4_V
+Change Component Footprint: Designator=J11 Old Footprint=J_NanoFit_1x4_V_Nohole New Footprint=J_NanoFit_1x4_V
+Change Component Description : Designator=R404 Old Description=Res, 1K, 100W, To-247, Thick Film Rohs Compliant: Yes New Description=Res, 1K, 100W, To-247, Thick Film Rohs Compliant: Yes |Cgs Te Connectivity MPT100C1K0F
+Added Pin To Net: NetName=NetDCDC101_1 Pin=DCDC101-1
+Added Pin To Net: NetName=NetDCDC101_1 Pin=F101-2
+Added Net: Name=NetDCDC101_1

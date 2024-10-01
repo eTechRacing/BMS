@@ -1,0 +1,13 @@
+Change Component Description : Designator=R404 Old Description=Res, 1K, 100W, To-247, Thick Film Rohs Compliant: Yes New Description=Res, 1K, 100W, To-247, Thick Film Rohs Compliant: Yes |Cgs Te Connectivity MPT100C1K0F
+Added Pin To Net: NetName=VCC Pin=U1-3V3_1
+Added Pin To Net: NetName=VCC Pin=U1-3V3_2
+Added Pin To Net: NetName=VCC Pin=U1-3V3_3
+Added Pin To Net: NetName=VCC Pin=U1-3V3_4
+Added Pin To Net: NetName=VCC Pin=U1-3V3_5
+Added Pin To Net: NetName=VCC Pin=U1-3V3_6
+Added Pin To Net: NetName=VCC Pin=U1-3V3_7
+Added Pin To Net: NetName=VCC Pin=U1-NC_2
+Added Pin To Net: NetName=VCC Pin=U1-PA10
+Change Net Name : Old Net Name=CAN1_H New Net Name=CAN1_P
+Change Net Name : Old Net Name=CAN1_L New Net Name=CAN1_N
+Added Differential Pair: Name=CAN1

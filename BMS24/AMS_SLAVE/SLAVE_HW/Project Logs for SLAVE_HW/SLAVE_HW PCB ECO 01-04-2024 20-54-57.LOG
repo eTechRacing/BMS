@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=IA_P Pin=T401-1
+Removed Pin From Net: NetName=IA_N Pin=T401-3
+Removed Pin From Net: NetName=IB_P Pin=T401-4
+Removed Pin From Net: NetName=IB_N Pin=T401-6
+Removed Pin From Net: NetName=IB_OUT_N Pin=T401-7
+Removed Pin From Net: NetName=IB_OUT_P Pin=T401-9
+Removed Pin From Net: NetName=IA_OUT_N Pin=T401-10
+Removed Pin From Net: NetName=IA_OUT_P Pin=T401-12
+Added Pin To Net: NetName=IB_P Pin=T401-1
+Added Pin To Net: NetName=IB_N Pin=T401-3
+Added Pin To Net: NetName=IA_P Pin=T401-4
+Added Pin To Net: NetName=IA_N Pin=T401-6
+Added Pin To Net: NetName=IA_OUT_N Pin=T401-7
+Added Pin To Net: NetName=IA_OUT_P Pin=T401-9
+Added Pin To Net: NetName=IB_OUT_N Pin=T401-10
+Added Pin To Net: NetName=IB_OUT_P Pin=T401-12

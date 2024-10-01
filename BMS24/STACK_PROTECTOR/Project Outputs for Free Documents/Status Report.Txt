@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [STACK_PROTECTOR.PcbDoc]
+   Generated File[STACK_PROTECTOR.TXT]
+   Generated File[STACK_PROTECTOR.LDP]
+   Generated File[STACK_PROTECTOR.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 12:40:02 On 06/02/2024

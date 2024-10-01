@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=AIRMinus_Control Pin=U1-PC15
+Removed Pin From Net: NetName=Precharge_Control Pin=U1-PE3
+Removed Pin From Net: NetName=AIRPlus_Control Pin=U1-PE6
+Added Pin To Net: NetName=AIRPlus_Control Pin=U1-PA5
+Added Pin To Net: NetName=Precharge_Control Pin=U1-PA6
+Added Pin To Net: NetName=AIRMinus_Control Pin=U1-PA7

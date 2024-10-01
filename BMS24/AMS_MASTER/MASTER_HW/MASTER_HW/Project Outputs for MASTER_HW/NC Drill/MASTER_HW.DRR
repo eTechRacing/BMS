@@ -1,0 +1,67 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: MASTER_HW.PcbDoc   26/04/2024  21:19:16
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : MASTER_HW-RoundHoles.TXT
+ASCII SlotHoles File : MASTER_HW-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.3mm (12mil)                                             Round             216       PTH        1441.02mm (56.73inch)
+T2      0.5mm (20mil)                                             Round             32        PTH        215.32mm (8.48inch)
+T3      0.8mm (31mil)                                             Round             15        PTH        102.55mm (4.04inch)
+T4      1mm (39mil)                                               Round             7         PTH        43.13mm (1.70inch)
+T5      1.02mm (40mil)                                            Round             9         PTH        85.27mm (3.36inch)
+T6      1.1mm (43mil)                                             Round             2         PTH        2.54mm (0.10inch)
+T7      1.15mm (45mil)                                            Round             12        PTH        140.81mm (5.54inch)
+T8      1.2mm (47mil)           +/-0.05mm (2mil)                  Round             6         PTH        281.62mm (11.09inch)
+T9      1.2mm (47mil)                                             Round             36        PTH        383.71mm (15.11inch)
+T10     1.27mm (50mil)                                            Round             2         PTH        15.10mm (0.59inch)
+T11     1.3mm (51mil)           +0.05mm (2mil)                    Round             3         PTH        278.65mm (10.97inch)
+T12     1.3mm (51mil)                                             Round             1         PTH        0.00mm (0.00inch)
+T13     1.4mm (55mil)                                             Round             5         PTH        316.01mm (12.44inch)
+T14     1.475mm (58mil)                                           Round             64        PTH        231.21mm (9.10inch)
+T15     1.5mm (59mil)                                             Round             2         PTH        11.00mm (0.43inch)
+T16     1.98mm (78mil)                                            Round             4         PTH        31.60mm (1.24inch)
+T17     4.2mm (165mil)                                            Round             7         PTH        260.25mm (10.25inch)
+T18     5.1mm (201mil)                                            Round             6         PTH        154.41mm (6.08inch)
+T19     1.02mm (40mil)                                            Round             1         NPTH       0.00mm (0.00inch)
+T20     2mm (79mil)                                               Slot              8         NPTH       495.54mm (19.51inch)
+T21     4.2mm (165mil)                                            Round             1         NPTH       0.00mm (0.00inch)
+T22     7mm (276mil)                                              Round             3         NPTH       118.85mm (4.68inch)
+T23     13mm (512mil)                                             Slot              3         NPTH       247.40mm (9.74inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              445
+
+Two holes at same point : 27
+-----------------------
+6275,1898
+6236,1799
+6137,1760
+6039,1799
+6000,1898
+6039,1996
+6137,2035
+6236,1996
+3524,1996
+3425,2035
+3327,1996
+3287,1898
+3327,1799
+3425,1760
+3524,1799
+3563,1898
+1596,1898
+1557,1799
+1458,1760
+1360,1799
+1320,1898
+1360,1996
+1458,2035
+1557,1996
+6137,1898
+3425,1898
+1458,1898
+
+Total Processing Time (hh:mm:ss) : 00:00:01

@@ -1,0 +1,41 @@
+Removed Pin From Net: NetName=SC_END_Monitoring Pin=J4-4
+Removed Pin From Net: NetName=Precharge_Control Pin=J4-6
+Removed Pin From Net: NetName=AIRMinus_Control Pin=J4-11
+Removed Pin From Net: NetName=AIRMinus_Control Pin=J4-12
+Removed Pin From Net: NetName=AIRPlus_Control Pin=J4-18
+Removed Pin From Net: NetName=GND Pin=J5-28
+Removed Pin From Net: NetName=VCC Pin=J6-1
+Removed Pin From Net: NetName=IMD_Monitoring Pin=J6-2
+Removed Pin From Net: NetName=+24 Pin=J6-3
+Removed Pin From Net: NetName=BMS_ERROR Pin=J6-4
+Removed Pin From Net: NetName=+24 Pin=J6-5
+Removed Pin From Net: NetName=+24 Pin=J6-7
+Removed Pin From Net: NetName=+24 Pin=J6-9
+Removed Pin From Net: NetName=+24 Pin=J6-11
+Removed Pin From Net: NetName=GND Pin=J6-23
+Removed Pin From Net: NetName=LTC6820_CS Pin=J7-13
+Removed Pin From Net: NetName=LTC6820_CS Pin=J7-14
+Removed Pin From Net: NetName=SPI1_MOSI Pin=J7-15
+Removed Pin From Net: NetName=SPI1_MOSI Pin=J7-16
+Removed Pin From Net: NetName=SPI1_MISO Pin=J7-17
+Removed Pin From Net: NetName=SPI1_MISO Pin=J7-18
+Removed Pin From Net: NetName=SPI1_SCK Pin=J7-19
+Removed Pin From Net: NetName=SPI1_SCK Pin=J7-20
+Removed Pin From Net: NetName=+5 Pin=J7-23
+Removed Pin From Net: NetName=+5 Pin=J7-25
+Removed Pin From Net: NetName=+5 Pin=J7-27
+Removed Member From Class: ClassName=AMS_Master Member=J4
+Removed Member From Class: ClassName=AMS_Master Member=J5
+Removed Member From Class: ClassName=AMS_Master Member=J6
+Removed Member From Class: ClassName=AMS_Master Member=J7
+Added Component: Designator=U*?(ETR_SHIELD_III)
+Added Component: Designator=U*(ETR_SHIELD_III)
+Added Pin To Net: NetName=+5 Pin=U*?-5V_6
+Added Pin To Net: NetName=+5 Pin=U*?-5V_7
+Added Pin To Net: NetName=GND Pin=U*?-GND_11
+Added Pin To Net: NetName=SPI1_SCK Pin=U*?-PB3
+Added Pin To Net: NetName=SPI1_MISO Pin=U*?-PB4
+Added Pin To Net: NetName=SPI1_MOSI Pin=U*?-PB5
+Added Pin To Net: NetName=LTC6820_CS Pin=U*?-PB6
+Added Member To Class: ClassName=AMS_Master Member=Component U*? ETR_SHIELD_III
+Added Member To Class: ClassName=AMS_Master Member=Component U* ETR_SHIELD_III

@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=GND Pin=U1-1
+Removed Pin From Net: NetName=GND Pin=U1-2
+Removed Pin From Net: NetName=GND Pin=U1-3
+Removed Pin From Net: NetName=GND Pin=U1-4
+Added Pin To Net: NetName=TS_Sns+ Pin=U1-PC4
+Added Pin To Net: NetName=TS_Sns- Pin=U1-PC5
+Add Differential Pair: Number of nets in differential pair TS_Sns+ is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair TS_Sns- is 1 instead of 2

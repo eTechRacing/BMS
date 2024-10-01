@@ -1,0 +1,14 @@
+../Core/Src/LTC6811-1_eTechRacing.c:54:6:Balancing	12
+../Core/Src/LTC6811-1_eTechRacing.c:95:10:MUX_SWITCH	9
+../Core/Src/LTC6811-1_eTechRacing.c:129:6:outputCS	2
+../Core/Src/LTC6811-1_eTechRacing.c:143:6:wakeup_idle	2
+../Core/Src/LTC6811-1_eTechRacing.c:158:6:wakeup_sleep	2
+../Core/Src/LTC6811-1_eTechRacing.c:176:10:pec15_calc	2
+../Core/Src/LTC6811-1_eTechRacing.c:196:6:ltc6811_wrcfg	7
+../Core/Src/LTC6811-1_eTechRacing.c:269:6:ltc6811_wrpwm	10
+../Core/Src/LTC6811-1_eTechRacing.c:351:6:ltc6811_adcv	1
+../Core/Src/LTC6811-1_eTechRacing.c:397:6:ltc6811_rdcv_reg	7
+../Core/Src/LTC6811-1_eTechRacing.c:472:6:ltc6811_rav	4
+../Core/Src/LTC6811-1_eTechRacing.c:534:6:ltc6811_adax	1
+../Core/Src/LTC6811-1_eTechRacing.c:570:6:ltc6811_rdaux_reg	5
+../Core/Src/LTC6811-1_eTechRacing.c:632:6:ltc6811_rat	7

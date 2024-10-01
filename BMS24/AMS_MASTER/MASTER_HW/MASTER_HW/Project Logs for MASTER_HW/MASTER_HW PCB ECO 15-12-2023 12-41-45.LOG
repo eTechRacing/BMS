@@ -1,0 +1,6 @@
+Removed Member From Class: ClassName=Shutdown Member=X401
+Removed Member From Class: ClassName=Shutdown Member=X402
+Change Component Designator: OldDesignator=X402 NewDesignator=3
+Change Component Designator: OldDesignator=X403 NewDesignator=X402
+Added Member To Class: ClassName=Shutdown Member=Component X301 G5V-1-DC5
+Added Member To Class: ClassName=Shutdown Member=Component X302 G5V-1-DC5

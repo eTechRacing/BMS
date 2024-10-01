@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetC101_1 Pin=J102-1
+Removed Pin From Net: NetName=+12 Pin=J102-2
+Removed Member From Class: ClassName=Supply Member=J102
+Change Component Description : Designator=R404 Old Description=Res, 1K, 100W, To-247, Thick Film Rohs Compliant: Yes New Description=Res, 1K, 100W, To-247, Thick Film Rohs Compliant: Yes |Cgs Te Connectivity MPT100C1K0F

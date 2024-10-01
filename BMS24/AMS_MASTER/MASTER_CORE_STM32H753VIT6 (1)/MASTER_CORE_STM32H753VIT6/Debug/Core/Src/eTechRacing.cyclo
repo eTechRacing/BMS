@@ -1,0 +1,10 @@
+../Core/Src/eTechRacing.c:21:6:delay_us	2
+../Core/Src/eTechRacing.c:30:10:Min_Volt	25
+../Core/Src/eTechRacing.c:45:10:Max_Volt	25
+../Core/Src/eTechRacing.c:59:7:Mean_Volt	2
+../Core/Src/eTechRacing.c:69:10:Sum_Volt	2
+../Core/Src/eTechRacing.c:78:10:Min_Temp	3
+../Core/Src/eTechRacing.c:89:10:Max_Temp	3
+../Core/Src/eTechRacing.c:100:7:Mean_Temp	2
+../Core/Src/eTechRacing.c:112:6:Conv_Temp	5
+../Core/Src/eTechRacing.c:127:9:Curr_EVAL	1

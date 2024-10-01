@@ -1,0 +1,4 @@
+AMS_CAN=AMS_CAN_TXD,AMS_CAN_RXD
+CAN1=CAN1_RXD,CAN1_TXD
+Relays_Control=AIRPlus_Control,AIRMinus_Control,Precharge_Control
+Shutdown Monitoring=IMD_Monitoring,SC_Monitoring

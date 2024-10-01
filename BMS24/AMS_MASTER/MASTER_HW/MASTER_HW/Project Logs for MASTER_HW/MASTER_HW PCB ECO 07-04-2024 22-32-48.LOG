@@ -1,0 +1,51 @@
+Added Component: Designator=U1(ETR_SHIELD_III)
+Added Pin To Net: NetName=VCC Pin=U1-3V3_1
+Added Pin To Net: NetName=VCC Pin=U1-3V3_2
+Added Pin To Net: NetName=VCC Pin=U1-3V3_3
+Added Pin To Net: NetName=VCC Pin=U1-3V3_4
+Added Pin To Net: NetName=VCC Pin=U1-3V3_5
+Added Pin To Net: NetName=VCC Pin=U1-3V3_6
+Added Pin To Net: NetName=VCC Pin=U1-3V3_7
+Added Pin To Net: NetName=+5 Pin=U1-5V_1
+Added Pin To Net: NetName=+5 Pin=U1-5V_2
+Added Pin To Net: NetName=+5 Pin=U1-5V_3
+Added Pin To Net: NetName=+5 Pin=U1-5V_4
+Added Pin To Net: NetName=+5 Pin=U1-5V_5
+Added Pin To Net: NetName=+5 Pin=U1-5V_6
+Added Pin To Net: NetName=+5 Pin=U1-5V_7
+Added Pin To Net: NetName=CAN1_H Pin=U1-CAN1H
+Added Pin To Net: NetName=CAN1_L Pin=U1-CAN1L
+Added Pin To Net: NetName=GND Pin=U1-GND_1
+Added Pin To Net: NetName=GND Pin=U1-GND_2
+Added Pin To Net: NetName=GND Pin=U1-GND_3
+Added Pin To Net: NetName=GND Pin=U1-GND_4
+Added Pin To Net: NetName=GND Pin=U1-GND_5
+Added Pin To Net: NetName=GND Pin=U1-GND_6
+Added Pin To Net: NetName=GND Pin=U1-GND_7
+Added Pin To Net: NetName=GND Pin=U1-GND_8
+Added Pin To Net: NetName=GND Pin=U1-GND_9
+Added Pin To Net: NetName=GND Pin=U1-GND_10
+Added Pin To Net: NetName=GND Pin=U1-GND_11
+Added Pin To Net: NetName=LV+_in Pin=U1-LVtr_2
+Added Pin To Net: NetName=LV+_in Pin=U1-LVtr_3
+Added Pin To Net: NetName=LV+_in Pin=U1-LVtr_4
+Added Pin To Net: NetName=VCC Pin=U1-NC_2
+Added Pin To Net: NetName=AIRPlus_Control Pin=U1-PA5
+Added Pin To Net: NetName=Precharge_Control Pin=U1-PA6
+Added Pin To Net: NetName=AIRMinus_Control Pin=U1-PA7
+Added Pin To Net: NetName=VCC Pin=U1-PA10
+Added Pin To Net: NetName=SPI1_SCK Pin=U1-PB3
+Added Pin To Net: NetName=SPI1_MISO Pin=U1-PB4
+Added Pin To Net: NetName=SPI1_MOSI Pin=U1-PB5
+Added Pin To Net: NetName=LTC6820_CS Pin=U1-PB6
+Added Pin To Net: NetName=SC_END_Monitoring Pin=U1-PC15
+Added Pin To Net: NetName=SPI1_SCK Pin=U1-PD4
+Added Pin To Net: NetName=SPI1_MISO Pin=U1-PD5
+Added Pin To Net: NetName=SPI1_MOSI Pin=U1-PD6
+Added Pin To Net: NetName=LTC6820_CS Pin=U1-PD7
+Added Pin To Net: NetName=BMS_Monitoring Pin=U1-PE2
+Added Pin To Net: NetName=BMS_ERROR Pin=U1-PE3
+Added Pin To Net: NetName=IMD_Monitoring Pin=U1-PE6
+Add Differential Pair: Number of nets in differential pair TS_Sns+ is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair TS_Sns- is 1 instead of 2
+Added Member To Class: ClassName=AMS_Master Member=Component U1 ETR_SHIELD_III

@@ -1,0 +1,45 @@
+Added Component: Designator=J101(61301311821)
+Added Component: Designator=J201(61301311821)
+Added Component: Designator=J301(61301311821)
+Add Pin To Net: Unknown Pin: Pin J101-1
+Add Pin To Net: Unknown Pin: Pin J101-2
+Add Pin To Net: Unknown Pin: Pin J101-3
+Add Pin To Net: Unknown Pin: Pin J101-4
+Add Pin To Net: Unknown Pin: Pin J101-5
+Add Pin To Net: Unknown Pin: Pin J101-6
+Add Pin To Net: Unknown Pin: Pin J101-7
+Add Pin To Net: Unknown Pin: Pin J101-8
+Add Pin To Net: Unknown Pin: Pin J101-9
+Add Pin To Net: Unknown Pin: Pin J101-10
+Add Pin To Net: Unknown Pin: Pin J101-11
+Add Pin To Net: Unknown Pin: Pin J101-12
+Add Pin To Net: Unknown Pin: Pin J101-13
+Add Pin To Net: Unknown Pin: Pin J201-1
+Add Pin To Net: Unknown Pin: Pin J201-2
+Add Pin To Net: Unknown Pin: Pin J201-3
+Add Pin To Net: Unknown Pin: Pin J201-4
+Add Pin To Net: Unknown Pin: Pin J201-5
+Add Pin To Net: Unknown Pin: Pin J201-6
+Add Pin To Net: Unknown Pin: Pin J201-7
+Add Pin To Net: Unknown Pin: Pin J201-8
+Add Pin To Net: Unknown Pin: Pin J201-9
+Add Pin To Net: Unknown Pin: Pin J201-10
+Add Pin To Net: Unknown Pin: Pin J201-11
+Add Pin To Net: Unknown Pin: Pin J201-12
+Add Pin To Net: Unknown Pin: Pin J201-13
+Add Pin To Net: Unknown Pin: Pin J301-1
+Add Pin To Net: Unknown Pin: Pin J301-2
+Add Pin To Net: Unknown Pin: Pin J301-3
+Add Pin To Net: Unknown Pin: Pin J301-4
+Add Pin To Net: Unknown Pin: Pin J301-5
+Add Pin To Net: Unknown Pin: Pin J301-6
+Add Pin To Net: Unknown Pin: Pin J301-7
+Add Pin To Net: Unknown Pin: Pin J301-8
+Add Pin To Net: Unknown Pin: Pin J301-9
+Add Pin To Net: Unknown Pin: Pin J301-10
+Add Pin To Net: Unknown Pin: Pin J301-11
+Add Pin To Net: Unknown Pin: Pin J301-12
+Add Pin To Net: Unknown Pin: Pin J301-13
+Add Class Member: Failed to add class member : Component J101 WR-PHD Socket Header
+Add Class Member: Failed to add class member : Component J201 WR-PHD Socket Header1
+Add Class Member: Failed to add class member : Component J301 WR-PHD Socket Header2

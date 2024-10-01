@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=AIRPlus_Control Pin=J4-6
+Added Pin To Net: NetName=AIRPlus_Control Pin=J4-8
+Added Pin To Net: NetName=AIRMinus_Control Pin=J4-10
+Added Pin To Net: NetName=AIRMinus_Control Pin=J4-12

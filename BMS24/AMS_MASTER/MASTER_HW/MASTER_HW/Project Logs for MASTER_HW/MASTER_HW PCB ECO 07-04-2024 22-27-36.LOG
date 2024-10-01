@@ -1,0 +1,14 @@
+Added Component: Designator=U504(SOIC, 8 Pin 1.27 mm, Body 10,90x3,90mm,)
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "595-ISO224ADWVR"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC507_1 Pin=U504-1
+Added Pin To Net: NetName=TS_Voltage_Divider Pin=U504-2
+Added Pin To Net: NetName=+5 TS Pin=U504-3
+Added Pin To Net: NetName=TS- Pin=U504-4
+Added Pin To Net: NetName=GND Pin=U504-5
+Added Pin To Net: NetName=TS_Sns- Pin=U504-6
+Added Pin To Net: NetName=TS_Sns+ Pin=U504-7
+Added Pin To Net: NetName=VCC Pin=U504-8
+Add Differential Pair: Number of nets in differential pair TS_Sns+ is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair TS_Sns- is 1 instead of 2
+Added Member To Class: ClassName=High_Voltage Member=Component U504 ISO224

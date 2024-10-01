@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NTC6 Pin=J102-6
+Removed Pin From Net: NetName=NTC7 Pin=J102-7
+Added Pin To Net: NetName=NTC7 Pin=J102-6
+Added Pin To Net: NetName=NTC6 Pin=J102-7
+Change Net Name : Old Net Name=NTC6 New Net Name=NTC7
+Change Net Name : Old Net Name=NTC7 New Net Name=NTC6

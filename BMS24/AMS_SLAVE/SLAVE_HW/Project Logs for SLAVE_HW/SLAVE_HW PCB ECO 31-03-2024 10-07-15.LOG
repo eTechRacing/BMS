@@ -1,0 +1,3 @@
+Removed Pin From Net: NetName=Cell12 Pin=J101-12
+Added Pin To Net: NetName=Cell11 Pin=J101-12
+Added Pin To Net: NetName=Cell12 Pin=J101-13

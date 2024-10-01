@@ -1,0 +1,2 @@
+Change Component Designator: OldDesignator=T* NewDesignator=T201
+Added Pin To Net: NetName=I_P Pin=T201-1

@@ -1,0 +1,10 @@
+../Core/Src/errors.c:17:10:OV_EVAL	5
+../Core/Src/errors.c:36:11:UV_EVAL	26
+../Core/Src/errors.c:63:11:OT_EVAL	4
+../Core/Src/errors.c:80:10:UT_EVAL	4
+../Core/Src/errors.c:95:10:ETAS_SYNC_EVAL	2
+../Core/Src/errors.c:103:10:CURR_SYNC_EVAL	2
+../Core/Src/errors.c:111:10:BALANCING_SYNC_EVAL	2
+../Core/Src/errors.c:121:10:detection_BMSerror_OverCurrent	4
+../Core/Src/errors.c:136:10:slave_disc	7
+../Core/Src/errors.c:161:10:current_error_eval	3

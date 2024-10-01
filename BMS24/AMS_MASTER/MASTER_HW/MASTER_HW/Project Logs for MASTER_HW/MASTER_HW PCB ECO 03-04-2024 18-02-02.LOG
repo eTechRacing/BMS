@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=CAN1H Pin=J3-1
+Added Net: Name=CAN1H
+Added Pin To Net: NetName=CAN1L Pin=J3-2
+Added Net: Name=CAN1L

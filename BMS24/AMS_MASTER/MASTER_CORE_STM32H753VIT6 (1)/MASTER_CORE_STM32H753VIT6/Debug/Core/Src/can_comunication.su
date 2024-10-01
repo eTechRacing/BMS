@@ -1,0 +1,13 @@
+../Core/Src/can_comunication.c:33:6:CAN1_FILTER_INIT	16	static
+../Core/Src/can_comunication.c:43:6:CAN2_FILTER_INIT	16	static
+../Core/Src/can_comunication.c:53:6:CAN1_CONFIG_INIT	8	static
+../Core/Src/can_comunication.c:59:6:CAN2_CONFIG_INIT	8	static
+../Core/Src/can_comunication.c:65:6:message_cantx_TEMPERATURES_IT	16	static
+../Core/Src/can_comunication.c:106:6:message_cantx_VOLTATJES_IT	16	static
+../Core/Src/can_comunication.c:183:7:message_cantx_SF	40	static
+../Core/Src/can_comunication.c:200:7:message_cantx_AIR_State	8	static
+../Core/Src/can_comunication.c:219:7:message_cantx_Temperature_State	8	static
+../Core/Src/can_comunication.c:243:7:message_cantx_Voltage_State	8	static
+../Core/Src/can_comunication.c:270:7:message_cantx_Keep_Alive	8	static
+../Core/Src/can_comunication.c:290:7:message_cantx_Shutdown	8	static
+../Core/Src/can_comunication.c:305:10:combined_bits	24	static

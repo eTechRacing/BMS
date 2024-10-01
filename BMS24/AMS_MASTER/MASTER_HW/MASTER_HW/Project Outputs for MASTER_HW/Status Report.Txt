@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [MASTER_HW.PcbDoc]
+   Generated File[MASTER_HW-RoundHoles.TXT]
+   Generated File[MASTER_HW-SlotHoles.TXT]
+   Generated File[MASTER_HW.LDP]
+   Generated File[MASTER_HW.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 21:19:17 On 26/04/2024

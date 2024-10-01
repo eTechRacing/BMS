@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=NTC6 Pin=R305-1
+Removed Pin From Net: NetName=NTC8_9 Pin=R306-1
+Removed Pin From Net: NetName=NTC5 Pin=R307-1
+Removed Pin From Net: NetName=NTC7 Pin=R308-1
+Removed Pin From Net: NetName=NTC6 Pin=U301-1
+Removed Pin From Net: NetName=NTC5 Pin=U301-2
+Removed Pin From Net: NetName=NTC7 Pin=U301-4
+Removed Pin From Net: NetName=NTC8_9 Pin=U301-5
+Added Pin To Net: NetName=NTC5 Pin=R305-1
+Added Pin To Net: NetName=NTC6 Pin=R306-1
+Added Pin To Net: NetName=NTC7 Pin=R307-1
+Added Pin To Net: NetName=NTC8_9 Pin=R308-1
+Added Pin To Net: NetName=NTC5 Pin=U301-1
+Added Pin To Net: NetName=NTC7 Pin=U301-2
+Added Pin To Net: NetName=NTC8_9 Pin=U301-4
+Added Pin To Net: NetName=NTC6 Pin=U301-5

@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=GPIO2 Pin=C304-2
+Added Member To Class: ClassName=Temperatures Member=Component C303 885012207122
+Added Member To Class: ClassName=Temperatures Member=Component C304 885012207128
+Added Member To Class: ClassName=Temperatures Member=Component NTC9 NTCS0805E3104SMT

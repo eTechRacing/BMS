@@ -1,0 +1,23 @@
+Removed Member From Class: ClassName=Relays_Control Member=Q401
+Removed Member From Class: ClassName=Relays_Control Member=R401
+Removed Member From Class: ClassName=Relays_Control Member=R402
+Removed Member From Class: ClassName=Relays_Control Member=R403
+Removed Member From Class: ClassName=Relays_Control Member=R404
+Add Component: Footprint Not Found WPME-FISM_SIP-7_L19.65W7.05H10.16
+Add Component: Footprint Not Found WE-TPC_4818
+Add Pin To Net: Unknown Pin: Pin DCDC401-1
+Add Pin To Net: Unknown Pin: Pin DCDC401-2
+Add Pin To Net: Unknown Pin: Pin DCDC401-5
+Add Pin To Net: Unknown Pin: Pin DCDC401-7
+Add Pin To Net: Unknown Pin: Pin L401-1
+Add Pin To Net: Unknown Pin: Pin L401-2
+Add Differential Pair: Number of nets in differential pair I_M is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair I is 1 instead of 2
+Add Class Member: Failed to add class member : Component DCDC401 1779405141
+Add Class Member: Failed to add class member : Component L401 744042470
+Added Member To Class: ClassName=Relays_Control Member=Component Q301 CPH3455-TL-H
+Added Member To Class: ClassName=Relays_Control Member=Component R301 CR0805-JW-103ELF
+Added Member To Class: ClassName=Relays_Control Member=Component R302 CR0805-JW-103ELF
+Added Member To Class: ClassName=Relays_Control Member=Component R303 CR0805-JW-103ELF
+Added Member To Class: ClassName=Relays_Control Member=Component R304 R470-TO247
+Added Class: Name=diff90

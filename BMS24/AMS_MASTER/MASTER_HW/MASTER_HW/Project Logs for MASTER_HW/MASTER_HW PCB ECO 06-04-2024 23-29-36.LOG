@@ -1,0 +1,4 @@
+Change Component Description : Designator=R404 Old Description=Res, 1K, 100W, To-247, Thick Film Rohs Compliant: Yes New Description=Res, 1K, 100W, To-247, Thick Film Rohs Compliant: Yes |Cgs Te Connectivity MPT100C1K0F
+Change Net Name : Old Net Name=CAN1_N New Net Name=CAN1_L
+Change Net Name : Old Net Name=CAN1_P New Net Name=CAN1_H
+Added Differential Pair: Name=CAN1

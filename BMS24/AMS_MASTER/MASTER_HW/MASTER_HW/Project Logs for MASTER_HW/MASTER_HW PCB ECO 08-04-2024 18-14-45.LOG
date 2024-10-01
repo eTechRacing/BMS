@@ -1,0 +1,5 @@
+Added Pin To Net: NetName=V_Ref_AD8479 Pin=R507-2
+Added Pin To Net: NetName=V_Ref_AD8479 Pin=R508-1
+Added Pin To Net: NetName=V_Ref_AD8479 Pin=U505-1
+Added Pin To Net: NetName=V_Ref_AD8479 Pin=U505-5
+Added Net: Name=V_Ref_AD8479

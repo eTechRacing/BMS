@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=SC_END_Monitoring Pin=U1-PC15
+Added Pin To Net: NetName=BMS_ERROR Pin=U1-PE3
+Added Pin To Net: NetName=IMD_Monitoring Pin=U1-PE6

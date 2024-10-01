@@ -1,0 +1,101 @@
+Removed Pin From Net: NetName=NetD102_K Pin=F101-1
+Removed Member From Class: ClassName=Supply Member=C201
+Removed Member From Class: ClassName=Supply Member=C203
+Removed Member From Class: ClassName=isoSPI Member=C302
+Removed Member From Class: ClassName=Supply Member=C302
+Removed Member From Class: ClassName=Shutdown Member=D401
+Removed Member From Class: ClassName=Shutdown Member=D402
+Removed Member From Class: ClassName=Supply Member=L201
+Removed Member From Class: ClassName=Shutdown Member=Q402
+Removed Member From Class: ClassName=Shutdown Member=Q403
+Removed Member From Class: ClassName=High_Voltage Member=Q601
+Removed Member From Class: ClassName=Relays_Control Member=Q601
+Removed Member From Class: ClassName=Shutdown Member=Q601
+Removed Member From Class: ClassName=isoSPI Member=R304
+Removed Member From Class: ClassName=Relays_Control Member=R304
+Removed Member From Class: ClassName=isoSPI Member=R305
+Removed Member From Class: ClassName=isoSPI Member=R306
+Removed Member From Class: ClassName=Shutdown Member=R401
+Removed Member From Class: ClassName=isoSPI Member=R402
+Removed Member From Class: ClassName=Shutdown Member=R402
+Removed Member From Class: ClassName=isoSPI Member=R403
+Removed Member From Class: ClassName=Shutdown Member=R403
+Removed Member From Class: ClassName=High_Voltage Member=R601
+Removed Member From Class: ClassName=High_Voltage Member=R602
+Removed Member From Class: ClassName=High_Voltage Member=R603
+Removed Member From Class: ClassName=High_Voltage Member=R604
+Removed Member From Class: ClassName=High_Voltage Member=R605
+Removed Member From Class: ClassName=High_Voltage Member=R606
+Removed Member From Class: ClassName=Shutdown Member=X402
+Added Component: Designator=D102(DSC-0.5A-40V/SOD23)
+Add component (AddParameter): Name = ".Creator"; Value = "GP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".PCBcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = ".SCHcheck"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Average Rectified Current"; Value = "500mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Diode"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://my.centralsemi.com/datasheets/CMDSH05-4.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "Where buy it"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://eu.mouser.com/ProductDetail/Central-Semiconductor/CMDSH05-4-TR-PBFREE?qs=u16ybLDytRZ65hpUpJcxrg%3D%3D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Element Configuration"; Value = "Single"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Current"; Value = "500mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "470mV"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Length"; Value = "1.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Central Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CMDSH05-4TR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Forward Surge Current (Ifsm)"; Value = "10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "150°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Power Dissipation"; Value = "250mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Repetitive Reverse Voltage (Vrrm)"; Value = "40V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Reverse Current"; Value = "100uA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Reverse Voltage (DC)"; Value = "40V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-65°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "3000"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Non-Repetitive Surge Current"; Value = "10A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Dissipation"; Value = "250mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0,39000, 10=0,32000, 100=0,21790, 500=0,16342, 1000=0,12256 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Radiation Hardening"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "1514-CMDSH05-4TRPBFREEDKR-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "SMD/SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Weight"; Value = "0.001164oz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "1.35mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+24 Pin=D102-A
+Add Pin To Net: Unknown Pin: Pin D102-K
+Added Member To Class: ClassName=Supply Member=Component C101 885012008055
+Added Member To Class: ClassName=Supply Member=Component C102 885012008055
+Added Member To Class: ClassName=Supply Member=Component C103 885012207103
+Added Member To Class: ClassName=isoSPI Member=Component C202 885012007057
+Added Member To Class: ClassName=Supply Member=Component D102 CMDSH05-4 TR PBFREE
+Added Member To Class: ClassName=Shutdown Member=Component D301 MBR0530
+Added Member To Class: ClassName=Shutdown Member=Component D302 MBR0530
+Added Member To Class: ClassName=Supply Member=Component L101 744042470
+Added Member To Class: ClassName=Shutdown Member=Component Q301 CPH3455-TL-H
+Added Member To Class: ClassName=Shutdown Member=Component Q302 CPH3455-TL-H
+Added Member To Class: ClassName=Shutdown Member=Component Q303 CPH3455-TL-H
+Added Member To Class: ClassName=Relays_Control Member=Component Q401 CPH3455-TL-H
+Added Member To Class: ClassName=High_Voltage Member=Component Q501 SQ2318BES-T1_GE3
+Added Member To Class: ClassName=isoSPI Member=Component R202 CR0805-JW-472ELF
+Added Member To Class: ClassName=isoSPI Member=Component R203 CR0805-JW-102ELF
+Added Member To Class: ClassName=isoSPI Member=Component R204 CR0805-JW-102ELF
+Added Member To Class: ClassName=isoSPI Member=Component R205 CRCW080550R0FKTA
+Added Member To Class: ClassName=isoSPI Member=Component R206 CRCW080550R0FKTA
+Added Member To Class: ClassName=Shutdown Member=Component R301 CR0805-JW-103ELF
+Added Member To Class: ClassName=Shutdown Member=Component R302 CR0805-JW-103ELF
+Added Member To Class: ClassName=Shutdown Member=Component R303 CR0805-FX-1000ELF
+Added Member To Class: ClassName=Relays_Control Member=Component R404 R470-TO247
+Added Member To Class: ClassName=High_Voltage Member=Component R501 3296W-1-103LF
+Added Member To Class: ClassName=High_Voltage Member=Component R502 R2M-2512FTK
+Added Member To Class: ClassName=High_Voltage Member=Component R503 CRCW120610K0FKEA
+Added Member To Class: ClassName=High_Voltage Member=Component R504 CR0805-JW-103ELF
+Added Member To Class: ClassName=High_Voltage Member=Component R505 CR0805-JW-102ELF
+Added Member To Class: ClassName=High_Voltage Member=Component R506 CR0805-FX-4700GLF
+Added Member To Class: ClassName=Shutdown Member=Component X302 G5V-1-DC5

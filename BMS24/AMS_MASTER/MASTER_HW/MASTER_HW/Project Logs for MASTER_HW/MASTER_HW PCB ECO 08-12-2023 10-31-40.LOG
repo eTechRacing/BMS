@@ -1,0 +1,11 @@
+Add Component: Footprint Not Found WPME-FISM_SIP-7_L19.65W7.05H10.16
+Add Component: Footprint Not Found WE-TPC_4818
+Add Pin To Net: Unknown Pin: Pin DCDC301-1
+Add Pin To Net: Unknown Pin: Pin DCDC301-2
+Add Pin To Net: Unknown Pin: Pin DCDC301-5
+Add Pin To Net: Unknown Pin: Pin DCDC301-7
+Add Pin To Net: Unknown Pin: Pin L301-1
+Add Pin To Net: Unknown Pin: Pin L301-2
+Add Differential Pair: Number of nets in differential pair I is 1 instead of 2
+Add Class Member: Failed to add class member : Component DCDC301 1779405141
+Add Class Member: Failed to add class member : Component L301 744042470

@@ -1,0 +1,39 @@
+Change Component Footprint: Designator=J101 Old Footprint=61301311821 New Footprint=61301311821
+Change Component Footprint: Designator=J201 Old Footprint=61301311821 New Footprint=61301311821
+Change Component Footprint: Designator=J301 Old Footprint=61301311821 New Footprint=61301311821
+Added Pin To Net: NetName=NetF208_2 Pin=F308-2
+Added Pin To Net: NetName=NetF208_2 Pin=J301-10
+Added Pin To Net: NetName=NetF310_2 Pin=J301-12
+Change Net Name : Old Net Name=NetF101_2 New Net Name=c1_1
+Change Net Name : Old Net Name=NetF102_2 New Net Name=c2_1
+Change Net Name : Old Net Name=NetF103_2 New Net Name=c3_1
+Change Net Name : Old Net Name=NetF104_2 New Net Name=c4_1
+Change Net Name : Old Net Name=NetF105_2 New Net Name=c5_1
+Change Net Name : Old Net Name=NetF106_2 New Net Name=c6_1
+Change Net Name : Old Net Name=NetF107_2 New Net Name=c7_1
+Change Net Name : Old Net Name=NetF108_2 New Net Name=c8_1
+Change Net Name : Old Net Name=NetF201_2 New Net Name=c1_2
+Change Net Name : Old Net Name=NetF202_2 New Net Name=c2_2
+Change Net Name : Old Net Name=NetF203_2 New Net Name=c3_2
+Change Net Name : Old Net Name=NetF204_2 New Net Name=c4_2
+Change Net Name : Old Net Name=NetF205_2 New Net Name=c5_2
+Change Net Name : Old Net Name=NetF206_2 New Net Name=c6_2
+Change Net Name : Old Net Name=NetF207_2 New Net Name=c7_2
+Change Net Name : Old Net Name=NetF208_2 New Net Name=c8_3
+Change Net Name : Old Net Name=NetF301_2 New Net Name=c1_3
+Change Net Name : Old Net Name=NetF302_2 New Net Name=c2_3
+Change Net Name : Old Net Name=NetF303_2 New Net Name=c3_3
+Change Net Name : Old Net Name=NetF304_2 New Net Name=c4_3
+Change Net Name : Old Net Name=NetF305_2 New Net Name=c5_3
+Change Net Name : Old Net Name=NetF306_2 New Net Name=c6_3
+Change Net Name : Old Net Name=NetF307_2 New Net Name=c7_3
+Added Pin To Net: NetName=c9_1 Pin=F109-2
+Added Pin To Net: NetName=c9_1 Pin=J101-11
+Added Net: Name=c9_1
+Added Pin To Net: NetName=c9_3 Pin=F309-2
+Added Pin To Net: NetName=c9_3 Pin=J301-11
+Added Net: Name=c9_3
+Added Pin To Net: NetName=c10_1 Pin=F110-2
+Added Pin To Net: NetName=c10_1 Pin=J101-12
+Added Pin To Net: NetName=c10_1 Pin=J101-13
+Added Net: Name=c10_1

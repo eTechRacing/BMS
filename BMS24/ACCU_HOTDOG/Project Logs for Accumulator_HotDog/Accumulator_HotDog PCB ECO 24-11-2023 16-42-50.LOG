@@ -1,0 +1,45 @@
+Added Component: Designator=WR-PHD Socket Header1(61301311821)
+Added Component: Designator=WR-PHD Socket Header2(61301311821)
+Added Component: Designator=WR-PHD Socket Header(61301311821)
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header1-1
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header1-2
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header1-3
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header1-4
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header1-5
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header1-6
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header1-7
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header1-8
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header1-9
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header1-10
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header1-11
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header1-12
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header1-13
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header2-1
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header2-2
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header2-3
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header2-4
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header2-5
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header2-6
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header2-7
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header2-8
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header2-9
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header2-10
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header2-11
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header2-12
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header2-13
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-1
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-2
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-3
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-4
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-5
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-6
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-7
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-8
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-9
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-10
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-11
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-12
+Add Pin To Net: Unknown Pin: Pin WR-PHD Socket Header-13
+Add Class Member: Failed to add class member : Component WR-PHD Socket Header1 J201
+Add Class Member: Failed to add class member : Component WR-PHD Socket Header2 J301
+Add Class Member: Failed to add class member : Component WR-PHD Socket Header J101

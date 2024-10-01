@@ -1,0 +1,6 @@
+Change Net Name : Old Net Name=CAN1H New Net Name=CAN1_H
+Change Net Name : Old Net Name=CAN1L New Net Name=CAN1_L
+Change Differential Pair Positive Net Name : Old Net Name=I_P New Net Name=I_P
+Change Differential Pair Negative Net Name : Old Net Name=I_N New Net Name=I_N
+Add Differential Pair: Number of nets in differential pair CAN1_H is 1 instead of 2
+Add Differential Pair: Number of nets in differential pair CAN1_L is 1 instead of 2

@@ -1,0 +1,116 @@
+Removed Pin From Net: NetName=NTC1 Pin=J102-1
+Removed Pin From Net: NetName=GND_Slave Pin=J102-8
+Removed Pin From Net: NetName=NetL201_2 Pin=TP201-1
+Removed Pin From Net: NetName=NetL202_2 Pin=TP202-1
+Removed Pin From Net: NetName=NetL203_2 Pin=TP203-1
+Removed Pin From Net: NetName=NetL204_2 Pin=TP204-1
+Removed Pin From Net: NetName=NetL205_2 Pin=TP205-1
+Removed Pin From Net: NetName=NetL206_2 Pin=TP206-1
+Removed Pin From Net: NetName=NetL207_2 Pin=TP207-1
+Removed Pin From Net: NetName=NetL208_2 Pin=TP208-1
+Removed Pin From Net: NetName=NetL209_2 Pin=TP209-1
+Removed Pin From Net: NetName=NetL210_2 Pin=TP210-1
+Removed Pin From Net: NetName=NetL211_2 Pin=TP211-1
+Removed Pin From Net: NetName=NetL212_2 Pin=TP212-1
+Removed Pin From Net: NetName=NetL213_2 Pin=TP213-1
+Removed Pin From Net: NetName=DTEN Pin=TP214-1
+Removed Pin From Net: NetName=Vref1 Pin=TP215-1
+Removed Pin From Net: NetName=NTC1 Pin=TP301-1
+Removed Pin From Net: NetName=NTC2 Pin=TP302-1
+Removed Pin From Net: NetName=NTC3 Pin=TP303-1
+Removed Pin From Net: NetName=NTC4 Pin=TP304-1
+Removed Pin From Net: NetName=NTC5 Pin=TP305-1
+Removed Pin From Net: NetName=NTC6 Pin=TP306-1
+Removed Pin From Net: NetName=NTC7 Pin=TP307-1
+Removed Pin From Net: NetName=NTC8 Pin=TP308-1
+Removed Pin From Net: NetName=GPIO3 Pin=TP309-1
+Removed Pin From Net: NetName=GPIO4 Pin=TP310-1
+Removed Pin From Net: NetName=GPIO5 Pin=TP311-1
+Removed Pin From Net: NetName=GPIO1 Pin=TP312-1
+Removed Pin From Net: NetName=Vref2 Pin=TP313-1
+Removed Pin From Net: NetName=GND_Slave Pin=TP314-1
+Removed Member From Class: ClassName=Balancing Member=TP201
+Removed Member From Class: ClassName=Balancing Member=TP202
+Removed Member From Class: ClassName=Balancing Member=TP203
+Removed Member From Class: ClassName=Balancing Member=TP204
+Removed Member From Class: ClassName=Balancing Member=TP205
+Removed Member From Class: ClassName=Balancing Member=TP206
+Removed Member From Class: ClassName=Balancing Member=TP207
+Removed Member From Class: ClassName=Balancing Member=TP208
+Removed Member From Class: ClassName=Balancing Member=TP209
+Removed Member From Class: ClassName=Balancing Member=TP210
+Removed Member From Class: ClassName=Balancing Member=TP211
+Removed Member From Class: ClassName=Balancing Member=TP212
+Removed Member From Class: ClassName=Balancing Member=TP213
+Removed Member From Class: ClassName=Balancing Member=TP214
+Removed Member From Class: ClassName=Balancing Member=TP215
+Removed Member From Class: ClassName=Temperatures Member=TP301
+Removed Member From Class: ClassName=Temperatures Member=TP302
+Removed Member From Class: ClassName=Temperatures Member=TP303
+Removed Member From Class: ClassName=Temperatures Member=TP304
+Removed Member From Class: ClassName=Temperatures Member=TP305
+Removed Member From Class: ClassName=Temperatures Member=TP306
+Removed Member From Class: ClassName=Temperatures Member=TP307
+Removed Member From Class: ClassName=Temperatures Member=TP308
+Removed Member From Class: ClassName=Temperatures Member=TP309
+Removed Member From Class: ClassName=Temperatures Member=TP310
+Removed Member From Class: ClassName=Temperatures Member=TP311
+Removed Member From Class: ClassName=Temperatures Member=TP312
+Removed Member From Class: ClassName=Temperatures Member=TP313
+Removed Member From Class: ClassName=Temperatures Member=TP314
+Added Component: Designator=J101(J_Pinheader_1x13)
+Add component (AddParameter): Name = "Category"; Value = "Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Color"; Value = "Black"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/cad/1737268.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/cad/1737268.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Connector Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Copper"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Mating Length"; Value = "0.236inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Type"; Value = "Male Pin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer 1"; Value = "Wurth Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61301311121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number 1"; Value = "61301211121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Positions"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "0.1inch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0,57000, 10=0,48400, 25=0,40400, 50=0,33700, 100=0,30600, 1000=0,27800 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 2"; Value = "5=0,73, 100=0,38, 375=0,36, 1500=0,344, 3000=0,324 (EUR)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reach SVHC Compliant"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Series"; Value = "WR-PHD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "2124"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 2"; Value = "70"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "Rs"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "8281610"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Cell0 Pin=J101-1
+Added Pin To Net: NetName=Cell1 Pin=J101-2
+Added Pin To Net: NetName=Cell2 Pin=J101-3
+Added Pin To Net: NetName=Cell3 Pin=J101-4
+Added Pin To Net: NetName=Cell4 Pin=J101-5
+Added Pin To Net: NetName=Cell5 Pin=J101-6
+Added Pin To Net: NetName=Cell6 Pin=J101-7
+Added Pin To Net: NetName=Cell7 Pin=J101-8
+Added Pin To Net: NetName=Cell8 Pin=J101-9
+Added Pin To Net: NetName=Cell9 Pin=J101-10
+Added Pin To Net: NetName=Cell10 Pin=J101-11
+Added Pin To Net: NetName=Cell11 Pin=J101-12
+Added Pin To Net: NetName=Cell12 Pin=J101-12
+Added Pin To Net: NetName=NTC8 Pin=J102-8
+Change Net Name : Old Net Name=NTC1 New Net Name=NetC301_2
+Added Pin To Net: NetName=NTC1 Pin=J102-1
+Added Net: Name=NTC1
+Added Member To Class: ClassName=[1]SLAVE_HW Member=Component J101 61301311121

@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=Cell12 Pin=J101-13
+Added Pin To Net: NetName=NTC8 Pin=C301-2
+Added Pin To Net: NetName=Cell12 Pin=J101-12
+Added Pin To Net: NetName=NTC8 Pin=J102-1
+Added Pin To Net: NetName=NTC8 Pin=R301-1
+Added Pin To Net: NetName=NTC8 Pin=U301-13
+Change Net Name : Old Net Name=NTC8 New Net Name=NTC1
