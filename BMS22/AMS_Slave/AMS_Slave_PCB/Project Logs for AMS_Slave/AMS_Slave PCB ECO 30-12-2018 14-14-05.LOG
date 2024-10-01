@@ -1,0 +1,89 @@
+Change component parameters: Designator = "R20"; Footprint = "352115RFT"; UniqueID = "\IPTOEXAI"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F9-1773463-5%7FD%7Fpdf%7FEnglish%7FENG_DS_9-1773463-5_D.pdf%7F2176070-5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "2W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15O"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R21"; Footprint = "352115RFT"; UniqueID = "\VQPMRTMM"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F9-1773463-5%7FD%7Fpdf%7FEnglish%7FENG_DS_9-1773463-5_D.pdf%7F2176070-5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "2W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15O"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R22"; Footprint = "352115RFT"; UniqueID = "\GUPBZDJK"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F9-1773463-5%7FD%7Fpdf%7FEnglish%7FENG_DS_9-1773463-5_D.pdf%7F2176070-5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "2W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15O"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R23"; Footprint = "352115RFT"; UniqueID = "\SKLKBIVH"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F9-1773463-5%7FD%7Fpdf%7FEnglish%7FENG_DS_9-1773463-5_D.pdf%7F2176070-5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "2W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15O"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R24"; Footprint = "352115RFT"; UniqueID = "\UANSQNFL"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F9-1773463-5%7FD%7Fpdf%7FEnglish%7FENG_DS_9-1773463-5_D.pdf%7F2176070-5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "2W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15O"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R25"; Footprint = "352115RFT"; UniqueID = "\WBFMLFJX"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F9-1773463-5%7FD%7Fpdf%7FEnglish%7FENG_DS_9-1773463-5_D.pdf%7F2176070-5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "2W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15O"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R26"; Footprint = "352115RFT"; UniqueID = "\GZRXKIWE"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F9-1773463-5%7FD%7Fpdf%7FEnglish%7FENG_DS_9-1773463-5_D.pdf%7F2176070-5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "2W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15O"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R27"; Footprint = "352115RFT"; UniqueID = "\FXTNTTVT"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F9-1773463-5%7FD%7Fpdf%7FEnglish%7FENG_DS_9-1773463-5_D.pdf%7F2176070-5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "2W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15O"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R28"; Footprint = "352115RFT"; UniqueID = "\QQMROLKR"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F9-1773463-5%7FD%7Fpdf%7FEnglish%7FENG_DS_9-1773463-5_D.pdf%7F2176070-5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "2W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15O"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R29"; Footprint = "352115RFT"; UniqueID = "\GCGLLZVA"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F9-1773463-5%7FD%7Fpdf%7FEnglish%7FENG_DS_9-1773463-5_D.pdf%7F2176070-5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "2W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15O"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R30"; Footprint = "352115RFT"; UniqueID = "\NZQIOPTE"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F9-1773463-5%7FD%7Fpdf%7FEnglish%7FENG_DS_9-1773463-5_D.pdf%7F2176070-5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "2W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15O"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R31"; Footprint = "352115RFT"; UniqueID = "\AQJOELTX"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7F9-1773463-5%7FD%7Fpdf%7FEnglish%7FENG_DS_9-1773463-5_D.pdf%7F2176070-5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "2W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15O"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=GND Pin=U2-7
+Added Pin To Net: NetName=GND Pin=U2-8
+Added Member To Class: ClassName=AMS_MCU Member=Component C5 1nF

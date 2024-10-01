@@ -1,0 +1,66 @@
+Removed Pin From Net: NetName=NetC3_2 Pin=R4-1
+Removed Pin From Net: NetName=TS- Pin=R4-2
+Change Component Comment : Designator=TP1 Old Comment=+5V New Comment=5007
+Change Component Comment : Designator=TP2 Old Comment=GND New Comment=5006
+Change component parameters: Designator = "C1"; Footprint = "WCAP-AT1H_13x20x5"; UniqueID = "\YPCKQCCK"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.de"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/pbs/datasheet/860241078002.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Life Cycle"; Value = "10000h"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-25 °C up to +105 °C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "860241078002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published Date"; Value = "June 2017"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage"; Value = "200V DC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size"; Value = "?13x20mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "47uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C2"; Footprint = "WCAP-AT1H_13x20x5"; UniqueID = "\NCOMVYPS"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.de"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/pbs/datasheet/860241078002.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Life Cycle"; Value = "10000h"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-25 °C up to +105 °C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "860241078002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published Date"; Value = "June 2017"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage"; Value = "200V DC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size"; Value = "?13x20mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "47uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C3"; Footprint = "WCAP-AT1H_13x20x5"; UniqueID = "\DTDAGAXM"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.de"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/pbs/datasheet/860241078002.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Life Cycle"; Value = "10000h"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-25 °C up to +105 °C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "860241078002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published Date"; Value = "June 2017"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage"; Value = "200V DC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size"; Value = "?13x20mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "47uF"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C4"; Footprint = "WCAP-AT1H_13x20x5"; UniqueID = "\NQNCFDBU"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.we-online.de"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://katalog.we-online.de/pbs/datasheet/860241078002.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Life Cycle"; Value = "10000h"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-25 °C up to +105 °C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part Number"; Value = "860241078002"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Published Date"; Value = "June 2017"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Rated Voltage"; Value = "200V DC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size"; Value = "?13x20mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "47uF"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=TS- Pin=R4-1
+Added Pin To Net: NetName=NetC3_2 Pin=R4-2
+Change Class Name : Old Net Name=TS_Supply_PCB New Net Name=Accumulator_DC-DC
+Added Member To Class: ClassName=Accumulator_DC-DC Member=Component TP2 5006
+Change Room Name: Old Name=TS_Supply_PCB New Name=Accumulator_DC-DC
+Change Room Scope: Old Scope=InComponentClass('TS_Supply_PCB') New Scope=InComponentClass('Accumulator_DC-DC')

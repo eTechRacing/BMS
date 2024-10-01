@@ -1,0 +1,35 @@
+Added Component: Designator=U1(PIC24HJ128GP502)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://ww1.microchip.com/downloads/en/devicedoc/70293g.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Microchip"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "28"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetR2_2 Pin=U1-1
+Added Pin To Net: NetName=NetR57_1 Pin=U1-2
+Added Pin To Net: NetName=GND Pin=U1-3
+Added Pin To Net: NetName=NetJ2_4 Pin=U1-4
+Added Pin To Net: NetName=NetJ2_5 Pin=U1-5
+Added Pin To Net: NetName=NetR6_2 Pin=U1-6
+Added Pin To Net: NetName=GND Pin=U1-7
+Added Pin To Net: NetName=GND Pin=U1-8
+Added Pin To Net: NetName=NetC2_1 Pin=U1-9
+Added Pin To Net: NetName=NetC3_1 Pin=U1-10
+Added Pin To Net: NetName=NetR71_1 Pin=U1-11
+Added Pin To Net: NetName=NetR72_1 Pin=U1-12
+Added Pin To Net: NetName=+3.3 Pin=U1-13
+Added Pin To Net: NetName=NetR58_1 Pin=U1-14
+Added Pin To Net: NetName=NetR59_1 Pin=U1-15
+Added Pin To Net: NetName=NetR60_1 Pin=U1-16
+Added Pin To Net: NetName=GND Pin=U1-17
+Added Pin To Net: NetName=GND Pin=U1-18
+Added Pin To Net: NetName=GND Pin=U1-19
+Added Pin To Net: NetName=NetC10_2 Pin=U1-20
+Added Pin To Net: NetName=NetJ1_3 Pin=U1-21
+Added Pin To Net: NetName=NetJ1_4 Pin=U1-22
+Added Pin To Net: NetName=NetR3_2 Pin=U1-23
+Added Pin To Net: NetName=NetR4_2 Pin=U1-24
+Added Pin To Net: NetName=NetU1_25 Pin=U1-25
+Added Pin To Net: NetName=NetU1_26 Pin=U1-26
+Added Pin To Net: NetName=GND Pin=U1-27
+Added Pin To Net: NetName=+3.3 Pin=U1-28
+Added Member To Class: ClassName=AMS_MCU Member=Component U1 PIC24HJ128GP502

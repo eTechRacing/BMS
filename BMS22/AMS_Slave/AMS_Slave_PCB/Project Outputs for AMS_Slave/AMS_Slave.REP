@@ -1,0 +1,369 @@
+*************************************************************
+FileName = AMS_Slave.GBR
+AutoAperture = True
+*************************************************************
+Generating : Courtyard Bottom
+      File : AMS_Slave.GM6
+
+    Adding Layer      : Courtyard Bottom
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : AMS_Slave.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+    D74
+*************************************************************
+
+*************************************************************
+Generating : Multi-Layer
+      File : AMS_Slave.GML
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+*************************************************************
+
+*************************************************************
+Generating : Dielectric 1
+      File : AMS_Slave.1
+
+    Adding Layer      : Dielectric 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : 3D Body Bottom
+      File : AMS_Slave.GM8
+
+    Adding Layer      : 3D Body Bottom
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Courtyard Top
+      File : AMS_Slave.GM5
+
+    Adding Layer      : Courtyard Top
+
+
+Used DCodes :
+    D74
+    D75
+*************************************************************
+
+*************************************************************
+Generating : Assembly Top
+      File : AMS_Slave.GM2
+
+    Adding Layer      : Assembly Top
+
+
+Used DCodes :
+    D74
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : AMS_Slave.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : AMS_Slave.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : AMS_Slave.GM15
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+    D74
+    D75
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 11
+      File : AMS_Slave.GM11
+
+    Adding Layer      : Mechanical 11
+
+
+Used DCodes :
+    D74
+*************************************************************
+
+*************************************************************
+Generating : 3D Body Top
+      File : AMS_Slave.GM7
+
+    Adding Layer      : 3D Body Top
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : AMS_Slave.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D17
+    D22
+    D23
+    D65
+    D66
+    D67
+    D68
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : AMS_Slave.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : AMS_Slave.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : AMS_Slave.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : AMS_Slave.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D14
+    D17
+    D22
+    D23
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : AMS_Slave.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D10
+    D12
+    D13
+    D14
+    D73
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : AMS_Slave.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D31
+    D36
+    D37
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D69
+    D70
+    D71
+    D72
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : AMS_Slave.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Assembly Bottom
+      File : AMS_Slave.GM3
+
+    Adding Layer      : Assembly Bottom
+
+
+Used DCodes :
+*************************************************************
+

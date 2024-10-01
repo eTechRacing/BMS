@@ -1,0 +1,14 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [AMS_Master.PrjPCB]
+   Generated File[AMS_Master.TXT]
+   Generated File[AMS_Master.DRL]
+   Generated File[AMS_Master-BoardEdgeRout.TXT]
+   Generated File[AMS_Master.LDP]
+   Generated File[AMS_Master.DRR]
+
+
+Files Generated   : 5
+Documents Printed : 0
+
+Finished Output Generation At 11:47:59 On 03/02/2019
