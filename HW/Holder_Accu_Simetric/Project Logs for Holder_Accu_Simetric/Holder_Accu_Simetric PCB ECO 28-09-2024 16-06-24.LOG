@@ -1,0 +1,25 @@
+Added Component: Designator=J3(J_NanoFit_1X2_V)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "1053092202"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=1,09, 10=0,839, 50=0,839, 100=0,686, 1000=0,571, 10000=0,507 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "6299"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "538-105309-2202"; VariantName = "[No Variations]"
+Added Component: Designator=J4(J_NanoFit_1X2_V)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "1053092202"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=1,09, 10=0,839, 50=0,839, 100=0,686, 1000=0,571, 10000=0,507 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "6299"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "538-105309-2202"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=IP Pin=J3-2
+Added Pin To Net: NetName=IP Pin=J4-1
+Added Net: Name=IP
+Added Pin To Net: NetName=NetJ3_1 Pin=J3-1
+Added Pin To Net: NetName=NetJ3_1 Pin=J4-2
+Added Net: Name=NetJ3_1
+Added Member To Class: ClassName=Holder_Accu_Simetric Member=Component J2 459850121
+Added Member To Class: ClassName=Holder_Accu_Simetric Member=Component J3 J_Nanofit_1x2_V
+Added Member To Class: ClassName=Holder_Accu_Simetric Member=Component J4 J_Nanofit_1x2_V

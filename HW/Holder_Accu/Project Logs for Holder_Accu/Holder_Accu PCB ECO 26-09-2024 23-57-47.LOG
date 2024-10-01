@@ -1,0 +1,18 @@
+Change Component Footprint: Designator=TP0 Old Footprint=TESTPOINT_BL New Footprint=TESTPOINT_WIDE
+Change Component Footprint: Designator=TP2 Old Footprint=TESTPOINT_BL New Footprint=TESTPOINT_WIDE
+Change Component Footprint: Designator=TP4 Old Footprint=TESTPOINT_BL New Footprint=TESTPOINT_WIDE
+Change Component Footprint: Designator=TP6 Old Footprint=TESTPOINT_BL New Footprint=TESTPOINT_WIDE
+Change Component Footprint: Designator=TP8 Old Footprint=TESTPOINT_BL New Footprint=TESTPOINT_WIDE
+Change Component Footprint: Designator=TP10 Old Footprint=TESTPOINT_BL New Footprint=TESTPOINT_WIDE
+Change Component Footprint: Designator=TP12 Old Footprint=TESTPOINT_BL New Footprint=TESTPOINT_WIDE
+Change Component Footprint: Designator=TP14 Old Footprint=TESTPOINT_BL New Footprint=TESTPOINT_WIDE
+Change Component Footprint: Designator=TP16 Old Footprint=TESTPOINT_BL New Footprint=TESTPOINT_WIDE
+Added Pin To Net: NetName=NetJ1_1 Pin=TP0-1
+Added Pin To Net: NetName=NetJ1_2 Pin=TP2-1
+Added Pin To Net: NetName=NetJ1_3 Pin=TP4-1
+Added Pin To Net: NetName=NetJ1_4 Pin=TP6-1
+Added Pin To Net: NetName=NetJ1_5 Pin=TP8-1
+Added Pin To Net: NetName=NetJ1_6 Pin=TP10-1
+Added Pin To Net: NetName=NetJ1_7 Pin=TP12-1
+Added Pin To Net: NetName=NetJ1_8 Pin=TP14-1
+Added Pin To Net: NetName=NetJ1_16 Pin=TP16-1

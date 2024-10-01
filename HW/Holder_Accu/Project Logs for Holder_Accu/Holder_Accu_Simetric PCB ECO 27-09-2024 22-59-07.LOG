@@ -1,0 +1,292 @@
+Added Component: Designator=J1(MOLEX_459850121)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "459850121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J2(MOLEX_459850121)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "459850121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC1(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC2(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC3(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC4(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC5(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC6(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC7(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC8(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC9(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC10(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC11(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC12(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC13(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC14(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC15(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC16(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC17(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC18(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC19(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=NTC20(NTC_0805)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TDK Corporation"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "NTCG203NH103JTDS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0805 TDK"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/NTCG203NH103JTDS/TDK/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=TP0(TESTPOINT_WIDE)
+Added Component: Designator=TP1(TESTPOINT_WIDE)
+Added Component: Designator=TP2(TESTPOINT_WIDE)
+Added Component: Designator=TP3(TESTPOINT_WIDE)
+Added Component: Designator=TP4(TESTPOINT_WIDE)
+Added Component: Designator=TP5(TESTPOINT_WIDE)
+Added Component: Designator=TP6(TESTPOINT_WIDE)
+Added Component: Designator=TP7(TESTPOINT_WIDE)
+Added Component: Designator=TP8(TESTPOINT_WIDE)
+Added Component: Designator=TP9(TESTPOINT_WIDE)
+Added Component: Designator=TP10(TESTPOINT_WIDE)
+Added Component: Designator=TP11(TESTPOINT_WIDE)
+Added Component: Designator=TP12(TESTPOINT_WIDE)
+Added Component: Designator=TP13(TESTPOINT_WIDE)
+Added Component: Designator=TP14(TESTPOINT_WIDE)
+Added Component: Designator=TP15(TESTPOINT_WIDE)
+Added Component: Designator=TP16(TESTPOINT_WIDE)
+Added Component: Designator=TP17(TESTPOINT_WIDE)
+Added Pin To Net: NetName=GND Pin=J1-15
+Added Pin To Net: NetName=GND Pin=J2-15
+Added Pin To Net: NetName=GND Pin=NTC1-2
+Added Pin To Net: NetName=GND Pin=NTC2-2
+Added Pin To Net: NetName=GND Pin=NTC3-2
+Added Pin To Net: NetName=GND Pin=NTC4-2
+Added Pin To Net: NetName=GND Pin=NTC5-2
+Added Pin To Net: NetName=GND Pin=NTC6-2
+Added Pin To Net: NetName=GND Pin=NTC7-2
+Added Pin To Net: NetName=GND Pin=NTC8-2
+Added Pin To Net: NetName=GND Pin=NTC9-2
+Added Pin To Net: NetName=GND Pin=NTC10-2
+Added Pin To Net: NetName=GND Pin=NTC11-2
+Added Pin To Net: NetName=GND Pin=NTC12-2
+Added Pin To Net: NetName=GND Pin=NTC13-2
+Added Pin To Net: NetName=GND Pin=NTC14-2
+Added Pin To Net: NetName=GND Pin=NTC15-2
+Added Pin To Net: NetName=GND Pin=NTC16-2
+Added Pin To Net: NetName=GND Pin=NTC17-2
+Added Pin To Net: NetName=GND Pin=NTC18-2
+Added Pin To Net: NetName=GND Pin=NTC19-2
+Added Pin To Net: NetName=GND Pin=NTC20-2
+Added Net: Name=GND
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-1
+Added Pin To Net: NetName=NetJ1_1 Pin=TP0-1
+Added Net: Name=NetJ1_1
+Added Pin To Net: NetName=NetJ1_2 Pin=J1-2
+Added Pin To Net: NetName=NetJ1_2 Pin=TP2-1
+Added Net: Name=NetJ1_2
+Added Pin To Net: NetName=NetJ1_3 Pin=J1-3
+Added Pin To Net: NetName=NetJ1_3 Pin=TP4-1
+Added Net: Name=NetJ1_3
+Added Pin To Net: NetName=NetJ1_4 Pin=J1-4
+Added Pin To Net: NetName=NetJ1_4 Pin=TP6-1
+Added Net: Name=NetJ1_4
+Added Pin To Net: NetName=NetJ1_5 Pin=J1-5
+Added Pin To Net: NetName=NetJ1_5 Pin=TP8-1
+Added Net: Name=NetJ1_5
+Added Pin To Net: NetName=NetJ1_6 Pin=J1-6
+Added Pin To Net: NetName=NetJ1_6 Pin=TP10-1
+Added Net: Name=NetJ1_6
+Added Pin To Net: NetName=NetJ1_7 Pin=J1-7
+Added Pin To Net: NetName=NetJ1_7 Pin=TP12-1
+Added Net: Name=NetJ1_7
+Added Pin To Net: NetName=NetJ1_8 Pin=J1-8
+Added Pin To Net: NetName=NetJ1_8 Pin=TP14-1
+Added Net: Name=NetJ1_8
+Added Pin To Net: NetName=NetJ1_9 Pin=J1-9
+Added Pin To Net: NetName=NetJ1_9 Pin=NTC1-1
+Added Pin To Net: NetName=NetJ1_9 Pin=NTC2-1
+Added Net: Name=NetJ1_9
+Added Pin To Net: NetName=NetJ1_10 Pin=J1-10
+Added Pin To Net: NetName=NetJ1_10 Pin=NTC3-1
+Added Pin To Net: NetName=NetJ1_10 Pin=NTC4-1
+Added Net: Name=NetJ1_10
+Added Pin To Net: NetName=NetJ1_11 Pin=J1-11
+Added Pin To Net: NetName=NetJ1_11 Pin=NTC5-1
+Added Pin To Net: NetName=NetJ1_11 Pin=NTC6-1
+Added Net: Name=NetJ1_11
+Added Pin To Net: NetName=NetJ1_12 Pin=J1-12
+Added Pin To Net: NetName=NetJ1_12 Pin=NTC7-1
+Added Pin To Net: NetName=NetJ1_12 Pin=NTC8-1
+Added Net: Name=NetJ1_12
+Added Pin To Net: NetName=NetJ1_13 Pin=J1-13
+Added Pin To Net: NetName=NetJ1_13 Pin=NTC9-1
+Added Pin To Net: NetName=NetJ1_13 Pin=NTC10-1
+Added Net: Name=NetJ1_13
+Added Pin To Net: NetName=NetJ1_16 Pin=J1-16
+Added Pin To Net: NetName=NetJ1_16 Pin=TP16-1
+Added Net: Name=NetJ1_16
+Added Pin To Net: NetName=NetJ2_1 Pin=J2-1
+Added Pin To Net: NetName=NetJ2_1 Pin=TP1-1
+Added Net: Name=NetJ2_1
+Added Pin To Net: NetName=NetJ2_2 Pin=J2-2
+Added Pin To Net: NetName=NetJ2_2 Pin=TP3-1
+Added Net: Name=NetJ2_2
+Added Pin To Net: NetName=NetJ2_3 Pin=J2-3
+Added Pin To Net: NetName=NetJ2_3 Pin=TP5-1
+Added Net: Name=NetJ2_3
+Added Pin To Net: NetName=NetJ2_4 Pin=J2-4
+Added Pin To Net: NetName=NetJ2_4 Pin=TP7-1
+Added Net: Name=NetJ2_4
+Added Pin To Net: NetName=NetJ2_5 Pin=J2-5
+Added Pin To Net: NetName=NetJ2_5 Pin=TP9-1
+Added Net: Name=NetJ2_5
+Added Pin To Net: NetName=NetJ2_6 Pin=J2-6
+Added Pin To Net: NetName=NetJ2_6 Pin=TP11-1
+Added Net: Name=NetJ2_6
+Added Pin To Net: NetName=NetJ2_7 Pin=J2-7
+Added Pin To Net: NetName=NetJ2_7 Pin=TP13-1
+Added Net: Name=NetJ2_7
+Added Pin To Net: NetName=NetJ2_8 Pin=J2-8
+Added Pin To Net: NetName=NetJ2_8 Pin=TP15-1
+Added Net: Name=NetJ2_8
+Added Pin To Net: NetName=NetJ2_9 Pin=J2-9
+Added Pin To Net: NetName=NetJ2_9 Pin=NTC11-1
+Added Pin To Net: NetName=NetJ2_9 Pin=NTC12-1
+Added Net: Name=NetJ2_9
+Added Pin To Net: NetName=NetJ2_10 Pin=J2-10
+Added Pin To Net: NetName=NetJ2_10 Pin=NTC13-1
+Added Pin To Net: NetName=NetJ2_10 Pin=NTC14-1
+Added Net: Name=NetJ2_10
+Added Pin To Net: NetName=NetJ2_11 Pin=J2-11
+Added Pin To Net: NetName=NetJ2_11 Pin=NTC15-1
+Added Pin To Net: NetName=NetJ2_11 Pin=NTC16-1
+Added Net: Name=NetJ2_11
+Added Pin To Net: NetName=NetJ2_12 Pin=J2-12
+Added Pin To Net: NetName=NetJ2_12 Pin=NTC17-1
+Added Pin To Net: NetName=NetJ2_12 Pin=NTC18-1
+Added Net: Name=NetJ2_12
+Added Pin To Net: NetName=NetJ2_13 Pin=J2-13
+Added Pin To Net: NetName=NetJ2_13 Pin=NTC19-1
+Added Pin To Net: NetName=NetJ2_13 Pin=NTC20-1
+Added Net: Name=NetJ2_13
+Added Pin To Net: NetName=NetJ2_16 Pin=J2-16
+Added Pin To Net: NetName=NetJ2_16 Pin=TP17-1
+Added Net: Name=NetJ2_16
+Added Class: Name=Holder_Accu_Simetric
+Added Class: Name=Holder_Accu
+Added Rule: Name=Schematic Supply Nets
