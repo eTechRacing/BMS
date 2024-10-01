@@ -1,0 +1,4 @@
+Record=TopLevelDocument|FileName=[1]SLAVE_HW.SchDoc|SheetNumber=1
+Record=SheetSymbol|SourceDocument=[1]SLAVE_HW.SchDoc|Designator=Balancing|SchDesignator=Balancing|FileName=[2]Balancing.SchDoc|SheetNumber=3|SymbolType=Normal|RawFileName=[2]Balancing.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=[1]SLAVE_HW.SchDoc|Designator=Communication|SchDesignator=Communication|FileName=[4]Communication.SchDoc|SheetNumber=5|SymbolType=Normal|RawFileName=[4]Communication.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=[1]SLAVE_HW.SchDoc|Designator=Temperatures|SchDesignator=Temperatures|FileName=[3]Temperatures.SchDoc|SheetNumber=4|SymbolType=Normal|RawFileName=[3]Temperatures.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 

@@ -1,0 +1,23 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of PCB Document [SLAVE_HW.PcbDoc]
+   Generated File[SLAVE_HW.GTO]
+   Generated File[SLAVE_HW.GTP]
+   Generated File[SLAVE_HW.GTS]
+   Generated File[SLAVE_HW.GTL]
+   Generated File[SLAVE_HW.G1]
+   Generated File[SLAVE_HW.G2]
+   Generated File[SLAVE_HW.GBL]
+   Generated File[SLAVE_HW.GBS]
+   Generated File[SLAVE_HW.GBP]
+   Generated File[SLAVE_HW.GBO]
+   Generated File[SLAVE_HW.GM1]
+   Generated File[SLAVE_HW.GM]
+   Generated File[SLAVE_HW.EXTREP]
+   Generated File[SLAVE_HW.REP]
+
+
+Files Generated   : 14
+Documents Printed : 0
+
+Finished Output Generation At 17:19:10 On 05/12/2023

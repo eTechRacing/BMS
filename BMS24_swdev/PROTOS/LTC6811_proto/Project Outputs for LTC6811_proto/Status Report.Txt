@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [LTC6811_proto.PrjPcb]
+   Generated File[LTC6811_proto.TXT]
+   Generated File[LTC6811_proto.LDP]
+   Generated File[LTC6811_proto.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 18:34:07 On 03/12/2023

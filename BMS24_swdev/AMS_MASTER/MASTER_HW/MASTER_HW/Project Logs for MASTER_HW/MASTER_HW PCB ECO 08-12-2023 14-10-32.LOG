@@ -1,0 +1,37 @@
+Removed Pin From Net: NetName=Precharge_AUX_1 Pin=J1-14
+Removed Pin From Net: NetName=AIR+_AUX_1 Pin=J1-15
+Removed Pin From Net: NetName=AIR-_AUX_1 Pin=J1-16
+Removed Pin From Net: NetName=GND Pin=J2-1
+Removed Pin From Net: NetName=+12 Pin=J2-2
+Removed Pin From Net: NetName=IMD_OK_unlatched Pin=J2-8
+Change Component Footprint: Designator=J2 Old Footprint=J_MicroFit_1x8_V New Footprint=J_NanoFit_1x4_V
+Change Component Comment : Designator=J2 Old Comment=J_MicroFit_1x8_V New Comment=1053091204
+Change component parameters: Designator = "J2" ("J2"); Footprint = "J_MicroFit_1x8_V"; UniqueID = "\XVSVGYAX" ("\XVSVGYAX")
+Change component parameters (AddParameter): Name = ".Creator"; Value = "DO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = ".PCBcheck"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = ".SCHcheck"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Category"; Value = "Headers and Wire Housings"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://farnell.com//datasheets/2221349.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://farnell.com//datasheets/2221349.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2Description"; Value = "http://www.farnell.com/datasheets/2221349.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.farnell.com/datasheets/2221349.pdf?src-supplier=Newark"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3Description"; Value = "http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.literature.molex.com/SQLImages/kelmscott/Molex/PDF_Images/987651-1223.PDF?src-supplier=Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4Description"; Value = "http://www.farnell.com/datasheets/2059602.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.farnell.com/datasheets/2059602.pdf?src-supplier=Element14"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer 1"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number 1"; Value = "105309-1204"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=1,37050, 10=1,11700, 100=0,95270, 500=0,86980, 1000=0,74060, 2500=0,71930, 5000=0,68450, 10000=0,66860 (USD)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "709"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Arrow Electronics"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "105309-1204"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Precharge_state Pin=J1-14
+Added Pin To Net: NetName=AIR+_State Pin=J1-15
+Added Pin To Net: NetName=AIR-_State Pin=J1-16
+Added Pin To Net: NetName=+12 Pin=J2-1
+Added Pin To Net: NetName=IMD_OK_unlatched Pin=J2-2
+Added Pin To Net: NetName=GND Pin=J2-4
+Added Pin To Net: NetName=GND_MH Pin=J1-5
+Added Pin To Net: NetName=GND_MH Pin=J2-3
+Added Net: Name=GND_MH

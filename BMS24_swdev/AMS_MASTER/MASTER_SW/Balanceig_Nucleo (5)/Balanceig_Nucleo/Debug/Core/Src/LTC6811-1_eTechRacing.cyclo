@@ -1,0 +1,15 @@
+../Core/Src/LTC6811-1_eTechRacing.c:55:6:Balancing	6
+../Core/Src/LTC6811-1_eTechRacing.c:82:6:outputCS	2
+../Core/Src/LTC6811-1_eTechRacing.c:96:6:wakeup_idle	1
+../Core/Src/LTC6811-1_eTechRacing.c:109:6:wakeup_sleep	2
+../Core/Src/LTC6811-1_eTechRacing.c:126:10:pec15_calc	2
+../Core/Src/LTC6811-1_eTechRacing.c:147:7:set_pwm	3
+../Core/Src/LTC6811-1_eTechRacing.c:197:6:ltc6811_wrpwm	3
+../Core/Src/LTC6811-1_eTechRacing.c:258:8:set_cfgr	3
+../Core/Src/LTC6811-1_eTechRacing.c:295:6:ltc6811_wrcfg	3
+../Core/Src/LTC6811-1_eTechRacing.c:366:6:ltc6811_adcv	1
+../Core/Src/LTC6811-1_eTechRacing.c:414:11:ltc6811_rdcv	9
+../Core/Src/LTC6811-1_eTechRacing.c:564:10:ltc6811_rdcv_reg	7
+../Core/Src/LTC6811-1_eTechRacing.c:642:6:ltc6811_adax	1
+../Core/Src/LTC6811-1_eTechRacing.c:679:8:ltc6811_rdaux	9
+../Core/Src/LTC6811-1_eTechRacing.c:796:6:ltc6811_rdaux_reg	5
