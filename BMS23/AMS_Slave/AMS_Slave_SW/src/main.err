@@ -1,0 +1,6 @@
+>>> Warning 203 "main.c" Line 109(1,1): Condition always TRUE
+>>> Warning 202 "main.c" Line 56(31,34): Variable never used:   cob
+>>> Warning 202 "main.c" Line 114(11,16): Variable never used:   slave
+      Memory usage:   ROM=13%      RAM=9% - 11%
+      0 Errors,  3 Warnings.
+Build Successful.
