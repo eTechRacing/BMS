@@ -1,1 +1,7 @@
-Record=TopLevelDocument|FileName=Master_uC_PCB.Sch|SheetNumber=1
+Record=TopLevelDocument|FileName=CAN_Communication.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=CAN_Communication.SchDoc|FileName=Cooling_Control_1.SchDoc|SheetNumber=6
+Record=NoMainPathDocument|SourceDocument=CAN_Communication.SchDoc|FileName=Cooling_Control_2.SchDoc|SheetNumber=7
+Record=NoMainPathDocument|SourceDocument=CAN_Communication.SchDoc|FileName=isoSPI.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=CAN_Communication.SchDoc|FileName=Master_uC_PCB.Sch|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=CAN_Communication.SchDoc|FileName=MicroController.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=CAN_Communication.SchDoc|FileName=Supply.SchDoc|SheetNumber=3

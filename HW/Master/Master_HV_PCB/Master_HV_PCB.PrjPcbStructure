@@ -1,4 +1,6 @@
 Record=TopLevelDocument|FileName=Accumulator_Indicator.Sch|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Accumulator_Indicator.Sch|FileName=HV_Detection.SchDoc|SheetNumber=5
 Record=NoMainPathDocument|SourceDocument=Accumulator_Indicator.Sch|FileName=Master_HV_PCB.Sch|SheetNumber=1
 Record=NoMainPathDocument|SourceDocument=Accumulator_Indicator.Sch|FileName=Relays_Control.SchDoc|SheetNumber=4
 Record=NoMainPathDocument|SourceDocument=Accumulator_Indicator.Sch|FileName=Shutdown.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=Accumulator_Indicator.Sch|FileName=TSAL.SchDoc|SheetNumber=6
