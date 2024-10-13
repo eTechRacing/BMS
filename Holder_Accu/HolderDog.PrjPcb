@@ -67,13 +67,13 @@ GenerateClassCluster=0
 DocumentUniqueId=EBFMXVGO
 
 [Document2]
-DocumentPath=Holder_Accu.SchDoc
+DocumentPath=HolderDog.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=0
+AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -81,7 +81,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=HHZIPGYO
+DocumentUniqueId=XGLSGPIB
 
 [Document3]
 DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Electromechanical.PcbLib
@@ -322,36 +322,36 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [Parameter1]
-Name=Version
-Value=1.0
+Name=Company
+Value=e-Tech Racing
 
 [Parameter2]
-Name=ReviewerName
-Value=Andreu Senis
-
-[Parameter3]
-Name=Project
-Value=Accumulator_Holderdog
-
-[Parameter4]
-Name=DesignerName
-Value=Yosra Azzouz
-
-[Parameter5]
-Name=DesignerMail
-Value=yosra.azzouz.louahabi@gmail.com
-
-[Parameter6]
-Name=DesignedByURL
-Value=e-techracing.es
-
-[Parameter7]
 Name=Department
 Value=PCBs
 
+[Parameter3]
+Name=DesignedByURL
+Value=e-techracing.es
+
+[Parameter4]
+Name=DesignerMail
+Value=yosra.azzouz.louahabi@gmail.com
+
+[Parameter5]
+Name=DesignerName
+Value=Yosra Azzouz
+
+[Parameter6]
+Name=Project
+Value=Accumulator_Holderdog
+
+[Parameter7]
+Name=ReviewerName
+Value=Andreu Senis
+
 [Parameter8]
-Name=Company
-Value=e-Tech Racing
+Name=Version
+Value=1.0
 
 [DiffPairSuffix1]
 Positive=_H
