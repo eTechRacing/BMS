@@ -1,6 +1,6 @@
-Record=TopLevelDocument|FileName=Master_uC_PCB.Sch|SheetNumber=1
-Record=SheetSymbol|SourceDocument=Master_uC_PCB.Sch|Designator=STM32L4|SchDesignator=STM32L4|FileName=STM32L4.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=STM32L4.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
-Record=NoMainPathDocument|SourceDocument=Master_uC_PCB.Sch|FileName=CAN_Communication.SchDoc|SheetNumber=4
-Record=NoMainPathDocument|SourceDocument=Master_uC_PCB.Sch|FileName=Cooling_Control_1.SchDoc|SheetNumber=6
-Record=NoMainPathDocument|SourceDocument=Master_uC_PCB.Sch|FileName=isoSPI.SchDoc|SheetNumber=5
-Record=NoMainPathDocument|SourceDocument=Master_uC_PCB.Sch|FileName=Supply.SchDoc|SheetNumber=3
+Record=TopLevelDocument|FileName=Master_uC_PCB.SchDoc.Sch|SheetNumber=1
+Record=SheetSymbol|SourceDocument=Master_uC_PCB.SchDoc.Sch|Designator=CAN|SchDesignator=CAN|FileName=CAN_Communication.SchDoc|SheetNumber= |SymbolType=Normal|RawFileName=CAN_Communication.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Master_uC_PCB.SchDoc.Sch|Designator=Cooling_Control|SchDesignator=Cooling_Control|FileName=Cooling_Control.SchDoc|SheetNumber=6|SymbolType=Normal|RawFileName=Cooling_Control.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Master_uC_PCB.SchDoc.Sch|Designator=isoSPI|SchDesignator=isoSPI|FileName=isoSPI.SchDoc|SheetNumber=5|SymbolType=Normal|RawFileName=isoSPI.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Master_uC_PCB.SchDoc.Sch|Designator=STM32L4|SchDesignator=STM32L4|FileName=STM32L4.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=STM32L4.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=Master_uC_PCB.SchDoc.Sch|Designator=Supply|SchDesignator=Supply|FileName=Supply.SchDoc|SheetNumber=3|SymbolType=Normal|RawFileName=Supply.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
