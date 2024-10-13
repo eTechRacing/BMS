@@ -50,7 +50,7 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=Holder_Accu.PcbDoc
+DocumentPath=HolderDog.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -64,7 +64,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=GAQTYUCY
+DocumentUniqueId=EBFMXVGO
 
 [Document2]
 DocumentPath=Holder_Accu.SchDoc
@@ -84,7 +84,7 @@ GenerateClassCluster=0
 DocumentUniqueId=HHZIPGYO
 
 [Document3]
-DocumentPath=..\..\..\..\GitHub\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Electromechanical.PcbLib
+DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Electromechanical.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -98,10 +98,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=YXUHXBHX
+DocumentUniqueId=
 
 [Document4]
-DocumentPath=..\..\..\..\GitHub\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\e-Tech_Racing.PcbLib
+DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\e-Tech_Racing.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -115,10 +115,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=TAJQCUKD
+DocumentUniqueId=
 
 [Document5]
-DocumentPath=..\..\..\..\GitHub\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Filter components.PcbLib
+DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Filter components.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -132,10 +132,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=DSRDPXXJ
+DocumentUniqueId=
 
 [Document6]
-DocumentPath=..\..\..\..\GitHub\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Integrated circuits.PcbLib
+DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Integrated circuits.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -149,10 +149,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=HHLTTDIA
+DocumentUniqueId=
 
 [Document7]
-DocumentPath=..\..\..\..\GitHub\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Passives.PcbLib
+DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Passives.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -166,10 +166,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=DUCJCCLL
+DocumentUniqueId=
 
 [Document8]
-DocumentPath=..\..\..\..\GitHub\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Semiconductor.PcbLib
+DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Semiconductor.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -183,10 +183,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=ASRCVDDI
+DocumentUniqueId=
 
 [Document9]
-DocumentPath=..\..\..\..\GitHub\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Sensors.PcbLib
+DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\PCB\Sensors.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -200,10 +200,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=JQTLLCMA
+DocumentUniqueId=
 
 [Document10]
-DocumentPath=..\..\..\..\GitHub\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Electromechanical.SchLib
+DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Electromechanical.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -217,10 +217,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=AQBXIDFG
+DocumentUniqueId=
 
 [Document11]
-DocumentPath=..\..\..\..\GitHub\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\e-Tech_Racing.SchLib
+DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\e-Tech_Racing.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -234,10 +234,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=TSRBBLSC
+DocumentUniqueId=
 
 [Document12]
-DocumentPath=..\..\..\..\GitHub\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Filter components.SchLib
+DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Filter components.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -251,10 +251,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LNRHNRHB
+DocumentUniqueId=
 
 [Document13]
-DocumentPath=..\..\..\..\GitHub\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Integrated circuits.SchLib
+DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Integrated circuits.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -268,10 +268,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=QOXOPYNW
+DocumentUniqueId=
 
 [Document14]
-DocumentPath=..\..\..\..\GitHub\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Passives.SchLib
+DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Passives.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -285,10 +285,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=JBBPRFAR
+DocumentUniqueId=
 
 [Document15]
-DocumentPath=..\..\..\..\GitHub\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Semiconductor.SchLib
+DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Semiconductor.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -302,10 +302,10 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=HAZZYXZW
+DocumentUniqueId=
 
 [Document16]
-DocumentPath=..\..\..\..\GitHub\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Sensors.SchLib
+DocumentPath=..\..\CommonFiles\Altium_Libraries_e-Tech_Racing\Schematics\Sensors.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -319,73 +319,39 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=IARDZSOA
-
-[Document17]
-DocumentPath=..\yo.SchLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=PROXUDJN
-
-[Document18]
-DocumentPath=..\yo.PcbLib
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=QIOJCNFF
+DocumentUniqueId=
 
 [Parameter1]
-Name=Company
-Value=e-Tech Racing
+Name=Version
+Value=1.0
 
 [Parameter2]
-Name=Department
-Value=PCBs
+Name=ReviewerName
+Value=Andreu Senis
 
 [Parameter3]
-Name=DesignedByURL
-Value=e-techracing.es
+Name=Project
+Value=Accumulator_Holderdog
 
 [Parameter4]
-Name=DesignerMail
-Value=yosra.azzouz.louahabi@gmail.com
-
-[Parameter5]
 Name=DesignerName
 Value=Yosra Azzouz
 
+[Parameter5]
+Name=DesignerMail
+Value=yosra.azzouz.louahabi@gmail.com
+
 [Parameter6]
-Name=Project
-Value=Accumulator_Holders
+Name=DesignedByURL
+Value=e-techracing.es
 
 [Parameter7]
-Name=ReviewerName
-Value=
+Name=Department
+Value=PCBs
 
 [Parameter8]
-Name=Version
-Value=1.0
+Name=Company
+Value=e-Tech Racing
 
 [DiffPairSuffix1]
 Positive=_H
