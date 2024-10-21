@@ -1,0 +1,24 @@
+Change Component Designator: OldDesignator=NTC1 NewDesignator=NTC201
+Change Component Designator: OldDesignator=NTC2 NewDesignator=NTC202
+Change Component Designator: OldDesignator=NTC3 NewDesignator=NTC203
+Change Component Designator: OldDesignator=NTC4 NewDesignator=NTC204
+Change Component Designator: OldDesignator=NTC5 NewDesignator=NTC205
+Change Component Designator: OldDesignator=NTC6 NewDesignator=NTC206
+Change Component Designator: OldDesignator=NTC7 NewDesignator=NTC207
+Change Component Designator: OldDesignator=NTC8 NewDesignator=NTC208
+Change Component Designator: OldDesignator=NTC9 NewDesignator=NTC209
+Change Component Designator: OldDesignator=NTC10 NewDesignator=NTC210
+Change Net Name : Old Net Name=NetNTC1_1 New Net Name=NTC1
+Change Net Name : Old Net Name=NetNTC3_1 New Net Name=NTC2
+Change Net Name : Old Net Name=NetNTC5_1 New Net Name=NTC3
+Change Net Name : Old Net Name=NetNTC7_1 New Net Name=NTC4
+Change Net Name : Old Net Name=NetNTC9_1 New Net Name=NTC5
+Change Net Name : Old Net Name=NetP1_1 New Net Name=V1
+Change Net Name : Old Net Name=NetP1_3 New Net Name=V3
+Change Net Name : Old Net Name=NetP1_5 New Net Name=V5
+Change Net Name : Old Net Name=NetP1_7 New Net Name=V7
+Change Net Name : Old Net Name=NetP1_9 New Net Name=V9
+Change Net Name : Old Net Name=NetP1_11 New Net Name=V11
+Change Net Name : Old Net Name=NetP1_13 New Net Name=V13
+Change Net Name : Old Net Name=NetP1_15 New Net Name=V15
+Change Class Name : Old Net Name=Holder_Accu_Simetric New Net Name=HolderDog_Simetric
